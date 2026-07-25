@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 PATTERNS = [
-    ("sphinx role", re.compile(r":[\w.-]+:`.*?`")),
+    ("sphinx role", re.compile(r":(?:\w+:)?[\w.-]+:`.*?`")),
     ("literal/code span", re.compile(r"``.*?``")),
     ("substitution ref", re.compile(r"\|[\w.-]+\|")),
     ("percent placeholder", re.compile(r"%\(\w+\)[a-zA-Z]|%[a-zA-Z]")),
