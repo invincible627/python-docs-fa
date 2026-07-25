@@ -18,15 +18,15 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-25 12:59+0330\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"PO-Revision-Date: 2026-07-25 14:55+0330\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
-"Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
-"fa/)\n"
+"Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: ../../c-api/allocation.rst:6
 #, fuzzy
@@ -35,9 +35,9 @@ msgstr "تخصیص اشیاء روی پشته"
 
 #: ../../c-api/allocation.rst:17
 msgid ""
-"Initialize a newly allocated object *op* with its type and initial "
-"reference.  Returns the initialized object.  Other fields of the object are "
-"not initialized.  Despite its name, this function is unrelated to the "
+"Initialize a newly allocated object *op* with its type and initial reference.  "
+"Returns the initialized object.  Other fields of the object are not "
+"initialized.  Despite its name, this function is unrelated to the "
 "object's :meth:`~object.__init__` method (:c:member:`~PyTypeObject.tp_init` "
 "slot).  Specifically, this function does **not** call the object's :meth:`!"
 "__init__` method."
@@ -62,22 +62,22 @@ msgid ""
 "This does everything :c:func:`PyObject_Init` does, and also initializes the "
 "length information for a variable-size object."
 msgstr ""
-"این تابع همهٔ کارهایی را انجام می‌دهد که :c:func:`PyObject_Init` انجام می‌دهد، "
-"و همچنین اطلاعات مربوط به طول را برای یک شیء با اندازهٔ متغیر مقداردهی می‌کند."
+"این تابع همهٔ کارهایی را انجام می‌دهد که :c:func:`PyObject_Init` انجام می‌دهد، و "
+"همچنین اطلاعات مربوط به طول را برای یک شیء با اندازهٔ متغیر مقداردهی می‌کند."
 
 #: ../../c-api/allocation.rst:42
 msgid ""
-"This function only initializes some of the object's memory.  It does not "
-"zero the rest."
+"This function only initializes some of the object's memory.  It does not zero "
+"the rest."
 msgstr ""
 
 #: ../../c-api/allocation.rst:48
 msgid ""
-"Allocates a new Python object using the C structure type *TYPE* and the "
-"Python type object *typeobj* (``PyTypeObject*``) by "
-"calling :c:func:`PyObject_Malloc` to allocate memory and initializing it "
-"like :c:func:`PyObject_Init`.  The caller will own the only reference to the "
-"object (i.e. its reference count will be one)."
+"Allocates a new Python object using the C structure type *TYPE* and the Python "
+"type object *typeobj* (``PyTypeObject*``) by calling :c:func:`PyObject_Malloc` "
+"to allocate memory and initializing it like :c:func:`PyObject_Init`.  The "
+"caller will own the only reference to the object (i.e. its reference count "
+"will be one)."
 msgstr ""
 
 #: ../../c-api/allocation.rst:54 ../../c-api/allocation.rst:107
@@ -104,8 +104,7 @@ msgstr ""
 #: ../../c-api/allocation.rst:65
 msgid ""
 "This cannot be used for objects with :c:macro:`Py_TPFLAGS_HAVE_GC` set "
-"in :c:member:`~PyTypeObject.tp_flags`; use :c:macro:`PyObject_GC_New` "
-"instead."
+"in :c:member:`~PyTypeObject.tp_flags`; use :c:macro:`PyObject_GC_New` instead."
 msgstr ""
 
 #: ../../c-api/allocation.rst:68
@@ -116,14 +115,14 @@ msgstr ""
 
 #: ../../c-api/allocation.rst:73 ../../c-api/allocation.rst:123
 msgid ""
-"The returned memory is not guaranteed to have been completely zeroed before "
-"it was initialized."
+"The returned memory is not guaranteed to have been completely zeroed before it "
+"was initialized."
 msgstr ""
 
 #: ../../c-api/allocation.rst:78 ../../c-api/allocation.rst:128
 msgid ""
-"This macro does not construct a fully initialized object of the given type; "
-"it merely allocates memory and prepares it for further initialization "
+"This macro does not construct a fully initialized object of the given type; it "
+"merely allocates memory and prepares it for further initialization "
 "by :c:member:`~PyTypeObject.tp_init`.  To construct a fully initialized "
 "object, call *typeobj* instead.  For example::"
 msgstr ""
@@ -168,9 +167,9 @@ msgstr ""
 #: ../../c-api/allocation.rst:102
 msgid ""
 "This is useful for implementing objects like tuples, which are able to "
-"determine their size at construction time.  Embedding the array of fields "
-"into the same allocation decreases the number of allocations, improving the "
-"memory management efficiency."
+"determine their size at construction time.  Embedding the array of fields into "
+"the same allocation decreases the number of allocations, improving the memory "
+"management efficiency."
 msgstr ""
 
 #: ../../c-api/allocation.rst:114
@@ -187,8 +186,7 @@ msgid ""
 msgstr ""
 
 #: ../../c-api/allocation.rst:133
-msgid ""
-"PyObject *list_instance = PyObject_CallNoArgs((PyObject *)&PyList_Type);"
+msgid "PyObject *list_instance = PyObject_CallNoArgs((PyObject *)&PyList_Type);"
 msgstr ""
 
 #: ../../c-api/allocation.rst:138
@@ -202,8 +200,8 @@ msgid ""
 "object."
 msgstr ""
 "شیء ای که در پایتون به صورت ``None`` قابل مشاهده است\n"
-"این فقط باید با استفاده از ماکرو :c:macro:`Py_None`، که به یک اشاره گر به "
-"این شی ارزیابی می شود، دسترسی پیدا کند."
+"این فقط باید با استفاده از ماکرو :c:macro:`Py_None`، که به یک اشاره گر به این "
+"شی ارزیابی می شود، دسترسی پیدا کند."
 
 #: ../../c-api/allocation.rst:152
 msgid ":ref:`moduleobjects`"
@@ -232,30 +230,25 @@ msgid "Function"
 msgstr ""
 
 #: ../../c-api/allocation.rst:172
-#, fuzzy
 msgid ":c:macro:`PyObject_New`"
-msgstr "همانند :c:func:`PyObject_Free`"
+msgstr "همانند :c:macro:`PyObject_New`"
 
 #: ../../c-api/allocation.rst:174
 msgid ":c:macro:`PyObject_NewVar`"
 msgstr ""
 
 #: ../../c-api/allocation.rst:176
-#, fuzzy
 msgid ":c:func:`PyObject_Init`"
-msgstr "همانند :c:func:`PyObject_Free`"
+msgstr "همانند :c:func:`PyObject_Init`"
 
 #: ../../c-api/allocation.rst:178
-#, fuzzy
 msgid ":c:func:`PyObject_InitVar`"
-msgstr "همانند :c:func:`PyObject_Free`"
+msgstr "همانند :c:func:`PyObject_InitVar`"
 
 #: ../../c-api/allocation.rst:180
-#, fuzzy
 msgid ":c:func:`PyObject_Malloc`"
-msgstr "همانند :c:func:`PyObject_Free`"
+msgstr "همانند :c:func:`PyObject_Malloc`"
 
 #: ../../c-api/allocation.rst:182
-#, fuzzy
 msgid ":c:func:`PyObject_Realloc`"
-msgstr "همانند :c:func:`PyObject_Free`"
+msgstr "همانند :c:func:`PyObject_Realloc`"
