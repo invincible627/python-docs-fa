@@ -6,6 +6,8 @@ Report translation progress across .po files: how many strings are
 translated, fuzzy, or untranslated per file, plus overall totals. Meant to
 help a contributor quickly find files that need work.
 
+Requires: pip install polib
+
 Usage:
     python3 scripts/translation_status.py                    # whole repo, least-translated first
     python3 scripts/translation_status.py tutorial/           # just one directory
@@ -17,74 +19,12 @@ import argparse
 import sys
 from pathlib import Path
 
-
-def unescape(raw: str) -> str:
-    """Undo PO string escaping (raw includes the surrounding quotes)."""
-    inner = raw[1:-1]
-    out = []
-    i = 0
-    while i < len(inner):
-        c = inner[i]
-        if c == "\\" and i + 1 < len(inner):
-            nxt = inner[i + 1]
-            out.append({"n": "\n", "t": "\t", '"': '"', "\\": "\\"}.get(nxt, nxt))
-            i += 2
-        else:
-            out.append(c)
-            i += 1
-    return "".join(out)
-
-
-def parse_po_entries(path: Path):
-    """Yield (flags, msgid, msgstrs) for each entry in a .po file."""
-    lines = path.read_text(encoding="utf-8").splitlines()
-    i, n = 0, len(lines)
-
-    def read_block(keyword_line):
-        nonlocal i
-        parts = [unescape(keyword_line.split(" ", 1)[1].strip())]
-        i += 1
-        while i < n and lines[i].strip().startswith('"'):
-            parts.append(unescape(lines[i].strip()))
-            i += 1
-        return "".join(parts)
-
-    while i < n:
-        flags = []
-        while i < n and lines[i].startswith("#"):
-            if lines[i].startswith("#,"):
-                flags = [f.strip() for f in lines[i][2:].split(",")]
-            i += 1
-        if i >= n or not lines[i].startswith("msgid"):
-            i += 1
-            continue
-
-        msgid = read_block(lines[i])
-        if i < n and lines[i].startswith("msgid_plural"):
-            read_block(lines[i])  # plural source not needed for counting
-
-        msgstrs = []
-        if i < n and lines[i].startswith("msgstr["):
-            while i < n and lines[i].startswith("msgstr["):
-                msgstrs.append(read_block(lines[i]))
-        elif i < n and lines[i].startswith("msgstr"):
-            msgstrs.append(read_block(lines[i]))
-
-        yield flags, msgid, msgstrs
+import polib
 
 
 def file_stats(path: Path):
-    translated = fuzzy = untranslated = 0
-    for flags, msgid, msgstrs in parse_po_entries(path):
-        if not msgid:
-            continue  # header entry
-        if "fuzzy" in flags:
-            fuzzy += 1
-        elif any(m.strip() for m in msgstrs):
-            translated += 1
-        else:
-            untranslated += 1
-    return translated, fuzzy, untranslated
+    po = polib.pofile(str(path))
+    return len(po.translated_entries()), len(po.fuzzy_entries()), len(po.untranslated_entries())
 
 
 def collect_files(paths):
