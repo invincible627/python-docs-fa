@@ -8,43 +8,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-11 14:21+0000\n"
+"POT-Creation-Date: 2026-07-25 12:59+0330\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../library/tkinter.colorchooser.rst:2
 msgid ":mod:`!tkinter.colorchooser` --- Color choosing dialog"
 msgstr ""
 
-#: ../../library/tkinter.colorchooser.rst:8
+#: ../../library/tkinter.colorchooser.rst:7
 msgid "**Source code:** :source:`Lib/tkinter/colorchooser.py`"
 msgstr ""
 
-#: ../../library/tkinter.colorchooser.rst:12
+#: ../../library/tkinter.colorchooser.rst:11
 msgid ""
-"The :mod:`tkinter.colorchooser` module provides the :class:`Chooser` class "
+"The :mod:`!tkinter.colorchooser` module provides the :class:`Chooser` class "
 "as an interface to the native color picker dialog. ``Chooser`` implements a "
-"modal color choosing dialog window. The ``Chooser`` class inherits from the :"
-"class:`~tkinter.commondialog.Dialog` class."
+"modal color choosing dialog window. The ``Chooser`` class inherits from "
+"the :class:`~tkinter.commondialog.Dialog` class."
 msgstr ""
 
-#: ../../library/tkinter.colorchooser.rst:21
+#: ../../library/tkinter.colorchooser.rst:20
 msgid ""
 "Create a color choosing dialog. A call to this method will show the window, "
 "wait for the user to make a selection, and return the selected color (or "
 "``None``) to the caller."
 msgstr ""
 
-#: ../../library/tkinter.colorchooser.rst:28
+#: ../../library/tkinter.colorchooser.rst:27
 msgid "Module :mod:`tkinter.commondialog`"
 msgstr ""
 
-#: ../../library/tkinter.colorchooser.rst:29
+#: ../../library/tkinter.colorchooser.rst:28
 msgid "Tkinter standard dialog module"
 msgstr ""

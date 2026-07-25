@@ -11,23 +11,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-04 14:20+0000\n"
+"POT-Creation-Date: 2026-07-25 12:59+0330\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
 "Last-Translator: Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../tutorial/stdlib.rst:5
-msgid "Brief Tour of the Standard Library"
+msgid "Brief tour of the standard library"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:11
-msgid "Operating System Interface"
+msgid "Operating system interface"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:13
@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:51
-msgid "File Wildcards"
+msgid "File wildcards"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:53
@@ -101,7 +101,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:64
-msgid "Command Line Arguments"
+msgid "Command-line arguments"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:66
@@ -150,13 +150,13 @@ msgstr ""
 
 #: ../../tutorial/stdlib.rst:93
 msgid ""
-"When run at the command line with ``python top.py --lines=5 alpha.txt beta."
-"txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` to "
-"``['alpha.txt', 'beta.txt']``."
+"When run at the command line with ``python top.py --lines=5 alpha.txt "
+"beta.txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` "
+"to ``['alpha.txt', 'beta.txt']``."
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:101
-msgid "Error Output Redirection and Program Termination"
+msgid "Error output redirection and program termination"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:103
@@ -177,7 +177,7 @@ msgid "The most direct way to terminate a script is to use ``sys.exit()``."
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:116
-msgid "String Pattern Matching"
+msgid "String pattern matching"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:118
@@ -269,7 +269,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:179
-msgid "Internet Access"
+msgid "Internet access"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:181
@@ -282,14 +282,13 @@ msgstr ""
 #: ../../tutorial/stdlib.rst:185
 msgid ""
 ">>> from urllib.request import urlopen\n"
-">>> with urlopen('http://worldtimeapi.org/api/timezone/etc/UTC.txt') as "
-"response:\n"
+">>> with urlopen('https://docs.python.org/3/') as response:\n"
 "...     for line in response:\n"
 "...         line = line.decode()             # Convert bytes to a str\n"
-"...         if line.startswith('datetime'):\n"
+"...         if 'updated' in line:\n"
 "...             print(line.rstrip())         # Remove trailing newline\n"
 "...\n"
-"datetime: 2022-01-01T01:36:47.689215+00:00\n"
+"      Last updated on Nov 11, 2025 (20:11 UTC).\n"
 "\n"
 ">>> import smtplib\n"
 ">>> server = smtplib.SMTP('localhost')\n"
@@ -307,7 +306,7 @@ msgid "(Note that the second example needs a mailserver running on localhost.)"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:210
-msgid "Dates and Times"
+msgid "Dates and times"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:212
@@ -322,29 +321,30 @@ msgstr ""
 #: ../../tutorial/stdlib.rst:218
 msgid ""
 ">>> # dates are easily constructed and formatted\n"
-">>> from datetime import date\n"
-">>> now = date.today()\n"
+">>> import datetime as dt\n"
+">>> now = dt.date.today()\n"
 ">>> now\n"
 "datetime.date(2003, 12, 2)\n"
 ">>> now.strftime(\"%m-%d-%y. %d %b %Y is a %A on the %d day of %B.\")\n"
 "'12-02-03. 02 Dec 2003 is a Tuesday on the 02 day of December.'\n"
 "\n"
 ">>> # dates support calendar arithmetic\n"
-">>> birthday = date(1964, 7, 31)\n"
+">>> birthday = dt.date(1964, 7, 31)\n"
 ">>> age = now - birthday\n"
 ">>> age.days\n"
 "14368"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:236
-msgid "Data Compression"
+msgid "Data compression"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:238
 msgid ""
 "Common data archiving and compression formats are directly supported by "
-"modules including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :mod:"
-"`zipfile` and :mod:`tarfile`. ::"
+"modules "
+"including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :mod:`zipfile` "
+"and :mod:`tarfile`. ::"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:242
@@ -363,7 +363,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:258
-msgid "Performance Measurement"
+msgid "Performance measurement"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:260
@@ -376,8 +376,9 @@ msgstr ""
 #: ../../tutorial/stdlib.rst:264
 msgid ""
 "For example, it may be tempting to use the tuple packing and unpacking "
-"feature instead of the traditional approach to swapping arguments. The :mod:"
-"`timeit` module quickly demonstrates a modest performance advantage::"
+"feature instead of the traditional approach to swapping arguments. "
+"The :mod:`timeit` module quickly demonstrates a modest performance "
+"advantage::"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:268
@@ -397,7 +398,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:282
-msgid "Quality Control"
+msgid "Quality control"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:284
@@ -456,7 +457,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:328
-msgid "Batteries Included"
+msgid "Batteries included"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:330
@@ -476,7 +477,7 @@ msgstr ""
 #: ../../tutorial/stdlib.rst:337
 msgid ""
 "The :mod:`email` package is a library for managing email messages, including "
-"MIME and other :rfc:`2822`-based message documents. Unlike :mod:`smtplib` "
+"MIME and other :rfc:`5322`-based message documents. Unlike :mod:`smtplib` "
 "and :mod:`poplib` which actually send and receive messages, the email "
 "package has a complete toolset for building or decoding complex message "
 "structures (including attachments) and for implementing internet encoding "
@@ -488,10 +489,10 @@ msgid ""
 "The :mod:`json` package provides robust support for parsing this popular "
 "data interchange format.  The :mod:`csv` module supports direct reading and "
 "writing of files in Comma-Separated Value format, commonly supported by "
-"databases and spreadsheets.  XML processing is supported by the :mod:`xml."
-"etree.ElementTree`, :mod:`xml.dom` and :mod:`xml.sax` packages. Together, "
-"these modules and packages greatly simplify data interchange between Python "
-"applications and other tools."
+"databases and spreadsheets.  XML processing is supported by "
+"the :mod:`xml.etree.ElementTree`, :mod:`xml.dom` and :mod:`xml.sax` "
+"packages. Together, these modules and packages greatly simplify data "
+"interchange between Python applications and other tools."
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:353
@@ -503,8 +504,8 @@ msgstr ""
 
 #: ../../tutorial/stdlib.rst:357
 msgid ""
-"Internationalization is supported by a number of modules including :mod:"
-"`gettext`, :mod:`locale`, and the :mod:`codecs` package."
+"Internationalization is supported by a number of modules "
+"including :mod:`gettext`, :mod:`locale`, and the :mod:`codecs` package."
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:27

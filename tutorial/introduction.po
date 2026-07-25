@@ -11,15 +11,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 14:20+0000\n"
+"POT-Creation-Date: 2026-07-25 12:59+0330\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
 "Last-Translator: Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../tutorial/introduction.rst:5
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:52
 msgid ""
-"The interpreter acts as a simple calculator: you can type an expression at "
+"The interpreter acts as a simple calculator: you can type an expression into "
 "it and it will write the value.  Expression syntax is straightforward: the "
 "operators ``+``, ``-``, ``*`` and ``/`` can be used to perform arithmetic; "
 "parentheses (``()``) can be used for grouping. For example::"
@@ -103,8 +103,9 @@ msgstr ""
 #: ../../tutorial/introduction.rst:67
 msgid ""
 "The integer numbers (e.g. ``2``, ``4``, ``20``) have type :class:`int`, the "
-"ones with a fractional part (e.g. ``5.0``, ``1.6``) have type :class:"
-"`float`.  We will see more about numeric types later in the tutorial."
+"ones with a fractional part (e.g. ``5.0``, ``1.6``) have "
+"type :class:`float`.  We will see more about numeric types later in the "
+"tutorial."
 msgstr ""
 
 #: ../../tutorial/introduction.rst:71
@@ -210,10 +211,10 @@ msgstr ""
 #: ../../tutorial/introduction.rst:131
 msgid ""
 "In addition to :class:`int` and :class:`float`, Python supports other types "
-"of numbers, such as :class:`~decimal.Decimal` and :class:`~fractions."
-"Fraction`. Python also has built-in support for :ref:`complex numbers "
-"<typesnumeric>`, and uses the ``j`` or ``J`` suffix to indicate the "
-"imaginary part (e.g. ``3+5j``)."
+"of numbers, such as :class:`~decimal.Decimal` "
+"and :class:`~fractions.Fraction`. Python also has built-in support "
+"for :ref:`complex numbers <typesnumeric>`, and uses the ``j`` or ``J`` "
+"suffix to indicate the imaginary part (e.g. ``3+5j``)."
 msgstr ""
 
 #: ../../tutorial/introduction.rst:141
@@ -287,11 +288,11 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:187
 msgid ""
-">>> print('C:\\some\\name')  # here \\n means newline!\n"
-"C:\\some\n"
+">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\n"
+"C:      his\n"
 "ame\n"
-">>> print(r'C:\\some\\name')  # note the r before the quote\n"
-"C:\\some\\name"
+">>> print(r'C:\\this\\name')  # note the r before the quote\n"
+"C:\\this\\name"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:193
@@ -681,8 +682,8 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:422
 msgid ""
-"You can also add new items at the end of the list, by using the :meth:`!list."
-"append` *method* (we will see more about methods later)::"
+"You can also add new items at the end of the list, by using "
+"the :meth:`list.append` *method* (we will see more about methods later)::"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:425
