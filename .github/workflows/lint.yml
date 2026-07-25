@@ -14,23 +14,30 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-    continue-on-error: true
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          
+
       - name: Install sphinx-lint
         run: pip install sphinx-lint
-        
+
+      - name: Install gettext tools
+        run: sudo apt-get install -y gettext
+
       - name: Setup problem matcher
         uses: rffontenelle/sphinx-lint-problem-matcher@v1.0.0
-        
+
       - name: Run sphinx-lint
         run: sphinx-lint
+        continue-on-error: true
+
+      - name: Check PO file validity
+        run: find . -name '*.po' -exec msgfmt --check {} \;
+
+      - name: Check markup preservation
+        run: python3 scripts/check_markup.py .
