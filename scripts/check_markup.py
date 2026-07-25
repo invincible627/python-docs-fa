@@ -2,10 +2,13 @@
 """
 scripts/check_markup.py
 
-Verify that Sphinx roles, inline literals, and format placeholders in the
-English msgid are preserved verbatim in the Persian msgstr. Catches the most
-common review slip: translating or mangling `:class:`int``-style markup,
-``code`` spans, %s/{0} placeholders, or |substitution| refs.
+Verify that Sphinx roles, inline literals, and format placeholders match
+exactly between the English msgid and the Persian msgstr — nothing missing,
+and nothing extra. Catches both the common review slip (translating or
+dropping `:class:`int``-style markup, ``code`` spans, %s/{0} placeholders,
+|substitution| refs) and the subtler mistake of adding a reference that
+doesn't exist in the original (which Sphinx's own build treats as a hard
+error under -W, e.g. "inconsistent term references in translated message").
 
 Requires: pip install polib
 
@@ -16,6 +19,7 @@ Usage:
 """
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 import polib
@@ -36,17 +40,24 @@ def check_file(path: Path) -> int:
         if entry.obsolete or not entry.msgid or not entry.msgstr:
             continue  # obsolete entry, header, or still untranslated
         for label, pattern in PATTERNS:
-            expected = pattern.findall(entry.msgid)
-            if not expected:
+            expected = Counter(pattern.findall(entry.msgid))
+            found = Counter(pattern.findall(entry.msgstr))
+            if expected == found:
                 continue
-            missing = [tok for tok in expected if tok not in entry.msgstr]
+
+            missing = list((expected - found).elements())
+            extra = list((found - expected).elements())
+            problems += 1
+            loc = f" ({entry.occurrences[0][0]}:{entry.occurrences[0][1]})" if entry.occurrences else ""
+            tag = " [fuzzy]" if entry.fuzzy else ""
+            parts = []
             if missing:
-                problems += 1
-                loc = f" ({entry.occurrences[0][0]}:{entry.occurrences[0][1]})" if entry.occurrences else ""
-                tag = " [fuzzy]" if entry.fuzzy else ""
-                print(f"{path}{loc}{tag}: missing {label}: {missing}")
-                print(f"    msgid : {entry.msgid[:100]}")
-                print(f"    msgstr: {entry.msgstr[:100]}")
+                parts.append(f"missing {label}: {missing}")
+            if extra:
+                parts.append(f"extra {label} not in source: {extra}")
+            print(f"{path}{loc}{tag}: {'; '.join(parts)}")
+            print(f"    msgid : {entry.msgid[:100]}")
+            print(f"    msgstr: {entry.msgstr[:100]}")
     return problems
 
 
