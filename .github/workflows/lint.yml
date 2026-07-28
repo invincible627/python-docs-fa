@@ -15,13 +15,16 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout CPython docs
         uses: actions/checkout@v4
+        with:
+          repository: python/cpython
+          ref: v3.14.6
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install sphinx-lint and polib
         run: pip install sphinx-lint polib
@@ -29,15 +32,30 @@ jobs:
       - name: Install gettext tools
         run: sudo apt-get install -y gettext
 
+      - name: Setup virtual environment
+        run: make venv
+        working-directory: ./Doc
+
+      - name: Checkout translation files
+        uses: actions/checkout@v4
+        with:
+          path: Doc/locales/fa/LC_MESSAGES
+
       - name: Setup problem matcher
         uses: rffontenelle/sphinx-lint-problem-matcher@v1.0.0
 
       - name: Run sphinx-lint
         run: sphinx-lint
-        continue-on-error: true
+        working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Check PO file validity
         run: find . -name '*.po' -exec msgfmt --check {} \;
+        working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Check markup preservation
         run: python3 scripts/check_markup.py .
+        working-directory: Doc/locales/fa/LC_MESSAGES
+
+      - name: Build documentation
+        run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -W --keep-going" html
+        working-directory: ./Doc
