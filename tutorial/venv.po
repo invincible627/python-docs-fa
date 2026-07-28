@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-25 12:59+0330\n"
-"PO-Revision-Date: 2021-06-28 01:50+0000\n"
+"PO-Revision-Date: 2026-07-28 10:08+0330\n"
 "Last-Translator: Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
@@ -22,14 +22,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: ../../tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr ""
+msgstr "محیط‌های مجازی و بسته‌ها"
 
 #: ../../tutorial/venv.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "مقدمه"
 
 #: ../../tutorial/venv.rst:11
 msgid ""
@@ -39,6 +40,10 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"برنامه‌های پایتون معمولاً از بسته‌ها و ماژول‌هایی استفاده می‌کنند که بخشی از "
+"کتابخانهٔ استاندارد نیستند. همچنین، گاهی یک برنامه به نسخهٔ مشخصی از یک "
+"کتابخانه نیاز دارد؛ زیرا ممکن است به رفع یک باگ خاص وابسته باشد یا با "
+"استفاده از نسخهٔ قدیمی‌تری از رابط آن کتابخانه نوشته شده باشد."
 
 #: ../../tutorial/venv.rst:17
 msgid ""
@@ -48,6 +53,11 @@ msgid ""
 "are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"این موضوع باعث می‌شود که یک نصب واحد از پایتون نتواند نیازهای همهٔ برنامه‌ها را "
+"برآورده کند. برای مثال، اگر برنامهٔ A به نسخهٔ 1.0 یک ماژول نیاز داشته باشد، "
+"اما برنامهٔ B به نسخهٔ 2.0 همان ماژول وابسته باشد، این نیازها با یکدیگر در "
+"تعارض خواهند بود و نصب هر یک از نسخه‌های 1.0 یا 2.0 باعث می‌شود یکی از "
+"برنامه‌ها دیگر قابل اجرا نباشد."
 
 #: ../../tutorial/venv.rst:23
 msgid ""
@@ -55,6 +65,9 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"راه‌حل این مشکل، ایجاد یک :term:`محیط مجازی` است؛ یک ساختار دایرکتوری مستقل "
+"که شامل یک نصب از پایتون برای نسخه‌ای مشخص از پایتون، به‌همراه تعدادی بستهٔ "
+"اضافی است."
 
 #: ../../tutorial/venv.rst:27
 msgid ""
@@ -65,10 +78,15 @@ msgid ""
 "application B requires a library be upgraded to version 3.0, this will not "
 "affect application A's environment."
 msgstr ""
+"به این ترتیب، هر برنامه می‌تواند از محیط مجازی مخصوص به خود استفاده کند. برای "
+"حل مثال قبلی، برنامهٔ A می‌تواند محیط مجازی خود را با نسخهٔ 1.0 آن ماژول داشته "
+"باشد، در حالی که برنامهٔ B از محیط مجزایی با نسخهٔ 2.0 استفاده کند. اگر بعدها "
+"برنامهٔ B به ارتقای آن کتابخانه به نسخهٔ 3.0 نیاز داشته باشد، این تغییر هیچ "
+"تأثیری بر محیط برنامهٔ A نخواهد داشت."
 
 #: ../../tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "ایجاد محیط‌های مجازی"
 
 #: ../../tutorial/venv.rst:38
 msgid ""
