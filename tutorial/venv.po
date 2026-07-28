@@ -65,7 +65,7 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
-"راه‌حل این مشکل، ایجاد یک :term:`محیط مجازی (virtual environment)` است؛ یک ساختار دایرکتوری مستقل "
+"راه‌حل این مشکل، ایجاد یک :term:`محیط مجازی <virtual environment>` است؛ یک ساختار دایرکتوری مستقل "
 "که شامل یک نصب از پایتون برای نسخه‌ای مشخص از پایتون، به‌همراه تعدادی بستهٔ "
 "اضافی است."
 
