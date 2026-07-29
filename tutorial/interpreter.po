@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-25 12:59+0330\n"
-"PO-Revision-Date: 2021-06-28 01:50+0000\n"
+"PO-Revision-Date: 2026-07-28 10:05+0330\n"
 "Last-Translator: Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
@@ -21,14 +21,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: ../../tutorial/interpreter.rst:5
 msgid "Using the Python Interpreter"
-msgstr ""
+msgstr "استفاده از مفسر پایتون"
 
 #: ../../tutorial/interpreter.rst:11
 msgid "Invoking the Interpreter"
-msgstr ""
+msgstr "فراخوانی مفسر"
 
 #: ../../tutorial/interpreter.rst:13
 msgid ""
@@ -37,10 +38,14 @@ msgid ""
 "available; putting :file:`/usr/local/bin` in your Unix shell's search path "
 "makes it possible to start it by typing the command:"
 msgstr ""
+"مفسر پایتون معمولاً روی سیستم‌هایی که در دسترس است، در مسیر |"
+"usr_local_bin_python_x_dot_y_literal| نصب می‌شود. اگر مسیر :file:`/usr/local/"
+"bin` را به مسیر جست‌وجوی شل یونیکس خود اضافه کنید، می‌توانید با وارد کردن "
+"دستور زیر آن را اجرا کنید:"
 
 #: ../../tutorial/interpreter.rst:17
 msgid "python3.14"
-msgstr ""
+msgstr "python3.14"
 
 #: ../../tutorial/interpreter.rst:21
 msgid ""
@@ -49,6 +54,10 @@ msgid ""
 "local Python guru or system administrator.  (E.g., :file:`/usr/local/python` "
 "is a popular alternative location.)"
 msgstr ""
+"در شل. [#]_ از آنجا که انتخاب محل نصب مفسر به تنظیمات نصب بستگی دارد، ممکن "
+"است در مسیرهای دیگری نیز قرار داشته باشد؛ در این صورت با مسئول سیستم یا فرد "
+"آشنا با پایتون در سیستم خود مشورت کنید. (برای مثال، :file:`/usr/local/"
+"python` نیز محل رایج دیگری برای نصب است.)"
 
 #: ../../tutorial/interpreter.rst:26
 msgid ""
@@ -58,6 +67,11 @@ msgid ""
 "can use the :file:`py` command. See :ref:`setting-envvars` for other ways to "
 "launch Python."
 msgstr ""
+"در ویندوز، اگر پایتون را از :ref:`Microsoft Store <windows-store>` نصب کرده "
+"باشید، دستور |python_x_dot_y_literal| در دسترس خواهد بود. اگر :ref:`راه‌انداز "
+"py.exe <launcher>` را نیز نصب کرده باشید، می‌توانید از دستور :file:`py` "
+"استفاده کنید. برای روش‌های دیگر اجرای پایتون، به بخش :ref:`setting-envvars` "
+"مراجعه کنید."
 
 #: ../../tutorial/interpreter.rst:31
 msgid ""
@@ -66,6 +80,9 @@ msgid ""
 "exit status.  If that doesn't work, you can exit the interpreter by typing "
 "the following command: ``quit()``."
 msgstr ""
+"با وارد کردن نویسهٔ پایان فایل (:kbd:`Control-D` در یونیکس و :kbd:`Control-Z` "
+"در ویندوز) در اعلان اصلی، مفسر با کد خروج صفر خاتمه می‌یابد. اگر این روش کار "
+"نکرد، می‌توانید با وارد کردن دستور ``quit()`` از مفسر خارج شوید."
 
 #: ../../tutorial/interpreter.rst:36
 msgid ""
@@ -79,6 +96,14 @@ msgid ""
 "available; you'll only be able to use backspace to remove characters from "
 "the current line."
 msgstr ""
+"ویژگی‌های ویرایش خط فرمان مفسر در بیشتر سیستم‌ها شامل ویرایش تعاملی، جایگزینی "
+"تاریخچه و تکمیل خودکار کد است. شاید سریع‌ترین راه برای بررسی پشتیبانی از "
+"ویرایش خط فرمان این باشد که در اعلان پایتون یک کلمه تایپ کنید و سپس کلید "
+"پیکان چپ (یا :kbd:`Control-b`) را فشار دهید. اگر مکان‌نما جابه‌جا شد، ویرایش "
+"خط فرمان پشتیبانی می‌شود؛ برای آشنایی با کلیدها به پیوست :ref:`tut-"
+"interacting` مراجعه کنید. اگر هیچ اتفاقی نیفتاد یا دنباله‌ای مانند ``^[[D`` "
+"یا ``^B`` نمایش داده شد، ویرایش خط فرمان در دسترس نیست و تنها می‌توانید با "
+"کلید Backspace نویسه‌های خط جاری را حذف کنید."
 
 #: ../../tutorial/interpreter.rst:46
 msgid ""
@@ -87,6 +112,10 @@ msgid ""
 "interactively; when called with a file name argument or with a file as "
 "standard input, it reads and executes a *script* from that file."
 msgstr ""
+"عملکرد مفسر تا حدی شبیه شل یونیکس است: اگر ورودی استاندارد آن به یک دستگاه "
+"tty متصل باشد، دستورات را به‌صورت تعاملی می‌خواند و اجرا می‌کند؛ اما اگر نام یک "
+"فایل یا خود فایل به‌عنوان ورودی استاندارد به آن داده شود، *اسکریپت* موجود در "
+"آن فایل را می‌خواند و اجرا می‌کند."
 
 #: ../../tutorial/interpreter.rst:51
 msgid ""
@@ -96,6 +125,11 @@ msgid ""
 "or other characters that are special to the shell, it is usually advised to "
 "quote *command* in its entirety."
 msgstr ""
+"روش دیگر برای اجرای مفسر، استفاده از دستور ``python -c command [arg] ...`` "
+"است که دستور(های) موجود در *command* را اجرا می‌کند؛ مشابه گزینهٔ :option:`-c` "
+"در شل. از آنجا که دستورات پایتون معمولاً شامل فاصله یا نویسه‌هایی هستند که "
+"برای شل معنای ویژه‌ای دارند، معمولاً توصیه می‌شود کل *command* را داخل نقل‌قول "
+"قرار دهید."
 
 #: ../../tutorial/interpreter.rst:57
 msgid ""
@@ -103,6 +137,10 @@ msgid ""
 "``python -m module [arg] ...``, which executes the source file for *module* "
 "as if you had spelled out its full name on the command line."
 msgstr ""
+"برخی از ماژول‌های پایتون را نیز می‌توان به‌صورت اسکریپت اجرا کرد. این کار با "
+"استفاده از دستور ``python -m module [arg] ...`` انجام می‌شود که فایل مبدأ "
+"مربوط به *module* را طوری اجرا می‌کند که گویی نام کامل آن را در خط فرمان وارد "
+"کرده‌اید."
 
 #: ../../tutorial/interpreter.rst:61
 msgid ""
@@ -110,14 +148,18 @@ msgid ""
 "script and enter interactive mode afterwards.  This can be done by "
 "passing :option:`-i` before the script."
 msgstr ""
+"هنگامی که یک فایل اسکریپت اجرا می‌شود، گاهی مفید است که پس از پایان اجرای "
+"اسکریپت وارد حالت تعاملی شوید. این کار با قرار دادن گزینهٔ :option:`-i` پیش "
+"از نام اسکریپت امکان‌پذیر است."
 
 #: ../../tutorial/interpreter.rst:65
 msgid "All command line options are described in :ref:`using-on-general`."
 msgstr ""
+"همهٔ گزینه‌های خط فرمان در بخش :ref:`using-on-general` توضیح داده شده‌اند."
 
 #: ../../tutorial/interpreter.rst:71
 msgid "Argument Passing"
-msgstr ""
+msgstr "ارسال آرگومان‌ها"
 
 #: ../../tutorial/interpreter.rst:73
 msgid ""
@@ -134,10 +176,22 @@ msgid ""
 "interpreter's option processing but left in ``sys.argv`` for  the command or "
 "module to handle."
 msgstr ""
+"اگر مفسر نام اسکریپت و آرگومان‌های پس از آن را دریافت کند، آن‌ها را به فهرستی "
+"از رشته‌ها تبدیل کرده و در متغیر ``argv`` از ماژول ``sys`` قرار می‌دهد. با "
+"اجرای ``import sys`` می‌توانید به این فهرست دسترسی داشته باشید. طول این فهرست "
+"همیشه حداقل یک است؛ اگر هیچ اسکریپت یا آرگومانی ارائه نشود، مقدار "
+"``sys.argv[0]`` یک رشتهٔ خالی خواهد بود. اگر نام اسکریپت ``'-'`` باشد (به "
+"معنی ورودی استاندارد)، مقدار ``sys.argv[0]`` برابر ``'-'`` خواهد بود. هنگام "
+"استفاده از :option:`-c` *command*، مقدار ``sys.argv[0]`` برابر ``'-c'`` است. "
+"هنگام استفاده از :option:`-m` *module*، مقدار ``sys.argv[0]`` برابر نام کامل "
+"ماژول پیدا‌شده خواهد بود. گزینه‌هایی که پس از :option:`-c` *command* "
+"یا :option:`-m` *module* قرار می‌گیرند، توسط مفسر پایتون پردازش نمی‌شوند و "
+"بدون تغییر در ``sys.argv`` باقی می‌مانند تا خود دستور یا ماژول آن‌ها را پردازش "
+"کند."
 
 #: ../../tutorial/interpreter.rst:89
 msgid "Interactive Mode"
-msgstr ""
+msgstr "حالت تعاملی"
 
 #: ../../tutorial/interpreter.rst:91
 msgid ""
@@ -148,6 +202,12 @@ msgid ""
 "dots (``...``). The interpreter prints a welcome message stating its version "
 "number and a copyright notice before printing the first prompt:"
 msgstr ""
+"وقتی دستورات از یک tty خوانده می‌شوند، گفته می‌شود که مفسر در *حالت تعاملی* "
+"قرار دارد. در این حالت، مفسر برای دریافت دستور بعدی، *اعلان اصلی* را نمایش "
+"می‌دهد که معمولاً شامل سه علامت بزرگ‌تر از (``>>>``) است. برای خطوط ادامه نیز "
+"*اعلان ثانویه* را نمایش می‌دهد که به‌طور پیش‌فرض سه نقطه (``...``) است. پیش از "
+"نمایش اولین اعلان، مفسر پیام خوشامدگویی شامل شمارهٔ نسخه و اطلاعیهٔ حق نشر را "
+"چاپ می‌کند:"
 
 #: ../../tutorial/interpreter.rst:98
 msgid ""
@@ -158,12 +218,20 @@ msgid ""
 "information.\n"
 ">>>"
 msgstr ""
+"$ python3.14\n"
+"Python 3.14 (default, April 4 2024, 09:25:04)\n"
+"[GCC 10.2.0] on linux\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
+">>>"
 
 #: ../../tutorial/interpreter.rst:108
 msgid ""
 "Continuation lines are needed when entering a multi-line construct. As an "
 "example, take a look at this :keyword:`if` statement::"
 msgstr ""
+"خطوط ادامه زمانی لازم هستند که در حال وارد کردن یک سازهٔ چندخطی باشید. برای "
+"نمونه، به دستور :keyword:`if` زیر توجه کنید::"
 
 #: ../../tutorial/interpreter.rst:111
 msgid ""
@@ -173,18 +241,24 @@ msgid ""
 "...\n"
 "Be careful not to fall off!"
 msgstr ""
+">>> the_world_is_flat = True\n"
+">>> if the_world_is_flat:\n"
+"...     print(\"Be careful not to fall off!\")\n"
+"...\n"
+"Be careful not to fall off!"
 
 #: ../../tutorial/interpreter.rst:118
 msgid "For more on interactive mode, see :ref:`tut-interac`."
 msgstr ""
+"برای اطلاعات بیشتر دربارهٔ حالت تعاملی، به بخش :ref:`tut-interac` مراجعه کنید."
 
 #: ../../tutorial/interpreter.rst:124
 msgid "The Interpreter and Its Environment"
-msgstr ""
+msgstr "مفسر و محیط آن"
 
 #: ../../tutorial/interpreter.rst:130
 msgid "Source Code Encoding"
-msgstr ""
+msgstr "کدگذاری فایل‌های مبدأ"
 
 #: ../../tutorial/interpreter.rst:132
 msgid ""
@@ -196,30 +270,43 @@ msgid ""
 "properly, your editor must recognize that the file is UTF-8, and it must use "
 "a font that supports all the characters in the file."
 msgstr ""
+"به‌طور پیش‌فرض، فایل‌های مبدأ پایتون با کدگذاری UTF-8 در نظر گرفته می‌شوند. در "
+"این کدگذاری، می‌توان نویسه‌های بیشتر زبان‌های دنیا را به‌طور هم‌زمان در رشته‌ها، "
+"شناسه‌ها و توضیحات به کار برد؛ هرچند کتابخانهٔ استاندارد فقط از نویسه‌های ASCII "
+"برای شناسه‌ها استفاده می‌کند، که این رویه برای کدهای قابل‌حمل نیز توصیه می‌شود. "
+"برای نمایش صحیح همهٔ این نویسه‌ها، ویرایشگر شما باید فایل را به‌عنوان UTF-8 "
+"تشخیص دهد و از قلمی استفاده کند که از تمام نویسه‌های موجود در فایل پشتیبانی "
+"کند."
 
 #: ../../tutorial/interpreter.rst:140
 msgid ""
 "To declare an encoding other than the default one, a special comment line "
 "should be added as the *first* line of the file.  The syntax is as follows::"
 msgstr ""
+"برای اعلام کدگذاری‌ای غیر از کدگذاری پیش‌فرض، باید یک خط توضیح ویژه را به‌عنوان "
+"*اولین* خط فایل اضافه کنید. قالب آن به شکل زیر است::"
 
 #: ../../tutorial/interpreter.rst:143
 msgid "# -*- coding: encoding -*-"
-msgstr ""
+msgstr "# -*- coding: encoding -*-"
 
 #: ../../tutorial/interpreter.rst:145
 msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
 msgstr ""
+"که در آن *encoding* یکی از کدگذاری‌های معتبر پشتیبانی‌شده توسط "
+"ماژول :mod:`codecs` است."
 
 #: ../../tutorial/interpreter.rst:147
 msgid ""
 "For example, to declare that Windows-1252 encoding is to be used, the first "
 "line of your source code file should be::"
 msgstr ""
+"برای مثال، اگر بخواهید از کدگذاری Windows-1252 استفاده کنید، اولین خط فایل "
+"مبدأ شما باید به شکل زیر باشد::"
 
 #: ../../tutorial/interpreter.rst:150
 msgid "# -*- coding: cp1252 -*-"
-msgstr ""
+msgstr "# -*- coding: cp1252 -*-"
 
 #: ../../tutorial/interpreter.rst:152
 msgid ""
@@ -227,16 +314,21 @@ msgid ""
 "a :ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
 "declaration should be added as the second line of the file.  For example::"
 msgstr ""
+"یک استثنا برای قانون *اولین خط* زمانی است که فایل مبدأ با یک :ref:`خط "
+"«shebang» یونیکس <tut-scripts>` آغاز شود. در این صورت، اعلان کدگذاری باید در "
+"خط دوم فایل قرار گیرد. برای مثال::"
 
 #: ../../tutorial/interpreter.rst:156
 msgid ""
 "#!/usr/bin/env python3\n"
 "# -*- coding: cp1252 -*-"
 msgstr ""
+"#!/usr/bin/env python3\n"
+"# -*- coding: cp1252 -*-"
 
 #: ../../tutorial/interpreter.rst:160
 msgid "Footnotes"
-msgstr ""
+msgstr "پانویس‌ها"
 
 #: ../../tutorial/interpreter.rst:161
 msgid ""
@@ -244,3 +336,5 @@ msgid ""
 "executable named ``python``, so that it does not conflict with a "
 "simultaneously installed Python 2.x executable."
 msgstr ""
+"در یونیکس، مفسر Python 3.x به‌طور پیش‌فرض با نام اجرایی ``python`` نصب نمی‌شود "
+"تا با نسخهٔ هم‌زمان نصب‌شدهٔ Python 2.x تداخلی نداشته باشد."
