@@ -3,7 +3,7 @@
 scripts/generate_status_table.py
 
 Regenerate the per-file translation status table between marker comments in
-a markdown file (default: SOURCE.md) from the current state of all .po
+a markdown file (default: STATUS.md) from the current state of all .po
 files. Meant to run on a schedule so the table never goes stale, replacing
 the old Transifex-exported report.
 
@@ -11,7 +11,7 @@ Requires: pip install polib
 
 Usage:
     python3 scripts/generate_status_table.py
-    python3 scripts/generate_status_table.py --file SOURCE.md
+    python3 scripts/generate_status_table.py --file STATUS.md
 """
 import argparse
 import re
@@ -58,7 +58,7 @@ def build_table() -> str:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--file", default="SOURCE.md",
+    parser.add_argument("--file", default="STATUS.md",
                          help="Markdown file containing the marker block to update")
     args = parser.parse_args()
 
