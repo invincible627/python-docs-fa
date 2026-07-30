@@ -492,7 +492,7 @@ msgid ""
 "eliminate cycles).  The memory is freed shortly after the last reference to it has been eliminated."
 msgstr ""
 "پایتون مدیریت حافظه را به‌صورت خودکار انجام می‌دهد (برای بیشتر اشیا با استفاده از شمارش ارجاع‌ها و :term:`garbage collection` "
-"برای حذف چرخه‌ها). حافظه اندکی پس از حذف آخرین ارجاع به یک شی آزاد می‌شود."
+"(جمع‌آوری زباله) برای حذف چرخه‌ها). حافظه اندکی پس از حذف آخرین ارجاع به یک شی آزاد می‌شود."
 
 #: ../../tutorial/stdlib2.rst:254
 msgid ""
