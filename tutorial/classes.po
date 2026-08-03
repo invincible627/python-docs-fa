@@ -1184,16 +1184,27 @@ msgid ""
 "itself defined in this global scope, and in the next section we'll find some "
 "good reasons why a method would want to reference its own class."
 msgstr ""
+"متدها ممکن است به نام‌های سراسری به همان روشی که توابع معمولی اشاره می‌کنند، ارجاع دهند.  "
+"محدوده‌ی سراسری مرتبط با یک متد، ماژولی است که شامل "
+"تعریف آن است. (یک کلاس هرگز به عنوان محدوده‌ی سراسری استفاده نمی‌شود.)  اگرچه به ندرت "
+"دلیل خوبی برای استفاده از داده‌های سراسری در یک متد یافت می‌شود، اما کاربردهای "
+"مشروع زیادی برای محدوده‌ی سراسری وجود دارد: برای یک چیز، توابع و ماژول‌هایی "
+"که به محدوده‌ی سراسری ایمپورت شده‌اند، می‌توانند توسط متدها استفاده شوند، همچنین توابع "
+"و کلاس‌های تعریف‌شده در آن. معمولاً، کلاسی که شامل متد است، "
+"خود در این محدوده‌ی سراسری تعریف می‌شود، و در بخش بعدی دلایل خوبی "
+"خواهیم یافت که چرا یک متد ممکن است بخواهد به کلاس خودش ارجاع دهد."
 
 #: ../../tutorial/classes.rst:559
 msgid ""
 "Each value is an object, and therefore has a *class* (also called its "
 "*type*). It is stored as ``object.__class__``."
 msgstr ""
+"هر مقدار یک شیء است، و بنابراین دارای یک *کلاس* (که به آن "
+"*تایپ* نیز گفته می‌شود) می‌باشد. این مقدار به‌صورت ``object.__class__`` ذخیره می‌شود."
 
 #: ../../tutorial/classes.rst:566
 msgid "Inheritance"
-msgstr ""
+msgstr "ارث‌بری"
 
 #: ../../tutorial/classes.rst:568
 msgid ""
@@ -1201,6 +1212,9 @@ msgid ""
 "without supporting inheritance.  The syntax for a derived class definition "
 "looks like this::"
 msgstr ""
+"مسلماً، یک ویژگی زبانی بدون پشتیبانی از ارث‌بری، شایسته‌ی نام «کلاس» "
+"نخواهد بود. نحو (سینتکس) تعریف یک کلاس مشتق‌شده (derived class) "
+"به این شکل است::"
 
 #: ../../tutorial/classes.rst:572
 msgid ""
@@ -1211,6 +1225,12 @@ msgid ""
 "    .\n"
 "    <statement-N>"
 msgstr ""
+"class DerivedClassName(BaseClassName):\n"
+"    <statement-1>\n"
+"    .\n"
+"    .\n"
+"    .\n"
+"    <statement-N>"
 
 #: ../../tutorial/classes.rst:579
 msgid ""
@@ -1219,10 +1239,14 @@ msgid ""
 "class name, other arbitrary expressions are also allowed.  This can be "
 "useful, for example, when the base class is defined in another module::"
 msgstr ""
+"نام :class:`!BaseClassName` باید در فضای نامی (namespace) تعریف شده باشد که از "
+"محدوده‌ای (scope) که شامل تعریف کلاس مشتق‌شده است، قابل دسترسی باشد. به جای نام "
+"کلاس پایه، سایر عبارت‌های دلخواه (arbitrary expressions) نیز مجاز هستند. این "
+"می‌تواند مفید باشد، برای مثال، زمانی که کلاس پایه در ماژول دیگری تعریف شده است::"
 
 #: ../../tutorial/classes.rst:585
 msgid "class DerivedClassName(modname.BaseClassName):"
-msgstr ""
+msgstr "class DerivedClassName(modname.BaseClassName):"
 
 #: ../../tutorial/classes.rst:587
 msgid ""
@@ -1233,6 +1257,12 @@ msgid ""
 "rule is applied recursively if the base class itself is derived from some "
 "other class."
 msgstr ""
+"اجرای تعریف یک کلاس مشتق‌شده (derived class) به همان شیوه‌ای است که برای یک کلاس "
+"پایه انجام می‌شود. هنگامی که شیء کلاس ساخته می‌شود، کلاس پایه به خاطر سپرده می‌شود.  "
+"این (اطلاعات) برای حل کردن ارجاعات به ویژگی‌ها (attribute references) استفاده می‌شود: اگر ویژگی درخواستی "
+"در کلاس یافت نشود، جستجو در کلاس پایه ادامه می‌یابد.  این "
+"قاعده به‌صورت بازگشتی اعمال می‌شود اگر خود کلاس پایه از کلاس "
+"دیگری مشتق شده باشد."
 
 #: ../../tutorial/classes.rst:593
 msgid ""
@@ -1242,6 +1272,11 @@ msgid ""
 "searched, descending down the chain of base classes if necessary, and the "
 "method reference is valid if this yields a function object."
 msgstr ""
+"هیچ نکته‌ی خاصی درباره‌ی نمونه‌سازی (instantiation) کلاس‌های مشتق‌شده وجود ندارد: "
+"``DerivedClassName()`` یک نمونه‌ی جدید از کلاس ایجاد می‌کند.  ارجاع‌های متد "
+"به‌صورت زیر حل می‌شوند: ویژگی کلاس متناظر "
+"جستجو می‌شود، در صورت لزوم در زنجیره‌ی کلاس‌های پایه به پایین می‌رود، و "
+"ارجاع متد در صورتی معتبر است که این جستجو به یک شیء تابع منجر شود."
 
 #: ../../tutorial/classes.rst:599
 msgid ""
@@ -1251,6 +1286,11 @@ msgid ""
 "class may end up calling a method of a derived class that overrides it.  "
 "(For C++ programmers: all methods in Python are effectively ``virtual``.)"
 msgstr ""
+"کلاس‌های مشتق‌شده ممکن است متدهای کلاس‌های پایه‌ی خود را بازنویسی (override) کنند.  از آنجایی که متدها "
+"هنگام فراخوانی سایر متدهای همان شیء، امتیاز ویژه‌ای ندارند، یک "
+"متد از یک کلاس پایه که متد دیگری را که در همان کلاس پایه تعریف شده فراخوانی می‌کند، ممکن است "
+"در نهایت متدی از یک کلاس مشتق‌شده را فراخوانی کند که آن را بازنویسی کرده است.  "
+"(برای برنامه‌نویسان C++: تمام متدها در پایتون به‌طور مؤثر ``virtual`` هستند.)"
 
 #: ../../tutorial/classes.rst:605
 msgid ""
@@ -1261,10 +1301,16 @@ msgid ""
 "to clients as well.  (Note that this only works if the base class is "
 "accessible as ``BaseClassName`` in the global scope.)"
 msgstr ""
+"یک متد بازنویسی‌شده (override) در یک کلاس مشتق‌شده ممکن است در واقع بخواهد به جای "
+"اینکه صرفاً متد کلاس پایه را با همین نام جایگزین کند، آن را گسترش دهد. یک "
+"راه ساده برای فراخوانی مستقیم متد کلاس پایه وجود دارد: فقط "
+"``BaseClassName.methodname(self, arguments)`` را فراخوانی کنید.  این روش گاهی برای "
+"کاربران (clients) نیز مفید است.  (توجه داشته باشید که این روش تنها زمانی کار می‌کند که کلاس پایه "
+"به عنوان ``BaseClassName`` در محدوده‌ی سراسری (global scope) قابل دسترسی باشد.)"
 
 #: ../../tutorial/classes.rst:612
 msgid "Python has two built-in functions that work with inheritance:"
-msgstr ""
+msgstr "پایتون دو تابع داخلی دارد که با ارث‌بری کار می‌کنند:"
 
 #: ../../tutorial/classes.rst:614
 msgid ""
@@ -1272,6 +1318,9 @@ msgid ""
 "will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
 "derived from :class:`int`."
 msgstr ""
+"برای بررسی نوع یک نمونه (instance) از :func:`isinstance` استفاده کنید: ``isinstance(obj, int)`` "
+"تنها زمانی ``True`` خواهد بود که ``obj.__class__`` از نوع :class:`int` باشد یا کلاسی "
+"که از :class:`int` مشتق شده باشد."
 
 #: ../../tutorial/classes.rst:618
 msgid ""
@@ -1280,10 +1329,14 @@ msgid ""
 "``issubclass(float, int)`` is ``False`` since :class:`float` is not a "
 "subclass of :class:`int`."
 msgstr ""
+"برای بررسی ارث‌بری کلاس‌ها از :func:`issubclass` استفاده کنید: ``issubclass(bool, int)`` "
+"مقدار ``True`` است چون :class:`bool` زیرکلاسی از :class:`int` است.  با این حال، "
+"``issubclass(float, int)`` مقدار ``False`` است چون :class:`float` زیرکلاسی از "
+":class:`int` نیست."
 
 #: ../../tutorial/classes.rst:628
 msgid "Multiple Inheritance"
-msgstr ""
+msgstr "ارث‌بری چندگانه"
 
 #: ../../tutorial/classes.rst:630
 msgid ""
