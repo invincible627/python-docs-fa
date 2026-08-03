@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-08-02)
+(به‌روزرسانی: 2026-08-03)
 
 | File | Translated | Fuzzy |
 |:-----|:-----------:|:-----------:|
@@ -15,14 +15,14 @@
 | sphinx.po | 100.0% | 0.0% |
 | tutorial/appendix.po | 100.0% | 0.0% |
 | tutorial/appetite.po | 100.0% | 0.0% |
+| tutorial/errors.po | 100.0% | 0.0% |
 | tutorial/index.po | 100.0% | 0.0% |
 | tutorial/interactive.po | 100.0% | 0.0% |
 | tutorial/interpreter.po | 100.0% | 0.0% |
+| tutorial/stdlib.po | 100.0% | 0.0% |
 | tutorial/stdlib2.po | 100.0% | 0.0% |
 | tutorial/venv.po | 100.0% | 0.0% |
 | tutorial/whatnow.po | 100.0% | 0.0% |
-| tutorial/stdlib.po | 89.6% | 0.0% |
-| tutorial/errors.po | 21.9% | 0.0% |
 | c-api/allocation.po | 20.0% | 2.5% |
 | tutorial/classes.po | 18.1% | 0.0% |
 | c-api/dict.po | 1.8% | 0.9% |
