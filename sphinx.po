@@ -251,7 +251,7 @@ msgstr "منسوخ شده از نسخه‌ی %s، در نسخه‌ی %s حذف �
 
 #: ../../tools/templates/dummy.html:32
 msgid ":term:`Soft deprecated` since version %s"
-msgstr ":term:`منسوخ‌سازی نرم` از نسخه‌ی %s"
+msgstr ":term:`منسوخ‌سازی نرم <Soft deprecated>` از نسخه‌ی %s"
 
 #: ../../tools/templates/dummy.html:36
 msgid "in development"

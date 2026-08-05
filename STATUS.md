@@ -1,16 +1,28 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-07-27)
+(به‌روزرسانی: 2026-08-05)
 
 | File | Translated | Fuzzy |
 |:-----|:-----------:|:-----------:|
 | about.po | 100.0% | 0.0% |
+| bugs.po | 100.0% | 0.0% |
 | c-api/abstract.po | 100.0% | 0.0% |
+| contents.po | 100.0% | 0.0% |
+| copyright.po | 100.0% | 0.0% |
+| improve-page-nojs.po | 100.0% | 0.0% |
+| improve-page.po | 100.0% | 0.0% |
+| library/functions.po | 100.0% | 0.0% |
+| sphinx.po | 100.0% | 0.0% |
 | tutorial/appendix.po | 100.0% | 0.0% |
-| bugs.po | 93.5% | 3.2% |
-| tutorial/index.po | 66.7% | 11.1% |
-| library/functions.po | 22.9% | 0.6% |
-| tutorial/errors.po | 21.9% | 0.0% |
+| tutorial/appetite.po | 100.0% | 0.0% |
+| tutorial/errors.po | 100.0% | 0.0% |
+| tutorial/index.po | 100.0% | 0.0% |
+| tutorial/interactive.po | 100.0% | 0.0% |
+| tutorial/interpreter.po | 100.0% | 0.0% |
+| tutorial/stdlib.po | 100.0% | 0.0% |
+| tutorial/stdlib2.po | 100.0% | 0.0% |
+| tutorial/venv.po | 100.0% | 0.0% |
+| tutorial/whatnow.po | 100.0% | 0.0% |
 | c-api/allocation.po | 20.0% | 2.5% |
 | tutorial/classes.po | 18.1% | 0.0% |
 | c-api/dict.po | 1.8% | 0.9% |
@@ -89,8 +101,6 @@
 | c-api/utilities.po | 0.0% | 0.0% |
 | c-api/veryhigh.po | 0.0% | 0.0% |
 | c-api/weakref.po | 0.0% | 0.0% |
-| contents.po | 0.0% | 0.0% |
-| copyright.po | 0.0% | 0.0% |
 | deprecations/c-api-pending-removal-in-3.14.po | 0.0% | 0.0% |
 | deprecations/c-api-pending-removal-in-3.15.po | 0.0% | 0.0% |
 | deprecations/c-api-pending-removal-in-3.16.po | 0.0% | 0.0% |
@@ -152,8 +162,6 @@
 | howto/timerfd.po | 0.0% | 0.0% |
 | howto/unicode.po | 0.0% | 0.0% |
 | howto/urllib2.po | 0.0% | 0.0% |
-| improve-page-nojs.po | 0.0% | 0.0% |
-| improve-page.po | 0.0% | 0.0% |
 | installing/index.po | 0.0% | 0.0% |
 | library/__future__.po | 0.0% | 0.0% |
 | library/__main__.po | 0.0% | 0.0% |
@@ -491,20 +499,12 @@
 | reference/lexical_analysis.po | 0.0% | 0.0% |
 | reference/simple_stmts.po | 0.0% | 0.0% |
 | reference/toplevel_components.po | 0.0% | 0.0% |
-| sphinx.po | 0.0% | 0.0% |
-| tutorial/appetite.po | 0.0% | 0.0% |
 | tutorial/controlflow.po | 0.0% | 0.0% |
 | tutorial/datastructures.po | 0.0% | 0.0% |
 | tutorial/floatingpoint.po | 0.0% | 0.0% |
 | tutorial/inputoutput.po | 0.0% | 0.0% |
-| tutorial/interactive.po | 0.0% | 0.0% |
-| tutorial/interpreter.po | 0.0% | 0.0% |
 | tutorial/introduction.po | 0.0% | 0.0% |
 | tutorial/modules.po | 0.0% | 0.0% |
-| tutorial/stdlib.po | 0.0% | 0.0% |
-| tutorial/stdlib2.po | 0.0% | 0.0% |
-| tutorial/venv.po | 0.0% | 0.0% |
-| tutorial/whatnow.po | 0.0% | 0.0% |
 | using/android.po | 0.0% | 0.0% |
 | using/cmdline.po | 0.0% | 0.0% |
 | using/configure.po | 0.0% | 0.0% |

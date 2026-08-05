@@ -25,6 +25,6 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Action"
-          git add RESOURCE.md TEAM.md reports/ README.md
+          git add STATUS.md TEAM.md reports/ README.md
           git commit -m "Update translation statistics [skip ci]" || exit 0
           git push
