@@ -768,7 +768,7 @@ msgstr "متد اشیاء"
 
 #: ../../tutorial/classes.rst:358
 msgid "Usually, a method is called right after it is bound::"
-msgstr ""معمولاً، یک متد بلافاصله پس از اتصال فراخوانی می‌شود::""
+msgstr "معمولاً، یک متد بلافاصله پس از اتصال فراخوانی می‌شود::""
 
 #: ../../tutorial/classes.rst:360
 msgid "x.f()"
