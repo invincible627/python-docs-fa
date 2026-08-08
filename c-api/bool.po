@@ -47,7 +47,7 @@ msgid ""
 "Return true if *o* is of type :c:data:`PyBool_Type`.  This function always "
 "succeeds."
 msgstr ""
-"اگر *o* از نوع :c:data:`PyBool_Type` باشد، مقدار ``true`` را برمی‌گرداند. "
+"اگر *o* از نوع :c:data:`PyBool_Type` باشد، مقدار true را برمی‌گرداند. "
 "این تابع همیشه با موفقیت اجرا می‌شود."
 
 #: ../../c-api/bool.rst:28
@@ -56,11 +56,11 @@ msgid ""
 "is :term:`immortal`."
 msgstr ""
 "شیء ``False`` در پایتون. این شیء هیچ متدی ندارد و "
-":term:`جاودان (immortal)` است."
+":term:`immortal` است."
 
 #: ../../c-api/bool.rst:31
 msgid ":c:data:`Py_False` is :term:`immortal`."
-msgstr ":c:data:`Py_False` :term:`جاودان (immortal)` است."
+msgstr ":c:data:`Py_False` :term:`immortal` است."
 
 #: ../../c-api/bool.rst:37
 msgid ""
@@ -68,11 +68,11 @@ msgid ""
 "is :term:`immortal`."
 msgstr ""
 "شیء ``True`` در پایتون. این شیء هیچ متدی ندارد و "
-":term:`جاودان (immortal)` است."
+":term:`immortal` است."
 
 #: ../../c-api/bool.rst:40
 msgid ":c:data:`Py_True` is :term:`immortal`."
-msgstr ":c:data:`Py_True` :term:`جاودان (immortal)` است."
+msgstr ":c:data:`Py_True` :term:`immortal` است."
 
 #: ../../c-api/bool.rst:46
 msgid "Return :c:data:`Py_False` from a function."

@@ -31,7 +31,7 @@ msgstr "نسخه‌گذاری API و ABI"
 
 #: ../../c-api/apiabiversion.rst:11
 msgid "Build-time version constants"
-msgstr "ثابت‌های نسخه در زمان ساخت"
+msgstr "ثابتهای نسخه در زمان ساخت"
 
 #: ../../c-api/apiabiversion.rst:13
 msgid ""
@@ -39,7 +39,7 @@ msgid ""
 "correspond to the version code is **built** with. See :c:var:`Py_Version` "
 "for the version used at **run time**."
 msgstr ""
-"CPython شماره‌ی نسخه‌ی خود را در ماکروهای زیر در معرض دید قرار می‌دهد. توجه داشته باشید که این‌ها "
+"CPython شماره‌ی نسخه‌ی خود را در ماکروهای زیر در معرض دید قرار می‌دهد. توجه داشته باشید که اینها "
 "مربوط به نسخه‌ای هستند که کد با آن **ساخته (build)** شده است. برای نسخه‌ای که در **زمان اجرا (run time)** استفاده می‌شود، به :c:var:`Py_Version` مراجعه کنید."
 
 #: ../../c-api/apiabiversion.rst:17
@@ -50,15 +50,15 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:21
 msgid "The ``3`` in ``3.4.1a2``."
-msgstr "3 در ``3.4.1a2``."
+msgstr "``3`` در ``3.4.1a2``."
 
 #: ../../c-api/apiabiversion.rst:25
 msgid "The ``4`` in ``3.4.1a2``."
-msgstr "4 در ``3.4.1a2``."
+msgstr "``4`` در ``3.4.1a2``."
 
 #: ../../c-api/apiabiversion.rst:29
 msgid "The ``1`` in ``3.4.1a2``."
-msgstr "1 در ``3.4.1a2``."
+msgstr "``1`` در ``3.4.1a2``."
 
 #: ../../c-api/apiabiversion.rst:33
 msgid ""
