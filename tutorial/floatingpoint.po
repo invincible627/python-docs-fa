@@ -177,9 +177,10 @@ msgid ""
 "with 17 significant digits, ``0.10000000000000001``.   Starting with Python 3.1, Python "
 "(on most systems) is now able to choose the shortest of these and simply display ``0.1``."
 msgstr ""
-"در گذشته، اعلان پایتون و تابع داخلی \\:func:`repr` مقداری را با ۱۷ رقم معنادار انتخاب "
-"می‌کردند: ``0.10000000000000001``. از پایتون ۳٫۱ به بعد، پایتون (در بیشتر سیستم‌ها) قادر "
-"است کوتاه‌ترین مقدار از میان این نمایش‌ها را انتخاب کند و به‌سادگی ``0.1`` را نمایش دهد."
+"در گذشته، اعلان پایتون و تابع داخلی \:func:`repr` مقداری را با ۱۷ رقم "
+"معنادار انتخاب می‌کردند: `0.10000000000000001`. از پایتون ۳٫۱ به بعد، "
+"پایتون (در بیشتر سیستم‌ها) قادر است کوتاه‌ترین مقدار از میان این نمایش‌ها را "
+"انتخاب کند و به‌سادگی `0.1` را نمایش دهد."
 
 #: ../../tutorial/floatingpoint.rst:91
 msgid ""
@@ -251,8 +252,9 @@ msgid ""
 "any closer to the exact value of 3/10, then pre-rounding with :func:`round` function "
 "cannot help:"
 msgstr ""
-"همچنین، چون 0.1 نمی‌تواند به مقدار دقیق 1/10 نزدیک‌تر شود و 0.3 نیز نمی‌تواند به مقدار دقیق "
-"3/10 نزدیک‌تر شود، گرد کردن اولیه با تابع \\:func:`round` کمکی نمی‌کند:"
+"همچنین، چون 0.1 نمی‌تواند به مقدار دقیق 1/10 نزدیک‌تر شود و 0.3 نیز نمی‌تواند "
+"به مقدار دقیق 3/10 نزدیک‌تر شود، گرد کردن اولیه با تابع \:func:`round` "
+"کمکی نمی‌کند:"
 
 #: ../../tutorial/floatingpoint.rst:126
 msgid ""
@@ -268,7 +270,7 @@ msgid ""
 "the :func:`math.isclose` function can be useful for comparing inexact values:"
 msgstr ""
 "اگرچه این اعداد نمی‌توانند به مقادیر دقیق موردنظرشان نزدیک‌تر شوند، تابع "
-"\\:func:`math.isclose` می‌تواند برای مقایسهٔ مقادیر تقریبی مفید باشد:"
+"\:func:`math.isclose` می‌تواند برای مقایسهٔ مقادیر تقریبی مفید باشد:"
 
 #: ../../tutorial/floatingpoint.rst:134
 msgid ""
@@ -281,7 +283,7 @@ msgstr ""
 #: ../../tutorial/floatingpoint.rst:139
 msgid ""
 "Alternatively, the :func:`round` function can be used to compare rough approximations:"
-msgstr "روش دیگر این است که برای مقایسهٔ تقریب‌های کلی از تابع \\:func:`round` استفاده کنید:"
+msgstr "روش دیگر این است که برای مقایسهٔ تقریب‌های کلی از تابع \:func:`round` استفاده کنید:"
 
 #: ../../tutorial/floatingpoint.rst:142
 msgid ""
