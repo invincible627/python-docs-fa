@@ -163,8 +163,7 @@ msgstr ""
 
 #: ../../c-api/allocation.rst:83
 msgid "PyObject *foo = PyObject_CallNoArgs((PyObject *)&PyFoo_Type);"
-msgstr ""
-"PyObject *foo = PyObject_CallNoArgs((PyObject *)&PyFoo_Type);"
+msgstr "PyObject *foo = PyObject_CallNoArgs((PyObject *)&PyFoo_Type);"
 
 #: ../../c-api/allocation.rst:87 ../../c-api/allocation.rst:137
 #: ../../c-api/allocation.rst:184 ../../c-api/allocation.rst:186
@@ -258,19 +257,19 @@ msgstr "برای تخصیص و ایجاد ماژول‌های افزونه."
 
 #: ../../c-api/allocation.rst:157
 msgid "Soft-deprecated aliases"
-msgstr "نام‌های مستعار با منسوخ‌سازی نرم"
+msgstr "نامهای مستعار با منسوخ‌سازی نرم"
 
 #: ../../c-api/allocation.rst:161
 msgid ""
 "These are aliases to existing functions and macros. They exist solely for "
 "backwards compatibility."
 msgstr ""
-"این‌ها نام‌های مستعاری برای توابع و ماکروهای موجود هستند. آن‌ها صرفاً برای "
+"اینها نامهای مستعاری برای توابع و ماکروهای موجود هستند. آن‌ها صرفاً برای "
 "سازگاری با نسخه‌های قبلی وجود دارند."
 
 #: ../../c-api/allocation.rst:169
 msgid "Soft-deprecated alias"
-msgstr "نام‌های مستعار با منسوخ‌سازی نرم"
+msgstr "نامهای مستعار با منسوخ‌سازی نرم"
 
 #: ../../c-api/allocation.rst:170
 msgid "Function"

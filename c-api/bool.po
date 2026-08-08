@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../c-api/bool.rst:6
 msgid "Boolean Objects"
-msgstr "اشیاء بولی"
+msgstr "اشیاء بولین"
 
 #: ../../c-api/bool.rst:8
 msgid ""
@@ -29,7 +29,7 @@ msgid ""
 "normal creation and deletion functions don't apply to booleans.  The "
 "following macros are available, however."
 msgstr ""
-"مقدارهای بولین (Boolean) در پایتون به‌عنوان زیرکلاسی از اعداد صحیح پیاده‌سازی شده‌اند. "
+"مقدارهای بولین در پایتون به‌عنوان زیرکلاسی از اعداد صحیح پیاده‌سازی شده‌اند. "
 "تنها دو مقدار بولین وجود دارد: :c:data:`Py_False` و :c:data:`Py_True`. بنابراین، "
 "توابع معمول ایجاد و حذف برای مقدارهای بولین کاربرد ندارند. با این حال، "
 "ماکروهای زیر در دسترس هستند."

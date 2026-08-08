@@ -112,21 +112,21 @@ msgid ""
 "a :keyword:`try` statement."
 msgstr ""
 "فشردن کلید وقفه (که معمولاً :kbd:`Control-C` یا :kbd:`Delete` است) در اعلان "
-"اصلی یا فرعی، ورودی را لغو کرده و کاربر را به اعلان اصلی بازمی‌گرداند. "
+"اصلی یا فرعی، ورودی را لغو کرده و کاربر را به اعلان اصلی بازمی‌گرداند. [#]_ "
 "فشردن کلید وقفه در حین اجرای یک دستور، استثنای :exc:`KeyboardInterrupt` را "
 "ایجاد می‌کند که می‌توان آن را با دستور :keyword:`try` مدیریت کرد."
 
 #: ../../tutorial/appendix.rst:59
 msgid "Executable Python Scripts"
-msgstr "اسکریپت‌های اجرایی پایتون"
+msgstr "اسکریپتهای اجرایی پایتون"
 
 #: ../../tutorial/appendix.rst:61
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, like "
 "shell scripts, by putting the line ::"
 msgstr ""
-"در سیستم‌عامل‌های یونیکس مبتنی بر BSD، اسکریپت‌های پایتون می‌توانند مانند "
-"اسکریپت‌های شل به صورت مستقیم اجرایی شوند، با قرار دادن خط ::"
+"در سیستم‌عامل‌های یونیکس مبتنی بر BSD، اسکریپتهای پایتون می‌توانند مانند "
+"اسکریپتهای شل به صورت مستقیم اجرایی شوند، با قرار دادن خط ::"
 
 #: ../../tutorial/appendix.rst:64
 msgid "#!/usr/bin/env python3"
