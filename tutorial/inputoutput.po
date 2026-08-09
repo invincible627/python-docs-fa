@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-25 12:59+0330\n"
-"PO-Revision-Date: 2021-06-28 01:50+0000\n"
+"PO-Revision-Date: 2026-08-09 10:57+0330\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/python-doc/teams/5390/"
 "fa/)\n"
@@ -22,10 +22,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: ../../tutorial/inputoutput.rst:5
 msgid "Input and Output"
-msgstr ""
+msgstr "ورودی و خروجی"
 
 #: ../../tutorial/inputoutput.rst:7
 msgid ""
@@ -69,6 +70,10 @@ msgid ""
 ">>> f'Results of the {year} {event}'\n"
 "'Results of the 2016 Referendum'"
 msgstr ""
+">>> year = 2016\n"
+">>> event = 'Referendum'\n"
+">>> f'Results of the {year} {event}'\n"
+"'Results of the 2016 Referendum'"
 
 #: ../../tutorial/inputoutput.rst:37
 msgid ""
@@ -87,6 +92,11 @@ msgid ""
 ">>> '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)\n"
 "' 42572654 YES votes  49.67%'"
 msgstr ""
+">>> yes_votes = 42_572_654\n"
+">>> total_votes = 85_705_149\n"
+">>> percentage = yes_votes / total_votes\n"
+">>> '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)\n"
+"' 42572654 YES votes  49.67%'"
 
 #: ../../tutorial/inputoutput.rst:52
 msgid ""
@@ -125,7 +135,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:75
 msgid "Some examples::"
-msgstr ""
+msgstr "چند مثال::"
 
 #: ../../tutorial/inputoutput.rst:77
 msgid ""
@@ -150,6 +160,26 @@ msgid ""
 ">>> repr((x, y, ('spam', 'eggs')))\n"
 "\"(32.5, 40000, ('spam', 'eggs'))\""
 msgstr ""
+">>> s = 'Hello, world.'\n"
+">>> str(s)\n"
+"'Hello, world.'\n"
+">>> repr(s)\n"
+"\"'Hello, world.'\"\n"
+">>> str(1/7)\n"
+"'0.14285714285714285'\n"
+">>> x = 10 * 3.25\n"
+">>> y = 200 * 200\n"
+">>> s = 'The value of x is ' + repr(x) + ', and y is ' + repr(y) + '...'\n"
+">>> print(s)\n"
+"The value of x is 32.5, and y is 40000...\n"
+">>> # The repr() of a string adds string quotes and backslashes:\n"
+">>> hello = 'hello, world\\n'\n"
+">>> hellos = repr(hello)\n"
+">>> print(hellos)\n"
+"'hello, world\\n'\n"
+">>> # The argument to repr() may be any Python object:\n"
+">>> repr((x, y, ('spam', 'eggs')))\n"
+"\"(32.5, 40000, ('spam', 'eggs'))\""
 
 #: ../../tutorial/inputoutput.rst:98
 msgid ""
@@ -185,6 +215,9 @@ msgid ""
 ">>> print(f'The value of pi is approximately {math.pi:.3f}.')\n"
 "The value of pi is approximately 3.142."
 msgstr ""
+">>> import math\n"
+">>> print(f'The value of pi is approximately {math.pi:.3f}.')\n"
+"The value of pi is approximately 3.142."
 
 #: ../../tutorial/inputoutput.rst:130
 msgid ""
@@ -202,6 +235,13 @@ msgid ""
 "Jack       ==>       4098\n"
 "Dcab       ==>       7678"
 msgstr ""
+">>> table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}\n"
+">>> for name, phone in table.items():\n"
+"...     print(f'{name:10} ==> {phone:10d}')\n"
+"...\n"
+"Sjoerd     ==>       4127\n"
+"Jack       ==>       4098\n"
+"Dcab       ==>       7678"
 
 #: ../../tutorial/inputoutput.rst:141
 msgid ""
@@ -218,6 +258,11 @@ msgid ""
 ">>> print(f'My hovercraft is full of {animals!r}.')\n"
 "My hovercraft is full of 'eels'."
 msgstr ""
+">>> animals = 'eels'\n"
+">>> print(f'My hovercraft is full of {animals}.')\n"
+"My hovercraft is full of eels.\n"
+">>> print(f'My hovercraft is full of {animals!r}.')\n"
+"My hovercraft is full of 'eels'."
 
 #: ../../tutorial/inputoutput.rst:151
 msgid ""
@@ -246,6 +291,8 @@ msgid ""
 ">>> print('We are the {} who say \"{}!\"'.format('knights', 'Ni'))\n"
 "We are the knights who say \"Ni!\""
 msgstr ""
+">>> print('We are the {} who say \"{}!\"'.format('knights', 'Ni'))\n"
+"We are the knights who say \"Ni!\""
 
 #: ../../tutorial/inputoutput.rst:174
 msgid ""
@@ -262,6 +309,10 @@ msgid ""
 ">>> print('{1} and {0}'.format('spam', 'eggs'))\n"
 "eggs and spam"
 msgstr ""
+">>> print('{0} and {1}'.format('spam', 'eggs'))\n"
+"spam and eggs\n"
+">>> print('{1} and {0}'.format('spam', 'eggs'))\n"
+"eggs and spam"
 
 #: ../../tutorial/inputoutput.rst:184
 msgid ""
@@ -275,6 +326,9 @@ msgid ""
 "...       food='spam', adjective='absolutely horrible'))\n"
 "This spam is absolutely horrible."
 msgstr ""
+">>> print('This {food} is {adjective}.'.format(\n"
+"...       food='spam', adjective='absolutely horrible'))\n"
+"This spam is absolutely horrible."
 
 #: ../../tutorial/inputoutput.rst:191
 msgid "Positional and keyword arguments can be arbitrarily combined::"
@@ -286,6 +340,9 @@ msgid ""
 "...                                                    other='Georg'))\n"
 "The story of Bill, Manfred, and Georg."
 msgstr ""
+">>> print('The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred',\n"
+"...                                                    other='Georg'))\n"
+"The story of Bill, Manfred, and Georg."
 
 #: ../../tutorial/inputoutput.rst:197
 msgid ""
@@ -302,6 +359,10 @@ msgid ""
 "...       'Dcab: {0[Dcab]:d}'.format(table))\n"
 "Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 msgstr ""
+">>> table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}\n"
+">>> print('Jack: {0[Jack]:d}; Sjoerd: {0[Sjoerd]:d}; '\n"
+"...       'Dcab: {0[Dcab]:d}'.format(table))\n"
+"Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 
 #: ../../tutorial/inputoutput.rst:207
 msgid ""
@@ -316,6 +377,10 @@ msgid ""
 "{Dcab:d}'.format(**table))\n"
 "Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 msgstr ""
+">>> table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}\n"
+">>> print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: "
+"{Dcab:d}'.format(**table))\n"
+"Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 
 #: ../../tutorial/inputoutput.rst:214
 msgid ""
@@ -331,6 +396,10 @@ msgid ""
 ">>> print(message.format(**table))\n"
 "__name__: __main__; __doc__: None; __package__: None; __loader__: ..."
 msgstr ""
+">>> table = {k: str(v) for k, v in vars().items()}\n"
+">>> message = \" \".join([f'{k}: ' + '{' + k +'};' for k in table.keys()])\n"
+">>> print(message.format(**table))\n"
+"__name__: __main__; __doc__: None; __package__: None; __loader__: ..."
 
 #: ../../tutorial/inputoutput.rst:222
 msgid ""
@@ -354,6 +423,19 @@ msgid ""
 " 9  81  729\n"
 "10 100 1000"
 msgstr ""
+">>> for x in range(1, 11):\n"
+"...     print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))\n"
+"...\n"
+" 1   1    1\n"
+" 2   4    8\n"
+" 3   9   27\n"
+" 4  16   64\n"
+" 5  25  125\n"
+" 6  36  216\n"
+" 7  49  343\n"
+" 8  64  512\n"
+" 9  81  729\n"
+"10 100 1000"
 
 #: ../../tutorial/inputoutput.rst:239
 msgid ""
@@ -387,6 +469,21 @@ msgid ""
 " 9  81  729\n"
 "10 100 1000"
 msgstr ""
+">>> for x in range(1, 11):\n"
+"...     print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')\n"
+"...     # Note use of 'end' on previous line\n"
+"...     print(repr(x*x*x).rjust(4))\n"
+"...\n"
+" 1   1    1\n"
+" 2   4    8\n"
+" 3   9   27\n"
+" 4  16   64\n"
+" 5  25  125\n"
+" 6  36  216\n"
+" 7  49  343\n"
+" 8  64  512\n"
+" 9  81  729\n"
+"10 100 1000"
 
 #: ../../tutorial/inputoutput.rst:264
 msgid ""
@@ -421,6 +518,12 @@ msgid ""
 ">>> '3.14159265359'.zfill(5)\n"
 "'3.14159265359'"
 msgstr ""
+">>> '12'.zfill(5)\n"
+"'00012'\n"
+">>> '-3.14'.zfill(7)\n"
+"'-003.14'\n"
+">>> '3.14159265359'.zfill(5)\n"
+"'3.14159265359'"
 
 #: ../../tutorial/inputoutput.rst:288
 msgid "Old string formatting"
@@ -441,6 +544,9 @@ msgid ""
 ">>> print('The value of pi is approximately %5.3f.' % math.pi)\n"
 "The value of pi is approximately 3.142."
 msgstr ""
+">>> import math\n"
+">>> print('The value of pi is approximately %5.3f.' % math.pi)\n"
+"The value of pi is approximately 3.142."
 
 #: ../../tutorial/inputoutput.rst:301
 msgid ""
@@ -460,7 +566,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:319
 msgid ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
-msgstr ""
+msgstr ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
 
 #: ../../tutorial/inputoutput.rst:326
 msgid ""
@@ -516,6 +622,12 @@ msgid ""
 ">>> f.closed\n"
 "True"
 msgstr ""
+">>> with open('workfile', encoding=\"utf-8\") as f:\n"
+"...     read_data = f.read()\n"
+"\n"
+">>> # We can check that the file has been automatically closed.\n"
+">>> f.closed\n"
+"True"
 
 #: ../../tutorial/inputoutput.rst:366
 msgid ""
@@ -546,6 +658,11 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "ValueError: I/O operation on closed file."
 msgstr ""
+">>> f.close()\n"
+">>> f.read()\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"ValueError: I/O operation on closed file."
 
 #: ../../tutorial/inputoutput.rst:393
 msgid "Methods of File Objects"
@@ -576,6 +693,10 @@ msgid ""
 ">>> f.read()\n"
 "''"
 msgstr ""
+">>> f.read()\n"
+"'This is the entire file.\\n'\n"
+">>> f.read()\n"
+"''"
 
 #: ../../tutorial/inputoutput.rst:412
 msgid ""
@@ -596,6 +717,12 @@ msgid ""
 ">>> f.readline()\n"
 "''"
 msgstr ""
+">>> f.readline()\n"
+"'This is the first line of the file.\\n'\n"
+">>> f.readline()\n"
+"'Second line of the file\\n'\n"
+">>> f.readline()\n"
+"''"
 
 #: ../../tutorial/inputoutput.rst:426
 msgid ""
@@ -611,6 +738,11 @@ msgid ""
 "This is the first line of the file.\n"
 "Second line of the file"
 msgstr ""
+">>> for line in f:\n"
+"...     print(line, end='')\n"
+"...\n"
+"This is the first line of the file.\n"
+"Second line of the file"
 
 #: ../../tutorial/inputoutput.rst:435
 msgid ""
@@ -629,6 +761,8 @@ msgid ""
 ">>> f.write('This is a test\\n')\n"
 "15"
 msgstr ""
+">>> f.write('This is a test\\n')\n"
+"15"
 
 #: ../../tutorial/inputoutput.rst:444
 msgid ""
@@ -643,6 +777,10 @@ msgid ""
 ">>> f.write(s)\n"
 "18"
 msgstr ""
+">>> value = ('the answer', 42)\n"
+">>> s = str(value)  # convert the tuple to string\n"
+">>> f.write(s)\n"
+"18"
 
 #: ../../tutorial/inputoutput.rst:452
 msgid ""
@@ -676,6 +814,17 @@ msgid ""
 ">>> f.read(1)\n"
 "b'd'"
 msgstr ""
+">>> f = open('workfile', 'rb+')\n"
+">>> f.write(b'0123456789abcdef')\n"
+"16\n"
+">>> f.seek(5)      # Go to the 6th byte in the file\n"
+"5\n"
+">>> f.read(1)\n"
+"b'5'\n"
+">>> f.seek(-3, 2)  # Go to the 3rd byte before the end\n"
+"13\n"
+">>> f.read(1)\n"
+"b'd'"
 
 #: ../../tutorial/inputoutput.rst:475
 msgid ""
@@ -740,6 +889,10 @@ msgid ""
 ">>> json.dumps(x)\n"
 "'[1, \"simple\", \"list\"]'"
 msgstr ""
+">>> import json\n"
+">>> x = [1, 'simple', 'list']\n"
+">>> json.dumps(x)\n"
+"'[1, \"simple\", \"list\"]'"
 
 #: ../../tutorial/inputoutput.rst:523
 msgid ""
@@ -751,7 +904,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:527
 msgid "json.dump(x, f)"
-msgstr ""
+msgstr "json.dump(x, f)"
 
 #: ../../tutorial/inputoutput.rst:529
 msgid ""
@@ -761,7 +914,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:532
 msgid "x = json.load(f)"
-msgstr ""
+msgstr "x = json.load(f)"
 
 #: ../../tutorial/inputoutput.rst:535
 msgid ""
@@ -779,7 +932,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:544
 msgid ":mod:`pickle` - the pickle module"
-msgstr ""
+msgstr ":mod:`pickle` - ماژول پیکل"
 
 #: ../../tutorial/inputoutput.rst:546
 msgid ""
@@ -801,7 +954,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "string"
-msgstr ""
+msgstr "رشته"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted literal"
@@ -813,11 +966,11 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "f-string"
-msgstr ""
+msgstr "f-string"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "fstring"
-msgstr ""
+msgstr "fstring"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "built-in function"
@@ -837,8 +990,8 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:491
 msgid "module"
-msgstr ""
+msgstr "ماژول"
 
 #: ../../tutorial/inputoutput.rst:491
 msgid "json"
-msgstr ""
+msgstr "json"
