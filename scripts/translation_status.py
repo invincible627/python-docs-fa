@@ -32,7 +32,10 @@ def collect_files(paths):
     for arg in paths:
         p = Path(arg)
         if p.is_dir():
-            files.extend(sorted(p.rglob("*.po")))
+            for f in p.rglob("*.po"):
+                if any(part.startswith(".") for part in f.parts):
+                    continue
+                files.append(f)
         elif p.suffix == ".po":
             files.append(p)
     return files
