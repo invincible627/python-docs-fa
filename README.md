@@ -61,6 +61,6 @@ python3 scripts/translation_status.py --only-incomplete
 
 <!-- STATS_START -->
 ### مشارکت‌های کاربران
-![مشارکت‌های کاربران](reports/contributor_stats_latest.png)
+![نمودار مشارکت‌های کاربران؛ Revisto 3984، sepehr-rs 1571، danialbehzadi 677، invincible627 317، khosro_o 63، ParhamF 41، Ariyan_Bolandi 37، nikovinix7878 13، thaghgoo 12، Ramiz_222 10](reports/contributor_stats_latest.png)
 (به‌روزرسانی: 2026-08-14)
 <!-- STATS_END -->

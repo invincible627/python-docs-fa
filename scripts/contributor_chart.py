@@ -97,14 +97,21 @@ def draw_chart(data: list[tuple[str, int]], top_n: int) -> None:
     plt.tight_layout()
 
 
-def refresh_readme(chart_file: Path, dry_run: bool) -> bool:
+def refresh_readme(
+    chart_file: Path,
+    dry_run: bool,
+    top_contribs: list[tuple[str, int]],
+) -> bool:
     text = README_PATH.read_text(encoding="utf-8")
     date_iso = datetime.date.today().isoformat()
     rel = chart_file.relative_to(REPO_ROOT).as_posix()
+    alt = "نمودار مشارکت‌های کاربران؛ " + "، ".join(
+        f"{name} {count}" for name, count in top_contribs
+    )
     block = (
         f"{STATS_START}\n"
         "### مشارکت‌های کاربران\n"
-        f"![مشارکت‌های کاربران]({rel})\n"
+        f"![{alt}]({rel})\n"
         f"(به‌روزرسانی: {date_iso})\n"
         f"{STATS_END}"
     )
@@ -159,7 +166,7 @@ def main() -> None:
         print(f"Saved user contributions chart to {out_path}")
     plt.close()
 
-    refresh_readme(out_path, args.dry_run)
+    refresh_readme(out_path, args.dry_run, data)
 
 
 if __name__ == "__main__":
