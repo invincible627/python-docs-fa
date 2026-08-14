@@ -661,7 +661,7 @@ msgid ""
 "two positional arguments and one keyword argument: ``open(filename, mode, "
 "encoding=None)``"
 msgstr ""
-:func:`open` یک :term:`file object` بازمی‌گرداند و معمولاً با "
+":func:`open` یک :term:`file object` بازمی‌گرداند و معمولاً با "
 "دو آرگومان موقعیتی و یک آرگومان کلیدواژه‌ای استفاده می‌شود: ``open(filename, mode, "
 "encoding=None)``"
 
