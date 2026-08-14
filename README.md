@@ -61,6 +61,6 @@ python3 scripts/translation_status.py --only-incomplete
 
 <!-- STATS_START -->
 ### مشارکت‌های کاربران
-![مشارکت‌های کاربران](reports/contributor_stats_2025_07_12.png)
-(به‌روزرسانی: 2025-07-12)
+![مشارکت‌های کاربران](reports/contributor_stats_2026_08_14.png)
+(به‌روزرسانی: 2026-08-14)
 <!-- STATS_END -->

@@ -71,7 +71,7 @@ SKIP_DIRS = {".git", ".cpython-src", ".venv", "__pycache__", "venv"}
 
 TEAMMD_ROW_RE = re.compile(
     r'^\|\s*(?P<user>[^|]+?)\s*\|\s*(?P<role>[^|]+?)\s*\|\s*'
-    r'(?P<t>\d+(?:\s*\([^)]*\))?)\s*\|\s*(?P<r>\d+)\s*\|\s*(?P<p>\d+)\s*\|$'
+    r'(?P<t>\d+(?:\s*\([^)]*\))?)\s*\|$'
 )
 
 
@@ -290,6 +290,26 @@ def compute_counts(paths: list[str]) -> dict[str, int]:
     return dict(counts)
 
 
+def teammd_totals() -> dict[str, int]:
+    """Return {username: translated count} from TEAM.md.
+
+    TEAM.md is the canonical contributor record: the nightly run updates it
+    from git blame for git-visible contributors and preserves the Transifex-era
+    counts (including restored numbers) for everyone else, so this captures
+    both eras.
+    """
+    path = REPO_ROOT / "TEAM.md"
+    totals: dict[str, int] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        m = TEAMMD_ROW_RE.match(line)
+        if not m:
+            continue
+        t = int(m.group("t").split()[0])
+        if t > 0:
+            totals[m.group("user")] = t
+    return totals
+
+
 # ---------------------------------------------------------------------------
 # Output
 # ---------------------------------------------------------------------------
@@ -304,16 +324,21 @@ def print_report(counts: dict[str, int]) -> None:
 
 
 def update_teammd(counts: dict[str, int]) -> None:
-    """Rewrite the Translated column in TEAM.md; append rows for new handles."""
+    """Update the Translated column in TEAM.md; append rows for new handles.
+
+    An existing count is never decreased: git-blame attribution only grows over
+    time and can't observe Transifex-era work, so taking the max preserves
+    restored numbers (e.g. Revisto's) across nightly runs.
+    """
     path = REPO_ROOT / "TEAM.md"
     lines = path.read_text(encoding="utf-8").splitlines()
 
     # Build an index of existing rows by username.
-    rows: dict[str, tuple[int, str, str, str]] = {}
+    rows: dict[str, tuple[int, str, int]] = {}
     for i, line in enumerate(lines):
         m = TEAMMD_ROW_RE.match(line)
         if m:
-            rows[m.group("user")] = (i, m.group("role"), m.group("r"), m.group("p"))
+            rows[m.group("user")] = (i, m.group("role"), int(m.group("t").split()[0]))
 
     touched: list[str] = []
     new_rows: list[str] = []
@@ -322,12 +347,15 @@ def update_teammd(counts: dict[str, int]) -> None:
         if user == "(unassigned)" or count <= 0:
             continue
         if user in rows:
-            i, role, r, p = rows[user]
-            lines[i] = f"| {user} | {role} | {count} | {r} | {p} |"
+            i, role, prev = rows[user]
+            keep = max(prev, count)
+            if keep == prev:
+                continue
+            lines[i] = f"| {user} | {role} | {keep} |"
             touched.append(user)
         else:
             role = NEW_ROW_ROLES.get(user, "translator")
-            new_rows.append(f"| {user} | {role} | {count} | 0 | 0 |")
+            new_rows.append(f"| {user} | {role} | {count} |")
             touched.append(user)
 
     if new_rows:

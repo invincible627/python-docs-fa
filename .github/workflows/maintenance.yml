@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install polib
+        run: pip install polib matplotlib
 
       - name: Update translation status table
         run: python3 scripts/generate_status_table.py
@@ -37,11 +37,14 @@ jobs:
       - name: Update TEAM.md contributor counts
         run: python3 scripts/team_stats.py --update-teammd
 
+      - name: Update contributor chart and README stats block
+        run: python3 scripts/contributor_chart.py
+
       - name: Commit if changed
-              run: |
+        run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
                 git add --all
                 git diff --staged --quiet && echo "No changes to commit" && exit 0
-                git commit -m "chore: update translation status, PO headers, and team credits"
+                git commit -m "chore: update translation status, PO headers, team credits, and contributor chart"
                 git push
