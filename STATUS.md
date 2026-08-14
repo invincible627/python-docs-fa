@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-08-13)
+(به‌روزرسانی: 2026-08-14)
 
 | File | Translated | Fuzzy |
 |:-----|:-----------:|:-----------:|
@@ -24,6 +24,7 @@
 | tutorial/index.po | 100.0% | 0.0% |
 | tutorial/interactive.po | 100.0% | 0.0% |
 | tutorial/interpreter.po | 100.0% | 0.0% |
+| tutorial/introduction.po | 100.0% | 0.0% |
 | tutorial/modules.po | 100.0% | 0.0% |
 | tutorial/stdlib.po | 100.0% | 0.0% |
 | tutorial/stdlib2.po | 100.0% | 0.0% |
@@ -504,7 +505,6 @@
 | reference/toplevel_components.po | 0.0% | 0.0% |
 | tutorial/controlflow.po | 0.0% | 0.0% |
 | tutorial/datastructures.po | 0.0% | 0.0% |
-| tutorial/introduction.po | 0.0% | 0.0% |
 | using/android.po | 0.0% | 0.0% |
 | using/cmdline.po | 0.0% | 0.0% |
 | using/configure.po | 0.0% | 0.0% |
