@@ -28,7 +28,11 @@ END_MARKER = "<!-- TRANSLATION_STATUS_END -->"
 
 def file_stats(path: Path):
     po = polib.pofile(str(path))
-    return len(po.translated_entries()), len(po.fuzzy_entries()), len(po.untranslated_entries())
+    return (
+        len(po.translated_entries()),
+        len(po.fuzzy_entries()),
+        len(po.untranslated_entries()),
+    )
 
 
 def build_table() -> str:
@@ -58,8 +62,11 @@ def build_table() -> str:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--file", default="STATUS.md",
-                         help="Markdown file containing the marker block to update")
+    parser.add_argument(
+        "--file",
+        default="STATUS.md",
+        help="Markdown file containing the marker block to update",
+    )
     args = parser.parse_args()
 
     target = REPO_ROOT / args.file

@@ -48,7 +48,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 BOT_AUTHOR_RE = re.compile(r"(?i)(github[^\w]*action|\[bot\])")
-BOT_EMAIL_RE = re.compile(r"(?i)(\[bot\]|@users\.noreply\.github\.com$|\+github-actions)")
+BOT_EMAIL_RE = re.compile(
+    r"(?i)(\[bot\]|@users\.noreply\.github\.com$|\+github-actions)"
+)
 TRANSLATOR_LINE_RE = re.compile(r"^# .+, \d{4}$")
 LAST_TRANSLATOR_RE = re.compile(r'^(\s*)"Last-Translator: .*\\n"\s*$')
 LANGUAGE_TEAM_START_RE = re.compile(r'^\s*"Language-Team: (.*)$')
@@ -58,10 +60,17 @@ def git_history(rel_path: str):
     """Return chronological (oldest first) ``(name <email>, year)`` rows for a file."""
     result = subprocess.run(
         [
-            "git", "-C", str(REPO_ROOT), "log",
-            "--format=%an|%ae|%ad", "--date=short", "--", rel_path,
+            "git",
+            "-C",
+            str(REPO_ROOT),
+            "log",
+            "--format=%an|%ae|%ad",
+            "--date=short",
+            "--",
+            rel_path,
         ],
-        capture_output=True, text=True,
+        capture_output=True,
+        text=True,
     )
     if result.returncode != 0:
         raise RuntimeError(f"git log failed for {rel_path}: {result.stderr.strip()}")
@@ -87,7 +96,9 @@ def update_comment_block(comment_lines, translators):
     """Rebuild the ``# Translators:`` section of the header comments."""
     lines = list(comment_lines)
     idx = next((i for i, l in enumerate(lines) if l.strip() == "# Translators:"), None)
-    listing = ["# Translators:"] + [f"# {identity}, {year}" for identity, year in translators]
+    listing = ["# Translators:"] + [
+        f"# {identity}, {year}" for identity, year in translators
+    ]
 
     if idx is not None:
         j = idx + 1
@@ -101,7 +112,9 @@ def update_comment_block(comment_lines, translators):
 
     # No Translators section yet: drop it in just before the "#, fuzzy" flag
     # (if any), otherwise at the end of the comment block.
-    flag = next((i for i, l in enumerate(lines) if l.lstrip().startswith("#,")), len(lines))
+    flag = next(
+        (i for i, l in enumerate(lines) if l.lstrip().startswith("#,")), len(lines)
+    )
     separated = flag > 0 and lines[flag - 1] in ("", "#")
     block = listing + ["#"]
     if not separated:
@@ -119,7 +132,9 @@ def existing_translators(comment_lines):
     an email address, otherwise ``("name", ...)``.
     """
     entries = []
-    idx = next((i for i, l in enumerate(comment_lines) if l.strip() == "# Translators:"), None)
+    idx = next(
+        (i for i, l in enumerate(comment_lines) if l.strip() == "# Translators:"), None
+    )
     if idx is None:
         return [], None, None
     j = idx + 1
@@ -128,7 +143,11 @@ def existing_translators(comment_lines):
         if m:
             identity = m.group(1).strip()
             em = re.search(r"<([^>]+)>", identity)
-            key = ("email", em.group(1).strip().lower()) if em else ("name", identity.lower())
+            key = (
+                ("email", em.group(1).strip().lower())
+                if em
+                else ("name", identity.lower())
+            )
             entries.append((comment_lines[j], key))
         j += 1
     return entries, idx, j
@@ -149,7 +168,9 @@ def merge_comment_block(comment_lines, translators):
     additions = []
     for identity, year in translators:
         em = re.search(r"<([^>]+)>", identity)
-        key = ("email", em.group(1).strip().lower()) if em else ("name", identity.lower())
+        key = (
+            ("email", em.group(1).strip().lower()) if em else ("name", identity.lower())
+        )
         if key in known:
             continue
         known.add(key)
@@ -161,7 +182,9 @@ def merge_comment_block(comment_lines, translators):
         return lines
     if not additions:
         return lines
-    flag = next((i for i, l in enumerate(lines) if l.lstrip().startswith("#,")), len(lines))
+    flag = next(
+        (i for i, l in enumerate(lines) if l.lstrip().startswith("#,")), len(lines)
+    )
     separated = flag > 0 and lines[flag - 1] in ("", "#")
     block = listing + ["#"]
     if not separated:
@@ -200,7 +223,11 @@ def update_header_entry(entry_lines, last_translator, language_team):
                 indent = re.match(r"^\s*", line).group(0)
                 value = m.group(1).rstrip('"')
                 end = start + 1
-                while end < len(lines) and not value.endswith(")") and not value.endswith(")\\n"):
+                while (
+                    end < len(lines)
+                    and not value.endswith(")")
+                    and not value.endswith(")\\n")
+                ):
                     value += strip_quotes(lines[end])
                     end += 1
                 lines[start:end] = [f'{indent}"Language-Team: {language_team}\\n"']
@@ -217,8 +244,12 @@ def collect_files(paths):
             for f in sorted(p.rglob("*.po")):
                 rel = f.relative_to(REPO_ROOT)
                 parts = set(rel.parts)
-                if (".git" in parts or ".cpython-src" in parts or "venv" in parts
-                        or ".venv" in parts):
+                if (
+                    ".git" in parts
+                    or ".cpython-src" in parts
+                    or "venv" in parts
+                    or ".venv" in parts
+                ):
                     continue
                 if any(part.startswith(".") for part in rel.parts):
                     continue
@@ -229,20 +260,37 @@ def collect_files(paths):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("paths", nargs="*", default=["."],
-                        help=".po files or directories to update (default: whole repo)")
-    parser.add_argument("--language-team", metavar="VALUE",
-                        help="set the Language-Team: header field to VALUE, e.g. "
-                             "'Persian (https://github.com/revisto/python-docs-fa/)'")
-    parser.add_argument("--no-credits", action="store_true",
-                        help="skip regenerating the # Translators: / Last-Translator: credits")
-    parser.add_argument("--merge", action="store_true",
-                        help="merge git identities into the existing # Translators: "
-                             "list instead of rebuilding it (preserves older credits)")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="show what would change without writing files")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        default=["."],
+        help=".po files or directories to update (default: whole repo)",
+    )
+    parser.add_argument(
+        "--language-team",
+        metavar="VALUE",
+        help="set the Language-Team: header field to VALUE, e.g. "
+        "'Persian (https://github.com/revisto/python-docs-fa/)'",
+    )
+    parser.add_argument(
+        "--no-credits",
+        action="store_true",
+        help="skip regenerating the # Translators: / Last-Translator: credits",
+    )
+    parser.add_argument(
+        "--merge",
+        action="store_true",
+        help="merge git identities into the existing # Translators: "
+        "list instead of rebuilding it (preserves older credits)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="show what would change without writing files",
+    )
     args = parser.parse_args()
 
     files = collect_files(args.paths)
@@ -260,7 +308,7 @@ def main():
             ei += 1
 
         comment = lines[:mi]
-        entry = lines[mi + 1:ei]  # skip the 'msgid ""' line itself
+        entry = lines[mi + 1 : ei]  # skip the 'msgid ""' line itself
         new_comment, new_entry = comment, entry
 
         if not args.no_credits:

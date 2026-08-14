@@ -77,7 +77,11 @@ def check_file(path: Path) -> int:
 
         if findings:
             problems += 1
-            loc = f" ({entry.occurrences[0][0]}:{entry.occurrences[0][1]})" if entry.occurrences else ""
+            loc = (
+                f" ({entry.occurrences[0][0]}:{entry.occurrences[0][1]})"
+                if entry.occurrences
+                else ""
+            )
             tag = " [fuzzy]" if entry.fuzzy else ""
             print(f"{path}{loc}{tag}: {'; '.join(findings)}")
             print(f"    msgid : {entry.msgid[:100]}")

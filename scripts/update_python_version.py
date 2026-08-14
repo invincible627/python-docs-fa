@@ -29,10 +29,18 @@ def run(cmd, cwd=None):
 def fetch_cpython(tag: str) -> None:
     if WORKDIR.exists():
         shutil.rmtree(WORKDIR)
-    run([
-        "git", "clone", "--depth", "1", "--branch", tag,
-        "https://github.com/python/cpython.git", str(WORKDIR),
-    ])
+    run(
+        [
+            "git",
+            "clone",
+            "--depth",
+            "1",
+            "--branch",
+            tag,
+            "https://github.com/python/cpython.git",
+            str(WORKDIR),
+        ]
+    )
 
 
 def build_gettext(tag: str) -> Path:
@@ -57,8 +65,10 @@ def merge_all(pot_root: Path) -> None:
         rel = po_path.relative_to(REPO_ROOT)
         pot_path = pot_root / rel.with_suffix(".pot")
         if not pot_path.exists():
-            print(f"  ! no matching .pot for {rel} "
-                  f"(page may have been removed/renamed upstream — review manually)")
+            print(
+                f"  ! no matching .pot for {rel} "
+                f"(page may have been removed/renamed upstream — review manually)"
+            )
             missing_pot += 1
             continue
         run(["msgmerge", "--update", "--backup=off", str(po_path), str(pot_path)])
@@ -70,11 +80,24 @@ def merge_all(pot_root: Path) -> None:
         po_path = REPO_ROOT / rel.with_suffix(".po")
         if not po_path.exists():
             po_path.parent.mkdir(parents=True, exist_ok=True)
-            run(["msginit", "--no-translator", "-l", "fa", "-i", str(pot_path), "-o", str(po_path)])
+            run(
+                [
+                    "msginit",
+                    "--no-translator",
+                    "-l",
+                    "fa",
+                    "-i",
+                    str(pot_path),
+                    "-o",
+                    str(po_path),
+                ]
+            )
             new_po += 1
 
-    print(f"\nSummary: {updated} .po files merged, {new_po} new .po files created, "
-          f"{missing_pot} .po files with no matching upstream source.")
+    print(
+        f"\nSummary: {updated} .po files merged, {new_po} new .po files created, "
+        f"{missing_pot} .po files with no matching upstream source."
+    )
 
 
 def check_po_files() -> None:
@@ -84,7 +107,8 @@ def check_po_files() -> None:
             continue
         result = subprocess.run(
             ["msgfmt", "--check", "-o", "/dev/null", str(po_path)],
-            capture_output=True, text=True,
+            capture_output=True,
+            text=True,
         )
         if result.returncode != 0:
             bad.append((po_path, result.stderr.strip()))
@@ -100,8 +124,11 @@ def check_po_files() -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("tag", help="CPython git tag to sync against, e.g. v3.14.6")
-    parser.add_argument("--keep-src", action="store_true",
-                         help="keep the scratch CPython checkout instead of deleting it")
+    parser.add_argument(
+        "--keep-src",
+        action="store_true",
+        help="keep the scratch CPython checkout instead of deleting it",
+    )
     args = parser.parse_args()
 
     print(f"== Fetching CPython {args.tag} ==")
@@ -119,8 +146,10 @@ def main() -> None:
     if not args.keep_src:
         shutil.rmtree(WORKDIR, ignore_errors=True)
 
-    print(f"\nDone. Review the diff, then commit as something like:\n"
-          f'  git commit -am "Sync translations with CPython {args.tag}"')
+    print(
+        f"\nDone. Review the diff, then commit as something like:\n"
+        f'  git commit -am "Sync translations with CPython {args.tag}"'
+    )
 
 
 if __name__ == "__main__":

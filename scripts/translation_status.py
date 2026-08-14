@@ -24,7 +24,11 @@ import polib
 
 def file_stats(path: Path):
     po = polib.pofile(str(path))
-    return len(po.translated_entries()), len(po.fuzzy_entries()), len(po.untranslated_entries())
+    return (
+        len(po.translated_entries()),
+        len(po.fuzzy_entries()),
+        len(po.untranslated_entries()),
+    )
 
 
 def collect_files(paths):
@@ -45,12 +49,23 @@ def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("paths", nargs="*", default=["."],
-                         help="Files or directories to scan (default: whole repo)")
-    parser.add_argument("--sort", choices=["percent", "untranslated", "name"], default="percent",
-                         help="Sort order (default: percent, least-translated first)")
-    parser.add_argument("--only-incomplete", action="store_true",
-                         help="Hide files that are already fully translated")
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        default=["."],
+        help="Files or directories to scan (default: whole repo)",
+    )
+    parser.add_argument(
+        "--sort",
+        choices=["percent", "untranslated", "name"],
+        default="percent",
+        help="Sort order (default: percent, least-translated first)",
+    )
+    parser.add_argument(
+        "--only-incomplete",
+        action="store_true",
+        help="Hide files that are already fully translated",
+    )
     parser.add_argument("--format", choices=["text", "markdown", "csv"], default="text")
     args = parser.parse_args()
 
@@ -94,7 +109,9 @@ def main():
         print("|---|---:|---:|---:|---:|")
         for path, t, fz, u, total, percent in rows:
             print(f"| `{path}` | {t} | {fz} | {u} | {percent:.1f}% |")
-        print(f"| **TOTAL** | **{total_t}** | **{total_fz}** | **{total_u}** | **{total_percent:.1f}%** |")
+        print(
+            f"| **TOTAL** | **{total_t}** | **{total_fz}** | **{total_u}** | **{total_percent:.1f}%** |"
+        )
         return
 
     name_width = max((len(r[0]) for r in rows), default=4)
@@ -104,9 +121,13 @@ def main():
     for path, t, fz, u, total, percent in rows:
         print(f"{path:<{name_width}}  {t:>10}  {fz:>6}  {u:>12}  {percent:>6.1f}%")
     print("-" * len(header))
-    print(f"{'TOTAL':<{name_width}}  {total_t:>10}  {total_fz:>6}  {total_u:>12}  {total_percent:>6.1f}%")
-    print(f"\n{len(rows)} file(s) shown. "
-          f"{sum(1 for r in rows if r[5] < 100)} file(s) not fully translated.")
+    print(
+        f"{'TOTAL':<{name_width}}  {total_t:>10}  {total_fz:>6}  {total_u:>12}  {total_percent:>6.1f}%"
+    )
+    print(
+        f"\n{len(rows)} file(s) shown. "
+        f"{sum(1 for r in rows if r[5] < 100)} file(s) not fully translated."
+    )
 
 
 if __name__ == "__main__":

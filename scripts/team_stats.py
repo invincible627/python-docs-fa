@@ -38,15 +38,16 @@ import polib
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 BOT_NAME_RE = re.compile(
-    r'github[^\w]*actions|\[bot\]|not committed yet', re.IGNORECASE)
+    r"github[^\w]*actions|\[bot\]|not committed yet", re.IGNORECASE
+)
 BOT_EMAIL_RE = re.compile(
-    r'github-actions|transifex|\[bot\]|@users\.noreply\.github\.com',
+    r"github-actions|transifex|\[bot\]|@users\.noreply\.github\.com",
     re.IGNORECASE,
 )
 MECHANICAL_SUBJECT_RE = re.compile(
-    r'^(?:sync\s+translations\s+with\s+cpython\b'
-    r'|update\s+\.po\s+files(?:\s*\(\d+\))?\s*$'
-    r'|update\s+farsi\s+translations\s+from\s+transifex\b)',
+    r"^(?:sync\s+translations\s+with\s+cpython\b"
+    r"|update\s+\.po\s+files(?:\s*\(\d+\))?\s*$"
+    r"|update\s+farsi\s+translations\s+from\s+transifex\b)",
     re.IGNORECASE,
 )
 
@@ -70,14 +71,15 @@ NEW_ROW_ROLES = {}
 SKIP_DIRS = {".git", ".cpython-src", ".venv", "__pycache__", "venv"}
 
 TEAMMD_ROW_RE = re.compile(
-    r'^\|\s*(?P<user>[^|]+?)\s*\|\s*(?P<role>[^|]+?)\s*\|\s*'
-    r'(?P<t>\d+(?:\s*\([^)]*\))?)\s*\|$'
+    r"^\|\s*(?P<user>[^|]+?)\s*\|\s*(?P<role>[^|]+?)\s*\|\s*"
+    r"(?P<t>\d+(?:\s*\([^)]*\))?)\s*\|$"
 )
 
 
 # ---------------------------------------------------------------------------
 # Privacy helper
 # ---------------------------------------------------------------------------
+
 
 def redact_email(email: str) -> str:
     """Return a partially redacted email for warning messages.
@@ -109,6 +111,7 @@ def redact_email(email: str) -> str:
 # Git helpers
 # ---------------------------------------------------------------------------
 
+
 def _is_mechanical(subject: str) -> bool:
     return bool(MECHANICAL_SUBJECT_RE.search(subject))
 
@@ -124,9 +127,18 @@ def git_blame_porcelain(path: Path) -> dict[str, dict]:
     ``lines`` (a set of 1-based line numbers blamed to that commit).
     """
     result = subprocess.run(
-        ["git", "-C", str(REPO_ROOT), "blame", "--porcelain",
-         "--", str(path.resolve().relative_to(REPO_ROOT))],
-        capture_output=True, text=True, check=False,
+        [
+            "git",
+            "-C",
+            str(REPO_ROOT),
+            "blame",
+            "--porcelain",
+            "--",
+            str(path.resolve().relative_to(REPO_ROOT)),
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if result.returncode != 0:
         return {}
@@ -137,7 +149,13 @@ def git_blame_porcelain(path: Path) -> dict[str, dict]:
     for raw_line in result.stdout.splitlines():
         # Commit header: "<40-char-hash> <orig-line> <result-line> [<num-lines>]"
         parts = raw_line.split()
-        if len(parts) >= 3 and len(parts[0]) == 40 and parts[0].isalnum() and parts[1].isdigit() and parts[2].isdigit():
+        if (
+            len(parts) >= 3
+            and len(parts[0]) == 40
+            and parts[0].isalnum()
+            and parts[1].isdigit()
+            and parts[2].isdigit()
+        ):
             h = parts[0]
             result_line = int(parts[2])
             current_hash = h
@@ -145,12 +163,12 @@ def git_blame_porcelain(path: Path) -> dict[str, dict]:
                 commits[h] = {"name": "", "email": "", "subject": "", "lines": set()}
             commits[h]["lines"].add(result_line)
         elif raw_line.startswith("author ") and current_hash:
-            commits[current_hash]["name"] = raw_line[len("author "):].strip()
+            commits[current_hash]["name"] = raw_line[len("author ") :].strip()
         elif raw_line.startswith("author-mail ") and current_hash:
-            email = raw_line[len("author-mail "):].strip().strip("<>")
+            email = raw_line[len("author-mail ") :].strip().strip("<>")
             commits[current_hash]["email"] = email.lower()
         elif raw_line.startswith("summary ") and current_hash:
-            commits[current_hash]["subject"] = raw_line[len("summary "):]
+            commits[current_hash]["subject"] = raw_line[len("summary ") :]
 
     return commits
 
@@ -211,6 +229,7 @@ def real_author_for_lines(
 # ---------------------------------------------------------------------------
 # .po file walking
 # ---------------------------------------------------------------------------
+
 
 def collect_files(paths: list[str]) -> list[Path]:
     files = []
@@ -314,6 +333,7 @@ def teammd_totals() -> dict[str, int]:
 # Output
 # ---------------------------------------------------------------------------
 
+
 def print_report(counts: dict[str, int]) -> None:
     total = sum(counts.values())
     print(f"Total non-fuzzy translated entries attributed: {total}\n")
@@ -371,17 +391,21 @@ def update_teammd(counts: dict[str, int]) -> None:
 # Entry point
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
-        "paths", nargs="*", default=["."],
+        "paths",
+        nargs="*",
+        default=["."],
         help="Files or directories to scan (default: whole repo)",
     )
     parser.add_argument(
-        "--update-teammd", action="store_true",
+        "--update-teammd",
+        action="store_true",
         help="rewrite TEAM.md from the computed counts",
     )
     args = parser.parse_args()
