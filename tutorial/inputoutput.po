@@ -34,10 +34,13 @@ msgid ""
 "printed in a human-readable form, or written to a file for future use. This "
 "chapter will discuss some of the possibilities."
 msgstr ""
+"روش‌های گوناگونی برای نمایش خروجی یک برنامه وجود دارد؛ داده‌ها را می‌توان به‌صورت قابل‌خواندن برای انسان چاپ کرد، یا برای استفاده‌ی بعدی در یک فایل نوشت. "
+"این فصل به بررسی برخی از این امکانات "
+"می‌پردازد."
 
 #: ../../tutorial/inputoutput.rst:15
 msgid "Fancier Output Formatting"
-msgstr ""
+msgstr "قالب‌بندی پیشرفته‌تر خروجی"
 
 #: ../../tutorial/inputoutput.rst:17
 msgid ""
@@ -47,6 +50,10 @@ msgid ""
 "file can be referenced as ``sys.stdout``. See the Library Reference for more "
 "information on this.)"
 msgstr ""
+"تا اینجا با دو روش برای نوشتن مقادیر آشنا شده‌ایم: *عبارت‌های دستوری* (expression statements) "
+"و تابع :func:`print`. (روش سوم استفاده از متد :meth:`~io.TextIOBase.write` "
+"اشیاء فایل است؛ فایل خروجی استاندارد را می‌توان با ``sys.stdout`` ارجاع داد. "
+"برای اطلاعات بیشتر به مرجع کتابخانه مراجعه کنید.)"
 
 #: ../../tutorial/inputoutput.rst:22
 msgid ""
@@ -54,6 +61,9 @@ msgid ""
 "simply printing space-separated values. There are several ways to format "
 "output."
 msgstr ""
+"اغلب، کنترل بیشتری بر قالب‌بندی خروجی خود می‌خواهید تا "
+"صرفاً چاپ مقادیر با فاصله از هم. روش‌های گوناگونی برای قالب‌بندی "
+"خروجی وجود دارد."
 
 #: ../../tutorial/inputoutput.rst:25
 msgid ""
@@ -62,6 +72,10 @@ msgid ""
 "Inside this string, you can write a Python expression between ``{`` and ``}"
 "`` characters that can refer to variables or literal values."
 msgstr ""
+"برای استفاده از :ref:`لیترال‌های رشته‌ای قالبی <tut-f-strings>`، یک رشته را با "
+"``f`` یا ``F`` قبل از علامت نقل‌قول یا نقل‌قول سه‌گانه آغاز کنید. "
+"درون این رشته، می‌توانید یک عبارت پایتون را بین کاراکترهای ``{`` و ``}`` "
+"بنویسید که می‌تواند به متغیرها یا مقادیر لیترال ارجاع دهد."
 
 #: ../../tutorial/inputoutput.rst:32
 msgid ""
@@ -83,6 +97,11 @@ msgid ""
 "need to provide the information to be formatted. In the following code block "
 "there are two examples of how to format variables:"
 msgstr ""
+"متد :meth:`str.format` رشته‌ها نیازمند تلاش دستی بیشتری است.  "
+"هنوز از ``{`` و ``}`` برای مشخص کردن جایی که یک متغیر جایگزین می‌شود استفاده می‌کنید "
+"و می‌توانید دستورالعمل‌های دقیق قالب‌بندی ارائه دهید، اما همچنین "
+"نیاز دارید اطلاعاتی که قرار است قالب‌بندی شوند را ارائه دهید. در بلوک کد زیر "
+"دو مثال از نحوه‌ی قالب‌بندی متغیرها آورده شده است:"
 
 #: ../../tutorial/inputoutput.rst:46
 msgid ""
@@ -105,6 +124,10 @@ msgid ""
 "100, with 2 decimal places and followed by a percent sign "
 "(see :ref:`formatspec` for details)."
 msgstr ""
+"توجه کنید که چگونه ``yes_votes`` با فاصله پر می‌شود و علامت منفی فقط "
+"برای اعداد منفی است. مثال همچنین ``percentage`` را ضرب‌شده در "
+"۱۰۰، با ۲ رقم اعشار و به دنبال آن علامت درصد چاپ می‌کند "
+"(برای جزئیات به :ref:`formatspec` مراجعه کنید)."
 
 #: ../../tutorial/inputoutput.rst:57
 msgid ""
@@ -113,6 +136,10 @@ msgid ""
 "string type has some methods that perform useful operations for padding "
 "strings to a given column width."
 msgstr ""
+"در نهایت، می‌توانید تمام کارهای مربوط به رشته را خودتان با استفاده از برش رشته "
+"و عملیات الحاق انجام دهید تا هر چیدمانی که تصور می‌کنید را ایجاد کنید.  نوع "
+"رشته دارای متدهایی است که عملیات مفیدی برای پر کردن "
+"رشته‌ها تا پهنای ستون مشخصی انجام می‌دهند."
 
 #: ../../tutorial/inputoutput.rst:62
 msgid ""
@@ -120,6 +147,9 @@ msgid ""
 "variables for debugging purposes, you can convert any value to a string with "
 "the :func:`repr` or :func:`str` functions."
 msgstr ""
+"وقتی به خروجی پیشرفته‌ای نیاز ندارید و فقط می‌خواهید نمایش سریعی از برخی "
+"متغیرها را برای اهداف اشکال‌زدایی داشته باشید، می‌توانید هر مقداری را با "
+"توابع :func:`repr` یا :func:`str` به رشته تبدیل کنید."
 
 #: ../../tutorial/inputoutput.rst:66
 msgid ""
@@ -132,6 +162,14 @@ msgid ""
 "structures like lists and dictionaries, have the same representation using "
 "either function.  Strings, in particular, have two distinct representations."
 msgstr ""
+"تابع :func:`str` برای بازگرداندن نمایشی از مقادیر طراحی شده است که "
+"تا حدی قابل‌خواندن برای انسان باشد، در حالی که :func:`repr` برای تولید "
+"نمایشی طراحی شده که توسط مفسر قابل خواندن باشد (یا اگر معادل نحوی وجود نداشته باشد، "
+"یک :exc:`SyntaxError` ایجاد می‌کند).  برای اشیایی که "
+"نمایش خاصی برای مصرف انسان ندارند، :func:`str` "
+"همان مقدار :func:`repr` را بازمی‌گرداند.  بسیاری از مقادیر، مانند اعداد یا "
+"ساختارهایی مانند لیست‌ها و دیکشنری‌ها، با استفاده از هر دو تابع نمایش یکسانی دارند.  "
+"به‌ویژه رشته‌ها، دو نمایش متمایز دارند."
 
 #: ../../tutorial/inputoutput.rst:75
 msgid "Some examples::"
@@ -189,10 +227,15 @@ msgid ""
 "``$x`` and replacing them with values from a dictionary. This syntax is easy "
 "to use, although it offers much less control for formatting."
 msgstr ""
+"ماژول :mod:`string` شامل پشتیبانی از یک رویکرد ساده‌ی قالب‌بندی (templating) است "
+"که بر اساس عبارت‌های منظم (regular expressions) و از طریق :class:`string.Template` کار می‌کند. این "
+"روشی دیگر برای جایگزینی مقادیر در رشته‌ها ارائه می‌دهد، با استفاده از جانشین‌هایی (placeholders) مانند "
+"``$x`` و جایگزینی آن‌ها با مقادیر یک دیکشنری. این نحو (سینتکس) "
+"آسان است، اگرچه کنترل بسیار کمتری برای قالب‌بندی ارائه می‌دهد."
 
 #: ../../tutorial/inputoutput.rst:115
 msgid "Formatted String Literals"
-msgstr ""
+msgstr "لیترال‌های رشته‌ای قالبی"
 
 #: ../../tutorial/inputoutput.rst:117
 msgid ""
@@ -201,6 +244,10 @@ msgid ""
 "prefixing the string with ``f`` or ``F`` and writing expressions as "
 "``{expression}``."
 msgstr ""
+":ref:`لیترال‌های رشته‌ای قالبی <f-strings>` (که به‌طور خلاصه f-strings نیز نامیده می‌شوند) "
+"به شما اجازه می‌دهند که مقدار عبارت‌های پایتون را درون یک رشته با "
+"پیشوندگذاری رشته با ``f`` یا ``F`` و نوشتن عبارت‌ها به صورت "
+"``{expression}`` بگنجانید."
 
 #: ../../tutorial/inputoutput.rst:122
 msgid ""
@@ -208,6 +255,9 @@ msgid ""
 "control over how the value is formatted. The following example rounds pi to "
 "three places after the decimal::"
 msgstr ""
+"یک مشخص‌کننده‌ی قالب اختیاری می‌تواند پس از عبارت بیاید. این امکان کنترل "
+"بیشتری بر نحوه‌ی قالب‌بندی مقدار فراهم می‌کند. مثال زیر، عدد پی (pi) را تا "
+"سه رقم اعشار گرد می‌کند::"
 
 #: ../../tutorial/inputoutput.rst:126
 msgid ""
@@ -224,6 +274,8 @@ msgid ""
 "Passing an integer after the ``':'`` will cause that field to be a minimum "
 "number of characters wide.  This is useful for making columns line up. ::"
 msgstr ""
+"گذراندن یک عدد صحیح بعد از ``':'`` باعث می‌شود که آن فیلد حداقل "
+"به آن اندازه کاراکتر عرض داشته باشد.  این برای هم‌تراز کردن ستون‌ها مفید است. ::"
 
 #: ../../tutorial/inputoutput.rst:133
 msgid ""
@@ -249,6 +301,9 @@ msgid ""
 "a'`` applies :func:`ascii`, ``'!s'`` applies :func:`str`, and ``'!r'`` "
 "applies :func:`repr`::"
 msgstr ""
+"اصلاح‌کننده‌های دیگری را می‌توان برای تبدیل مقدار قبل از قالب‌بندی استفاده کرد. ``'!"
+"a'`` تابع :func:`ascii` را اعمال می‌کند، ``'!s'`` تابع :func:`str` را، و ``'!r'`` "
+"تابع :func:`repr` را اعمال می‌کند::"
 
 #: ../../tutorial/inputoutput.rst:145
 msgid ""
@@ -270,6 +325,9 @@ msgid ""
 "expression, an equal sign, then the representation of the evaluated "
 "expression:"
 msgstr ""
+"مشخص‌کننده‌ی ``=`` را می‌توان برای گسترش یک عبارت به متن خود "
+"عبارت، یک علامت مساوی، و سپس نمایش عبارت ارزیابی‌شده "
+"استفاده کرد:"
 
 #: ../../tutorial/inputoutput.rst:160
 msgid ""
@@ -277,14 +335,17 @@ msgid ""
 "information on the ``=`` specifier. For a reference on these format "
 "specifications, see the reference guide for the :ref:`formatspec`."
 msgstr ""
+"برای اطلاعات بیشتر درباره‌ی مشخص‌کننده‌ی ``=``، به :ref:`عبارات خودمستند <bpo-36817-whatsnew>` "
+"مراجعه کنید. برای مرجعی در مورد این مشخصات قالب‌بندی، "
+"به راهنمای مرجع برای :ref:`formatspec` مراجعه کنید."
 
 #: ../../tutorial/inputoutput.rst:167
 msgid "The String format() Method"
-msgstr ""
+msgstr "متد قالب‌بندی رشته"
 
 #: ../../tutorial/inputoutput.rst:169
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
-msgstr ""
+msgstr "استفادهٔ پایه از متد :meth:`str.format` به این شکل است::"
 
 #: ../../tutorial/inputoutput.rst:171
 msgid ""
@@ -301,6 +362,10 @@ msgid ""
 "brackets can be used to refer to the position of the object passed into "
 "the :meth:`str.format` method. ::"
 msgstr ""
+"براکت‌ها و کاراکترهای داخل آن‌ها (که فیلدهای قالب نامیده می‌شوند) با "
+"اشیاء ارسال‌شده به متد :meth:`str.format` جایگزین می‌شوند.  از یک عدد درون "
+"براکت‌ها می‌توان برای اشاره به جایگاه شیء ارسال‌شده به "
+"متد :meth:`str.format` استفاده کرد. ::"
 
 #: ../../tutorial/inputoutput.rst:179
 msgid ""
@@ -319,6 +384,8 @@ msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values "
 "are referred to by using the name of the argument. ::"
 msgstr ""
+"اگر از آرگومان‌های کلیدواژه‌ای در متد :meth:`str.format` استفاده شود، مقادیر آن‌ها "
+"با استفاده از نام آرگومان ارجاع داده می‌شوند. ::"
 
 #: ../../tutorial/inputoutput.rst:187
 msgid ""
@@ -332,7 +399,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:191
 msgid "Positional and keyword arguments can be arbitrarily combined::"
-msgstr ""
+msgstr "آرگومان‌های موقعیتی و کلیدواژه‌ای را می‌توان به‌طور دلخواه ترکیب کرد::"
 
 #: ../../tutorial/inputoutput.rst:193
 msgid ""
@@ -351,6 +418,10 @@ msgid ""
 "instead of by position.  This can be done by simply passing the dict and "
 "using square brackets ``'[]'`` to access the keys. ::"
 msgstr ""
+"اگر یک رشته‌ی قالبی واقعاً طولانی دارید که نمی‌خواهید آن را تقسیم کنید، "
+"خوب می‌شد اگر می‌توانستید به متغیرهایی که قرار است قالب‌بندی شوند با نام "
+"ارجاع دهید، نه با جایگاه.  این کار را می‌توان با ارسال دیکشنری و "
+"استفاده از براکت‌های مربعی ``'[]'`` برای دسترسی به کلیدها انجام داد. ::"
 
 #: ../../tutorial/inputoutput.rst:202
 msgid ""
@@ -369,6 +440,8 @@ msgid ""
 "This could also be done by passing the ``table`` dictionary as keyword "
 "arguments with the ``**`` notation. ::"
 msgstr ""
+"این کار را همچنین می‌توان با ارسال دیکشنری ``table`` به‌عنوان آرگومان‌های "
+"کلیدواژه‌ای با نماد ``**`` انجام داد. ::"
 
 #: ../../tutorial/inputoutput.rst:210
 msgid ""
@@ -388,6 +461,9 @@ msgid ""
 "function :func:`vars`, which returns a dictionary containing all local "
 "variables::"
 msgstr ""
+"این به‌ویژه در ترکیب با تابع داخلی "
+":func:`vars` مفید است، که یک دیکشنری شامل همه‌ی متغیرهای محلی "
+"بازمی‌گرداند::"
 
 #: ../../tutorial/inputoutput.rst:217
 msgid ""
@@ -406,6 +482,8 @@ msgid ""
 "As an example, the following lines produce a tidily aligned set of columns "
 "giving integers and their squares and cubes::"
 msgstr ""
+"به عنوان مثال، خطوط زیر مجموعه‌ای از ستون‌های مرتب و هم‌تراز تولید می‌کنند "
+"که اعداد صحیح و مربع و مکعب آن‌ها را نشان می‌دهد::"
 
 #: ../../tutorial/inputoutput.rst:225
 msgid ""
@@ -442,14 +520,16 @@ msgid ""
 "For a complete overview of string formatting with :meth:`str.format`, "
 "see :ref:`formatstrings`."
 msgstr ""
+"برای دریافت نمای کلی کامل از قالب‌بندی رشته با :meth:`str.format`، "
+"به :ref:`formatstrings` مراجعه کنید."
 
 #: ../../tutorial/inputoutput.rst:244
 msgid "Manual String Formatting"
-msgstr ""
+msgstr "قالب‌بندی دستی"
 
 #: ../../tutorial/inputoutput.rst:246
 msgid "Here's the same table of squares and cubes, formatted manually::"
-msgstr ""
+msgstr "در اینجا همان جدول مربع‌ها و مکعب‌ها، به‌صورت دستی قالب‌بندی شده است::"
 
 #: ../../tutorial/inputoutput.rst:248
 msgid ""
@@ -490,6 +570,8 @@ msgid ""
 "(Note that the one space between each column was added by the "
 "way :func:`print` works: it always adds spaces between its arguments.)"
 msgstr ""
+"(توجه داشته باشید که یک فاصله بین هر ستون توسط "
+"نحوه‌ی کار تابع :func:`print` اضافه شده است: این تابع همیشه بین آرگومان‌های خود فاصله اضافه می‌کند.)"
 
 #: ../../tutorial/inputoutput.rst:267
 msgid ""
@@ -502,12 +584,22 @@ msgid ""
 "would be lying about a value. (If you really want truncation you can always "
 "add a slice operation, as in ``x.ljust(n)[:n]``.)"
 msgstr ""
+"متد :meth:`str.rjust` از اشیاء رشته، یک رشته را در "
+"یک فیلد با عرض مشخص، با پر کردن آن با فاصله از سمت چپ، راست‌چین می‌کند. روش‌های "
+"مشابهی :meth:`str.ljust` و :meth:`str.center` نیز وجود دارند. این متدها "
+"هیچ چیزی نمی‌نویسند، فقط یک رشته‌ی جدید بازمی‌گردانند. اگر رشته‌ی ورودی "
+"خیلی طولانی باشد، آن را کوتاه نمی‌کنند، بلکه آن را بدون تغییر بازمی‌گردانند؛ این کار "
+"چیدمان ستون‌های شما را به هم می‌ریزد، اما این معمولاً بهتر از حالت جایگزین است، که "
+"دروغ گفتن درباره‌ی یک مقدار است. (اگر واقعاً کوتاه‌سازی می‌خواهید، همیشه می‌توانید "
+"یک عملیات برش اضافه کنید، مانند ``x.ljust(n)[:n]``.)"
 
 #: ../../tutorial/inputoutput.rst:276
 msgid ""
 "There is another method, :meth:`str.zfill`, which pads a numeric string on "
 "the left with zeros.  It understands about plus and minus signs::"
 msgstr ""
+"روش دیگری نیز وجود دارد، :meth:`str.zfill`، که یک رشته‌ی عددی را در سمت چپ با صفر پر می‌کند. "
+"این روش، علائم مثبت و منفی را نیز در نظر می‌گیرد::"
 
 #: ../../tutorial/inputoutput.rst:279
 msgid ""
@@ -527,7 +619,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:288
 msgid "Old string formatting"
-msgstr ""
+msgstr "قالب‌بندی قدیمی رشته‌ها"
 
 #: ../../tutorial/inputoutput.rst:290
 msgid ""
@@ -537,6 +629,11 @@ msgid ""
 "*values*. This operation is commonly known as string interpolation. For "
 "example::"
 msgstr ""
+"عملگر % (باقیمانده) نیز می‌تواند برای قالب‌بندی رشته استفاده شود. با فرض "
+"``format % values`` (که در آن *format* یک رشته است)، مشخصات تبدیل ``%`` در "
+"*format* با صفر یا چند عنصر از *values* جایگزین می‌شوند. "
+"این عملیات معمولاً به عنوان درون‌یابی رشته (string interpolation) شناخته می‌شود. برای "
+"مثال::"
 
 #: ../../tutorial/inputoutput.rst:297
 msgid ""
@@ -552,10 +649,11 @@ msgstr ""
 msgid ""
 "More information can be found in the :ref:`old-string-formatting` section."
 msgstr ""
+"اطلاعات بیشتر می‌تواند در بخش :ref:`old-string-formatting` پیدا شود."
 
 #: ../../tutorial/inputoutput.rst:307
 msgid "Reading and Writing Files"
-msgstr ""
+msgstr "خواندن و نوشتن فایلها"
 
 #: ../../tutorial/inputoutput.rst:313
 msgid ""
@@ -563,6 +661,9 @@ msgid ""
 "two positional arguments and one keyword argument: ``open(filename, mode, "
 "encoding=None)``"
 msgstr ""
+":func:`open` یک :term:`شیء فایل` بازمی‌گرداند و معمولاً با "
+"دو آرگومان موقعیتی و یک آرگومان کلیدواژه‌ای استفاده می‌شود: ``open(filename, mode, "
+"encoding=None)``"
 
 #: ../../tutorial/inputoutput.rst:319
 msgid ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
@@ -579,6 +680,14 @@ msgid ""
 "reading and writing. The *mode* argument is optional; ``'r'`` will be "
 "assumed if it's omitted."
 msgstr ""
+"آرگومان اول رشته‌ای است که نام فایل را در بر دارد.  آرگومان دوم "
+"رشته‌ی دیگری است که شامل چند کاراکتر است و نحوه‌ی استفاده از فایل را "
+"توضیح می‌دهد.  *mode* می‌تواند ``'r'`` باشد زمانی که فایل فقط خوانده می‌شود، "
+"``'w'`` برای فقط نوشتن (یک فایل موجود با همان نام حذف خواهد شد)، و ``'a'`` "
+"فایل را برای افزودن (append) باز می‌کند؛ هر داده‌ای که در فایل نوشته شود "
+"به‌طور خودکار به انتهای آن اضافه می‌شود.  ``'r+'`` فایل را هم برای خواندن و هم "
+"برای نوشتن باز می‌کند. آرگومان *mode* اختیاری است؛ اگر حذف شود، ``'r'`` "
+"در نظر گرفته می‌شود."
 
 #: ../../tutorial/inputoutput.rst:335
 msgid ""
@@ -592,6 +701,14 @@ msgid ""
 "as :class:`bytes` objects. You can not specify *encoding* when opening file "
 "in binary mode."
 msgstr ""
+"به‌طور معمول، فایل‌ها در :dfn:`حالت متنی` باز می‌شوند، یعنی شما رشته‌ها را از فایل می‌خوانید و "
+"در فایل می‌نویسید، که با یک *encoding* (رمزگذاری) خاص کدگذاری شده‌اند. "
+"اگر *encoding* مشخص نشود، مقدار پیش‌فرض به سیستم‌عامل بستگی دارد "
+"(به :func:`open` مراجعه کنید). از آنجا که UTF-8 استاندارد بالفعل مدرن است، "
+"``encoding=\"utf-8\"`` توصیه می‌شود مگر اینکه بدانید باید از رمزگذاری دیگری استفاده کنید. "
+"اضافه کردن ``'b'`` به حالت، فایل را در :dfn:`حالت دودویی` (binary mode) باز می‌کند. "
+"داده‌ها در حالت دودویی به صورت اشیاء :class:`bytes` خوانده و نوشته می‌شوند. "
+"هنگام باز کردن فایل در حالت دودویی نمی‌توانید *encoding* را مشخص کنید."
 
 #: ../../tutorial/inputoutput.rst:345
 msgid ""
@@ -603,6 +720,13 @@ msgid ""
 "in :file:`JPEG` or :file:`EXE` files.  Be very careful to use binary mode "
 "when reading and writing such files."
 msgstr ""
+"در حالت متنی، حالت پیش‌فرض هنگام خواندن، تبدیل پایان‌خط‌های ویژه‌ی هر سیستم‌عامل "
+"(``\\n`` در یونیکس، ``\\r\\n`` در ویندوز) به فقط ``\\n`` است.  هنگام "
+"نوشتن در حالت متنی، حالت پیش‌فرض تبدیل ``\\n`` به "
+"پایان‌خط‌های ویژه‌ی هر سیستم‌عامل است.  این تغییرات پشت‌صحنه در "
+"داده‌های فایل برای فایل‌های متنی خوب است، اما داده‌های دودویی مانند "
+"فایل‌های :file:`JPEG` یا :file:`EXE` را خراب می‌کند.  هنگام خواندن و نوشتن چنین فایل‌هایی "
+"بسیار دقت کنید که از حالت دودویی استفاده کنید."
 
 #: ../../tutorial/inputoutput.rst:353
 msgid ""
@@ -612,6 +736,11 @@ msgid ""
 "Using :keyword:`!with` is also much shorter than writing "
 "equivalent :keyword:`try`\\ -\\ :keyword:`finally` blocks::"
 msgstr ""
+"استفاده از کلیدواژه‌ی :keyword:`with` هنگام کار با "
+"اشیاء فایل، یک روش خوب است.  مزیت آن این است که فایل پس از پایان بلوک خود به‌درستی بسته می‌شود، "
+"حتی اگر در جایی استثنا ایجاد شود.  "
+"استفاده از :keyword:`!with` همچنین بسیار کوتاه‌تر از نوشتن "
+"بلوک‌های معادل :keyword:`try`\\ -\\ :keyword:`finally` است::"
 
 #: ../../tutorial/inputoutput.rst:359
 msgid ""
@@ -635,6 +764,9 @@ msgid ""
 "``f.close()`` to close the file and immediately free up any system resources "
 "used by it."
 msgstr ""
+"اگر از کلیدواژه‌ی :keyword:`with` استفاده نمی‌کنید، باید "
+"``f.close()`` را فراخوانی کنید تا فایل بسته شود و هر گونه منابع سیستمی که توسط آن استفاده می‌شود، "
+"بلافاصله آزاد شوند."
 
 #: ../../tutorial/inputoutput.rst:371
 msgid ""
@@ -642,6 +774,9 @@ msgid ""
 "``f.close()`` **might** result in the arguments of ``f.write()`` not being "
 "completely written to the disk, even if the program exits successfully."
 msgstr ""
+"فراخوانی ``f.write()`` بدون استفاده از کلیدواژه‌ی :keyword:`!with` یا فراخوانی "
+"``f.close()`` **ممکن است** باعث شود که آرگومان‌های ``f.write()`` به‌طور کامل "
+"روی دیسک نوشته نشوند، حتی اگر برنامه با موفقیت خارج شود."
 
 #: ../../tutorial/inputoutput.rst:379
 msgid ""
@@ -649,6 +784,9 @@ msgid ""
 "calling ``f.close()``, attempts to use the file object will automatically "
 "fail. ::"
 msgstr ""
+"پس از بسته شدن یک شیء فایل، چه توسط دستور :keyword:`with` و چه با "
+"فراخوانی ``f.close()``، تلاش برای استفاده از شیء فایل به‌طور خودکار "
+"با شکست مواجه می‌شود. ::"
 
 #: ../../tutorial/inputoutput.rst:383
 msgid ""
@@ -666,13 +804,15 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:393
 msgid "Methods of File Objects"
-msgstr ""
+msgstr "متدهای اشیاء فایل"
 
 #: ../../tutorial/inputoutput.rst:395
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
 msgstr ""
+"بقیه‌ی مثال‌های این بخش فرض می‌کنند که یک شیء فایل "
+"به نام ``f`` قبلاً ایجاد شده است."
 
 #: ../../tutorial/inputoutput.rst:398
 msgid ""
@@ -685,6 +825,14 @@ msgid ""
 "binary mode) are read and returned. If the end of the file has been reached, "
 "``f.read()`` will return an empty string (``''``).  ::"
 msgstr ""
+"برای خواندن محتویات یک فایل، ``f.read(size)`` را فراخوانی کنید، که مقدار مشخصی "
+"از داده را خوانده و آن را به صورت یک رشته (در حالت متنی) یا یک شیء bytes (در حالت دودویی) بازمی‌گرداند. "
+"*size* یک آرگومان عددی اختیاری است.  وقتی *size* حذف شود یا منفی باشد، "
+"تمام محتویات فایل خوانده شده و بازگردانده می‌شود؛ اگر فایل دو برابر حافظه‌ی دستگاه شما باشد، "
+"این مشکل شماست. "
+"در غیر این صورت، حداکثر *size* کاراکتر (در حالت متنی) یا *size* بایت (در حالت دودویی) "
+"خوانده و بازگردانده می‌شوند. اگر به انتهای فایل رسیده باشد، "
+"``f.read()`` یک رشته‌ی خالی (``''``) بازمی‌گرداند.  ::"
 
 #: ../../tutorial/inputoutput.rst:407
 msgid ""
@@ -707,6 +855,12 @@ msgid ""
 "end of the file has been reached, while a blank line is represented by "
 "``'\\n'``, a string containing only a single newline.  ::"
 msgstr ""
+"``f.readline()`` یک خط از فایل را می‌خواند؛ یک نویسه‌ی خط جدید "
+"(``\\n``) در انتهای رشته باقی می‌ماند، و فقط در آخرین خط فایل حذف می‌شود "
+"اگر فایل با یک خط جدید پایان نیابد.  این باعث می‌شود که "
+"مقدار بازگشتی بدون ابهام باشد؛ اگر ``f.readline()`` یک رشته‌ی خالی بازگرداند، "
+"به انتهای فایل رسیده‌ایم، در حالی که یک خط خالی با "
+"``'\\n'``، یعنی یک رشته که فقط شامل یک خط جدید است، نشان داده می‌شود.  ::"
 
 #: ../../tutorial/inputoutput.rst:419
 msgid ""
@@ -729,6 +883,8 @@ msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
 msgstr ""
+"برای خواندن خطوط از یک فایل، می‌توانید روی خود شیء فایل حلقه بزنید. این روش "
+"کارآمد از نظر حافظه، سریع است و به کد ساده‌ای منجر می‌شود::"
 
 #: ../../tutorial/inputoutput.rst:429
 msgid ""
@@ -749,12 +905,16 @@ msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
 msgstr ""
+"اگر می‌خواهید تمام خطوط یک فایل را در یک لیست بخوانید، می‌توانید از "
+"``list(f)`` یا ``f.readlines()`` نیز استفاده کنید."
 
 #: ../../tutorial/inputoutput.rst:438
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
 msgstr ""
+"``f.write(string)`` محتویات *string* را در فایل می‌نویسد و تعداد کاراکترهای نوشته‌شده را "
+"بازمی‌گرداند. ::"
 
 #: ../../tutorial/inputoutput.rst:441
 msgid ""
@@ -769,6 +929,8 @@ msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
 msgstr ""
+"انواع دیگر اشیاء باید تبدیل شوند -- یا به یک رشته (در حالت متنی) "
+"یا به یک شیء bytes (در حالت دودویی) -- قبل از نوشتن آن‌ها::"
 
 #: ../../tutorial/inputoutput.rst:447
 msgid ""
@@ -788,6 +950,9 @@ msgid ""
 "the file represented as number of bytes from the beginning of the file when "
 "in binary mode and an opaque number when in text mode."
 msgstr ""
+"``f.tell()`` یک عدد صحیح بازمی‌گرداند که موقعیت جاری شیء فایل را در "
+"فایل نشان می‌دهد، که در حالت دودویی به صورت تعداد بایت‌ها از ابتدای فایل "
+"و در حالت متنی به صورت یک عدد مبهم (opaque) است."
 
 #: ../../tutorial/inputoutput.rst:456
 msgid ""
@@ -799,6 +964,13 @@ msgid ""
 "omitted and defaults to 0, using the beginning of the file as the reference "
 "point. ::"
 msgstr ""
+"برای تغییر موقعیت شیء فایل، از ``f.seek(offset, whence)`` استفاده کنید.  "
+"موقعیت با افزودن *offset* به یک نقطه‌ی مرجع محاسبه می‌شود؛ "
+"نقطه‌ی مرجع توسط آرگومان *whence* انتخاب می‌شود.  مقدار *whence* برابر با 0 "
+"از ابتدای فایل اندازه‌گیری می‌کند، 1 از موقعیت جاری فایل استفاده می‌کند، "
+"و 2 از انتهای فایل به عنوان نقطه‌ی مرجع استفاده می‌کند.  *whence* را می‌توان "
+"حذف کرد و مقدار پیش‌فرض آن 0 است، یعنی از ابتدای فایل به عنوان نقطه‌ی مرجع "
+"استفاده می‌کند. ::"
 
 #: ../../tutorial/inputoutput.rst:463
 msgid ""
@@ -834,6 +1006,11 @@ msgid ""
 "*offset* values are those returned from the ``f.tell()``, or zero. Any other "
 "*offset* value produces undefined behaviour."
 msgstr ""
+"در فایل‌های متنی (آنهایی که بدون ``b`` در رشته‌ی حالت باز شده‌اند)، فقط جستجوهای "
+"نسبت به ابتدای فایل مجاز هستند (به جز جستجو به انتهای فایل با ``seek(0, 2)``) "
+"و تنها مقادیر معتبر *offset* "
+"مقادیری هستند که از ``f.tell()`` بازگردانده می‌شوند، یا صفر. هر مقدار *offset* دیگر "
+"رفتار تعریف‌نشده‌ای ایجاد می‌کند."
 
 #: ../../tutorial/inputoutput.rst:481
 msgid ""
@@ -841,10 +1018,13 @@ msgid ""
 "and :meth:`~io.IOBase.truncate` which are less frequently used; consult the "
 "Library Reference for a complete guide to file objects."
 msgstr ""
+"اشیاء فایل دارای متدهای اضافی دیگری نیز هستند، مانند :meth:`~io.IOBase.isatty` "
+"و :meth:`~io.IOBase.truncate` که کمتر استفاده می‌شوند؛ برای راهنمای کامل اشیاء فایل به "
+"مرجع کتابخانه مراجعه کنید."
 
 #: ../../tutorial/inputoutput.rst:489
 msgid "Saving structured data with :mod:`json`"
-msgstr ""
+msgstr "ذخیره‌سازی داده‌های ساختاریافته با :mod:`json`"
 
 #: ../../tutorial/inputoutput.rst:493
 msgid ""
@@ -855,6 +1035,12 @@ msgid ""
 "want to save more complex data types like nested lists and dictionaries, "
 "parsing and serializing by hand becomes complicated."
 msgstr ""
+"رشته‌ها را به‌راحتی می‌توان در فایل نوشت و از آن خواند.  اعداد کمی "
+"بیشتر تلاش نیاز دارند، زیرا متد :meth:`~io.TextIOBase.read` فقط رشته‌ها را بازمی‌گرداند، "
+"که باید به تابعی مانند :func:`int` داده شوند، که "
+"یک رشته مانند ``'123'`` را گرفته و مقدار عددی آن، یعنی 123، را بازمی‌گرداند.  وقتی "
+"می‌خواهید انواع داده‌ی پیچیده‌تر مانند لیست‌های تو در تو و دیکشنری‌ها را ذخیره کنید، "
+"تجزیه و سریال‌سازی دستی پیچیده می‌شود."
 
 #: ../../tutorial/inputoutput.rst:500
 msgid ""
@@ -868,6 +1054,15 @@ msgid ""
 "deserializing, the string representing the object may have been stored in a "
 "file or data, or sent over a network connection to some distant machine."
 msgstr ""
+"به جای اینکه کاربران دائماً کد بنویسند و دیباگ کنند تا "
+"انواع داده‌ی پیچیده را در فایل‌ها ذخیره کنند، پایتون به شما اجازه می‌دهد از فرمت محبوب "
+"تبادل داده به نام `JSON (JavaScript Object Notation) <https://"
+"json.org>`_ استفاده کنید.  ماژول استاندارد :mod:`json` می‌تواند سلسله‌مراتب داده‌های پایتون را گرفته "
+"و آن‌ها را به نمایش‌های رشته‌ای تبدیل کند؛ این فرآیند "
+":dfn:`سریال‌سازی` نامیده می‌شود.  بازسازی داده از نمایش رشته‌ای "
+":dfn:`دسریال‌سازی` نامیده می‌شود.  بین سریال‌سازی و "
+"دسریال‌سازی، رشته‌ای که شیء را نمایش می‌دهد ممکن است در یک فایل یا داده ذخیره شده باشد، "
+"یا از طریق اتصال شبکه به ماشینی دور فرستاده شده باشد."
 
 #: ../../tutorial/inputoutput.rst:511
 msgid ""
@@ -875,12 +1070,17 @@ msgid ""
 "exchange.  Many programmers are already familiar with it, which makes it a "
 "good choice for interoperability."
 msgstr ""
+"فرمت JSON معمولاً توسط برنامه‌های مدرن برای تبادل داده استفاده می‌شود.  "
+"بسیاری از برنامه‌نویسان از قبل با آن آشنا هستند، که این موضوع آن را به "
+"انتخابی خوب برای قابلیت‌عملیات‌پذیری (interoperability) تبدیل می‌کند."
 
 #: ../../tutorial/inputoutput.rst:515
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation "
 "with a simple line of code::"
 msgstr ""
+"اگر یک شیء ``x`` دارید، می‌توانید نمایش رشته‌ای JSON آن را "
+"با یک خط کد ساده مشاهده کنید::"
 
 #: ../../tutorial/inputoutput.rst:518
 msgid ""
@@ -901,6 +1101,10 @@ msgid ""
 "file`.  So if ``f`` is a :term:`text file` object opened for writing, we can "
 "do this::"
 msgstr ""
+"گونه‌ی دیگری از تابع :func:`~json.dumps`، "
+"به نام :func:`~json.dump`، به‌سادگی شیء را در یک :term:`فایل متنی` سریال‌سازی می‌کند. "
+"بنابراین اگر ``f`` یک شیء :term:`فایل متنی` است که برای نوشتن باز شده، می‌توانیم "
+"این کار را انجام دهیم::"
 
 #: ../../tutorial/inputoutput.rst:527
 msgid "json.dump(x, f)"
@@ -911,6 +1115,8 @@ msgid ""
 "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
 "file` object which has been opened for reading::"
 msgstr ""
+"برای رمزگشایی مجدد شیء، اگر ``f`` یک شیء :term:`فایل دودویی` یا :term:`فایل متنی` "
+"است که برای خواندن باز شده است::"
 
 #: ../../tutorial/inputoutput.rst:532
 msgid "x = json.load(f)"
@@ -921,6 +1127,8 @@ msgid ""
 "JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
 "JSON file as a :term:`text file` for both of reading and writing."
 msgstr ""
+"فایل‌های JSON باید با UTF-8 کدگذاری شوند. هنگام باز کردن فایل JSON به عنوان یک :term:`فایل متنی` برای "
+"هر دو عمل خواندن و نوشتن، از ``encoding=\"utf-8\"`` استفاده کنید."
 
 #: ../../tutorial/inputoutput.rst:538
 msgid ""
@@ -929,6 +1137,10 @@ msgid ""
 "effort. The reference for the :mod:`json` module contains an explanation of "
 "this."
 msgstr ""
+"این تکنیک ساده‌ی سریال‌سازی می‌تواند لیست‌ها و دیکشنری‌ها را مدیریت کند، اما "
+"سریال‌سازی نمونه‌های دلخواه از کلاس‌ها در JSON نیازمند کمی تلاش "
+"اضافی است. مرجع ماژول :mod:`json` شامل توضیحاتی در مورد "
+"این موضوع است."
 
 #: ../../tutorial/inputoutput.rst:544
 msgid ":mod:`pickle` - the pickle module"
@@ -943,14 +1155,20 @@ msgid ""
 "pickle data coming from an untrusted source can execute arbitrary code, if "
 "the data was crafted by a skilled attacker."
 msgstr ""
+"برخلاف :ref:`JSON <tut-json>`، *pickle* پروتکلی است که امکان "
+"سریال‌سازی اشیاء پایتون با پیچیدگی دلخواه را فراهم می‌کند.  بنابراین، "
+"اختصاصی پایتون است و نمی‌توان از آن برای ارتباط با برنامه‌های "
+"نوشته‌شده به زبان‌های دیگر استفاده کرد.  همچنین به‌طور پیش‌فرض ناامن است: "
+"دسریال‌سازی داده‌های pickle که از یک منبع غیرقابل‌اعتماد می‌آیند، می‌تواند کد دلخواه را اجرا کند، اگر "
+"داده توسط یک مهاجم ماهر ساخته شده باشد."
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted string literal"
-msgstr ""
+msgstr "لیترال رشته‌ای قالبی"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "interpolated string literal"
-msgstr ""
+msgstr "لیترال رشته‌ای درون‌یابی‌شده"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "string"
@@ -958,11 +1176,11 @@ msgstr "رشته"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted literal"
-msgstr ""
+msgstr "لیترال قالبی"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "interpolated literal"
-msgstr ""
+msgstr "لیترال درون‌یابی‌شده"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "f-string"
@@ -974,19 +1192,19 @@ msgstr "fstring"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "built-in function"
-msgstr ""
+msgstr "تابع ساخته شده‌ی داخلی"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "open"
-msgstr ""
+msgstr "باز کردن"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "object"
-msgstr ""
+msgstr "شیء"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "file"
-msgstr ""
+msgstr "فایل"
 
 #: ../../tutorial/inputoutput.rst:491
 msgid "module"
