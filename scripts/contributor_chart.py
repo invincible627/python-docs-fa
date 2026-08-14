@@ -4,9 +4,9 @@
 The chart uses the translated totals recorded in ``TEAM.md``
 (``teammd_totals``), which the nightly maintenance run keeps in sync with
 git-blame attribution while preserving Transifex-era and restored counts, and
-draws a pastel bar chart saved to ``reports/contributor_stats_YYYY_MM_DD.png``.
-Older charts are pruned and the README block between the
-``STATS_START``/``STATS_END`` markers is refreshed.
+draws a pastel bar chart saved to ``reports/contributor_stats_latest.png``
+(fixed filename, overwritten each run). The README block between the
+``STATS_START``/``STATS_END`` markers is refreshed with a new date.
 
 Requires: ``pip install polib matplotlib``
 
@@ -35,7 +35,7 @@ from team_stats import teammd_totals  # noqa: E402
 
 CHART_DIR = REPO_ROOT / "reports"
 CHART_PREFIX = "contributor_stats_"
-CHART_FILENAME = f"{CHART_PREFIX}%Y_%m_%d.png"
+CHART_FILENAME = f"{CHART_PREFIX}latest.png"
 
 README_PATH = REPO_ROOT / "README.md"
 STATS_START = "<!-- STATS_START -->"
@@ -97,19 +97,6 @@ def draw_chart(data: list[tuple[str, int]], top_n: int) -> None:
     plt.tight_layout()
 
 
-def prune_old_charts(keep: Path, dry_run: bool) -> list[Path]:
-    removed: list[Path] = []
-    for path in CHART_DIR.glob(f"{CHART_PREFIX}*.png"):
-        if path == keep:
-            continue
-        if dry_run:
-            print(f"[dry-run] would remove {path}")
-        else:
-            path.unlink()
-        removed.append(path)
-    return removed
-
-
 def refresh_readme(chart_file: Path, dry_run: bool) -> bool:
     text = README_PATH.read_text(encoding="utf-8")
     date_iso = datetime.date.today().isoformat()
@@ -161,8 +148,7 @@ def main() -> None:
         print("No contributor data to generate chart.")
         return
 
-    today = datetime.date.today().strftime(CHART_FILENAME)
-    out_path = CHART_DIR / today
+    out_path = CHART_DIR / CHART_FILENAME
 
     draw_chart(data, args.top_n)
     if args.dry_run:
@@ -173,7 +159,6 @@ def main() -> None:
         print(f"Saved user contributions chart to {out_path}")
     plt.close()
 
-    prune_old_charts(out_path, args.dry_run)
     refresh_readme(out_path, args.dry_run)
 
 
