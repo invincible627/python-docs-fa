@@ -1,6 +1,7 @@
 | User | Role | Translated Count | Reviewed Count | Proofread Count |
 |:-----|:------:|:------------------:|:-------------------:|:----------------------:|
-| Revisto | coordinator | 3983 (+1) | 30 | 0 |
+| Revisto | coordinator | 34 | 30 | 0 |
+| sepehr-rs | coordinator | 1571 | 0 | 0 |
 | danialbehzadi | reviewer | 677 | 5 | 0 |
 | khosro_o | reviewer | 63 | 87 | 0 |
 | Ramiz_222 | reviewer | 10 | 82 | 0 |
@@ -49,3 +50,4 @@
 | ftgupp | translator | 0 | 0 | 0 |
 | petrudi | reviewer | 0 | 0 | 0 |
 | mmdbalkhi | reviewer | 0 | 0 | 0 |
+| invincible627 | translator | 317 | 0 | 0 |
