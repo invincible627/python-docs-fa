@@ -31,17 +31,31 @@ def file_stats(path: Path):
     )
 
 
-def collect_files(paths):
+def collect_files(paths, exclude=None):
+    exclude = {Path(e).resolve() for e in (exclude or [])}
     files = []
+
+    def is_excluded(path):
+        resolved = path.resolve()
+        return resolved in exclude or any(
+            parent in exclude for parent in resolved.parents
+        )
+
     for arg in paths:
         p = Path(arg)
         if p.is_dir():
+            if is_excluded(p):
+                continue
             for f in p.rglob("*.po"):
                 if any(part.startswith(".") for part in f.parts):
                     continue
+                if is_excluded(f):
+                    continue
                 files.append(f)
         elif p.suffix == ".po":
-            files.append(p)
+            if not is_excluded(p):
+                files.append(p)
+
     return files
 
 
@@ -66,10 +80,14 @@ def main():
         action="store_true",
         help="Hide files that are already fully translated",
     )
+    parser.add_argument(
+        "--exclude",
+        nargs="*",
+        help="Exclude files or directories from scan",
+    )
     parser.add_argument("--format", choices=["text", "markdown", "csv"], default="text")
     args = parser.parse_args()
-
-    files = collect_files(args.paths)
+    files = collect_files(args.paths, args.exclude)
     if not files:
         print("No .po files found.")
         sys.exit(1)
