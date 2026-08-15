@@ -32,7 +32,7 @@ jobs:
         run: python3 scripts/generate_status_table.py
 
       - name: Update PO file headers
-        run: python3 scripts/update_po_headers.py --merge
+        run: python3 scripts/update_po_headers.py --merge --no-last-translator
 
       - name: Update TEAM.md contributor counts
         run: python3 scripts/team_stats.py --update-teammd

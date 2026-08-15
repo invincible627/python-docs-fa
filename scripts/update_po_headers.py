@@ -291,6 +291,11 @@ def main():
         action="store_true",
         help="show what would change without writing files",
     )
+    parser.add_argument(
+        "--no-last-translator",
+        action="store_true",
+        help="skip updating the Last-Translator: header field",
+    )
     args = parser.parse_args()
 
     files = collect_files(args.paths)
@@ -319,7 +324,9 @@ def main():
                     new_comment = merge_comment_block(comment, translators)
                 else:
                     new_comment = update_comment_block(comment, translators)
-                rebuilt = update_header_entry(entry, last, None)
+                rebuilt = update_header_entry(
+                    entry, None if args.no_last_translator else last, None
+                )
                 if rebuilt is not None:
                     new_entry = rebuilt
 
