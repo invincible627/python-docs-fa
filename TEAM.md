@@ -1,51 +1,18 @@
-| User | Role | Translated Count | Reviewed Count | Proofread Count |
-|:-----|:------:|:------------------:|:-------------------:|:----------------------:|
-| Revisto | coordinator | 3983 (+1) | 30 | 0 |
-| danialbehzadi | reviewer | 677 | 5 | 0 |
-| khosro_o | reviewer | 63 | 87 | 0 |
-| Ramiz_222 | reviewer | 10 | 82 | 0 |
-| ParhamF | translator | 41 | 0 | 0 |
-| Ariyan_Bolandi | reviewer | 37 | 4 | 0 |
-| mdflx | reviewer | 1 | 30 | 0 |
-| aimer.hs872 | reviewer | 8 | 18 | 0 |
-| nikovinix7878 | translator | 13 | 0 | 0 |
-| thaghgoo | translator | 12 | 0 | 0 |
-| arfa79lg | translator | 6 | 0 | 0 |
-| naweex | translator | 2 | 0 | 0 |
-| pangominn | translator | 2 | 0 | 0 |
-| ashykng | translator | 1 | 0 | 0 |
-| aryasadeghy | translator | 0 | 0 | 0 |
-| pouya.abbassi | translator | 0 | 0 | 0 |
-| farzaneh_gtc_YzkxOG | translator | 0 | 0 | 0 |
-| mahdihasanzadeh_gtc_ZGRkMW | translator | 0 | 0 | 0 |
-| a_wakeel | translator | 0 | 0 | 0 |
-| cocoatomo | coordinator | 0 | 0 | 0 |
-| sina6991 | translator | 0 | 0 | 0 |
-| ahmadly | translator | 0 | 0 | 0 |
-| ayoubgholami | translator | 0 | 0 | 0 |
-| khoramism | translator | 0 | 0 | 0 |
-| mojtaba77 | translator | 0 | 0 | 0 |
-| Gigahertz | translator | 0 | 0 | 0 |
-| amirjj | translator | 0 | 0 | 0 |
-| GRAY._.XRAY | translator | 0 | 0 | 0 |
-| Saeed_hmzpr | translator | 0 | 0 | 0 |
-| tannerj028 | translator | 0 | 0 | 0 |
-| NotHero | translator | 0 | 0 | 0 |
-| THISisAshk | translator | 0 | 0 | 0 |
-| revistology | translator | 0 | 0 | 0 |
-| revistola | translator | 0 | 0 | 0 |
-| shahabworks | translator | 0 | 0 | 0 |
-| shahriaarrr | translator | 0 | 0 | 0 |
-| mohammadreza13842018 | translator | 0 | 0 | 0 |
-| mjavadf | translator | 0 | 0 | 0 |
-| ArminTM | translator | 0 | 0 | 0 |
-| ehsan_torabi | translator | 0 | 0 | 0 |
-| Feriun | translator | 0 | 0 | 0 |
-| pourya | translator | 0 | 0 | 0 |
-| mobinveisy | translator | 0 | 0 | 0 |
-| AmirAzade | translator | 0 | 0 | 0 |
-| aliattack | translator | 0 | 0 | 0 |
-| a.sharifianzade | translator | 0 | 0 | 0 |
-| ftgupp | translator | 0 | 0 | 0 |
-| petrudi | reviewer | 0 | 0 | 0 |
-| mmdbalkhi | reviewer | 0 | 0 | 0 |
+| User | Role | Translated Count |
+|:-----|:------:|:------------------:|
+| Revisto | coordinator | 3984 |
+| sepehr-rs | coordinator | 1571 |
+| danialbehzadi | reviewer | 677 |
+| invincible627 | translator | 317 |
+| khosro_o | reviewer | 63 |
+| ParhamF | translator | 41 |
+| Ariyan_Bolandi | reviewer | 37 |
+| nikovinix7878 | translator | 13 |
+| thaghgoo | translator | 12 |
+| Ramiz_222 | reviewer | 10 |
+| aimer.hs872 | reviewer | 8 |
+| arfa79lg | translator | 6 |
+| naweex | translator | 2 |
+| pangominn | translator | 2 |
+| mdflx | reviewer | 1 |
+| ashykng | translator | 1 |
