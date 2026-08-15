@@ -3,6 +3,10 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Revisto <theRevisto@gmail.com>, 2025
+# Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+#
 #, fuzzy
 msgid ""
 msgstr ""

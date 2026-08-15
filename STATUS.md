@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-08-14)
+(به‌روزرسانی: 2026-08-15)
 
 | File | Translated | Fuzzy |
 |:-----|:-----------:|:-----------:|
@@ -10,6 +10,7 @@
 | c-api/allocation.po | 100.0% | 0.0% |
 | c-api/apiabiversion.po | 100.0% | 0.0% |
 | c-api/bool.po | 100.0% | 0.0% |
+| c-api/bytearray.po | 100.0% | 0.0% |
 | contents.po | 100.0% | 0.0% |
 | copyright.po | 100.0% | 0.0% |
 | improve-page-nojs.po | 100.0% | 0.0% |
@@ -19,9 +20,12 @@
 | tutorial/appendix.po | 100.0% | 0.0% |
 | tutorial/appetite.po | 100.0% | 0.0% |
 | tutorial/classes.po | 100.0% | 0.0% |
+| tutorial/controlflow.po | 100.0% | 0.0% |
+| tutorial/datastructures.po | 100.0% | 0.0% |
 | tutorial/errors.po | 100.0% | 0.0% |
 | tutorial/floatingpoint.po | 100.0% | 0.0% |
 | tutorial/index.po | 100.0% | 0.0% |
+| tutorial/inputoutput.po | 100.0% | 0.0% |
 | tutorial/interactive.po | 100.0% | 0.0% |
 | tutorial/interpreter.po | 100.0% | 0.0% |
 | tutorial/introduction.po | 100.0% | 0.0% |
@@ -30,12 +34,10 @@
 | tutorial/stdlib2.po | 100.0% | 0.0% |
 | tutorial/venv.po | 100.0% | 0.0% |
 | tutorial/whatnow.po | 100.0% | 0.0% |
-| tutorial/inputoutput.po | 33.0% | 0.0% |
 | c-api/dict.po | 1.8% | 0.9% |
 | library/json.po | 1.1% | 0.0% |
 | c-api/arg.po | 0.0% | 0.0% |
 | c-api/buffer.po | 0.0% | 0.0% |
-| c-api/bytearray.po | 0.0% | 0.0% |
 | c-api/bytes.po | 0.0% | 0.0% |
 | c-api/call.po | 0.0% | 0.0% |
 | c-api/capsule.po | 0.0% | 0.0% |
@@ -503,8 +505,6 @@
 | reference/lexical_analysis.po | 0.0% | 0.0% |
 | reference/simple_stmts.po | 0.0% | 0.0% |
 | reference/toplevel_components.po | 0.0% | 0.0% |
-| tutorial/controlflow.po | 0.0% | 0.0% |
-| tutorial/datastructures.po | 0.0% | 0.0% |
 | using/android.po | 0.0% | 0.0% |
 | using/cmdline.po | 0.0% | 0.0% |
 | using/configure.po | 0.0% | 0.0% |
