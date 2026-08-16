@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-25 12:59+0330\n"
+"POT-Creation-Date: 2026-08-16 08:01+0000\n"
 "PO-Revision-Date: 2026-07-27 12:05+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/revisto/python-docs-fa/)\n"
@@ -24,11 +24,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.6\n"
 
-#: ../../tutorial/appetite.rst:5
 msgid "Whetting Your Appetite"
 msgstr "برانگیختن اشتیاق شما"
 
-#: ../../tutorial/appetite.rst:7
 msgid ""
 "If you do much work on computers, eventually you find that there's some task "
 "you'd like to automate.  For example, you may wish to perform a search-and-"
@@ -43,7 +41,6 @@ msgstr ""
 "دادهٔ سفارشی کوچک، یک برنامهٔ تخصصی با رابط کاربری گرافیکی، یا یک بازی ساده "
 "بنویسید."
 
-#: ../../tutorial/appetite.rst:13
 msgid ""
 "If you're a professional software developer, you may have to work with "
 "several C/C++/Java libraries but find the usual write/compile/test/re-"
@@ -60,11 +57,9 @@ msgstr ""
 "ببرد، اما نمی‌خواهید برای برنامهٔ خود یک زبان کاملاً جدید طراحی و پیاده‌سازی "
 "کنید."
 
-#: ../../tutorial/appetite.rst:20
 msgid "Python is just the language for you."
 msgstr "پایتون دقیقاً همان زبانی است که به آن نیاز دارید."
 
-#: ../../tutorial/appetite.rst:22
 msgid ""
 "You could write a Unix shell script or Windows batch files for some of these "
 "tasks, but shell scripts are best at moving around files and changing text "
@@ -81,7 +76,6 @@ msgstr ""
 "زیادی ببرد. پایتون استفادهٔ ساده‌تری دارد، روی سیستم‌عامل‌های Windows، macOS و "
 "Unix در دسترس است و به شما کمک می‌کند کارتان را سریع‌تر انجام دهید."
 
-#: ../../tutorial/appetite.rst:29
 msgid ""
 "Python is simple to use, but it is a real programming language, offering "
 "much more structure and support for large programs than shell scripts or "
@@ -101,7 +95,6 @@ msgstr ""
 "حتی Perl برای دامنهٔ بسیار گسترده‌تری از مسائل مناسب باشد، در حالی که انجام "
 "بسیاری از کارها در پایتون دست‌کم به همان اندازهٔ آن زبان‌ها ساده است."
 
-#: ../../tutorial/appetite.rst:37
 msgid ""
 "Python allows you to split your program into modules that can be reused in "
 "other Python programs.  It comes with a large collection of standard modules "
@@ -118,7 +111,6 @@ msgstr ""
 "فراخوانی‌های سیستمی، سوکت‌ها و حتی رابط‌هایی برای جعبه‌ابزارهای رابط کاربری "
 "گرافیکی مانند Tk را فراهم می‌کنند."
 
-#: ../../tutorial/appetite.rst:44
 msgid ""
 "Python is an interpreted language, which can save you considerable time "
 "during program development because no compilation and linking is necessary.  "
@@ -133,7 +125,6 @@ msgstr ""
 "موقتی و آزمایش توابع در فرایند توسعهٔ پایین‌به‌بالا را آسان می‌کند. علاوه بر "
 "این، مفسر یک ماشین‌حساب رومیزی بسیار کاربردی نیز هست."
 
-#: ../../tutorial/appetite.rst:50
 msgid ""
 "Python enables programs to be written compactly and readably.  Programs "
 "written in Python are typically much shorter than equivalent C,  C++, or "
@@ -143,7 +134,6 @@ msgstr ""
 "نوشته‌شده با پایتون معمولاً به دلایل مختلف، بسیار کوتاه‌تر از برنامه‌های معادل "
 "در C، C++ یا Java هستند:"
 
-#: ../../tutorial/appetite.rst:54
 msgid ""
 "the high-level data types allow you to express complex operations in a "
 "single statement;"
@@ -151,7 +141,6 @@ msgstr ""
 "نوع‌های دادهٔ سطح بالا به شما اجازه می‌دهند عملیات پیچیده را تنها با یک دستور "
 "بیان کنید؛"
 
-#: ../../tutorial/appetite.rst:57
 msgid ""
 "statement grouping is done by indentation instead of beginning and ending "
 "brackets;"
@@ -159,11 +148,9 @@ msgstr ""
 "گروه‌بندی دستورات با استفاده از تورفتگی انجام می‌شود، نه با آکولادهای آغاز و "
 "پایان؛"
 
-#: ../../tutorial/appetite.rst:60
 msgid "no variable or argument declarations are necessary."
 msgstr "نیازی به اعلان متغیرها یا آرگومان‌ها نیست."
 
-#: ../../tutorial/appetite.rst:62
 msgid ""
 "Python is *extensible*: if you know how to program in C it is easy to add a "
 "new built-in function or module to the interpreter, either to perform "
@@ -181,7 +168,6 @@ msgstr ""
 "مفسر پایتون را درون یک برنامهٔ نوشته‌شده با C جاسازی کنید و از آن به‌عنوان زبان "
 "توسعه یا زبان فرمان آن برنامه استفاده کنید."
 
-#: ../../tutorial/appetite.rst:70
 msgid ""
 "By the way, the language is named after the BBC show \"Monty Python's Flying "
 "Circus\" and has nothing to do with reptiles.  Making references to Monty "
@@ -191,7 +177,6 @@ msgstr ""
 "شبکهٔ BBC گرفته شده و هیچ ارتباطی با خزندگان ندارد. اشاره به نمایش‌های طنز "
 "Monty Python در مستندات نه‌تنها مجاز است، بلکه تشویق نیز می‌شود!"
 
-#: ../../tutorial/appetite.rst:74
 msgid ""
 "Now that you are all excited about Python, you'll want to examine it in some "
 "more detail.  Since the best way to learn a language is to use it, the "
@@ -201,7 +186,6 @@ msgstr ""
 "بررسی کنید. از آنجا که بهترین راه یادگیری یک زبان، استفاده از آن است، این "
 "آموزش شما را دعوت می‌کند هنگام مطالعه، با مفسر پایتون نیز کار کنید."
 
-#: ../../tutorial/appetite.rst:78
 msgid ""
 "In the next chapter, the mechanics of using the interpreter are explained.  "
 "This is rather mundane information, but essential for trying out the "
@@ -211,7 +195,6 @@ msgstr ""
 "هیجان‌انگیز نباشند، اما برای امتحان کردن مثال‌هایی که در ادامه خواهید دید، "
 "ضروری هستند."
 
-#: ../../tutorial/appetite.rst:82
 msgid ""
 "The rest of the tutorial introduces various features of the Python language "
 "and system through examples, beginning with simple expressions, statements "

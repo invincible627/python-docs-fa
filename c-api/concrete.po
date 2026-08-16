@@ -13,22 +13,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-25 12:59+0330\n"
+"POT-Creation-Date: 2026-08-16 08:01+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/revisto/python-docs-fa/"
-"fa/)\n"
+"Language-Team: Persian (https://github.com/revisto/python-docs-fa/fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../../c-api/concrete.rst:8
 msgid "Concrete Objects Layer"
 msgstr ""
 
-#: ../../c-api/concrete.rst:10
 msgid ""
 "The functions in this chapter are specific to certain Python object types. "
 "Passing them an object of the wrong type is not a good idea; if you receive "
@@ -38,7 +35,6 @@ msgid ""
 "structured like the \"family tree\" of Python object types."
 msgstr ""
 
-#: ../../c-api/concrete.rst:19
 msgid ""
 "While the functions described in this chapter carefully check the type of "
 "the objects which are passed in, many of them do not check for ``NULL`` "
@@ -47,59 +43,45 @@ msgid ""
 "interpreter."
 msgstr ""
 
-#: ../../c-api/concrete.rst:28
 msgid "Fundamental Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:30
 msgid ""
 "This section describes Python type objects and the singleton object ``None``."
 msgstr ""
 
-#: ../../c-api/concrete.rst:41
 msgid "Numeric Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:56
 msgid "Sequence Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:60
 msgid ""
 "Generic operations on sequence objects were discussed in the previous "
 "chapter; this section deals with the specific kinds of sequence objects that "
 "are intrinsic to the Python language."
 msgstr ""
 
-#: ../../c-api/concrete.rst:78
 msgid "Container Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:91
 msgid "Function Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:102
 msgid "Other Objects"
 msgstr ""
 
-#: ../../c-api/concrete.rst:123
 msgid "C API for extension modules"
 msgstr ""
 
-#: ../../c-api/concrete.rst:43 ../../c-api/concrete.rst:58
-#: ../../c-api/concrete.rst:80
 msgid "object"
 msgstr ""
 
-#: ../../c-api/concrete.rst:43
 msgid "numeric"
 msgstr ""
 
-#: ../../c-api/concrete.rst:58
 msgid "sequence"
 msgstr ""
 
-#: ../../c-api/concrete.rst:80
 msgid "mapping"
 msgstr ""
