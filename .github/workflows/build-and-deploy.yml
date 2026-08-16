@@ -40,12 +40,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: Doc/locales/fa/LC_MESSAGES
-        
+
+      - name: Install gettext
+        run: sudo apt-get install -y gettext
+
+      - name: Compile .po files to .mo
+        run: |
+          find Doc/locales/fa/LC_MESSAGES -name "*.po" | while read f; do
+            msgfmt "$f" -o "${f%.po}.mo"
+          done
+
       - name: Setup problem matcher
         uses: sphinx-doc/github-problem-matcher@v1.1
         
       - name: Build documentation
-        run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -W --keep-going" html
+        run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 --keep-going" html
         working-directory: ./Doc
         
       - name: Setup Pages

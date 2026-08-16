@@ -13,39 +13,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-25 12:59+0330\n"
+"POT-Creation-Date: 2026-08-16 08:01+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/revisto/python-docs-fa/"
-"fa/)\n"
+"Language-Team: Persian (https://github.com/revisto/python-docs-fa/fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../../library/tk.rst:5
 msgid "Graphical user interfaces with Tk"
 msgstr ""
 
-#: ../../library/tk.rst:13
 msgid ""
 "Tk/Tcl has long been an integral part of Python.  It provides a robust and "
 "platform independent windowing toolkit, that is available to Python "
-"programmers using the :mod:`tkinter` package, and its extension, "
-"the :mod:`tkinter.ttk` module."
+"programmers using the :mod:`tkinter` package, and its extension, the :mod:"
+"`tkinter.ttk` module."
 msgstr ""
 
-#: ../../library/tk.rst:17
 msgid ""
 "The :mod:`tkinter` package is a thin object-oriented layer on top of Tcl/Tk. "
 "To use :mod:`tkinter`, you don't need to write Tcl code, but you will need "
-"to consult the Tk documentation, and occasionally the Tcl "
-"documentation. :mod:`tkinter` is a set of wrappers that implement the Tk "
-"widgets as Python classes."
+"to consult the Tk documentation, and occasionally the Tcl documentation. :"
+"mod:`tkinter` is a set of wrappers that implement the Tk widgets as Python "
+"classes."
 msgstr ""
 
-#: ../../library/tk.rst:23
 msgid ""
 ":mod:`tkinter`'s chief virtues are that it is fast, and that it usually "
 "comes bundled with Python. Although its standard documentation is weak, good "
@@ -57,18 +52,14 @@ msgid ""
 "GuiProgramming>`_."
 msgstr ""
 
-#: ../../library/tk.rst:7
 msgid "GUI"
 msgstr ""
 
-#: ../../library/tk.rst:7
 msgid "Graphical User Interface"
 msgstr ""
 
-#: ../../library/tk.rst:7
 msgid "Tkinter"
 msgstr ""
 
-#: ../../library/tk.rst:7
 msgid "Tk"
 msgstr ""
