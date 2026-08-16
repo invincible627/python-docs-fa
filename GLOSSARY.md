@@ -13,14 +13,14 @@
 | string        | رشته                     |
 | integer       | عدد صحیح                 |
 | boolean       | بولی                     |
-| list          | لیست                     |
+| list          | فهرست                    |
 | dictionary    | دیکشنری                  |
 | function      | تابع                     |
 | argument      | آرگومان                  |
 | return        | بازگشت، برگرداندن        |
 | expression    | عبارت                    |
 | statement     | دستور                    |
-| method        | متد، روش                 |
+| method        | متد                 |
 | attribute     | ویژگی، صفت، شاخصه        |
 | property      | ویژگی، پراپرتی، خصوصیت   |
 | class         | کلاس                     |
@@ -62,7 +62,7 @@
 | method        | روش                 |
 | parameter      | پارامتر                     |
 | iterator       | تکرارگر                     |
-| generator      | مولد، تولیدگر               |
+| generator      | تولیدگر             |
 | decorator      | دکوراتور، آراینده           |
 | keyword        | کلیدواژه                    |
 | operator       | عملگر                       |
@@ -71,3 +71,10 @@
 | immutable      | تغییرناپذیر                 |
 | callback       | کال‌بک، فراخوانی بازگشتی   |
 | deprecated     | منسوخ، از رده خارج شده     |
+| character     | نویسه     |
+| scope     | محدوده     |
+| keyword argument     | آرگومان کلیدواژه‌ای     |
+| raise     | پرتاب    |
+| list comprehension   |   درک فهرستی  |
+| directory  | پوشه  |
+| stack traceback |     ردگیری پشته  |
