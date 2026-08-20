@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-08-19)
+(به‌روزرسانی: 2026-08-20)
 
 | File | Translated | Fuzzy |
 |:-----|:-----------:|:-----------:|
@@ -15,6 +15,7 @@
 | copyright.po | 100.0% | 0.0% |
 | improve-page-nojs.po | 100.0% | 0.0% |
 | improve-page.po | 100.0% | 0.0% |
+| library/__future__.po | 100.0% | 0.0% |
 | library/functions.po | 100.0% | 0.0% |
 | sphinx.po | 100.0% | 0.0% |
 | tutorial/appendix.po | 100.0% | 0.0% |
@@ -34,6 +35,7 @@
 | tutorial/stdlib2.po | 100.0% | 0.0% |
 | tutorial/venv.po | 100.0% | 0.0% |
 | tutorial/whatnow.po | 100.0% | 0.0% |
+| library/__main__.po | 13.9% | 0.0% |
 | c-api/dict.po | 2.8% | 0.0% |
 | library/json.po | 1.1% | 0.0% |
 | c-api/arg.po | 0.0% | 0.0% |
@@ -169,8 +171,6 @@
 | howto/unicode.po | 0.0% | 0.0% |
 | howto/urllib2.po | 0.0% | 0.0% |
 | installing/index.po | 0.0% | 0.0% |
-| library/__future__.po | 0.0% | 0.0% |
-| library/__main__.po | 0.0% | 0.0% |
 | library/_thread.po | 0.0% | 0.0% |
 | library/abc.po | 0.0% | 0.0% |
 | library/aifc.po | 0.0% | 0.0% |
