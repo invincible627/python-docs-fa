@@ -212,10 +212,10 @@ msgstr ""
 "range(0, 10)"
 
 msgid "In many ways the object returned by :func:`range` behaves as if it is a list, but in fact it isn't. It is an object which returns the successive items of the desired sequence when you iterate over it, but it doesn't really make the list, thus saving space."
-msgstr "از بسیاری جهات، شیئی که توسط :func:`range` برگردانده می‌شود طوری رفتار می‌کند که گویی یک فهرست است، اما در واقع چنین نیست. این یک شیء است که هنگام پیمایش، آیتم‌های متوالی دنبالهٔ موردنظر را برمی‌گرداند، اما واقعاً فهرست را ایجاد نمی‌کند و در نتیجه در فضا صرفه‌جویی می‌شود."
+msgstr "از بسیاری جهات، شی‌ءای که توسط :func:`range` برگردانده می‌شود طوری رفتار می‌کند که گویی یک فهرست است، اما در واقع چنین نیست. این یک شیء است که هنگام پیمایش، آیتم‌های متوالی دنبالهٔ موردنظر را برمی‌گرداند، اما واقعاً فهرست را ایجاد نمی‌کند و در نتیجه در فضا صرفه‌جویی می‌شود."
 
 msgid "We say such an object is :term:`iterable`, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted.  We have seen that the :keyword:`for` statement is such a construct, while an example of a function that takes an iterable is :func:`sum`::"
-msgstr "می‌گوییم چنین شیئی :term:`iterable` است؛ یعنی برای استفاده به‌عنوان هدف تابع‌ها و ساختارهایی مناسب است که انتظار دارند چیزی وجود داشته باشد که بتوانند از آن آیتم‌های متوالی را تا زمانی که چیزی باقی نمانده است دریافت کنند. دیدیم که دستور :keyword:`for` چنین ساختاری است، در حالی که نمونه‌ای از تابعی که یک شیء تکرارپذیر دریافت می‌کند :func:`sum` است::"
+msgstr "می‌گوییم چنین شی‌ءای :term:`تکرارپذیر <iterable>` است؛ یعنی برای استفاده به‌عنوان هدف تابع‌ها و ساختارهایی مناسب است که انتظار دارند چیزی وجود داشته باشد که بتوانند از آن آیتم‌های متوالی را تا زمانی که چیزی باقی نمانده است دریافت کنند. دیدیم که دستور :keyword:`for` چنین ساختاری است، در حالی که نمونه‌ای از تابعی که یک شیء تکرارپذیر دریافت می‌کند :func:`sum` است::"
 
 msgid ""
 ">>> sum(range(4))  # 0 + 1 + 2 + 3\n"
@@ -397,7 +397,7 @@ msgid "For this last case, many people use the ellipsis literal :code:`...` inst
 msgstr "برای حالت آخر، بسیاری از افراد به‌جای :code:`pass` از مقدار لفظی بیضی :code:`...` استفاده می‌کنند. این استفاده هیچ معنای ویژه‌ای برای پایتون ندارد و بخشی از تعریف زبان نیست (در اینجا می‌توانستید از هر عبارت ثابتی استفاده کنید)، اما :code:`...` به‌صورت قراردادی به‌عنوان بدنهٔ جای‌نگهدار نیز استفاده می‌شود. به :ref:`bltin-ellipsis-object` مراجعه کنید."
 
 msgid ":keyword:`!match` Statements"
-msgstr ":keyword:`!match` دستورات"
+msgstr "دستورات :keyword:`!match`"
 
 msgid "A :keyword:`match` statement takes an expression and compares its value to successive patterns given as one or more case blocks.  This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it's more similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed and it can also extract components (sequence elements or object attributes) from the value into variables. If no case matches, none of the branches is executed."
 msgstr "یک دستور :keyword:`match` یک عبارت را دریافت می‌کند و مقدار آن را با الگوهای متوالی که در یک یا چند بلوک case ارائه شده‌اند مقایسه می‌کند. این دستور در ظاهر شبیه دستور switch در C، Java یا JavaScript (و بسیاری از زبان‌های دیگر) است، اما شباهت بیشتری به تطبیق الگو (*pattern matching*) در زبان‌هایی مانند Rust یا Haskell دارد. تنها اولین الگویی که تطبیق پیدا کند اجرا می‌شود و این دستور همچنین می‌تواند اجزا (عناصر دنباله یا ویژگی‌های شیء) را از مقدار استخراج کرده و در متغیرها قرار دهد. اگر هیچ caseای تطبیق پیدا نکند، هیچ‌یک از شاخه‌ها اجرا نمی‌شوند."
@@ -694,7 +694,7 @@ msgid "The actual parameters (arguments) to a function call are introduced in th
 msgstr "پارامترهای واقعی (آرگومان‌ها) در یک فراخوانی تابع، هنگام فراخوانی تابع در جدول نماد محلی تابع فراخوانی‌شده قرار می‌گیرند؛ بنابراین، آرگومان‌ها با استفاده از *انتقال با مقدار* (*call by value*) ارسال می‌شوند (که در آن *مقدار* همیشه یک ارجاع به شیء است، نه مقدار خود شیء). [#]_ هنگامی که یک تابع، تابع دیگری را فراخوانی می‌کند یا به‌صورت بازگشتی خودش را فراخوانی می‌کند، یک جدول نماد محلی جدید برای آن فراخوانی ایجاد می‌شود."
 
 msgid "A function definition associates the function name with the function object in the current symbol table.  The interpreter recognizes the object pointed to by that name as a user-defined function.  Other names can also point to that same function object and can also be used to access the function::"
-msgstr "یک تعریف تابع، نام تابع را با شیء تابع در جدول نماد فعلی مرتبط می‌کند. مفسر شیئی را که آن نام به آن اشاره می‌کند به‌عنوان یک تابع تعریف‌شده توسط کاربر تشخیص می‌دهد. نام‌های دیگر نیز می‌توانند به همان شیء تابع اشاره کنند و برای دسترسی به تابع استفاده شوند::"
+msgstr "یک تعریف تابع، نام تابع را با شیء تابع در جدول نماد فعلی مرتبط می‌کند. مفسر شی‌ءای را که آن نام به آن اشاره می‌کند به‌عنوان یک تابع تعریف‌شده توسط کاربر تشخیص می‌دهد. نام‌های دیگر نیز می‌توانند به همان شیء تابع اشاره کنند و برای دسترسی به تابع استفاده شوند::"
 
 msgid ""
 ">>> fib\n"
@@ -887,7 +887,7 @@ msgid "Keyword Arguments"
 msgstr "آرگومان‌های کلیدواژه‌ای"
 
 msgid "Functions can also be called using :term:`keyword arguments <keyword argument>` of the form ``kwarg=value``.  For instance, the following function::"
-msgstr "تابع‌ها همچنین می‌توانند با استفاده از :term:`keyword arguments <keyword argument>` به شکل ``kwarg=value`` فراخوانی شوند. برای نمونه، تابع زیر::"
+msgstr "تابع‌ها همچنین می‌توانند با استفاده از :term:`آرگومان کلیدواژه‌ای <keyword argument>` به شکل ``kwarg=value`` فراخوانی شوند. برای نمونه، تابع زیر::"
 
 msgid ""
 "def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n"
@@ -1543,7 +1543,7 @@ msgid "function annotations"
 msgstr "حاشیه‌نویسی‌های تابع"
 
 msgid ": (colon)"
-msgstr ": (علامت نقل‌وقول)"
+msgstr ": (علامت نقل‌قول)"
 
 msgid "coding"
 msgstr "کد زدن"
