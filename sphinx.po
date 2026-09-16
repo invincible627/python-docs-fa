@@ -388,3 +388,15 @@ msgstr ""
 
 msgid "the current stable release"
 msgstr "نسخه‌ی پایدار فعلی"
+
+msgid "Added in version %s"
+msgstr "اضافه شده در نسخه‌ی %s"
+
+msgid "Changed in version %s"
+msgstr "تغییر یافته در نسخه‌ی %s"
+
+msgid "Deprecated since version %s"
+msgstr "منسوخ شده از نسخه‌ی %s"
+
+msgid "Removed in version %s"
+msgstr "حذف شده در نسخه‌ی %s"

@@ -15,6 +15,13 @@ msgmerge/msgfmt identically -- no more silent flag drift (e.g. one path
 passing --no-location --no-wrap and the other not), which otherwise shows
 up as spurious rewrap-only diffs on whichever path runs next.
 
+Note: sphinx.po is NOT part of the CPython Doc/ gettext extraction --
+it tracks Sphinx's own internal UI-string catalog (versionadded,
+versionchanged, deprecated, etc.), which ships inside the installed
+`sphinx` package itself at sphinx/locale/sphinx.pot. It has its own
+fetch/merge path below (sync_sphinx_catalog) so it doesn't silently
+fall out of every merge_existing() pass the way it did before.
+
 This module is a library first, CLI second. As a CLI it exposes just the
 "mechanical middle" of the sync -- build .pot templates, merge them into
 existing .po files, flag new upstream pages with no .po yet, validate --
@@ -222,6 +229,44 @@ def merge_all(
 
 
 # ---------------------------------------------------------------------------
+# Sphinx's own UI-string catalog (separate from CPython's Doc/ content)
+# ---------------------------------------------------------------------------
+
+
+def find_sphinx_pot(venv_dir: Path) -> Path:
+    """Locate sphinx.pot inside the sphinx version installed in `venv_dir`
+    (the same venv build_gettext() creates from Doc/requirements.txt, so
+    this stays pinned to whatever Sphinx version CPython's docs actually
+    build with -- not whatever sphinx happens to be on the runner)."""
+    python = venv_dir / "bin" / "python"
+    result = subprocess.run(
+        [str(python), "-c", "import sphinx, os; print(os.path.dirname(sphinx.__file__))"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    sphinx_dir = Path(result.stdout.strip())
+    pot_path = sphinx_dir / "locale" / "sphinx.pot"
+    if not pot_path.exists():
+        raise FileNotFoundError(f"sphinx.pot not found at {pot_path}")
+    return pot_path
+
+
+def sync_sphinx_catalog(
+    doc_venv_dir: Path, repo_root: Path = REPO_ROOT
+) -> bool:
+    """Merge Sphinx's own sphinx.pot into this repo's top-level sphinx.po.
+    Returns True if sphinx.po exists and was merged, False if there's no
+    sphinx.po in this repo to merge into (nothing to do)."""
+    po_path = repo_root / "sphinx.po"
+    if not po_path.exists():
+        return False
+    pot_path = find_sphinx_pot(doc_venv_dir)
+    run(["msgmerge", *MSGMERGE_FLAGS, str(po_path), str(pot_path)])
+    return True
+
+
+# ---------------------------------------------------------------------------
 # Validate
 # ---------------------------------------------------------------------------
 
@@ -254,6 +299,7 @@ def _cli_sync_only(args: argparse.Namespace) -> int:
     via update_python_version.py)."""
     workdir = REPO_ROOT / ".cpython-src"
     tag = args.tag
+    doc_venv_dir = workdir / "Doc" / "venv"
 
     print(f"== Sparse-fetching CPython {tag} ==")
     fetch_cpython_sparse(tag, workdir)
@@ -270,6 +316,13 @@ def _cli_sync_only(args: argparse.Namespace) -> int:
         )
         for rel in report.new_pot_no_po:
             print(f"  - {rel}")
+
+    print("\n== Syncing sphinx.po against installed Sphinx's own catalog ==")
+    synced = sync_sphinx_catalog(doc_venv_dir)
+    if synced:
+        print("  sphinx.po merged against sphinx/locale/sphinx.pot")
+    else:
+        print("  no top-level sphinx.po found -- skipping")
 
     print("\n== Validating .po files ==")
     bad = check_po_files()
