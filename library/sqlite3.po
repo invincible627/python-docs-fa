@@ -375,9 +375,9 @@ msgid ""
 " )"
 msgstr ""
 "CREATE TABLE test(\n"
-"   i integer primary key,  ! به دنبال مبدلی به نام \"integer\" می‌گردد\n"
-"   p point,                ! به دنبال مبدلی به نام \"point\" می‌گردد\n"
-"   n number(10)            ! به دنبال مبدلی به نام \"number\" می‌گردد\n"
+"   i integer primary key,  ! will look up a converter named \"integer\"\n"
+"   p point,                ! will look up a converter named \"point\"\n"
+"   n number(10)            ! will look up a converter named \"number\"\n"
 " )"
 
 msgid "This flag may be combined with :const:`PARSE_COLNAMES` using the ``|`` (bitwise or) operator."
@@ -390,7 +390,7 @@ msgid "Pass this flag value to the *detect_types* parameter of :func:`connect` t
 msgstr "این مقدار پرچم را به پارامتر *detect_types* از :func:`connect` بدهید تا با استفاده از نام نوع، که از نام ستون پرس‌وجو تجزیه می‌شود، به‌عنوان کلید دیکشنری مبدل، یک تابع مبدل را جستجو کنید. نام ستون پرس‌وجو باید داخل علامت نقل‌قول دوتایی (``\"``) و نام نوع باید داخل کروشه (``[]``) قرار گیرد."
 
 msgid "SELECT MAX(p) as \"p [point]\" FROM test;  ! will look up converter \"point\""
-msgstr "SELECT MAX(p) as \"p [point]\" FROM test;  ! مبدل (converter) \"point\" را جست‌وجو خواهد کرد"
+msgstr "SELECT MAX(p) as \"p [point]\" FROM test;  ! will look up converter \"point\""
 
 msgid "This flag may be combined with :const:`PARSE_DECLTYPES` using the ``|`` (bitwise or) operator."
 msgstr "می‌توان این پرچم را با :const:`PARSE_DECLTYPES` با استفاده از عملگر ``|`` (یای بیتی) ترکیب کرد."
@@ -1408,9 +1408,8 @@ msgstr "پشتیبانی از اسلایس افزوده شد."
 msgid "Blob objects"
 msgstr "اشیای Blob"
 
-#, fuzzy
 msgid "A :class:`Blob` instance is a :term:`file-like object` that can read and write data in an SQLite :abbr:`BLOB (Binary Large OBject)`. Call :func:`len(blob) <len>` to get the size (number of bytes) of the blob. Use indices and :term:`slices <slice>` for direct access to the blob data."
-msgstr "یک نمونه از :class:`Blob` یک :term:`شیء شبه‌پرونده <file-like object>` است که می‌تواند داده‌ها را در یک :abbr:`BLOB (Binary Large OBject)` در SQLite بخواند و بنویسد. برای دریافت اندازه‌ی blob (تعداد بایت‌ها)، :func:`len <len>` را فراخوانی کنید. برای دسترسی مستقیم به داده‌های blob، از اندیس‌ها و :term:`اسلایس‌ها <slice>` استفاده کنید."
+msgstr "یک نمونه از :class:`Blob` یک :term:`شیء شبه‌پرونده <file-like object>` است که می‌تواند داده‌ها را در یک :abbr:`BLOB (Binary Large OBject)` مربوط به SQLite بخواند و بنویسد. برای دریافت اندازه‌ی blob (یعنی تعداد بایت‌های آن)، :func:`len(blob) <len>` را فراخوانی کنید. برای دسترسی مستقیم به داده‌های blob، از اندیس‌ها و :term:`اسلایس‌ها <slice>` استفاده کنید."
 
 msgid "Use the :class:`Blob` as a :term:`context manager` to ensure that the blob handle is closed after use."
 msgstr "از :class:`Blob` به‌عنوان یک :term:`context manager` استفاده کنید تا اطمینان حاصل شود که دسته‌ی blob پس از استفاده بسته می‌شود."
