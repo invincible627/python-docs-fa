@@ -188,7 +188,7 @@ msgid "Load MIME type information from the Windows registry."
 msgstr "بارگذاری اطلاعات نوع MIME از رجیستری ویندوز."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Add a mapping from the MIME type *type* to the extension *ext*. Valid extensions start with a '.' or are empty. When the extension is already known, the new type will replace the old one. When the type is already known the extension will be added to the list of known extensions."
 msgstr "یک نگاشت از نوع MIME *type* به پسوند *ext* اضافه کنید. پسوندهای معتبر با '.' شروع می‌شوند یا خالی هستند. هنگامی که پسوند از قبل شناخته شده باشد، نوع جدید جایگزین نوع قدیمی خواهد شد. هنگامی که نوع از قبل شناخته شده باشد، پسوند به فهرست پسوندهای شناخته‌شده اضافه خواهد شد."

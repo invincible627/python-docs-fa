@@ -28,7 +28,7 @@ msgid "This module provides access to operating system functionality that is sta
 msgstr "این ماژول دسترسی به قابلیت‌های سیستم‌عاملی را فراهم می‌کند که توسط استاندارد C و استاندارد POSIX (یک رابط Unix با پوششی بسیار نازک) استاندارد شده‌اند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "**Do not import this module directly.**  Instead, import the module :mod:`os`, which provides a *portable* version of this interface.  On Unix, the :mod:`os` module provides a superset of the :mod:`!posix` interface.  On non-Unix operating systems the :mod:`!posix` module is not available, but a subset is always available through the :mod:`os` interface.  Once :mod:`os` is imported, there is *no* performance penalty in using it instead of :mod:`!posix`.  In addition, :mod:`os` provides some additional functionality, such as automatically calling :func:`~os.putenv` when an entry in ``os.environ`` is changed."
 msgstr "این ماژول را به‌صورت مستقیم ایمپورت نکنید. در عوض، ماژول :mod:`os` را ایمپورت کنید، که نسخه‌ای *قابل‌حمل* از این رابط ارائه می‌دهد. در یونیکس، ماژول :mod:`os` ابرمجموعه‌ای از رابط :mod:`!posix` را ارائه می‌دهد. در سیستم‌عامل‌های غیر یونیکسی، ماژول :mod:`!posix` در دسترس نیست، اما زیرمجموعه‌ای همیشه از طریق رابط :mod:`os` در دسترس است. پس از ایمپورت شدن :mod:`os`، استفاده از آن به جای :mod:`!posix` *هیچ* جریمه‌ای از نظر کارایی ندارد. علاوه بر این، :mod:`os` برخی قابلیت‌های اضافی را ارائه می‌دهد، مانند فراخوانی خودکار :func:`~os.putenv` هرگاه یک ورودی در ``os.environ`` تغییر کند."

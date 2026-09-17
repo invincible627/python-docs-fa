@@ -45,7 +45,7 @@ msgid "Map character sets to their email properties."
 msgstr "مجموعه‌نویسه‌ها را به ویژگی‌های ایمیلی آن‌ها نگاشت می‌کند."
 
 msgid "This class provides information about the requirements imposed on email for a specific character set.  It also provides convenience routines for converting between character sets, given the availability of the applicable codecs.  Given a character set, it will do its best to provide information on how to use that character set in an email message in an RFC-compliant way."
-msgstr "این کلاس اطلاعاتی درباره الزامات تحمیل‌شده بر ایمیل برای یک مجموعه‌نویسه خاص ارائه می‌دهد. همچنین روال‌های آسان‌کننده‌ای برای تبدیل بین مجموعه‌نویسه‌ها، با توجه به دسترسی‌پذیری کدک‌های مربوطه، ارائه می‌دهد. با داشتن یک مجموعه‌نویسه، این کلاس نهایت تلاش خود را می‌کند تا اطلاعاتی درباره نحوه استفاده از آن مجموعه‌نویسه در یک پیام ایمیل به شیوه‌ای منطبق با RFC ارائه دهد."
+msgstr "این کلاس اطلاعاتی درباره الزامات تحمیل‌شده بر ایمیل برای یک مجموعه‌نویسه خاص ارائه می‌دهد. همچنین روال‌های آسان‌کننده‌ای برای تبدیل بین مجموعه‌نویسه‌ها، با توجه به دسترس‌پذیری کدک‌های مربوطه، ارائه می‌دهد. با داشتن یک مجموعه‌نویسه، این کلاس نهایت تلاش خود را می‌کند تا اطلاعاتی درباره نحوه استفاده از آن مجموعه‌نویسه در یک پیام ایمیل به شیوه‌ای منطبق با RFC ارائه دهد."
 
 msgid "Certain character sets must be encoded with quoted-printable or base64 when used in email headers or bodies.  Certain character sets must be converted outright, and are not allowed in email."
 msgstr "برخی مجموعه‌های نویسه باید هنگام استفاده در سرآیندها یا بدنه‌های ایمیل با quoted-printable یا base64 کدگذاری شوند. برخی مجموعه‌های نویسه باید به‌طور کامل تبدیل شوند و در ایمیل مجاز نیستند."

@@ -36,6 +36,14 @@ jobs:
         run: make venv
         working-directory: ./Doc
 
+      - name: Pin Sphinx to 9.1.0
+        # make venv may resolve an older Sphinx via requirements.txt; pin
+        # explicitly so we get the reordered-ref / translated-display-text
+        # i18n fixes (sphinx-doc/sphinx#14144). Bump this once #14162 lands
+        # upstream and re-check whether the suppression below is still needed.
+        run: ./venv/bin/pip install "sphinx==9.1.0"
+        working-directory: ./Doc
+
       - name: Checkout translation files
         uses: actions/checkout@v4
         with:
@@ -59,5 +67,9 @@ jobs:
         working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Build documentation
-        run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -W --keep-going" html
+        # suppress_warnings for i18n.inconsistent_references: confirmed
+        # upstream false positive for translated display text / custom
+        # pending_xref directives (e.g. CPython's `.. availability::`),
+        # tracked and still open at sphinx-doc/sphinx#14162.
+        run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -D suppress_warnings=i18n.inconsistent_references -W --keep-going" html
         working-directory: ./Doc

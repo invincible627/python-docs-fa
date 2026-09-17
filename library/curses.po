@@ -38,7 +38,7 @@ msgid "While curses is most widely used in the Unix environment, versions are av
 msgstr "اگرچه curses بیشترین کاربرد را در محیط یونیکس دارد، نسخه‌هایی برای ویندوز، DOS و احتمالاً سیستم‌های دیگر نیز در دسترس هستند. این ماژول توسعه به‌گونه‌ای طراحی شده است که با API کتابخانه ncurses مطابقت داشته باشد؛ ncurses یک کتابخانه curses متن‌باز است که روی لینوکس و نسخه‌های BSD یونیکس میزبانی می‌شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`سکوهای موبایل <mobile-availability>` یا :ref:`سکوهای WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."
@@ -764,7 +764,7 @@ msgid "A named tuple containing the three components of the ncurses library vers
 msgstr "یک تاپل نام‌دار (named tuple) شامل سه کامپوننت از نسخه‌ی کتابخانه‌ی ncurses: *major*، *minor* و *patch*. همه‌ی مقدارها عدد صحیح هستند. همچنین می‌توان به این کامپوننت‌ها با نام دسترسی داشت، بنابراین ``curses.ncurses_version[0]`` معادل ``curses.ncurses_version.major`` است و به همین ترتیب."
 
 msgid "Availability: if the ncurses library is used."
-msgstr "دسترسی‌پذیری: اگر از کتابخانه ncurses استفاده شود."
+msgstr "دسترس‌پذیری: اگر از کتابخانه ncurses استفاده شود."
 
 msgid "The maximum number of colors the terminal can support. It is defined only after the call to :func:`start_color`."
 msgstr "حداکثر تعداد رنگ‌هایی که پایانه می‌تواند از آن‌ها پشتیبانی کند. این مقدار فقط پس از فراخوانی :func:`start_color` تعریف می‌شود."

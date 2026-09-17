@@ -34,7 +34,7 @@ msgid "As a result, the only way you can use Python on Android is in embedded mo
 msgstr "در نتیجه، تنها راهی که می‌توانید روی اندروید از پایتون استفاده کنید، حالت تعبیه‌شده است – یعنی با نوشتن یک برنامه‌ی بومی اندروید، تعبیه کردن یک مفسر پایتون با استفاده از ``libpython`` و فراخوانی کد پایتون با استفاده از :ref:`API تعبیه‌ی پایتون <embedding>`. سپس مفسر کامل پایتون، کتابخانه‌ی استاندارد و تمام کد پایتون شما درون برنامه‌تان بسته‌بندی می‌شوند تا برنامه آن‌ها را برای استفاده‌ی خصوصی خود به کار بگیرد."
 
 msgid "The Python standard library has some notable omissions and restrictions on Android. See the :ref:`API availability guide <mobile-availability>` for details."
-msgstr "کتابخانه استاندارد پایتون در اندروید دارای برخی موارد حذف‌شده و محدودیت‌های قابل توجه است. برای جزئیات، :ref:`راهنمای دسترسی‌پذیری API <mobile-availability>` را ببینید."
+msgstr "کتابخانه استاندارد پایتون در اندروید دارای برخی موارد حذف‌شده و محدودیت‌های قابل توجه است. برای جزئیات، :ref:`راهنمای دسترس‌پذیری API <mobile-availability>` را ببینید."
 
 msgid "Adding Python to an Android app"
 msgstr "افزودن پایتون به یک برنامه اندروید"

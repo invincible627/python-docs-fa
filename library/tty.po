@@ -31,7 +31,7 @@ msgid "The :mod:`!tty` module defines functions for putting the tty into cbreak 
 msgstr "ماژول :mod:`!tty` توابعی را برای قرار دادن tty در حالت‌های cbreak و raw تعریف می‌کند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Because it requires the :mod:`termios` module, it will work only on Unix."
 msgstr "از آن‌جایی که به ماژول :mod:`termios` نیاز دارد، فقط در یونیکس کار می‌کند."

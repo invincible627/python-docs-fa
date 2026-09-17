@@ -320,7 +320,7 @@ msgid "All super-user supported flags"
 msgstr "همه‌ی پرچم‌های پشتیبانی‌شده‌ی ابرکاربر"
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "All super-user read-only synthetic flags"
 msgstr "همه‌ی پرچم‌های مصنوعی فقط‌خواندنی برای ابرکاربر"

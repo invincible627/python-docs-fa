@@ -1600,7 +1600,7 @@ msgid "If the code page is valid and supported, return a :class:`codecs.CodecInf
 msgstr "اگر صفحه کد معتبر و پشتیبانی‌شده باشد، یک شیء :class:`codecs.CodecInfo` برای آن برمی‌گرداند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module implements the following exception:"
 msgstr "این ماژول استثنای زیر را پیاده‌سازی می‌کند:"

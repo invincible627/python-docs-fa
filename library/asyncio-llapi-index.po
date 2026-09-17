@@ -337,13 +337,13 @@ msgid ":meth:`loop.add_reader`"
 msgstr ":meth:`loop.add_reader`"
 
 msgid "Start watching a file descriptor for read availability."
-msgstr "آغاز پایش یک توصیف‌گر پرونده برای دسترسی‌پذیری جهت خواندن."
+msgstr "آغاز پایش یک توصیف‌گر پرونده برای دسترس‌پذیری جهت خواندن."
 
 msgid ":meth:`loop.remove_reader`"
 msgstr ":meth:`loop.remove_reader`"
 
 msgid "Stop watching a file descriptor for read availability."
-msgstr "پایش یک توصیف‌گر پرونده را برای دسترسی‌پذیری جهت خواندن متوقف کنید."
+msgstr "پایش یک توصیف‌گر پرونده را برای دسترس‌پذیری جهت خواندن متوقف کنید."
 
 msgid ":meth:`loop.add_writer`"
 msgstr ":meth:`loop.add_writer`"
@@ -355,7 +355,7 @@ msgid ":meth:`loop.remove_writer`"
 msgstr ":meth:`loop.remove_writer`"
 
 msgid "Stop watching a file descriptor for write availability."
-msgstr "پایش یک توصیف‌گر پرونده از نظر دسترسی‌پذیری برای نوشتن را متوقف کنید."
+msgstr "پایش یک توصیف‌گر پرونده از نظر دسترس‌پذیری برای نوشتن را متوقف کنید."
 
 msgid "Unix Signals"
 msgstr "سیگنال‌های یونیکس"

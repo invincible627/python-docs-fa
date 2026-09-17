@@ -145,7 +145,7 @@ msgid "See also the documentation of :meth:`loop.create_unix_connection`."
 msgstr "همچنین مستندات :meth:`loop.create_unix_connection` را ببینید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Added the *ssl_handshake_timeout* parameter. The *path* parameter can now be a :term:`path-like object`"
 msgstr "پارامتر *ssl_handshake_timeout* افزوده شد. پارامتر *path* اکنون می‌تواند یک :term:`path-like object` باشد"

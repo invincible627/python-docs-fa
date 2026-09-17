@@ -46,7 +46,7 @@ msgid ":pep:`324` -- PEP proposing the subprocess module"
 msgstr ":pep:`324` -- PEP پیشنهادی برای ماژول subprocess"
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`پلتفرم‌های موبایل <mobile-availability>` یا :ref:`پلتفرم‌های WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."

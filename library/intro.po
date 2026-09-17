@@ -47,7 +47,7 @@ msgid "Let the show begin!"
 msgstr "اجازه دهید نمایش آغاز شود!"
 
 msgid "Notes on availability"
-msgstr "نکاتی درباره‌ی دسترسی‌پذیری"
+msgstr "نکاتی درباره‌ی دسترس‌پذیری"
 
 msgid "An \"Availability: Unix\" note means that this function is commonly found on Unix systems.  It does not make any claims about its existence on a specific operating system."
 msgstr "یک یادداشت «Availability: Unix» به این معنا است که این تابع معمولاً در سیستم‌های یونیکس یافت می‌شود. این یادداشت هیچ ادعایی درباره‌ی وجود آن در یک سیستم‌عامل خاص نمی‌کند."
@@ -56,7 +56,7 @@ msgid "If not separately noted, all functions that claim \"Availability: Unix\" 
 msgstr "اگر به‌طور جداگانه ذکر نشده باشد، همه‌ی توابعی که «Availability: Unix» را ادعا می‌کنند، در macOS، iOS و Android پشتیبانی می‌شوند؛ همه‌ی آن‌ها بر پایه‌ی یک هسته‌ی Unix مبتنی هستند."
 
 msgid "If an availability note contains both a minimum Kernel version and a minimum libc version, then both conditions must hold. For example a feature with note *Availability: Linux >= 3.17 with glibc >= 2.27* requires both Linux 3.17 or newer and glibc 2.27 or newer."
-msgstr "اگر یک یادداشت دسترسی‌پذیری شامل هم حداقل نسخه‌ی هسته و هم حداقل نسخه‌ی libc باشد، هر دو شرط باید برقرار باشند. برای مثال، قابلیتی با یادداشت *Availability: Linux >= 3.17 with glibc >= 2.27* هم به Linux 3.17 یا جدیدتر و هم به glibc 2.27 یا جدیدتر نیاز دارد."
+msgstr "اگر یک یادداشت دسترس‌پذیری شامل هم حداقل نسخه‌ی هسته و هم حداقل نسخه‌ی libc باشد، هر دو شرط باید برقرار باشند. برای مثال، قابلیتی با یادداشت *Availability: Linux >= 3.17 with glibc >= 2.27* هم به Linux 3.17 یا جدیدتر و هم به glibc 2.27 یا جدیدتر نیاز دارد."
 
 msgid "WebAssembly platforms"
 msgstr "سکوهای WebAssembly"

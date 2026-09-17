@@ -54,7 +54,7 @@ msgid "The original rationale and specification for this module."
 msgstr "مبانی و مشخصات اولیه‌ی این ماژول."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`سکوهای موبایل <mobile-availability>` یا :ref:`سکوهای WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."

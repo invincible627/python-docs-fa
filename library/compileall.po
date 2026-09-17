@@ -33,7 +33,7 @@ msgid "This module provides some utility functions to support installing Python 
 msgstr "این ماژول چند تابع کاربردی برای پشتیبانی از نصب کتابخانه‌های پایتون فراهم می‌کند. این توابع، پرونده‌های مبدأ پایتون را در یک درخت پوشه کامپایل می‌کنند. از این ماژول می‌توان برای ایجاد پرونده‌های بایت‌کدِ نهان‌شده در زمان نصب کتابخانه استفاده کرد؛ به‌گونه‌ای که این پرونده‌ها حتی برای کاربرانی که اجازه‌ی نوشتن در پوشه‌های کتابخانه را ندارند نیز قابل استفاده باشند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول در WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."

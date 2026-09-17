@@ -39,7 +39,7 @@ msgid ":class:`concurrent.futures.Future` must not be confused with :class:`asyn
 msgstr ":class:`concurrent.futures.Future` نباید با :class:`asyncio.Future` اشتباه گرفته شود، که برای استفاده با وظایف و هم‌روال‌های :mod:`asyncio` طراحی شده است. برای مقایسه‌ی دقیق این دو، مستندات :doc:`Future در asyncio <asyncio-future>` را ببینید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."

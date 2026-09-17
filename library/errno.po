@@ -494,7 +494,7 @@ msgid "Capabilities insufficient. This error is mapped to the exception :exc:`Pe
 msgstr "قابلیت‌ها ناکافی است. این خطا به استثنای :exc:`PermissionError` نگاشت می‌شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Operation canceled"
 msgstr "عملیات لغو شد"

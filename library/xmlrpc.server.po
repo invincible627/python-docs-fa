@@ -36,7 +36,7 @@ msgid "The :mod:`!xmlrpc.server` module is not secure against maliciously constr
 msgstr "ماژول :mod:`!xmlrpc.server` در برابر داده‌هایی که بدخواهانه ساخته شده‌اند امن نیست. اگر نیاز به تجزیه داده‌های غیرقابل‌اعتماد یا احراز هویت‌نشده دارید، :ref:`xml-security` را ببینید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول در WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

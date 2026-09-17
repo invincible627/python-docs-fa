@@ -7,6 +7,11 @@ build:
   commands:
     - git clone --depth 1 --branch v3.14.7 https://github.com/python/cpython venv/cpython
     - pip install -r venv/cpython/Doc/requirements.txt
+    # Pin Sphinx separately: requirements.txt may resolve to an older version,
+    # and 9.1.0+ is needed for the reordered- ref / translated-display-text
+    # i18n fixes (sphinx-doc/sphinx#14144). Bump this once #14162 lands
+    # upstream and re-check whether the suppression below is still needed.
+    - pip install "sphinx==9.1.0"
     - mkdir -p venv/cpython/Doc/locales/fa/LC_MESSAGES
     - cp --parents *.po venv/cpython/Doc/locales/fa/LC_MESSAGES/
     - find */ -name "*.po" -not -path "venv/*" | xargs -I{} cp --parents {} venv/cpython/Doc/locales/fa/LC_MESSAGES/
@@ -18,6 +23,7 @@ build:
         -D gettext_allow_fuzzy_translations=1
         -D gettext_compact=0
         -D html_theme_options.is_rtl=true
+        -D suppress_warnings=i18n.inconsistent_references
         --keep-going
         venv/cpython/Doc
         $READTHEDOCS_OUTPUT/html

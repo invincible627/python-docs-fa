@@ -34,7 +34,7 @@ msgid "Readline keybindings may be configured via an initialization file, typica
 msgstr "می‌توانید کلیدبندی‌های Readline را از طریق یک پرونده راه‌اندازی پیکربندی کنید، که معمولاً ``.inputrc`` در پوشه‌ی خانگی شما قرار دارد. برای اطلاعات در مورد قالب و ساختارهای مجاز آن پرونده و قابلیت‌های کتابخانه‌ی Readline به‌طور کلی، به `Readline Init File <https://tiswww.cwru.edu/php/chet/readline/rluserman.html#Readline-Init-File>`_ در راهنمای GNU Readline مراجعه کنید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`سکوهای موبایل <mobile-availability>` یا :ref:`سکوهای WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."

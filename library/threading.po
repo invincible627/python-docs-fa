@@ -33,7 +33,7 @@ msgid "This module constructs higher-level threading interfaces on top of the lo
 msgstr "این ماژول رابط‌های نخ‌بندی سطح بالاتر را بر روی ماژول سطح پایین‌تر :mod:`_thread` ایجاد می‌کند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

@@ -35,7 +35,15 @@ jobs:
       - name: Setup virtual environment
         run: make venv
         working-directory: ./Doc
-        
+
+      - name: Pin Sphinx to 9.1.0
+        # make venv may resolve an older Sphinx via requirements.txt; pin
+        # explicitly so we get the reordered-ref / translated-display-text
+        # i18n fixes (sphinx-doc/sphinx#14144). Bump this once #14162 lands
+        # upstream and re-check whether the suppression below is still needed.
+        run: ./venv/bin/pip install "sphinx==9.1.0"
+        working-directory: ./Doc
+
       - name: Checkout translation files
         uses: actions/checkout@v4
         with:
@@ -50,7 +58,7 @@ jobs:
         uses: sphinx-doc/github-problem-matcher@v1.1
         
       - name: Build documentation
-        run: make -e SPHINXERRORHANDLING="" SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -D html_theme_options.is_rtl=true --keep-going" html
+        run: make -e SPHINXERRORHANDLING="" SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -D html_theme_options.is_rtl=true -D suppress_warnings=i18n.inconsistent_references --keep-going" html
         working-directory: ./Doc
         
       - name: Setup Pages

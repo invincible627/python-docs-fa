@@ -31,7 +31,7 @@ msgid "This module provides an interface to the Unix ``syslog`` library routines
 msgstr "این ماژول رابطی به روتین‌های کتابخانه ``syslog`` در Unix فراهم می‌کند. برای شرحی دقیق از امکانات ``syslog`` به صفحات راهنمای Unix مراجعه کنید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module wraps the system ``syslog`` family of routines.  A pure Python library that can speak to a syslog server is available in the :mod:`logging.handlers` module as :class:`~logging.handlers.SysLogHandler`."
 msgstr "این ماژول، خانواده‌ای از روال‌های سیستمی ``syslog`` را پوشش می‌دهد. یک کتابخانه‌ی پایتون خالص که می‌تواند با یک سرور syslog ارتباط برقرار کند، در ماژول :mod:`logging.handlers` به‌عنوان :class:`~logging.handlers.SysLogHandler` در دسترس است."

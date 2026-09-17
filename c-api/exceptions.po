@@ -139,7 +139,7 @@ msgid "This is a convenience function to raise :exc:`OSError`. If called with *i
 msgstr "این یک تابع کمکی برای پرتاب :exc:`OSError` است. اگر با مقدار ``0`` برای *ierr* فراخوانی شود، به‌جای آن از کد خطایی که فراخوانی :c:func:`!GetLastError` برمی‌گرداند استفاده می‌شود. این تابع برای بازیابی توضیح ویندوز برای کد خطای داده‌شده توسط *ierr* یا :c:func:`!GetLastError`، تابع Win32 یعنی :c:func:`!FormatMessage` را فراخوانی می‌کند؛ سپس یک شیء :exc:`OSError` می‌سازد که ویژگی :attr:`~OSError.winerror` آن روی کد خطا و ویژگی :attr:`~OSError.strerror` آن روی پیام خطای متناظر (گرفته‌شده از :c:func:`!FormatMessage`) تنظیم شده‌اند، و سپس ``PyErr_SetObject(PyExc_OSError, object)`` را فراخوانی می‌کند. این تابع همیشه ``NULL`` را برمی‌گرداند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Similar to :c:func:`PyErr_SetFromWindowsErr`, with an additional parameter specifying the exception type to be raised."
 msgstr "مشابه :c:func:`PyErr_SetFromWindowsErr`، با یک پارامتر اضافی برای تعیین نوع استثنایی که باید ایجاد شود."

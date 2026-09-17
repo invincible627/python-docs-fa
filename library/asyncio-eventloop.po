@@ -518,7 +518,7 @@ msgid "See the documentation of the :meth:`loop.create_connection` method for in
 msgstr "برای اطلاعات درباره آرگومان‌های این متد، مستندات متد :meth:`loop.create_connection` را ببینید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Added the *ssl_handshake_timeout* parameter. The *path* parameter can now be a :term:`path-like object`."
 msgstr "پارامتر *ssl_handshake_timeout* اضافه شد. پارامتر *path* اکنون می‌تواند یک :term:`path-like object` باشد."
@@ -686,22 +686,22 @@ msgid "Watching file descriptors"
 msgstr "پایش توصیف‌گرهای پرونده"
 
 msgid "Start monitoring the *fd* file descriptor for read availability and invoke *callback* with the specified arguments once *fd* is available for reading."
-msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترسی‌پذیری جهت خواندن آغاز کنید و هنگامی که *fd* برای خواندن در دسترس شد، *callback* را با آرگومان‌های مشخص‌شده فراخوانی کنید."
+msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترس‌پذیری جهت خواندن آغاز کنید و هنگامی که *fd* برای خواندن در دسترس شد، *callback* را با آرگومان‌های مشخص‌شده فراخوانی کنید."
 
 msgid "Any preexisting callback registered for *fd* is cancelled and replaced by *callback*."
 msgstr "هر کال‌بک از پیش ثبت‌شده برای *fd* لغو می‌شود و با *callback* جایگزین می‌شود."
 
 msgid "Stop monitoring the *fd* file descriptor for read availability. Returns ``True`` if *fd* was previously being monitored for reads."
-msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترسی‌پذیری جهت خواندن متوقف می‌کند. اگر *fd* پیش‌تر برای خواندن پایش می‌شد، ``True`` برمی‌گرداند."
+msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترس‌پذیری جهت خواندن متوقف می‌کند. اگر *fd* پیش‌تر برای خواندن پایش می‌شد، ``True`` برمی‌گرداند."
 
 msgid "Start monitoring the *fd* file descriptor for write availability and invoke *callback* with the specified arguments *args* once *fd* is available for writing."
-msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترسی‌پذیری جهت نوشتن آغاز کنید و هرگاه *fd* برای نوشتن در دسترس بود، *callback* را با آرگومان‌های مشخص‌شده *args* فراخوانی کنید."
+msgstr "پایش توصیف‌گر پرونده *fd* را برای دسترس‌پذیری جهت نوشتن آغاز کنید و هرگاه *fd* برای نوشتن در دسترس بود، *callback* را با آرگومان‌های مشخص‌شده *args* فراخوانی کنید."
 
 msgid "Use :func:`functools.partial` :ref:`to pass keyword arguments <asyncio-pass-keywords>` to *callback*."
 msgstr "برای :ref:`ارسال آرگومان‌های کلیدواژه‌ای <asyncio-pass-keywords>` به *کال‌بک* از :func:`functools.partial` استفاده کنید."
 
 msgid "Stop monitoring the *fd* file descriptor for write availability. Returns ``True`` if *fd* was previously being monitored for writes."
-msgstr "پایش توصیف‌گر پرونده *fd* را از نظر دسترسی‌پذیری برای نوشتن متوقف می‌کند. اگر *fd* پیش‌تر برای نوشتن پایش می‌شد، ``True`` را برمی‌گرداند."
+msgstr "پایش توصیف‌گر پرونده *fd* را از نظر دسترس‌پذیری برای نوشتن متوقف می‌کند. اگر *fd* پیش‌تر برای نوشتن پایش می‌شد، ``True`` را برمی‌گرداند."
 
 msgid "See also :ref:`Platform Support <asyncio-platform-support>` section for some limitations of these methods."
 msgstr "همچنین برای برخی محدودیت‌های این متدها، بخش :ref:`Platform Support <asyncio-platform-support>` را ببینید."

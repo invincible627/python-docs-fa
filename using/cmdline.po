@@ -702,7 +702,7 @@ msgid "This may also be enabled at runtime with :func:`sys._enablelegacywindowsf
 msgstr "همچنین می‌توان این را در زمان اجرا با :func:`sys._enablelegacywindowsfsencoding` فعال کرد."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "See :pep:`529` for more details."
 msgstr "برای جزئیات بیشتر به :pep:`529` مراجعه کنید."

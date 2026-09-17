@@ -2292,7 +2292,7 @@ msgid "Functions in this library use the ``stdcall`` calling convention, and are
 msgstr "توابع این کتابخانه از قرارداد فراخوانی ``stdcall`` استفاده می‌کنند، و فرض می‌شود کد :class:`HRESULT` مخصوص ویندوز را برمی‌گردانند. مقادیر :class:`HRESULT` حاوی اطلاعاتی هستند که مشخص می‌کنند آیا فراخوانی تابع ناموفق بوده است یا موفق، به همراه کد خطای اضافی. اگر مقدار بازگشتی نشان‌دهنده‌ی شکست باشد، یک :class:`OSError` به‌طور خودکار پرتاب می‌شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid ":exc:`WindowsError` used to be raised, which is now an alias of :exc:`OSError`."
 msgstr "پیش‌تر :exc:`WindowsError` پرتاب می‌شد، که اکنون نام مستعاری از :exc:`OSError` است."

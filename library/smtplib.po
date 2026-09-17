@@ -34,7 +34,7 @@ msgid "The :mod:`!smtplib` module defines an SMTP client session object that can
 msgstr "ماژول :mod:`!smtplib` یک شیء نشست کلاینت SMTP را تعریف می‌کند که می‌توان از آن برای ارسال ایمیل به هر ماشین اینترنتی با دیمن شنونده SMTP یا ESMTP استفاده کرد. برای جزئیات عملکرد SMTP و ESMTP، به :rfc:`821` (پروتکل انتقال ساده‌ی ایمیل) و :rfc:`1869` (افزونه‌های سرویس SMTP) مراجعه کنید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."

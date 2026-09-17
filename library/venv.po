@@ -60,7 +60,7 @@ msgid "`Python Packaging User Guide: Creating and using virtual environments <ht
 msgstr "`راهنمای کاربر بسته‌بندی پایتون: ایجاد و استفاده از محیط‌های مجازی <https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments>`__"
 
 msgid "Availability"
-msgstr "دسترسی"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`سکوهای موبایل <mobile-availability>` یا :ref:`سکوهای WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."

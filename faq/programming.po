@@ -1917,7 +1917,7 @@ msgid "How can I organize my code to make it easier to change the base class?"
 msgstr "چگونه می‌توانم کد خود را سازمان‌دهی کنم تا تغییر کلاس پایه آسان‌تر شود؟"
 
 msgid "You could assign the base class to an alias and derive from the alias.  Then all you have to change is the value assigned to the alias.  Incidentally, this trick is also handy if you want to decide dynamically (such as depending on availability of resources) which base class to use.  Example::"
-msgstr "می‌توانید کلاس پایه را به یک نام مستعار اختصاص دهید و از آن نام مستعار مشتق شوید. سپس تنها چیزی که باید تغییر دهید، مقدار اختصاص‌داده‌شده به نام مستعار است. ضمناً، این ترفند زمانی هم که بخواهید به‌صورت پویا تصمیم بگیرید (مثلاً بسته به دسترسی‌پذیری منابع) از کدام کلاس پایه استفاده کنید، مفید است. مثال::"
+msgstr "می‌توانید کلاس پایه را به یک نام مستعار اختصاص دهید و از آن نام مستعار مشتق شوید. سپس تنها چیزی که باید تغییر دهید، مقدار اختصاص‌داده‌شده به نام مستعار است. ضمناً، این ترفند زمانی هم که بخواهید به‌صورت پویا تصمیم بگیرید (مثلاً بسته به دسترس‌پذیری منابع) از کدام کلاس پایه استفاده کنید، مفید است. مثال::"
 
 msgid ""
 "class Base:\n"

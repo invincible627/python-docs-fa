@@ -27,7 +27,7 @@ msgid ":mod:`!mmap` --- Memory-mapped file support"
 msgstr ":mod:`!mmap` --- پشتیبانی از پرونده‌های نگاشت‌شده به حافظه (memory-mapped file)"
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

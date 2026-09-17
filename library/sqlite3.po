@@ -485,7 +485,7 @@ msgid "These constants are used for the :meth:`Connection.setconfig` and :meth:`
 msgstr "این ثابت‌ها برای متدهای :meth:`Connection.setconfig` و :meth:`~Connection.getconfig` استفاده می‌شوند."
 
 msgid "The availability of these constants varies depending on the version of SQLite Python was compiled with."
-msgstr "دسترسی‌پذیری این ثابت‌ها بسته به نسخه‌ی SQLite که پایتون با آن کامپایل شده است، متفاوت است."
+msgstr "دسترس‌پذیری این ثابت‌ها بسته به نسخه‌ی SQLite که پایتون با آن کامپایل شده است، متفاوت است."
 
 msgid "https://www.sqlite.org/c3ref/c_dbconfig_defensive.html"
 msgstr "https://www.sqlite.org/c3ref/c_dbconfig_defensive.html"

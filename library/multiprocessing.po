@@ -31,7 +31,7 @@ msgid "**Source code:** :source:`Lib/multiprocessing/`"
 msgstr "**کد منبع:** :source:`Lib/multiprocessing/`"
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module is not supported on :ref:`mobile platforms <mobile-availability>` or :ref:`WebAssembly platforms <wasm-availability>`."
 msgstr "این ماژول در :ref:`پلتفرم‌های موبایل <mobile-availability>` یا :ref:`پلتفرم‌های WebAssembly <wasm-availability>` پشتیبانی نمی‌شود."

@@ -33,7 +33,7 @@ msgid "This module provides a portable way of using operating system dependent f
 msgstr "این ماژول یک روش قابل‌حمل برای استفاده از قابلیت‌های وابسته به سیستم‌عامل فراهم می‌کند. اگر فقط می‌خواهید یک پرونده را بخوانید یا بنویسید، :func:`open` را ببینید، اگر می‌خواهید مسیرها را دستکاری کنید، ماژول :mod:`os.path` را ببینید، و اگر می‌خواهید تمام سطرهای همه پرونده‌های خط فرمان را بخوانید، ماژول :mod:`fileinput` را ببینید. برای ایجاد پرونده‌ها و پوشه‌های موقت ماژول :mod:`tempfile` را ببینید، و برای مدیریت پرونده‌ها و پوشه‌ها در سطح بالا ماژول :mod:`shutil` را ببینید."
 
 msgid "Notes on the availability of these functions:"
-msgstr "نکاتی درباره‌ی دسترسی‌پذیری این توابع:"
+msgstr "نکاتی درباره‌ی دسترس‌پذیری این توابع:"
 
 msgid "The design of all built-in operating system dependent modules of Python is such that as long as the same functionality is available, it uses the same interface; for example, the function ``os.stat(path)`` returns stat information about *path* in the same format (which happens to have originated with the POSIX interface)."
 msgstr "طراحی همه ماژول‌های توکار وابسته به سیستم‌عامل پایتون به‌گونه‌ای است که تا زمانی که عملکرد یکسانی در دسترس باشد، از رابط یکسانی استفاده می‌کنند؛ برای مثال، تابع ``os.stat(path)`` اطلاعات stat درباره *path* را در قالب یکسانی برمی‌گرداند (که اتفاقاً از رابط POSIX سرچشمه گرفته است)."
@@ -153,7 +153,7 @@ msgid "Return the filename corresponding to the controlling terminal of the proc
 msgstr "نام پرونده متناظر با پایانه کنترل‌کننده فرایند را برمی‌گرداند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "A :term:`mapping` object where keys and values are strings that represent the process environment.  For example, ``environ['HOME']`` is the pathname of your home directory (on some platforms), and is equivalent to ``getenv(\"HOME\")`` in C."
 msgstr "یک شیء :term:`mapping` که در آن کلیدها و مقادیر، رشته‌هایی هستند که محیط فرایند را نشان می‌دهند. برای مثال، ``environ['HOME']`` مسیرنام پوشه‌ی خانگی شما است (در برخی سکوها) و معادل ``getenv(\"HOME\")`` در C است."
@@ -453,7 +453,7 @@ msgid "The :func:`~os.setns` function."
 msgstr "تابع :func:`~os.setns`."
 
 msgid "Flags to the :func:`unshare` function, if the implementation supports them. See :manpage:`unshare(2)` in the Linux manual for their exact effect and availability."
-msgstr "پرچم‌های تابع :func:`unshare`، اگر پیاده‌سازی از آن‌ها پشتیبانی کند. برای تأثیر دقیق و دسترسی‌پذیری آن‌ها، به :manpage:`unshare(2)` در راهنمای لینوکس مراجعه کنید."
+msgstr "پرچم‌های تابع :func:`unshare`، اگر پیاده‌سازی از آن‌ها پشتیبانی کند. برای تأثیر دقیق و دسترس‌پذیری آن‌ها، به :manpage:`unshare(2)` در راهنمای لینوکس مراجعه کنید."
 
 msgid "File Object Creation"
 msgstr "ایجاد شیء پرونده"
@@ -721,7 +721,7 @@ msgid "Accepts a :term:`path-like object`."
 msgstr "یک :term:`path-like object` را می‌پذیرد."
 
 msgid "The following constants are options for the *flags* parameter to the :func:`~os.open` function.  They can be combined using the bitwise OR operator ``|``.  Some of them are not available on all platforms.  For descriptions of their availability and use, consult the :manpage:`open(2)` manual page on Unix or `the MSDN <https://msdn.microsoft.com/en-us/library/z0kc8e3z.aspx>`_ on Windows."
-msgstr "ثابت‌های زیر گزینه‌هایی برای پارامتر *flags* در تابع :func:`~os.open` هستند. می‌توان آن‌ها را با استفاده از عملگر OR بیتی ``|`` ترکیب کرد. برخی از آن‌ها در همه سکوها در دسترس نیستند. برای توضیحات مربوط به دسترسی‌پذیری و کاربرد آن‌ها، به صفحه راهنمای :manpage:`open(2)` در یونیکس یا `MSDN <https://msdn.microsoft.com/en-us/library/z0kc8e3z.aspx>`_ در ویندوز مراجعه کنید."
+msgstr "ثابت‌های زیر گزینه‌هایی برای پارامتر *flags* در تابع :func:`~os.open` هستند. می‌توان آن‌ها را با استفاده از عملگر OR بیتی ``|`` ترکیب کرد. برخی از آن‌ها در همه سکوها در دسترس نیستند. برای توضیحات مربوط به دسترس‌پذیری و کاربرد آن‌ها، به صفحه راهنمای :manpage:`open(2)` در یونیکس یا `MSDN <https://msdn.microsoft.com/en-us/library/z0kc8e3z.aspx>`_ در ویندوز مراجعه کنید."
 
 msgid "The above constants are available on Unix and Windows."
 msgstr "ثابت‌های فوق در یونیکس و ویندوز در دسترس هستند."

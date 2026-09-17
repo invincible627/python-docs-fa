@@ -66,10 +66,10 @@ msgid ":func:`os.uname` reports kernel-level details; it will report a name of `
 msgstr ":func:`os.uname` جزئیات سطح هسته را گزارش می‌دهد؛ نام ``Darwin`` را گزارش خواهد داد."
 
 msgid "Standard library availability"
-msgstr "دسترسی‌پذیری کتابخانه استاندارد"
+msgstr "دسترس‌پذیری کتابخانه استاندارد"
 
 msgid "The Python standard library has some notable omissions and restrictions on iOS. See the :ref:`API availability guide for iOS <mobile-availability>` for details."
-msgstr "کتابخانه استاندارد پایتون در iOS دارای برخی حذف‌ها و محدودیت‌های قابل توجه است. برای جزئیات، به :ref:`راهنمای دسترسی‌پذیری API برای iOS <mobile-availability>` مراجعه کنید."
+msgstr "کتابخانه استاندارد پایتون در iOS دارای برخی حذف‌ها و محدودیت‌های قابل توجه است. برای جزئیات، به :ref:`راهنمای دسترس‌پذیری API برای iOS <mobile-availability>` مراجعه کنید."
 
 msgid "Binary extension modules"
 msgstr "ماژول‌های توسعه‌ای دودویی"

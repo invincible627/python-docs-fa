@@ -184,7 +184,7 @@ msgid "This function approximates rules for reserved paths on most Windows syste
 msgstr "این تابع قواعد مربوط به مسیرهای رزروشده در بیشتر سیستم‌های ویندوزی را به‌صورت تقریبی پیاده‌سازی می‌کند. این قواعد در طول زمان در نسخه‌های مختلف ویندوز تغییر می‌کنند. این تابع ممکن است در نسخه‌های آینده‌ی پایتون، با در دسترس قرار گرفتن گسترده‌ی تغییرات این قواعد، به‌روزرسانی شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Join one or more path segments intelligently.  The return value is the concatenation of *path* and all members of *\\*paths*, with exactly one directory separator following each non-empty part, except the last. That is, the result will only end in a separator if the last part is either empty or ends in a separator."
 msgstr "یک یا چند بخش مسیر را به‌صورت هوشمندانه به هم می‌پیوندد. مقدار بازگشتی، حاصل الحاق *path* و همه‌ی اعضای *\\*paths* است؛ به‌طوری‌که پس از هر بخش غیرخالی، به جز آخرین بخش، دقیقاً یک جداکننده‌ی پوشه قرار می‌گیرد. یعنی نتیجه تنها در صورتی با یک جداکننده پایان می‌یابد که آخرین بخش یا خالی باشد یا با یک جداکننده پایان یابد."

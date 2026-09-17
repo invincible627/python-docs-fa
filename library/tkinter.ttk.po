@@ -1057,7 +1057,7 @@ msgid "A data cell."
 msgstr "یک سلول داده."
 
 msgid "Availability: Tk 8.6."
-msgstr "دسترسی‌پذیری: Tk 8.6."
+msgstr "دسترس‌پذیری: Tk 8.6."
 
 msgid "Returns the element at position *x*, *y*."
 msgstr "عنصر در موقعیت *x*، *y* را برمی‌گرداند."
@@ -1141,7 +1141,7 @@ msgid "If *item* is specified, returns ``True`` if the specified *item* has the 
 msgstr "اگر *item* مشخص شده باشد، در صورتی که *item* مشخص‌شده *tagname* داده‌شده را داشته باشد، ``True`` و در غیر این صورت ``False`` برمی‌گرداند. در غیر این صورت، یک تاپل از تمام آیتم‌هایی که برچسب مشخص‌شده را دارند برمی‌گرداند."
 
 msgid "Availability: Tk 8.6"
-msgstr "دسترسی‌پذیری: Tk 8.6"
+msgstr "دسترس‌پذیری: Tk 8.6"
 
 msgid "Query or modify horizontal position of the treeview."
 msgstr "موقعیت افقی نمای درختی (treeview) را بپرسید یا تغییر دهید."

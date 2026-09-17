@@ -246,7 +246,7 @@ msgid "See :pep:`529` for more details."
 msgstr "برای جزئیات بیشتر به :pep:`529` مراجعه کنید."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This API is kept for backward compatibility: setting :c:member:`PyConfig.legacy_windows_stdio` should be used instead, see :ref:`Python Initialization Configuration <init-config>`."
 msgstr "این API برای سازگاری با گذشته حفظ شده است: به جای آن باید :c:member:`PyConfig.legacy_windows_stdio` تنظیم شود؛ به :ref:`پیکربندی مقداردهی اولیه پایتون <init-config>` مراجعه کنید."

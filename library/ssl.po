@@ -44,7 +44,7 @@ msgid "Don't use this module without reading the :ref:`ssl-security`.  Doing so 
 msgstr "از این ماژول بدون خواندن :ref:`ssl-security` استفاده نکنید. این کار ممکن است باعث ایجاد احساس امنیت کاذب شود، زیرا تنظیمات پیش‌فرض ماژول ssl لزوماً مناسب برنامه شما نیستند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."

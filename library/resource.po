@@ -32,7 +32,7 @@ msgid "This module provides basic mechanisms for measuring and controlling syste
 msgstr "این ماژول سازوکارهای پایه‌ای را برای اندازه‌گیری و کنترل منابع سیستمی که توسط یک برنامه استفاده می‌شوند، فراهم می‌کند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Symbolic constants are used to specify particular system resources and to request usage information about either the current process or its children."
 msgstr "ثابت‌های نمادین برای مشخص کردن منابع سیستمی خاص و درخواست اطلاعات استفاده درباره‌ی فرایند جاری یا فرزندان آن استفاده می‌شوند."

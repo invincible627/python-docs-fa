@@ -39,7 +39,7 @@ msgid "Note that POP3, though widely supported, is obsolescent.  The implementat
 msgstr "توجه داشته باشید که POP3، اگرچه به‌طور گسترده پشتیبانی می‌شود، منسوخ است. کیفیت پیاده‌سازی سرورهای POP3 بسیار متفاوت است و بسیاری از آن‌ها کاملاً ضعیف هستند. اگر سرور ایمیل شما از IMAP پشتیبانی می‌کند، بهتر است از کلاس :class:`imaplib.IMAP4` استفاده کنید، زیرا سرورهای IMAP معمولاً پیاده‌سازی بهتری دارند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."

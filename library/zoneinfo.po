@@ -45,7 +45,7 @@ msgid "First-party package maintained by the CPython core developers to supply t
 msgstr "بسته‌ی شخص اول که توسط توسعه‌دهندگان اصلی CPython نگهداری می‌شود تا داده‌های منطقه‌ی زمانی را از طریق PyPI فراهم کند."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

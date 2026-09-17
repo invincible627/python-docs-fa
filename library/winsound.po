@@ -30,7 +30,7 @@ msgid "The :mod:`!winsound` module provides access to the basic sound-playing ma
 msgstr "ماژول :mod:`!winsound` دسترسی به سازوکار پایه‌ی پخش صدا ارائه‌شده توسط سکوهای ویندوزی را فراهم می‌کند. این ماژول شامل توابع و چند ثابت است."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Beep the PC's speaker. The *frequency* parameter specifies frequency, in hertz, of the sound, and must be in the range 37 through 32,767. The *duration* parameter specifies the number of milliseconds the sound should last.  If the system is not able to beep the speaker, :exc:`RuntimeError` is raised."
 msgstr "بوق زدن بلندگوی رایانه. پارامتر *frequency* بسامد صدا را بر حسب هرتز مشخص می‌کند و باید در بازه‌ی ۳۷ تا ۳۲٬۷۶۷ باشد. پارامتر *duration* تعداد میلی‌ثانیه‌هایی را که صدا باید ادامه داشته باشد مشخص می‌کند. اگر سیستم قادر به بوق زدن بلندگو نباشد، :exc:`RuntimeError` پرتاب می‌شود."

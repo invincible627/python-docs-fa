@@ -36,7 +36,7 @@ msgid "The module implements both the normal and wide char variants of the conso
 msgstr "این ماژول هر دو گونه‌ی معمولی و نویسه‌ی پهن (wide char) از API ورودی/خروجی کنسول را پیاده‌سازی می‌کند. API معمولی تنها با نویسه‌های ASCII سروکار دارد و کاربرد محدودی برای برنامه‌های بین‌المللی‌سازی‌شده دارد. باید تا جایی که ممکن است از API نویسه‌ی پهن استفاده شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Operations in this module now raise :exc:`OSError` where :exc:`IOError` was raised."
 msgstr "عملیات‌های این ماژول اکنون در مواردی که :exc:`IOError` پرتاب می‌شد، :exc:`OSError` پرتاب می‌کنند."

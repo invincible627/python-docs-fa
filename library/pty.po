@@ -33,7 +33,7 @@ msgid "The :mod:`!pty` module defines operations for handling the pseudo-termina
 msgstr "ماژول :mod:`!pty` عملیاتی را برای مدیریت مفهوم شبه‌پایانه (pseudo-terminal) تعریف می‌کند: آغاز فرایندی دیگر و امکان نوشتن و خواندن از پایانه‌ی کنترل‌کننده‌ی آن به‌صورت برنامه‌ای."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Pseudo-terminal handling is highly platform dependent. This code is mainly tested on Linux, FreeBSD, and macOS (it is supposed to work on other POSIX platforms but it's not been thoroughly tested)."
 msgstr "مدیریت شبه‌پایانه (pseudo-terminal) به‌شدت وابسته به پلتفرم است. این کد بیشتر روی Linux، FreeBSD و macOS آزمایش شده است (انتظار می‌رود روی سایر پلتفرم‌های POSIX کار کند، اما به‌طور کامل آزمایش نشده است)."

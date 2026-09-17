@@ -66,7 +66,7 @@ msgid "python -m webbrowser -t \"https://www.python.org\""
 msgstr "python -m webbrowser -t \"https://www.python.org\""
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "The following exception is defined:"
 msgstr "استثنای زیر تعریف شده است:"

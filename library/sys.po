@@ -37,7 +37,7 @@ msgid "Default flags became an empty string (``m`` flag for pymalloc has been re
 msgstr "پرچم‌های پیش‌فرض به یک رشته خالی تبدیل شدند (پرچم ``m`` برای pymalloc حذف شده است)."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "Append the callable *hook* to the list of active auditing hooks for the current (sub)interpreter."
 msgstr "*hook* فراخوانی‌پذیر را به فهرست قلاب‌های حسابرسی فعال برای (زیر)مفسر جاری می‌افزاید."

@@ -33,7 +33,7 @@ msgid "This module defines three classes, :class:`IMAP4`, :class:`IMAP4_SSL` and
 msgstr "این ماژول سه کلاس :class:`IMAP4`، :class:`IMAP4_SSL` و :class:`IMAP4_stream` را تعریف می‌کند، که اتصال به یک سرور IMAP4 را کپسوله می‌کنند و زیرمجموعه‌ی بزرگی از پروتکل کلاینت IMAP4rev1 را، همان‌طور که در :rfc:`3501` تعریف شده است، پیاده‌سازی می‌کنند. این ماژول با سرورهای IMAP4 (:rfc:`1730`) سازگاری رو به عقب دارد، اما توجه داشته باشید که دستور ``STATUS`` در IMAP4 پشتیبانی نمی‌شود."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

@@ -39,7 +39,7 @@ msgid "For HTTPS URIs, :mod:`!xmlrpc.client` now performs all the necessary cert
 msgstr "برای URIهای HTTPS، :mod:`!xmlrpc.client` اکنون به‌طور پیش‌فرض تمام بررسی‌های لازم مربوط به گواهی و نام میزبان را انجام می‌دهد."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "This module does not work or is not available on WebAssembly. See :ref:`wasm-availability` for more information."
 msgstr "این ماژول در WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر، :ref:`wasm-availability` را ببینید."

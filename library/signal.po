@@ -91,7 +91,7 @@ msgid ":class:`enum.IntEnum` collection of the constants :const:`SIG_BLOCK`, :co
 msgstr "مجموعه‌ی :class:`enum.IntEnum` از ثابت‌های :const:`SIG_BLOCK`، :const:`SIG_UNBLOCK` و :const:`SIG_SETMASK`."
 
 msgid "Availability"
-msgstr "دسترسی‌پذیری"
+msgstr "دسترس‌پذیری"
 
 msgid "See the man page :manpage:`sigprocmask(2)` and :manpage:`pthread_sigmask(3)` for further information."
 msgstr "برای اطلاعات بیشتر، صفحه‌های راهنمای :manpage:`sigprocmask(2)` و :manpage:`pthread_sigmask(3)` را ببینید."
