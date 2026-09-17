@@ -8,6 +8,10 @@ Verify Sphinx markup consistency between msgid and msgstr:
     be translated, matching Sphinx's own translation convention.
   - Literal/code spans (``...``), substitution refs (|...|), and %s/{name}
     placeholders — these must match verbatim, since they're not prose.
+  - Invalid C-string escape sequences in msgstr (a lone backslash followed
+    by a character that isn't one of \\ " n t r f b a v) — these make
+    `msgfmt` fail with "invalid control sequence" and must be found before
+    they break a build.
 
 Output is grouped by file, with a per-file mismatch count and a grand
 total at the end.
@@ -44,6 +48,68 @@ LITERAL_PATTERNS = [
     ("brace placeholder", re.compile(r"\{[^{}\s]*\}")),
 ]
 
+# Valid C-string escapes that gettext/msgfmt accept inside a quoted
+# string. A backslash followed by anything else is what msgfmt rejects
+# with "invalid control sequence". This mirrors the set the old
+# autofix bash script treated as "leave alone": \\  \"  \n \t \r \f \b \a \v
+VALID_ESCAPE_CHARS = set('\\"ntrfbav')
+
+# One raw quoted-string line as it appears in the .po file. Matches
+# both the first line of an entry, which carries a keyword prefix
+# (msgid "..."  / msgstr "..." / msgstr[0] "..."), and bare continuation
+# lines ("...") that follow it. Captured group is the RAW content
+# between the quotes - escapes are NOT decoded, which is required for
+# this check (see note below).
+RAW_STRING_LINE = re.compile(
+    r'^(?:msgid|msgstr(?:\[\d+\])?|msgctxt)?\s*"((?:[^"\\]|\\.)*)"\s*$'
+)
+
+
+def find_invalid_escapes_in_raw(raw: str):
+    """Scan raw (undecoded) quoted-string content left-to-right the way
+    a C-string tokenizer would, consuming two characters whenever a
+    backslash is seen, and return the invalid `\\X` sequences found.
+
+    MUST run on raw file text, not on polib's .msgid/.msgstr - polib
+    decodes \\\\ into a single \\ before Claude ever sees it, so scanning
+    decoded text turns safe, doubled backslashes (\\\\d in the file,
+    meaning a literal backslash-d) into false positives that look like
+    a lone backslash followed by an invalid character."""
+    invalid = []
+    i = 0
+    n = len(raw)
+    while i < n:
+        if raw[i] == "\\":
+            if i + 1 < n:
+                nxt = raw[i + 1]
+                if nxt not in VALID_ESCAPE_CHARS:
+                    invalid.append("\\" + nxt)
+                i += 2
+                continue
+            else:
+                invalid.append("\\<end-of-line>")
+                i += 1
+                continue
+        i += 1
+    return invalid
+
+
+def check_raw_escapes(path: Path):
+    """Line-by-line scan of the raw file for invalid escape sequences,
+    independent of polib. Returns a list of (line_no, line_text,
+    invalid_list) for every quoted-string line with a problem."""
+    findings = []
+    for lineno, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(), start=1
+    ):
+        m = RAW_STRING_LINE.match(line.strip())
+        if not m:
+            continue
+        invalid = find_invalid_escapes_in_raw(m.group(1))
+        if invalid:
+            findings.append((lineno, line.strip(), invalid))
+    return findings
+
 
 def extract_role_targets(text: str):
     """For each Sphinx role, return its target: the <target> anchor if
@@ -60,6 +126,7 @@ def check_file(path: Path):
     """Return a list of finding-dicts for this file (empty if none)."""
     results = []
     po = polib.pofile(str(path))
+
     for entry in po:
         if entry.obsolete or not entry.msgid or not entry.msgstr:
             continue  # obsolete entry, header, or still untranslated
@@ -134,6 +201,8 @@ def main():
 
     total = 0
     per_file_counts = []
+    escape_total = 0
+    escape_files = 0
 
     for f in files:
         results = check_file(f)
@@ -142,6 +211,17 @@ def main():
             total += len(results)
             per_file_counts.append((f, len(results)))
 
+        escape_findings = check_raw_escapes(f)
+        if escape_findings:
+            print(f"\n{'=' * 70}")
+            print(f"{f}  ({len(escape_findings)} invalid escape sequence line(s))")
+            print("=" * 70)
+            for lineno, line, invalid in escape_findings:
+                print(f"  line {lineno}: invalid {invalid}")
+                print(f"    {line[:120]}")
+            escape_total += len(escape_findings)
+            escape_files += 1
+
     if total:
         print(f"\n{'=' * 70}")
         print("Summary by file (sorted by mismatch count, descending):")
@@ -149,6 +229,16 @@ def main():
         for f, count in sorted(per_file_counts, key=lambda x: -x[1]):
             print(f"  {count:4d}  {f}")
         print(f"\n{total} markup mismatch(es) found across {len(per_file_counts)} file(s).")
+
+    if escape_total:
+        print(
+            f"\n{escape_total} invalid escape sequence line(s) found across "
+            f"{escape_files} file(s). These will make msgfmt fail with "
+            f"'invalid control sequence' - fix the offending backslash "
+            f"in each line above."
+        )
+
+    if total or escape_total:
         sys.exit(1)
 
     print("No markup mismatches found.")
