@@ -10,7 +10,6 @@
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
