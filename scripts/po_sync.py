@@ -15,12 +15,11 @@ msgmerge/msgfmt identically -- no more silent flag drift (e.g. one path
 passing --no-location --no-wrap and the other not), which otherwise shows
 up as spurious rewrap-only diffs on whichever path runs next.
 
-Note: sphinx.po is NOT part of the CPython Doc/ gettext extraction --
-it tracks Sphinx's own internal UI-string catalog (versionadded,
-versionchanged, deprecated, etc.), which ships inside the installed
-`sphinx` package itself at sphinx/locale/sphinx.pot. It has its own
-fetch/merge path below (sync_sphinx_catalog) so it doesn't silently
-fall out of every merge_existing() pass the way it did before.
+Note: sphinx.po is built from TWO sources: CPython's Doc/ gettext
+extraction (which includes template strings from indexcontent.html etc.)
+AND Sphinx's own internal UI-string catalog (sphinx/locale/sphinx.pot).
+sync_sphinx_catalog() combines both into one POT before merging, so
+neither set of strings clobbers the other.
 
 This module is a library first, CLI second. As a CLI it exposes just the
 "mechanical middle" of the sync -- build .pot templates, merge them into
@@ -153,12 +152,15 @@ class MergeReport:
 
 
 def merge_existing(pot_root: Path, repo_root: Path = REPO_ROOT) -> MergeReport:
-    """Merge new .pot content into every existing .po file. This is the
-    core operation both the nightly workflow and the version-bump script
-    need, and previously the only one the workflow performed."""
     report = MergeReport()
     for po_path in iter_po_files(repo_root):
         rel = po_path.relative_to(repo_root)
+        # sphinx.po is handled by sync_sphinx_catalog, which does a single
+        # combined merge of both the CPython-built pot and Sphinx's own
+        # internal catalog -- so skip it here to avoid a double-merge that
+        # clobbers the template strings sync_sphinx_catalog restores.
+        if rel == Path("sphinx.po"):
+            continue
         pot_path = pot_root / rel.with_suffix(".pot")
         if not pot_path.exists():
             print(
@@ -256,15 +258,43 @@ def find_sphinx_pot(venv_dir: Path) -> Path:
     return pot_path
 
 
-def sync_sphinx_catalog(doc_venv_dir: Path, repo_root: Path = REPO_ROOT) -> bool:
-    """Merge Sphinx's own sphinx.pot into this repo's top-level sphinx.po.
-    Returns True if sphinx.po exists and was merged, False if there's no
-    sphinx.po in this repo to merge into (nothing to do)."""
+def sync_sphinx_catalog(
+    doc_venv_dir: Path,
+    cpython_pot_root: Path | None = None,
+    repo_root: Path = REPO_ROOT,
+) -> bool:
+    """Merge sphinx.po against a combined POT that includes both Sphinx's
+    own internal UI strings and CPython's template strings (indexcontent.html
+    etc). Without the combination, whichever POT runs second clobbers strings
+    from the first, turning them into #~ orphans."""
     po_path = repo_root / "sphinx.po"
     if not po_path.exists():
         return False
-    pot_path = find_sphinx_pot(doc_venv_dir)
-    run(["msgmerge", *MSGMERGE_FLAGS, str(po_path), str(pot_path)])
+
+    internal_pot = find_sphinx_pot(doc_venv_dir)
+    cpython_pot = cpython_pot_root / "sphinx.pot" if cpython_pot_root else None
+
+    if cpython_pot and cpython_pot.exists():
+        # Combine both catalogs into one POT so a single msgmerge pass sees
+        # everything. --use-first keeps CPython's template strings when a
+        # msgid appears in both (they should be identical, but just in case).
+        combined = doc_venv_dir / "sphinx_combined.pot"
+        run(
+            [
+                "msgcat",
+                "--use-first",
+                str(cpython_pot),
+                str(internal_pot),
+                "-o",
+                str(combined),
+            ]
+        )
+        run(["msgmerge", *MSGMERGE_FLAGS, str(po_path), str(combined)])
+        combined.unlink(missing_ok=True)
+    else:
+        # Fallback: no CPython-built sphinx.pot, just use Sphinx's internal one.
+        run(["msgmerge", *MSGMERGE_FLAGS, str(po_path), str(internal_pot)])
+
     return True
 
 
@@ -320,7 +350,7 @@ def _cli_sync_only(args: argparse.Namespace) -> int:
             print(f"  - {rel}")
 
     print("\n== Syncing sphinx.po against installed Sphinx's own catalog ==")
-    synced = sync_sphinx_catalog(doc_venv_dir)
+    synced = sync_sphinx_catalog(doc_venv_dir, cpython_pot_root=pot_root)
     if synced:
         print("  sphinx.po merged against sphinx/locale/sphinx.pot")
     else:
