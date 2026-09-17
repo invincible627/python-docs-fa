@@ -39,19 +39,67 @@ from pathlib import Path
 try:
     import polib
 except ImportError:
-    sys.exit("This script requires polib. Install with: pip install polib --break-system-packages")
+    sys.exit(
+        "This script requires polib. Install with: pip install polib --break-system-packages"
+    )
 
 
 TERMS = [
-    "heap", "type", "value", "async", "wildcard", "index", "property",
-    "bootstrapping", "mock", "pipe", "docstring", "object", "action",
-    "local", "escape", "raise", "return", "list", "operator", "element",
-    "import", "encoding", "global", "string", "class", "module",
-    "function", "shell", "exception", "event", "coroutine", "interface",
-    "cache", "command line", "package", "method", "widget", "symlink",
-    "item", "generator", "loop", "runtime", "built-in", "namespace",
-    "syntax", "argument", "wrapper", "load", "attribute", "thread",
-    "api", "variable", "expression", "f-string", "callback",
+    "heap",
+    "type",
+    "value",
+    "async",
+    "wildcard",
+    "index",
+    "property",
+    "bootstrapping",
+    "mock",
+    "pipe",
+    "docstring",
+    "object",
+    "action",
+    "local",
+    "escape",
+    "raise",
+    "return",
+    "list",
+    "operator",
+    "element",
+    "import",
+    "encoding",
+    "global",
+    "string",
+    "class",
+    "module",
+    "function",
+    "shell",
+    "exception",
+    "event",
+    "coroutine",
+    "interface",
+    "cache",
+    "command line",
+    "package",
+    "method",
+    "widget",
+    "symlink",
+    "item",
+    "generator",
+    "loop",
+    "runtime",
+    "built-in",
+    "namespace",
+    "syntax",
+    "argument",
+    "wrapper",
+    "load",
+    "attribute",
+    "thread",
+    "api",
+    "variable",
+    "expression",
+    "f-string",
+    "callback",
 ]
 
 EXCLUDE_DIRS = {".git", ".venv", "venv", "node_modules", "__pycache__", ".tox"}
@@ -62,11 +110,43 @@ EXCLUDE_DIRS = {".git", ".venv", "venv", "node_modules", "__pycache__", ".tox"}
 
 # Sphinx/reST roles whose *content* is code/identifiers, not prose.
 CODE_ROLES = {
-    "func", "meth", "mod", "class", "data", "const", "attr", "exc", "obj",
-    "command", "cmdoption", "envvar", "file", "kbd", "option", "program",
-    "regexp", "makevar", "dunder", "module", "method", "exception", "ref",
-    "doc", "download", "env", "pep", "rfc", "issue", "source", "mimetype",
-    "keyword", "literal", "token", "grammar", "confval", "setting",
+    "func",
+    "meth",
+    "mod",
+    "class",
+    "data",
+    "const",
+    "attr",
+    "exc",
+    "obj",
+    "command",
+    "cmdoption",
+    "envvar",
+    "file",
+    "kbd",
+    "option",
+    "program",
+    "regexp",
+    "makevar",
+    "dunder",
+    "module",
+    "method",
+    "exception",
+    "ref",
+    "doc",
+    "download",
+    "env",
+    "pep",
+    "rfc",
+    "issue",
+    "source",
+    "mimetype",
+    "keyword",
+    "literal",
+    "token",
+    "grammar",
+    "confval",
+    "setting",
 }
 
 ROLE_RE = re.compile(r":([\w+-]+):`([^`]*)`")
@@ -82,6 +162,7 @@ def strip_markup(text, keep_prose_roles=True):
     """Remove code spans / role markup; keep the *display text* of prose
     roles like :term:`Foo` or :ref:`title <target>` since translators do
     translate that part."""
+
     def role_repl(m):
         role, body = m.group(1).lower(), m.group(2)
         if role in CODE_ROLES:
@@ -117,13 +198,12 @@ def strip_quoted_code(text):
     def repl(m):
         content = m.group(1) or m.group(2)
         return " " if quoted_span_is_code(content) else m.group(0)
+
     return QUOTED_CODE_RE.sub(repl, text)
 
 
 CODE_LINE_START_RE = re.compile(
-    r"^(?:import|from)\s"
-    r"|^[a-z_][\w.]*(?:\[[^\]]*\])?\s*[=(]"
-    r"|^[a-z_][\w.]*\("
+    r"^(?:import|from)\s" r"|^[a-z_][\w.]*(?:\[[^\]]*\])?\s*[=(]" r"|^[a-z_][\w.]*\("
 )
 CODE_STMT_RE = re.compile(
     r"^(?:if|elif|else|for|while|def|class|try|except|finally|with|return"
@@ -155,7 +235,8 @@ def looks_like_code_block(msgid):
     if not lines:
         return True
     codeish = sum(
-        1 for ln in lines
+        1
+        for ln in lines
         if ln.lstrip().startswith((">>>", "...", "#", "$"))
         or ln.startswith((" ", "\t"))
     )
@@ -182,7 +263,7 @@ def strip_literal_blocks(msgid):
                 in_block = True
                 continue
             if stripped.endswith("::"):
-                out.append(ln[:ln.rindex("::")].rstrip())
+                out.append(ln[: ln.rindex("::")].rstrip())
                 in_block = True
                 continue
             out.append(ln)
@@ -218,12 +299,15 @@ def clean_prose(msgid):
 # Term matching
 # ---------------------------------------------------------------------------
 
+
 def build_term_pattern(term):
     escaped = re.escape(term)
     # spaces/hyphens interchangeable, optional plural
     parts = [re.escape(p) for p in re.split(r"[\s\-]+", term) if p]
     body = r"[\s\-]+".join(parts)
-    return re.compile(rf"(?<![A-Za-z0-9_.\-]){body}(?:e?s)?(?![A-Za-z0-9_])", re.IGNORECASE)
+    return re.compile(
+        rf"(?<![A-Za-z0-9_.\-]){body}(?:e?s)?(?![A-Za-z0-9_])", re.IGNORECASE
+    )
 
 
 TERM_PATTERNS = {term: build_term_pattern(term) for term in TERMS}
@@ -271,33 +355,49 @@ def scan_file(path):
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("root", help="Root directory to search for .po files (or a single .po file)")
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument(
+        "root", help="Root directory to search for .po files (or a single .po file)"
+    )
     ap.add_argument("--json", metavar="PATH", help="Write full results as JSON")
     ap.add_argument("--csv", metavar="PATH", help="Write full results as CSV")
-    ap.add_argument("--examples", type=int, default=4,
-                     help="Example locations to show per term in the console summary (default 4)")
+    ap.add_argument(
+        "--examples",
+        type=int,
+        default=4,
+        help="Example locations to show per term in the console summary (default 4)",
+    )
     args = ap.parse_args()
 
     po_files = list(iter_po_files(args.root))
     if not po_files:
         sys.exit(f"No .po files found under {args.root}")
 
-    print(f"Scanning {len(po_files)} .po file(s) under {args.root} ...\n", file=sys.stderr)
+    print(
+        f"Scanning {len(po_files)} .po file(s) under {args.root} ...\n", file=sys.stderr
+    )
 
     results = defaultdict(list)
     for path in po_files:
         for term, linenum, msgid, msgstr in scan_file(path):
-            results[term].append({"file": str(path), "line": linenum, "msgid": msgid, "msgstr": msgstr})
+            results[term].append(
+                {"file": str(path), "line": linenum, "msgid": msgid, "msgstr": msgstr}
+            )
 
     total_entries = sum(len(v) for v in results.values())
     print(f"English term kept in prose -- {total_entries} entries")
     print("The English term is left untranslated inside prose. If that is the intended")
-    print("convention, add the English form to glossary.json; otherwise translate these:\n")
+    print(
+        "convention, add the English form to glossary.json; otherwise translate these:\n"
+    )
 
     for term in sorted(results.keys(), key=lambda t: -len(results[t])):
         entries = results[term]
-        example_str = ", ".join(f"{e['file']}:{e['line']}" for e in entries[: args.examples])
+        example_str = ", ".join(
+            f"{e['file']}:{e['line']}" for e in entries[: args.examples]
+        )
         print(f"{term}: {len(entries)} entries (e.g. {example_str})\n")
 
     if args.json:
@@ -311,7 +411,9 @@ def main():
             writer.writerow(["term", "file", "line", "msgid", "msgstr"])
             for term, entries in results.items():
                 for e in entries:
-                    writer.writerow([term, e["file"], e["line"], e["msgid"], e["msgstr"]])
+                    writer.writerow(
+                        [term, e["file"], e["line"], e["msgid"], e["msgstr"]]
+                    )
         print(f"Full results written to {args.csv}", file=sys.stderr)
 
 

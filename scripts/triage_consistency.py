@@ -75,12 +75,33 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 # ---------------------------------------------------------------------------
 
 MARKS_RE = re.compile(r"[\u064B-\u065F\u0670]")
-PUNCT_STRIP_RE = re.compile(r"^[\u060c\u061b\u061f\u0640]+|[\u060c\u061b\u061f\u0640]+$")
+PUNCT_STRIP_RE = re.compile(
+    r"^[\u060c\u061b\u061f\u0640]+|[\u060c\u061b\u061f\u0640]+$"
+)
 BROKEN_PLURALS_BACK = {p: w for w, ps in ARABIC_PLURALS.items() for p in ps}
 
 CLITICS = (
-    "هایی", "های", "ها", "یی", "ترین", "تر", "انه", "شان", "مان",
-    "تان", "یش", "یت", "یم", "اش", "ات", "ام", "ای", "ش", "ت", "م", "ی",
+    "هایی",
+    "های",
+    "ها",
+    "یی",
+    "ترین",
+    "تر",
+    "انه",
+    "شان",
+    "مان",
+    "تان",
+    "یش",
+    "یت",
+    "یم",
+    "اش",
+    "ات",
+    "ام",
+    "ای",
+    "ش",
+    "ت",
+    "م",
+    "ی",
 )
 # unambiguous plural markers: safe to strip even when glued (پارامترها)
 BARE_PLURALS = ("هایی", "های", "ها")
@@ -128,7 +149,9 @@ def is_informative(lexeme: str) -> bool:
 # Words that can never be terminology: verb/aux/copula/pro-forms and
 # frame nouns that appear next to almost any English term. ZWNJ-less
 # spellings (میشود for می‌شود) are included since canon strips ZWNJ.
-TRIVIAL_WORDS = {canon_lexeme(w) for w in """
+TRIVIAL_WORDS = {
+    canon_lexeme(w)
+    for w in """
 می‌کنند می‌شوند می‌شود می‌دهند می‌دهد می‌گیرند می‌گیرد می‌توانند می‌تواند
 می‌یابند می‌یابد می‌باشد نمی‌شود نمی‌کنند نمی‌کند نمی‌توانند نمی‌تواند
 خواهند خواهند هستند بوده بود باشد می‌کنیم می‌کنید می‌کند می‌کنم
@@ -136,7 +159,8 @@ TRIVIAL_WORDS = {canon_lexeme(w) for w in """
 همراه بدون همیشه فقط سپس بنابراین یعنی درباره نسبت مربوط منظور
 خالی برابر مشخص دیگر تنها چند همه هیچ این‌ها آن‌ها موارد حال
 استفاده ایجاد بررسی شامل حاوی فراخوانی بازگرداندن برگرداند
-""".split()}
+""".split()
+}
 
 
 def canon_msgstr(s: str) -> str:
@@ -229,9 +253,9 @@ def triage_glossary(violations, dominant_share, min_count, max_alts=3):
                 for lex in item_words(it["msgstr"]):
                     lex_counts[lex] += 1
             need = max(min_count, dominant_share * n)
-            qualifying = [
-                (lex, c) for lex, c in lex_counts.most_common() if c >= need
-            ][:max_alts]
+            qualifying = [(lex, c) for lex, c in lex_counts.most_common() if c >= need][
+                :max_alts
+            ]
             for it in unresolved:
                 words = item_words(it["msgstr"])
                 for lex, _ in qualifying:
@@ -253,6 +277,7 @@ def triage_glossary(violations, dominant_share, min_count, max_alts=3):
 # Duplicate-msgid classification
 # ---------------------------------------------------------------------------
 
+
 def triage_duplicates(dupes, majority):
     zwnj, align, review = {}, {}, {}
     for key, data in dupes.items():
@@ -264,8 +289,7 @@ def triage_duplicates(dupes, majority):
                 "canonical": top["msgstr"],
                 "total": data["occurrences"],
                 "fix_locations": [
-                    loc for v in variants if v is not top
-                    for loc in v["locations"]
+                    loc for v in variants if v is not top for loc in v["locations"]
                 ],
                 "all_variants": variants,
             }
@@ -275,8 +299,7 @@ def triage_duplicates(dupes, majority):
                 "canonical_share": round(top["count"] / data["occurrences"], 2),
                 "total": data["occurrences"],
                 "fix_locations": [
-                    loc for v in variants if v is not top
-                    for loc in v["locations"]
+                    loc for v in variants if v is not top for loc in v["locations"]
                 ],
                 "all_variants": variants,
             }
@@ -288,6 +311,7 @@ def triage_duplicates(dupes, majority):
 # ---------------------------------------------------------------------------
 # Drift re-clustering
 # ---------------------------------------------------------------------------
+
 
 def triage_drift(drift, min_share, min_count):
     out = {}
@@ -302,9 +326,14 @@ def triage_drift(drift, min_share, min_count):
             surface.setdefault(lex, v["farsi_word"])
         need = max(min_count, min_share * freq)
         strong = [
-            {"lexeme": lex, "surface": surface[lex], "count": c,
-             "share": round(c / freq, 2)}
-            for lex, c in lex_counts.most_common() if c >= need
+            {
+                "lexeme": lex,
+                "surface": surface[lex],
+                "count": c,
+                "share": round(c / freq, 2),
+            }
+            for lex, c in lex_counts.most_common()
+            if c >= need
         ]
         if len(strong) >= 2:
             out[term] = {"frequency": freq, "lexemes": strong}
@@ -314,6 +343,7 @@ def triage_drift(drift, min_share, min_count):
 # ---------------------------------------------------------------------------
 # Output rendering
 # ---------------------------------------------------------------------------
+
 
 def loc_str(items, max_examples):
     return [f"{it['file']}:{it['line']}" for it in items[:max_examples]]
@@ -325,9 +355,11 @@ def render_markdown(g, zwnj, align, review_dupes, drift, args):
 
     A("# Translation consistency triage")
     A("")
-    A("Generated by `scripts/triage_consistency.py` from "
-      "`reports/consistency_report.json`. Buckets are ordered by the "
-      "kind of decision they need.")
+    A(
+        "Generated by `scripts/triage_consistency.py` from "
+        "`reports/consistency_report.json`. Buckets are ordered by the "
+        "kind of decision they need."
+    )
     A("")
 
     # -- 1. quick wins
@@ -335,46 +367,53 @@ def render_markdown(g, zwnj, align, review_dupes, drift, args):
     A("")
     A(f"### ZWNJ/spacing inconsistencies -- {len(zwnj)} msgid group(s)")
     A("")
-    A("Same English string, translations identical except for ZWNJ, "
-      "spacing or punctuation. `<ZWNJ>` marks the invisible U+200C "
-      "character, so the variants look identical in a terminal but "
-      "differ in bytes. The majority spelling wins; paste it over the "
-      "listed locations:")
+    A(
+        "Same English string, translations identical except for ZWNJ, "
+        "spacing or punctuation. `<ZWNJ>` marks the invisible U+200C "
+        "character, so the variants look identical in a terminal but "
+        "differ in bytes. The majority spelling wins; paste it over the "
+        "listed locations:"
+    )
     A("")
     for key, d in sorted(zwnj.items(), key=lambda kv: -kv[1]["total"]):
         variants_line = " | ".join(
-            f"`{viz(v['msgstr'])}` ×{v['count']}"
-            for v in d["all_variants"]
+            f"`{viz(v['msgstr'])}` ×{v['count']}" for v in d["all_variants"]
         )
         A(f"- **{key[:80]!r}** ({d['total']}x): {variants_line}")
-        A(f"  -> make all of them: `{d['canonical']}` "
-          f"({len(d['fix_locations'])} to fix: "
-          f"{', '.join(loc_str([{'file': l['file'], 'line': l['line']} for l in d['fix_locations']], args.max_examples))})")
+        A(
+            f"  -> make all of them: `{d['canonical']}` "
+            f"({len(d['fix_locations'])} to fix: "
+            f"{', '.join(loc_str([{'file': l['file'], 'line': l['line']} for l in d['fix_locations']], args.max_examples))})"
+        )
     A("")
     A(f"### Minority variants to align -- {len(align)} msgid group(s)")
     A("")
     A("One translation clearly dominates; align the minority to it:")
     A("")
     for key, d in sorted(align.items(), key=lambda kv: -kv[1]["total"]):
-        minority = [
-            v for v in d["all_variants"] if v["msgstr"] != d["canonical"]
-        ]
+        minority = [v for v in d["all_variants"] if v["msgstr"] != d["canonical"]]
         minority_line = " | ".join(
             f"`{viz(v['msgstr'])[:50]}` ×{v['count']}" for v in minority[:3]
         )
-        A(f"- **{key[:80]!r}** ({d['total']}x, top variant "
-          f"{int(d['canonical_share']*100)}%)")
+        A(
+            f"- **{key[:80]!r}** ({d['total']}x, top variant "
+            f"{int(d['canonical_share']*100)}%)"
+        )
         A(f"  -> keep: `{d['canonical']}`; replace: {minority_line}")
-        A(f"  ({len(d['fix_locations'])} to fix: "
-          f"{', '.join(loc_str([{'file': l['file'], 'line': l['line']} for l in d['fix_locations']], args.max_examples))})")
+        A(
+            f"  ({len(d['fix_locations'])} to fix: "
+            f"{', '.join(loc_str([{'file': l['file'], 'line': l['line']} for l in d['fix_locations']], args.max_examples))})"
+        )
     A("")
 
     # -- 2. glossary decisions
     A("## 2. Glossary decisions (dominant non-glossary renderings)")
     A("")
-    A("The corpus consistently uses a Persian word that is not in the "
-      "glossary. For each: **add it to `glossary.json` as an allowed "
-      "variant, or normalize these entries** to the allowed ones.")
+    A(
+        "The corpus consistently uses a Persian word that is not in the "
+        "glossary. For each: **add it to `glossary.json` as an allowed "
+        "variant, or normalize these entries** to the allowed ones."
+    )
     A("")
     for term, data in sorted(g.items(), key=lambda kv: -kv[1]["total"]):
         alts = [(k, v) for k, v in data["buckets"].items() if k.startswith("alt:")]
@@ -385,75 +424,109 @@ def render_markdown(g, zwnj, align, review_dupes, drift, args):
         A("")
         for k, items in sorted(alts, key=lambda kv: -len(kv[1])):
             word = k[4:]
-            A(f"- uses **{word}** in {len(items)} entries "
-              f"(e.g. {', '.join(loc_str(items, 3))})")
+            A(
+                f"- uses **{word}** in {len(items)} entries "
+                f"(e.g. {', '.join(loc_str(items, 3))})"
+            )
         A("")
 
     # -- 3. translation fixes
     A("## 3. Translation fixes")
     A("")
-    A("### Untranslated role displays "
-      f"-- {sum(len(v['buckets'].get('untranslated-ref', [])) for v in g.values())} entries")
+    A(
+        "### Untranslated role displays "
+        f"-- {sum(len(v['buckets'].get('untranslated-ref', [])) for v in g.values())} entries"
+    )
     A("")
-    A("The msgstr keeps the English display text of a `:term:`/`:ref:`/"
-      ":doc: role. Translate the display text (keep the `<target>` "
-      "part English):")
+    A(
+        "The msgstr keeps the English display text of a `:term:`/`:ref:`/"
+        ":doc: role. Translate the display text (keep the `<target>` "
+        "part English):"
+    )
     A("")
-    for term, data in sorted(g.items(), key=lambda kv: -len(kv[1]["buckets"].get("untranslated-ref", []))):
+    for term, data in sorted(
+        g.items(), key=lambda kv: -len(kv[1]["buckets"].get("untranslated-ref", []))
+    ):
         items = data["buckets"].get("untranslated-ref", [])
         if not items:
             continue
-        A(f"- **{term}**: {len(items)} entries "
-          f"(e.g. {', '.join(loc_str(items, 4))})")
+        A(
+            f"- **{term}**: {len(items)} entries "
+            f"(e.g. {', '.join(loc_str(items, 4))})"
+        )
     A("")
-    A("### English term kept in prose "
-      f"-- {sum(len(v['buckets'].get('kept-english', [])) for v in g.values())} entries")
+    A(
+        "### English term kept in prose "
+        f"-- {sum(len(v['buckets'].get('kept-english', [])) for v in g.values())} entries"
+    )
     A("")
-    A("The English term is left untranslated inside prose. If that is "
-      "the intended convention, add the English form to `glossary.json`; "
-      "otherwise translate these:")
+    A(
+        "The English term is left untranslated inside prose. If that is "
+        "the intended convention, add the English form to `glossary.json`; "
+        "otherwise translate these:"
+    )
     A("")
-    for term, data in sorted(g.items(), key=lambda kv: -len(kv[1]["buckets"].get('kept-english', []))):
+    for term, data in sorted(
+        g.items(), key=lambda kv: -len(kv[1]["buckets"].get("kept-english", []))
+    ):
         items = data["buckets"].get("kept-english", [])
         if not items:
             continue
-        A(f"- **{term}**: {len(items)} entries "
-          f"(e.g. {', '.join(loc_str(items, 4))})")
+        A(
+            f"- **{term}**: {len(items)} entries "
+            f"(e.g. {', '.join(loc_str(items, 4))})"
+        )
     A("")
 
     # -- 4. judgment calls
     A("## 4. Judgment calls (scattered paraphrases)")
     A("")
-    A("No dominant alternative: genuine paraphrases, ambiguous English "
-      "senses, or residual checker noise. Skim per term:")
+    A(
+        "No dominant alternative: genuine paraphrases, ambiguous English "
+        "senses, or residual checker noise. Skim per term:"
+    )
     A("")
-    for term, data in sorted(g.items(), key=lambda kv: -len(kv[1]["buckets"].get("scattered", []))):
+    for term, data in sorted(
+        g.items(), key=lambda kv: -len(kv[1]["buckets"].get("scattered", []))
+    ):
         items = data["buckets"].get("scattered", [])
         if not items:
             continue
-        A(f"- **{term}**: {len(items)} entries "
-          f"(e.g. {', '.join(loc_str(items, 3))})")
+        A(
+            f"- **{term}**: {len(items)} entries "
+            f"(e.g. {', '.join(loc_str(items, 3))})"
+        )
     A("")
     if review_dupes:
-        A("### Duplicate msgids without a clear majority "
-          f"-- {len(review_dupes)} group(s)")
+        A(
+            "### Duplicate msgids without a clear majority "
+            f"-- {len(review_dupes)} group(s)"
+        )
         A("")
-        for key, data in sorted(review_dupes.items(), key=lambda kv: -kv[1]["occurrences"])[:args.max_examples]:
-            A(f"- **{key[:80]!r}** ({data['occurrences']}x): " + " | ".join(
-                f"`{v['msgstr'][:40]}` ({v['count']}x)"
-                for v in data["variants"][:4]))
+        for key, data in sorted(
+            review_dupes.items(), key=lambda kv: -kv[1]["occurrences"]
+        )[: args.max_examples]:
+            A(
+                f"- **{key[:80]!r}** ({data['occurrences']}x): "
+                + " | ".join(
+                    f"`{v['msgstr'][:40]}` ({v['count']}x)"
+                    for v in data["variants"][:4]
+                )
+            )
         A("")
 
     # -- 5. real drift
     A(f"## 5. Real drift after lexeme clustering -- {len(drift)} terms")
     A("")
-    A("Frequent English terms (not in the glossary) with 2+ distinct "
-      "well-supported Persian lexemes. These are the candidates to add "
-      "to `GLOSSARY.md`; pick one rendering per term and normalize:")
+    A(
+        "Frequent English terms (not in the glossary) with 2+ distinct "
+        "well-supported Persian lexemes. These are the candidates to add "
+        "to `GLOSSARY.md`; pick one rendering per term and normalize:"
+    )
     A("")
     A("| term | freq | competing lexemes (share) |")
     A("| ---- | ---- | ------------------------ |")
-    for term, data in list(drift.items())[:args.max_drift_rows]:
+    for term, data in list(drift.items())[: args.max_drift_rows]:
         lex = "، ".join(
             f"{v['surface']} ({int(v['share']*100)}%)" for v in data["lexemes"][:5]
         )
@@ -466,25 +539,44 @@ def render_markdown(g, zwnj, align, review_dupes, drift, args):
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("--report",
-                    default=str(REPO_ROOT / "reports" / "consistency_report.json"))
+    ap.add_argument(
+        "--report", default=str(REPO_ROOT / "reports" / "consistency_report.json")
+    )
     ap.add_argument("--out-md", default=str(REPO_ROOT / "reports" / "triage.md"))
-    ap.add_argument("--out-json",
-                    default=str(REPO_ROOT / "reports" / "triage_worklist.json"))
-    ap.add_argument("--majority", type=float, default=0.6,
-                    help="Dominant-variant share to align minority dupes (default 0.6)")
-    ap.add_argument("--dominant-share", type=float, default=0.25,
-                    help="Share for a non-glossary word to count as dominant (default 0.25)")
-    ap.add_argument("--drift-share", type=float, default=0.12,
-                    help="Min lexeme share to count as a real drift variant (default 0.12)")
+    ap.add_argument(
+        "--out-json", default=str(REPO_ROOT / "reports" / "triage_worklist.json")
+    )
+    ap.add_argument(
+        "--majority",
+        type=float,
+        default=0.6,
+        help="Dominant-variant share to align minority dupes (default 0.6)",
+    )
+    ap.add_argument(
+        "--dominant-share",
+        type=float,
+        default=0.25,
+        help="Share for a non-glossary word to count as dominant (default 0.25)",
+    )
+    ap.add_argument(
+        "--drift-share",
+        type=float,
+        default=0.12,
+        help="Min lexeme share to count as a real drift variant (default 0.12)",
+    )
     ap.add_argument("--min-count", type=int, default=3)
-    ap.add_argument("--max-examples", type=int, default=10,
-                    help="Max file:line refs shown per line in the markdown")
+    ap.add_argument(
+        "--max-examples",
+        type=int,
+        default=10,
+        help="Max file:line refs shown per line in the markdown",
+    )
     ap.add_argument("--max-drift-rows", type=int, default=60)
     args = ap.parse_args()
 
@@ -506,7 +598,9 @@ def main():
         "zwnj_spelling_groups": len(zwnj),
         "zwnj_spelling_entries": sum(d["total"] for d in zwnj.values()),
         "align_minority_groups": len(align),
-        "align_minority_locations": sum(len(d["fix_locations"]) for d in align.values()),
+        "align_minority_locations": sum(
+            len(d["fix_locations"]) for d in align.values()
+        ),
         "glossary_alt_terms": sum(
             1 for v in g.values() if any(k.startswith("alt:") for k in v["buckets"])
         ),
@@ -547,7 +641,9 @@ def main():
             print(f"  {term}: {words}")
     print("\nTop real drift:")
     for term, data in list(real_drift.items())[:10]:
-        lex = "، ".join(f"{v['surface']}({int(v['share']*100)}%)" for v in data["lexemes"][:4])
+        lex = "، ".join(
+            f"{v['surface']}({int(v['share']*100)}%)" for v in data["lexemes"][:4]
+        )
         print(f"  {term} ({data['frequency']}x): {lex}")
 
 

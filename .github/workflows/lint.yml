@@ -44,8 +44,10 @@ jobs:
       - name: Setup problem matcher
         uses: rffontenelle/sphinx-lint-problem-matcher@v1.0.0
 
+      # we have to disable trailing-whitespace on sphinx-lint for now
+      # see github.com/sphinx-contrib/sphinx-lint/issues/120
       - name: Run sphinx-lint
-        run: sphinx-lint
+        run: sphinx-lint --disable trailing-whitespace
         working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Check PO file validity

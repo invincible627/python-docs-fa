@@ -193,9 +193,7 @@ def main():
     for arg in sys.argv[1:]:
         p = Path(arg)
         if p.is_dir():
-            files.extend(
-                sorted(f for f in p.rglob("*.po") if ".git" not in f.parts)
-            )
+            files.extend(sorted(f for f in p.rglob("*.po") if ".git" not in f.parts))
         else:
             files.append(p)
 
@@ -228,7 +226,9 @@ def main():
         print("=" * 70)
         for f, count in sorted(per_file_counts, key=lambda x: -x[1]):
             print(f"  {count:4d}  {f}")
-        print(f"\n{total} markup mismatch(es) found across {len(per_file_counts)} file(s).")
+        print(
+            f"\n{total} markup mismatch(es) found across {len(per_file_counts)} file(s)."
+        )
 
     if escape_total:
         print(

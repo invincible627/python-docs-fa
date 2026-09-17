@@ -50,11 +50,43 @@ EXCLUDE_DIRS = {".git", ".venv", "venv", "node_modules", "__pycache__", ".tox"}
 # Sphinx roles whose content is code and is (correctly) left untranslated.
 # Terms appearing inside these must NOT trigger glossary checks.
 CODE_ROLES = {
-    "func", "meth", "mod", "class", "data", "const", "attr", "exc", "obj",
-    "command", "cmdoption", "envvar", "file", "kbd", "option", "program",
-    "regexp", "makevar", "dunder", "module", "method", "exception", "ref",
-    "doc", "download", "env", "pep", "rfc", "issue", "source", "mimetype",
-    "keyword", "literal", "token", "grammar", "confval", "setting",
+    "func",
+    "meth",
+    "mod",
+    "class",
+    "data",
+    "const",
+    "attr",
+    "exc",
+    "obj",
+    "command",
+    "cmdoption",
+    "envvar",
+    "file",
+    "kbd",
+    "option",
+    "program",
+    "regexp",
+    "makevar",
+    "dunder",
+    "module",
+    "method",
+    "exception",
+    "ref",
+    "doc",
+    "download",
+    "env",
+    "pep",
+    "rfc",
+    "issue",
+    "source",
+    "mimetype",
+    "keyword",
+    "literal",
+    "token",
+    "grammar",
+    "confval",
+    "setting",
 }
 
 ROLE_RE = re.compile(r":([\w+-]+):`([^`]*)`")
@@ -75,6 +107,7 @@ def strip_markup(text: str, keep_prose_roles: bool = True) -> str:
     of prose roles (:term:, :ref: titles, ...) is kept because translators
     translate it.
     """
+
     def role_repl(m: re.Match) -> str:
         role, body = m.group(1).lower(), m.group(2)
         if role in CODE_ROLES:
@@ -102,7 +135,8 @@ def looks_like_code_block(msgid: str) -> bool:
     if not lines:
         return True
     codeish = sum(
-        1 for ln in lines
+        1
+        for ln in lines
         if ln.lstrip().startswith((">>>", "...", "#", "$"))
         or ln.startswith((" ", "\t"))
     )
@@ -128,13 +162,12 @@ def strip_quoted_code(text: str) -> str:
     def repl(m: re.Match) -> str:
         content = m.group(1) or m.group(2)
         return " " if quoted_span_is_code(content) else m.group(0)
+
     return QUOTED_CODE_RE.sub(repl, text)
 
 
 CODE_LINE_START_RE = re.compile(
-    r"^(?:import|from)\s"
-    r"|^[a-z_][\w.]*(?:\[[^\]]*\])?\s*[=(]"
-    r"|^[a-z_][\w.]*\("
+    r"^(?:import|from)\s" r"|^[a-z_][\w.]*(?:\[[^\]]*\])?\s*[=(]" r"|^[a-z_][\w.]*\("
 )
 CODE_STMT_RE = re.compile(
     r"^(?:if|elif|else|for|while|def|class|try|except|finally|with|return"
@@ -162,9 +195,7 @@ def standalone_code_entry(msgid: str) -> bool:
     lines = [ln for ln in msgid.split("\n") if ln.strip()]
     if not lines:
         return False
-    codeish = sum(
-        1 for ln in lines if ln[0] in " \t" or looks_codeish(ln.strip())
-    )
+    codeish = sum(1 for ln in lines if ln[0] in " \t" or looks_codeish(ln.strip()))
     prose = sum(1 for ln in lines if prose_line(ln))
     return codeish >= max(1, len(lines) // 2) and prose <= len(lines) // 3
 
@@ -181,7 +212,7 @@ def strip_literal_blocks(msgid: str) -> str:
                 in_block = True
                 continue
             if stripped.endswith("::"):
-                out.append(ln[:ln.rindex("::")].rstrip())
+                out.append(ln[: ln.rindex("::")].rstrip())
                 in_block = True
                 continue
             out.append(ln)
@@ -210,17 +241,19 @@ def mostly_preserved_code(msgid: str, msgstr: str) -> bool:
 # ---------------------------------------------------------------------------
 
 # Arabic-letter spelling variants used interchangeably in the corpus.
-FA_CHAR_MAP = str.maketrans({
-    "\u0622": "\u0627",   # آ
-    "\u0623": "\u0627",   # أ
-    "\u0625": "\u0627",   # إ
-    "\u0671": "\u0627",   # ٱ
-    "\u0626": "\u0621",   # ئ  (شیئی -> شیءی)
-    "\u0624": "\u0621",   # ؤ
-    "\u064A": "\u06CC",   # ي -> ی
-    "\u0643": "\u06A9",   # ك -> ک
-    "\u0629": "\u0647",   # ة -> ه
-})
+FA_CHAR_MAP = str.maketrans(
+    {
+        "\u0622": "\u0627",  # آ
+        "\u0623": "\u0627",  # أ
+        "\u0625": "\u0627",  # إ
+        "\u0671": "\u0627",  # ٱ
+        "\u0626": "\u0621",  # ئ  (شیئی -> شیءی)
+        "\u0624": "\u0621",  # ؤ
+        "\u064a": "\u06cc",  # ي -> ی
+        "\u0643": "\u06a9",  # ك -> ک
+        "\u0629": "\u0647",  # ة -> ه
+    }
+)
 
 
 def normalize_fa(text: str) -> str:
@@ -234,18 +267,20 @@ def normalize_fa(text: str) -> str:
 # Arabic *base letters* (not combining marks): a glossary variant followed
 # by one of these is a different word, not the variant + a suffix.
 AR_LETTERS = (
-    "\u0620-\u064A"   # basic Arabic letters alef..yeh
-    "\u066E-\u066F"   # dotless beh/qaf
-    "\u0671-\u06D3"   # extended letters (peh, cheh, jeh, gaf, yeh barree...)
-    "\u06EE-\u06FC"   # dal/rae with ring, waw/alef variants, ligatures
+    "\u0620-\u064a"  # basic Arabic letters alef..yeh
+    "\u066e-\u066f"  # dotless beh/qaf
+    "\u0671-\u06d3"  # extended letters (peh, cheh, jeh, gaf, yeh barree...)
+    "\u06ee-\u06fc"  # dal/rae with ring, waw/alef variants, ligatures
 )
 POST_BOUND = f"(?![{AR_LETTERS}A-Za-z0-9_])"
 PRE_BOUND = f"(?<![{AR_LETTERS}A-Za-z])"
+
 
 # ZWNJ is sometimes inserted inside words by editors/IMEs (شی‌ء for شیء),
 # so allow an optional ZWNJ between every pair of letters of a variant word.
 def flex_word(word: str) -> str:
     return "(?:\u200c)?".join(re.escape(c) for c in word)
+
 
 # Common Persian clitics/suffixes that legitimately attach to a term,
 # with or without ZWNJ: plural ها/های/هایی, indefinite/adjectival ی/یی,
@@ -257,9 +292,7 @@ FA_SUFFIX = (
 
 # Productive compound formers: شیءگرا (object-oriented), فهرست‌سازی, ...
 # The term's concept is still present, so these count as a match.
-FA_COMPOUND = (
-    r"(?:\u200c)?(?:گرایی|گرا|محوری|محور|سازی|ساز|پذیری|پذیر|بندی|پایه|مند)?"
-)
+FA_COMPOUND = r"(?:\u200c)?(?:گرایی|گرا|محوری|محور|سازی|ساز|پذیری|پذیر|بندی|پایه|مند)?"
 FA_TAIL = FA_COMPOUND + FA_SUFFIX
 
 # Arabic broken plurals the corpus uses for glossary variants. Broken
@@ -307,7 +340,7 @@ def verb_pattern_for(infinitive: str) -> str:
     rest = infinitive
     for pv in PREVERBS:
         if infinitive.startswith(pv) and len(infinitive) > len(pv) + 3:
-            preverb, rest = pv, infinitive[len(pv):]
+            preverb, rest = pv, infinitive[len(pv) :]
             break
     past = rest[:-1]
     stems = [past]
@@ -375,12 +408,8 @@ def variant_to_regex(variant: str) -> str:
     # join (رشته‌مستند), or a ZWNJ-attached plural then a space
     # (آرگومان‌های کلیدواژه‌ای). A trailing ezafe mark (رشتهٔ) may
     # precede the space.
-    marks = "\u064B-\u065F\u0670"
-    fill = (
-        r"(?:\u200c(?:هایی|های|ها)?\s+"
-        r"|\u200c"
-        rf"|[{marks}]*\s+(?:\S+\s+)?)"
-    )
+    marks = "\u064b-\u065f\u0670"
+    fill = r"(?:\u200c(?:هایی|های|ها)?\s+" r"|\u200c" rf"|[{marks}]*\s+(?:\S+\s+)?)"
 
     if last == "کردن":
         h = fill.join(word_alts(w) for w in head)
@@ -423,9 +452,7 @@ def load_glossary(path: Path):
     raw = json.loads(path.read_text(encoding="utf-8"))
     glossary = {}
     for term, variants_str in raw.items():
-        variants = [
-            v.strip() for v in re.split(r"[،,]", variants_str) if v.strip()
-        ]
+        variants = [v.strip() for v in re.split(r"[،,]", variants_str) if v.strip()]
         glossary[term.lower()] = variants
     return glossary
 
@@ -453,6 +480,7 @@ def build_variant_patterns(glossary):
 # ---------------------------------------------------------------------------
 # Entry loading
 # ---------------------------------------------------------------------------
+
 
 def iter_po_files(root: Path):
     for p in sorted(root.rglob("*.po")):
@@ -484,14 +512,16 @@ def load_entries(root: Path):
             translations = entry_translations(entry)
             if not translations:
                 continue  # untranslated
-            entries.append({
-                "file": rel,
-                "line": entry.linenum,
-                "msgid": entry.msgid,
-                "msgstr": translations[0],
-                "translations": translations,
-                "code": looks_like_code_block(entry.msgid),
-            })
+            entries.append(
+                {
+                    "file": rel,
+                    "line": entry.linenum,
+                    "msgid": entry.msgid,
+                    "msgstr": translations[0],
+                    "translations": translations,
+                    "code": looks_like_code_block(entry.msgid),
+                }
+            )
     return entries, n_files
 
 
@@ -532,6 +562,7 @@ def term_in_skip_context(term: str, prose: str, m: re.Match) -> bool:
                     return True
     return False
 
+
 def remove_kept_emphasis(prose: str, raw_msgid: str, msgstr: str) -> str:
     """Drop emphasized code-ish tokens (*encoding*, *op*, ...) that the
     translator kept verbatim -- those are parameter names, not prose."""
@@ -539,7 +570,9 @@ def remove_kept_emphasis(prose: str, raw_msgid: str, msgstr: str) -> str:
         if tok in msgstr:
             prose = re.sub(
                 r"(?<![A-Za-z0-9_.])" + re.escape(tok) + r"(?![A-Za-z0-9_])",
-                " ", prose, flags=re.IGNORECASE,
+                " ",
+                prose,
+                flags=re.IGNORECASE,
             )
     return prose
 
@@ -555,7 +588,7 @@ def is_proper_noun_occurrence(prose: str, m: re.Match) -> bool:
         prev = prose[start - 1]
         if prev not in " \t\n([{'\"-":
             return False  # sentence start or after punctuation: keep it
-    nxt = prose[m.end():m.end() + 30].split()
+    nxt = prose[m.end() : m.end() + 30].split()
     return bool(nxt) and nxt[0][0].isupper()
 
 
@@ -598,13 +631,15 @@ def check_glossary(entries, glossary):
                     if re.search(variant_to_regex(v), msgstr_n):
                         variant_usage[term][v] += 1
             else:
-                violations[term].append({
-                    "file": e["file"],
-                    "line": e["line"],
-                    "msgid": msgid,
-                    "msgstr": msgstr,
-                    "allowed": glossary[term],
-                })
+                violations[term].append(
+                    {
+                        "file": e["file"],
+                        "line": e["line"],
+                        "msgid": msgid,
+                        "msgstr": msgstr,
+                        "allowed": glossary[term],
+                    }
+                )
 
     return {
         "violations": violations,
@@ -616,6 +651,7 @@ def check_glossary(entries, glossary):
 # ---------------------------------------------------------------------------
 # Check 2: identical msgid, different msgstr
 # ---------------------------------------------------------------------------
+
 
 def norm_ws(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
@@ -654,16 +690,15 @@ def check_duplicates(entries):
             ],
         }
 
-    return dict(
-        sorted(dupes.items(), key=lambda kv: -kv[1]["occurrences"])
-    )
+    return dict(sorted(dupes.items(), key=lambda kv: -kv[1]["occurrences"]))
 
 
 # ---------------------------------------------------------------------------
 # Check 3: non-glossary terminology drift
 # ---------------------------------------------------------------------------
 
-ENGLISH_STOPWORDS = set("""
+ENGLISH_STOPWORDS = set(
+    """
 a an the and or but if then else when while for to of in on at by with
 from as is are was were be been being this that these those it its it's
 you your yours we our ours they their theirs he she his her him not no
@@ -678,13 +713,16 @@ following however many much every well just like even since within
 without via etc need needs needed want wants let lets say says take
 takes give gives know known find found work works working call called
 mean means meaning keep keeps run runs running look looks help helps
-""".split())
+""".split()
+)
 
-MARKUP_NOISE = set("""
+MARKUP_NOISE = set(
+    """
 py class func meth mod exc data const attr obj term ref doc
 versionadded versionchanged deprecated seealso rubric literalinclude
 code-block highlight index note warning topic default-domain
-""".split())
+""".split()
+)
 
 STOPWORDS = ENGLISH_STOPWORDS | MARKUP_NOISE
 
@@ -692,11 +730,13 @@ FARSI_WORD_RE = re.compile(r"[\u0600-\u06FF\u200c]+")
 # U+060C ،  U+061B ؛  U+061F ؟  U+0640 ـ  are punctuation, not letters
 FA_PUNCT = "\u060c\u061b\u061f\u0640"
 
-FARSI_STOPWORDS = set("""
+FARSI_STOPWORDS = set(
+    """
 است را به از در که این با آن یک برای می‌شود می‌کند می‌توان تا هم نیز
 شده شود کرد کند دارد دارند بود بودن باشد باشند ها های هایی و یا اگر
 چون زیرا اما ولی هر همه بین روی زیر بالای کنار پس سپس دیگر خود
-""".split())
+""".split()
+)
 
 
 def tokenize_en(text: str):
@@ -706,14 +746,15 @@ def tokenize_en(text: str):
 def tokenize_fa(text: str):
     tokens = FARSI_WORD_RE.findall(strip_markup(text, keep_prose_roles=False))
     return [
-        t for t in tokens
-        if t not in FARSI_STOPWORDS and len(t) > 1
-        and not any(c in FA_PUNCT for c in t)
+        t
+        for t in tokens
+        if t not in FARSI_STOPWORDS and len(t) > 1 and not any(c in FA_PUNCT for c in t)
     ]
 
 
-def check_drift(entries, glossary, min_freq,
-                assoc_ratio=4.0, min_variant_count=3, max_examples=4):
+def check_drift(
+    entries, glossary, min_freq, assoc_ratio=4.0, min_variant_count=3, max_examples=4
+):
     glossary_terms = set(glossary)
 
     unigrams = Counter()
@@ -728,7 +769,8 @@ def check_drift(entries, glossary, min_freq,
         if mostly_preserved_code(e["msgid"], e["msgstr"]):
             continue
         toks = [
-            t for t in tokenize_en(e["msgid"])
+            t
+            for t in tokenize_en(e["msgid"])
             if len(t) > 2 and t not in STOPWORDS and t not in glossary_terms
         ]
         seen = set()
@@ -743,7 +785,8 @@ def check_drift(entries, glossary, min_freq,
             occurrences[t].append(e)
 
     candidates = {
-        t for t, f in (unigrams | bigrams).items()
+        t
+        for t, f in (unigrams | bigrams).items()
         if f >= min_freq and t.split()[0] not in glossary_terms
     }
 
@@ -806,23 +849,45 @@ def check_drift(entries, glossary, min_freq,
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("po_dir", nargs="?", default=str(REPO_ROOT),
-                    help="Directory containing .po files (default: repo root)")
-    ap.add_argument("--glossary", default=str(REPO_ROOT / "glossary.json"),
-                    help="Glossary JSON: term -> 'variant1، variant2'")
-    ap.add_argument("--checks", default="glossary,duplicates,drift",
-                    help="Comma-separated subset of: glossary,duplicates,drift")
-    ap.add_argument("--min-freq", type=int, default=5,
-                    help="Min occurrences for drift candidates (default: 5)")
-    ap.add_argument("--assoc-ratio", type=float, default=4.0,
-                    help="Min association ratio for drift (default: 4.0)")
-    ap.add_argument("--out", default=str(REPO_ROOT / "reports" / "consistency_report.json"),
-                    help="Output JSON report path")
+    ap.add_argument(
+        "po_dir",
+        nargs="?",
+        default=str(REPO_ROOT),
+        help="Directory containing .po files (default: repo root)",
+    )
+    ap.add_argument(
+        "--glossary",
+        default=str(REPO_ROOT / "glossary.json"),
+        help="Glossary JSON: term -> 'variant1، variant2'",
+    )
+    ap.add_argument(
+        "--checks",
+        default="glossary,duplicates,drift",
+        help="Comma-separated subset of: glossary,duplicates,drift",
+    )
+    ap.add_argument(
+        "--min-freq",
+        type=int,
+        default=5,
+        help="Min occurrences for drift candidates (default: 5)",
+    )
+    ap.add_argument(
+        "--assoc-ratio",
+        type=float,
+        default=4.0,
+        help="Min association ratio for drift (default: 4.0)",
+    )
+    ap.add_argument(
+        "--out",
+        default=str(REPO_ROOT / "reports" / "consistency_report.json"),
+        help="Output JSON report path",
+    )
     args = ap.parse_args()
 
     checks = {c.strip() for c in args.checks.split(",") if c.strip()}
@@ -852,8 +917,10 @@ def main():
         report["summary"]["glossary_violations_total"] = n_viol
         report["glossary_violations"] = res["violations"]
         report["glossary_variant_usage"] = res["variant_usage"]
-        print(f"  {len(res['violations'])} terms with violations "
-              f"({n_viol} flagged entries)")
+        print(
+            f"  {len(res['violations'])} terms with violations "
+            f"({n_viol} flagged entries)"
+        )
         worst = sorted(res["violations"].items(), key=lambda kv: -len(kv[1]))[:10]
         for term, v in worst:
             print(f"    {term}: {len(v)}")
@@ -866,12 +933,15 @@ def main():
         print(f"  {len(dupes)} distinct msgids translated inconsistently")
         for key, data in list(dupes.items())[:10]:
             short = key if len(key) <= 60 else key[:57] + "..."
-            print(f"    {data['occurrences']}x / {len(data['variants'])} variants: {short!r}")
+            print(
+                f"    {data['occurrences']}x / {len(data['variants'])} variants: {short!r}"
+            )
 
     if "drift" in checks:
         print(f"Check 3/3: non-glossary drift (min-freq={args.min_freq}) ...")
-        drift = check_drift(entries, glossary, args.min_freq,
-                            assoc_ratio=args.assoc_ratio)
+        drift = check_drift(
+            entries, glossary, args.min_freq, assoc_ratio=args.assoc_ratio
+        )
         report["summary"]["non_glossary_drift_terms"] = len(drift)
         report["non_glossary_drift"] = drift
         print(f"  {len(drift)} candidate terms with inconsistent rendering")

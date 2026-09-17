@@ -60,13 +60,10 @@ FA_WORD = r"[\u0620-\u064A\u066E-\u066F\u0671-\u06D3\u06EE-\u06FC\u200c]+"
 # guillemet. Kept strictly bounded: an unbounded (…+)+ here makes the
 # regex backtrack catastrophically on long English tails.
 GLUE = (
-    r'(?:[\u064B-\u065F\u0670\u200c\s»«"\']*'
-    r'|\s*[A-Za-z][A-Za-z0-9\-]{0,19}\s*»\s*)'
+    r'(?:[\u064B-\u065F\u0670\u200c\s»«"\']*' r"|\s*[A-Za-z][A-Za-z0-9\-]{0,19}\s*»\s*)"
 )
 
-GLOSS_RE = re.compile(
-    "(" + FA_WORD + ")" + GLUE + r"\(\s*([^()\n]{1,60})\s*\)"
-)
+GLOSS_RE = re.compile("(" + FA_WORD + ")" + GLUE + r"\(\s*([^()\n]{1,60})\s*\)")
 
 
 def is_english_gloss(content: str) -> bool:
@@ -97,15 +94,18 @@ def scan_glosses(entries):
                 continue
             if canon_lexeme(fa) in FARSI_STOPWORDS:
                 continue
-            occs.append({
-                "en": en,
-                "en_key": en.lower(),
-                "fa": fa,
-                "file": e["file"],
-                "line": e["line"],
-                "ctx": msgstr[max(0, m.start() - 30):m.end() + 30]
-                              .replace("\n", " "),
-            })
+            occs.append(
+                {
+                    "en": en,
+                    "en_key": en.lower(),
+                    "fa": fa,
+                    "file": e["file"],
+                    "line": e["line"],
+                    "ctx": msgstr[max(0, m.start() - 30) : m.end() + 30].replace(
+                        "\n", " "
+                    ),
+                }
+            )
     return occs
 
 
@@ -115,19 +115,18 @@ def coverage(entries, terms, partner_lexemes):
     terms_parts = {t: re.split(r"[\s\-]+", t) for t in terms}
     by_first = defaultdict(list)
     for t, parts in terms_parts.items():
-        by_first[parts[0].lower()].append(t)  # <-- lowercase for case-insensitive lookup
+        by_first[parts[0].lower()].append(
+            t
+        )  # <-- lowercase for case-insensitive lookup
 
     gloss_re = {
         t: re.compile(
-            r"\(\s*" + r"[\s\-]+".join(re.escape(p) for p in parts)
-            + r"s?\s*\)", re.IGNORECASE
+            r"\(\s*" + r"[\s\-]+".join(re.escape(p) for p in parts) + r"s?\s*\)",
+            re.IGNORECASE,
         )
         for t, parts in terms_parts.items()
     }
-    stats = {
-        t: {"glossed": [], "no_gloss_fa": [], "no_gloss_other": []}
-        for t in terms
-    }
+    stats = {t: {"glossed": [], "no_gloss_fa": [], "no_gloss_other": []} for t in terms}
 
     for e in entries:
         msgid, msgstr = e["msgid"], e["msgstr"]
@@ -188,22 +187,28 @@ def render_markdown(pairs, cov, n_occ, n_files, args):
 
     A("# Parenthetical English glosses — فارسی (English)")
     A("")
-    A(f"{n_occ} gloss occurrences · {n_terms} English terms · "
-      f"{n_pairs} Persian–English pairs · {n_files} files.")
+    A(
+        f"{n_occ} gloss occurrences · {n_terms} English terms · "
+        f"{n_pairs} Persian–English pairs · {n_files} files."
+    )
     A("")
-    A("Every place where a msgstr uses a Persian rendering and repeats "
-      "the English term in parentheses next to it (prose msgstrs only; "
-      "code blocks and doctests are skipped).")
+    A(
+        "Every place where a msgstr uses a Persian rendering and repeats "
+        "the English term in parentheses next to it (prose msgstrs only; "
+        "code blocks and doctests are skipped)."
+    )
     A("")
 
     if cov:
         A("## Coverage by English term")
         A("")
-        A("For each glossed term: how many msgids containing that term "
-          "carry the gloss, how many use the same Persian rendering "
-          "*without* the gloss, and how many do neither. Glosses are "
-          "often a first-mention-only convention, so read this as a map "
-          "of where they appear vs. don't — not as violations.")
+        A(
+            "For each glossed term: how many msgids containing that term "
+            "carry the gloss, how many use the same Persian rendering "
+            "*without* the gloss, and how many do neither. Glosses are "
+            "often a first-mention-only convention, so read this as a map "
+            "of where they appear vs. don't — not as violations."
+        )
         A("")
         A("| English term | glossed | same فارسی, no gloss | other |")
         A("| --- | ---: | ---: | ---: |")
@@ -212,8 +217,10 @@ def render_markdown(pairs, cov, n_occ, n_files, args):
             key=lambda kv: -(len(kv[1]["glossed"]) + len(kv[1]["no_gloss_fa"])),
         )
         for t, s in rows:
-            A(f"| {t} | {len(s['glossed'])} | {len(s['no_gloss_fa'])} "
-              f"| {len(s['no_gloss_other'])} |")
+            A(
+                f"| {t} | {len(s['glossed'])} | {len(s['no_gloss_fa'])} "
+                f"| {len(s['no_gloss_other'])} |"
+            )
         A("")
 
     A("## Full list")
@@ -226,11 +233,13 @@ def render_markdown(pairs, cov, n_occ, n_files, args):
         A("")
         for fa, occs in sorted(fas.items(), key=lambda kv: -len(kv[1])):
             A(f"- **{fa}** ×{len(occs)}")
-            for o in occs[:args.max_examples]:
+            for o in occs[: args.max_examples]:
                 A(f"  - {o['file']}:{o['line']} — “...{o['ctx']}...”")
             if len(occs) > args.max_examples:
-                A(f"  - … and {len(occs) - args.max_examples} more "
-                  f"(see JSON report)")
+                A(
+                    f"  - … and {len(occs) - args.max_examples} more "
+                    f"(see JSON report)"
+                )
         A("")
     return "\n".join(L)
 
@@ -241,15 +250,25 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     ap.add_argument("--po-dir", default=str(REPO_ROOT))
-    ap.add_argument("--out-md",
-                    default=str(REPO_ROOT / "reports" / "parentheticals.md"))
-    ap.add_argument("--out-json",
-                    default=str(REPO_ROOT / "reports" / "parentheticals.json"))
-    ap.add_argument("--max-examples", type=int, default=4,
-                    help="Max occurrences listed per Persian partner")
-    ap.add_argument("--max-terms", type=int, default=400,
-                    help="Max terms for the coverage table (0 = all; "
-                         "the table is O(entries x terms))")
+    ap.add_argument(
+        "--out-md", default=str(REPO_ROOT / "reports" / "parentheticals.md")
+    )
+    ap.add_argument(
+        "--out-json", default=str(REPO_ROOT / "reports" / "parentheticals.json")
+    )
+    ap.add_argument(
+        "--max-examples",
+        type=int,
+        default=4,
+        help="Max occurrences listed per Persian partner",
+    )
+    ap.add_argument(
+        "--max-terms",
+        type=int,
+        default=400,
+        help="Max terms for the coverage table (0 = all; "
+        "the table is O(entries x terms))",
+    )
     args = ap.parse_args()
 
     print("Loading .po entries ...")
@@ -265,15 +284,15 @@ def main():
         pairs[o["en_key"]][o["fa"]].append(o)
         en_display.setdefault(o["en_key"], o["en"])
     pairs = {k: dict(v) for k, v in pairs.items()}
-    partner_lexemes = {
-        en: {canon_lexeme(f) for f in fas} for en, fas in pairs.items()
-    }
+    partner_lexemes = {en: {canon_lexeme(f) for f in fas} for en, fas in pairs.items()}
 
     n_occ = len(occs)
     n_gloss_files = len({o["file"] for o in occs})
-    print(f"  {n_occ} glosses · {len(pairs)} English terms · "
-          f"{sum(len(v) for v in pairs.values())} pairs · "
-          f"{n_gloss_files} files")
+    print(
+        f"  {n_occ} glosses · {len(pairs)} English terms · "
+        f"{sum(len(v) for v in pairs.values())} pairs · "
+        f"{n_gloss_files} files"
+    )
 
     print("Computing per-term coverage ...")
     ranked = sorted(
@@ -282,9 +301,11 @@ def main():
     )
     cov_terms = [en for en, _ in ranked]
     if args.max_terms and len(cov_terms) > args.max_terms:
-        print(f"  capping coverage to top {args.max_terms} glossed terms "
-              f"(--max-terms 0 for all)")
-        cov_terms = cov_terms[:args.max_terms]
+        print(
+            f"  capping coverage to top {args.max_terms} glossed terms "
+            f"(--max-terms 0 for all)"
+        )
+        cov_terms = cov_terms[: args.max_terms]
     cov = coverage(entries, set(cov_terms), partner_lexemes)
 
     md = render_markdown(pairs, cov, n_occ, n_gloss_files, args)
@@ -304,9 +325,7 @@ def main():
             }
             for en, fas in pairs.items()
         },
-        "coverage": {
-            t: {k: v for k, v in s.items()} for t, s in cov.items()
-        },
+        "coverage": {t: {k: v for k, v in s.items()} for t, s in cov.items()},
     }
     Path(args.out_json).write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -321,20 +340,24 @@ def main():
     )[:15]:
         total = sum(len(v) for v in fas.values())
         partners = "، ".join(
-            f"{fa}×{len(occ)}" for fa, occ in
-            sorted(fas.items(), key=lambda kv: -len(kv[1]))[:3]
+            f"{fa}×{len(occ)}"
+            for fa, occ in sorted(fas.items(), key=lambda kv: -len(kv[1]))[:3]
         )
         print(f"  {en_display[en]} ({total}×): {partners}")
     if cov:
-        print("\nMost often translated without the gloss "
-              "(same Persian word, no paren):")
+        print(
+            "\nMost often translated without the gloss "
+            "(same Persian word, no paren):"
+        )
         ranked = sorted(
             cov.items(),
             key=lambda kv: -len(kv[1]["no_gloss_fa"]),
         )[:10]
         for t, s in ranked:
-            print(f"  {t}: {len(s['glossed'])} glossed, "
-                  f"{len(s['no_gloss_fa'])} without")
+            print(
+                f"  {t}: {len(s['glossed'])} glossed, "
+                f"{len(s['no_gloss_fa'])} without"
+            )
 
 
 if __name__ == "__main__":

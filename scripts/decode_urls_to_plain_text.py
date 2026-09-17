@@ -109,8 +109,10 @@ def main() -> None:
         pattern = "**/*.po" if recursive else "*.po"
         po_files = sorted(in_path.glob(pattern))
         if not po_files:
-            print(f"No .po files found in {in_path}"
-                  f"{' (recursively)' if recursive else ''}.")
+            print(
+                f"No .po files found in {in_path}"
+                f"{' (recursively)' if recursive else ''}."
+            )
             sys.exit(0)
 
         for f in po_files:

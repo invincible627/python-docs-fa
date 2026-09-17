@@ -240,7 +240,11 @@ def find_sphinx_pot(venv_dir: Path) -> Path:
     build with -- not whatever sphinx happens to be on the runner)."""
     python = venv_dir / "bin" / "python"
     result = subprocess.run(
-        [str(python), "-c", "import sphinx, os; print(os.path.dirname(sphinx.__file__))"],
+        [
+            str(python),
+            "-c",
+            "import sphinx, os; print(os.path.dirname(sphinx.__file__))",
+        ],
         capture_output=True,
         text=True,
         check=True,
@@ -252,9 +256,7 @@ def find_sphinx_pot(venv_dir: Path) -> Path:
     return pot_path
 
 
-def sync_sphinx_catalog(
-    doc_venv_dir: Path, repo_root: Path = REPO_ROOT
-) -> bool:
+def sync_sphinx_catalog(doc_venv_dir: Path, repo_root: Path = REPO_ROOT) -> bool:
     """Merge Sphinx's own sphinx.pot into this repo's top-level sphinx.po.
     Returns True if sphinx.po exists and was merged, False if there's no
     sphinx.po in this repo to merge into (nothing to do)."""

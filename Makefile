@@ -118,7 +118,7 @@ line-length:
 .PHONY: sphinx-lint
 sphinx-lint:
 	@echo "Checking all files using sphinx-lint..."
-	@sphinx-lint --enable all --disable line-too-long *.po */*.po
+	@sphinx-lint --enable all --disable line-too-long --disable trailing-whitespace *.po */*.po
 
 $(POSPELL_TMP_DIR)/%.po.out: %.po dict
 	@echo "Pospell checking $<..."

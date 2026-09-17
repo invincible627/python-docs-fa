@@ -463,7 +463,7 @@ msgid "[source]"
 msgstr "نمایش منبع"
 
 msgid "highlighting module code... "
-msgstr "در حال برجسته‌سازی کد ماژول... "
+msgstr "در حال برجسته‌سازی کد ماژول..."
 
 msgid "[docs]"
 msgstr "[مستندات]"
