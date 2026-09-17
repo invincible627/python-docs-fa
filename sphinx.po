@@ -904,8 +904,9 @@ msgstr "هیچ نام‌سندی برای نوشتن وجود ندارد!"
 msgid "preparing documents"
 msgstr "در حال آماده‌سازی سندها"
 
+#, fuzzy
 msgid "copying assets"
-msgstr "در حال کپی کردن دارایی‌ها"
+msgstr "در حال کپی کردن تصاویر... "
 
 #, python-format
 msgid "undecodable source characters, replacing with \"?\": %r"
@@ -1116,6 +1117,7 @@ msgstr "%d %b %Y"
 msgid "could not calculate translation progress!"
 msgstr "محاسبه‌ی پیشرفت ترجمه ممکن نشد!"
 
+#, fuzzy
 msgid "no translated elements!"
 msgstr "هیچ عنصر ترجمه‌شده‌ای وجود ندارد!"
 
@@ -1672,11 +1674,13 @@ msgstr ""
 "چیزی شبیه 2.5.1 یا 3.0a1 است. اگر به این ساختار دوگانه نیاز ندارید،\n"
 "فقط هر دو را به یک مقدار یکسان تنظیم کنید."
 
+#, fuzzy
 msgid "Project version"
 msgstr "نسخه‌ی پروژه"
 
+#, fuzzy
 msgid "Project release"
-msgstr "انتشار پروژه"
+msgstr "نام پروژه"
 
 msgid ""
 "If the documents are to be written in a language other than English,\n"
@@ -2046,6 +2050,7 @@ msgstr "جست‌وجو"
 msgid "Go"
 msgstr "برو"
 
+#, fuzzy
 msgid "Show Source"
 msgstr "نمایش منبع"
 
@@ -2071,30 +2076,38 @@ msgstr "آخرین به‌روزرسانی"
 msgid "Indices and tables:"
 msgstr "اندیس‌ها و جدول‌ها:"
 
+#, fuzzy
 msgid "Complete Table of Contents"
 msgstr "جدول کامل محتویات"
 
+#, fuzzy
 msgid "lists all sections and subsections"
 msgstr "همه‌ی بخش‌ها و زیربخش‌ها را فهرست می‌کند"
 
+#, fuzzy
 msgid "Search Page"
 msgstr "صفحه‌ی جست‌وجو"
 
+#, fuzzy
 msgid "search this documentation"
 msgstr "این مستند را جست‌وجو کنید"
 
+#, fuzzy
 msgid "Global Module Index"
 msgstr "اندیس ماژول‌های سراسری"
 
 msgid "quick access to all modules"
 msgstr "دسترسی سریع به همه‌ی ماژول‌ها"
 
+#, fuzzy
 msgid "General Index"
 msgstr "اندیس کلی"
 
+#, fuzzy
 msgid "all functions, classes, terms"
 msgstr "همه‌ی توابع، کلاس‌ها و اصطلاحات"
 
+#, fuzzy
 msgid "This Page"
 msgstr "این صفحه"
 
@@ -2133,6 +2146,7 @@ msgstr "پیمایش"
 msgid "Search within %(docstitle)s"
 msgstr "جست‌وجو در %(docstitle)s"
 
+#, fuzzy
 msgid "About these documents"
 msgstr "درباره‌ی این مستندات"
 
@@ -2143,7 +2157,7 @@ msgstr "حق نشر"
 msgid "&#169; %(copyright_prefix)s %(copyright)s."
 msgstr "&#169; %(copyright_prefix)s %(copyright)s."
 
-#, python-format
+#, fuzzy, python-format
 msgid "Last updated on %(last_updated)s."
 msgstr "آخرین به‌روزرسانی در: %(last_updated)s."
 
@@ -2264,8 +2278,9 @@ msgstr "اندیس ماژول‌های پایتون"
 msgid "modules"
 msgstr "ماژول‌ها"
 
+#, fuzzy
 msgid "Deprecated"
-msgstr "منسوخ‌شده"
+msgstr " (منسوخ‌شده)"
 
 msgid "exception"
 msgstr "استثنا"
@@ -2317,8 +2332,9 @@ msgstr ""
 "اعلان تکراری ++C، همچنین در %s:%s تعریف شده است.\n"
 "اعلان «.. cpp:%s:: %s» است."
 
+#, fuzzy
 msgid "Return values"
-msgstr "مقادیر بازگشتی"
+msgstr "بازمی‌گرداند"
 
 msgid "union"
 msgstr "یونیون"
@@ -2399,6 +2415,7 @@ msgstr "اصطلاحات واژه‌نامه نباید با سطرهای خال
 msgid "glossary seems to be misformatted, check indentation"
 msgstr "به‌نظر می‌رسد واژه‌نامه بدقالب است، تورفتگی را بررسی کنید"
 
+#, fuzzy
 msgid "glossary term"
 msgstr "اصطلاح واژه‌نامه"
 
@@ -2570,6 +2587,7 @@ msgstr "در حال ساخت [html]: "
 msgid "template %s has been changed since the previous build, all docs will be rebuilt"
 msgstr "قالب %s از ساخت پیشین تغییر کرده است، همه‌ی سندها بازسازی خواهند شد"
 
+#, fuzzy
 msgid "index"
 msgstr "اندیس"
 
@@ -2812,6 +2830,7 @@ msgstr "دیگر پارامترها"
 msgid "Receives"
 msgstr "دریافت می‌کند"
 
+#, fuzzy
 msgid "References"
 msgstr "مراجع"
 
@@ -3395,11 +3414,19 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 #~ msgid "(Only some members are part of the stable ABI.)"
 #~ msgstr "(تنها برخی از اعضا قسمتی از ABI پایدار هستند.)"
 
+#, fuzzy
+#~ msgid "This is"
+#~ msgstr "این صفحه"
+
 #~ msgid "Unstable API"
 #~ msgstr "API ناپایدار"
 
 #~ msgid ". It may change without warning in minor releases."
 #~ msgstr "این ممکن است بدون هشدار در نسخه‌های جزئی تغییر کند."
+
+#, fuzzy
+#~ msgid "Return value: Always NULL."
+#~ msgstr "مقادیر بازگشتی"
 
 #~ msgid "Return value: New reference."
 #~ msgstr "مقدار بازگشتی: مرجع جدید."
@@ -3421,6 +3448,10 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 
 #~ msgid "in development"
 #~ msgstr "در حال توسعه"
+
+#, fuzzy
+#~ msgid "pre-release"
+#~ msgstr "انتشار پروژه"
 
 #~ msgid "stable"
 #~ msgstr "پایدار"
@@ -3448,6 +3479,10 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 
 #~ msgid "Start here: a tour of Python's syntax and features"
 #~ msgstr "از اینجا شروع کنید: سفری در سینتکس و ویژگی‌های پایتون"
+
+#, fuzzy
+#~ msgid "Library reference"
+#~ msgstr "مرجع زبان"
 
 #~ msgid "Standard library and builtins"
 #~ msgstr "کتابخانه‌ی استاندارد و توابع توکار"
@@ -3488,6 +3523,10 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 #~ msgid "Frequently asked questions (with answers!)"
 #~ msgstr "سؤالات متداول (همراه با پاسخ!)"
 
+#, fuzzy
+#~ msgid "Deprecations"
+#~ msgstr "منسوخ‌شده"
+
 #~ msgid "Deprecated functionality"
 #~ msgstr "قابلیت‌های منسوخ‌شده"
 
@@ -3515,6 +3554,10 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 #~ msgid "Terms explained"
 #~ msgstr "اصطلاحات توضیح داده شده"
 
+#, fuzzy
+#~ msgid "Reporting issues"
+#~ msgstr "در حال کپی کردن دارایی‌ها"
+
 #~ msgid "Contributing to docs"
 #~ msgstr "مشارکت در مستندات"
 
@@ -3532,6 +3575,14 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 
 #~ msgid "All versions"
 #~ msgstr "همه‌ی نسخه‌ها"
+
+#, fuzzy
+#~ msgid "Other resources"
+#~ msgstr "منابع دیگر:"
+
+#, fuzzy
+#~ msgid "PEP index"
+#~ msgstr "اندیس"
 
 #~ msgid "Beginner's guide"
 #~ msgstr "راهنمای مبتدیان"
@@ -3551,6 +3602,10 @@ msgstr "پارس کردن type_comment برای %r شکست خورد: %s"
 #~ msgstr ""
 #~ "این سند مربوط به نسخه‌ای قدیمی از پایتون است که دیگر پشتیبانی نمی‌شود.\n"
 #~ "    شما باید نسخه‌ی خود را ارتقا دهید و مطالب مربوط به"
+
+#, fuzzy
+#~ msgid "Python documentation for the current stable release"
+#~ msgstr "نسخه‌ی پایدار فعلی"
 
 #~ msgid ""
 #~ "This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
