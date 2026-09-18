@@ -1288,7 +1288,7 @@ msgid "A set of standard date/time types has been added in the new :mod:`datetim
 msgstr "مجموعه‌ای از نوع‌های استاندارد تاریخ/زمان در ماژول جدید :mod:`datetime` افزوده شده است. برای جزئیات بیشتر به بخش بعدی مراجعه کنید."
 
 msgid "The Distutils :class:`!Extension` class now supports an extra constructor argument named *depends* for listing additional source files that an extension depends on.  This lets Distutils recompile the module if any of the dependency files are modified.  For example, if :file:`sampmodule.c` includes the header file :file:`sample.h`, you would create the :class:`!Extension` object like this::"
-msgstr "کلاس :class:`!Extension` در Distutils اکنون از یک آرگومان سازنده اضافی با نام *depends* پشتیبانی می‌کند که برای فهرست‌کردن پرونده‌های منبع اضافی‌ای به کار می‌رود که یک ماژول توسعه‌ای به آن‌ها وابسته است. این امر به Distutils امکان می‌دهد در صورت تغییر هر یک از پرونده‌های وابستگی، ماژول را دوباره کامپایل کند. برای مثال، اگر :file:`sampmodule.c` شامل پرونده سرآیند :file:`sample.h` باشد، شیء :class:`!Extension` را به این شکل ایجاد می‌کنید::"
+msgstr "کلاس :class:`!Extension` در Distutils اکنون از یک آرگومان سازنده اضافی با نام *depends* پشتیبانی می‌کند که برای فهرست‌کردن پرونده‌های منبع اضافی‌ای به کار می‌رود که یک ماژول توسعه‌ای به آن‌ها وابسته است. این امر به Distutils امکان می‌دهد در صورت تغییر هر یک از پرونده‌های وابستگی، ماژول را دوباره کامپایل کند. برای مثال، اگر :file:`sampmodule.c` شامل پرونده‌ی سرآیند :file:`sample.h` باشد، شیء :class:`!Extension` را به این شکل ایجاد می‌کنید::"
 
 msgid ""
 "ext = Extension(\"samp\",\n"

@@ -258,7 +258,7 @@ msgstr ""
 ">>>"
 
 msgid "To find out the correct calling convention you have to look into the C header file or the documentation for the function you want to call."
-msgstr "برای اطلاع از قرارداد فراخوانی صحیح، باید پرونده سرآیند C یا مستندات تابعی را که می‌خواهید فراخوانی کنید، بررسی کنید."
+msgstr "برای اطلاع از قرارداد فراخوانی صحیح، باید پرونده‌ی سرآیند C یا مستندات تابعی را که می‌خواهید فراخوانی کنید، بررسی کنید."
 
 msgid "On Windows, :mod:`!ctypes` uses win32 structured exception handling to prevent crashes from general protection faults when functions are called with invalid argument values::"
 msgstr "در ویندوز، :mod:`!ctypes` از مدیریت استثنای ساختاریافته win32 برای جلوگیری از فروپاشی ناشی از خطاهای حفاظت عمومی هنگام فراخوانی توابع با مقادیر نامعتبر آرگومان استفاده می‌کند::"
@@ -2499,7 +2499,7 @@ msgid "The optional third item is the default value for this parameter."
 msgstr "آیتم سوم اختیاری، مقدار پیش‌فرض این پارامتر است."
 
 msgid "The following example demonstrates how to wrap the Windows ``MessageBoxW`` function so that it supports default parameters and named arguments. The C declaration from the windows header file is this::"
-msgstr "مثال زیر نشان می‌دهد که چگونه می‌توان تابع ``MessageBoxW`` ویندوز را پوشش داد تا از پارامترهای پیش‌فرض و آرگومان‌های نام‌دار پشتیبانی کند. اعلان C از پرونده سرآیند ویندوز به این صورت است::"
+msgstr "مثال زیر نشان می‌دهد که چگونه می‌توان تابع ``MessageBoxW`` ویندوز را پوشش داد تا از پارامترهای پیش‌فرض و آرگومان‌های نام‌دار پشتیبانی کند. اعلان C از پرونده‌ی سرآیند ویندوز به این صورت است::"
 
 msgid ""
 "WINUSERAPI int WINAPI\n"

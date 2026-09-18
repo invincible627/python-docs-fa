@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Graphic User Interface FAQ"
-msgstr "پرسش‌های متداول رابط کاربری گرافیکی"
+msgstr "پرسش‌های متداول درباره‌ی رابط کاربری گرافیکی"
 
 msgid "Contents"
 msgstr "فهرست"

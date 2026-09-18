@@ -27,7 +27,7 @@ msgid "DateTime Objects"
 msgstr "شیءهای DateTime"
 
 msgid "Various date and time objects are supplied by the :mod:`datetime` module. Before using any of these functions, the header file :file:`datetime.h` must be included in your source (note that this is not included by :file:`Python.h`), and the macro :c:macro:`PyDateTime_IMPORT` must be invoked, usually as part of the module initialisation function.  The macro puts a pointer to a C structure into a static variable, :c:data:`PyDateTimeAPI`, that is used by the following macros."
-msgstr "اشیاء مختلف تاریخ و زمان توسط ماژول :mod:`datetime` فراهم می‌شوند. پیش از استفاده از هر یک از این توابع، پرونده سرآیند :file:`datetime.h` باید در کد منبع شما گنجانده شود (توجه داشته باشید که این پرونده توسط :file:`Python.h` گنجانده نمی‌شود) و ماکروی :c:macro:`PyDateTime_IMPORT` باید فراخوانی شود، که معمولاً به عنوان بخشی از تابع مقداردهی اولیه ماژول انجام می‌شود.  این ماکرو یک اشاره‌گر به یک ساختار C را در یک متغیر ایستا، :c:data:`PyDateTimeAPI`، قرار می‌دهد که توسط ماکروهای زیر استفاده می‌شود."
+msgstr "اشیاء مختلف تاریخ و زمان توسط ماژول :mod:`datetime` فراهم می‌شوند. پیش از استفاده از هر یک از این توابع، پرونده‌ی سرآیند :file:`datetime.h` باید در کد منبع شما گنجانده شود (توجه داشته باشید که این پرونده توسط :file:`Python.h` گنجانده نمی‌شود) و ماکروی :c:macro:`PyDateTime_IMPORT` باید فراخوانی شود، که معمولاً به عنوان بخشی از تابع مقداردهی اولیه ماژول انجام می‌شود.  این ماکرو یک اشاره‌گر به یک ساختار C را در یک متغیر ایستا، :c:data:`PyDateTimeAPI`، قرار می‌دهد که توسط ماکروهای زیر استفاده می‌شود."
 
 msgid "Import the datetime C API."
 msgstr "ایمپورت کردن C API مربوط به datetime."

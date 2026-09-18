@@ -2108,7 +2108,7 @@ msgid "Remove the ``PyAST_Validate()`` function. It is no longer possible to bui
 msgstr "تابع ``PyAST_Validate()`` حذف شد. دیگر نمی‌توان شیء AST (نوع ``mod_ty``) را با API عمومی C ساخت. این تابع پیش‌تر از API محدود C مستثنی شده بود (:pep:`384`). (مشارکت‌شده توسط Victor Stinner در :issue:`43244`.)"
 
 msgid "Remove the ``symtable.h`` header file and the undocumented functions:"
-msgstr "حذف پرونده سرآیند ``symtable.h`` و توابع مستندنشده:"
+msgstr "حذف پرونده‌ی سرآیند ``symtable.h`` و توابع مستندنشده:"
 
 msgid "``PyST_GetScope()``"
 msgstr "``PyST_GetScope()``"
@@ -2129,7 +2129,7 @@ msgid "``Py_SymtableStringObject()``"
 msgstr "``Py_SymtableStringObject()``"
 
 msgid "The ``Py_SymtableString()`` function was part the stable ABI by mistake but it could not be used, because the ``symtable.h`` header file was excluded from the limited C API."
-msgstr "تابع ``Py_SymtableString()`` به اشتباه بخشی از ABI پایدار بود، اما قابل استفاده نبود، زیرا پرونده سرآیند ``symtable.h`` از C API محدود مستثنی شده بود."
+msgstr "تابع ``Py_SymtableString()`` به اشتباه بخشی از ABI پایدار بود، اما قابل استفاده نبود، زیرا پرونده‌ی سرآیند ``symtable.h`` از C API محدود مستثنی شده بود."
 
 msgid "Use Python :mod:`symtable` module instead. (Contributed by Victor Stinner in :issue:`43244`.)"
 msgstr "به جای آن از ماژول :mod:`symtable` پایتون استفاده کنید. (مشارکت‌شده توسط Victor Stinner در :issue:`43244`.)"
@@ -2177,7 +2177,7 @@ msgid "These functions were undocumented and excluded from the limited C API. (C
 msgstr "این توابع مستندسازی‌نشده بودند و از C API محدود مستثنی بودند. (مشارکت‌شده توسط Victor Stinner در :issue:`43244`.)"
 
 msgid "Remove the ``pyarena.h`` header file with functions:"
-msgstr "پرونده سرآیند ``pyarena.h`` همراه با توابع حذف شده است:"
+msgstr "پرونده‌ی سرآیند ``pyarena.h`` همراه با توابع حذف شده است:"
 
 msgid "``PyArena_New()``"
 msgstr "``PyArena_New()``"

@@ -25,7 +25,7 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid "Python on Windows FAQ"
-msgstr "پرسش‌های متداول پایتون در ویندوز"
+msgstr "پرسش‌های متداول درباره‌ی پایتون در ویندوز"
 
 msgid "Contents"
 msgstr "محتویات"

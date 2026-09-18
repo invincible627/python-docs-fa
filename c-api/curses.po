@@ -23,7 +23,7 @@ msgid "Curses C API"
 msgstr "API زبان C برای Curses"
 
 msgid ":mod:`curses` exposes a small C interface for extension modules. Consumers must include the header file :file:`py_curses.h` (which is not included by default by :file:`Python.h`) and :c:func:`import_curses` must be invoked, usually as part of the module initialisation function, to populate :c:var:`PyCurses_API`."
-msgstr ":mod:`curses` یک رابط C کوچک را برای ماژول‌های توسعه‌ای در اختیار قرار می‌دهد. مصرف‌کنندگان باید پرونده سرآیند :file:`py_curses.h` (که به‌طور پیش‌فرض توسط :file:`Python.h` گنجانده نمی‌شود) را گنجانده باشند و :c:func:`import_curses` باید، معمولاً به‌عنوان بخشی از تابع مقداردهی اولیه ماژول، برای پر کردن :c:var:`PyCurses_API` فراخوانی شود."
+msgstr ":mod:`curses` یک رابط C کوچک را برای ماژول‌های توسعه‌ای در اختیار قرار می‌دهد. مصرف‌کنندگان باید پرونده‌ی سرآیند :file:`py_curses.h` (که به‌طور پیش‌فرض توسط :file:`Python.h` گنجانده نمی‌شود) را گنجانده باشند و :c:func:`import_curses` باید، معمولاً به‌عنوان بخشی از تابع مقداردهی اولیه ماژول، برای پر کردن :c:var:`PyCurses_API` فراخوانی شود."
 
 msgid "Neither the C API nor the pure Python :mod:`curses` module are compatible with subinterpreters."
 msgstr "نه API زبان C و نه ماژول :mod:`curses` پایتون خالص با زیرمفسرها سازگار است."

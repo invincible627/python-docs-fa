@@ -2778,7 +2778,7 @@ msgid ":c:func:`PyThread_ReInitTLS`: Unneeded since Python 3.7."
 msgstr ":c:func:`PyThread_ReInitTLS`: از پایتون 3.7 به بعد مورد نیاز نیست."
 
 msgid "Remove the :file:`token.h` header file. There was never any public tokenizer C API. The :file:`token.h` header file was only designed to be used by Python internals. (Contributed by Victor Stinner in :gh:`92651`.)"
-msgstr "حذف پرونده سرآیند :file:`token.h`. هرگز هیچ API عمومی C برای توکن‌ساز وجود نداشت. پرونده سرآیند :file:`token.h` فقط برای استفاده‌ی درونی‌های پایتون طراحی‌شده بود. (مشارکت‌شده توسط Victor Stinner در :gh:`92651`.)"
+msgstr "حذف پرونده‌ی سرآیند :file:`token.h`. هرگز هیچ API عمومی C برای توکن‌ساز وجود نداشت. پرونده‌ی سرآیند :file:`token.h` فقط برای استفاده‌ی درونی‌های پایتون طراحی‌شده بود. (مشارکت‌شده توسط Victor Stinner در :gh:`92651`.)"
 
 msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
 msgstr "APIهای قدیمی یونیکد حذف شده‌اند. برای جزئیات به :pep:`623` مراجعه کنید."

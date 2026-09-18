@@ -25,7 +25,7 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid "Programming FAQ"
-msgstr "پرسش‌های متداول برنامه‌نویسی"
+msgstr "پرسش‌های متداول درباره‌ی برنامه‌نویسی"
 
 msgid "Contents"
 msgstr "فهرست"

@@ -845,7 +845,7 @@ msgid "LBYL"
 msgstr "LBYL"
 
 msgid "Look before you leap.  This coding style explicitly tests for pre-conditions before making calls or lookups.  This style contrasts with the :term:`EAFP` approach and is characterized by the presence of many :keyword:`if` statements."
-msgstr "پیش از جهش نگاه کنید. این سبک کدنویسی پیش‌شرط‌ها را پیش از انجام فراخوانی‌ها یا جست‌وجوها به‌طور صریح آزمایش می‌کند. این سبک در تضاد با رویکرد :term:`EAFP <EAFP>` است و با وجود تعداد زیادی دستور :keyword:`if` شناخته می‌شود."
+msgstr "پیش از جهش نگاه کنید (Look Before You Leap). این سبک کدنویسی پیش‌شرط‌ها را پیش از انجام فراخوانی‌ها یا جست‌وجوها به‌طور صریح آزمایش می‌کند. این سبک در تضاد با رویکرد :term:`EAFP <EAFP>` است و با وجود تعداد زیادی دستور :keyword:`if` شناخته می‌شود."
 
 msgid "In a multi-threaded environment, the LBYL approach can risk introducing a :term:`race condition` between \"the looking\" and \"the leaping\".  For example, the code, ``if key in mapping: return mapping[key]`` can fail if another thread removes *key* from *mapping* after the test, but before the lookup. This issue can be solved with :term:`locks <lock>` or by using the :term:`EAFP` approach.  See also :term:`thread-safe`."
 msgstr "در یک محیط چندنخی، رویکرد LBYL می‌تواند خطر ایجاد یک :term:`شرط رقابت <race condition>` بین «نگاه کردن» و «جهش کردن» را به همراه داشته باشد. برای مثال، کد ``if key in mapping: return mapping[key]`` ممکن است شکست بخورد اگر نخ‌ای دیگر پس از آزمون، اما پیش از جست‌وجو، *key* را از *mapping* حذف کند. این مشکل را می‌توان با :term:`قفل <lock>` یا با استفاده از رویکرد :term:`EAFP <EAFP>` حل کرد. همچنین :term:`ایمن برای نخ‌های اجرایی <thread-safe>` را ببینید."

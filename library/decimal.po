@@ -1875,7 +1875,7 @@ msgstr ""
 "    return +s"
 
 msgid "Decimal FAQ"
-msgstr "پرسش‌های متداول Decimal"
+msgstr "پرسش‌های متداول درباره‌ی Decimal"
 
 msgid "Q: It is cumbersome to type ``decimal.Decimal('1234.5')``.  Is there a way to minimize typing when using the interactive interpreter?"
 msgstr "پرسش: وارد کردن ``decimal.Decimal('1234.5')`` دشوار است. آیا راهی برای به حداقل رساندن میزان تایپ هنگام استفاده از مفسر تعاملی وجود دارد؟"

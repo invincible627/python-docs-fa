@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Extending/Embedding FAQ"
-msgstr "پرسش‌های متداول گسترش/تعبیه"
+msgstr "پرسش‌های متداول درباره‌ی گسترش/تعبیه"
 
 msgid "Contents"
 msgstr "محتویات"

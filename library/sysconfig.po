@@ -36,7 +36,7 @@ msgid "Configuration variables"
 msgstr "متغیرهای پیکربندی"
 
 msgid "A Python distribution contains a :file:`Makefile` and a :file:`pyconfig.h` header file that are necessary to build both the Python binary itself and third-party C extensions compiled using ``setuptools``."
-msgstr "یک توزیع پایتون شامل یک :file:`Makefile` و یک پرونده سرآیند :file:`pyconfig.h` است که برای ساخت خود پرونده دودویی پایتون و نیز افزونه‌های C شخص ثالث که با استفاده از ``setuptools`` کامپایل می‌شوند، ضروری هستند."
+msgstr "یک توزیع پایتون شامل یک :file:`Makefile` و یک پرونده‌ی سرآیند :file:`pyconfig.h` است که برای ساخت خود پرونده دودویی پایتون و نیز افزونه‌های C شخص ثالث که با استفاده از ``setuptools`` کامپایل می‌شوند، ضروری هستند."
 
 msgid ":mod:`!sysconfig` puts all variables found in these files in a dictionary that can be accessed using :func:`get_config_vars` or :func:`get_config_var`."
 msgstr ":mod:`!sysconfig` تمام متغیرهای موجود در این پرونده‌ها را در یک دیکشنری قرار می‌دهد که می‌توان با استفاده از :func:`get_config_vars` یا :func:`get_config_var` به آن دسترسی داشت."

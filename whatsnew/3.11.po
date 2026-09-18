@@ -2600,7 +2600,7 @@ msgid "Remove ``Py_UNICODE_COPY()`` and ``Py_UNICODE_FILL()`` macros, deprecated
 msgstr "ماکروهای ``Py_UNICODE_COPY()`` و ``Py_UNICODE_FILL()`` که از پایتون 3.3 منسوخ شده بودند، حذف شدند. به‌جای آن‌ها از توابع ``PyUnicode_CopyCharacters()`` یا ``memcpy()`` (رشته‌ی ``wchar_t*``) و ``PyUnicode_Fill()`` استفاده کنید. (مشارکت‌شده توسط ویکتور استینر در :issue:`41123`.)"
 
 msgid "Remove the ``pystrhex.h`` header file. It only contains private functions. C extensions should only include the main ``<Python.h>`` header file. (Contributed by Victor Stinner in :issue:`45434`.)"
-msgstr "پرونده سرآیند ``pystrhex.h`` حذف شد. این پرونده فقط شامل توابع خصوصی است. افزونه‌های C باید فقط پرونده سرآیند اصلی ``<Python.h>`` را شامل کنند. (مشارکت‌شده توسط Victor Stinner در :issue:`45434`.)"
+msgstr "پرونده‌ی سرآیند ``pystrhex.h`` حذف شد. این پرونده فقط شامل توابع خصوصی است. افزونه‌های C باید فقط پرونده‌ی سرآیند اصلی ``<Python.h>`` را شامل کنند. (مشارکت‌شده توسط Victor Stinner در :issue:`45434`.)"
 
 msgid "Remove the ``Py_FORCE_DOUBLE()`` macro. It was used by the ``Py_IS_INFINITY()`` macro. (Contributed by Victor Stinner in :issue:`45440`.)"
 msgstr "ماکروی ``Py_FORCE_DOUBLE()`` حذف شد. این ماکرو توسط ماکروی ``Py_IS_INFINITY()`` استفاده می‌شد. (مشارکت‌شده توسط Victor Stinner در :issue:`45440`.)"

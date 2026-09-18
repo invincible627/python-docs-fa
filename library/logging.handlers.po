@@ -456,7 +456,7 @@ msgid "Encodes the facility and priority into an integer. You can pass in string
 msgstr "امکانات (facility) و اولویت (priority) را به‌صورت یک عدد صحیح کدگذاری می‌کند. شما می‌توانید رشته‌ها یا اعداد صحیح را ارسال کنید؛ اگر رشته‌ها ارسال شوند، از دیکشنری‌های نگاشت داخلی برای تبدیل آن‌ها به اعداد صحیح استفاده می‌شود."
 
 msgid "The symbolic ``LOG_`` values are defined in :class:`SysLogHandler` and mirror the values defined in the ``sys/syslog.h`` header file."
-msgstr "مقادیر نمادین ``LOG_`` در :class:`SysLogHandler` تعریف شده‌اند و با مقادیر تعریف‌شده در پرونده سرآیند ``sys/syslog.h`` مطابقت دارند."
+msgstr "مقادیر نمادین ``LOG_`` در :class:`SysLogHandler` تعریف شده‌اند و با مقادیر تعریف‌شده در پرونده‌ی سرآیند ``sys/syslog.h`` مطابقت دارند."
 
 msgid "**Priorities**"
 msgstr "اولویت‌ها"

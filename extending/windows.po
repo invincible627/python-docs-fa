@@ -76,7 +76,7 @@ msgid "When creating DLLs in Windows, you can use the CPython library in two way
 msgstr "هنگام ساخت DLL‌ها در ویندوز، می‌توانید از کتابخانه سی‌پایتون به دو روش استفاده کنید:"
 
 msgid "By default, inclusion of :file:`PC/pyconfig.h` directly or via :file:`Python.h` triggers an implicit, configure-aware link with the library.  The header file chooses :file:`pythonXY_d.lib` for Debug, :file:`pythonXY.lib` for Release, and :file:`pythonX.lib` for Release with the :ref:`Limited API <stable-application-binary-interface>` enabled."
-msgstr "به‌طور پیش‌فرض، گنجاندن :file:`PC/pyconfig.h` به‌صورت مستقیم یا از طریق :file:`Python.h` موجب برقراری یک پیوند ضمنی و آگاه از پیکربندی با کتابخانه می‌شود.  پرونده سرآیند برای Debug، :file:`pythonXY_d.lib`؛ برای Release، :file:`pythonXY.lib`؛ و برای Release با فعال بودن :ref:`API محدود <stable-application-binary-interface>`، :file:`pythonX.lib` را انتخاب می‌کند."
+msgstr "به‌طور پیش‌فرض، گنجاندن :file:`PC/pyconfig.h` به‌صورت مستقیم یا از طریق :file:`Python.h` موجب برقراری یک پیوند ضمنی و آگاه از پیکربندی با کتابخانه می‌شود.  پرونده‌ی سرآیند برای Debug، :file:`pythonXY_d.lib`؛ برای Release، :file:`pythonXY.lib`؛ و برای Release با فعال بودن :ref:`API محدود <stable-application-binary-interface>`، :file:`pythonX.lib` را انتخاب می‌کند."
 
 msgid "To build two DLLs, spam and ni (which uses C functions found in spam), you could use these commands::"
 msgstr "برای ساخت دو DLL با نام‌های spam و ni (که از توابع C موجود در spam استفاده می‌کند)، می‌توانید از این دستورها استفاده کنید::"

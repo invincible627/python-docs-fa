@@ -2435,7 +2435,7 @@ msgid "Remove the private :c:func:`!_PyObject_FastCall` function: use :c:func:`!
 msgstr "تابع خصوصی :c:func:`!_PyObject_FastCall` حذف شد: از :c:func:`!PyObject_Vectorcall` استفاده کنید که از پایتون 3.8 به بعد در دسترس است (:pep:`590`). (مشارکت‌شده توسط Victor Stinner در :gh:`106023`.)"
 
 msgid "Remove the ``cpython/pytime.h`` header file, which only contained private functions. (Contributed by Victor Stinner in :gh:`106316`.)"
-msgstr "پرونده سرآیند ``cpython/pytime.h`` که تنها شامل توابع خصوصی بود، حذف شد. (مشارکت‌شده توسط Victor Stinner در :gh:`106316`.)"
+msgstr "پرونده‌ی سرآیند ``cpython/pytime.h`` که تنها شامل توابع خصوصی بود، حذف شد. (مشارکت‌شده توسط Victor Stinner در :gh:`106316`.)"
 
 msgid "Remove the undocumented ``PY_TIMEOUT_MAX`` constant from the limited C API. (Contributed by Victor Stinner in :gh:`110014`.)"
 msgstr "ثابت مستندنشده‌ی ``PY_TIMEOUT_MAX`` از C API محدود حذف شد. (با مشارکت Victor Stinner در :gh:`110014`.)"
