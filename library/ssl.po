@@ -206,7 +206,7 @@ msgid "3DES was dropped from the default cipher string."
 msgstr "3DES از رشته‌ی cipher پیش‌فرض حذف شد."
 
 msgid "Support for key logging to :envvar:`SSLKEYLOGFILE` was added."
-msgstr "پشتیبانی از گزارش‌برداری کلید (key logging) در :envvar:`SSLKEYLOGFILE` اضافه شد."
+msgstr "پشتیبانی از گزارش‌گیری کلید (key logging) در :envvar:`SSLKEYLOGFILE` اضافه شد."
 
 msgid "The context now uses :data:`PROTOCOL_TLS_CLIENT` or :data:`PROTOCOL_TLS_SERVER` protocol instead of generic :data:`PROTOCOL_TLS`."
 msgstr "زمینه اکنون از پروتکل :data:`PROTOCOL_TLS_CLIENT` یا :data:`PROTOCOL_TLS_SERVER` به‌جای پروتکل عام :data:`PROTOCOL_TLS` استفاده می‌کند."

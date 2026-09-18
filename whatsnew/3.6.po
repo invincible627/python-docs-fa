@@ -1124,7 +1124,7 @@ msgid "The :class:`~pdb.Pdb` class constructor has a new optional *readrc* argum
 msgstr "سازنده‌ی کلاس :class:`~pdb.Pdb` یک آرگومان اختیاری جدید *readrc* دارد که کنترل می‌کند آیا پرونده‌های ``.pdbrc`` باید خوانده شوند یا خیر."
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid "Objects that need ``__new__`` called with keyword arguments can now be pickled using :ref:`pickle protocols <pickle-protocols>` older than protocol version 4. Protocol version 4 already supports this case.  (Contributed by Serhiy Storchaka in :issue:`24164`.)"
 msgstr "اشیایی که نیاز دارند ``__new__`` آن‌ها با آرگومان‌های کلیدواژه‌ای فراخوانی شود، اکنون می‌توانند با استفاده از :ref:`پروتکل‌های پیکل <pickle-protocols>` قدیمی‌تر از نسخه 4 پروتکل پیکل شوند. نسخه 4 پروتکل از قبل از این حالت پشتیبانی می‌کند. (مشارکت Serhiy Storchaka در :issue:`24164`.)"

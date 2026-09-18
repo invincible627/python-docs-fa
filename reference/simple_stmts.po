@@ -949,7 +949,7 @@ msgid "__traceback__ (exception attribute)"
 msgstr "__traceback__ (ویژگی استثنا)"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "chaining"
 msgstr "زنجیره‌سازی"

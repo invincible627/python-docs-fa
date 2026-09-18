@@ -355,7 +355,7 @@ msgid "The ability to create new handlers with higher- or lower-severity filters
 msgstr "توانایی ایجاد هندلرهای جدید با فیلترهایی با شدت بالاتر یا پایین‌تر می‌تواند هنگام نوشتن و آزمایش یک برنامه کاربردی بسیار مفید باشد. به جای استفاده از دستورهای ``print`` زیاد برای اشکال‌زدایی، از ``logger.debug`` استفاده کنید: برخلاف دستورهای print که بعداً مجبور خواهید بود آن‌ها را حذف یا کامنت کنید، دستورهای logger.debug می‌توانند دست‌نخورده در کد منبع باقی بمانند و تا زمانی که دوباره به آن‌ها نیاز دارید، غیرفعال بمانند. در آن زمان، تنها تغییر لازم، تغییر سطح شدت logger و/یا هندلر به debug است."
 
 msgid "Logging to multiple destinations"
-msgstr "گزارش‌برداری در چندین مقصد"
+msgstr "گزارش‌گیری در چندین مقصد"
 
 msgid "Let's say you want to log to console and file with different message formats and in differing circumstances. Say you want to log messages with levels of DEBUG and higher to file, and those messages at level INFO and higher to the console. Let's also assume that the file should contain timestamps, but the console messages should not. Here's how you can achieve this::"
 msgstr "فرض کنید می‌خواهید گزارش‌ها را با قالب‌های پیام متفاوت و در شرایط مختلف در کنسول و پرونده ثبت کنید. فرض کنید می‌خواهید پیام‌هایی با سطوح DEBUG و بالاتر را در پرونده و پیام‌هایی با سطح INFO و بالاتر را در کنسول ثبت کنید. همچنین فرض کنید پرونده باید شامل برچسب‌های زمانی باشد، اما پیام‌های کنسول نباید شامل برچسب‌های زمانی باشند. در ادامه، چگونگی دستیابی به این هدف آمده است::"
@@ -1357,7 +1357,7 @@ msgid "An easy way in which you can pass contextual information to be output alo
 msgstr "راهی آسان برای ارسال اطلاعات زمینه‌ای تا همراه با اطلاعات رویداد گزارش خروجی داده شود، استفاده از کلاس :class:`LoggerAdapter` است. این کلاس به‌گونه‌ای طراحی شده است که شبیه یک :class:`Logger` به نظر برسد، به‌طوری که شما می‌توانید :meth:`debug`، :meth:`info`، :meth:`warning`، :meth:`error`، :meth:`exception`، :meth:`critical` و :meth:`log` را فراخوانی کنید. این متدها امضاهای یکسانی با همتایان خود در :class:`Logger` دارند، بنابراین می‌توانید از نمونه‌های این دو نوع به‌جای یکدیگر استفاده کنید."
 
 msgid "When you create an instance of :class:`LoggerAdapter`, you pass it a :class:`Logger` instance and a dict-like object which contains your contextual information. When you call one of the logging methods on an instance of :class:`LoggerAdapter`, it delegates the call to the underlying instance of :class:`Logger` passed to its constructor, and arranges to pass the contextual information in the delegated call. Here's a snippet from the code of :class:`LoggerAdapter`::"
-msgstr "هنگامی که یک نمونه از :class:`LoggerAdapter` ایجاد می‌کنید، به آن یک نمونه از :class:`Logger` و یک شیء دیکشنری‌مانند که حاوی اطلاعات زمینه‌ای شما است می‌دهید. هنگامی که یکی از متدهای گزارش‌برداری را روی یک نمونه از :class:`LoggerAdapter` فراخوانی می‌کنید، آن فراخوانی را به نمونه زیرین :class:`Logger` که به سازنده‌اش داده شده است واگذار می‌کند و ترتیبی می‌دهد که اطلاعات زمینه‌ای در فراخوانی واگذارشده ارسال شود. در ادامه قطعه‌ای از کد :class:`LoggerAdapter` آمده است::"
+msgstr "هنگامی که یک نمونه از :class:`LoggerAdapter` ایجاد می‌کنید، به آن یک نمونه از :class:`Logger` و یک شیء دیکشنری‌مانند که حاوی اطلاعات زمینه‌ای شما است می‌دهید. هنگامی که یکی از متدهای گزارش‌گیری را روی یک نمونه از :class:`LoggerAdapter` فراخوانی می‌کنید، آن فراخوانی را به نمونه زیرین :class:`Logger` که به سازنده‌اش داده شده است واگذار می‌کند و ترتیبی می‌دهد که اطلاعات زمینه‌ای در فراخوانی واگذارشده ارسال شود. در ادامه قطعه‌ای از کد :class:`LoggerAdapter` آمده است::"
 
 msgid ""
 "def debug(self, msg, /, *args, **kwargs):\n"
@@ -3403,7 +3403,7 @@ msgid "A more elaborate multiprocessing example"
 msgstr "نمونه‌ای مفصل‌تر از چندپردازشی"
 
 msgid "The following working example shows how logging can be used with multiprocessing using configuration files. The configurations are fairly simple, but serve to illustrate how more complex ones could be implemented in a real multiprocessing scenario."
-msgstr "مثال عملی زیر نشان می‌دهد که چگونه می‌توان از گزارش‌برداری همراه با چندپردازشی (multiprocessing) و با استفاده از پرونده‌های پیکربندی استفاده کرد. این پیکربندی‌ها نسبتاً ساده هستند، اما نشان می‌دهند که چگونه می‌توان پیکربندی‌های پیچیده‌تر را در یک سناریوی واقعی چندپردازشی پیاده‌سازی کرد."
+msgstr "مثال عملی زیر نشان می‌دهد که چگونه می‌توان از گزارش‌گیری همراه با چندپردازشی (multiprocessing) و با استفاده از پرونده‌های پیکربندی استفاده کرد. این پیکربندی‌ها نسبتاً ساده هستند، اما نشان می‌دهند که چگونه می‌توان پیکربندی‌های پیچیده‌تر را در یک سناریوی واقعی چندپردازشی پیاده‌سازی کرد."
 
 msgid "In the example, the main process spawns a listener process and some worker processes. Each of the main process, the listener and the workers have three separate configurations (the workers all share the same configuration). We can see logging in the main process, how the workers log to a QueueHandler and how the listener implements a QueueListener and a more complex logging configuration, and arranges to dispatch events received via the queue to the handlers specified in the configuration. Note that these configurations are purely illustrative, but you should be able to adapt this example to your own scenario."
 msgstr "در این مثال، فرایند اصلی یک فرایند شنونده و چند فرایند کارگر را ایجاد می‌کند. فرایند اصلی، شنونده و کارگرها سه پیکربندی جداگانه دارند (همه‌ی کارگرها پیکربندی یکسانی دارند). می‌توانیم گزارش کردن در فرایند اصلی را ببینیم، این‌که کارگرها چگونه به یک QueueHandler گزارش می‌فرستند و شنونده چگونه یک QueueListener و یک پیکربندی گزارش پیچیده‌تر را پیاده‌سازی می‌کند و ترتیبی می‌دهد که رویدادهای دریافت‌شده از طریق صف به هندلرهای مشخص‌شده در پیکربندی ارسال شوند. توجه داشته باشید که این پیکربندی‌ها صرفاً جنبه‌ی توضیحی دارند، اما باید بتوانید این مثال را با سناریوی خودتان تطبیق دهید."
@@ -3857,7 +3857,7 @@ msgid "The formatted message *will* be encoded using UTF-8 encoding by ``SysLogH
 msgstr "پیام قالب‌بندی‌شده با استفاده از کدگذاری UTF-8 توسط ``SysLogHandler`` کدگذاری *خواهد شد*. اگر قواعد بالا را دنبال کنید، باید بتوانید پیام‌های سازگار با :rfc:`5424` تولید کنید. اگر این کار را نکنید، ممکن است logging شکایتی نکند، اما پیام‌های شما با RFC 5424 سازگار نخواهند بود و ممکن است دیمن syslog شما شکایت کند."
 
 msgid "Implementing structured logging"
-msgstr "پیاده‌سازی گزارش‌برداری ساختاریافته (structured logging)"
+msgstr "پیاده‌سازی گزارش‌گیری ساختاریافته (structured logging)"
 
 msgid "Although most logging messages are intended for reading by humans, and thus not readily machine-parseable, there might be circumstances where you want to output messages in a structured format which *is* capable of being parsed by a program (without needing complex regular expressions to parse the log message). This is straightforward to achieve using the logging package. There are a number of ways in which this could be achieved, but the following is a simple approach which uses JSON to serialise the event in a machine-parseable manner::"
 msgstr "اگرچه بیشتر پیام‌های logging برای خواندن توسط انسان در نظر گرفته شده‌اند و بنابراین به‌راحتی قابل تجزیه توسط ماشین نیستند، ممکن است شرایطی وجود داشته باشد که بخواهید پیام‌ها را در یک قالب ساختاریافته خروجی دهید که قابل تجزیه توسط یک برنامه *باشد* (بدون نیاز به عبارات باقاعده‌ی پیچیده برای تجزیه‌ی پیام logging). دستیابی به این هدف با استفاده از بسته‌ی logging ساده است. روش‌های متعددی برای رسیدن به این هدف وجود دارد، اما روش زیر یک رویکرد ساده است که از JSON برای سریال‌سازی رویداد به شیوه‌ای قابل تجزیه توسط ماشین استفاده می‌کند::"
@@ -6145,7 +6145,7 @@ msgstr ""
 "sys.stderr = LoggerWriter(logger, logging.WARNING)"
 
 msgid "You should do this *after* configuring logging for your needs. In the above example, the :func:`~logging.basicConfig` call does this (using the ``sys.stderr`` value *before* it is overwritten by a ``LoggerWriter`` instance). Then, you'd get this kind of result:"
-msgstr "شما باید این کار را *پس از* پیکربندی گزارش‌برداری برای نیازهای خود انجام دهید. در مثال بالا، فراخوانی :func:`~logging.basicConfig` این کار را انجام می‌دهد (با استفاده از مقدار ``sys.stderr`` *پیش از* آنکه توسط یک نمونه از ``LoggerWriter`` بازنویسی شود). سپس، نتیجه‌ای از این دست دریافت خواهید کرد:"
+msgstr "شما باید این کار را *پس از* پیکربندی گزارش‌گیری برای نیازهای خود انجام دهید. در مثال بالا، فراخوانی :func:`~logging.basicConfig` این کار را انجام می‌دهد (با استفاده از مقدار ``sys.stderr`` *پیش از* آنکه توسط یک نمونه از ``LoggerWriter`` بازنویسی شود). سپس، نتیجه‌ای از این دست دریافت خواهید کرد:"
 
 msgid ""
 ">>> print('Foo')\n"

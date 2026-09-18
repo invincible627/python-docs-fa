@@ -677,7 +677,7 @@ msgid ":mod:`doctest` will now find doctests in extension module ``__doc__`` str
 msgstr ":mod:`doctest` اکنون داک‌تست‌ها (doctest) را در رشته‌های ``__doc__`` ماژول‌های توسعه‌ای می‌یابد. (مشارکت‌شده توسط Zachary Ware در :issue:`3158`.)"
 
 msgid "email"
-msgstr "statistics"
+msgstr "email"
 
 msgid ":meth:`~email.message.Message.as_string` now accepts a *policy* argument to override the default policy of the message when generating a string representation of it.  This means that ``as_string`` can now be used in more circumstances, instead of having to create and use a :mod:`~email.generator` in order to pass formatting parameters to its ``flatten`` method.  (Contributed by R. David Murray in :issue:`18600`.)"
 msgstr ":meth:`~email.message.Message.as_string` اکنون یک آرگومان *سیاست* را می‌پذیرد تا هنگام تولید بازنمایی رشته‌ای از پیام، سیاست پیش‌فرض آن بازنویسی شود. این بدان معناست که ``as_string`` اکنون می‌تواند در موقعیت‌های بیشتری به کار رود، به‌جای آنکه مجبور باشید یک :mod:`~email.generator` ایجاد کرده و از آن استفاده کنید تا بتوانید پارامترهای قالب‌بندی را به متد ``flatten`` آن پاس دهید. (مشارکت R. David Murray در :issue:`18600`.)"
@@ -878,7 +878,7 @@ msgid ":mod:`multiprocessing` now relies on :mod:`runpy` (which implements the `
 msgstr "اکنون :mod:`multiprocessing` به :mod:`runpy` (که سوییچ ``-m`` را پیاده‌سازی می‌کند) تکیه می‌کند تا هنگام استفاده از روش‌های شروع ``spawn`` یا ``forkserver``، ``__main__`` را به‌درستی در فرایندهای فرزند مقداردهی اولیه کند. این امر برخی حالت‌های حاشیه‌ای را حل می‌کند که در آن‌ها ترکیب multiprocessing، سوییچ خط فرمان ``-m`` و ایمپورت‌های نسبی صریح می‌توانست در فرایندهای فرزند خطاهای مبهمی ایجاد کند. (مشارکت‌شده توسط Nick Coghlan در :issue:`19946`.)"
 
 msgid "operator"
-msgstr "عملگر"
+msgstr "operator"
 
 msgid "New function :func:`~operator.length_hint` provides an implementation of the specification for how the :meth:`~object.__length_hint__` special method should be used, as part of the :pep:`424` formal specification of this language feature.  (Contributed by Armin Ronacher in :issue:`16148`.)"
 msgstr "تابع جدید :func:`~operator.length_hint` پیاده‌سازی مشخصات چگونگی استفاده از متد ویژه‌ی :meth:`~object.__length_hint__` را فراهم می‌کند، به‌عنوان بخشی از مشخصات رسمی :pep:`424` برای این قابلیت زبان. (با مشارکت Armin Ronacher در :issue:`16148`.)"
@@ -914,7 +914,7 @@ msgid "The ``print`` command has been removed from :mod:`pdb`, restoring access 
 msgstr "فرمان ``print`` از :mod:`pdb` حذف شده است و دسترسی به تابع :func:`print` پایتون از خط فرمان pdb بازگردانده می‌شود. ``pdb`` پایتون 2 فرمان ``print`` نداشت؛ در عوض، وارد کردن ``print`` دستور ``print`` را اجرا می‌کرد. در پایتون 3، ``print`` به اشتباه به نام مستعاری برای فرمان :pdbcmd:`p` در pdb تبدیل شده بود. اما ``p``، ``repr`` آرگومان خود را چاپ می‌کند، نه ``str`` را، همان‌طور که فرمان ``print`` پایتون 2 انجام می‌داد. بدتر آنکه فرمان ``pdb print`` پایتون 3 تابع ``print`` پایتون 3 را می‌پوشاند و آن را در اعلان ``pdb`` دسترسی‌ناپذیر می‌کرد. (مشارکت‌کننده: Connor Osborn در :issue:`18764`.)"
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid ":mod:`pickle` now supports (but does not use by default) a new pickle protocol, protocol 4.  This new protocol addresses a number of issues that were present in previous protocols, such as the serialization of nested classes, very large strings and containers, and classes whose :meth:`~object.__new__` method takes keyword-only arguments.  It also provides some efficiency improvements."
 msgstr ":mod:`pickle` اکنون از یک پروتکل پیکل جدید، یعنی پروتکل ۴، پشتیبانی می‌کند (اما به‌طور پیش‌فرض از آن استفاده نمی‌کند). این پروتکل جدید شماری از مسائل موجود در پروتکل‌های پیشین را برطرف می‌کند، از جمله سریال‌سازی کلاس‌های تودرتو، رشته‌ها و ظرف‌های بسیار بزرگ، و کلاس‌هایی که متد :meth:`~object.__new__` آن‌ها آرگومان‌های فقط کلیدواژه‌ای می‌پذیرد. همچنین بهبودهایی در کارایی فراهم می‌کند."
@@ -1022,7 +1022,7 @@ msgid ":exc:`~smtplib.SMTPException` is now a subclass of :exc:`OSError`, which 
 msgstr ":exc:`~smtplib.SMTPException` اکنون زیرکلاسی از :exc:`OSError` است، که به کدی که تنها به اینکه آیا خطایی رخ داده است یا خیر اهمیت می‌دهد، اجازه می‌دهد هم خطاهای سطح سوکت و هم خطاهای سطح پروتکل SMTP در یک دستور try/except گرفته شوند. (ارائه‌شده توسط Ned Jackson Lovely در :issue:`2118`.)"
 
 msgid "socket"
-msgstr "سوکت"
+msgstr "socket"
 
 msgid "The socket module now supports the :const:`~socket.CAN_BCM` protocol on platforms that support it.  (Contributed by Brian Thorne in :issue:`15359`.)"
 msgstr "ماژول socket اکنون پروتکل :const:`~socket.CAN_BCM` را روی پلتفرم‌هایی که از آن پشتیبانی می‌کنند، پشتیبانی می‌کند. (با مشارکت Brian Thorne در :issue:`15359`.)"
@@ -1142,13 +1142,13 @@ msgid "The :class:`~threading.Thread` object representing the main thread can be
 msgstr "می‌توان شیء :class:`~threading.Thread` را که نماینده‌ی نخ اصلی است، از تابع جدید :func:`~threading.main_thread` به دست آورد. در شرایط عادی، این نخ همان نخی است که مفسر پایتون از آن آغاز به کار کرده است. (با مشارکت Andrew Svetlov در :issue:`18882`.)"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "A new :func:`traceback.clear_frames` function takes a traceback object and clears the local variables in all of the frames it references, reducing the amount of memory consumed.  (Contributed by Andrew Kuchling in :issue:`1565525`.)"
 msgstr "تابع جدید :func:`traceback.clear_frames` یک شیء ردگیری پشته را می‌گیرد و در تمام فریم‌هایی که به آن‌ها ارجاع می‌دهد، متغیرهای محلی را پاک می‌کند و به این ترتیب میزان حافظه‌ی مصرف‌شده را کاهش می‌دهد.  (مشارکت‌شده توسط اندرو کاچلینگ در :issue:`1565525`.)"
 
 msgid "types"
-msgstr "نوع‌ها"
+msgstr "types"
 
 msgid "A new :func:`~types.DynamicClassAttribute` descriptor provides a way to define an attribute that acts normally when looked up through an instance object, but which is routed to the *class* ``__getattr__`` when looked up through the class.  This allows one to have properties active on a class, and have virtual attributes on the class with the same name (see :mod:`enum` for an example). (Contributed by Ethan Furman in :issue:`19030`.)"
 msgstr "توصیف‌گر جدید :func:`~types.DynamicClassAttribute` راهی برای تعریف ویژگی‌ای فراهم می‌کند که هنگام بازیابی از طریق یک شیء نمونه به‌طور عادی عمل می‌کند، اما هنگام بازیابی از طریق کلاس، به ``__getattr__`` *کلاس* هدایت می‌شود.  این امکان را فراهم می‌کند که پراپرتی‌هایی روی یک کلاس فعال باشند و ویژگی‌های مجازی با همان نام روی کلاس وجود داشته باشند (برای مثال به :mod:`enum` مراجعه کنید). (مشارکت‌شده توسط ایتان فورمن در :issue:`19030`.)"

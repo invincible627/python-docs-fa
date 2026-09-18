@@ -6109,7 +6109,7 @@ msgid "built-in"
 msgstr "توکار"
 
 msgid "types"
-msgstr "انواع"
+msgstr "types"
 
 msgid "statement"
 msgstr "دستور"

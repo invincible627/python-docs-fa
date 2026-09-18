@@ -54,7 +54,7 @@ msgid "module"
 msgstr "ماژول"
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid "copy"
-msgstr "کپی"
+msgstr "copy"

@@ -154,7 +154,7 @@ msgid "name of module in which this function was defined"
 msgstr "نام ماژولی که این تابع در آن تعریف شده است"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "tb_frame"
 msgstr "tb_frame"

@@ -2907,13 +2907,13 @@ msgid "f_lineno (frame attribute)"
 msgstr "f_lineno (ویژگی فریم)"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "stack"
 msgstr "پشته"
 
 msgid "trace"
-msgstr "ردگیری"
+msgstr "trace"
 
 msgid "exception"
 msgstr "استثنا"

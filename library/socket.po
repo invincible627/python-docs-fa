@@ -1538,7 +1538,7 @@ msgid "object"
 msgstr "شیء"
 
 msgid "socket"
-msgstr "سوکت"
+msgstr "socket"
 
 msgid "I/O control"
 msgstr "کنترل ورودی/خروجی"

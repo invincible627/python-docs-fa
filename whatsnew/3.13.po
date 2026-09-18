@@ -1013,7 +1013,7 @@ msgid "Add the :class:`!PhotoImage` methods :meth:`!read` to read an image from 
 msgstr "متدهای :meth:`!read` برای خواندن تصویر از یک پرونده و :meth:`!data` برای دریافت داده‌های تصویر به کلاس :class:`!PhotoImage` اضافه شدند. پارامترهای *background* و *grayscale* به متد :meth:`!write` اضافه شدند. (مشارکت‌شده توسط Serhiy Storchaka در :gh:`118271`.)"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "Add the :attr:`~traceback.TracebackException.exc_type_str` attribute to :class:`~traceback.TracebackException`, which holds a string display of the *exc_type*. Deprecate the :attr:`~traceback.TracebackException.exc_type` attribute, which holds the type object itself. Add parameter *save_exc_type* (default ``True``) to indicate whether ``exc_type`` should be saved. (Contributed by Irit Katriel in :gh:`112332`.)"
 msgstr "ویژگی :attr:`~traceback.TracebackException.exc_type_str` به :class:`~traceback.TracebackException` اضافه شد که نمایش رشته‌ای از *exc_type* را نگه می‌دارد. ویژگی :attr:`~traceback.TracebackException.exc_type` که خودِ شیء نوع را نگه می‌دارد، منسوخ اعلام شد. پارامتر *save_exc_type* (پیش‌فرض ``True``) اضافه شد تا مشخص کند که آیا ``exc_type`` باید ذخیره شود یا خیر. (مشارکت‌شده توسط Irit Katriel در :gh:`112332`.)"
@@ -1314,7 +1314,7 @@ msgid "Remove the :mod:`!tkinter.tix` module, deprecated in Python 3.6. The thir
 msgstr "حذف ماژول :mod:`!tkinter.tix` که در پایتون 3.6 منسوخ شده بود. کتابخانه‌ی شخص ثالث Tix که این ماژول آن را پوشش می‌داد، نگهداری نمی‌شود. (نوشته‌شده توسط Zachary Ware در :gh:`75552`.)"
 
 msgid "turtle"
-msgstr "لاک‌پشت"
+msgstr "turtle"
 
 msgid "Remove the :meth:`!RawTurtle.settiltangle` method, deprecated in the documentation since Python 3.1 and at runtime since Python 3.11. (Contributed by Hugo van Kemenade in :gh:`104876`.)"
 msgstr "حذف متد :meth:`!RawTurtle.settiltangle` که در مستندات از پایتون 3.1 و در زمان اجرا از پایتون 3.11 منسوخ شده بود. (مشارکت هوگو ون کمناده در :gh:`104876`.)"

@@ -1033,7 +1033,7 @@ msgid "There are two new utility functions for introspecting and printing a prog
 msgstr "دو تابع کاربردی جدید برای درون‌نگری و چاپ گراف فراخوانی یک برنامه وجود دارد: :func:`~asyncio.capture_call_graph` و :func:`~asyncio.print_call_graph`. برای جزئیات بیشتر به :ref:`قابلیت‌های درون‌نگری Asyncio <whatsnew314-asyncio-introspection>` مراجعه کنید. (مشارکت‌شده توسط Yury Selivanov، Pablo Galindo Salgado و Łukasz Langa در :gh:`91048`.)"
 
 msgid "calendar"
-msgstr "گاه‌شماری"
+msgstr "calendar"
 
 msgid "By default, today's date is highlighted in color in :mod:`calendar`'s :ref:`command-line <calendar-cli>` text output. This can be controlled by :ref:`environment variables <using-on-controlling-color>`. (Contributed by Hugo van Kemenade in :gh:`128317`.)"
 msgstr "به‌طور پیش‌فرض، تاریخ امروز در خروجی متنی :ref:`خط فرمان <calendar-cli>` ماژول :mod:`calendar` با رنگ برجسته می‌شود. این را می‌توان با :ref:`متغیرهای محیطی <using-on-controlling-color>` کنترل کرد. (مشارکت‌شده توسط هوگو ون کمِناده در :gh:`128317`.)"
@@ -1489,7 +1489,7 @@ msgid "Add the :meth:`~multiprocessing.Process.interrupt` to :class:`multiproces
 msgstr "افزودن متد :meth:`~multiprocessing.Process.interrupt` به اشیاء :class:`multiprocessing.Process`، که فرایند فرزند را با ارسال :py:const:`~signal.SIGINT` خاتمه می‌دهد. این کار به بندهای :keyword:`finally` امکان می‌دهد تا ردگیری پشته‌ای برای فرایند خاتمه‌یافته چاپ کنند. (مشارکت‌شده توسط آرتم پولکین در :gh:`131913`.)"
 
 msgid "operator"
-msgstr "عملگر"
+msgstr "operator"
 
 msgid "Add :func:`~operator.is_none` and :func:`~operator.is_not_none` as a pair of functions, such that ``operator.is_none(obj)`` is equivalent to ``obj is None`` and ``operator.is_not_none(obj)`` is equivalent to ``obj is not None``. (Contributed by Raymond Hettinger and Nico Mexis in :gh:`115808`.)"
 msgstr "افزودن :func:`~operator.is_none` و :func:`~operator.is_not_none` به‌عنوان یک جفت تابع، به‌گونه‌ای که ``operator.is_none(obj)`` معادل ``obj is None`` و ``operator.is_not_none(obj)`` معادل ``obj is not None`` باشد. (مشارکت Raymond Hettinger و Nico Mexis در :gh:`115808`.)"
@@ -1582,7 +1582,7 @@ msgid "Source code displayed in :mod:`pdb` will be syntax-highlighted. This feat
 msgstr "کد منبع نمایش‌داده‌شده در :mod:`pdb` با برجسته‌سازی سینتکس نمایش داده خواهد شد. این قابلیت را می‌توان با همان روش‌های مورد استفاده در پوسته‌ی :term:`interactive` پیش‌فرض و همچنین با آرگومان ``colorize`` که به‌تازگی به :class:`pdb.Pdb` افزوده شده است، کنترل کرد. (مشارکت Tian Gao و Łukasz Langa در :gh:`133355`.)"
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid "Set the default protocol version on the :mod:`pickle` module to 5. For more details, see :ref:`pickle protocols <pickle-protocols>`."
 msgstr "نسخه‌ی پیش‌فرض پروتکل در ماژول :mod:`pickle` را روی ۵ تنظیم می‌کند. برای جزئیات بیشتر، به :ref:`پروتکل‌های پیکل <pickle-protocols>` مراجعه کنید."
@@ -1591,7 +1591,7 @@ msgid "Add exception notes for pickle serialization errors that allow identifyin
 msgstr "افزودن یادداشت‌های استثنا به خطاهای سریال‌سازی پیکل که امکان شناسایی منبع خطا را فراهم می‌کنند. (مشارکت‌شده توسط Serhiy Storchaka در :gh:`122213`.)"
 
 msgid "platform"
-msgstr "پلتفرم"
+msgstr "platform"
 
 msgid "Add :func:`~platform.invalidate_caches`, a function to invalidate cached results in the :mod:`!platform` module. (Contributed by Bénédikt Tran in :gh:`122549`.)"
 msgstr "افزودن :func:`~platform.invalidate_caches`، تابعی برای باطل کردن نتایج نهانگاهی‌شده در ماژول :mod:`!platform`. (مشارکت‌شده توسط Bénédikt Tran در :gh:`122549`.)"
@@ -1612,7 +1612,7 @@ msgid "``\\B`` in :mod:`regular expression <re>` now matches the empty input str
 msgstr "``\\B`` در :mod:`عبارت باقاعده <re>` اکنون با رشته ورودی خالی تطبیق می‌کند، به این معنا که اکنون همیشه عکس ``\\b`` است. (مشارکت‌شده توسط Serhiy Storchaka در :gh:`124130`.)"
 
 msgid "socket"
-msgstr "سوکت"
+msgstr "socket"
 
 msgid "Improve and fix support for Bluetooth sockets."
 msgstr "بهبود و اصلاح پشتیبانی از سوکت‌های بلوتوث."
@@ -1735,19 +1735,19 @@ msgid "Add ability to specify a name for :class:`!tkinter.OptionMenu` and :class
 msgstr "قابلیت تعیین نام برای :class:`!tkinter.OptionMenu` و :class:`!tkinter.ttk.OptionMenu` اضافه شد. (مشارکت‌شده توسط Zhikang Yan در :gh:`130482`.)"
 
 msgid "turtle"
-msgstr "لاک‌پشت"
+msgstr "turtle"
 
 msgid "Add context managers for :func:`turtle.fill`, :func:`turtle.poly`, and :func:`turtle.no_animation`. (Contributed by Marie Roald and Yngve Mardal Moe in :gh:`126350`.)"
 msgstr "مدیرهای زمینه برای :func:`turtle.fill`، :func:`turtle.poly` و :func:`turtle.no_animation` اضافه شدند. (با مشارکت Marie Roald و Yngve Mardal Moe در :gh:`126350`.)"
 
 msgid "types"
-msgstr "نوع‌ها"
+msgstr "types"
 
 msgid ":class:`types.UnionType` is now an alias for :class:`typing.Union`. See :ref:`below <whatsnew314-typing-union>` for more details. (Contributed by Jelle Zijlstra in :gh:`105499`.)"
 msgstr ":class:`types.UnionType` اکنون نام مستعری برای :class:`typing.Union` است. برای جزئیات بیشتر به :ref:`زیر <whatsnew314-typing-union>` مراجعه کنید. (مشارکت‌شده توسط Jelle Zijlstra در :gh:`105499`.)"
 
 msgid "typing"
-msgstr "نوع‌دهی"
+msgstr "typing"
 
 msgid "The :class:`types.UnionType` and :class:`typing.Union` types are now aliases for each other, meaning that both old-style unions (created with ``Union[int, str]``) and new-style unions (``int | str``) now create instances of the same runtime type. This unifies the behavior between the two syntaxes, but leads to some differences in behavior that may affect users who introspect types at runtime:"
 msgstr "نوع‌های :class:`types.UnionType` و :class:`typing.Union` اکنون مستعار یکدیگر هستند، به این معنا که هم اجتماع (union) سبک قدیمی (ایجادشده با ``Union[int, str]``) و هم اجتماع سبک جدید (``int | str``) اکنون نمونه‌هایی از همان نوع ران‌تایم ایجاد می‌کنند. این، رفتار میان دو سینتکس را یکپارچه می‌کند، اما به برخی تفاوت‌های رفتاری منجر می‌شود که ممکن است بر کاربرانی که نوع‌ها را در زمان اجرا درون‌نگری می‌کنند تأثیر بگذارد:"
@@ -2186,7 +2186,7 @@ msgstr ""
 "    runner.run(operation_two())"
 
 msgid "email"
-msgstr "ایمیل"
+msgstr "email"
 
 msgid "Remove :func:`email.utils.localtime`'s *isdst* parameter, which was deprecated in and has been ignored since Python 3.12. (Contributed by Hugo van Kemenade in :gh:`118798`.)"
 msgstr "پارامتر *isdst* از :func:`email.utils.localtime` حذف شد که در پایتون 3.12 منسوخ شده بود و از آن زمان نادیده گرفته می‌شد. (مشارکت Hugo van Kemenade در :gh:`118798`.)"

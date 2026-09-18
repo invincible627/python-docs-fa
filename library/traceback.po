@@ -745,7 +745,7 @@ msgid "object"
 msgstr "شیء"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "^ (caret)"
 msgstr "^ (نشانک)"

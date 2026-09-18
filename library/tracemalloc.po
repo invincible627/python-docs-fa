@@ -721,7 +721,7 @@ msgid "``'traceback'``"
 msgstr "``'traceback'``"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "If *cumulative* is ``True``, cumulate size and count of memory blocks of all frames of the traceback of a trace, not only the most recent frame. The cumulative mode can only be used with *key_type* equal to ``'filename'`` and ``'lineno'``."
 msgstr "اگر *cumulative* برابر ``True`` باشد، اندازه و تعداد بلوک‌های حافظه را برای تمام فریم‌های ردگیری پشته‌ی یک ردگیری تجمیع می‌کند، نه فقط برای جدیدترین فریم. حالت تجمیعی فقط در صورتی قابل استفاده است که *key_type* برابر با ``'filename'`` یا ``'lineno'`` باشد."

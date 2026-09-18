@@ -25,7 +25,7 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid "Logging HOWTO"
-msgstr "راهنمای گزارش‌برداری"
+msgstr "راهنمای گزارش‌گیری"
 
 msgid "Author"
 msgstr "نویسنده"
@@ -357,7 +357,7 @@ msgid "Still here? You can carry on reading the next few sections, which provide
 msgstr "هنوز اینجا هستید؟ می‌توانید به خواندن چند بخش بعدی ادامه دهید، که آموزشی کمی پیشرفته‌تر/عمیق‌تر از آموزش پایه‌ی بالا ارائه می‌دهند. پس از آن، می‌توانید نگاهی به :ref:`logging-cookbook` بیندازید."
 
 msgid "Advanced Logging Tutorial"
-msgstr "آموزش پیشرفته گزارش‌برداری"
+msgstr "آموزش پیشرفته گزارش‌گیری"
 
 msgid "The logging library takes a modular approach and offers several categories of components: loggers, handlers, filters, and formatters."
 msgstr "کتابخانه‌ی logging رویکردی ماژولار دارد و چندین دسته از کامپوننت‌ها را ارائه می‌دهد: گزارش‌گیرها، هندلرها، فیلترها و قالب‌بندها (formatters)."

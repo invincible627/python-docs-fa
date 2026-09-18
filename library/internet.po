@@ -40,4 +40,4 @@ msgid "module"
 msgstr "ماژول"
 
 msgid "socket"
-msgstr "سوکت"
+msgstr "socket"

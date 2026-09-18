@@ -1426,7 +1426,7 @@ msgid ":func:`sharedctypes.synchronized() <multiprocessing.sharedctypes.synchron
 msgstr "اشیاء :func:`sharedctypes.synchronized() <multiprocessing.sharedctypes.synchronized>` اکنون از پروتکل :term:`مدیر زمینه <context manager>` پشتیبانی می‌کنند. (با مشارکت Charles-François Natali در :issue:`21565`.)"
 
 msgid "operator"
-msgstr "عملگر"
+msgstr "operator"
 
 msgid ":func:`~operator.attrgetter`, :func:`~operator.itemgetter`, and :func:`~operator.methodcaller` objects now support pickling. (Contributed by Josh Rosenberg and Serhiy Storchaka in :issue:`22955`.)"
 msgstr "اشیاء :func:`~operator.attrgetter`، :func:`~operator.itemgetter` و :func:`~operator.methodcaller` اکنون از پیکل‌کردن پشتیبانی می‌کنند. (مشارکت‌شده توسط Josh Rosenberg و Serhiy Storchaka در :issue:`22955`.)"
@@ -1523,7 +1523,7 @@ msgid "(Contributed by Christopher Welborn in :issue:`20218`.)"
 msgstr "(مشارکت‌شده توسط Christopher Welborn در :issue:`20218`.)"
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid "Nested objects, such as unbound methods or nested classes, can now be pickled using :ref:`pickle protocols <pickle-protocols>` older than protocol version 4. Protocol version 4 already supports these cases.  (Contributed by Serhiy Storchaka in :issue:`23611`.)"
 msgstr "اشیاء تودرتو، مانند متد‌های غیرمقید یا کلاس‌های تودرتو، اکنون می‌توانند با استفاده از :ref:`پروتکل‌های پیکل <pickle-protocols>` قدیمی‌تر از نسخه ۴ پروتکل پیکل شوند. نسخه ۴ پروتکل از قبل این موارد را پشتیبانی می‌کند.  (ارائه‌شده توسط Serhiy Storchaka در :issue:`23611`.)"

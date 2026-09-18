@@ -1687,7 +1687,7 @@ msgid "(Contributed by Georg Brandl in :issue:`14210`)"
 msgstr "(مشارکت‌شده توسط Georg Brandl در :issue:`14210`)"
 
 msgid "pickle"
-msgstr "پیکل"
+msgstr "pickle"
 
 msgid ":class:`pickle.Pickler` objects now have an optional :attr:`~pickle.Pickler.dispatch_table` attribute allowing per-pickler reduction functions to be set."
 msgstr "اشیاء :class:`pickle.Pickler` اکنون دارای یک ویژگی اختیاری :attr:`~pickle.Pickler.dispatch_table` هستند که امکان تنظیم توابع کاهش مخصوص هر پیکل‌ساز را فراهم می‌کند."

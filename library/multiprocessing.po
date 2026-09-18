@@ -2631,7 +2631,7 @@ msgid "Logging"
 msgstr "گزارش‌گیری"
 
 msgid "Some support for logging is available.  Note, however, that the :mod:`logging` package does not use process shared locks so it is possible (depending on the handler type) for messages from different processes to get mixed up."
-msgstr "پشتیبانی تا حدی برای گزارش‌برداری در دسترس است. با این حال، توجه داشته باشید که بسته‌ی :mod:`logging` از قفل‌های مشترک بین فرایندها استفاده نمی‌کند، بنابراین ممکن است، بسته به نوع هندلر، پیام‌های فرایندهای مختلف با هم مخلوط شوند."
+msgstr "پشتیبانی تا حدی برای گزارش‌گیری در دسترس است. با این حال، توجه داشته باشید که بسته‌ی :mod:`logging` از قفل‌های مشترک بین فرایندها استفاده نمی‌کند، بنابراین ممکن است، بسته به نوع هندلر، پیام‌های فرایندهای مختلف با هم مخلوط شوند."
 
 msgid "Returns the logger used by :mod:`!multiprocessing`.  If necessary, a new one will be created."
 msgstr "گزارش‌گیر مورد استفاده‌ی :mod:`!multiprocessing` را برمی‌گرداند. در صورت نیاز، یک گزارش‌گیر جدید ایجاد خواهد شد."

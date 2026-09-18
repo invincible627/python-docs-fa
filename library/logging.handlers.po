@@ -105,7 +105,7 @@ msgid "Outputs the record to the file."
 msgstr "رکورد را در پرونده خروجی می‌دهد."
 
 msgid "Note that if the file was closed due to logging shutdown at exit and the file mode is 'w', the record will not be emitted (see :issue:`42378`)."
-msgstr "توجه داشته باشید که اگر پرونده به دلیل خاموش‌سازی گزارش‌برداری در هنگام خروج بسته شده باشد و حالت پرونده 'w' باشد، رکورد منتشر نخواهد شد (به :issue:`42378` مراجعه کنید)."
+msgstr "توجه داشته باشید که اگر پرونده به دلیل خاموش‌سازی گزارش‌گیری در هنگام خروج بسته شده باشد و حالت پرونده 'w' باشد، رکورد منتشر نخواهد شد (به :issue:`42378` مراجعه کنید)."
 
 msgid "NullHandler"
 msgstr "NullHandler"

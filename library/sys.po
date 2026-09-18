@@ -1524,7 +1524,7 @@ msgid "object"
 msgstr "شیء"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "profile function"
 msgstr "تابع پروفایل"
