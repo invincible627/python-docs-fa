@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-17)
+(به‌روزرسانی: 2026-09-18)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -150,6 +150,7 @@
 | improve-page.po | 100.0% | 0.0% | 8 | 0 |
 | installing/index.po | 100.0% | 0.0% | 53 | 0 |
 | library/__future__.po | 100.0% | 0.0% | 49 | 0 |
+| library/__main__.po | 100.0% | 0.0% | 72 | 0 |
 | library/_thread.po | 100.0% | 0.0% | 52 | 0 |
 | library/abc.po | 100.0% | 0.0% | 60 | 0 |
 | library/aifc.po | 100.0% | 0.0% | 3 | 0 |
@@ -487,7 +488,6 @@
 | reference/lexical_analysis.po | 100.0% | 0.0% | 476 | 0 |
 | reference/simple_stmts.po | 100.0% | 0.0% | 291 | 0 |
 | reference/toplevel_components.po | 100.0% | 0.0% | 32 | 0 |
-| sphinx.po | 100.0% | 0.0% | 858 | 0 |
 | tutorial/appendix.po | 100.0% | 0.0% | 28 | 0 |
 | tutorial/appetite.po | 100.0% | 0.0% | 17 | 0 |
 | tutorial/classes.po | 100.0% | 0.0% | 149 | 0 |
@@ -539,7 +539,7 @@
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| library/__main__.po | 13.9% | 0.0% | 10 | 62 |
+| sphinx.po | 13.6% | 0.0% | 132 | 837 |
 | license.po | 0.0% | 0.0% | 0 | 129 |
-| **مجموع** | **99.7%** | **0.0%** | **70794** | **191** |
+| **مجموع** | **98.6%** | **0.0%** | **70130** | **966** |
 <!-- TRANSLATION_STATUS_END -->
