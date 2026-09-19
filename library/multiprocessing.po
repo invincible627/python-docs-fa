@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 15:53+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -2275,7 +2275,8 @@ msgstr "توجه داشته باشید که این ممکن است برای پی
 msgid "A variant of the :meth:`.map` method which returns a :class:`~multiprocessing.pool.AsyncResult` object."
 msgstr "گونه‌ای از متد :meth:`.map` که یک شیء :class:`~multiprocessing.pool.AsyncResult` را برمی‌گرداند."
 
-msgid "A lazier version of :meth:`.map`."
+#, fuzzy
+msgid "An iterator-based version of :meth:`.map`."
 msgstr "نسخه‌ای تنبل‌تر از :meth:`.map`."
 
 msgid "The *chunksize* argument is the same as the one used by the :meth:`.map` method.  For very long iterables using a large value for *chunksize* can make the job complete **much** faster than using the default value of ``1``."

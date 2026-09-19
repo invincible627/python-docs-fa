@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 09:37+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -89,10 +89,12 @@ msgstr "نمونه‌های مدیر محتوا (Content Manager)"
 msgid "Currently the email package provides only one concrete content manager, :data:`raw_data_manager`, although more may be added in the future. :data:`raw_data_manager` is the :attr:`~email.policy.EmailPolicy.content_manager` provided by :attr:`~email.policy.EmailPolicy` and its derivatives."
 msgstr "در حال حاضر بسته‌ی email تنها یک مدیر محتوای عینی (concrete content manager)، :data:`raw_data_manager`، ارائه می‌دهد، هرچند ممکن است در آینده موارد بیشتری افزوده شوند. :data:`raw_data_manager` همان :attr:`~email.policy.EmailPolicy.content_manager` ارائه‌شده از سوی :attr:`~email.policy.EmailPolicy` و مشتقات آن است."
 
-msgid "This content manager provides only a minimum interface beyond that provided by :class:`~email.message.Message` itself:  it deals only with text, raw byte strings, and :class:`~email.message.Message` objects.  Nevertheless, it provides significant advantages compared to the base API: ``get_content`` on a text part will return a unicode string without the application needing to manually decode it, ``set_content`` provides a rich set of options for controlling the headers added to a part and controlling the content transfer encoding, and it enables the use of the various ``add_`` methods, thereby simplifying the creation of multipart messages."
+#, fuzzy
+msgid "This content manager provides only a minimum interface beyond that provided by :class:`~email.message.Message` itself:  it deals only with text, raw bytes, and :class:`~email.message.Message` objects.  Nevertheless, it provides significant advantages compared to the base API: ``get_content`` on a text part will return a string without the application needing to manually decode it, ``set_content`` provides a rich set of options for controlling the headers added to a part and controlling the content transfer encoding, and it enables the use of the various ``add_`` methods, thereby simplifying the creation of multipart messages."
 msgstr "این مدیر محتوا تنها حداقل رابطی را فراتر از آنچه خود :class:`~email.message.Message` فراهم می‌کند، ارائه می‌دهد: این مدیر فقط با متن، رشته‌های بایت خام و اشیاء :class:`~email.message.Message` سروکار دارد. با این حال، مزایای قابل‌توجهی نسبت به API پایه فراهم می‌کند: ``get_content`` روی یک بخش متنی، یک رشته یونیکد را برمی‌گرداند، بدون اینکه برنامه نیاز داشته باشد آن را به‌صورت دستی کدگشایی کند؛ ``set_content`` مجموعه‌ای غنی از گزینه‌ها را برای کنترل سرآیند‌های افزوده‌شده به یک بخش و کنترل کدگذاری انتقال محتوا فراهم می‌کند، و استفاده از متدهای مختلف ``add_`` را ممکن می‌سازد و بدین ترتیب ایجاد پیام‌های چندبخشی را ساده‌تر می‌کند."
 
-msgid "Return the payload of the part as either a string (for ``text`` parts), an :class:`~email.message.EmailMessage` object (for ``message/rfc822`` parts), or a ``bytes`` object (for all other non-multipart types).  Raise a :exc:`KeyError` if called on a ``multipart``.  If the part is a ``text`` part and *errors* is specified, use it as the error handler when decoding the payload to unicode.  The default error handler is ``replace``."
+#, fuzzy
+msgid "Return the payload of the part as either a string (for ``text`` parts), an :class:`~email.message.EmailMessage` object (for ``message/rfc822`` parts), or a ``bytes`` object (for all other non-multipart types).  Raise a :exc:`KeyError` if called on a ``multipart``.  If the part is a ``text`` part and *errors* is specified, use it as the error handler when decoding the payload to a string.  The default error handler is ``replace``."
 msgstr "بار این بخش را به‌صورت یک رشته (برای بخش‌های ``text``)، یک شیء :class:`~email.message.EmailMessage` (برای بخش‌های ``message/rfc822``)، یا یک شیء ``bytes`` (برای همه‌ی انواع دیگر غیرچندبخشی) برمی‌گرداند. اگر روی یک ``multipart`` فراخوانی شود، :exc:`KeyError` را پرتاب می‌کند. اگر این بخش یک بخش ``text`` باشد و *errors* مشخص شده باشد، از آن به‌عنوان هندلر خطا هنگام کدگشایی بار به یونیکد استفاده می‌شود. هندلر خطای پیش‌فرض ``replace`` است."
 
 msgid "Add headers and payload to *msg*:"

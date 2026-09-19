@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 13:18+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -130,7 +130,8 @@ msgstr "رشته‌ی *s* را مطابق :rfc:`2231` کدگشایی کنید."
 msgid "Encode the string *s* according to :rfc:`2231`.  Optional *charset* and *language*, if given is the character set name and language name to use.  If neither is given, *s* is returned as-is.  If *charset* is given but *language* is not, the string is encoded using the empty string for *language*."
 msgstr "رشته‌ی *s* را مطابق :rfc:`2231` کدگذاری می‌کند. آرگومان‌های اختیاری *charset* و *language*، در صورت داده شدن، به ترتیب نام مجموعه‌نویسه و نام زبان مورد استفاده هستند. اگر هیچ‌کدام داده نشود، *s* همان‌طور که هست برگردانده می‌شود. اگر *charset* داده شود اما *language* داده نشود، رشته با استفاده از رشته‌ی خالی برای *language* کدگذاری می‌شود."
 
-msgid "When a header parameter is encoded in :rfc:`2231` format, :meth:`Message.get_param <email.message.Message.get_param>` may return a 3-tuple containing the character set, language, and value.  :func:`collapse_rfc2231_value` turns this into a unicode string.  Optional *errors* is passed to the *errors* argument of :class:`str`'s :func:`~str.encode` method; it defaults to ``'replace'``.  Optional *fallback_charset* specifies the character set to use if the one in the :rfc:`2231` header is not known by Python; it defaults to ``'us-ascii'``."
+#, fuzzy
+msgid "When a header parameter is encoded in :rfc:`2231` format, :meth:`Message.get_param <email.message.Message.get_param>` may return a 3-tuple containing the character set, language, and value.  :func:`collapse_rfc2231_value` turns this into a string.  Optional *errors* is passed to the *errors* argument of :class:`str`'s :func:`~str.encode` method; it defaults to ``'replace'``.  Optional *fallback_charset* specifies the character set to use if the one in the :rfc:`2231` header is not known by Python; it defaults to ``'us-ascii'``."
 msgstr "هنگامی که یک پارامتر سرآیند در قالب :rfc:`2231` کدگذاری‌شده باشد، :meth:`Message.get_param <email.message.Message.get_param>` ممکن است یک تاپل سه‌تایی شامل مجموعه نویسه، زبان و مقدار را بازگشت دهد. :func:`collapse_rfc2231_value` این را به یک رشته یونیکد تبدیل می‌کند. پارامتر اختیاری *errors* به آرگومان *errors* متد :func:`~str.encode` کلاس :class:`str` ارسال می‌شود؛ مقدار پیش‌فرض آن ``'replace'`` است. پارامتر اختیاری *fallback_charset* مجموعه نویسه‌ای را مشخص می‌کند که در صورتی که مجموعه نویسه موجود در سرآیند :rfc:`2231` برای پایتون شناخته‌شده نباشد، استفاده شود؛ مقدار پیش‌فرض آن ``'us-ascii'`` است."
 
 msgid "For convenience, if the *value* passed to :func:`collapse_rfc2231_value` is not a tuple, it should be a string and it is returned unquoted."

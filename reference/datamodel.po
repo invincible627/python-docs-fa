@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-12 16:43+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -423,7 +423,8 @@ msgstr "توجه داشته باشید که توابع تعریف‌شده تو�
 msgid "Generator functions"
 msgstr "توابع تولیدگر"
 
-msgid "A function or method which uses the :keyword:`yield` statement (see section :ref:`yield`) is called a :dfn:`generator function`.  Such a function, when called, always returns an :term:`iterator` object which can be used to execute the body of the function:  calling the iterator's :meth:`iterator.__next__` method will cause the function to execute until it provides a value using the :keyword:`!yield` statement.  When the function executes a :keyword:`return` statement or falls off the end, a :exc:`StopIteration` exception is raised and the iterator will have reached the end of the set of values to be returned."
+#, fuzzy
+msgid "A function or method which contains a :keyword:`yield` expression (see section :ref:`yieldexpr`) is called a :dfn:`generator function`.  Such a function, when called, always returns an :term:`iterator` object which can be used to execute the body of the function:  calling the iterator's :meth:`iterator.__next__` method will cause the function to execute until it provides a value using the :keyword:`!yield` expression.  When the function executes a :keyword:`return` statement or falls off the end, a :exc:`StopIteration` exception is raised and the iterator will have reached the end of the set of values to be returned."
 msgstr "به تابع یا متدی که از دستور :keyword:`yield` استفاده می‌کند (بخش :ref:`yield` را ببینید)، :dfn:`تابع تولیدگر <generator function>` گفته می‌شود. چنین تابعی هنگام فراخوانی، همواره یک شیء :term:`پیمایش‌گر <iterator>` را بازمی‌گرداند که می‌توان از آن برای اجرای بدنه تابع استفاده کرد: فراخوانی متد :meth:`iterator.__next__` این شیء باعث می‌شود تابع تا زمانی اجرا شود که مقداری را با استفاده از دستور :keyword:`!yield` ارائه کند. هنگامی که تابع دستور :keyword:`return` را اجرا کند یا به پایان خود برسد، استثنای :exc:`StopIteration` پرتاب می‌شود و iterator به پایان مجموعه مقادیری که باید بازگردانده شوند، رسیده است."
 
 msgid "Coroutine functions"
@@ -435,7 +436,8 @@ msgstr "به تابع یا متدی که با استفاده از :keyword:`asyn
 msgid "Asynchronous generator functions"
 msgstr "توابع تولیدگر ناهمگام"
 
-msgid "A function or method which is defined using :keyword:`async def` and which uses the :keyword:`yield` statement is called a :dfn:`asynchronous generator function`.  Such a function, when called, returns an :term:`asynchronous iterator` object which can be used in an :keyword:`async for` statement to execute the body of the function."
+#, fuzzy
+msgid "A function or method which is defined using :keyword:`async def` and which contains a :keyword:`yield` expression is called a :dfn:`asynchronous generator function`.  Such a function, when called, returns an :term:`asynchronous iterator` object which can be used in an :keyword:`async for` statement to execute the body of the function."
 msgstr "تابع یا متدی که با استفاده از :keyword:`async def` تعریف شده باشد و از دستور :keyword:`yield` استفاده کند، یک :dfn:`تابع تولیدگر ناهمگام <asynchronous generator function>` نامیده می‌شود. چنین تابعی، هنگام فراخوانی، یک شیء :term:`پیمایش‌گر ناهمگام <asynchronous iterator>` برمی‌گرداند که می‌توان از آن در یک دستور :keyword:`async for` برای اجرای بدنه تابع استفاده کرد."
 
 msgid "Calling the asynchronous iterator's :meth:`aiterator.__anext__ <object.__anext__>` method will return an :term:`awaitable` which when awaited will execute until it provides a value using the :keyword:`yield` expression.  When the function executes an empty :keyword:`return` statement or falls off the end, a :exc:`StopAsyncIteration` exception is raised and the asynchronous iterator will have reached the end of the set of values to be yielded."

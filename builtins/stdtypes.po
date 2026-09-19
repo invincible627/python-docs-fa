@@ -1,27 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
+# Persian translations for Python package.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
-# Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
-# Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+# Automatically generated, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
-"PO-Revision-Date: 2026-09-12 16:21+0330\n"
-"Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"PO-Revision-Date: 2026-09-19 20:08+0330\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.6\n"
 
 msgid "Built-in Types"
 msgstr "انواع توکار"
@@ -692,8 +685,8 @@ msgstr "یک رشته مبنای شانزده به شکل زیر است::"
 msgid "[sign] ['0x'] integer ['.' fraction] ['p' exponent]"
 msgstr "[sign] ['0x'] integer ['.' fraction] ['p' exponent]"
 
-msgid "where the optional ``sign`` may by either ``+`` or ``-``, ``integer`` and ``fraction`` are strings of hexadecimal digits, and ``exponent`` is a decimal integer with an optional leading sign.  Case is not significant, and there must be at least one hexadecimal digit in either the integer or the fraction.  This syntax is similar to the syntax specified in section 6.4.4.2 of the C99 standard, and also to the syntax used in Java 1.5 onwards.  In particular, the output of :meth:`float.hex` is usable as a hexadecimal floating-point literal in C or Java code, and hexadecimal strings produced by C's ``%a`` format character or Java's ``Double.toHexString`` are accepted by :meth:`float.fromhex`."
-msgstr "که در آن ``sign`` اختیاری می‌تواند ``+`` یا ``-`` باشد، ``integer`` و ``fraction`` رشته‌هایی از ارقام مبنای شانزده هستند، و ``exponent`` یک عدد صحیح دهدهی با علامت ابتدایی اختیاری است. بزرگی و کوچکی حروف اهمیتی ندارد و باید دست‌کم یک رقم مبنای شانزده در بخش صحیح یا بخش اعشاری وجود داشته باشد. این سینتکس مشابه سینتکس تعیین‌شده در بخش 6.4.4.2 استاندارد C99 و نیز مشابه سینتکسی است که از Java 1.5 به بعد استفاده شده است. به‌طور خاص، خروجی :meth:`float.hex` را می‌توان به‌عنوان یک لفظ اعشاری مبنای شانزده در کد C یا Java به کار برد، و رشته‌های مبنای شانزده‌ای که توسط نویسه قالب ``%a`` در C یا ``Double.toHexString`` در Java تولید می‌شوند، توسط :meth:`float.fromhex` پذیرفته می‌شوند."
+msgid "where the optional ``sign`` may be either ``+`` or ``-``, ``integer`` and ``fraction`` are strings of hexadecimal digits, and ``exponent`` is a decimal integer with an optional leading sign.  Case is not significant, and there must be at least one hexadecimal digit in either the integer or the fraction.  This syntax is similar to the syntax specified in section 6.4.4.2 of the C99 standard, and also to the syntax used in Java 1.5 onwards.  In particular, the output of :meth:`float.hex` is usable as a hexadecimal floating-point literal in C or Java code, and hexadecimal strings produced by C's ``%a`` format character or Java's ``Double.toHexString`` are accepted by :meth:`float.fromhex`."
+msgstr ""
 
 msgid "Note that the exponent is written in decimal rather than hexadecimal, and that it gives the power of 2 by which to multiply the coefficient. For example, the hexadecimal string ``0x3.a7p10`` represents the floating-point number ``(3 + 10./16 + 7./16**2) * 2.0**10``, or ``3740.0``::"
 msgstr "توجه داشته باشید که توان به‌صورت مبنای ده و نه مبنای شانزده نوشته می‌شود، و اینکه این توان، توانی از ۲ را مشخص می‌کند که در آن ضریب ضرب می‌شود. برای مثال، رشته‌ی مبنای شانزده ``0x3.a7p10`` عدد ممیز شناور ``(3 + 10./16 + 7./16**2) * 2.0**10`` یا همان ``3740.0`` را بازنمایی می‌کند::"
@@ -920,6 +913,9 @@ msgstr "این جدول عملیات دنباله را به ترتیب صعود�
 
 msgid "The ``in`` and ``not in`` operations have the same priorities as the comparison operations. The ``+`` (concatenation) and ``*`` (repetition) operations have the same priority as the corresponding numeric operations. [3]_"
 msgstr "عملیات‌های ``in`` و ``not in`` همان اولویت عملیات مقایسه را دارند. عملیات‌های ``+`` (الحاق) و ``*`` (تکرار) همان اولویت عملیات عددی متناظر را دارند. [3]_"
+
+msgid "See :ref:`time-complexity` for the costs of the various sequence operations."
+msgstr ""
 
 msgid "``x in s``"
 msgstr "``x in s``"
@@ -1216,8 +1212,8 @@ msgstr "*sequence* را با محتوای *iterable* گسترش می‌دهد. �
 msgid "Insert *value* into *sequence* at the given *index*. This is equivalent to writing ``sequence[index:index] = [value]``."
 msgstr "*مقدار* را در *دنباله* در اندیس داده‌شده درج می‌کند. این معادل نوشتنِ ``sequence[index:index] = [value]`` است."
 
-msgid "Retrieve the item at *index* and also removes it from *sequence*. By default, the last item in *sequence* is removed and returned."
-msgstr "آیتم واقع در *index* را بازیابی می‌کند و همچنین آن را از *sequence* حذف می‌کند. به‌طور پیش‌فرض، آخرین آیتم در *sequence* حذف و بازگردانده می‌شود."
+msgid "Retrieve the item at *index* and also remove it from *sequence*. By default, the last item in *sequence* is removed and returned."
+msgstr ""
 
 msgid "Remove the first item from *sequence* where ``sequence[i] == value``."
 msgstr "اولین آیتمی از *دنباله* را که در آن ``sequence[i] == value`` است، حذف کنید."
@@ -2029,8 +2025,8 @@ msgstr ""
 ">>> ' '.isalnum()\n"
 "False"
 
-msgid "Return ``True`` if all characters in the string are alphabetic and there is at least one character, ``False`` otherwise.  Alphabetic characters are those characters defined in the Unicode character database as \"Letter\", i.e., those with general category property being one of \"Lm\", \"Lt\", \"Lu\", \"Ll\", or \"Lo\".  Note that this is different from the `Alphabetic property defined in the section 4.10 'Letters, Alphabetic, and Ideographic' of the Unicode Standard <https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G91002>`_. For example:"
-msgstr "اگر همه‌ی نویسه‌های رشته الفبایی باشند و حداقل یک نویسه وجود داشته باشد، ``True`` را برمی‌گرداند؛ در غیر این صورت ``False``. نویسه‌های الفبایی نویسه‌هایی هستند که در پایگاه داده‌ی نویسه‌های یونیکد به عنوان \"Letter\" تعریف شده‌اند؛ یعنی نویسه‌هایی که ویژگی دسته عمومی آن‌ها یکی از \"Lm\"، \"Lt\"، \"Lu\"، \"Ll\" یا \"Lo\" باشد. توجه داشته باشید که این با `ویژگی الفبایی (Alphabetic) تعریف‌شده در بخش 4.10 «Letters, Alphabetic, and Ideographic» استاندارد یونیکد <https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G91002>`_ متفاوت است. برای مثال:"
+msgid "Return ``True`` if all characters in the string are alphabetic and there is at least one character, ``False`` otherwise.  Alphabetic characters are those characters defined in the Unicode character database as \"Letter\", i.e., those with general category property being one of \"Lm\", \"Lt\", \"Lu\", \"Ll\", or \"Lo\".  Note that this is different from the `Alphabetic property defined in section 4.10 'Letters, Alphabetic, and Ideographic' of the Unicode Standard <https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G91002>`_. For example:"
+msgstr ""
 
 msgid ""
 ">>> 'Letters and spaces'.isalpha()\n"
@@ -2481,8 +2477,8 @@ msgstr ""
 msgid "See also :meth:`partition`."
 msgstr "همچنین ببینید :meth:`partition`."
 
-msgid "Return a list of the words in the string, using *sep* as the delimiter string. If *maxsplit* is given, at most *maxsplit* splits are done, the *rightmost* ones.  If *sep* is not specified or ``None``, any whitespace string is a separator.  Except for splitting from the right, :meth:`rsplit` behaves like :meth:`split` which is described in detail below."
-msgstr "فهرستی از واژه‌های موجود در رشته را بازمی‌گرداند، با استفاده از *sep* به‌عنوان رشته‌ی جداکننده. اگر *maxsplit* داده شود، حداکثر *maxsplit* تقسیم انجام می‌شود، آن هم روی موارد *راست‌ترین*.  اگر *sep* مشخص نشده باشد یا ``None`` باشد، هر رشته‌ای از نویسه‌های فضای خالی جداکننده محسوب می‌شود.  به‌جز تقسیم از سمت راست، متد :meth:`rsplit` مانند :meth:`split` رفتار می‌کند که در ادامه به تفصیل شرح داده شده است."
+msgid "Return a list of the words in the string, using *sep* as the delimiter string. If *maxsplit* is given, at most *maxsplit* splits are done, the *rightmost* ones.  If *sep* is not specified or ``None``, any :meth:`whitespace <str.isspace>` string is a separator.  Except for splitting from the right, :meth:`rsplit` behaves like :meth:`split` which is described in detail below."
+msgstr ""
 
 msgid "Return a copy of the string with trailing characters removed.  The *chars* argument is a string specifying the set of characters to be removed.  If omitted or ``None``, the *chars* argument defaults to removing whitespace.  The *chars* argument is not a suffix; rather, all combinations of its values are stripped. For example:"
 msgstr "یک نسخه از رشته را با حذف نویسه‌های پایانی برمی‌گرداند. آرگومان *chars* رشته‌ای است که مجموعه‌ای از نویسه‌ها را برای حذف مشخص می‌کند. اگر حذف شود یا ``None`` باشد، آرگومان *chars* به‌طور پیش‌فرض فضای سفید را حذف می‌کند. آرگومان *chars* یک پسوند نیست؛ بلکه همه‌ی ترکیب‌های مقادیر آن حذف می‌شوند. برای مثال:"
@@ -2540,8 +2536,8 @@ msgstr ""
 ">>> '1<>2<>3<4'.split('<>')\n"
 "['1', '2', '3<4']"
 
-msgid "If *sep* is not specified or is ``None``, a different splitting algorithm is applied: runs of consecutive whitespace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing whitespace.  Consequently, splitting an empty string or a string consisting of just whitespace with a ``None`` separator returns ``[]``."
-msgstr "اگر *sep* مشخص نشده باشد یا ``None`` باشد، الگوریتم جداسازی متفاوتی اعمال می‌شود: دنباله‌های متوالی از فضای خالی به‌عنوان یک جداکننده در نظر گرفته می‌شوند، و اگر رشته دارای فضای خالی ابتدایی یا انتهایی باشد، نتیجه شامل هیچ رشته‌ی خالی در ابتدا یا انتها نخواهد بود.  در نتیجه، جداسازی یک رشته‌ی خالی یا رشته‌ای که فقط از فضای خالی تشکیل شده است با جداکننده‌ی ``None`` مقدار ``[]`` را برمی‌گرداند."
+msgid "If *sep* is not specified or is ``None``, a different splitting algorithm is applied: runs of consecutive :meth:`whitespace <str.isspace>` are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing whitespace.  Consequently, splitting an empty string or a string consisting of just whitespace with a ``None`` separator returns ``[]``."
+msgstr ""
 
 msgid ""
 ">>> '1 2 3'.split()\n"
@@ -2990,30 +2986,20 @@ msgid ""
 "'0.333333'\n"
 ">>> f'{one_third:_^+10}'\n"
 "'___+1/3___'\n"
-">>> >>> f'{one_third!r:_^20}'\n"
+">>> f'{one_third!r:_^20}'\n"
 "'___Fraction(1, 3)___'\n"
 ">>> f'{one_third = :~>10}~'\n"
 "'one_third = ~~~~~~~1/3~'"
 msgstr ""
-">>> from fractions import Fraction\n"
-">>> one_third = Fraction(1, 3)\n"
-">>> f'{one_third:.6f}'\n"
-"'0.333333'\n"
-">>> f'{one_third:_^+10}'\n"
-"'___+1/3___'\n"
-">>> >>> f'{one_third!r:_^20}'\n"
-"'___Fraction(1, 3)___'\n"
-">>> f'{one_third = :~>10}~'\n"
-"'one_third = ~~~~~~~1/3~'"
 
 msgid "Template String Literals (t-strings)"
 msgstr "مقادیر لفظی رشته‌ی قالبی (t-strings)"
 
-msgid "An :dfn:`t-string` (formally a :dfn:`template string literal`) is a string literal that is prefixed with ``t`` or ``T``."
-msgstr "یک :dfn:`t-string` (به‌طور رسمی یک :dfn:`template string literal`) یک لفظی رشته است که پیشوند آن ``t`` یا ``T`` است."
+msgid "A :dfn:`t-string` (formally a :dfn:`template string literal`) is a string literal that is prefixed with ``t`` or ``T``."
+msgstr ""
 
-msgid "These strings follow the same syntax and evaluation rules as :ref:`formatted string literals <stdtypes-fstrings>`, with for the following differences:"
-msgstr "این رشته‌ها از همان سینتکس و قواعد ارزیابی :ref:`formatted string literals <stdtypes-fstrings>` پیروی می‌کنند، با تفاوت‌های زیر:"
+msgid "These strings follow the same syntax and evaluation rules as :ref:`formatted string literals <stdtypes-fstrings>`, with the following differences:"
+msgstr ""
 
 msgid "Rather than evaluating to a ``str`` object, template string literals evaluate to a :class:`string.templatelib.Template` object."
 msgstr "به جای ارزیابی شدن به یک شیء ``str``، مقادیر لفظی رشته‌ای قالب به یک شیء :class:`string.templatelib.Template` ارزیابی می‌شوند."
@@ -3024,8 +3010,8 @@ msgstr "از پروتکل :func:`format` استفاده نمی‌شود. در ع
 msgid "Format specifiers containing nested replacement fields are evaluated eagerly, prior to being passed to the :class:`~string.templatelib.Interpolation` object. For instance, an interpolation of the form ``{amount:.{precision}f}`` will evaluate the inner expression ``{precision}`` to determine the value of the ``format_spec`` attribute. If ``precision`` were to be ``2``, the resulting format specifier would be ``'.2f'``."
 msgstr "مشخص‌کننده‌های قالب حاوی فیلدهای جایگزینی تودرتو، پیش از آنکه به شیء :class:`~string.templatelib.Interpolation` منتقل شوند، به‌صورت فوری ارزیابی می‌شوند. برای مثال، یک درون‌یابی به شکل ``{amount:.{precision}f}``، عبارت درونی ``{precision}`` را ارزیابی می‌کند تا مقدار ویژگی ``format_spec`` تعیین شود. اگر ``precision`` برابر با ``2`` باشد، مشخص‌کننده قالب حاصل ``'.2f'`` خواهد بود."
 
-msgid "When the equals sign ``'='`` is provided in an interpolation expression, the text of the expression is appended to the literal string that precedes the relevant interpolation. This includes the equals sign and any surrounding whitespace. The :class:`!Interpolation` instance for the expression will be created as normal, except that :attr:`~string.templatelib.Interpolation.conversion` will be set to '``r``' (:func:`repr`) by default. If an explicit conversion or format specifier are provided, this will override the default behaviour."
-msgstr "هنگامی که علامت تساوی ``'='`` در یک عبارت درون‌یابی (interpolation) ارائه شود، متن عبارت به رشته‌ی لفظی که پیش از درون‌یابی مربوطه قرار دارد افزوده می‌شود. این شامل علامت تساوی و هرگونه فضای سفید اطراف آن نیز می‌شود. نمونه‌ی :class:`!Interpolation` برای عبارت به‌صورت عادی ایجاد می‌شود، با این تفاوت که :attr:`~string.templatelib.Interpolation.conversion` به‌طور پیش‌فرض روی '``r``' (:func:`repr`) تنظیم می‌شود. اگر تبدیل یا مشخص‌کننده‌ی قالب صریحی ارائه شود، این رفتار پیش‌فرض را لغو می‌کند."
+msgid "When the equals sign ``'='`` is provided in an interpolation expression, the text of the expression is appended to the literal string that precedes the relevant interpolation. This includes the equals sign and any surrounding whitespace. The :class:`!Interpolation` instance for the expression will be created as normal, except that :attr:`~string.templatelib.Interpolation.conversion` will be set to '``r``' (:func:`repr`) by default. If an explicit conversion or format specifier is provided, this will override the default behaviour."
+msgstr ""
 
 msgid "``printf``-style String Formatting"
 msgstr "قالب‌بندی رشته به‌سبک ``printf``"
@@ -3364,8 +3350,8 @@ msgstr "همچنین :ref:`bytearray <func-bytearray>` توکار را ببین�
 msgid "Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal numbers are a commonly used format for describing binary data. Accordingly, the bytearray type has an additional class method to read data in that format:"
 msgstr "از آنجا که ۲ رقم مبنای شانزده دقیقاً متناظر با یک بایت است، اعداد مبنای شانزده قالبی رایج برای توصیف داده‌های دودویی هستند. بر همین اساس، نوع bytearray یک متد کلاسی اضافی برای خواندن داده‌ها در آن قالب دارد:"
 
-msgid "This :class:`bytearray` class method returns bytearray object, decoding the given string object.  The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored."
-msgstr "این متد کلاس :class:`bytearray`، با کدگشایی شیء رشته‌ی داده‌شده، یک شیء bytearray برمی‌گرداند. رشته باید به ازای هر بایت شامل دو رقم مبنای شانزده باشد و فضای سفید ASCII نادیده گرفته می‌شود."
+msgid "This :class:`bytearray` class method returns a bytearray object, decoding the given string object.  The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored."
+msgstr ""
 
 msgid ":meth:`bytearray.fromhex` now skips all ASCII whitespace in the string, not just spaces."
 msgstr ":meth:`bytearray.fromhex` اکنون تمام فضای سفید ASCII در رشته را نادیده می‌گیرد، نه فقط فاصله‌ها را."
@@ -3582,8 +3568,8 @@ msgstr "نسخه‌ای از شیء را برمی‌گرداند که در وس�
 msgid "Return a copy of the object left justified in a sequence of length *width*. Padding is done using the specified *fillbyte* (default is an ASCII space). For :class:`bytes` objects, the original sequence is returned if *width* is less than or equal to ``len(s)``."
 msgstr "یک کپی از شیء برمی‌گرداند که در دنباله‌ای به طول *width* چپ‌تراز شده است. پر کردن با استفاده از *fillbyte* مشخص‌شده انجام می‌شود (پیش‌فرض یک فاصله ASCII است). برای اشیای :class:`bytes`، اگر *width* کوچک‌تر یا مساوی ``len(s)`` باشد، دنباله اصلی برگردانده می‌شود."
 
-msgid "Return a copy of the sequence with specified leading bytes removed.  The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing ASCII whitespace.  The *bytes* argument is not a prefix; rather, all combinations of its values are stripped::"
-msgstr "یک رونوشت از دنباله با حذف بایت‌های آغازین مشخص‌شده برمی‌گرداند. آرگومان *bytes* یک دنباله دودویی است که مجموعه‌ای از مقادیر بایت برای حذف را مشخص می‌کند. اگر ذکر نشود یا ``None`` باشد، آرگومان *bytes* به‌طور پیش‌فرض فضای سفید ASCII را حذف می‌کند. آرگومان *bytes* یک پیشوند نیست؛ بلکه تمام ترکیب‌های مقادیر آن حذف می‌شوند::"
+msgid "Return a copy of the sequence with specified leading bytes removed.  The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing :meth:`ASCII whitespace <bytes.isspace>`. The *bytes* argument is not a prefix; rather, all combinations of its values are stripped::"
+msgstr ""
 
 msgid ""
 ">>> b'   spacious   '.lstrip()\n"
@@ -3613,11 +3599,11 @@ msgstr ""
 msgid "Return a copy of the object right justified in a sequence of length *width*. Padding is done using the specified *fillbyte* (default is an ASCII space). For :class:`bytes` objects, the original sequence is returned if *width* is less than or equal to ``len(s)``."
 msgstr "نسخه‌ای از شیء را برمی‌گرداند که در دنباله‌ای به طول *width* راست‌تراز شده است. پر کردن با استفاده از *fillbyte* مشخص‌شده انجام می‌شود (پیش‌فرض یک نویسه فاصله ASCII است). برای اشیای :class:`bytes`، اگر *width* کوچک‌تر یا مساوی ``len(s)`` باشد، دنباله اصلی برگردانده می‌شود."
 
-msgid "Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given, at most *maxsplit* splits are done, the *rightmost* ones.  If *sep* is not specified or ``None``, any subsequence consisting solely of ASCII whitespace is a separator. Except for splitting from the right, :meth:`rsplit` behaves like :meth:`split` which is described in detail below."
-msgstr "دنباله‌ی دودویی را با استفاده از *sep* به‌عنوان رشته‌ی جداکننده، به زیردنباله‌هایی از همان نوع تقسیم می‌کند. اگر *maxsplit* داده شود، حداکثر *maxsplit* جداسازی انجام می‌شود، *راست‌ترین‌ها*. اگر *sep* مشخص نشده باشد یا ``None`` باشد، هر زیردنباله‌ای که صرفاً از فضای سفید ASCII تشکیل شده باشد، جداکننده محسوب می‌شود. به‌جز جداسازی از سمت راست، :meth:`rsplit` مانند :meth:`split` رفتار می‌کند که در ادامه با جزئیات توضیح داده شده است."
+msgid "Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string. If *maxsplit* is given, at most *maxsplit* splits are done, the *rightmost* ones.  If *sep* is not specified or ``None``, any subsequence consisting solely of :meth:`ASCII whitespace <bytes.isspace>` is a separator. Except for splitting from the right, :meth:`rsplit` behaves like :meth:`split` which is described in detail below."
+msgstr ""
 
-msgid "Return a copy of the sequence with specified trailing bytes removed.  The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing ASCII whitespace.  The *bytes* argument is not a suffix; rather, all combinations of its values are stripped::"
-msgstr "یک کپی از دنباله برمی‌گرداند که بایت‌های پایانی تعیین‌شده از آن حذف شده‌اند. آرگومان *bytes* یک دنباله دودویی است که مجموعه‌ای از مقادیر بایت را برای حذف مشخص می‌کند. اگر حذف شود یا ``None`` باشد، آرگومان *bytes* به‌طور پیش‌فرض فضای خالی ASCII را حذف می‌کند. آرگومان *bytes* یک پسوند نیست؛ بلکه تمام ترکیب‌های مقادیر آن حذف می‌شوند::"
+msgid "Return a copy of the sequence with specified trailing bytes removed.  The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing :meth:`ASCII whitespace <bytes.isspace>`. The *bytes* argument is not a suffix; rather, all combinations of its values are stripped::"
+msgstr ""
 
 msgid ""
 ">>> b'   spacious   '.rstrip()\n"
@@ -3669,8 +3655,8 @@ msgstr ""
 ">>> b'1<>2<>3<4'.split(b'<>')\n"
 "[b'1', b'2', b'3<4']"
 
-msgid "If *sep* is not specified or is ``None``, a different splitting algorithm is applied: runs of consecutive ASCII whitespace are regarded as a single separator, and the result will contain no empty strings at the start or end if the sequence has leading or trailing whitespace.  Consequently, splitting an empty sequence or a sequence consisting solely of ASCII whitespace without a specified separator returns ``[]``."
-msgstr "اگر *sep* مشخص نشده باشد یا ``None`` باشد، الگوریتم جداسازی متفاوتی اعمال می‌شود: دنباله‌های پیوسته از نویسه‌های فضای خالی ASCII به‌عنوان یک جداکننده در نظر گرفته می‌شوند، و اگر دنباله دارای نویسه‌های فضای خالی در ابتدا یا انتها باشد، نتیجه شامل هیچ رشته‌ی خالی در ابتدا یا انتها نخواهد بود. در نتیجه، جداسازی یک دنباله‌ی خالی یا دنباله‌ای که تنها از نویسه‌های فضای خالی ASCII تشکیل شده است، بدون تعیین جداکننده، ``[]`` را برمی‌گرداند."
+msgid "If *sep* is not specified or is ``None``, a different splitting algorithm is applied: runs of consecutive :meth:`ASCII whitespace <bytes.isspace>` are regarded as a single separator, and the result will contain no empty strings at the start or end if the sequence has leading or trailing whitespace.  Consequently, splitting an empty sequence or a sequence consisting solely of ASCII whitespace without a specified separator returns ``[]``."
+msgstr ""
 
 msgid ""
 ">>> b'1 2 3'.split()\n"
@@ -3687,8 +3673,8 @@ msgstr ""
 ">>> b'   1   2   3   '.split()\n"
 "[b'1', b'2', b'3']"
 
-msgid "Return a copy of the sequence with specified leading and trailing bytes removed. The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing ASCII whitespace. The *bytes* argument is not a prefix or suffix; rather, all combinations of its values are stripped::"
-msgstr "نسخه‌ای از دنباله را برمی‌گرداند که بایت‌های آغازی و پایانی مشخص‌شده در آن حذف شده‌اند. آرگومان *bytes* یک دنباله دودویی است که مجموعه‌ای از مقادیر بایت برای حذف را مشخص می‌کند. اگر حذف شود یا ``None`` باشد، آرگومان *bytes* به‌طور پیش‌فرض فضای سفید ASCII را حذف می‌کند. آرگومان *bytes* یک پیشوند یا پسوند نیست؛ بلکه تمام ترکیب‌های مقادیر آن حذف می‌شوند::"
+msgid "Return a copy of the sequence with specified leading and trailing bytes removed. The *bytes* argument is a binary sequence specifying the set of byte values to be removed.  If omitted or ``None``, the *bytes* argument defaults to removing :meth:`ASCII whitespace <bytes.isspace>`. The *bytes* argument is not a prefix or suffix; rather, all combinations of its values are stripped::"
+msgstr ""
 
 msgid ""
 ">>> b'   spacious   '.strip()\n"
@@ -3942,8 +3928,8 @@ msgstr "قالب‌بندی بایت‌ها به‌سبک ``printf``"
 msgid "The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly).  If the value being printed may be a tuple or dictionary, wrap it in a tuple."
 msgstr "عملیات قالب‌بندی توصیف‌شده در اینجا، دارای انواعی از رفتارهای عجیب هستند که به تعدادی از خطاهای رایج منجر می‌شوند (مانند عدم نمایش صحیح تاپل‌ها و دیکشنری‌ها). اگر مقداری که چاپ می‌شود ممکن است یک تاپل یا دیکشنری باشد، آن را در یک تاپل قرار دهید."
 
-msgid "Bytes objects (``bytes``/``bytearray``) have one unique built-in operation: the ``%`` operator (modulo). This is also known as the bytes *formatting* or *interpolation* operator. Given ``format % values`` (where *format* is a bytes object), ``%`` conversion specifications in *format* are replaced with zero or more elements of *values*. The effect is similar to using the :c:func:`sprintf` in the C language."
-msgstr "اشیای bytes (``bytes``/``bytearray``) یک عملیات توکار منحصربه‌فرد دارند: عملگر ``%`` (باقی‌مانده). این عملگر همچنین به‌عنوان عملگر *قالب‌بندی* یا *درون‌یابی* bytes شناخته می‌شود. با داشتن ``format % values`` (که در آن *format* یک شیء bytes است)، مشخصات تبدیل ``%`` در *format* با صفر یا چند عنصر از *values* جایگزین می‌شوند. اثر آن مشابه استفاده از :c:func:`sprintf` در زبان C است."
+msgid "Bytes objects (``bytes``/``bytearray``) have one unique built-in operation: the ``%`` operator (modulo). This is also known as the bytes *formatting* or *interpolation* operator. Given ``format % values`` (where *format* is a bytes object), ``%`` conversion specifications in *format* are replaced with zero or more elements of *values*. The effect is similar to using the :c:func:`sprintf` function in the C language."
+msgstr ""
 
 msgid "If *format* requires a single argument, *values* may be a single non-tuple object. [5]_  Otherwise, *values* must be a tuple with exactly the number of items specified by the format bytes object, or a single mapping object (for example, a dictionary)."
 msgstr "اگر *format* به یک آرگومان واحد نیاز داشته باشد، *values* ممکن است یک شیء واحد باشد که تاپل نیست. [5]_ در غیر این صورت، *values* باید یک تاپل با دقیقاً تعداد آیتم‌های مشخص‌شده توسط شیء بایتی قالب باشد، یا یک شیء نگاشت واحد (برای مثال، یک دیکشنری)."
@@ -3999,8 +3985,8 @@ msgstr "یک :class:`memoryview` دارای مفهوم *المان* است، ک�
 msgid ":class:`!memoryview`\\s are :ref:`generic <generics>` over the type of their underlying data."
 msgstr "نمونه‌های :class:`!memoryview` نسبت به نوع داده‌ی زیربنایی خود :ref:`عام <generics>` هستند."
 
-msgid "``len(view)`` is equal to the length of :class:`~memoryview.tolist`, which is the nested list representation of the view. If ``view.ndim = 1``, this is equal to the number of elements in the view."
-msgstr "``len(view)`` برابر با طول :class:`~memoryview.tolist` است، که بازنمایی فهرست تودرتوی نما است. اگر ``view.ndim = 1`` باشد، این برابر با تعداد عناصر نما است."
+msgid "``len(view)`` is equal to the length of :meth:`~memoryview.tolist`, which is the nested list representation of the view. If ``view.ndim == 1``, this is equal to the number of elements in the view."
+msgstr ""
 
 msgid "If ``view.ndim == 0``, ``len(view)`` now raises :exc:`TypeError` instead of returning 1."
 msgstr "اگر ``view.ndim == 0`` باشد، ``len(view)`` اکنون به جای برگرداندن ۱، :exc:`TypeError` پرتاب می‌کند."
@@ -4125,8 +4111,8 @@ msgstr "اکنون می‌توان memoryviewهای یک‌بعدی را اسل�
 msgid "memoryview is now registered automatically with :class:`collections.abc.Sequence`"
 msgstr "memoryview اکنون به‌طور خودکار در :class:`collections.abc.Sequence` ثبت شده است"
 
-msgid "memoryviews can now be indexed with tuple of integers."
-msgstr "اکنون می‌توان memoryviewها را با تاپلی از اعداد صحیح اندیس‌گذاری کرد."
+msgid "memoryviews can now be indexed with a tuple of integers."
+msgstr ""
 
 msgid "memoryview is now a :term:`generic type`."
 msgstr "memoryview اکنون یک :term:`نوع عام <generic type>` است."
@@ -4642,8 +4628,8 @@ msgstr "برای اطلاعات درباره ایمنی نخی اشیای :class
 msgid "Set Types --- :class:`set`, :class:`frozenset`"
 msgstr "انواع مجموعه‌ای --- :class:`set`، :class:`frozenset`"
 
-msgid "A :dfn:`set` object is an unordered collection of distinct :term:`hashable` objects. Common uses include membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference. (For other containers see the built-in :class:`dict`, :class:`list`, and :class:`tuple` classes, and the :mod:`collections` module.)"
-msgstr "یک شیء :dfn:`set`، مجموعه‌ای بدون ترتیب از اشیای :term:`hashable` متمایز است. استفاده‌های رایج شامل بررسی عضویت، حذف تکراری‌ها از یک دنباله، و محاسبه‌ی عملیات ریاضی مانند اشتراک، اجتماع، تفاضل، و تفاضل متقارن است. (برای سایر ظرف‌ها، کلاس‌های توکار :class:`dict`، :class:`list` و :class:`tuple` و ماژول :mod:`collections` را ببینید.)"
+msgid "A :dfn:`set` object is an unordered collection of distinct :term:`hashable` objects. Common uses include membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference. (For other containers see the built-in :class:`dict`, :class:`list`, and :class:`tuple` classes, and the :mod:`collections` module.) See :ref:`time-complexity` for the costs of the various set operations."
+msgstr ""
 
 msgid "Like other collections, sets support ``x in set``, ``len(set)``, and ``for x in set``.  Being an unordered collection, sets do not record element position or order of insertion.  Accordingly, sets do not support indexing, slicing, or other sequence-like behavior."
 msgstr "مانند سایر مجموعه‌ها، مجموعه‌ها از ``x in set``، ``len(set)`` و ``for x in set`` پشتیبانی می‌کنند. از آن‌جا که مجموعه‌ها بدون ترتیب هستند، موقعیت عنصر یا ترتیب درج را ثبت نمی‌کنند. بنابراین، مجموعه‌ها از اندیس‌دهی، اسلایس یا سایر رفتارهای مشابه دنباله پشتیبانی نمی‌کنند."
@@ -4780,8 +4766,8 @@ msgstr "مجموعه‌ها و مجموعه‌های فریزشده (frozenset) 
 msgid "Mapping Types --- :class:`dict`"
 msgstr "انواع نگاشت --- :class:`dict`"
 
-msgid "A :term:`mapping` object maps :term:`hashable` values to arbitrary objects. Mappings are mutable objects.  There is currently only one standard mapping type, the :dfn:`dictionary`.  (For other containers see the built-in :class:`list`, :class:`set`, and :class:`tuple` classes, and the :mod:`collections` module.)"
-msgstr "یک شیء نگاشت (:term:`نگاشت <mapping>`)، مقادیر هش‌پذیر (:term:`hashable`) را به اشیاء دلخواه نگاشت می‌کند. نگاشت‌ها اشیاء تغییرپذیر هستند. در حال حاضر تنها یک نوع نگاشت استاندارد وجود دارد: :dfn:`دیکشنری <dictionary>`. (برای سایر ظرف‌ها، کلاس‌های توکار :class:`list`، :class:`set` و :class:`tuple` و ماژول :mod:`collections` را ببینید.)"
+msgid "A :term:`mapping` object maps :term:`hashable` values to arbitrary objects. Mappings are mutable objects.  There is currently only one standard mapping type, the :dfn:`dictionary`.  (For other containers see the built-in :class:`list`, :class:`set`, and :class:`tuple` classes, and the :mod:`collections` module.) See :ref:`time-complexity` for the costs of the various dictionary operations."
+msgstr ""
 
 msgid "A dictionary's keys are *almost* arbitrary values.  Values that are not :term:`hashable`, that is, values containing lists, dictionaries or other mutable types (that are compared by value rather than by object identity) may not be used as keys. Values that compare equal (such as ``1``, ``1.0``, and ``True``) can be used interchangeably to index the same dictionary entry."
 msgstr "کلیدهای یک دیکشنری *تقریباً* مقادیر دلخواه هستند. مقادیری که :term:`هش‌پذیر <hashable>` نیستند، یعنی مقادیری که شامل فهرست‌ها، دیکشنری‌ها یا سایر انواع تغییرپذیر هستند (که بر اساس مقدار مقایسه می‌شوند، نه بر اساس هویت شیء) نمی‌توانند به‌عنوان کلید استفاده شوند. مقادیری که برابر یکدیگر مقایسه می‌شوند (مانند ``1``، ``1.0`` و ``True``) می‌توانند به‌جای یکدیگر برای اندیس‌دهی به یک آیتم دیکشنری استفاده شوند."
@@ -5596,8 +5582,8 @@ msgstr ""
 "def square(number: int | float) -> int | float:\n"
 "    return number ** 2"
 
-msgid "The ``|`` operand cannot be used at runtime to define unions where one or more members is a forward reference. For example, ``int | \"Foo\"``, where ``\"Foo\"`` is a reference to a class not yet defined, will fail at runtime. For unions which include forward references, present the whole expression as a string, e.g. ``\"int | Foo\"``."
-msgstr "نمی‌توان از عملگر ``|`` در ران‌تایم برای تعریف اجتماع‌هایی (unions) که یک یا چند عضو آن‌ها ارجاع پیشرو باشد استفاده کرد. برای مثال، ``int | \"Foo\"``، که در آن ``\"Foo\"`` ارجاعی به کلاسی است که هنوز تعریف نشده است، در ران‌تایم با شکست مواجه خواهد شد. برای اجتماع‌هایی که شامل ارجاع‌های به جلو هستند، کل عبارت را به‌صورت یک رشته ارائه دهید، مثلاً ``\"int | Foo\"``."
+msgid "The ``|`` operator cannot be used at runtime to define unions where one or more members is a forward reference. For example, ``int | \"Foo\"``, where ``\"Foo\"`` is a reference to a class not yet defined, will fail at runtime. For unions which include forward references, present the whole expression as a string, e.g. ``\"int | Foo\"``."
+msgstr ""
 
 msgid "Union objects can be tested for equality with other union objects.  Details:"
 msgstr "می‌توان اشیاء Union را از نظر برابری با سایر اشیاء Union آزمایش کرد. جزئیات:"
@@ -5757,8 +5743,8 @@ msgstr "برای اطلاعات بیشتر به :ref:`تابع <function>` مر�
 msgid "Methods"
 msgstr "متدها"
 
-msgid "Methods are functions that are called using the attribute notation. There are two flavors: :ref:`built-in methods <builtin-methods>` (such as :meth:`~list.append` on lists) and :ref:`class instance method <instance-methods>`. Built-in methods are described with the types that support them."
-msgstr "متدها توابعی هستند که با استفاده از نمادگذاری ویژگی فراخوانی می‌شوند. دو گونه وجود دارد: :ref:`متدهای توکار <builtin-methods>` (مانند :meth:`~list.append` در فهرست‌ها) و :ref:`متد نمونه‌ی کلاس <instance-methods>`. متدهای توکار همراه با انواعی که از آن‌ها پشتیبانی می‌کنند، توصیف شده‌اند."
+msgid "Methods are functions that are called using the attribute notation. There are two flavors: :ref:`built-in methods <builtin-methods>` (such as :meth:`~list.append` on lists) and :ref:`class instance methods <instance-methods>`. Built-in methods are described with the types that support them."
+msgstr ""
 
 msgid "If you access a method (a function defined in a class namespace) through an instance, you get a special object: a :dfn:`bound method` (also called :ref:`instance method <instance-methods>`) object. When called, it will add the ``self`` argument to the argument list.  Bound methods have two special read-only attributes: :attr:`m.__self__ <method.__self__>` is the object on which the method operates, and :attr:`m.__func__ <method.__func__>` is the function implementing the method.  Calling ``m(arg-1, arg-2, ..., arg-n)`` is completely equivalent to calling ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)``."
 msgstr "اگر از طریق یک نمونه به یک متد (تابعی که در فضای نام یک کلاس تعریف شده است) دسترسی پیدا کنید، یک شیء خاص دریافت می‌کنید: یک شیء :dfn:`متد مقید <bound method>` (bound method) که به آن :ref:`متد نمونه <instance-methods>` نیز گفته می‌شود. هنگام فراخوانی، آرگومان ``self`` را به فهرست آرگومان‌ها اضافه می‌کند. متدهای مقید دو ویژگی فقط‌خواندنی خاص دارند: :attr:`m.__self__ <method.__self__>` شیءای است که متد روی آن عمل می‌کند، و :attr:`m.__func__ <method.__func__>` تابعی است که متد را پیاده‌سازی می‌کند. فراخوانی ``m(arg-1, arg-2, ..., arg-n)`` کاملاً معادل فراخوانی ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)`` است."

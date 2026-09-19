@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 14:19+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -619,7 +619,8 @@ msgstr ""
 "zip(['a', 'b', 'c'], (1, 2, 3)) =>\n"
 "  ('a', 1), ('b', 2), ('c', 3)"
 
-msgid "It doesn't construct an in-memory list and exhaust all the input iterators before returning; instead tuples are constructed and returned only if they're requested.  (The technical term for this behaviour is `lazy evaluation <https://en.wikipedia.org/wiki/Lazy_evaluation>`__.)"
+#, fuzzy
+msgid "It doesn't construct an in-memory list and :term:`exhaust <exhausted>` all the input iterators before returning; instead tuples are constructed and returned only if they're requested. (The technical term for this behaviour is `lazy evaluation <https://en.wikipedia.org/wiki/Lazy_evaluation>`__.)"
 msgstr "این تابع پیش از بازگشت، فهرستی در حافظه نمی‌سازد و تمام پیمایش‌گرهای ورودی را به‌طور کامل مصرف نمی‌کند؛ در عوض، تاپل‌ها تنها در صورتی که درخواست شوند ساخته و برگردانده می‌شوند. (اصطلاح فنی این رفتار `ارزیابی تنبل <https://fa.wikipedia.org/wiki/ارزیابی_کندرو>`__ است.)"
 
 msgid "This iterator is intended to be used with iterables that are all of the same length.  If the iterables are of different lengths, the resulting stream will be the same length as the shortest iterable. ::"
@@ -701,7 +702,8 @@ msgstr ""
 "itertools.repeat('abc', 5) =>\n"
 "  abc, abc, abc, abc, abc"
 
-msgid ":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` takes an arbitrary number of iterables as input, and returns all the elements of the first iterator, then all the elements of the second, and so on, until all of the iterables have been exhausted. ::"
+#, fuzzy
+msgid ":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` takes an arbitrary number of iterables as input, and returns all the elements of the first iterator, then all the elements of the second, and so on, until all of the iterables have been :term:`exhausted`. ::"
 msgstr ":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` تعداد دلخواهی از پیمایش‌پذیرها را به‌عنوان ورودی می‌گیرد و تمام عناصر پیمایش‌گر نخست، سپس تمام عناصر پیمایش‌گر دوم و به همین ترتیب را برمی‌گرداند، تا زمانی که همه پیمایش‌پذیرها به پایان برسند. ::"
 
 msgid ""
@@ -827,7 +829,8 @@ msgstr ""
 "itertools.dropwhile(is_even, itertools.count()) =>\n"
 "  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ..."
 
-msgid ":func:`itertools.compress(data, selectors) <itertools.compress>` takes two iterators and returns only those elements of *data* for which the corresponding element of *selectors* is true, stopping whenever either one is exhausted::"
+#, fuzzy
+msgid ":func:`itertools.compress(data, selectors) <itertools.compress>` takes two iterators and returns only those elements of *data* for which the corresponding element of *selectors* is true, stopping whenever either one is :term:`exhausted`::"
 msgstr ":func:`itertools.compress(data, selectors) <itertools.compress>` دو پیمایش‌گر می‌گیرد و فقط آن عناصری از *data* را برمی‌گرداند که عنصر متناظر آن‌ها در *selectors* درست باشد، و هرگاه هرکدام از آن‌ها تمام شود، متوقف می‌شود::"
 
 msgid ""
@@ -1023,7 +1026,8 @@ msgstr ""
 "server_log = functools.partial(log, subsystem='server')\n"
 "server_log('Unable to open socket')"
 
-msgid ":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` cumulatively performs an operation on all the iterable's elements and, therefore, can't be applied to infinite iterables. *func* must be a function that takes two elements and returns a single value.  :func:`functools.reduce` takes the first two elements A and B returned by the iterator and calculates ``func(A, B)``.  It then requests the third element, C, calculates ``func(func(A, B), C)``, combines this result with the fourth element returned, and continues until the iterable is exhausted.  If the iterable returns no values at all, a :exc:`TypeError` exception is raised.  If the initial value is supplied, it's used as a starting point and ``func(initial_value, A)`` is the first calculation. ::"
+#, fuzzy
+msgid ":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` cumulatively performs an operation on all the iterable's elements and, therefore, can't be applied to infinite iterables. *func* must be a function that takes two elements and returns a single value.  :func:`functools.reduce` takes the first two elements A and B returned by the iterator and calculates ``func(A, B)``.  It then requests the third element, C, calculates ``func(func(A, B), C)``, combines this result with the fourth element returned, and continues until the iterable is :term:`exhausted`.  If the iterable returns no values at all, a :exc:`TypeError` exception is raised.  If the initial value is supplied, it's used as a starting point and ``func(initial_value, A)`` is the first calculation. ::"
 msgstr ":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` به‌صورت تجمیعی عملیاتی را روی همه عناصر پیمایش‌پذیر انجام می‌دهد و بنابراین، نمی‌توان آن را روی پیمایش‌پذیرهای بی‌نهایت اعمال کرد. *func* باید تابعی باشد که دو عنصر را دریافت می‌کند و یک مقدار واحد برمی‌گرداند. :func:`functools.reduce` دو عنصر نخست A و B را که پیمایش‌گر برمی‌گرداند دریافت می‌کند و ``func(A, B)`` را محاسبه می‌کند. سپس عنصر سوم، C، را درخواست می‌کند، ``func(func(A, B), C)`` را محاسبه می‌کند، این نتیجه را با چهارمین عنصر برگردانده‌شده ترکیب می‌کند و ادامه می‌دهد تا پیمایش‌پذیر به پایان برسد. اگر پیمایش‌پذیر اصلاً هیچ مقداری برنگرداند، استثنای :exc:`TypeError` پرتاب می‌شود. اگر initial_value ارائه شود، به‌عنوان نقطه شروع استفاده می‌شود و ``func(initial_value, A)`` نخستین محاسبه است. ::"
 
 msgid ""

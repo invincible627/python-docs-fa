@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-07-25 12:59+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
@@ -169,7 +169,8 @@ msgstr ":class:`float`"
 msgid ":class:`tuple` (of similarly supported objects)"
 msgstr ":class:`tuple` (از اشیاء پشتیبانی‌شده‌ی مشابه)"
 
-msgid "There is a small number of Python types that actually share mutable data between interpreters:"
+#, fuzzy
+msgid "There are a small number of Python types that actually share mutable data between interpreters:"
 msgstr "تعداد اندکی از انواع پایتون وجود دارند که در واقع داده‌های تغییرپذیر را بین مفسرها به اشتراک می‌گذارند:"
 
 msgid ":class:`memoryview`"
@@ -232,7 +233,8 @@ msgstr "برخی از شیء‌ها در واقع به اشتراک گذاشته
 msgid "Run the given source code in the interpreter (in the current thread)."
 msgstr "کد منبع داده‌شده را در مفسر (در نخ فعلی) اجرا کنید."
 
-msgid "Return the result of calling running the given function in the interpreter (in the current thread)."
+#, fuzzy
+msgid "Return the result of running the given function in the interpreter (in the current thread)."
 msgstr "نتیجه‌ی فراخوانی و اجرای تابع داده‌شده در مفسر (در نخ فعلی) را برمی‌گرداند."
 
 msgid "Run the given function in the interpreter (in a new thread)."

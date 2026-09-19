@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 12:11+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
@@ -203,7 +203,8 @@ msgstr "اگر *max_length* نامنفی باشد، این متد حداکثر *
 msgid "If all of the input data was decompressed and returned (either because this was less than *max_length* bytes, or because *max_length* was negative), the :attr:`~.needs_input` attribute will be set to ``True``."
 msgstr "اگر تمام داده‌های ورودی واگشایی و برگردانده شده باشند (خواه به این دلیل که کمتر از *max_length* بایت بودند، خواه به این دلیل که *max_length* منفی بود)، ویژگی :attr:`~.needs_input` روی ``True`` تنظیم خواهد شد."
 
-msgid "Attempting to decompress data after the end of a frame will raise a :exc:`ZstdError`. Any data found after the end of the frame is ignored and saved in the :attr:`~.unused_data` attribute."
+#, fuzzy
+msgid "Attempting to decompress data after the end of a frame will raise a :exc:`EOFError`. Any data found after the end of the frame is ignored and saved in the :attr:`~.unused_data` attribute."
 msgstr "تلاش برای خارج کردن داده‌ها از حالت فشرده پس از پایان یک فریم، باعث پرتاب یک :exc:`ZstdError` می‌شود. هر داده‌ای که پس از پایان فریم یافت شود، نادیده گرفته می‌شود و در ویژگی :attr:`~.unused_data` ذخیره می‌شود."
 
 msgid "``True`` if the end-of-stream marker has been reached."

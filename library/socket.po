@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 13:34+0330\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 15:47+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -802,7 +802,8 @@ msgstr "اشیای سوکت"
 msgid "Create a new socket using the given address family, socket type and protocol number.  The address family should be :const:`AF_INET` (the default), :const:`AF_INET6`, :const:`AF_UNIX`, :const:`AF_CAN`, :const:`AF_PACKET`, or :const:`AF_RDS`. The socket type should be :const:`SOCK_STREAM` (the default), :const:`SOCK_DGRAM`, :const:`SOCK_RAW` or perhaps one of the other ``SOCK_`` constants. The protocol number is usually zero and may be omitted or in the case where the address family is :const:`AF_CAN` the protocol should be one of :const:`CAN_RAW`, :const:`CAN_BCM`, :const:`CAN_ISOTP` or :const:`CAN_J1939`."
 msgstr "با استفاده از خانواده آدرس، نوع سوکت و شماره پروتکل داده‌شده، یک سوکت جدید ایجاد کنید. خانواده آدرس باید :const:`AF_INET` (پیش‌فرض)، :const:`AF_INET6`، :const:`AF_UNIX`، :const:`AF_CAN`، :const:`AF_PACKET` یا :const:`AF_RDS` باشد. نوع سوکت باید :const:`SOCK_STREAM` (پیش‌فرض)، :const:`SOCK_DGRAM`، :const:`SOCK_RAW` یا شاید یکی از سایر ثابت‌های ``SOCK_`` باشد. شماره پروتکل معمولاً صفر است و می‌تواند حذف شود، یا در صورتی که خانواده آدرس :const:`AF_CAN` باشد، پروتکل باید یکی از :const:`CAN_RAW`، :const:`CAN_BCM`، :const:`CAN_ISOTP` یا :const:`CAN_J1939` باشد."
 
-msgid "If *fileno* is specified, the values for *family*, *type*, and *proto* are auto-detected from the specified file descriptor.  Auto-detection can be overruled by calling the function with explicit *family*, *type*, or *proto* arguments.  This only affects how Python represents e.g. the return value of :meth:`socket.getpeername` but not the actual OS resource.  Unlike :func:`socket.fromfd`, *fileno* will return the same socket and not a duplicate. This may help close a detached socket using :meth:`socket.close`."
+#, fuzzy
+msgid "If *fileno* is specified, the values for *family*, *type*, and *proto* are auto-detected from the specified file descriptor.  Auto-detection can be overruled by calling the function with explicit *family*, *type*, or *proto* arguments.  This only affects how Python represents e.g. the return value of :meth:`socket.getpeername` but not the actual OS resource.  Unlike :func:`socket.fromfd`, *fileno* will return the same socket and not a duplicate. This may help close a detached socket using :meth:`~socket.socket.close`."
 msgstr "اگر *fileno* مشخص شده باشد، مقادیر *family*، *type* و *proto* به‌صورت خودکار از توصیف‌گر پرونده مشخص‌شده تشخیص داده می‌شوند. می‌توان با فراخوانی تابع با آرگومان‌های صریح *family*، *type* یا *proto*، تشخیص خودکار را لغو کرد. این موضوع فقط بر نحوه‌ی بازنمایی پایتون، برای مثال مقدار بازگشتی :meth:`socket.getpeername`، تأثیر می‌گذارد، نه بر منبع واقعی سیستم‌عامل. برخلاف :func:`socket.fromfd`، *fileno* همان سوکت را برمی‌گرداند، نه یک سوکت تکراری. این ممکن است به بستن یک سوکت جداشده با استفاده از :meth:`socket.close` کمک کند."
 
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.__new__`` with arguments ``self``, ``family``, ``type``, ``protocol``."
@@ -841,7 +842,8 @@ msgstr "پروتکل IPPROTO_MPTCP افزوده شد."
 msgid "Socket objects have the following methods.  Except for :meth:`~socket.makefile`, these correspond to Unix system calls applicable to sockets."
 msgstr "اشیای سوکت متدهای زیر را دارند. به‌جز :meth:`~socket.makefile`، این متدها معادل فراخوانی‌های سیستمی یونیکس هستند که برای سوکت‌ها کاربرد دارند."
 
-msgid "Support for the :term:`context manager` protocol was added.  Exiting the context manager is equivalent to calling :meth:`~socket.close`."
+#, fuzzy
+msgid "Support for the :term:`context manager` protocol was added.  Exiting the context manager is equivalent to calling :meth:`~socket.socket.close`."
 msgstr "پشتیبانی از پروتکل :term:`context manager` افزوده شد. خروج از مدیر زمینه معادل فراخوانی :meth:`~socket.close` است."
 
 msgid "Accept a connection. The socket must be bound to an address and listening for connections. The return value is a pair ``(conn, address)`` where *conn* is a *new* socket object usable to send and receive data on the connection, and *address* is the address bound to the socket on the other end of the connection."
@@ -940,7 +942,8 @@ msgstr "یک :term:`file object` مرتبط با سوکت را برمی‌گرد
 msgid "The socket must be in blocking mode; it can have a timeout, but the file object's internal buffer may end up in an inconsistent state if a timeout occurs."
 msgstr "سوکت باید در حالت مسدودکننده باشد؛ می‌تواند مهلت زمانی داشته باشد، اما اگر مهلت زمانی رخ دهد، بافر داخلی شیء پرونده ممکن است در وضعیت ناسازگار قرار گیرد."
 
-msgid "Closing the file object returned by :meth:`makefile` won't close the original socket unless all other file objects have been closed and :meth:`socket.close` has been called on the socket object."
+#, fuzzy
+msgid "Closing the file object returned by :meth:`makefile` won't close the original socket unless all other file objects have been closed and :meth:`~socket.socket.close` has been called on the socket object."
 msgstr "بستن شیء پرونده‌ای که توسط :meth:`makefile` برگردانده می‌شود، سوکت اصلی را نمی‌بندد، مگر آنکه همه‌ی اشیاء پرونده دیگر بسته شده باشند و :meth:`socket.close` روی شیء سوکت فراخوانی شده باشد."
 
 msgid "On Windows, the file-like object created by :meth:`makefile` cannot be used where a file object with a file descriptor is expected, such as the stream arguments of :meth:`subprocess.Popen`."

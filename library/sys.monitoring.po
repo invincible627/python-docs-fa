@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-08-28 11:12+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -66,6 +66,9 @@ msgstr "ثبت تمام رویدادها و توابع کال‌بک مرتبط 
 
 msgid "Should be called once a tool no longer requires *tool_id*. Will call :func:`clear_tool_id` before releasing *tool_id*."
 msgstr "باید هنگامی فراخوانی شود که یک ابزار دیگر به *tool_id* نیازی ندارد. پیش از آزادسازی *tool_id*، :func:`clear_tool_id` را فراخوانی می‌کند."
+
+msgid "Now calls :func:`clear_tool_id` before releasing *tool_id*. Previously, it would not disable global or local events associated with *tool_id*, nor unregister any callback functions."
+msgstr ""
 
 msgid "Returns the name of the tool if *tool_id* is in use, otherwise it returns ``None``. *tool_id* must be in the range 0 to 5 inclusive."
 msgstr "اگر *tool_id* در حال استفاده باشد، نام ابزار را برمی‌گرداند؛ در غیر این صورت ``None`` را برمی‌گرداند. *tool_id* باید در بازه‌ی ۰ تا ۵ (شامل هر دو) باشد."

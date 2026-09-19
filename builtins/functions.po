@@ -1,31 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
+# Persian translations for Python package.
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
-# AmirHossein SAMIMI, 2025
-# taha haghgoo, 2025
-# sadra nobari, 2025
-# Ramiz karimian, 2025
-# Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025
-# khosro azimi, 2025
-# Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+# Automatically generated, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
-"PO-Revision-Date: 2026-09-12 18:02+0330\n"
-"Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"PO-Revision-Date: 2026-09-19 20:08+0330\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.6\n"
 
 msgid "Built-in Functions"
 msgstr "توابع توکار"
@@ -331,8 +320,8 @@ msgstr ""
 "            return False\n"
 "    return True"
 
-msgid "When awaited, return the next item from the given :term:`asynchronous iterator`, or *default* if given and the iterator is exhausted."
-msgstr "هنگام اِنتظار (await)، عنصر بعدی را از :term:`asynchronous iterator` داده شده برمی‌گرداند، یا اگر آرگومان *default* ارائه شده و پیمایش‌گر به پایان رسیده باشد، مقدار *default* را برمی‌گرداند."
+msgid "When awaited, return the next item from the given :term:`asynchronous iterator`, or *default* if given and the iterator is :term:`exhausted`."
+msgstr ""
 
 msgid "This is the async variant of the :func:`next` builtin, and behaves similarly."
 msgstr "این، نسخه ناهمگامِ تابع توکار :func:`next` است و به طور مشابه عمل می‌کند."
@@ -992,8 +981,8 @@ msgstr "رفتار ``locals()`` در comprehensionها مطابق :pep:`709` ب�
 msgid "As part of :pep:`667`, the semantics of mutating the mapping objects returned from this function are now defined. The behavior in :term:`optimized scopes <optimized scope>` is now as described above. Aside from being defined, the behaviour in other scopes remains unchanged from previous versions."
 msgstr "به‌عنوان بخشی از :pep:`667`، اکنون معناشناسی تغییر دادن اشیای نگاشتی که این تابع برمی‌گرداند، تعریف شده است. رفتار این تابع در :term:`محدوده‌های بهینه‌شده <optimized scope>` اکنون همان‌گونه است که در بالا توضیح داده شد. به‌جز تعریف رسمی این رفتار، عملکرد آن در سایر محدوده‌ها نسبت به نسخه‌های پیشین تغییری نکرده است."
 
-msgid "Return an iterator that applies *function* to every item of *iterable*, yielding the results.  If additional *iterables* arguments are passed, *function* must take that many arguments and is applied to the items from all iterables in parallel.  With multiple iterables, the iterator stops when the shortest iterable is exhausted.  If *strict* is ``True`` and one of the iterables is exhausted before the others, a :exc:`ValueError` is raised. For cases where the function inputs are already arranged into argument tuples, see :func:`itertools.starmap`."
-msgstr "پیمایش‌گری را برمی‌گرداند که *function* را روی هر عنصر *iterable* اعمال کرده و نتایج را تولید می‌کند. اگر آرگومان‌های *iterables* اضافی ارائه شوند، *function* باید به همان تعداد آرگومان بپذیرد و به‌طور همزمان روی عناصر همه‌ی پیمایش‌پذیرها اعمال شود. در صورت وجود چند پیمایش‌پذیر، پیمایش‌گر زمانی متوقف می‌شود که کوتاه‌ترین پیمایش‌پذیر به پایان برسد. اگر *strict* برابر ``True`` باشد و یکی از پیمایش‌پذیرها زودتر از بقیه به پایان برسد، استثنای :exc:`ValueError` پرتاب می‌شود. در مواردی که ورودی‌های تابع از پیش به‌صورت تاپل‌های آرگومان مرتب شده‌اند، به :func:`itertools.starmap` مراجعه کنید."
+msgid "Return an iterator that applies *function* to every item of *iterable*, yielding the results.  If additional *iterables* arguments are passed, *function* must take that many arguments and is applied to the items from all iterables in parallel.  With multiple iterables, the iterator stops when the shortest iterable is :term:`exhausted`.  If *strict* is ``True`` and one of the iterables is exhausted before the others, a :exc:`ValueError` is raised. For cases where the function inputs are already arranged into argument tuples, see :func:`itertools.starmap`."
+msgstr ""
 
 msgid "Added the *strict* parameter."
 msgstr "پارامتر *strict* اضافه شد."
@@ -1028,8 +1017,8 @@ msgstr "اگر یک آرگومان جایگاهی ارائه شود، باید �
 msgid "If multiple items are minimal, the function returns the first one encountered.  This is consistent with other sort-stability preserving tools such as ``sorted(iterable, key=keyfunc)[0]`` and ``heapq.nsmallest(1, iterable, key=keyfunc)``."
 msgstr "اگر چندین عنصر دارای کمترین مقدار باشند، تابع نخستین موردی را که با آن برخورد کند برمی‌گرداند. این رفتار با سایر ابزارهایی که پایداری مرتب‌سازی را حفظ می‌کنند، مانند ``sorted(iterable, key=keyfunc)[0]`` و ``heapq.nsmallest(1, iterable, key=keyfunc)``، سازگار است."
 
-msgid "Retrieve the next item from the :term:`iterator` by calling its :meth:`~iterator.__next__` method.  If *default* is given, it is returned if the iterator is exhausted, otherwise :exc:`StopIteration` is raised."
-msgstr "با فراخوانی متد :meth:`~iterator.__next__`، عنصر بعدی را از :term:`پیمایش‌گر <iterator>` دریافت می‌کند. اگر *default* مشخص شده باشد، در صورت پایان یافتن پیمایش‌گر همان مقدار برگردانده می‌شود؛ در غیر این صورت، استثنای :exc:`StopIteration` پرتاب می‌شود."
+msgid "Retrieve the next item from the :term:`iterator` by calling its :meth:`~iterator.__next__` method.  If *default* is given, it is returned if the iterator is :term:`exhausted`, otherwise :exc:`StopIteration` is raised."
+msgstr ""
 
 msgid "This is the ultimate base class of all other classes. It has methods that are common to all instances of Python classes. When the constructor is called, it returns a new featureless object. The constructor does not accept any arguments."
 msgstr "این، کلاس پایه‌ی نهایی همه‌ی کلاس‌های دیگر است. این کلاس متدهایی را در اختیار دارد که میان تمام نمونه‌های کلاس‌های پایتون مشترک هستند. هنگام فراخوانی سازنده‌ی آن، یک شیء جدید و بدون ویژگی ایجاد می‌شود. این سازنده هیچ آرگومانی را نمی‌پذیرد."
@@ -1696,8 +1685,8 @@ msgstr ":func:`zip` تنبل است؛ عناصر تا زمانی که روی پ�
 msgid "One thing to consider is that the iterables passed to :func:`zip` could have different lengths; sometimes by design, and sometimes because of a bug in the code that prepared these iterables.  Python offers three different approaches to dealing with this issue:"
 msgstr "یکی از نکاتی که باید در نظر داشت این است که پیمایش‌پذیرهای ارسال‌شده به :func:`zip` ممکن است طول‌های متفاوتی داشته باشند؛ گاهی این موضوع عمدی است و گاهی به دلیل وجود یک باگ در کدی است که این پیمایش‌پذیرها را آماده کرده است. پایتون سه روش مختلف برای برخورد با این مسئله ارائه می‌دهد:"
 
-msgid "By default, :func:`zip` stops when the shortest iterable is exhausted. It will ignore the remaining items in the longer iterables, cutting off the result to the length of the shortest iterable::"
-msgstr "به‌طور پیش‌فرض، :func:`zip` زمانی متوقف می‌شود که کوتاه‌ترین پیمایش‌پذیر به پایان برسد. در این حالت، عناصر باقی‌مانده در پیمایش‌پذیرهای بلندتر نادیده گرفته می‌شوند و طول نتیجه برابر با طول کوتاه‌ترین پیمایش‌پذیر خواهد بود::"
+msgid "By default, :func:`zip` stops when the shortest iterable is :term:`exhausted`. It will ignore the remaining items in the longer iterables, cutting off the result to the length of the shortest iterable::"
+msgstr ""
 
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
@@ -1716,8 +1705,8 @@ msgstr ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
 
-msgid "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable is exhausted before the others:"
-msgstr "برخلاف رفتار پیش‌فرض، اگر یکی از پیمایش‌پذیرها پیش از بقیه به پایان برسد، استثنای :exc:`ValueError` پرتاب می‌کند:"
+msgid "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable is :term:`exhausted` before the others:"
+msgstr ""
 
 msgid "Without the ``strict=True`` argument, any bug that results in iterables of different lengths will be silenced, possibly manifesting as a hard-to-find bug in another part of the program."
 msgstr "بدون آرگومان ``strict=True``، هر اشکالی که باعث شود پیمایش‌پذیرها طول‌های متفاوتی داشته باشند، بی‌صدا نادیده گرفته می‌شود و ممکن است در بخش دیگری از برنامه به‌صورت یک باگ دشوار برای یافتن ظاهر شود."

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 10:11+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -284,10 +284,12 @@ msgstr "یک متد اختیاری که هرگاه فراخوانی شود، ب�
 msgid "An abstract base class for a :term:`loader`. See :pep:`302` for the exact definition for a loader."
 msgstr "یک کلاس پایه انتزاعی برای :term:`بارگذار <loader>`. برای تعریف دقیق بارگذار، :pep:`302` را ببینید."
 
-msgid "Loaders that wish to support resource reading should implement a :meth:`get_resource_reader` method as specified by :class:`importlib.resources.abc.ResourceReader`."
+#, fuzzy
+msgid "Loaders that wish to support resource reading should implement a :meth:`!get_resource_reader` method as specified by :class:`importlib.resources.abc.ResourceReader`."
 msgstr "بارگذارهایی که می‌خواهند از خواندن منابع پشتیبانی کنند، باید یک متد :meth:`get_resource_reader` را همان‌طور که :class:`importlib.resources.abc.ResourceReader` مشخص کرده است، پیاده‌سازی کنند."
 
-msgid "Introduced the optional :meth:`get_resource_reader` method."
+#, fuzzy
+msgid "Introduced the optional :meth:`!get_resource_reader` method."
 msgstr "متد اختیاری :meth:`get_resource_reader` معرفی شد."
 
 msgid "A method that returns the module object to use when importing a module.  This method may return ``None``, indicating that default module creation semantics should take place."
@@ -530,13 +532,15 @@ msgstr "یک :term:`importer` برای ماژول‌های توکار. همه‌
 msgid "Only class methods are defined by this class to alleviate the need for instantiation."
 msgstr "این کلاس فقط متدهای کلاس را تعریف می‌کند تا نیاز به نمونه‌سازی را برطرف کند."
 
-msgid "As part of :pep:`489`, the builtin importer now implements :meth:`Loader.create_module` and :meth:`Loader.exec_module`"
+#, fuzzy
+msgid "As part of :pep:`489`, the builtin importer now implements :meth:`Loader.create_module <importlib.abc.Loader.create_module>` and :meth:`Loader.exec_module <importlib.abc.Loader.exec_module>`"
 msgstr "به‌عنوان بخشی از :pep:`489`، واردکننده‌ی توکار اکنون :meth:`Loader.create_module` و :meth:`Loader.exec_module` را پیاده‌سازی می‌کند"
 
 msgid "An :term:`importer` for frozen modules. This class implements the :class:`importlib.abc.MetaPathFinder` and :class:`importlib.abc.InspectLoader` ABCs."
 msgstr "یک ایمپورت‌کننده (:term:`importer`) برای ماژول‌های فریز. این کلاس، کلاس‌های پایه انتزاعی (ABCs) :class:`importlib.abc.MetaPathFinder` و :class:`importlib.abc.InspectLoader` را پیاده‌سازی می‌کند."
 
-msgid "Gained :meth:`~Loader.create_module` and :meth:`~Loader.exec_module` methods."
+#, fuzzy
+msgid "Gained :meth:`~importlib.abc.Loader.create_module` and :meth:`~importlib.abc.Loader.exec_module` methods."
 msgstr "متدهای :meth:`~Loader.create_module` و :meth:`~Loader.exec_module` اضافه شدند."
 
 msgid ":term:`Finder <finder>` for modules declared in the Windows registry.  This class implements the :class:`importlib.abc.MetaPathFinder` ABC."
@@ -754,7 +758,8 @@ msgstr "این ماژول شامل اشیاء مختلفی است که در سا
 msgid "The bytes which represent the bytecode version number. If you need help with loading/writing bytecode then consider :class:`importlib.abc.SourceLoader`."
 msgstr "بایت‌هایی که شماره‌ی نسخه‌ی بایت‌کد را نشان می‌دهند. اگر برای بارگذاری/نوشتن بایت‌کد به کمک نیاز دارید، :class:`importlib.abc.SourceLoader` را در نظر بگیرید."
 
-msgid "Return the :pep:`3147`/:pep:`488` path to the byte-compiled file associated with the source *path*.  For example, if *path* is ``/foo/bar/baz.py`` the return value would be ``/foo/bar/__pycache__/baz.cpython-32.pyc`` for Python 3.2. The ``cpython-32`` string comes from the current magic tag (see :func:`get_tag`; if :attr:`sys.implementation.cache_tag` is not defined then :exc:`NotImplementedError` will be raised)."
+#, fuzzy
+msgid "Return the :pep:`3147`/:pep:`488` path to the byte-compiled file associated with the source *path*.  For example, if *path* is ``/foo/bar/baz.py`` the return value would be ``/foo/bar/__pycache__/baz.cpython-32.pyc`` for Python 3.2. The ``cpython-32`` string comes from the current magic tag (see :attr:`sys.implementation.cache_tag <sys.implementation>`; if it is not defined then :exc:`NotImplementedError` will be raised)."
 msgstr "مسیر :pep:`3147`/:pep:`488` پرونده‌ی کامپایل‌شده به بایت (byte-compiled) مرتبط با مسیر منبع *path* را بازمی‌گرداند. برای مثال، اگر *path* برابر ``/foo/bar/baz.py`` باشد، مقدار بازگشتی برای پایتون 3.2 برابر ``/foo/bar/__pycache__/baz.cpython-32.pyc`` خواهد بود. رشته‌ی ``cpython-32`` از برچسب جادویی فعلی (magic tag) گرفته می‌شود (به :func:`get_tag` مراجعه کنید؛ اگر :attr:`sys.implementation.cache_tag` تعریف‌نشده باشد، :exc:`NotImplementedError` پرتاب می‌شود)."
 
 msgid "The *optimization* parameter is used to specify the optimization level of the bytecode file. An empty string represents no optimization, so ``/foo/bar/baz.py`` with an *optimization* of ``''`` will result in a bytecode path of ``/foo/bar/__pycache__/baz.cpython-32.pyc``. ``None`` causes the interpreter's optimization level to be used. Any other value's string representation is used, so ``/foo/bar/baz.py`` with an *optimization* of ``2`` will lead to the bytecode path of ``/foo/bar/__pycache__/baz.cpython-32.opt-2.pyc``. The string representation of *optimization* can only be alphanumeric, else :exc:`ValueError` is raised."
@@ -769,7 +774,8 @@ msgstr "پارامتر *optimization* افزوده شد و پارامتر *debug
 msgid "Accepts a :term:`path-like object`."
 msgstr "یک :term:`شیء شبه‌مسیر <path-like object>` را می‌پذیرد."
 
-msgid "Given the *path* to a :pep:`3147` file name, return the associated source code file path.  For example, if *path* is ``/foo/bar/__pycache__/baz.cpython-32.pyc`` the returned path would be ``/foo/bar/baz.py``.  *path* need not exist, however if it does not conform to :pep:`3147` or :pep:`488` format, a :exc:`ValueError` is raised. If :attr:`sys.implementation.cache_tag` is not defined, :exc:`NotImplementedError` is raised."
+#, fuzzy
+msgid "Given the *path* to a :pep:`3147` file name, return the associated source code file path.  For example, if *path* is ``/foo/bar/__pycache__/baz.cpython-32.pyc`` the returned path would be ``/foo/bar/baz.py``.  *path* need not exist, however if it does not conform to :pep:`3147` or :pep:`488` format, a :exc:`ValueError` is raised. If :attr:`sys.implementation.cache_tag <sys.implementation>` is not defined, :exc:`NotImplementedError` is raised."
 msgstr "با داشتن *path* به یک نام پرونده :pep:`3147`، مسیر پرونده کد منبع مرتبط برگردانده می‌شود. برای مثال، اگر *path* برابر ``/foo/bar/__pycache__/baz.cpython-32.pyc`` باشد، مسیر برگردانده‌شده ``/foo/bar/baz.py`` خواهد بود. لازم نیست *path* وجود داشته باشد، اما اگر با قالب :pep:`3147` یا :pep:`488` مطابقت نداشته باشد، استثنای :exc:`ValueError` پرتاب می‌شود. اگر :attr:`sys.implementation.cache_tag` تعریف‌نشده باشد، استثنای :exc:`NotImplementedError` پرتاب می‌شود."
 
 msgid "Decode the given bytes representing source code and return it as a string with universal newlines (as required by :meth:`importlib.abc.InspectLoader.get_source`)."
@@ -793,7 +799,8 @@ msgstr ":term:`مشخصات <module spec>` یک ماژول را بیابید، �
 msgid "If **name** is for a submodule (contains a dot), the parent module is automatically imported."
 msgstr "اگر **name** مربوط به یک زیرماژول باشد (شامل نقطه باشد)، ماژول والد به‌طور خودکار ایمپورت می‌شود."
 
-msgid "**name** and **package** work the same as for :func:`import_module`."
+#, fuzzy
+msgid "**name** and **package** work the same as for :func:`importlib.import_module`."
 msgstr "عملکرد **name** و **package** همانند عملکرد آن‌ها در :func:`import_module` است."
 
 msgid "Raises :exc:`ModuleNotFoundError` instead of :exc:`AttributeError` if **package** is in fact not a package (i.e. lacks a :attr:`~module.__path__` attribute)."
@@ -808,7 +815,8 @@ msgstr "اگر :meth:`spec.loader.create_module <importlib.abc.Loader.create_mod
 msgid "This function is preferred over using :class:`types.ModuleType` to create a new module as **spec** is used to set as many import-controlled attributes on the module as possible."
 msgstr "این تابع به استفاده از :class:`types.ModuleType` برای ایجاد یک ماژول جدید ترجیح داده می‌شود، زیرا از **spec** استفاده می‌شود تا هر تعداد ممکن از ویژگی‌های کنترل‌شده توسط ایمپورت بر روی ماژول تنظیم شود."
 
-msgid "A factory function for creating a :class:`~importlib.machinery.ModuleSpec` instance based on a loader.  The parameters have the same meaning as they do for ModuleSpec.  The function uses available :term:`loader` APIs, such as :meth:`InspectLoader.is_package`, to fill in any missing information on the spec."
+#, fuzzy
+msgid "A factory function for creating a :class:`~importlib.machinery.ModuleSpec` instance based on a loader.  The parameters have the same meaning as they do for ModuleSpec.  The function uses available :term:`loader` APIs, such as :meth:`InspectLoader.is_package <importlib.abc.InspectLoader.is_package>`, to fill in any missing information on the spec."
 msgstr "یک تابع کارخانه‌ای برای ایجاد نمونه‌ای از :class:`~importlib.machinery.ModuleSpec` بر اساس یک بارگذار. پارامترها همان معنایی را دارند که برای ModuleSpec دارند. این تابع از APIهای در دسترس :term:`بارگذار <loader>`، مانند :meth:`InspectLoader.is_package`، برای تکمیل هرگونه اطلاعات ناقص در مشخصات استفاده می‌کند."
 
 msgid "A factory function for creating a :class:`~importlib.machinery.ModuleSpec` instance based on the path to a file.  Missing information will be filled in on the spec by making use of loader APIs and by the implication that the module will be file-based."

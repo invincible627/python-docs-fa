@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 07:00+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -1380,6 +1380,10 @@ msgstr "idna"
 msgid "Implement :rfc:`3490`, see also :mod:`encodings.idna`. Only ``errors='strict'`` is supported."
 msgstr "پیاده‌سازی :rfc:`3490`، همچنین :mod:`encodings.idna` را ببینید. فقط ``errors='strict'`` پشتیبانی می‌شود."
 
+#, fuzzy
+msgid "This codec builds on ``punycode``, whose algorithms scale poorly, so limit the length of untrusted input."
+msgstr "الگوریتم‌های کدگشایی و کدگذاری مقیاس‌پذیری ضعیفی دارند، بنابراین طول ورودی غیرقابل‌اعتماد را محدود کنید."
+
 msgid "mbcs"
 msgstr "mbcs"
 
@@ -1613,6 +1617,10 @@ msgstr ":mod:`!encodings.idna` --- نام‌های دامنه بین‌المل�
 
 msgid "This module implements :rfc:`3490` (Internationalized Domain Names in Applications) and :rfc:`3492` (Nameprep: A Stringprep Profile for Internationalized Domain Names (IDN)). It builds upon the ``punycode`` encoding and :mod:`stringprep`."
 msgstr "این ماژول :rfc:`3490` (نام‌های دامنه بین‌المللی‌سازی‌شده در کاربردها) و :rfc:`3492` (Nameprep: یک پروفایل Stringprep برای نام‌های دامنه بین‌المللی‌سازی‌شده (IDN)) را پیاده‌سازی می‌کند. این ماژول بر پایه‌ی کدگذاری ``punycode`` و :mod:`stringprep` ساخته شده است."
+
+#, fuzzy
+msgid "This module builds on ``punycode``, whose algorithms scale poorly, so limit the length of untrusted input."
+msgstr "الگوریتم‌های کدگشایی و کدگذاری مقیاس‌پذیری ضعیفی دارند، بنابراین طول ورودی غیرقابل‌اعتماد را محدود کنید."
 
 msgid "If you need the IDNA 2008 standard from :rfc:`5891` and :rfc:`5895`, use the third-party :pypi:`idna` module."
 msgstr "اگر به استاندارد IDNA 2008 از :rfc:`5891` و :rfc:`5895` نیاز دارید، از ماژول شخص ثالث :pypi:`idna` استفاده کنید."

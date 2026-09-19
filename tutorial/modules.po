@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 11:04+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -650,15 +650,6 @@ msgstr ""
 msgid "Note that relative imports are based on the name of the current module's package. Since the main module does not have a package, modules intended for use as the main module of a Python application must always use absolute imports."
 msgstr "توجه کنید که ایمپورت کردن‌های نسبی بر اساس نام بسته‌ی ماژول فعلی هستند. از آنجا که ماژول اصلی هیچ بسته‌ای ندارد، ماژول‌هایی که قرار است به‌عنوان ماژول اصلی یک برنامه‌ی پایتون استفاده شوند، باید همیشه از ایمپورت کردن‌های مطلق استفاده کنند."
 
-msgid "Packages in Multiple Directories"
-msgstr "بسته‌ها در چندین پوشه"
-
-msgid "Packages support one more special attribute, :attr:`~module.__path__`.  This is initialized to be a :term:`sequence` of strings containing the name of the directory holding the package's :file:`__init__.py` before the code in that file is executed.  This variable can be modified; doing so affects future searches for modules and subpackages contained in the package."
-msgstr "بسته‌ها یک ویژگی ویژه‌ی دیگر را نیز پشتیبانی می‌کنند: :attr:`~module.__path__`. این ویژگی مقداردهی اولیه می‌شود تا پیش از اجرای کد موجود در آن پرونده، یک :term:`دنباله <sequence>` از رشته‌ها باشد که نام پوشه‌ی شامل :file:`__init__.py` بسته را در خود دارد. این متغیر قابل تغییر است؛ تغییر آن بر جست‌وجوهای آینده برای ماژول‌ها و زیربسته‌های موجود در بسته تأثیر می‌گذارد."
-
-msgid "While this feature is not often needed, it can be used to extend the set of modules found in a package."
-msgstr "اگرچه این قابلیت معمولاً موردنیاز نیست، می‌توان از آن برای گسترش مجموعه‌ی ماژول‌هایی که در یک بسته پیدا می‌شوند استفاده کرد."
-
 msgid "Footnotes"
 msgstr "پانویس‌ها"
 
@@ -682,3 +673,12 @@ msgstr "builtins"
 
 msgid "__all__"
 msgstr "__all__"
+
+#~ msgid "Packages in Multiple Directories"
+#~ msgstr "بسته‌ها در چندین پوشه"
+
+#~ msgid "Packages support one more special attribute, :attr:`~module.__path__`.  This is initialized to be a :term:`sequence` of strings containing the name of the directory holding the package's :file:`__init__.py` before the code in that file is executed.  This variable can be modified; doing so affects future searches for modules and subpackages contained in the package."
+#~ msgstr "بسته‌ها یک ویژگی ویژه‌ی دیگر را نیز پشتیبانی می‌کنند: :attr:`~module.__path__`. این ویژگی مقداردهی اولیه می‌شود تا پیش از اجرای کد موجود در آن پرونده، یک :term:`دنباله <sequence>` از رشته‌ها باشد که نام پوشه‌ی شامل :file:`__init__.py` بسته را در خود دارد. این متغیر قابل تغییر است؛ تغییر آن بر جست‌وجوهای آینده برای ماژول‌ها و زیربسته‌های موجود در بسته تأثیر می‌گذارد."
+
+#~ msgid "While this feature is not often needed, it can be used to extend the set of modules found in a package."
+#~ msgstr "اگرچه این قابلیت معمولاً موردنیاز نیست، می‌توان از آن برای گسترش مجموعه‌ی ماژول‌هایی که در یک بسته پیدا می‌شوند استفاده کرد."

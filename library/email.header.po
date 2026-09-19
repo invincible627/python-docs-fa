@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 01:05+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -60,7 +60,8 @@ msgstr ""
 ">>> msg.as_string()\n"
 "'Subject: =?iso-8859-1?q?p=F6stal?=\\n\\n'"
 
-msgid "Notice here how we wanted the :mailheader:`Subject` field to contain a non-ASCII character?  We did this by creating a :class:`Header` instance and passing in the character set that the byte string was encoded in.  When the subsequent :class:`~email.message.Message` instance was flattened, the :mailheader:`Subject` field was properly :rfc:`2047` encoded.  MIME-aware mail readers would show this header using the embedded ISO-8859-1 character."
+#, fuzzy
+msgid "Notice here how we wanted the :mailheader:`Subject` field to contain a non-ASCII character?  We did this by creating a :class:`Header` instance and passing in the character set to use when encoding it.  When the subsequent :class:`~email.message.Message` instance was flattened, the :mailheader:`Subject` field was properly :rfc:`2047` encoded.  MIME-aware mail readers would show this header using the embedded ISO-8859-1 character."
 msgstr "در اینجا توجه کنید که چگونه می‌خواستیم فیلد :mailheader:`Subject` حاوی یک نویسه‌ی غیر ASCII باشد؟ این کار را با ایجاد یک نمونه از :class:`Header` و ارسال مجموعه نویسه‌ای که رشته بایتی با آن کدگذاری شده بود، انجام دادیم. هنگامی که نمونه بعدی :class:`~email.message.Message` به‌صورت رشته درآمد، فیلد :mailheader:`Subject` به‌درستی مطابق :rfc:`2047` کدگذاری شد. ایمیل‌خوان‌های آگاه از MIME، این سرآیند را با استفاده از نویسه‌ی ISO-8859-1 تعبیه‌شده نمایش می‌دهند."
 
 msgid "Here is the :class:`Header` class description:"
@@ -120,7 +121,8 @@ msgstr "آرگومان *linesep* افزوده شد."
 msgid "The :class:`Header` class also provides a number of methods to support standard operators and built-in functions."
 msgstr "کلاس :class:`Header` همچنین تعدادی متد برای پشتیبانی از عملگرهای استاندارد و توابع توکار فراهم می‌کند."
 
-msgid "Returns an approximation of the :class:`Header` as a string, using an unlimited line length.  All pieces are converted to unicode using the specified encoding and joined together appropriately.  Any pieces with a charset of ``'unknown-8bit'`` are decoded as ASCII using the ``'replace'`` error handler."
+#, fuzzy
+msgid "Returns an approximation of the :class:`Header` as a string, using an unlimited line length.  All pieces are decoded using the specified encoding and joined together appropriately.  Any pieces with a charset of ``'unknown-8bit'`` are decoded as ASCII using the ``'replace'`` error handler."
 msgstr "تقریبی از :class:`Header` را به‌صورت یک رشته، با استفاده از طول خط نامحدود برمی‌گرداند. تمام بخش‌ها با استفاده از کدگذاری مشخص‌شده به یونیکد تبدیل می‌شوند و به‌شکل مناسبی به هم پیوند داده می‌شوند. هر بخشی که مجموعه‌نویسه‌ی آن ``'unknown-8bit'`` باشد، با استفاده از هندلر خطای ``'replace'`` به‌صورت ASCII کدگشایی می‌شود."
 
 msgid "Added handling for the ``'unknown-8bit'`` charset."

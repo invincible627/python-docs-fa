@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 10:44+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -724,7 +724,8 @@ msgstr ""
 "        d.append(elem)\n"
 "        yield s / n"
 
-msgid "A `round-robin scheduler <https://en.wikipedia.org/wiki/Round-robin_scheduling>`_ can be implemented with input iterators stored in a :class:`deque`.  Values are yielded from the active iterator in position zero.  If that iterator is exhausted, it can be removed with :meth:`~deque.popleft`; otherwise, it can be cycled back to the end with the :meth:`~deque.rotate` method::"
+#, fuzzy
+msgid "A `round-robin scheduler <https://en.wikipedia.org/wiki/Round-robin_scheduling>`_ can be implemented with input iterators stored in a :class:`deque`.  Values are yielded from the active iterator in position zero.  If that iterator is :term:`exhausted`, it can be removed with :meth:`~deque.popleft`; otherwise, it can be cycled back to the end with the :meth:`~deque.rotate` method::"
 msgstr "می‌توان یک `زمان‌بند نوبتی (round-robin scheduler) <https://fa.wikipedia.org/wiki/زمان‌بندی_نوبت_گردشی>`_ را با پیمایش‌گرهای ورودی ذخیره‌شده در یک :class:`deque` پیاده‌سازی کرد. مقادیر از پیمایش‌گر فعال در اندیس ۰ تولید می‌شوند. اگر آن پیمایش‌گر به پایان برسد، می‌توان آن را با :meth:`~deque.popleft` حذف کرد؛ در غیر این صورت، می‌توان آن را با متد :meth:`~deque.rotate` به انتها چرخاند::"
 
 msgid ""

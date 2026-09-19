@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 13:06+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -29,7 +29,8 @@ msgstr ":mod:`email`: مثال‌ها"
 msgid "Here are a few examples of how to use the :mod:`email` package to read, write, and send simple email messages, as well as more complex MIME messages."
 msgstr "در اینجا چند مثال از نحوه استفاده از بسته :mod:`email` برای خواندن، نوشتن و ارسال پیام‌های ایمیلی ساده، و همچنین پیام‌های MIME پیچیده‌تر آورده شده است."
 
-msgid "First, let's see how to create and send a simple text message (both the text content and the addresses may contain unicode characters):"
+#, fuzzy
+msgid "First, let's see how to create and send a simple text message (both the text content and the addresses may contain Unicode characters):"
 msgstr "ابتدا، بیایید ببینیم چگونه یک پیام متنی ساده را ایجاد و ارسال کنیم (هم محتوای متنی و هم نشانی‌ها ممکن است حاوی نویسه‌های یونیکد باشند):"
 
 msgid ""

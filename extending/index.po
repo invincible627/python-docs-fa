@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -27,7 +27,8 @@ msgstr "توسعه و تعبیه مفسر پایتون"
 msgid "This document describes how to write modules in C or C++ to extend the Python interpreter with new modules.  Those modules can not only define new functions but also new object types and their methods.  The document also describes how to embed the Python interpreter in another application, for use as an extension language.  Finally, it shows how to compile and link extension modules so that they can be loaded dynamically (at run time) into the interpreter, if the underlying operating system supports this feature."
 msgstr "این سند توضیح می‌دهد که چگونه می‌توان ماژول‌هایی به زبان C یا C++ نوشت تا مفسر پایتون با ماژول‌های جدید توسعه یابد. این ماژول‌ها نه‌تنها توابع جدید، بلکه نوع‌های جدید شیء و متدهای آن‌ها را نیز می‌توانند تعریف کنند. این سند همچنین توضیح می‌دهد که چگونه می‌توان مفسر پایتون را در برنامه‌ای دیگر تعبیه کرد تا به‌عنوان یک زبان توسعه‌ای از آن استفاده شود. در نهایت، نشان می‌دهد که چگونه می‌توان ماژول‌های توسعه‌ای را کامپایل و پیوند داد تا در صورت پشتیبانی سیستم‌عامل زیرین از این قابلیت، به‌صورت پویا (در زمان اجرا) در مفسر بارگذاری شوند."
 
-msgid "This document assumes basic knowledge about Python.  For an informal introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-index` gives a more formal definition of the language.  :ref:`library-index` documents the existing object types, functions and modules (both built-in and written in Python) that give the language its wide application range."
+#, fuzzy
+msgid "This document assumes basic knowledge about C and Python.  For an informal introduction to Python, see :ref:`tutorial-index`.  :ref:`reference-index` gives a more formal definition of the language.  :ref:`builtins-index` documents the built-in functions and object types, and :ref:`library-index` documents the modules (both built-in and written in Python) that give the language its wide application range."
 msgstr "این سند فرض می‌کند که شما دانش پایه‌ای از پایتون دارید. برای معرفی غیررسمی زبان، :ref:`tutorial-index` را ببینید. :ref:`reference-index` تعریف رسمی‌تری از زبان ارائه می‌دهد. :ref:`library-index` نوع‌های شیء، توابع و ماژول‌های موجود (هم توکار و هم نوشته‌شده به پایتون) را مستند می‌کند که دامنه‌ی کاربرد گسترده‌ی زبان را فراهم می‌کنند."
 
 msgid "For a detailed description of the whole Python/C API, see the separate :ref:`c-api-index`."

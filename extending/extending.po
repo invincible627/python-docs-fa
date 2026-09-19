@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 00:51+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -1492,7 +1492,8 @@ msgstr ""
 msgid "The main disadvantage of this approach is that the file :file:`spammodule.h` is rather complicated. However, the basic structure is the same for each function that is exported, so it has to be learned only once."
 msgstr "عیب اصلی این رویکرد این است که پرونده‌ی :file:`spammodule.h` نسبتاً پیچیده است. با این حال، ساختار پایه برای هر تابعی که اکسپورت می‌شود یکسان است، بنابراین تنها یک بار باید یاد گرفته شود."
 
-msgid "Finally it should be mentioned that Capsules offer additional functionality, which is especially useful for memory allocation and deallocation of the pointer stored in a Capsule. The details are described in the Python/C API Reference Manual in the section :ref:`capsules` and in the implementation of Capsules (files :file:`Include/pycapsule.h` and :file:`Objects/pycapsule.c` in the Python source code distribution)."
+#, fuzzy
+msgid "Finally it should be mentioned that Capsules offer additional functionality, which is especially useful for memory allocation and deallocation of the pointer stored in a Capsule. The details are described in the Python/C API Reference Manual in the section :ref:`capsules` and in the implementation of Capsules (files :file:`Include/pycapsule.h` and :file:`Objects/capsule.c` in the Python source code distribution)."
 msgstr "در نهایت باید اشاره کرد که کپسول‌ها (Capsules) قابلیت‌های بیشتری ارائه می‌دهند که به‌ویژه برای تخصیص و آزادسازی حافظه‌ی اشاره‌گری که در کپسول ذخیره شده است، مفید است. جزئیات در راهنمای مرجع Python/C API، در بخش :ref:`capsules` و در پیاده‌سازی کپسول‌ها (پرونده‌های :file:`Include/pycapsule.h` و :file:`Objects/pycapsule.c` در توزیع کد منبع پایتون) شرح داده شده است."
 
 msgid "Footnotes"

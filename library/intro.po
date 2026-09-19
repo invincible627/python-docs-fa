@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -25,26 +25,16 @@ msgstr ""
 msgid "Introduction"
 msgstr "مقدمه"
 
-msgid "The \"Python library\" contains several different kinds of components."
-msgstr "«کتابخانه پایتون» شامل چندین نوع مختلف از کامپوننت‌ها است."
-
-msgid "It contains data types that would normally be considered part of the \"core\" of a language, such as numbers and lists.  For these types, the Python language core defines the form of literals and places some constraints on their semantics, but does not fully define the semantics.  (On the other hand, the language core does define syntactic properties like the spelling and priorities of operators.)"
-msgstr "این شامل انواع داده‌ای است که معمولاً بخشی از «هسته» یک زبان در نظر گرفته می‌شوند، مانند اعداد و فهرست‌ها. برای این انواع، هسته زبان پایتون قالب مقادیر لفظی را تعریف می‌کند و محدودیت‌هایی بر معناشناسی آن‌ها اعمال می‌کند، اما معناشناسی آن‌ها را به‌طور کامل تعریف نمی‌کند. (از سوی دیگر، هسته زبان ویژگی‌های نحوی مانند املا و اولویت‌های عملگرها را تعریف می‌کند.)"
-
-msgid "The library also contains built-in functions and exceptions --- objects that can be used by all Python code without the need of an :keyword:`import` statement. Some of these are defined by the core language, but many are not essential for the core semantics and are only described here."
-msgstr "این کتابخانه همچنین شامل توابع توکار و استثناها است — اشیایی که همه‌ی کدهای پایتون می‌توانند بدون نیاز به دستور :keyword:`import` از آن‌ها استفاده کنند. برخی از این موارد در هسته‌ی زبان تعریف شده‌اند، اما بسیاری از آن‌ها برای معناشناسی هسته‌ی زبان ضروری نیستند و تنها در اینجا توصیف شده‌اند."
-
-msgid "The bulk of the library, however, consists of a collection of modules. There are many ways to dissect this collection.  Some modules are written in C and built in to the Python interpreter; others are written in Python and imported in source form.  Some modules provide interfaces that are highly specific to Python, like printing a stack trace; some provide interfaces that are specific to particular operating systems, such as access to specific hardware; others provide interfaces that are specific to a particular application domain, like the World Wide Web. Some modules are available in all versions and ports of Python; others are only available when the underlying system supports or requires them; yet others are available only when a particular configuration option was chosen at the time when Python was compiled and installed."
+#, fuzzy
+msgid "The Python standard library consists of a collection of modules. There are many ways to dissect this collection.  Most modules are written in Python, but some are written in C. All can be imported into your program to add functionality.  Some modules provide interfaces that are highly specific to Python, like printing a stack trace; some provide interfaces that are specific to particular operating systems, such as access to specific hardware; others provide interfaces that are specific to a particular application domain, like web development. Some modules are available in all versions and ports of Python; others are only available when the underlying system supports or requires them; yet others are available only when a particular configuration option was chosen at the time when Python was compiled and installed."
 msgstr "با این حال، بخش عمده‌ی کتابخانه از مجموعه‌ای از ماژول‌ها تشکیل شده است. راه‌های بسیاری برای تجزیه‌ی این مجموعه وجود دارد. برخی ماژول‌ها به زبان C نوشته شده‌اند و به‌صورت توکار در مفسر پایتون قرار دارند؛ برخی دیگر به زبان پایتون نوشته شده‌اند و به‌صورت کد منبع ایمپورت می‌شوند. برخی ماژول‌ها رابط‌هایی ارائه می‌دهند که بسیار مختص پایتون هستند، مانند چاپ ردگیری پشته؛ برخی رابط‌هایی ارائه می‌دهند که مخصوص سیستم‌عامل‌های خاصی هستند، مانند دسترسی به سخت‌افزار خاص؛ برخی دیگر رابط‌هایی ارائه می‌دهند که مخصوص یک حوزه کاربردی خاص هستند، مانند وب جهان‌گستر. برخی ماژول‌ها در همه‌ی نسخه‌ها و پورت‌های پایتون در دسترس هستند؛ برخی دیگر فقط زمانی در دسترس هستند که سیستم زیربنایی آن‌ها را پشتیبانی کند یا به آن‌ها نیاز داشته باشد؛ برخی دیگر نیز فقط زمانی در دسترس هستند که یک گزینه پیکربندی خاص در زمان کامپایل و نصب پایتون انتخاب شده باشد."
 
-msgid "This manual is organized \"from the inside out:\" it first describes the built-in functions, data types and exceptions, and finally the modules, grouped in chapters of related modules."
-msgstr "این راهنما «از درون به بیرون» سازمان‌دهی شده است: نخست توابع توکار، انواع داده و استثناها را توصیف می‌کند و در نهایت ماژول‌ها را، که در فصل‌هایی از ماژول‌های مرتبط گروه‌بندی شده‌اند، توصیف می‌کند."
-
-msgid "This means that if you start reading this manual from the start, and skip to the next chapter when you get bored, you will get a reasonable overview of the available modules and application areas that are supported by the Python library.  Of course, you don't *have* to read it like a novel --- you can also browse the table of contents (in front of the manual), or look for a specific function, module or term in the index (in the back).  And finally, if you enjoy learning about random subjects, you choose a random page number (see module :mod:`random`) and read a section or two.  Regardless of the order in which you read the sections of this manual, it helps to start with chapter :ref:`built-in-funcs`, as the remainder of the manual assumes familiarity with this material."
+#, fuzzy
+msgid "If you start reading this manual from the start, and skip to the next chapter when you get bored, you will get a reasonable overview of the available modules and application areas that are supported by the Python library.  Of course, you don't *have* to read it like a novel --- you can also browse the table of contents (in front of the manual), or look for a specific function, module or term in the index (in the back).  And finally, if you enjoy learning about random subjects, you choose a random page and read a section or two.  Regardless of the order in which you read the sections of this manual, it helps to first read :ref:`built-in-funcs`, as the remainder of this section assumes familiarity with this material."
 msgstr "این بدان معناست که اگر مطالعه‌ی این راهنما را از ابتدا آغاز کنید و هرگاه حوصله‌تان سر رفت به فصل بعدی بروید، نمای کلی معقولی از ماژول‌ها و حوزه‌های کاربردی موجود که کتابخانه‌ی پایتون از آن‌ها پشتیبانی می‌کند به دست خواهید آورد. البته *لازم* نیست آن را مانند یک رمان بخوانید --- همچنین می‌توانید فهرست مطالب (در ابتدای راهنما) را مرور کنید، یا به دنبال تابع، ماژول یا اصطلاح خاصی در نمایه (در انتها) بگردید. و سرانجام، اگر از یادگیری درباره‌ی موضوعات تصادفی لذت می‌برید، یک شماره صفحه‌ی تصادفی انتخاب می‌کنید (ماژول :mod:`random` را ببینید) و یک یا دو بخش می‌خوانید. صرف‌نظر از ترتیبی که بخش‌های این راهنما را می‌خوانید، مفید است با فصل :ref:`built-in-funcs` شروع کنید، زیرا ادامه‌ی راهنما فرض می‌کند که با این مطلب آشنا هستید."
 
-msgid "Let the show begin!"
-msgstr "اجازه دهید نمایش آغاز شود!"
+msgid "The built-in functions and classes (which can be used without an :keyword:`import` statement) are described in :ref:`builtins-index`."
+msgstr ""
 
 msgid "Notes on availability"
 msgstr "نکاتی درباره‌ی دسترس‌پذیری"
@@ -117,3 +107,18 @@ msgstr "برنامه‌های موبایل اصلاً هیچ ``stdin`` قابل 
 
 msgid "As a result, Python modules that involve console manipulation (such as :mod:`curses` and :mod:`readline`) are not available on mobile platforms."
 msgstr "در نتیجه، ماژول‌های پایتون که شامل دستکاری کنسول می‌شوند (مانند :mod:`curses` و :mod:`readline`) در سکوهای موبایل در دسترس نیستند."
+
+#~ msgid "The \"Python library\" contains several different kinds of components."
+#~ msgstr "«کتابخانه پایتون» شامل چندین نوع مختلف از کامپوننت‌ها است."
+
+#~ msgid "It contains data types that would normally be considered part of the \"core\" of a language, such as numbers and lists.  For these types, the Python language core defines the form of literals and places some constraints on their semantics, but does not fully define the semantics.  (On the other hand, the language core does define syntactic properties like the spelling and priorities of operators.)"
+#~ msgstr "این شامل انواع داده‌ای است که معمولاً بخشی از «هسته» یک زبان در نظر گرفته می‌شوند، مانند اعداد و فهرست‌ها. برای این انواع، هسته زبان پایتون قالب مقادیر لفظی را تعریف می‌کند و محدودیت‌هایی بر معناشناسی آن‌ها اعمال می‌کند، اما معناشناسی آن‌ها را به‌طور کامل تعریف نمی‌کند. (از سوی دیگر، هسته زبان ویژگی‌های نحوی مانند املا و اولویت‌های عملگرها را تعریف می‌کند.)"
+
+#~ msgid "The library also contains built-in functions and exceptions --- objects that can be used by all Python code without the need of an :keyword:`import` statement. Some of these are defined by the core language, but many are not essential for the core semantics and are only described here."
+#~ msgstr "این کتابخانه همچنین شامل توابع توکار و استثناها است — اشیایی که همه‌ی کدهای پایتون می‌توانند بدون نیاز به دستور :keyword:`import` از آن‌ها استفاده کنند. برخی از این موارد در هسته‌ی زبان تعریف شده‌اند، اما بسیاری از آن‌ها برای معناشناسی هسته‌ی زبان ضروری نیستند و تنها در اینجا توصیف شده‌اند."
+
+#~ msgid "This manual is organized \"from the inside out:\" it first describes the built-in functions, data types and exceptions, and finally the modules, grouped in chapters of related modules."
+#~ msgstr "این راهنما «از درون به بیرون» سازمان‌دهی شده است: نخست توابع توکار، انواع داده و استثناها را توصیف می‌کند و در نهایت ماژول‌ها را، که در فصل‌هایی از ماژول‌های مرتبط گروه‌بندی شده‌اند، توصیف می‌کند."
+
+#~ msgid "Let the show begin!"
+#~ msgstr "اجازه دهید نمایش آغاز شود!"

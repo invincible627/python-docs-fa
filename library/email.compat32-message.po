@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 13:34+0330\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 20:10+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -76,7 +76,8 @@ msgstr ""
 "g.flatten(msg)\n"
 "text = fp.getvalue()"
 
-msgid "If the message object contains binary data that is not encoded according to RFC standards, the non-compliant data will be replaced by unicode \"unknown character\" code points.  (See also :meth:`.as_bytes` and :class:`~email.generator.BytesGenerator`.)"
+#, fuzzy
+msgid "If the message object contains binary data that is not encoded according to RFC standards, the non-compliant data will be replaced by Unicode \"unknown character\" code points.  (See also :meth:`.as_bytes` and :class:`~email.generator.BytesGenerator`.)"
 msgstr "اگر شیء پیام حاوی داده‌های دودویی باشد که مطابق استانداردهای RFC کدگذاری‌نشده باشند، داده‌های نامنطبق با نقاط کد یونیکد «نویسه ناشناخته» جایگزین خواهند شد. (همچنین :meth:`.as_bytes` و :class:`~email.generator.BytesGenerator` را ببینید.)"
 
 msgid "the *policy* keyword argument was added."

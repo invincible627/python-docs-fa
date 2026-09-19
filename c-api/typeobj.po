@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 08:25+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -1956,7 +1956,8 @@ msgstr "اشاره‌گر اختیاری به تابعی که آیتم بعدی 
 msgid "PyObject *tp_iternext(PyObject *self);"
 msgstr "PyObject *tp_iternext(PyObject *self);"
 
-msgid "When the iterator is exhausted, it must return ``NULL``; a :exc:`StopIteration` exception may or may not be set.  When another error occurs, it must return ``NULL`` too.  Its presence signals that the instances of this type are iterators."
+#, fuzzy
+msgid "When the iterator is :term:`exhausted`, the ``tp_iternext`` function must return ``NULL``; a :exc:`StopIteration` exception may or may not be set. When another error occurs, it must return ``NULL`` too. The presence of ``tp_iternext`` signals that the instances of this type are iterators."
 msgstr "هنگامی که پیمایش‌گر به پایان می‌رسد، باید ``NULL`` برگرداند؛ استثنای :exc:`StopIteration` ممکن است تنظیم شده باشد یا نباشد. هنگامی که خطای دیگری رخ می‌دهد، نیز باید ``NULL`` برگرداند. وجود آن نشان می‌دهد که نمونه‌های این نوع، پیمایش‌گر هستند."
 
 msgid "Iterator types should also define the :c:member:`~PyTypeObject.tp_iter` function, and that function should return the iterator instance itself (not a new iterator instance)."

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 01:18+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -76,41 +76,35 @@ msgstr ""
 "            doc.expandNode(node)\n"
 "            print(node.toxml())"
 
-msgid "``event`` is a constant and can be one of:"
-msgstr "``event`` یک ثابت است و می‌تواند یکی از موارد زیر باشد:"
+msgid "``event`` is one of the following constants, and ``node`` is the node which the event is about. The nodes implement the :mod:`xml.dom` interfaces; they are created by the DOM implementation given to :class:`PullDOM`, which is :mod:`xml.dom.minidom` by default."
+msgstr ""
 
-msgid ":data:`START_ELEMENT`"
-msgstr ":data:`START_ELEMENT`"
+msgid "The start and the end of the document. *node* is the :class:`~xml.dom.Document`."
+msgstr ""
 
-msgid ":data:`END_ELEMENT`"
-msgstr ":data:`END_ELEMENT`"
+msgid "The start tag and the end tag of an element. *node* is the :class:`~xml.dom.Element`."
+msgstr ""
 
-msgid ":data:`COMMENT`"
-msgstr ":data:`COMMENT`"
+msgid "Character data. *node* is the :class:`~xml.dom.Text` node."
+msgstr ""
 
-msgid ":data:`START_DOCUMENT`"
-msgstr ":data:`START_DOCUMENT`"
+msgid "White space in element content, as declared in the DTD. *node* is the :class:`~xml.dom.Text` node."
+msgstr ""
 
-msgid ":data:`END_DOCUMENT`"
-msgstr ":data:`END_DOCUMENT`"
+msgid "A comment. *node* is the :class:`~xml.dom.Comment` node."
+msgstr ""
 
-msgid ":data:`CHARACTERS`"
-msgstr ":data:`CHARACTERS`"
-
-msgid ":data:`PROCESSING_INSTRUCTION`"
-msgstr ":data:`PROCESSING_INSTRUCTION`"
-
-msgid ":data:`IGNORABLE_WHITESPACE`"
-msgstr ":data:`IGNORABLE_WHITESPACE`"
-
-msgid "``node`` is an object of type :class:`xml.dom.minidom.Document`, :class:`xml.dom.minidom.Element` or :class:`xml.dom.minidom.Text`."
-msgstr "``node`` شیءای از نوع :class:`xml.dom.minidom.Document`، :class:`xml.dom.minidom.Element` یا :class:`xml.dom.minidom.Text` است."
+msgid "A processing instruction. *node* is the :class:`~xml.dom.ProcessingInstruction` node."
+msgstr ""
 
 msgid "Since the document is treated as a \"flat\" stream of events, the document \"tree\" is implicitly traversed and the desired elements are found regardless of their depth in the tree. In other words, one does not need to consider hierarchical issues such as recursive searching of the document nodes, although if the context of elements were important, one would either need to maintain some context-related state (i.e. remembering where one is in the document at any given point) or to make use of the :func:`DOMEventStream.expandNode` method and switch to DOM-related processing."
 msgstr "از آنجا که سند به‌عنوان یک جریان «تخت» از رویدادها در نظر گرفته می‌شود، «درخت» سند به‌طور ضمنی پیمایش می‌شود و عناصر مورد نظر صرف‌نظر از عمقشان در درخت یافت می‌شوند. به بیان دیگر، نیازی به در نظر گرفتن مسائل سلسله‌مراتبی مانند جستجوی بازگشتی گره‌های سند نیست، اگرچه اگر زمینه‌ی عناصر اهمیت داشته باشد، یا باید وضعیتی مرتبط با زمینه را حفظ کرد (یعنی به خاطر سپردن موقعیت در سند در هر نقطه مشخص) یا از متد :func:`DOMEventStream.expandNode` استفاده کرد و به پردازش مرتبط با DOM روی آورد."
 
-msgid "Subclass of :class:`xml.sax.handler.ContentHandler`."
-msgstr "زیرکلاسی از :class:`xml.sax.handler.ContentHandler`."
+msgid "Subclass of :class:`xml.sax.handler.ContentHandler` which turns SAX events into the events of the pull parser. The nodes are created, but they are not added to the tree, unless :meth:`~DOMEventStream.expandNode` is called. *documentFactory*, if given, is a DOM implementation used to create the document; by default the implementation of :mod:`xml.dom.minidom` is used."
+msgstr ""
+
+msgid "Subclass of :class:`PullDOM` which also adds every created node to the tree, so that the complete document is built."
+msgstr ""
 
 msgid "Return a :class:`DOMEventStream` from the given input. *stream_or_string* may be either a file name, or a file-like object. *parser*, if given, must be an :class:`~xml.sax.xmlreader.XMLReader` object. This function will change the document handler of the parser and activate namespace support; other parser configuration (like setting an entity resolver) must have been done in advance."
 msgstr "یک :class:`DOMEventStream` از ورودی داده‌شده بازمی‌گرداند. *stream_or_string* می‌تواند نام پرونده یا یک شیء شبه‌پرونده باشد. *parser*، در صورت داده شدن، باید یک شیء :class:`~xml.sax.xmlreader.XMLReader` باشد. این تابع هندلر سند پارسر را تغییر می‌دهد و پشتیبانی از فضای نام را فعال می‌کند؛ سایر پیکربندی‌های پارسر (مانند تنظیم حل‌کننده موجودیت) باید از پیش انجام شده باشند."
@@ -118,8 +112,8 @@ msgstr "یک :class:`DOMEventStream` از ورودی داده‌شده بازم�
 msgid "If you have XML in a string, you can use the :func:`parseString` function instead:"
 msgstr "اگر XML را در یک رشته دارید، می‌توانید به‌جای آن از تابع :func:`parseString` استفاده کنید:"
 
-msgid "Return a :class:`DOMEventStream` that represents the (Unicode) *string*."
-msgstr "یک :class:`DOMEventStream` برمی‌گرداند که نشان‌دهنده‌ی *رشته* (یونیکد) است."
+msgid "Return a :class:`DOMEventStream` that represents the *string*. *string* must be a :class:`str` instance; to parse bytes, pass a binary file object to :func:`parse`."
+msgstr ""
 
 msgid "Default value for the *bufsize* parameter to :func:`parse`."
 msgstr "مقدار پیش‌فرض برای پارامتر *bufsize* در :func:`parse`."
@@ -130,11 +124,14 @@ msgstr "می‌توان مقدار این متغیر را پیش از فراخو
 msgid "DOMEventStream Objects"
 msgstr "اشیای DOMEventStream"
 
+msgid "Produce the events for the data read from the file object *stream* by the :class:`~xml.sax.xmlreader.XMLReader` *parser*. The data is read by *bufsize* bytes, or characters for a text stream, at a time."
+msgstr ""
+
 msgid "Support for :meth:`~object.__getitem__` method has been removed."
 msgstr "پشتیبانی از متد :meth:`~object.__getitem__` حذف شده است."
 
-msgid "Return a tuple containing *event* and the current *node* as :class:`xml.dom.minidom.Document` if event equals :data:`START_DOCUMENT`, :class:`xml.dom.minidom.Element` if event equals :data:`START_ELEMENT` or :data:`END_ELEMENT` or :class:`xml.dom.minidom.Text` if event equals :data:`CHARACTERS`. The current node does not contain information about its children, unless :func:`expandNode` is called."
-msgstr "یک تاپل شامل *رویداد* و *گره* جاری را برمی‌گرداند؛ به‌این‌صورت که اگر رویداد برابر با :data:`START_DOCUMENT` باشد، گره به‌صورت :class:`xml.dom.minidom.Document` است، اگر رویداد برابر با :data:`START_ELEMENT` یا :data:`END_ELEMENT` باشد، گره به‌صورت :class:`xml.dom.minidom.Element` است، یا اگر رویداد برابر با :data:`CHARACTERS` باشد، گره به‌صورت :class:`xml.dom.minidom.Text` است. گره جاری شامل اطلاعاتی درباره فرزندان خود نیست، مگر اینکه :func:`expandNode` فراخوانی شود."
+msgid "Return the next ``(event, node)`` tuple, or ``None`` at the end of the document. See above for the events and the corresponding nodes. The current node does not contain information about its children, unless :meth:`expandNode` is called."
+msgstr ""
 
 msgid "Expands all children of *node* into *node*. Example::"
 msgstr "تمام فرزندان *node* را در *node* بسط می‌دهد. مثال::"
@@ -163,3 +160,48 @@ msgstr ""
 "        doc.expandNode(node)\n"
 "        # Following statement prints node with all its children '<p>Some text <div>and more</div></p>'\n"
 "        print(node.toxml())"
+
+msgid "Discard the events which are not read yet and prepare the object for parsing a new document."
+msgstr ""
+
+msgid "Release the parser and the document. The stream is not closed, and the object can no longer be used."
+msgstr ""
+
+#~ msgid "``event`` is a constant and can be one of:"
+#~ msgstr "``event`` یک ثابت است و می‌تواند یکی از موارد زیر باشد:"
+
+#~ msgid ":data:`START_ELEMENT`"
+#~ msgstr ":data:`START_ELEMENT`"
+
+#~ msgid ":data:`END_ELEMENT`"
+#~ msgstr ":data:`END_ELEMENT`"
+
+#~ msgid ":data:`COMMENT`"
+#~ msgstr ":data:`COMMENT`"
+
+#~ msgid ":data:`START_DOCUMENT`"
+#~ msgstr ":data:`START_DOCUMENT`"
+
+#~ msgid ":data:`END_DOCUMENT`"
+#~ msgstr ":data:`END_DOCUMENT`"
+
+#~ msgid ":data:`CHARACTERS`"
+#~ msgstr ":data:`CHARACTERS`"
+
+#~ msgid ":data:`PROCESSING_INSTRUCTION`"
+#~ msgstr ":data:`PROCESSING_INSTRUCTION`"
+
+#~ msgid ":data:`IGNORABLE_WHITESPACE`"
+#~ msgstr ":data:`IGNORABLE_WHITESPACE`"
+
+#~ msgid "``node`` is an object of type :class:`xml.dom.minidom.Document`, :class:`xml.dom.minidom.Element` or :class:`xml.dom.minidom.Text`."
+#~ msgstr "``node`` شیءای از نوع :class:`xml.dom.minidom.Document`، :class:`xml.dom.minidom.Element` یا :class:`xml.dom.minidom.Text` است."
+
+#~ msgid "Subclass of :class:`xml.sax.handler.ContentHandler`."
+#~ msgstr "زیرکلاسی از :class:`xml.sax.handler.ContentHandler`."
+
+#~ msgid "Return a :class:`DOMEventStream` that represents the (Unicode) *string*."
+#~ msgstr "یک :class:`DOMEventStream` برمی‌گرداند که نشان‌دهنده‌ی *رشته* (یونیکد) است."
+
+#~ msgid "Return a tuple containing *event* and the current *node* as :class:`xml.dom.minidom.Document` if event equals :data:`START_DOCUMENT`, :class:`xml.dom.minidom.Element` if event equals :data:`START_ELEMENT` or :data:`END_ELEMENT` or :class:`xml.dom.minidom.Text` if event equals :data:`CHARACTERS`. The current node does not contain information about its children, unless :func:`expandNode` is called."
+#~ msgstr "یک تاپل شامل *رویداد* و *گره* جاری را برمی‌گرداند؛ به‌این‌صورت که اگر رویداد برابر با :data:`START_DOCUMENT` باشد، گره به‌صورت :class:`xml.dom.minidom.Document` است، اگر رویداد برابر با :data:`START_ELEMENT` یا :data:`END_ELEMENT` باشد، گره به‌صورت :class:`xml.dom.minidom.Element` است، یا اگر رویداد برابر با :data:`CHARACTERS` باشد، گره به‌صورت :class:`xml.dom.minidom.Text` است. گره جاری شامل اطلاعاتی درباره فرزندان خود نیست، مگر اینکه :func:`expandNode` فراخوانی شود."

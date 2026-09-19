@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 13:33+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -392,6 +392,9 @@ msgstr "این باعث می‌شود که اندیس‌دهی به یک فهر�
 msgid "When items are appended or inserted, the array of references is resized.  Some cleverness is applied to improve the performance of appending items repeatedly; when the array must be grown, some extra space is allocated so the next few times don't require an actual resize."
 msgstr "هنگامی که آیتم‌ها افزوده یا درج می‌شوند، اندازه‌ی آرایه‌ی ارجاع‌ها تغییر می‌کند. تمهیداتی به کار گرفته شده است تا عملکرد افزودن مکرر آیتم‌ها بهبود یابد؛ هنگامی که آرایه باید بزرگ شود، مقداری فضای اضافی تخصیص داده می‌شود تا چند بار بعدی نیازی به تغییر اندازه‌ی واقعی نباشد."
 
+msgid "See :ref:`time-complexity` for the costs of the various list operations."
+msgstr ""
+
 msgid "How are dictionaries implemented in CPython?"
 msgstr "دیکشنری‌ها در CPython چگونه پیاده‌سازی شده‌اند؟"
 
@@ -400,6 +403,9 @@ msgstr "دیکشنری‌های CPython به‌صورت جدول‌های هش �
 
 msgid "Dictionaries work by computing a hash code for each key stored in the dictionary using the :func:`hash` built-in function.  The hash code varies widely depending on the key and a per-process seed; for example, ``'Python'`` could hash to ``-539294296`` while ``'python'``, a string that differs by a single bit, could hash to ``1142331976``.  The hash code is then used to calculate a location in an internal array where the value will be stored.  Assuming that you're storing keys that all have different hash values, this means that dictionaries take constant time -- *O*\\ (1), in Big-O notation -- to retrieve a key."
 msgstr "دیکشنری‌ها با محاسبه‌ی کد هش (hash code) برای هر کلید ذخیره‌شده در دیکشنری، از طریق تابع توکار :func:`hash` کار می‌کنند. کد هش بسته به کلید و یک بذر  به‌ازای هر فرایند، تفاوت زیادی دارد؛ برای مثال، کد هش ``'Python'`` می‌تواند ``-539294296`` باشد، در حالی که کد هش ``'python'``، رشته‌ای که تنها یک بیت تفاوت دارد، می‌تواند ``1142331976`` باشد. سپس از کد هش برای محاسبه‌ی محلی در یک آرایه‌ی داخلی استفاده می‌شود که مقدار در آن ذخیره خواهد شد. با فرض این‌که شما کلیدهایی را ذخیره می‌کنید که همگی مقادیر هش متفاوتی دارند، این بدان معناست که دیکشنری‌ها برای بازیابی یک کلید به زمان ثابت -- *O*\\ (1)، در نمادگذاری Big-O -- نیاز دارند."
+
+msgid "See :ref:`time-complexity` for the costs of the various dictionary operations."
+msgstr ""
 
 msgid "Why must dictionary keys be immutable?"
 msgstr "چرا کلیدهای دیکشنری باید تغییرناپذیر باشند؟"

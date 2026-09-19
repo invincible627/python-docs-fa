@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 15:35+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -592,6 +592,9 @@ msgstr "همچنین برای متدهای مقید ایجادشده از توا
 msgid "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped function is a Python generator function."
 msgstr "توابع پوشیده‌شده با :func:`functools.partial` اکنون اگر تابع پوشیده‌شده یک تابع تولیدگر پایتون باشد، ``True`` را برمی‌گردانند."
 
+msgid ":term:`Duck-typed <duck-typing>` function-like objects now return ``True`` if their code object has the :data:`CO_GENERATOR` flag."
+msgstr ""
+
 msgid "Functions wrapped in :func:`functools.partialmethod` now return ``True`` if the wrapped function is a Python generator function."
 msgstr "توابعی که در :func:`functools.partialmethod` پوشیده شده‌اند، اکنون در صورتی که تابع پوشیده‌شده یک تابع تولیدگر پایتون باشد، ``True`` برمی‌گردانند."
 
@@ -603,6 +606,9 @@ msgstr "اگر شیء یک :term:`تابع هم‌روال <coroutine function>`
 
 msgid "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped function is a :term:`coroutine function`."
 msgstr "توابع پوشش‌داده‌شده توسط :func:`functools.partial` اکنون در صورتی ``True`` را برمی‌گردانند که تابع پوشش‌داده‌شده یک :term:`تابع هم‌روال <coroutine function>` باشد."
+
+msgid ":term:`Duck-typed <duck-typing>` function-like objects now return ``True`` if their code object has the :data:`CO_COROUTINE` flag."
+msgstr ""
 
 msgid "Sync functions marked with :func:`markcoroutinefunction` now return ``True``."
 msgstr "توابع همگامی که با :func:`markcoroutinefunction` علامت‌گذاری شده‌اند، اکنون ``True`` برمی‌گردانند."
@@ -669,6 +675,9 @@ msgstr ""
 
 msgid "Functions wrapped in :func:`functools.partial` now return ``True`` if the wrapped function is an :term:`asynchronous generator` function."
 msgstr "توابعی که با :func:`functools.partial` پوشیده‌شده‌اند، اکنون اگر تابع پوشیده‌شده یک تابع :term:`تولیدگر ناهمگام <asynchronous generator>` باشد، ``True`` برمی‌گردانند."
+
+msgid ":term:`Duck-typed <duck-typing>` function-like objects now return ``True`` if their code object has the :data:`CO_ASYNC_GENERATOR` flag."
+msgstr ""
 
 msgid "Functions wrapped in :func:`functools.partialmethod` now return ``True`` if the wrapped function is a :term:`asynchronous generator` function."
 msgstr "توابع پوشش‌داده‌شده با :func:`functools.partialmethod` اکنون در صورتی ``True`` برمی‌گردانند که تابع پوشش‌داده‌شده یک تابع :term:`تولیدگر ناهمگام <asynchronous generator>` باشد."
@@ -751,13 +760,15 @@ msgstr "رشته مستندات اکنون در صورتی که بازنویسی
 msgid "Return in a single string any lines of comments immediately preceding the object's source code (for a class, function, or method), or at the top of the Python source file (if the object is a module).  If the object's source code is unavailable, return ``None``.  This could happen if the object has been defined in C or the interactive shell."
 msgstr "هر یک از سطرهای کامنت‌ها بلافاصله پیش از کد منبع شیء (برای یک کلاس، تابع یا متد) یا در بالای پرونده منبع پایتون (اگر شیء یک ماژول باشد) را در یک رشته‌ی واحد برمی‌گرداند. اگر کد منبع شیء در دسترس نباشد، ``None`` را برمی‌گرداند. این حالت ممکن است در صورتی رخ دهد که شیء در C یا پوسته‌ی تعاملی تعریف شده باشد."
 
-msgid "Return the name of the (text or binary) file in which an object was defined. This will fail with a :exc:`TypeError` if the object is a built-in module, class, or function."
+#, fuzzy
+msgid "Return the name of the (text or binary) file in which an object was defined. An :exc:`OSError` is raised if the source code cannot be retrieved. This will fail with a :exc:`TypeError` if the object is a built-in module, class, or function."
 msgstr "نام پرونده (متنی یا دودویی)ای را برمی‌گرداند که یک شیء در آن تعریف شده است. اگر شیء یک ماژول، کلاس یا تابع توکار باشد، این کار با :exc:`TypeError` شکست می‌خورد."
 
 msgid "Try to guess which module an object was defined in. Return ``None`` if the module cannot be determined."
 msgstr "تلاش می‌کند حدس بزند که یک شیء در کدام ماژول تعریف شده است. اگر ماژول را نتوان تعیین کرد، ``None`` برمی‌گرداند."
 
-msgid "Return the name of the Python source file in which an object was defined or ``None`` if no way can be identified to get the source.  This will fail with a :exc:`TypeError` if the object is a built-in module, class, or function."
+#, fuzzy
+msgid "Return the name of the Python source file in which an object was defined or ``None`` if no way can be identified to get the source.  An :exc:`OSError` is raised if the source code cannot be retrieved. This will fail with a :exc:`TypeError` if the object is a built-in module, class, or function."
 msgstr "نام پرونده منبع پایتون که یک شیء در آن تعریف شده است را برمی‌گرداند، یا اگر هیچ راهی برای دریافت منبع شناسایی نشود، ``None`` را برمی‌گرداند. اگر شیء یک ماژول، کلاس یا تابع توکار باشد، این کار با :exc:`TypeError` شکست می‌خورد."
 
 msgid "Return a list of source lines and starting line number for an object. The argument may be a module, class, method, function, traceback, frame, or code object.  The source code is returned as a list of the lines corresponding to the object and the line number indicates where in the original source file the first line of code was found.  An :exc:`OSError` is raised if the source code cannot be retrieved. A :exc:`TypeError` is raised if the object is a built-in module, class, or function."

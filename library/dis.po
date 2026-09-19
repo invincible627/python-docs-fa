@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:54+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -942,7 +942,8 @@ msgstr "اگر ``STACK[-1]`` برابر ``None`` نباشد، شمارنده ب�
 msgid "If ``STACK[-1]`` is ``None``, increments the bytecode counter by *delta*. ``STACK[-1]`` is popped."
 msgstr "اگر ``STACK[-1]`` برابر ``None`` باشد، شمارنده بایت‌کد را به اندازه *delta* افزایش می‌دهد. ``STACK[-1]`` برداشته می‌شود."
 
-msgid "``STACK[-1]`` is an :term:`iterator`.  Call its :meth:`~iterator.__next__` method. If this yields a new value, push it on the stack (leaving the iterator below it).  If the iterator indicates it is exhausted then the byte code counter is incremented by *delta*."
+#, fuzzy
+msgid "``STACK[-1]`` is an :term:`iterator`.  Call its :meth:`~iterator.__next__` method. If this yields a new value, push it on the stack (leaving the iterator below it).  If the iterator indicates it is :term:`exhausted` then the byte code counter is incremented by *delta*."
 msgstr "``STACK[-1]`` یک :term:`iterator` است. متد :meth:`~iterator.__next__` آن را فراخوانی کنید. اگر این فراخوانی مقدار جدیدی برگرداند، آن را روی پشته قرار دهید (در حالی که پیمایش‌گر زیر آن باقی می‌ماند). اگر پیمایش‌گر نشان دهد که به پایان رسیده است، شمارنده‌ی بایت‌کد به اندازه‌ی *delta* افزایش می‌یابد."
 
 msgid "Up until 3.11 the iterator was popped when it was exhausted."

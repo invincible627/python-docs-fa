@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
@@ -164,7 +164,8 @@ msgstr "توابع"
 msgid "Convert an annotations dict containing runtime values to a dict containing only strings. If the values are not already strings, they are converted using :func:`type_repr`. This is meant as a helper for user-provided annotate functions that support the :attr:`~Format.STRING` format but do not have access to the code creating the annotations."
 msgstr "یک دیکشنری حاشیه‌نویسی‌ها را که حاوی مقادیر ران‌تایم است، به دیکشنری‌ای تبدیل می‌کند که فقط شامل رشته‌ها است. اگر مقادیر از قبل رشته نباشند، با استفاده از :func:`type_repr` تبدیل می‌شوند. این به‌عنوان یک کمک‌کننده برای توابع حاشیه‌نویسی ارائه‌شده توسط کاربر در نظر گرفته شده است که از قالب :attr:`~Format.STRING` پشتیبانی می‌کنند اما به کدی که حاشیه‌نویسی‌ها را ایجاد می‌کند دسترسی ندارند."
 
-msgid "For example, this is used to implement the :attr:`~Format.STRING` for :class:`typing.TypedDict` classes created through the functional syntax:"
+#, fuzzy
+msgid "For example, this is used to implement the :attr:`~Format.STRING` format for :class:`typing.TypedDict` classes created through the functional syntax:"
 msgstr "برای مثال، این برای پیاده‌سازی :attr:`~Format.STRING` برای کلاس‌های :class:`typing.TypedDict` که از طریق سینتکس تابعی ایجاد شده‌اند، استفاده می‌شود:"
 
 msgid ""

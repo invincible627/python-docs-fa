@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-08-28 11:22+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -338,8 +338,20 @@ msgstr "اعلان‌های ``const`` به متغیرهایی در محدوده�
 msgid "``DOMException`` is currently not supported in :mod:`!xml.dom.minidom`. Instead, :mod:`!xml.dom.minidom` uses standard Python exceptions such as :exc:`TypeError` and :exc:`AttributeError`."
 msgstr "``DOMException`` در حال حاضر در :mod:`!xml.dom.minidom` پشتیبانی نمی‌شود. در عوض، :mod:`!xml.dom.minidom` از استثناهای استاندارد پایتون مانند :exc:`TypeError` و :exc:`AttributeError` استفاده می‌کند."
 
-msgid ":class:`NodeList` objects are implemented using Python's built-in list type. These objects provide the interface defined in the DOM specification, but with earlier versions of Python they do not support the official API.  They are, however, much more \"Pythonic\" than the interface defined in the W3C recommendations."
-msgstr "اشیای :class:`NodeList` با استفاده از نوع فهرست توکار پایتون پیاده‌سازی شده‌اند. این اشیاء رابط تعریف‌شده در مشخصات DOM را ارائه می‌کنند، اما در نسخه‌های پیشین پایتون از API رسمی پشتیبانی نمی‌کنند. با این حال، آن‌ها بسیار «پایتونی‌تر» از رابط تعریف‌شده در توصیه‌نامه‌های W3C هستند."
+msgid "Each of the :class:`~xml.dom.NodeList` and :class:`~xml.dom.NamedNodeMap` interfaces has two implementations, which provide additional methods and operations."
+msgstr ""
+
+msgid ":attr:`~xml.dom.Node.childNodes` is a subclass of :class:`list`, or, for nodes which cannot have children, a subclass of :class:`tuple`. It supports iteration, concatenation, indexing and slicing."
+msgstr ""
+
+msgid ":attr:`~xml.dom.Node.attributes` supports ``len()``, the :keyword:`in` operator, subscription by a name or by a ``(namespaceURI, localName)`` tuple, assignment and deletion, and the methods :meth:`!get`, :meth:`!keys`, :meth:`!keysNS`, :meth:`!values`, :meth:`!items` and :meth:`!itemsNS`. :attr:`~xml.dom.DocumentType.entities` and :attr:`~xml.dom.DocumentType.notations` are read-only and support only ``len()`` and subscription by a name."
+msgstr ""
+
+msgid ":attr:`~xml.dom.Document.strictErrorChecking` and :attr:`~xml.dom.Attr.specified` are always ``False``."
+msgstr ""
+
+msgid ":meth:`~xml.dom.Element.removeAttribute` and :meth:`~xml.dom.Element.removeAttributeNS` raise :exc:`~xml.dom.NotFoundErr` if there is no matching attribute, while the DOM specifies that this has no effect."
+msgstr ""
 
 msgid "The following interfaces have no implementation in :mod:`!xml.dom.minidom`:"
 msgstr "رابط‌های زیر در :mod:`!xml.dom.minidom` پیاده‌سازی ندارند:"
@@ -358,3 +370,6 @@ msgstr "پانویس‌ها"
 
 msgid "The encoding name included in the XML output should conform to the appropriate standards. For example, \"UTF-8\" is valid, but \"UTF8\" is not valid in an XML document's declaration, even though Python accepts it as an encoding name. See https://www.w3.org/TR/2006/REC-xml11-20060816/#NT-EncodingDecl and https://www.iana.org/assignments/character-sets/character-sets.xhtml."
 msgstr "نام کدگذاری موجود در خروجی XML باید با استانداردهای مربوطه مطابقت داشته باشد. برای مثال، \"UTF-8\" معتبر است، اما \"UTF8\" در اعلامیه سند XML معتبر نیست، هرچند پایتون آن را به‌عنوان نام کدگذاری می‌پذیرد. به https://www.w3.org/TR/2006/REC-xml11-20060816/#NT-EncodingDecl و https://www.iana.org/assignments/character-sets/character-sets.xhtml مراجعه کنید."
+
+#~ msgid ":class:`NodeList` objects are implemented using Python's built-in list type. These objects provide the interface defined in the DOM specification, but with earlier versions of Python they do not support the official API.  They are, however, much more \"Pythonic\" than the interface defined in the W3C recommendations."
+#~ msgstr "اشیای :class:`NodeList` با استفاده از نوع فهرست توکار پایتون پیاده‌سازی شده‌اند. این اشیاء رابط تعریف‌شده در مشخصات DOM را ارائه می‌کنند، اما در نسخه‌های پیشین پایتون از API رسمی پشتیبانی نمی‌کنند. با این حال، آن‌ها بسیار «پایتونی‌تر» از رابط تعریف‌شده در توصیه‌نامه‌های W3C هستند."

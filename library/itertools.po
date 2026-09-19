@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 08:58+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -401,7 +401,8 @@ msgstr "داده‌ها را از *iterable* به‌صورت تاپل‌هایی
 msgid "If *strict* is true, will raise a :exc:`ValueError` if the final batch is shorter than *n*."
 msgstr "اگر *strict* درست باشد، در صورتی که آخرین دسته کوتاه‌تر از *n* باشد، یک :exc:`ValueError` پرتاب می‌شود."
 
-msgid "Loops over the input iterable and accumulates data into tuples up to size *n*.  The input is consumed lazily, just enough to fill a batch. The result is yielded as soon as the batch is full or when the input iterable is exhausted:"
+#, fuzzy
+msgid "Loops over the input iterable and accumulates data into tuples up to size *n*.  The input is consumed lazily, just enough to fill a batch. The result is yielded as soon as the batch is full or when the input iterable is :term:`exhausted`:"
 msgstr "روی پیمایش‌پذیر ورودی حلقه می‌زند و داده‌ها را در تاپل‌هایی تا اندازه‌ی *n* انباشته می‌کند. ورودی به‌صورت تنبل مصرف می‌شود، تنها به اندازه‌ای که یک دسته را پر کند. نتیجه به محض پر شدن دسته یا زمانی که پیمایش‌پذیر ورودی به پایان رسید، تولید می‌شود:"
 
 msgid ""
@@ -439,7 +440,8 @@ msgstr ""
 msgid "Added the *strict* option."
 msgstr "گزینه‌ی *strict* افزوده شد."
 
-msgid "Make an iterator that returns elements from the first iterable until it is exhausted, then proceeds to the next iterable, until all of the iterables are exhausted.  This combines multiple data sources into a single iterator.  Roughly equivalent to::"
+#, fuzzy
+msgid "Make an iterator that returns elements from the first iterable until it is :term:`exhausted`, then proceeds to the next iterable, until all of the iterables are exhausted.  This combines multiple data sources into a single iterator.  Roughly equivalent to::"
 msgstr "پیمایش‌گری می‌سازد که عناصر را از نخستین پیمایش‌پذیر برمی‌گرداند تا زمانی که آن تمام شود، سپس به پیمایش‌پذیر بعدی می‌رود، تا زمانی که همه پیمایش‌پذیرها تمام شوند. این کار چندین منبع داده را در یک پیمایش‌گر واحد ترکیب می‌کند. تقریباً معادل است با::"
 
 msgid ""
@@ -575,7 +577,8 @@ msgstr ""
 "        indices[i:] = [indices[i] + 1] * (r - i)\n"
 "        yield tuple(pool[i] for i in indices)"
 
-msgid "Make an iterator that returns elements from *data* where the corresponding element in *selectors* is true.  Stops when either the *data* or *selectors* iterables have been exhausted.  Roughly equivalent to::"
+#, fuzzy
+msgid "Make an iterator that returns elements from *data* where the corresponding element in *selectors* is true.  Stops when either the *data* or *selectors* iterables have been :term:`exhausted`.  Roughly equivalent to::"
 msgstr "پیمایش‌گری می‌سازد که عناصری از *data* را برمی‌گرداند، مشروط بر اینکه عنصر متناظر آن‌ها در *selectors* درست باشد. هنگامی که یکی از پیمایش‌پذیرهای *data* یا *selectors* به پایان برسد، متوقف می‌شود. تقریباً معادل است با::"
 
 msgid ""
@@ -613,7 +616,8 @@ msgstr "هنگام شمارش با اعداد ممیز شناور، گاهی م�
 msgid "Added *step* argument and allowed non-integer arguments."
 msgstr "آرگومان *step* افزوده شد و آرگومان‌های غیر عدد صحیح مجاز شدند."
 
-msgid "Make an iterator returning elements from the *iterable* and saving a copy of each.  When the iterable is exhausted, return elements from the saved copy.  Repeats indefinitely.  Roughly equivalent to::"
+#, fuzzy
+msgid "Make an iterator returning elements from the *iterable* and saving a copy of each.  When the iterable is :term:`exhausted`, return elements from the saved copy.  Repeats indefinitely.  Roughly equivalent to::"
 msgstr "یک پیمایش‌گر ایجاد می‌کند که عناصر را از *iterable* برمی‌گرداند و یک کپی از هر عنصر را ذخیره می‌کند. هنگامی که پیمایش‌پذیر به پایان رسید، عناصر را از کپی ذخیره‌شده برمی‌گرداند. به‌طور نامحدود تکرار می‌شود. تقریباً معادل است با::"
 
 msgid ""
@@ -797,7 +801,8 @@ msgstr "پیمایش‌گری می‌سازد که عناصر انتخاب‌ش�
 msgid "If *start* is zero or ``None``, iteration starts at zero.  Otherwise, elements from the iterable are skipped until *start* is reached."
 msgstr "اگر *start* صفر یا ``None`` باشد، تکرار از صفر آغاز می‌شود. در غیر این صورت، عناصر پیمایش‌پذیر تا رسیدن به *start* نادیده گرفته می‌شوند."
 
-msgid "If *stop* is ``None``, iteration continues until the input is exhausted, if at all.  Otherwise, it stops at the specified position."
+#, fuzzy
+msgid "If *stop* is ``None``, iteration continues until the input is :term:`exhausted`, if at all.  Otherwise, it stops at the specified position."
 msgstr "اگر *stop* برابر ``None`` باشد، پیمایش تا زمانی ادامه می‌یابد که ورودی تمام شود، اگر اصلاً تمام شود. در غیر این صورت، در موقعیت مشخص‌شده متوقف می‌شود."
 
 msgid "If *step* is ``None``, the step defaults to one.  Elements are returned consecutively unless *step* is set higher than one which results in items being skipped."
@@ -1062,7 +1067,8 @@ msgstr ""
 "            break\n"
 "        yield x"
 
-msgid "Note, the element that first fails the predicate condition is consumed from the input iterator and there is no way to access it. This could be an issue if an application wants to further consume the input iterator after *takewhile* has been run to exhaustion.  To work around this problem, consider using `more-itertools before_and_after() <https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`_ instead."
+#, fuzzy
+msgid "Note, the element that first fails the predicate condition is consumed from the input iterator and there is no way to access it. This could be an issue if an application wants to further consume the input iterator after *takewhile* has been run to :term:`exhaustion <exhausted>`. To work around this problem, consider using `more-itertools before_and_after() <https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`__ instead."
 msgstr "توجه داشته باشید که اولین المانی که شرط را برآورده نمی‌کند، از پیمایش‌گر ورودی مصرف می‌شود و هیچ راهی برای دسترسی به آن وجود ندارد. اگر برنامه‌ای بخواهد پس از اجرای *takewhile* تا انتها، به مصرف پیمایش‌گر ورودی ادامه دهد، این موضوع می‌تواند مشکل‌ساز شود. در عوض، برای دور زدن این مشکل، استفاده از `more-itertools before_and_after() <https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`_ را در نظر بگیرید."
 
 msgid "Return *n* independent iterators from a single iterable."
@@ -1183,7 +1189,8 @@ msgstr "یک پیمایش‌گر می‌سازد که المان‌ها را ا�
 msgid "If the iterables are of uneven length, missing values are filled-in with *fillvalue*.  If not specified, *fillvalue* defaults to ``None``."
 msgstr "اگر پیمایش‌پذیرها طول‌های نابرابری داشته باشند، مقادیر جاافتاده با *fillvalue* پر می‌شوند. اگر مشخص نشده باشد، *fillvalue* به‌طور پیش‌فرض ``None`` خواهد بود."
 
-msgid "Iteration continues until the longest iterable is exhausted."
+#, fuzzy
+msgid "Iteration continues until the longest iterable is :term:`exhausted`."
 msgstr "تکرار تا زمانی ادامه می‌یابد که طولانی‌ترین پیمایش‌پذیر تمام شود."
 
 msgid ""

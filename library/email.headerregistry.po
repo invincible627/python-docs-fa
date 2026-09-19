@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:09+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -42,7 +42,8 @@ msgstr "هنگام استفاده از هر یک از اشیاء سیاست مش
 msgid "The sections below first document the header base classes and their attributes, followed by the API for modifying the behavior of :class:`.HeaderRegistry`, and finally the support classes used to represent the data parsed from structured headers."
 msgstr "بخش‌های زیر ابتدا کلاس‌های پایه‌ی سرآیند و ویژگی‌های آن‌ها را مستند می‌کنند، سپس به API برای تغییر رفتار :class:`.HeaderRegistry` می‌پردازند، و در نهایت کلاس‌های پشتیبانی مورد استفاده برای بازنمایی داده‌های تجزیه‌شده از سرآیند‌های ساختاریافته را پوشش می‌دهند."
 
-msgid "*name* and *value* are passed to ``BaseHeader`` from the :attr:`~email.policy.EmailPolicy.header_factory` call.  The string value of any header object is the *value* fully decoded to unicode."
+#, fuzzy
+msgid "*name* and *value* are passed to ``BaseHeader`` from the :attr:`~email.policy.EmailPolicy.header_factory` call.  The string value of any header object is the *value* fully decoded to a string."
 msgstr "*name* و *value* از فراخوانی :attr:`~email.policy.EmailPolicy.header_factory` به ``BaseHeader`` ارسال می‌شوند. مقدار رشته‌ای هر شیء سرآیند، همان *value* است که به‌طور کامل به یونیکد کدگشایی شده است."
 
 msgid "This base class defines the following read-only properties:"
@@ -69,7 +70,8 @@ msgstr "``BaseHeader`` به‌تنهایی نمی‌تواند برای ایجا
 msgid "parse(string, kwds)"
 msgstr "parse(string, kwds)"
 
-msgid "``kwds`` is a dictionary containing one pre-initialized key, ``defects``. ``defects`` is an empty list.  The parse method should append any detected defects to this list.  On return, the ``kwds`` dictionary *must* contain values for at least the keys ``decoded``, ``defects`` and ``parse_tree``. ``decoded`` should be the string value for the header (that is, the header value fully decoded to unicode). ``parse_tree`` is set to the parse tree obtained from parsing the header. The parse method should assume that *string* may contain content-transfer-encoded parts, but should correctly handle all valid unicode characters as well so that it can parse un-encoded header values."
+#, fuzzy
+msgid "``kwds`` is a dictionary containing one pre-initialized key, ``defects``. ``defects`` is an empty list.  The parse method should append any detected defects to this list.  On return, the ``kwds`` dictionary *must* contain values for at least the keys ``decoded``, ``defects`` and ``parse_tree``. ``decoded`` should be the string value for the header (that is, the header value fully decoded to a string). ``parse_tree`` is set to the parse tree obtained from parsing the header. The parse method should assume that *string* may contain content-transfer-encoded parts, but should correctly handle all valid Unicode characters as well so that it can parse un-encoded header values."
 msgstr "``kwds`` یک دیکشنری شامل یک کلید از پیش مقداردهی‌شده به نام ``defects`` است. ``defects`` یک فهرست خالی است. متد parse باید هر عیب شناسایی‌شده را به این فهرست اضافه کند. در زمان بازگشت، دیکشنری ``kwds`` *باید* دست‌کم شامل مقادیری برای کلیدهای ``decoded``، ``defects`` و ``parse_tree`` باشد. ``decoded`` باید مقدار رشته‌ای سرآیند باشد (یعنی مقدار سرآیند به‌طور کامل به یونیکد کدگشایی‌شده). ``parse_tree`` برابر با درخت تجزیه‌ی حاصل از تجزیه‌ی سرآیند تنظیم می‌شود. متد parse باید فرض کند که *string* ممکن است شامل بخش‌های کدگذاری‌شده برای انتقال محتوا باشد، اما باید تمام نویسه‌های معتبر یونیکد را نیز به‌درستی مدیریت کند تا بتواند مقادیر سرآیند کدگذاری‌نشده را تجزیه کند."
 
 msgid "``BaseHeader``'s ``__new__`` then creates the header instance, and calls its ``init`` method.  The specialized class only needs to provide an ``init`` method if it wishes to set additional attributes beyond those provided by ``BaseHeader`` itself.  Such an ``init`` method should look like this::"
@@ -90,7 +92,8 @@ msgstr "یعنی هر چیز اضافی که کلاس تخصصی در دیکشن
 msgid "An \"unstructured\" header is the default type of header in :rfc:`5322`. Any header that does not have a specified syntax is treated as unstructured.  The classic example of an unstructured header is the :mailheader:`Subject` header."
 msgstr "یک سرآیند «بدون ساختار»، نوع پیش‌فرض سرآیند در :rfc:`5322` است. هر سرآیندی که سینتکس مشخصی نداشته باشد، بدون ساختار تلقی می‌شود. یک نمونه کلاسیک از سرآیند بدون ساختار، سرآیند :mailheader:`Subject` است."
 
-msgid "In :rfc:`5322`, an unstructured header is a run of arbitrary text in the ASCII character set.  :rfc:`2047`, however, has an :rfc:`5322` compatible mechanism for encoding non-ASCII text as ASCII characters within a header value.  When a *value* containing encoded words is passed to the constructor, the ``UnstructuredHeader`` parser converts such encoded words into unicode, following the :rfc:`2047` rules for unstructured text.  The parser uses heuristics to attempt to decode certain non-compliant encoded words.  Defects are registered in such cases, as well as defects for issues such as invalid characters within the encoded words or the non-encoded text."
+#, fuzzy
+msgid "In :rfc:`5322`, an unstructured header is a run of arbitrary text in the ASCII character set.  :rfc:`2047`, however, has an :rfc:`5322` compatible mechanism for encoding non-ASCII text as ASCII characters within a header value.  When a *value* containing encoded words is passed to the constructor, the ``UnstructuredHeader`` parser converts such encoded words into a string, following the :rfc:`2047` rules for unstructured text.  The parser uses heuristics to attempt to decode certain non-compliant encoded words.  Defects are registered in such cases, as well as defects for issues such as invalid characters within the encoded words or the non-encoded text."
 msgstr "در :rfc:`5322`، یک سرآیند بدون ساختار، دنباله‌ای از متن دلخواه در مجموعه نویسه‌های ASCII است. با این حال، :rfc:`2047` یک سازوکار سازگار با :rfc:`5322` برای کدگذاری متن غیر ASCII به‌عنوان نویسه‌های ASCII درون مقدار سرآیند دارد. هنگامی که یک *value* حاوی کلمات کدگذاری‌شده به سازنده داده می‌شود، پارسر ``UnstructuredHeader`` چنین کلمات کدگذاری‌شده‌ای را با پیروی از قوانین :rfc:`2047` برای متن بدون ساختار، به یونیکد تبدیل می‌کند. این پارسر با استفاده از روش‌های اکتشافی تلاش می‌کند برخی کلمات کدگذاری‌شده‌ی نامنطبق را کدگشایی کند. در چنین مواردی، نقص‌ها ثبت می‌شوند؛ همچنین نقص‌هایی برای مسائلی مانند نویسه‌های نامعتبر درون کلمات کدگذاری‌شده یا متن کدگذاری‌نشده."
 
 msgid "This header type provides no additional attributes."
@@ -135,7 +138,8 @@ msgstr "یک تاپل از اشیای :class:`.Group` که نشانی‌ها و 
 msgid "A tuple of :class:`.Address` objects encoding all of the individual addresses from the header value.  If the header value contains any groups, the individual addresses from the group are included in the list at the point where the group occurs in the value (that is, the list of addresses is \"flattened\" into a one dimensional list)."
 msgstr "تاپلی از اشیای :class:`.Address` که همه‌ی نشانی‌های منفردِ موجود در مقدار سرایند را کدگذاری می‌کنند. اگر مقدار سرایند شامل گروهی باشد، نشانی‌های منفردِ آن گروه در نقطه‌ای که گروه در مقدار ظاهر می‌شود، در فهرست گنجانده می‌شوند (یعنی فهرست نشانی‌ها به یک فهرست یک‌بعدی «تخت‌شده» تبدیل می‌شود)."
 
-msgid "The ``decoded`` value of the header will have all encoded words decoded to unicode.  :class:`~encodings.idna` encoded domain names are also decoded to unicode.  The ``decoded`` value is set by :ref:`joining <meth-str-join>` the :class:`str` value of the elements of the ``groups`` attribute with ``', '``."
+#, fuzzy
+msgid "The ``decoded`` value of the header will have all encoded words decoded to a string.  :class:`~encodings.idna` encoded domain names are also decoded to a string.  The ``decoded`` value is set by :ref:`joining <meth-str-join>` the :class:`str` value of the elements of the ``groups`` attribute with ``', '``."
 msgstr "در مقدار ``decoded`` سرآیند، تمام واژه‌های کدگذاری‌شده به یونیکد کدگشایی می‌شوند. نام‌های دامنه کدگذاری‌شده با :class:`~encodings.idna` نیز به یونیکد کدگشایی می‌شوند. مقدار ``decoded`` با :ref:`پیوند دادن <meth-str-join>` مقادیر :class:`str` عناصر ویژگی ``groups`` با ``', '`` تنظیم می‌شود."
 
 msgid "A list of :class:`.Address` and :class:`.Group` objects in any combination may be used to set the value of an address header.  ``Group`` objects whose ``display_name`` is ``None`` will be interpreted as single addresses, which allows an address list to be copied with groups intact by using the list obtained from the ``groups`` attribute of the source header."
@@ -318,7 +322,8 @@ msgstr "username@domain"
 msgid "where each part must conform to specific syntax rules spelled out in :rfc:`5322`."
 msgstr "که هر بخش باید با قواعد سینتکسی خاصی که در :rfc:`5322` تشریح شده است مطابقت داشته باشد."
 
-msgid "As a convenience *addr_spec* can be specified instead of *username* and *domain*, in which case *username* and *domain* will be parsed from the *addr_spec*.  An *addr_spec* must be a properly RFC quoted string; if it is not ``Address`` will raise an error.  Unicode characters are allowed and will be property encoded when serialized.  However, per the RFCs, unicode is *not* allowed in the username portion of the address."
+#, fuzzy
+msgid "As a convenience *addr_spec* can be specified instead of *username* and *domain*, in which case *username* and *domain* will be parsed from the *addr_spec*.  An *addr_spec* must be a properly RFC quoted string; if it is not ``Address`` will raise an error.  Unicode characters are allowed and will be property encoded when serialized.  However, per the RFCs, Unicode is *not* allowed in the username portion of the address."
 msgstr "برای سهولت، می‌توان *addr_spec* را به‌جای *username* و *domain* مشخص کرد؛ در این صورت *username* و *domain* از *addr_spec* تجزیه می‌شوند. *addr_spec* باید یک رشته‌ی نقل‌قول‌شده‌ی صحیح مطابق RFC باشد؛ اگر این‌طور نباشد، ``Address`` خطایی پرتاب خواهد کرد. نویسه‌های یونیکد مجاز هستند و هنگام سریال‌سازی به‌درستی کدگذاری خواهند شد. با این حال، طبق RFCها، یونیکد در بخش نام‌کاربری نشانی مجاز *نیست*."
 
 msgid "The display name portion of the address, if any, with all quoting removed.  If the address does not have a display name, this attribute will be an empty string."

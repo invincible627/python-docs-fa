@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:29+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -2865,7 +2865,8 @@ msgstr "منبع را به یک گره AST تجزیه می‌کند. معادل 
 msgid "If ``type_comments=True`` is given, the parser is modified to check and return type comments as specified by :pep:`484` and :pep:`526`. This is equivalent to adding :data:`ast.PyCF_TYPE_COMMENTS` to the flags passed to :func:`compile`.  This will report syntax errors for misplaced type comments.  Without this flag, type comments will be ignored, and the ``type_comment`` field on selected AST nodes will always be ``None``.  In addition, the locations of ``# type: ignore`` comments will be returned as the ``type_ignores`` attribute of :class:`Module` (otherwise it is always an empty list)."
 msgstr "اگر ``type_comments=True`` داده شود، پارسر به‌گونه‌ای تغییر می‌یابد که کامنت‌های نوع را مطابق :pep:`484` و :pep:`526` بررسی کند و برگرداند. این معادل افزودن :data:`ast.PyCF_TYPE_COMMENTS` به پرچم‌های ارسال‌شده به :func:`compile` است. این حالت خطاهای سینتکسی مربوط به کامنت‌های نوع نابجا را گزارش می‌دهد. بدون این پرچم، کامنت‌های نوع نادیده گرفته می‌شوند و فیلد ``type_comment`` در گره‌های AST انتخاب‌شده همیشه ``None`` خواهد بود. علاوه بر این، موقعیت‌های کامنت‌های ``# type: ignore`` به‌عنوان ویژگی ``type_ignores`` در :class:`Module` برگردانده می‌شوند (در غیر این صورت همیشه یک فهرست خالی است)."
 
-msgid "In addition, if ``mode`` is ``'func_type'``, the input syntax is modified to correspond to :pep:`484` \"signature type comments\", e.g. ``(str, int) -> List[str]``."
+#, fuzzy
+msgid "In addition, if ``mode`` is ``'func_type'``, the input syntax is modified to correspond to :pep:`484` \"signature type comments\", for example ``(str, int) -> List[str]``."
 msgstr "علاوه بر این، اگر ``mode`` برابر ``'func_type'`` باشد، سینتکس ورودی به‌صورتی تغییر می‌کند که متناظر با «کامنت‌های نوع امضا» در :pep:`484` باشد، مثلاً ``(str, int) -> List[str]``."
 
 msgid "Setting ``feature_version`` to a tuple ``(major, minor)`` will result in a \"best-effort\" attempt to parse using that Python version's grammar. For example, setting ``feature_version=(3, 9)`` will attempt to disallow parsing of :keyword:`match` statements. Currently ``major`` must equal to ``3``. The lowest supported version is ``(3, 7)`` (and this may increase in future Python versions); the highest is ``sys.version_info[0:2]``. \"Best-effort\" attempt means there is no guarantee that the parse (or success of the parse) is the same as when run on the Python version corresponding to ``feature_version``."

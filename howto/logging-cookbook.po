@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 15:56+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -6027,7 +6027,8 @@ msgstr ""
 "            sdata = ''.join(parts)\n"
 "        return f'{version} {asctime} {hostname} {appname} {procid} {msgid} {sdata} {msg}'"
 
-msgid "You'll need to be familiar with RFC 5424 to fully understand the above code, and it may be that you have slightly different needs (e.g. for how you pass structural data to the log). Nevertheless, the above should be adaptable to your speciric needs. With the above handler, you'd pass structured data using something like this::"
+#, fuzzy
+msgid "You'll need to be familiar with RFC 5424 to fully understand the above code, and it may be that you have slightly different needs (e.g. for how you pass structural data to the log). Nevertheless, the above should be adaptable to your specific needs. With the above handler, you'd pass structured data using something like this::"
 msgstr "برای درک کامل کد بالا، لازم است با RFC 5424 آشنا باشید، و ممکن است نیازهای شما کمی متفاوت باشد (مثلاً در مورد نحوه‌ی ارسال داده‌های ساختاریافته به گزارش). با این حال، مورد بالا باید قابل انطباق با نیازهای خاص شما باشد. با هندلر بالا، داده‌های ساختاریافته را با استفاده از چیزی مانند این ارسال می‌کنید::"
 
 msgid ""

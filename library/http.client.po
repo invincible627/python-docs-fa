@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 12:34+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -173,7 +173,8 @@ msgstr "نمونه‌های :class:`HTTPConnection` دارای متدهای زی
 msgid "This will send a request to the server using the HTTP request method *method* and the request URI *url*. The provided *url* must be an absolute path to conform with :rfc:`RFC 2616 §5.1.2 <2616#section-5.1.2>` (unless connecting to an HTTP proxy server or using the ``OPTIONS`` or ``CONNECT`` methods)."
 msgstr "با این کار، یک درخواست با استفاده از متد درخواست HTTP *method* و URI درخواست *url* به سرور ارسال می‌شود. *url* ارائه‌شده باید یک مسیر مطلق باشد تا با :rfc:`RFC 2616 §5.1.2 <2616#section-5.1.2>` مطابقت داشته باشد (مگر در صورت اتصال به یک سرور پراکسی HTTP یا استفاده از متدهای ``OPTIONS`` یا ``CONNECT``)."
 
-msgid "If *body* is specified, the specified data is sent after the headers are finished.  It may be a :class:`str`, a :term:`bytes-like object`, an open :term:`file object`, or an iterable of :class:`bytes`.  If *body* is a string, it is encoded as ISO-8859-1, the default for HTTP.  If it is a bytes-like object, the bytes are sent as is.  If it is a :term:`file object`, the contents of the file is sent; this file object should support at least the ``read()`` method.  If the file object is an instance of :class:`io.TextIOBase`, the data returned by the ``read()`` method will be encoded as ISO-8859-1, otherwise the data returned by ``read()`` is sent as is.  If *body* is an iterable, the elements of the iterable are sent as is until the iterable is exhausted."
+#, fuzzy
+msgid "If *body* is specified, the specified data is sent after the headers are finished.  It may be a :class:`str`, a :term:`bytes-like object`, an open :term:`file object`, or an iterable of :class:`bytes`.  If *body* is a string, it is encoded as ISO-8859-1, the default for HTTP.  If it is a bytes-like object, the bytes are sent as is.  If it is a :term:`file object`, the contents of the file is sent; this file object should support at least the ``read()`` method.  If the file object is an instance of :class:`io.TextIOBase`, the data returned by the ``read()`` method will be encoded as ISO-8859-1, otherwise the data returned by ``read()`` is sent as is.  If *body* is an iterable, the elements of the iterable are sent as is until the iterable is :term:`exhausted`."
 msgstr "اگر *body* مشخص شده باشد، داده‌ی مشخص‌شده پس از پایان سرآیندها ارسال می‌شود. ممکن است یک :class:`str`، یک :term:`bytes-like object`، یک :term:`file object` باز، یا یک پیمایش‌پذیر از :class:`bytes` باشد. اگر *body* یک رشته باشد، به‌صورت ISO-8859-1 کدگذاری می‌شود که پیش‌فرض HTTP است. اگر یک شیء شبه‌بایت باشد، بایت‌ها همان‌طور که هستند ارسال می‌شوند. اگر یک :term:`file object` باشد، محتوای پرونده ارسال می‌شود؛ این شیء پرونده باید دست‌کم از متد ``read()`` پشتیبانی کند. اگر شیء پرونده نمونه‌ای از :class:`io.TextIOBase` باشد، داده‌ی بازگشتی از متد ``read()`` به‌صورت ISO-8859-1 کدگذاری خواهد شد، در غیر این صورت داده‌ی بازگشتی از ``read()`` همان‌طور که است ارسال می‌شود. اگر *body* یک پیمایش‌پذیر باشد، عناصر پیمایش‌پذیر همان‌طور که هستند ارسال می‌شوند تا زمانی که پیمایش‌پذیر به پایان برسد."
 
 msgid "The *headers* argument should be a mapping of extra HTTP headers to send with the request. A :rfc:`Host header <2616#section-14.23>` must be provided to conform with :rfc:`RFC 2616 §5.1.2 <2616#section-5.1.2>` (unless connecting to an HTTP proxy server or using the ``OPTIONS`` or ``CONNECT`` methods)."

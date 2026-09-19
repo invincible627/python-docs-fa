@@ -45,7 +45,7 @@ jobs:
       # this workflow can't drift from update_python_version.py the way
       # it did before (missing --no-location --no-wrap on one side).
       - name: Sync msgids (fetch, build gettext, merge, validate)
-        run: python scripts/po_sync.py sync-only "$CPYTHON_TAG"
+        run: python scripts/po_sync.py sync-only "$CPYTHON_TAG" --create-new
 
       - name: Ensure translation label exists
         env:

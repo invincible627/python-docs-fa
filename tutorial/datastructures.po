@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 19:18+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -164,7 +164,8 @@ msgstr ""
 msgid "Using Lists as Queues"
 msgstr "استفاده از فهرست‌ها به‌عنوان صف"
 
-msgid "It is also possible to use a list as a queue, where the first element added is the first element retrieved (\"first-in, first-out\"); however, lists are not efficient for this purpose.  While appends and pops from the end of list are fast, doing inserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one)."
+#, fuzzy
+msgid "It is also possible to use a list as a queue, where the first element added is the first element retrieved (\"first-in, first-out\"); however, lists are not efficient for this purpose.  While appends and pops from the end of list are fast, doing inserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).  See :ref:`time-complexity` for more information."
 msgstr "همچنین می‌توان از یک فهرست به‌عنوان صف استفاده کرد؛ جایی که اولین عنصری که اضافه می‌شود، اولین عنصری است که دریافت می‌شود («اولین ورودی، اولین خروجی»). بااین‌حال، فهرست‌ها برای این منظور کارایی مناسبی ندارند. در حالی که افزودن و حذف از انتهای فهرست سریع است، انجام درج یا حذف از ابتدای فهرست کند است (زیرا تمام عناصر دیگر باید یک موقعیت جابه‌جا شوند)."
 
 msgid "To implement a queue, use :class:`collections.deque` which was designed to have fast appends and pops from both ends.  For example::"

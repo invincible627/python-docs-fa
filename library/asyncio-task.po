@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 13:34+0330\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:55+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -410,6 +410,15 @@ msgstr ""
 "    # completion:\n"
 "    task.add_done_callback(background_tasks.discard)"
 
+msgid "Note that this approach never awaits the tasks, so if a task fails, its exception is never retrieved and asyncio logs a \"Task exception was never retrieved\" message when the task is garbage collected.  To avoid this, use :class:`asyncio.TaskGroup` which keeps a strong reference to each task, awaits them and propagates their exceptions::"
+msgstr ""
+
+msgid ""
+"async with asyncio.TaskGroup() as tg:\n"
+"    for i in range(10):\n"
+"        tg.create_task(some_coro(param=i))"
+msgstr ""
+
 msgid "Added the *name* parameter."
 msgstr "پارامتر *name* افزوده شد."
 
@@ -440,7 +449,8 @@ msgstr "گروه‌های وظیفه، یک API برای ایجاد وظیفه �
 msgid "An :ref:`asynchronous context manager <async-context-managers>` holding a group of tasks. Tasks can be added to the group using :meth:`create_task`. All tasks are awaited when the context manager exits."
 msgstr "یک :ref:`مدیر زمینه ناهمگام <async-context-managers>` که گروهی از وظایف را نگه می‌دارد. می‌توان وظایف را با استفاده از :meth:`create_task` به گروه اضافه کرد. هنگام خروج مدیر زمینه، همه وظایف await می‌شوند."
 
-msgid "Create a task in this task group. The signature matches that of :func:`asyncio.create_task`. If the task group is inactive (e.g. not yet entered, already finished, or in the process of shutting down), we will close the given ``coro``."
+#, fuzzy
+msgid "Create a task in this task group. The signature matches that of :func:`asyncio.create_task`. If the task group is inactive (e.g. not yet entered, already finished, or in the process of shutting down), we will close the given ``coro`` and raise :exc:`RuntimeError`."
 msgstr "یک وظیفه در این گروه وظیفه (task group) ایجاد کنید. امضای آن با :func:`asyncio.create_task` مطابقت دارد. اگر گروه وظیفه غیرفعال باشد (مثلاً هنوز وارد نشده باشد، از پیش به پایان رسیده باشد، یا در حال خاموش شدن باشد)، ``coro`` داده‌شده را خواهیم بست."
 
 msgid "Close the given coroutine if the task group is not active."
@@ -950,10 +960,12 @@ msgstr "منتظر بمانید تا *aw* :ref:`awaitable <asyncio-awaitables>` 
 msgid "*timeout* can either be ``None`` or a float or int number of seconds to wait for.  If *timeout* is ``None``, block until the future completes."
 msgstr "*timeout* می‌تواند ``None`` یا یک عدد float یا int به‌عنوان تعداد ثانیه‌های انتظار باشد. اگر *timeout* برابر ``None`` باشد، تا زمانی که future تکمیل شود، مسدود می‌شود."
 
-msgid "If a timeout occurs, it cancels the task and raises :exc:`TimeoutError`."
+#, fuzzy
+msgid "If a timeout occurs, it cancels *aw* and raises :exc:`TimeoutError`."
 msgstr "در صورت رخ دادن مهلت زمانی، وظیفه لغو می‌شود و :exc:`TimeoutError` پرتاب می‌شود."
 
-msgid "To avoid the task :meth:`cancellation <Task.cancel>`, wrap it in :func:`shield`."
+#, fuzzy
+msgid "To prevent *aw* from being cancelled, wrap it in :func:`shield`."
 msgstr "برای جلوگیری از :meth:`لغو <Task.cancel>` وظیفه، آن را در :func:`shield` بپیچید."
 
 msgid "The function will wait until the future is actually cancelled, so the total wait time may exceed the *timeout*. If an exception happens during cancellation, it is propagated."
@@ -1004,6 +1016,9 @@ msgstr "هنگامی که *aw* به دلیل مهلت زمانی لغو می‌�
 
 msgid "Raises :exc:`TimeoutError` instead of :exc:`asyncio.TimeoutError`."
 msgstr ":exc:`TimeoutError` را به‌جای :exc:`asyncio.TimeoutError` پرتاب می‌کند."
+
+msgid "Implemented using :func:`asyncio.timeout`, a coroutine passed as *aw* is no longer wrapped in a :class:`Task` when *timeout* is positive."
+msgstr ""
 
 msgid "Waiting primitives"
 msgstr "اولیه‌های انتظار"

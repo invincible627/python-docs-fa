@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -21,13 +21,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "The Python Standard Library"
+#, fuzzy
+msgid "The Python standard library"
 msgstr "کتابخانه استاندارد پایتون"
 
-msgid "While :ref:`reference-index` describes the exact syntax and semantics of the Python language, this library reference manual describes the standard library that is distributed with Python. It also describes some of the optional components that are commonly included in Python distributions."
+#, fuzzy
+msgid "This library reference manual describes the standard library distributed with Python. It also describes some of the optional components that are commonly included in Python distributions."
 msgstr "در حالی که :ref:`reference-index` سینتکس و معناشناسی دقیق زبان پایتون را توصیف می‌کند، این راهنمای مرجع کتابخانه، کتابخانه استانداردی را که همراه با پایتون توزیع می‌شود، توصیف می‌کند. همچنین برخی از کامپوننت‌های اختیاری را که معمولاً در توزیع‌های پایتون گنجانده شده‌اند، توصیف می‌کند."
 
-msgid "Python's standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs."
+msgid "Elsewhere, :ref:`reference-index` describes the exact syntax and semantics of the Python language, and :ref:`builtins-index` describes the built-in functions."
+msgstr ""
+
+#, fuzzy
+msgid "Python's standard library is extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs."
 msgstr "کتابخانه‌ی استاندارد پایتون بسیار گسترده است و طیف وسیعی از امکانات را ارائه می‌دهد، همان‌طور که فهرست مطالب طولانی زیر نشان می‌دهد. این کتابخانه شامل ماژول‌های توکار (نوشته‌شده به زبان C) است که دسترسی به قابلیت‌های سیستمی مانند ورودی/خروجی پرونده را فراهم می‌کنند؛ قابلیت‌هایی که در غیر این صورت برای برنامه‌نویسان پایتون غیرقابل دسترس بودند، و همچنین شامل ماژول‌هایی است که به زبان پایتون نوشته شده‌اند و راه‌حل‌های استانداردشده‌ای برای بسیاری از مسائلی که در برنامه‌نویسی روزمره رخ می‌دهند ارائه می‌دهند. برخی از این ماژول‌ها به‌طور صریح برای تشویق و افزایش قابلیت حمل برنامه‌های پایتون از طریق انتزاع جزئیات خاص پلتفرم در قالب APIهای خنثی نسبت به پلتفرم طراحی شده‌اند."
 
 msgid "The Python installers for the Windows platform usually include the entire standard library and often also include many additional components. For Unix-like operating systems Python is normally provided as a collection of packages, so it may be necessary to use the packaging tools provided with the operating system to obtain some or all of the optional components."

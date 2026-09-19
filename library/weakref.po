@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 08:24+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -243,7 +243,8 @@ msgstr "یک نهایی‌ساز تا پیش از آنکه فراخوانی شو
 msgid "Exceptions raised by finalizer callbacks during garbage collection will be shown on the standard error output, but cannot be propagated.  They are handled in the same way as exceptions raised from an object's :meth:`~object.__del__` method or a weak reference's callback."
 msgstr "استثناهایی که توسط کال‌بک‌های نهایی‌ساز در حین زباله‌روبی پرتاب می‌شوند، در خروجی خطای استاندارد نمایش داده خواهند شد، اما نمی‌توانند انتشار یابند. آن‌ها به همان شیوه‌ای مدیریت می‌شوند که استثناهای پرتاب‌شده از متد :meth:`~object.__del__` یک شیء یا کال‌بک یک ارجاع ضعیف مدیریت می‌شوند."
 
-msgid "When the program exits, each remaining live finalizer is called unless its :attr:`atexit` attribute has been set to false.  They are called in reverse order of creation."
+#, fuzzy
+msgid "When the program exits (or more generally, at :term:`interpreter shutdown`), each remaining live finalizer is called unless its :attr:`atexit` attribute has been set to false. They are called in reverse order of creation."
 msgstr "هنگام خروج برنامه، هر نهایی‌ساز زنده‌ی باقی‌مانده فراخوانی می‌شود، مگر آنکه ویژگی :attr:`atexit` آن روی false تنظیم شده باشد. آن‌ها به ترتیب معکوس ایجاد فراخوانی می‌شوند."
 
 msgid "A finalizer will never invoke its callback during the later part of the :term:`interpreter shutdown` when module globals are liable to have been replaced by :const:`None`."
@@ -261,7 +262,8 @@ msgstr "اگر *self* زنده باشد، تاپل ``(obj, func, args, kwargs)``
 msgid "Property which is true if the finalizer is alive, false otherwise."
 msgstr "ویژگی‌ای که اگر نهایی‌ساز زنده باشد، true است، در غیر این صورت false است."
 
-msgid "A writable boolean property which by default is true.  When the program exits, it calls all remaining live finalizers for which :attr:`.atexit` is true.  They are called in reverse order of creation."
+#, fuzzy
+msgid "A writable boolean property which by default is true.  At :term:`interpreter shutdown`, all remaining live finalizers for which :attr:`.atexit` is true are called in reverse order of creation."
 msgstr "یک ویژگی بولی قابل‌نوشتن که مقدار آن به‌طور پیش‌فرض درست است. هنگام خروج برنامه، تمام نهایی‌سازهای زنده‌ی باقی‌مانده‌ای که مقدار :attr:`.atexit` آن‌ها درست است، فراخوانی می‌شوند. آن‌ها به ترتیب معکوس ایجاد فراخوانی می‌شوند."
 
 msgid "It is important to ensure that *func*, *args* and *kwargs* do not own any references to *obj*, either directly or indirectly, since otherwise *obj* will never be garbage collected.  In particular, *func* should not be a bound method of *obj*."

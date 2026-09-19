@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 10:40+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -181,7 +181,8 @@ msgstr "L[object] = object."
 msgid "However, in general one has to compute the merge according to the following prescription:"
 msgstr "با این حال، به‌طور کلی باید ادغام را مطابق دستورالعمل زیر محاسبه کنید:"
 
-msgid "*take the head of the first list, i.e L[B1][0]; if this head is not in the tail of any of the other lists, then add it to the linearization of C and remove it from the lists in the merge, otherwise look at the head of the next list and take it, if it is a good head.  Then repeat the operation until all the class are removed or it is impossible to find good heads.  In this case, it is impossible to construct the merge, Python 2.3 will refuse to create the class C and will raise an exception.*"
+#, fuzzy
+msgid "*take the head of the first list, i.e L[B1][0]; if this head is not in the tail of any of the other lists, then add it to the linearization of C and remove it from the lists in the merge, otherwise look at the head of the next list and take it, if it is a good head.  Then repeat the operation until all the classes are removed or it is impossible to find good heads.  In this case, it is impossible to construct the merge, Python 2.3 will refuse to create the class C and will raise an exception.*"
 msgstr "*سر نخستین فهرست را بردارید، یعنی L[B1][0]؛ اگر این سر در دم هیچ‌یک از فهرست‌های دیگر وجود نداشته باشد، آن را به خطی‌سازی C اضافه کنید و آن را از فهرست‌های موجود در ادغام حذف کنید، در غیر این صورت، به سر فهرست بعدی نگاه کنید و اگر سر مناسبی است، آن را بردارید. سپس این عمل را تکرار کنید تا همه کلاس‌ها حذف شوند یا یافتن سرهای مناسب ممکن نباشد. در این حالت، ساخت ادغام ممکن نیست؛ Python 2.3 از ایجاد کلاس C خودداری می‌کند و یک استثنا پرتاب می‌کند.*"
 
 msgid "This prescription ensures that the merge operation *preserves* the ordering, if the ordering can be preserved.  On the other hand, if the order cannot be preserved (as in the example of serious order disagreement discussed above) then the merge cannot be computed."

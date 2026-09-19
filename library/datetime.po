@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 14:43+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -1419,7 +1419,8 @@ msgstr "شماره ترتیبی تاریخ در گاه‌شماری میلادی
 msgid "Return POSIX timestamp corresponding to the :class:`.datetime` instance. The return value is a :class:`float` similar to that returned by :func:`time.time`."
 msgstr "مهر زمانی POSIX متناظر با نمونه‌ی :class:`.datetime` را برمی‌گرداند. مقدار بازگشتی یک :class:`float` مشابه مقداری است که :func:`time.time` برمی‌گرداند."
 
-msgid "Naive :class:`.datetime` instances are assumed to represent local time and this method relies on the platform C :c:func:`mktime` function to perform the conversion. Since :class:`!datetime` supports wider range of values than :c:func:`mktime` on many platforms, this method may raise :exc:`OverflowError` or :exc:`OSError` for times far in the past or far in the future."
+#, fuzzy
+msgid "Naive :class:`.datetime` instances are assumed to represent local time and this method relies on platform C functions to perform the conversion. Since :class:`!datetime` supports a wider range of values than the platform C functions on many platforms, this method may raise :exc:`OverflowError` or :exc:`OSError` for times far in the past or far in the future."
 msgstr "نمونه‌های ساده‌ی :class:`.datetime` بیانگر زمان محلی فرض می‌شوند و این متد برای انجام تبدیل، به تابع C :c:func:`mktime` در سکو متکی است. از آن‌جا که :class:`!datetime` در بسیاری از سکوها بازه‌ی وسیع‌تری از مقادیر را نسبت به :c:func:`mktime` پشتیبانی می‌کند، این متد ممکن است برای زمان‌های بسیار دور در گذشته یا بسیار دور در آینده، :exc:`OverflowError` یا :exc:`OSError` را پرتاب کند."
 
 msgid "For aware :class:`.datetime` instances, the return value is computed as::"
@@ -1442,6 +1443,9 @@ msgstr "timestamp = (dt - datetime(1970, 1, 1)) / timedelta(seconds=1)"
 
 msgid "The :meth:`timestamp` method uses the :attr:`.fold` attribute to disambiguate the times during a repeated interval."
 msgstr "متد :meth:`timestamp` از ویژگی :attr:`.fold` برای رفع ابهام زمان‌ها در طول یک بازه‌ی تکرارشده استفاده می‌کند."
+
+msgid "This method no longer relies on the platform C :c:func:`mktime` function to perform conversions."
+msgstr ""
 
 msgid "Return the day of the week as an integer, where Monday is 0 and Sunday is 6. The same as ``self.date().weekday()``. See also :meth:`isoweekday`."
 msgstr "روز هفته را به‌عنوان عدد صحیح بازمی‌گرداند، به‌طوری که دوشنبه ۰ و یکشنبه ۶ است. معادل ``self.date().weekday()`` است. همچنین :meth:`isoweekday` را ببینید."

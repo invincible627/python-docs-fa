@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 12:25+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -77,16 +77,19 @@ msgstr ":mod:`!xml.dom` شامل توابع زیر است:"
 msgid "Register the *factory* function with the name *name*.  The factory function should return an object which implements the :class:`DOMImplementation` interface.  The factory function can return the same object every time, or a new one for each call, as appropriate for the specific implementation (e.g. if that implementation supports some customization)."
 msgstr "تابع *factory* را با نام *name* ثبت کنید. تابع کارخانه باید شیءای را برگرداند که رابط :class:`DOMImplementation` را پیاده‌سازی می‌کند. تابع کارخانه می‌تواند هر بار همان شیء را برگرداند، یا برای هر فراخوانی یک شیء جدید را برگرداند، بسته به آنچه برای پیاده‌سازی خاص مناسب است (مثلاً اگر آن پیاده‌سازی از برخی سفارشی‌سازی‌ها پشتیبانی کند)."
 
-msgid "Return a suitable DOM implementation. The *name* is either well-known, the module name of a DOM implementation, or ``None``. If it is not ``None``, imports the corresponding module and returns a :class:`DOMImplementation` object if the import succeeds.  If no name is given, and if the environment variable :envvar:`PYTHON_DOM` is set, this variable is used to find the implementation."
+#, fuzzy
+msgid "Return a suitable DOM implementation. The *name* is either well-known, the module name of a DOM implementation, or ``None``. If it is not ``None``, imports the corresponding module and returns a :class:`DOMImplementation` object if the import succeeds.  If no name is given, and if the environment variable :envvar:`!PYTHON_DOM` is set, this variable is used to find the implementation. The only well-known name in the standard library is ``'minidom'``, for :mod:`xml.dom.minidom`."
 msgstr "یک پیاده‌سازی DOM مناسب برمی‌گرداند. *name* یا یک نام شناخته‌شده است، یا نام ماژول یک پیاده‌سازی DOM است، یا ``None`` است. اگر ``None`` نباشد، ماژول متناظر را ایمپورت می‌کند و در صورت موفقیت ایمپورت، یک شیء :class:`DOMImplementation` برمی‌گرداند. اگر هیچ نامی داده نشده باشد و متغیر محیطی :envvar:`PYTHON_DOM` تنظیم شده باشد، از این متغیر برای یافتن پیاده‌سازی استفاده می‌شود."
 
-msgid "If name is not given, this examines the available implementations to find one with the required feature set.  If no implementation can be found, raise an :exc:`ImportError`.  The features list must be a sequence of ``(feature, version)`` pairs which are passed to the :meth:`hasFeature` method on available :class:`DOMImplementation` objects."
+#, fuzzy
+msgid "If name is not given, this examines the available implementations to find one with the required feature set.  If no implementation can be found, raise an :exc:`ImportError`.  The features list must be a sequence of ``(feature, version)`` pairs which are passed to the :meth:`~DOMImplementation.hasFeature` method on available :class:`DOMImplementation` objects."
 msgstr "اگر name داده نشود، پیاده‌سازی‌های موجود بررسی می‌شوند تا یکی با مجموعه ویژگی‌های مورد نیاز یافت شود. اگر هیچ پیاده‌سازی‌ای پیدا نشود، یک :exc:`ImportError` پرتاب می‌شود. فهرست features باید دنباله‌ای از جفت‌های ``(feature, version)`` باشد که به متد :meth:`hasFeature` روی اشیاء :class:`DOMImplementation` موجود داده می‌شوند."
 
 msgid "Some convenience constants are also provided:"
 msgstr "همچنین برخی ثابت‌های کاربردی نیز ارائه شده‌اند:"
 
-msgid "The value used to indicate that no namespace is associated with a node in the DOM.  This is typically found as the :attr:`namespaceURI` of a node, or used as the *namespaceURI* parameter to a namespaces-specific method."
+#, fuzzy
+msgid "The value used to indicate that no namespace is associated with a node in the DOM.  This is typically found as the :attr:`~Node.namespaceURI` of a node, or used as the *namespaceURI* parameter to a namespaces-specific method."
 msgstr "مقداری که برای نشان دادن این استفاده می‌شود که هیچ فضای نامی با یک گره در DOM مرتبط نیست. این مقدار معمولاً به‌عنوان :attr:`namespaceURI` یک گره یافت می‌شود، یا به‌عنوان پارامتر *namespaceURI* در یک متد مخصوص فضای نامها استفاده می‌شود."
 
 msgid "The namespace URI associated with the reserved prefix ``xml``, as defined by `Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ (section 4)."
@@ -98,7 +101,8 @@ msgstr "URI فضای نام برای اعلان‌های فضای نام، هم�
 msgid "The URI of the XHTML namespace as defined by `XHTML 1.0: The Extensible HyperText Markup Language <https://www.w3.org/TR/xhtml1/>`_ (section 3.1.1)."
 msgstr "URI فضای نام XHTML، همان‌طور که در `XHTML 1.0: The Extensible HyperText Markup Language <https://www.w3.org/TR/xhtml1/>`_ (بخش 3.1.1) تعریف شده است."
 
-msgid "In addition, :mod:`!xml.dom` contains a base :class:`Node` class and the DOM exception classes.  The :class:`Node` class provided by this module does not implement any of the methods or attributes defined by the DOM specification; concrete DOM implementations must provide those.  The :class:`Node` class provided as part of this module does provide the constants used for the :attr:`nodeType` attribute on concrete :class:`Node` objects; they are located within the class rather than at the module level to conform with the DOM specifications."
+#, fuzzy
+msgid "In addition, :mod:`!xml.dom` contains a base :class:`Node` class and the DOM exception classes.  The :class:`Node` class provided by this module does not implement any of the methods or attributes defined by the DOM specification; concrete DOM implementations must provide those.  The :class:`Node` class provided as part of this module does provide the constants used for the :attr:`~Node.nodeType` attribute on concrete :class:`Node` objects; they are located within the class rather than at the module level to conform with the DOM specifications."
 msgstr "علاوه بر این، :mod:`!xml.dom` شامل یک کلاس پایه :class:`Node` و کلاس‌های استثنای DOM است. کلاس :class:`Node` ارائه‌شده توسط این ماژول، هیچ‌یک از متدها یا ویژگی‌های تعریف‌شده در مشخصات DOM را پیاده‌سازی نمی‌کند؛ پیاده‌سازی‌های واقعی DOM باید آن‌ها را فراهم کنند. کلاس :class:`Node` ارائه‌شده به‌عنوان بخشی از این ماژول، ثابت‌های استفاده‌شده برای ویژگی :attr:`nodeType` در اشیاء واقعی :class:`Node` را فراهم می‌کند؛ این ثابت‌ها برای مطابقت با مشخصات DOM، به‌جای سطح ماژول، درون کلاس قرار دارند."
 
 msgid "Objects in the DOM"
@@ -106,6 +110,9 @@ msgstr "اشیاء در DOM"
 
 msgid "The definitive documentation for the DOM is the DOM specification from the W3C."
 msgstr "مستندات قطعی برای DOM، مشخصات DOM از W3C است."
+
+msgid "The names documented in this section are DOM interfaces. With the exception of :class:`Node` and the exception classes, they are not provided by the :mod:`!xml.dom` module itself, but by concrete DOM implementations, such as :mod:`xml.dom.minidom`."
+msgstr ""
 
 msgid "Note that DOM attributes may also be manipulated as nodes instead of as simple strings.  It is fairly rare that you must do this, however, so this usage is not yet documented."
 msgstr "توجه داشته باشید که ویژگی‌های DOM را می‌توان به‌جای رشته‌های ساده، به‌عنوان گره‌ها نیز دستکاری کرد. با این حال، نیاز به انجام این کار نسبتاً نادر است، بنابراین این کاربرد هنوز مستند نشده است."
@@ -233,8 +240,27 @@ msgstr "اشیای Node"
 msgid "All of the components of an XML document are subclasses of :class:`Node`."
 msgstr "همه‌ی کامپوننت‌های یک سند XML، زیرکلاس‌هایی از :class:`Node` هستند."
 
-msgid "An integer representing the node type.  Symbolic constants for the types are on the :class:`Node` object: :const:`ELEMENT_NODE`, :const:`ATTRIBUTE_NODE`, :const:`TEXT_NODE`, :const:`CDATA_SECTION_NODE`, :const:`ENTITY_NODE`, :const:`PROCESSING_INSTRUCTION_NODE`, :const:`COMMENT_NODE`, :const:`DOCUMENT_NODE`, :const:`DOCUMENT_TYPE_NODE`, :const:`NOTATION_NODE`. This is a read-only attribute."
-msgstr "یک عدد صحیح که نوع گره را نشان می‌دهد. ثابت‌های نمادین برای انواع، در شیء :class:`Node` قرار دارند: :const:`ELEMENT_NODE`، :const:`ATTRIBUTE_NODE`، :const:`TEXT_NODE`، :const:`CDATA_SECTION_NODE`، :const:`ENTITY_NODE`، :const:`PROCESSING_INSTRUCTION_NODE`، :const:`COMMENT_NODE`، :const:`DOCUMENT_NODE`، :const:`DOCUMENT_TYPE_NODE`، :const:`NOTATION_NODE`. این یک ویژگی فقط‌خواندنی است."
+msgid "Only nodes of the following types can have children, and only children of the listed types:"
+msgstr ""
+
+msgid "at most one :class:`Element`, at most one :class:`DocumentType`, :class:`ProcessingInstruction` and :class:`Comment`"
+msgstr ""
+
+msgid ":class:`DocumentFragment` and :class:`Element`"
+msgstr ""
+
+msgid ":class:`Element`, :class:`Text`, :class:`CDATASection`, :class:`ProcessingInstruction` and :class:`Comment`"
+msgstr ""
+
+msgid "Nodes of other types cannot have children. Inserting a child of a not allowed type raises :exc:`HierarchyRequestErr`."
+msgstr ""
+
+#, fuzzy
+msgid "An integer representing the node type.  Symbolic constants for the types are on the :class:`Node` object. This is a read-only attribute."
+msgstr "اولین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Integer constants for the possible values of the :attr:`~Node.nodeType` attribute."
+msgstr ""
 
 msgid "The parent of the current node, or ``None`` for the document node. The value is always a :class:`Node` object or ``None``.  For :class:`Element` nodes, this will be the parent element, except for the root element, in which case it will be the :class:`Document` object. For :class:`Attr` nodes, this is always ``None``. This is a read-only attribute."
 msgstr "والد گره فعلی، یا ``None`` برای گره سند. مقدار همیشه یک شیء :class:`Node` یا ``None`` است. برای گره‌های :class:`Element`، این، عنصر والد خواهد بود، به‌جز عنصر ریشه، که در این صورت شیء :class:`Document` خواهد بود. برای گره‌های :class:`Attr`، این همیشه ``None`` است. این یک ویژگی فقط‌خواندنی است."
@@ -248,8 +274,9 @@ msgstr "گره‌ای که بلافاصله پیش از این گره و با ه
 msgid "The node that immediately follows this one with the same parent.  See also :attr:`previousSibling`.  If this is the last child of the parent, this attribute will be ``None``. This is a read-only attribute."
 msgstr "گره‌ای که بلافاصله پس از این گره و با همان والد می‌آید. همچنین :attr:`previousSibling` را ببینید. اگر این گره آخرین فرزند والد باشد، این ویژگی ``None`` خواهد بود. این ویژگی فقط‌خواندنی است."
 
-msgid "A list of nodes contained within this node. This is a read-only attribute."
-msgstr "فهرستی از گره‌های موجود در این گره. این یک ویژگی فقط‌خواندنی است."
+#, fuzzy
+msgid "A :class:`NodeList` of the children of this node. If the node has no children, the list is empty. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
 
 msgid "The first child of the node, if there are any, or ``None``. This is a read-only attribute."
 msgstr "اولین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
@@ -257,20 +284,115 @@ msgstr "اولین فرزند گره، در صورت وجود، یا ``None``. �
 msgid "The last child of the node, if there are any, or ``None``. This is a read-only attribute."
 msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
 
-msgid "The part of the :attr:`tagName` following the colon if there is one, else the entire :attr:`tagName`.  The value is a string."
+#, fuzzy
+msgid "The part of the :attr:`~Element.tagName` following the colon if there is one, else the entire :attr:`~Element.tagName`.  The value is a string."
 msgstr "بخشی از :attr:`tagName` که پس از دونقطه می‌آید، اگر دونقطه‌ای وجود داشته باشد، در غیر این صورت کل :attr:`tagName`. مقدار یک رشته است."
 
-msgid "The part of the :attr:`tagName` preceding the colon if there is one, else the empty string.  The value is a string, or ``None``."
+#, fuzzy
+msgid "The part of the :attr:`~Element.tagName` preceding the colon if there is one, else the empty string.  The value is a string, or ``None``."
 msgstr "بخشی از :attr:`tagName` که پیش از دونقطه قرار دارد، اگر دونقطه وجود داشته باشد؛ در غیر این صورت رشته خالی. مقدار یک رشته است، یا ``None``."
 
 msgid "The namespace associated with the element name.  This will be a string or ``None``.  This is a read-only attribute."
 msgstr "فضای نام مرتبط با نام عنصر. این مقدار یک رشته یا ``None`` خواهد بود. این یک ویژگی فقط‌خواندنی است."
 
-msgid "This has a different meaning for each node type; see the DOM specification for details.  You can always get the information you would get here from another property such as the :attr:`tagName` property for elements or the :attr:`name` property for attributes. For all node types, the value of this attribute will be either a string or ``None``.  This is a read-only attribute."
+#, fuzzy
+msgid "The :class:`Document` object to which this node belongs, or ``None`` for a document itself. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Return whether the DOM implementation supports a particular *feature*, as :meth:`DOMImplementation.hasFeature` does."
+msgstr ""
+
+msgid "Associate *data* with *key* on this node and return the data previously associated with *key*, or ``None``. If *data* is ``None``, the association is removed. *handler* is called when the node is cloned, imported, renamed or deleted; pass ``None`` if no notification is needed."
+msgstr ""
+
+msgid "Return the data associated with *key* on this node by :meth:`~Node.setUserData`, or ``None``."
+msgstr ""
+
+#, fuzzy
+msgid "The name of this node, depending on its type; see the table below. You can always get the information you would get here from another property such as the :attr:`~Element.tagName` property for elements or the :attr:`~Attr.name` property for attributes. This is a read-only attribute."
 msgstr "این برای هر نوع گره معنای متفاوتی دارد؛ برای جزئیات، مشخصه‌ی DOM را ببینید. شما همیشه می‌توانید اطلاعاتی را که در اینجا به دست می‌آورید، از ویژگی دیگری مانند ویژگی :attr:`tagName` برای المان‌ها یا ویژگی :attr:`name` برای صفت‌ها دریافت کنید. برای تمام انواع گره، مقدار این صفت یا یک رشته است یا ``None``. این صفت فقط‌خواندنی است."
 
-msgid "This has a different meaning for each node type; see the DOM specification for details.  The situation is similar to that with :attr:`nodeName`.  The value is a string or ``None``."
-msgstr "این برای هر نوع گره معنای متفاوتی دارد؛ برای جزئیات، مشخصات DOM را ببینید. وضعیت مشابهی با :attr:`nodeName` دارد. مقدار یک رشته یا ``None`` است."
+#, fuzzy
+msgid "The value of this node, depending on its type; see the table below. The value is a string or ``None``."
+msgstr "بخشی از :attr:`tagName` که پیش از دونقطه قرار دارد، اگر دونقطه وجود داشته باشد؛ در غیر این صورت رشته خالی. مقدار یک رشته است، یا ``None``."
+
+msgid "The values of :attr:`~Node.nodeName` and :attr:`~Node.nodeValue` for each node type are:"
+msgstr ""
+
+msgid "Node type"
+msgstr ""
+
+msgid "nodeName"
+msgstr ""
+
+msgid "nodeValue"
+msgstr ""
+
+msgid ":attr:`~Attr.name`"
+msgstr ""
+
+msgid ":attr:`~Attr.value`"
+msgstr ""
+
+#, fuzzy
+msgid ":class:`CDATASection`"
+msgstr ":class:`Text`"
+
+msgid "``'#cdata-section'``"
+msgstr ""
+
+#, fuzzy
+msgid "the content"
+msgstr "محتوای ماژول"
+
+msgid "``'#comment'``"
+msgstr ""
+
+msgid "``'#document'``"
+msgstr ""
+
+msgid "``None``"
+msgstr "``None``"
+
+#, fuzzy
+msgid ":class:`DocumentFragment`"
+msgstr ":class:`Document`"
+
+msgid "``'#document-fragment'``"
+msgstr ""
+
+#, fuzzy
+msgid ":attr:`~DocumentType.name`"
+msgstr ":class:`DocumentType`"
+
+#, fuzzy
+msgid ":attr:`~Element.tagName`"
+msgstr ":class:`Element`"
+
+#, fuzzy
+msgid ":class:`Entity`"
+msgstr ":class:`Attr`"
+
+msgid "the name of the entity"
+msgstr ""
+
+#, fuzzy
+msgid ":class:`Notation`"
+msgstr ":class:`Node`"
+
+msgid "the name of the notation"
+msgstr ""
+
+#, fuzzy
+msgid ":attr:`~ProcessingInstruction.target`"
+msgstr ":class:`ProcessingInstruction`"
+
+#, fuzzy
+msgid ":attr:`~ProcessingInstruction.data`"
+msgstr ":class:`ProcessingInstruction`"
+
+msgid "``'#text'``"
+msgstr ""
 
 msgid "Return ``True`` if the node has any attributes."
 msgstr "اگر گره دارای ویژگی‌ای باشد، ``True`` را برمی‌گرداند."
@@ -287,13 +409,16 @@ msgstr "این مبتنی بر یک API پیشنهادی DOM سطح ۳ است ک
 msgid "Add a new child node to this node at the end of the list of children, returning *newChild*. If the node was already in the tree, it is removed first."
 msgstr "یک گره فرزند جدید را در انتهای فهرست فرزندان به این گره اضافه می‌کند و *newChild* را برمی‌گرداند. اگر گره از قبل در درخت وجود داشته باشد، ابتدا حذف می‌شود."
 
-msgid "Insert a new child node before an existing child.  It must be the case that *refChild* is a child of this node; if not, :exc:`ValueError` is raised. *newChild* is returned. If *refChild* is ``None``, it inserts *newChild* at the end of the children's list."
+#, fuzzy
+msgid "Insert a new child node before an existing child.  It must be the case that *refChild* is a child of this node; if not, :exc:`NotFoundErr` is raised. *newChild* is returned. If *refChild* is ``None``, it inserts *newChild* at the end of the children's list."
 msgstr "یک گره فرزند جدید را پیش از یک فرزند موجود درج می‌کند. *refChild* باید فرزند این گره باشد؛ در غیر این صورت، :exc:`ValueError` پرتاب می‌شود. *newChild* بازگردانده می‌شود. اگر *refChild* ``None`` باشد، *newChild* را در انتهای فهرست فرزندان درج می‌کند."
 
-msgid "Remove a child node.  *oldChild* must be a child of this node; if not, :exc:`ValueError` is raised.  *oldChild* is returned on success.  If *oldChild* will not be used further, its :meth:`unlink` method should be called."
+#, fuzzy
+msgid "Remove a child node.  *oldChild* must be a child of this node; if not, :exc:`NotFoundErr` is raised.  *oldChild* is returned on success.  If *oldChild* will not be used further, its :meth:`~xml.dom.minidom.Node.unlink` method should be called."
 msgstr "یک گره فرزند را حذف می‌کند. *oldChild* باید فرزند این گره باشد؛ در غیر این صورت، :exc:`ValueError` پرتاب می‌شود. در صورت موفقیت، *oldChild* برگردانده می‌شود. اگر دیگر از *oldChild* استفاده نخواهد شد، باید متد :meth:`unlink` آن فراخوانی شود."
 
-msgid "Replace an existing node with a new node. It must be the case that  *oldChild* is a child of this node; if not, :exc:`ValueError` is raised."
+#, fuzzy
+msgid "Replace an existing node with a new node. It must be the case that  *oldChild* is a child of this node; if not, :exc:`NotFoundErr` is raised."
 msgstr "یک گره موجود را با یک گره جدید جایگزین می‌کند. باید این شرط برقرار باشد که *oldChild* فرزند این گره باشد؛ در غیر این صورت، :exc:`ValueError` پرتاب می‌شود."
 
 msgid "Join adjacent text nodes so that all stretches of text are stored as single :class:`Text` instances.  This simplifies processing text from a DOM tree for many applications."
@@ -305,13 +430,19 @@ msgstr "این گره را رونویسی کنید. تنظیم *deep* به مع�
 msgid "NodeList Objects"
 msgstr "اشیای NodeList"
 
-msgid "A :class:`NodeList` represents a sequence of nodes.  These objects are used in two ways in the DOM Core recommendation:  an :class:`Element` object provides one as its list of child nodes, and the :meth:`getElementsByTagName` and :meth:`getElementsByTagNameNS` methods of :class:`Node` return objects with this interface to represent query results."
+#, fuzzy
+msgid "A :class:`NodeList` represents a sequence of nodes.  These objects are used in two ways in the DOM Core recommendation:  an :class:`Element` object provides one as its list of child nodes, and the :meth:`~Element.getElementsByTagName` and :meth:`~Element.getElementsByTagNameNS` methods of :class:`Node` return objects with this interface to represent query results."
 msgstr "یک :class:`NodeList` دنباله‌ای از گره‌ها را نشان می‌دهد. این اشیاء در توصیه‌نامه‌ی DOM Core به دو روش استفاده می‌شوند: یک شیء :class:`Element` یک نمونه از آن را به‌عنوان فهرست گره‌های فرزند خود ارائه می‌دهد، و متدهای :meth:`getElementsByTagName` و :meth:`getElementsByTagNameNS` از :class:`Node` اشیایی با این رابط را برمی‌گردانند تا نتایج پرس‌وجو را نشان دهند."
+
+#, fuzzy
+msgid ":class:`NodeList` does *not* inherit from :class:`Node`."
+msgstr ":class:`NamedNodeMap` از :class:`Node` ارث *نمی‌برد*."
 
 msgid "The DOM Level 2 recommendation defines one method and one attribute for these objects:"
 msgstr "توصیه‌نامه‌ی DOM Level 2 یک متد و یک ویژگی برای این اشیاء تعریف می‌کند:"
 
-msgid "Return the *i*'th item from the sequence, if there is one, or ``None``.  The index *i* is not allowed to be less than zero or greater than or equal to the length of the sequence."
+#, fuzzy
+msgid "Return the *i*'th item from the sequence, or ``None`` if *i* is out of range. Negative indices are not supported."
 msgstr "آیتم شماره‌ی *i* از دنباله را، اگر وجود داشته باشد، برمی‌گرداند یا ``None``. اندیس *i* نباید کمتر از صفر یا بزرگ‌تر یا مساوی طول دنباله باشد."
 
 msgid "The number of nodes in the sequence."
@@ -326,16 +457,19 @@ msgstr "اگر یک پیاده‌سازی DOM از تغییر سند پشتیب�
 msgid "DocumentType Objects"
 msgstr "اشیای DocumentType"
 
-msgid "Information about the notations and entities declared by a document (including the external subset if the parser uses it and can provide the information) is available from a :class:`DocumentType` object.  The :class:`DocumentType` for a document is available from the :class:`Document` object's :attr:`doctype` attribute; if there is no ``DOCTYPE`` declaration for the document, the document's :attr:`doctype` attribute will be set to ``None`` instead of an instance of this interface."
+#, fuzzy
+msgid "Information about the notations and entities declared by a document (including the external subset if the parser uses it and can provide the information) is available from a :class:`DocumentType` object.  The :class:`DocumentType` for a document is available from the :class:`Document` object's :attr:`~Document.doctype` attribute; if there is no ``DOCTYPE`` declaration for the document, the document's :attr:`~Document.doctype` attribute will be set to ``None`` instead of an instance of this interface."
 msgstr "اطلاعات مربوط به نمادگذاری‌ها و موجودیت‌های اعلام‌شده در یک سند (از جمله زیرمجموعه خارجی، اگر پارسر از آن استفاده کند و بتواند اطلاعات را ارائه دهد) از یک شیء :class:`DocumentType` در دسترس است. :class:`DocumentType` مربوط به یک سند از طریق ویژگی :attr:`doctype` شیء :class:`Document` در دسترس است؛ اگر اعلامیه ``DOCTYPE`` برای سند وجود نداشته باشد، ویژگی :attr:`doctype` سند به‌جای نمونه‌ای از این رابط، روی ``None`` تنظیم می‌شود."
 
 msgid ":class:`DocumentType` is a specialization of :class:`Node`, and adds the following attributes:"
 msgstr ":class:`DocumentType` یک نوع تخصصی از :class:`Node` است و ویژگی‌های زیر را اضافه می‌کند:"
 
-msgid "The public identifier for the external subset of the document type definition. This will be a string or ``None``."
+#, fuzzy
+msgid "The public identifier for the external subset of the document type definition, or ``None`` if the ``DOCTYPE`` declaration does not specify it."
 msgstr "شناسه عمومی برای زیرمجموعه خارجی تعریف نوع سند. این یک رشته یا ``None`` خواهد بود."
 
-msgid "The system identifier for the external subset of the document type definition. This will be a URI as a string, or ``None``."
+#, fuzzy
+msgid "The system identifier, a URI, for the external subset of the document type definition, or ``None`` if the ``DOCTYPE`` declaration does not specify it."
 msgstr "شناسه سیستمی برای زیرمجموعه بیرونی تعریف نوع سند. این مقدار یک URI به‌صورت رشته خواهد بود، یا ``None``."
 
 msgid "A string giving the complete internal subset from the document. This does not include the brackets which enclose the subset.  If the document has no internal subset, this should be ``None``."
@@ -344,10 +478,12 @@ msgstr "رشته‌ای که زیرمجموعه‌ی داخلی کامل سند 
 msgid "The name of the root element as given in the ``DOCTYPE`` declaration, if present."
 msgstr "نام عنصر ریشه، همان‌گونه که در اعلامیه ``DOCTYPE`` آمده است، در صورت وجود."
 
-msgid "This is a :class:`NamedNodeMap` giving the definitions of external entities. For entity names defined more than once, only the first definition is provided (others are ignored as required by the XML recommendation).  This may be ``None`` if the information is not provided by the parser, or if no entities are defined."
+#, fuzzy
+msgid "This is a :class:`NamedNodeMap` of :class:`Entity` nodes giving the definitions of external entities. For entity names defined more than once, only the first definition is provided (others are ignored as required by the XML recommendation).  This may be ``None`` if the information is not provided by the parser, or if no entities are defined."
 msgstr "این یک :class:`NamedNodeMap` است که تعاریف موجودیت‌های خارجی را ارائه می‌دهد. برای نام‌های موجودیتی که بیش از یک بار تعریف‌شده‌اند، فقط اولین تعریف ارائه می‌شود (موارد دیگر، همان‌طور که توصیه XML ایجاب می‌کند، نادیده گرفته می‌شوند). این ممکن است ``None`` باشد، اگر اطلاعات توسط پارسر ارائه‌نشده باشد، یا اگر هیچ موجودیتی تعریف‌نشده باشد."
 
-msgid "This is a :class:`NamedNodeMap` giving the definitions of notations. For notation names defined more than once, only the first definition is provided (others are ignored as required by the XML recommendation).  This may be ``None`` if the information is not provided by the parser, or if no notations are defined."
+#, fuzzy
+msgid "This is a :class:`NamedNodeMap` of :class:`Notation` nodes giving the definitions of notations. For notation names defined more than once, only the first definition is provided (others are ignored as required by the XML recommendation).  This may be ``None`` if the information is not provided by the parser, or if no notations are defined."
 msgstr "این یک :class:`NamedNodeMap` است که تعاریف نمادگذاری‌ها (notations) را ارائه می‌دهد. برای نام‌های نمادگذاری که بیش از یک‌بار تعریف شده‌اند، تنها اولین تعریف ارائه می‌شود (موارد دیگر همان‌طور که توصیه‌نامه‌ی XML ایجاب می‌کند نادیده گرفته می‌شوند). این ممکن است ``None`` باشد اگر اطلاعات توسط پارسر ارائه نشود، یا اگر هیچ نمادگذاری‌ای تعریف نشده باشد."
 
 msgid "Document Objects"
@@ -359,10 +495,35 @@ msgstr "یک :class:`Document` نشان‌دهنده‌ی یک سند XML کام
 msgid "The one and only root element of the document."
 msgstr "یگانه عنصر ریشه‌ی سند."
 
-msgid "Create and return a new element node.  The element is not inserted into the document when it is created.  You need to explicitly insert it with one of the other methods such as :meth:`insertBefore` or :meth:`appendChild`."
+#, fuzzy
+msgid "The :class:`DocumentType` node of the document, or ``None``. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+#, fuzzy
+msgid "The :class:`DOMImplementation` object which created this document. This is a read-only attribute."
+msgstr "فهرستی از گره‌های موجود در این گره. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Whether error checking is enforced."
+msgstr ""
+
+msgid "The location of the document, or ``None`` if it is unknown."
+msgstr ""
+
+msgid "Create and return an empty :class:`DocumentFragment` node."
+msgstr ""
+
+msgid "Create and return a :class:`CDATASection` node containing *data*."
+msgstr ""
+
+msgid "Return a copy of *importedNode* which belongs to this document. The original node is not removed from its document. If *deep* is true, the descendants of the node are copied too."
+msgstr ""
+
+#, fuzzy
+msgid "Create and return a new element node.  The element is not inserted into the document when it is created.  You need to explicitly insert it with one of the other methods such as :meth:`~Node.insertBefore` or :meth:`~Node.appendChild`."
 msgstr "یک گره عنصر جدید ایجاد می‌کند و آن را بازمی‌گرداند. این عنصر در زمان ایجاد شدن، در سند درج نمی‌شود. شما باید آن را به‌صراحت با یکی از متدهای دیگر، مانند :meth:`insertBefore` یا :meth:`appendChild`، درج کنید."
 
-msgid "Create and return a new element with a namespace.  The *tagName* may have a prefix.  The element is not inserted into the document when it is created.  You need to explicitly insert it with one of the other methods such as :meth:`insertBefore` or :meth:`appendChild`."
+#, fuzzy
+msgid "Create and return a new element with a namespace.  The *tagName* may have a prefix.  The element is not inserted into the document when it is created.  You need to explicitly insert it with one of the other methods such as :meth:`~Node.insertBefore` or :meth:`~Node.appendChild`."
 msgstr "یک عنصر جدید با یک فضای نام ایجاد می‌کند و آن را بازمی‌گرداند. *tagName* می‌تواند یک پیشوند داشته باشد. این عنصر هنگام ایجاد، در سند درج نمی‌شود. شما باید آن را به‌صراحت با یکی از متدهای دیگر مانند :meth:`insertBefore` یا :meth:`appendChild` درج کنید."
 
 msgid "Create and return a text node containing the data passed as a parameter.  As with the other creation methods, this one does not insert the node into the tree."
@@ -374,17 +535,28 @@ msgstr "یک گره کامنت حاوی داده‌ای که به‌عنوان �
 msgid "Create and return a processing instruction node containing the *target* and *data* passed as parameters.  As with the other creation methods, this one does not insert the node into the tree."
 msgstr "یک گره دستور پردازش حاوی *target* و *data* که به‌عنوان پارامتر ارسال شده‌اند ایجاد می‌کند و بازمی‌گرداند. مانند سایر متدهای ایجاد، این متد گره را در درخت درج نمی‌کند."
 
-msgid "Create and return an attribute node.  This method does not associate the attribute node with any particular element.  You must use :meth:`setAttributeNode` on the appropriate :class:`Element` object to use the newly created attribute instance."
+#, fuzzy
+msgid "Create and return an attribute node.  This method does not associate the attribute node with any particular element.  You must use :meth:`~Element.setAttributeNode` on the appropriate :class:`Element` object to use the newly created attribute instance."
 msgstr "یک گره ویژگی را ایجاد می‌کند و برمی‌گرداند. این متد گره ویژگی را با هیچ المان خاصی مرتبط نمی‌کند. برای استفاده از نمونه ویژگی تازه‌ایجادشده، باید از :meth:`setAttributeNode` روی شیء :class:`Element` مناسب استفاده کنید."
 
-msgid "Create and return an attribute node with a namespace.  The *tagName* may have a prefix.  This method does not associate the attribute node with any particular element.  You must use :meth:`setAttributeNode` on the appropriate :class:`Element` object to use the newly created attribute instance."
+#, fuzzy
+msgid "Create and return an attribute node with a namespace.  The *tagName* may have a prefix.  This method does not associate the attribute node with any particular element.  You must use :meth:`~Element.setAttributeNode` on the appropriate :class:`Element` object to use the newly created attribute instance."
 msgstr "یک گره ویژگی با یک فضای نام ایجاد می‌کند و آن را برمی‌گرداند. ممکن است *tagName* دارای پیشوند باشد. این متد گره ویژگی را با هیچ المان خاصی مرتبط نمی‌کند. برای استفاده از نمونه ویژگی تازه‌ایجادشده، باید از :meth:`setAttributeNode` روی شیء :class:`Element` مناسب استفاده کنید."
+
+msgid "Return the element with the given ID, or ``None``. Only attributes declared as being of type ID in the DTD or by :meth:`Element.setIdAttribute` are searched."
+msgstr ""
 
 msgid "Search for all descendants (direct children, children's children, etc.) with a particular element type name."
 msgstr "جستجو برای همه‌ی نوادگان (فرزندان مستقیم، فرزندان فرزندان و غیره) با نام نوع عنصر معین."
 
 msgid "Search for all descendants (direct children, children's children, etc.) with a particular namespace URI and localname.  The localname is the part of the namespace after the prefix."
 msgstr "جست‌وجوی همه‌ی نوادگان (فرزندان مستقیم، فرزندان فرزندان و غیره) با یک URI فضای نام و نام محلی (localname) معین. نام محلی (localname) بخشی از فضای نام است که پس از پیشوند قرار دارد."
+
+msgid "Rename the element or attribute node *n* and return it. *namespaceURI* is the new namespace URI, or :data:`~xml.dom.EMPTY_NAMESPACE` if the node does not belong to a namespace. *name* is the new qualified name."
+msgstr ""
+
+msgid "Raise :exc:`WrongDocumentErr` if *n* was created by another document, and :exc:`NotSupportedErr` if it is neither an element nor an attribute."
+msgstr ""
 
 msgid "Element Objects"
 msgstr "اشیاء عنصر"
@@ -394,6 +566,16 @@ msgstr ":class:`Element` زیرکلاسی از :class:`Node` است، بنابر
 
 msgid "The element type name.  In a namespace-using document it may have colons in it. The value is a string."
 msgstr "نام نوع عنصر. در سندی که از فضای نام استفاده می‌کند، ممکن است حاوی دونقطه باشد. مقدار آن یک رشته است."
+
+msgid "Declare that the attribute *name* is of type ID, so that the element is found by :meth:`Document.getElementById`. Raise :exc:`NotFoundErr` if the element has no such attribute."
+msgstr ""
+
+#, fuzzy
+msgid "The same as :meth:`~Element.setIdAttribute`, but for an attribute specified by its namespace URI and local name."
+msgstr "اگر عنصر دارای صفتی باشد که با *namespaceURI* و *localName* نام‌گذاری شده است، ``True`` برمی‌گرداند."
+
+msgid "The same as :meth:`~Element.setIdAttribute`, but for an already retrieved attribute node."
+msgstr ""
 
 msgid "Same as equivalent method in the :class:`Document` class."
 msgstr "مشابه متد معادل در کلاس :class:`Document`."
@@ -416,22 +598,25 @@ msgstr "مقدار ویژگی با نام تعیین‌شده توسط *namespac
 msgid "Return an attribute value as a node, given a *namespaceURI* and *localName*."
 msgstr "مقدار یک ویژگی را با توجه به *namespaceURI* و *localName* به‌صورت یک گره برمی‌گرداند."
 
-msgid "Remove an attribute by name.  If there is no matching attribute, a :exc:`NotFoundErr` is raised."
-msgstr "یک ویژگی را بر اساس نام حذف می‌کند. اگر ویژگی متناظری وجود نداشته باشد، یک :exc:`NotFoundErr` پرتاب می‌شود."
+msgid "Remove an attribute by name."
+msgstr ""
 
 msgid "Remove and return *oldAttr* from the attribute list, if present. If *oldAttr* is not present, :exc:`NotFoundErr` is raised."
 msgstr "در صورت وجود، *oldAttr* را از فهرست ویژگی‌ها حذف و برمی‌گرداند. اگر *oldAttr* وجود نداشته باشد، :exc:`NotFoundErr` پرتاب می‌شود."
 
-msgid "Remove an attribute by name.  Note that it uses a localName, not a qname.  No exception is raised if there is no matching attribute."
+#, fuzzy
+msgid "Remove an attribute by name.  Note that it uses a localName, not a qname."
 msgstr "یک صفت را بر اساس نام حذف می‌کند. توجه داشته باشید که از localName استفاده می‌کند، نه qname. اگر صفت متناظری وجود نداشته باشد، هیچ استثنایی پرتاب نمی‌شود."
 
 msgid "Set an attribute value from a string."
 msgstr "تنظیم مقدار یک ویژگی از یک رشته."
 
-msgid "Add a new attribute node to the element, replacing an existing attribute if necessary if the :attr:`name` attribute matches.  If a replacement occurs, the old attribute node will be returned.  If *newAttr* is already in use, :exc:`InuseAttributeErr` will be raised."
+#, fuzzy
+msgid "Add a new attribute node to the element, replacing an existing attribute if necessary if the :attr:`~Attr.name` attribute matches.  If a replacement occurs, the old attribute node will be returned.  If *newAttr* is already in use, :exc:`InuseAttributeErr` will be raised."
 msgstr "یک گره ویژگی جدید به المان اضافه می‌کند؛ اگر ویژگی :attr:`name` مطابقت داشته باشد، در صورت لزوم یک ویژگی موجود جایگزین می‌شود. اگر جایگزینی رخ دهد، گره ویژگی قدیمی برگردانده خواهد شد. اگر *newAttr* از قبل در حال استفاده باشد، :exc:`InuseAttributeErr` پرتاب خواهد شد."
 
-msgid "Add a new attribute node to the element, replacing an existing attribute if necessary if the :attr:`namespaceURI` and :attr:`localName` attributes match. If a replacement occurs, the old attribute node will be returned.  If *newAttr* is already in use, :exc:`InuseAttributeErr` will be raised."
+#, fuzzy
+msgid "Add a new attribute node to the element, replacing an existing attribute if necessary if the :attr:`~Node.namespaceURI` and :attr:`~Attr.localName` attributes match.  If a replacement occurs, the old attribute node will be returned.  If *newAttr* is already in use, :exc:`InuseAttributeErr` will be raised."
 msgstr "یک گره ویژگی جدید به المان اضافه می‌کند و در صورت لزوم، اگر ویژگی‌های :attr:`namespaceURI` و :attr:`localName` مطابقت داشته باشند، یک ویژگی موجود را جایگزین می‌کند. اگر جایگزینی رخ دهد، گره ویژگی قدیمی بازگردانده می‌شود. اگر *newAttr* از قبل در حال استفاده باشد، :exc:`InuseAttributeErr` پرتاب می‌شود."
 
 msgid "Set an attribute value from a string, given a *namespaceURI* and a *qname*. Note that a qname is the whole attribute name.  This is different than above."
@@ -443,6 +628,9 @@ msgstr "اشیای Attr"
 msgid ":class:`Attr` inherits from :class:`Node`, so inherits all its attributes."
 msgstr ":class:`Attr` از :class:`Node` ارث می‌برد، بنابراین تمام ویژگی‌های آن را به ارث می‌برد."
 
+msgid "Attribute nodes are not part of the document tree. They are contained in the :attr:`~Node.attributes` map of an element, not in its children, and their :attr:`~Node.parentNode`, :attr:`~Node.previousSibling` and :attr:`~Node.nextSibling` are always ``None``."
+msgstr ""
+
 msgid "The attribute name. In a namespace-using document it may include a colon."
 msgstr "نام ویژگی. در سندی که از فضای نام استفاده می‌کند، ممکن است شامل دونقطه باشد."
 
@@ -452,7 +640,18 @@ msgstr "بخشی از نام که پس از دونقطه می‌آید، اگر 
 msgid "The part of the name preceding the colon if there is one, else the empty string."
 msgstr "بخشی از نام که پیش از دونقطه قرار دارد، در صورت وجود دونقطه، و در غیر این صورت رشته خالی."
 
-msgid "The text value of the attribute.  This is a synonym for the :attr:`nodeValue` attribute."
+msgid "Whether this attribute is of type ID, either because it is declared as such in the DTD or because :meth:`Element.setIdAttribute` was used. This is a read-only attribute."
+msgstr ""
+
+#, fuzzy
+msgid "The :class:`Element` node to which this attribute belongs, or ``None`` if it is not used. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Whether the value of the attribute was explicitly set in the document, as opposed to being defaulted from the DTD. This is a read-only attribute."
+msgstr ""
+
+#, fuzzy
+msgid "The text value of the attribute.  This is a synonym for the :attr:`~Node.nodeValue` attribute."
 msgstr "مقدار متنی ویژگی. این یک نام مستعار برای ویژگی :attr:`nodeValue` است."
 
 msgid "NamedNodeMap Objects"
@@ -464,16 +663,75 @@ msgstr ":class:`NamedNodeMap` از :class:`Node` ارث *نمی‌برد*."
 msgid "The length of the attribute list."
 msgstr "طول فهرست ویژگی‌ها."
 
-msgid "Return an attribute with a particular index.  The order you get the attributes in is arbitrary but will be consistent for the life of a DOM.  Each item is an attribute node.  Get its value with the :attr:`value` attribute."
+#, fuzzy
+msgid "Return an attribute with a particular index.  The order you get the attributes in is arbitrary but will be consistent for the life of a DOM.  Each item is an attribute node.  Get its value with the :attr:`~Attr.value` attribute."
 msgstr "یک ویژگی با یک اندیس مشخص را برمی‌گرداند. ترتیب دریافت ویژگی‌ها دلخواه است، اما در طول عمر یک DOM ثابت خواهد بود. هر آیتم یک گره ویژگی است. مقدار آن را با ویژگی :attr:`value` دریافت کنید."
 
-msgid "There are also experimental methods that give this class more mapping behavior. You can use them or you can use the standardized :meth:`!getAttribute\\*` family of methods on the :class:`Element` objects."
+msgid "Return the node with the given :attr:`~Attr.name`, or ``None`` if there is no such node."
+msgstr ""
+
+msgid "Return the node with the given namespace URI and local name, or ``None`` if there is no such node."
+msgstr ""
+
+msgid "Add *node* to the map, using its :attr:`~Attr.name` as the key. Return the node which it replaces, or ``None`` if it replaces no node."
+msgstr ""
+
+msgid "Add *node* to the map, using its namespace URI and local name as the key. Return the node which it replaces, or ``None`` if it replaces no node."
+msgstr ""
+
+msgid "Remove and return the node with the given :attr:`~Attr.name`. Raise :exc:`NotFoundErr` if there is no such node."
+msgstr ""
+
+msgid "Remove and return the node with the given namespace URI and local name. Raise :exc:`NotFoundErr` if there is no such node."
+msgstr ""
+
+#, fuzzy
+msgid "You can also use the standardized :meth:`!getAttribute\\*` family of methods on the :class:`Element` objects."
 msgstr "همچنین متدهای آزمایشی وجود دارند که رفتار نگاشت بیشتری به این کلاس می‌دهند. شما می‌توانید از آن‌ها استفاده کنید یا از خانواده‌ی متدهای استانداردشده‌ی :meth:`!getAttribute\\*` بر روی اشیاء :class:`Element` استفاده کنید."
+
+#, fuzzy
+msgid "DocumentFragment Objects"
+msgstr "اشیای سند"
+
+msgid ":class:`DocumentFragment` is a lightweight container of nodes. It is a subclass of :class:`Node`. When it is inserted into the document tree, its children are inserted instead of it, and it becomes empty."
+msgstr ""
+
+#, fuzzy
+msgid "CharacterData Objects"
+msgstr "اشیای کامنت"
+
+#, fuzzy
+msgid ":class:`CharacterData` represents text-like data in the XML document. It is a subclass of :class:`Node`, and the base class of :class:`Text`, :class:`CDATASection` and :class:`Comment`. Such nodes cannot have child nodes."
+msgstr ":class:`Comment` نشان‌دهنده‌ی یک کامنت در سند XML است. این کلاس، زیرکلاسی از :class:`Node` است، اما نمی‌تواند گره‌های فرزند داشته باشد."
+
+#, fuzzy
+msgid "The content of the node as a string."
+msgstr "محتوای گره متنی به‌عنوان یک رشته."
+
+#, fuzzy
+msgid "The number of characters in :attr:`~CharacterData.data`. This is a read-only attribute."
+msgstr "محتوای دستورالعمل پردازشی تا نخستین نویسه فضای سفید. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Return the substring of :attr:`~CharacterData.data` of *count* characters starting at *offset*."
+msgstr ""
+
+msgid "Append the string *arg* to :attr:`~CharacterData.data`."
+msgstr ""
+
+msgid "Insert the string *arg* into :attr:`~CharacterData.data` at *offset*."
+msgstr ""
+
+msgid "Remove *count* characters from :attr:`~CharacterData.data` starting at *offset*."
+msgstr ""
+
+msgid "Replace *count* characters of :attr:`~CharacterData.data` starting at *offset* with the string *arg*."
+msgstr ""
 
 msgid "Comment Objects"
 msgstr "اشیای کامنت"
 
-msgid ":class:`Comment` represents a comment in the XML document.  It is a subclass of :class:`Node`, but cannot have child nodes."
+#, fuzzy
+msgid ":class:`Comment` represents a comment in the XML document. It is a subclass of :class:`CharacterData`."
 msgstr ":class:`Comment` نشان‌دهنده‌ی یک کامنت در سند XML است. این کلاس، زیرکلاسی از :class:`Node` است، اما نمی‌تواند گره‌های فرزند داشته باشد."
 
 msgid "The content of the comment as a string.  The attribute contains all characters between the leading ``<!-``\\ ``-`` and trailing ``-``\\ ``->``, but does not include them."
@@ -482,14 +740,25 @@ msgstr "محتوای کامنت به‌صورت یک رشته. این ویژگی
 msgid "Text and CDATASection Objects"
 msgstr "اشیای Text و CDATASection"
 
-msgid "The :class:`Text` interface represents text in the XML document.  If the parser and DOM implementation support the DOM's XML extension, portions of the text enclosed in CDATA marked sections are stored in :class:`CDATASection` objects. These two interfaces are identical, but provide different values for the :attr:`nodeType` attribute."
+#, fuzzy
+msgid "The :class:`Text` interface represents text in the XML document.  If the parser and DOM implementation support the DOM's XML extension, portions of the text enclosed in CDATA marked sections are stored in :class:`CDATASection` objects. These two interfaces are identical, but provide different values for the :attr:`~Node.nodeType` attribute."
 msgstr "رابط :class:`Text` متن را در سند XML نمایش می‌دهد. اگر پارسر و پیاده‌سازی DOM از افزونه‌ی XML مربوط به DOM پشتیبانی کنند، بخش‌هایی از متن محصور در بخش‌های نشان‌دار CDATA در اشیای :class:`CDATASection` ذخیره می‌شوند. این دو رابط یکسان هستند، اما مقادیر متفاوتی برای ویژگی :attr:`nodeType` ارائه می‌دهند."
 
-msgid "These interfaces extend the :class:`Node` interface.  They cannot have child nodes."
-msgstr "این رابط‌ها، رابط :class:`Node` را گسترش می‌دهند. آن‌ها نمی‌توانند گره‌های فرزند داشته باشند."
+msgid ":class:`Text` extends the :class:`CharacterData` interface, and :class:`CDATASection` extends :class:`Text`."
+msgstr ""
 
 msgid "The content of the text node as a string."
 msgstr "محتوای گره متنی به‌عنوان یک رشته."
+
+#, fuzzy
+msgid "The text of all :class:`Text` nodes logically adjacent to this node, concatenated in document order. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+msgid "Replace the text of all :class:`Text` nodes logically adjacent to this node with *content*, removing the other nodes. Return this node, or ``None`` if *content* is empty."
+msgstr ""
+
+msgid "Split this node into two nodes at *offset*, keeping the first part in this node and returning a new sibling node with the rest."
+msgstr ""
 
 msgid "The use of a :class:`CDATASection` node does not indicate that the node represents a complete CDATA marked section, only that the content of the node was part of a CDATA section.  A single CDATA section may be represented by more than one node in the document tree.  There is no way to determine whether two adjacent :class:`CDATASection` nodes represent different CDATA marked sections."
 msgstr "استفاده از یک گره :class:`CDATASection` نشان نمی‌دهد که آن گره یک بخش نمادگذاری‌شده‌ی CDATA کامل را نمایندگی می‌کند، بلکه تنها نشان می‌دهد که محتوای گره بخشی از یک بخش CDATA بوده است. یک بخش CDATA ممکن است توسط بیش از یک گره در درخت سند نمایندگی شود. هیچ راهی برای تعیین این‌که آیا دو گره :class:`CDATASection` مجاور، بخش‌های نمادگذاری‌شده‌ی CDATA متفاوتی را نمایندگی می‌کنند یا خیر، وجود ندارد."
@@ -505,6 +774,40 @@ msgstr "محتوای دستورالعمل پردازشی تا نخستین نو�
 
 msgid "The content of the processing instruction following the first whitespace character."
 msgstr "محتوای دستورالعمل پردازش پس از نخستین نویسه فضای سفید."
+
+#, fuzzy
+msgid "Entity Objects"
+msgstr "اشیای Attr"
+
+msgid ":class:`Entity` represents a parsed or unparsed entity declared in the DTD. It is a subclass of :class:`Node`. Entity nodes are contained in :attr:`DocumentType.entities` and cannot be inserted into the document tree. The name of the entity is its :attr:`~Node.nodeName`."
+msgstr ""
+
+#, fuzzy
+msgid "The public identifier of the entity, or ``None`` if it is not specified. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+#, fuzzy
+msgid "The system identifier of the entity, or ``None`` if it is not specified. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+#, fuzzy
+msgid "The name of the notation for an unparsed entity, or ``None`` for a parsed entity. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+#, fuzzy
+msgid "Notation Objects"
+msgstr "اشیای Node"
+
+msgid ":class:`Notation` represents a notation declared in the DTD. It is a subclass of :class:`Node` and cannot have child nodes. Notation nodes are contained in :attr:`DocumentType.notations` and cannot be inserted into the document tree. The name of the notation is its :attr:`~Node.nodeName`."
+msgstr ""
+
+#, fuzzy
+msgid "The public identifier of the notation, or ``None`` if it is not specified. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
+
+#, fuzzy
+msgid "The system identifier of the notation, or ``None`` if it is not specified. This is a read-only attribute."
+msgstr "آخرین فرزند گره، در صورت وجود، یا ``None``. این یک ویژگی فقط‌خواندنی است."
 
 msgid "Exceptions"
 msgstr "استثناها"
@@ -560,6 +863,10 @@ msgstr "در صورت تلاش برای تغییر یک شیء در شرایطی
 msgid "Raised when an invalid or illegal string is specified."
 msgstr "هنگامی که یک رشته‌ی نامعتبر یا غیرمجاز مشخص شود، پرتاب می‌شود."
 
+#, fuzzy
+msgid "Raised when an operation would make the document invalid with respect to partial validity. This is not known to be used in the Python DOM implementations, but may be received from DOM implementations not written in Python."
+msgstr "زمانی پرتاب می‌شود که محدوده‌ی مشخص‌شده‌ای از متن در یک رشته جا نشود. شناخته نیست که این مورد در پیاده‌سازی‌های DOM پایتون استفاده شود، اما ممکن است از پیاده‌سازی‌های DOM که با پایتون نوشته نشده‌اند دریافت شود."
+
 msgid "Raised when a node is inserted in a different document than it currently belongs to, and the implementation does not support migrating the node from one document to the other."
 msgstr "زمانی پرتاب می‌شود که گره‌ای در سندی متفاوت از سندی که در حال حاضر به آن تعلق دارد درج شود، و پیاده‌سازی از انتقال گره از یک سند به سند دیگر پشتیبانی نکند."
 
@@ -572,92 +879,51 @@ msgstr "ثابت"
 msgid "Exception"
 msgstr "استثنا"
 
-msgid ":const:`DOMSTRING_SIZE_ERR`"
-msgstr ":const:`DOMSTRING_SIZE_ERR`"
-
 msgid ":exc:`DomstringSizeErr`"
 msgstr ":exc:`DomstringSizeErr`"
-
-msgid ":const:`HIERARCHY_REQUEST_ERR`"
-msgstr ":const:`HIERARCHY_REQUEST_ERR`"
 
 msgid ":exc:`HierarchyRequestErr`"
 msgstr ":exc:`HierarchyRequestErr`"
 
-msgid ":const:`INDEX_SIZE_ERR`"
-msgstr ":const:`INDEX_SIZE_ERR`"
-
 msgid ":exc:`IndexSizeErr`"
 msgstr ":exc:`IndexSizeErr`"
-
-msgid ":const:`INUSE_ATTRIBUTE_ERR`"
-msgstr ":const:`INUSE_ATTRIBUTE_ERR`"
 
 msgid ":exc:`InuseAttributeErr`"
 msgstr ":exc:`InuseAttributeErr`"
 
-msgid ":const:`INVALID_ACCESS_ERR`"
-msgstr ":const:`INVALID_ACCESS_ERR`"
-
 msgid ":exc:`InvalidAccessErr`"
 msgstr ":exc:`InvalidAccessErr`"
-
-msgid ":const:`INVALID_CHARACTER_ERR`"
-msgstr ":const:`INVALID_CHARACTER_ERR`"
 
 msgid ":exc:`InvalidCharacterErr`"
 msgstr ":exc:`InvalidCharacterErr`"
 
-msgid ":const:`INVALID_MODIFICATION_ERR`"
-msgstr ":const:`INVALID_MODIFICATION_ERR`"
-
 msgid ":exc:`InvalidModificationErr`"
 msgstr ":exc:`InvalidModificationErr`"
-
-msgid ":const:`INVALID_STATE_ERR`"
-msgstr ":const:`INVALID_STATE_ERR`"
 
 msgid ":exc:`InvalidStateErr`"
 msgstr ":exc:`InvalidStateErr`"
 
-msgid ":const:`NAMESPACE_ERR`"
-msgstr ":const:`NAMESPACE_ERR`"
-
 msgid ":exc:`NamespaceErr`"
 msgstr ":exc:`NamespaceErr`"
-
-msgid ":const:`NOT_FOUND_ERR`"
-msgstr ":const:`NOT_FOUND_ERR`"
 
 msgid ":exc:`NotFoundErr`"
 msgstr ":exc:`NotFoundErr`"
 
-msgid ":const:`NOT_SUPPORTED_ERR`"
-msgstr ":const:`NOT_SUPPORTED_ERR`"
-
 msgid ":exc:`NotSupportedErr`"
 msgstr ":exc:`NotSupportedErr`"
-
-msgid ":const:`NO_DATA_ALLOWED_ERR`"
-msgstr ":const:`NO_DATA_ALLOWED_ERR`"
 
 msgid ":exc:`NoDataAllowedErr`"
 msgstr ":exc:`NoDataAllowedErr`"
 
-msgid ":const:`NO_MODIFICATION_ALLOWED_ERR`"
-msgstr ":const:`NO_MODIFICATION_ALLOWED_ERR`"
-
 msgid ":exc:`NoModificationAllowedErr`"
 msgstr ":exc:`NoModificationAllowedErr`"
-
-msgid ":const:`SYNTAX_ERR`"
-msgstr ":const:`SYNTAX_ERR`"
 
 msgid ":exc:`SyntaxErr`"
 msgstr ":exc:`SyntaxErr`"
 
-msgid ":const:`WRONG_DOCUMENT_ERR`"
-msgstr ":const:`WRONG_DOCUMENT_ERR`"
+#, fuzzy
+msgid ":exc:`ValidationErr`"
+msgstr ":exc:`InvalidModificationErr`"
 
 msgid ":exc:`WrongDocumentErr`"
 msgstr ":exc:`WrongDocumentErr`"
@@ -704,9 +970,6 @@ msgstr "``str`` یا ``bytes``"
 msgid "``null``"
 msgstr "``null``"
 
-msgid "``None``"
-msgstr "``None``"
-
 msgid "Accessor Methods"
 msgstr "متدهای دسترسی"
 
@@ -720,7 +983,8 @@ msgstr ""
 "readonly attribute string someValue;\n"
 "         attribute string anotherValue;"
 
-msgid "yields three accessor functions:  a \"get\" method for :attr:`someValue` (:meth:`_get_someValue`), and \"get\" and \"set\" methods for :attr:`anotherValue` (:meth:`_get_anotherValue` and :meth:`_set_anotherValue`).  The mapping, in particular, does not require that the IDL attributes are accessible as normal Python attributes:  ``object.someValue`` is *not* required to work, and may raise an :exc:`AttributeError`."
+#, fuzzy
+msgid "yields three accessor functions:  a \"get\" method for :attr:`!someValue` (:meth:`!_get_someValue`), and \"get\" and \"set\" methods for :attr:`!anotherValue` (:meth:`!_get_anotherValue` and :meth:`!_set_anotherValue`).  The mapping, in particular, does not require that the IDL attributes are accessible as normal Python attributes:  ``object.someValue`` is *not* required to work, and may raise an :exc:`AttributeError`."
 msgstr "سه تابع دسترسی‌دهنده (accessor functions) ایجاد می‌کند: یک متد «get» برای :attr:`someValue` (:meth:`_get_someValue`)، و متدهای «get» و «set» برای :attr:`anotherValue` (:meth:`_get_anotherValue` و :meth:`_set_anotherValue`). این نگاشت، به‌ویژه، مستلزم این نیست که ویژگی‌های IDL به‌عنوان ویژگی‌های معمولی پایتون قابل دسترسی باشند: *الزامی* نیست که ``object.someValue`` کار کند، و ممکن است یک :exc:`AttributeError` پرتاب کند."
 
 msgid "The Python DOM API, however, *does* require that normal attribute access work. This means that the typical surrogates generated by Python IDL compilers are not likely to work, and wrapper objects may be needed on the client if the DOM objects are accessed via CORBA. While this does require some additional consideration for CORBA DOM clients, the implementers with experience using DOM over CORBA from Python do not consider this a problem.  Attributes that are declared ``readonly`` may not restrict write access in all DOM implementations."
@@ -729,5 +993,63 @@ msgstr "با این حال، API DOM پایتون *الزام می‌کند* ک�
 msgid "In the Python DOM API, accessor functions are not required.  If provided, they should take the form defined by the Python IDL mapping, but these methods are considered unnecessary since the attributes are accessible directly from Python. \"Set\" accessors should never be provided for ``readonly`` attributes."
 msgstr "در API DOM پایتون، نیازی به توابع دسترسی (accessor) نیست. در صورت ارائه، این توابع باید از شکل تعریف‌شده در نگاشت IDL پایتون (Python IDL mapping) پیروی کنند، اما این متدها غیرضروری تلقی می‌شوند، زیرا ویژگی‌ها مستقیماً از پایتون قابل‌دسترسی هستند. برای ویژگی‌های ``readonly`` هرگز نباید توابع دسترسی \"Set\" ارائه شوند."
 
-msgid "The IDL definitions do not fully embody the requirements of the W3C DOM API, such as the notion of certain objects, such as the return value of :meth:`getElementsByTagName`, being \"live\".  The Python DOM API does not require implementations to enforce such requirements."
+#, fuzzy
+msgid "The IDL definitions do not fully embody the requirements of the W3C DOM API, such as the notion of certain objects, such as the return value of :meth:`~Element.getElementsByTagName`, being \"live\".  The Python DOM API does not require implementations to enforce such requirements."
 msgstr "تعریف‌های IDL به‌طور کامل بازتاب‌دهنده الزامات API DOM W3C نیستند، مانند مفهوم «زنده» بودن برخی شیء‌ها، از جمله مقدار بازگشتی :meth:`getElementsByTagName`. API DOM پایتون پیاده‌سازی‌ها را ملزم به اعمال چنین الزاماتی نمی‌کند."
+
+#~ msgid "An integer representing the node type.  Symbolic constants for the types are on the :class:`Node` object: :const:`ELEMENT_NODE`, :const:`ATTRIBUTE_NODE`, :const:`TEXT_NODE`, :const:`CDATA_SECTION_NODE`, :const:`ENTITY_NODE`, :const:`PROCESSING_INSTRUCTION_NODE`, :const:`COMMENT_NODE`, :const:`DOCUMENT_NODE`, :const:`DOCUMENT_TYPE_NODE`, :const:`NOTATION_NODE`. This is a read-only attribute."
+#~ msgstr "یک عدد صحیح که نوع گره را نشان می‌دهد. ثابت‌های نمادین برای انواع، در شیء :class:`Node` قرار دارند: :const:`ELEMENT_NODE`، :const:`ATTRIBUTE_NODE`، :const:`TEXT_NODE`، :const:`CDATA_SECTION_NODE`، :const:`ENTITY_NODE`، :const:`PROCESSING_INSTRUCTION_NODE`، :const:`COMMENT_NODE`، :const:`DOCUMENT_NODE`، :const:`DOCUMENT_TYPE_NODE`، :const:`NOTATION_NODE`. این یک ویژگی فقط‌خواندنی است."
+
+#~ msgid "This has a different meaning for each node type; see the DOM specification for details.  The situation is similar to that with :attr:`nodeName`.  The value is a string or ``None``."
+#~ msgstr "این برای هر نوع گره معنای متفاوتی دارد؛ برای جزئیات، مشخصات DOM را ببینید. وضعیت مشابهی با :attr:`nodeName` دارد. مقدار یک رشته یا ``None`` است."
+
+#~ msgid "Remove an attribute by name.  If there is no matching attribute, a :exc:`NotFoundErr` is raised."
+#~ msgstr "یک ویژگی را بر اساس نام حذف می‌کند. اگر ویژگی متناظری وجود نداشته باشد، یک :exc:`NotFoundErr` پرتاب می‌شود."
+
+#~ msgid "These interfaces extend the :class:`Node` interface.  They cannot have child nodes."
+#~ msgstr "این رابط‌ها، رابط :class:`Node` را گسترش می‌دهند. آن‌ها نمی‌توانند گره‌های فرزند داشته باشند."
+
+#~ msgid ":const:`DOMSTRING_SIZE_ERR`"
+#~ msgstr ":const:`DOMSTRING_SIZE_ERR`"
+
+#~ msgid ":const:`HIERARCHY_REQUEST_ERR`"
+#~ msgstr ":const:`HIERARCHY_REQUEST_ERR`"
+
+#~ msgid ":const:`INDEX_SIZE_ERR`"
+#~ msgstr ":const:`INDEX_SIZE_ERR`"
+
+#~ msgid ":const:`INUSE_ATTRIBUTE_ERR`"
+#~ msgstr ":const:`INUSE_ATTRIBUTE_ERR`"
+
+#~ msgid ":const:`INVALID_ACCESS_ERR`"
+#~ msgstr ":const:`INVALID_ACCESS_ERR`"
+
+#~ msgid ":const:`INVALID_CHARACTER_ERR`"
+#~ msgstr ":const:`INVALID_CHARACTER_ERR`"
+
+#~ msgid ":const:`INVALID_MODIFICATION_ERR`"
+#~ msgstr ":const:`INVALID_MODIFICATION_ERR`"
+
+#~ msgid ":const:`INVALID_STATE_ERR`"
+#~ msgstr ":const:`INVALID_STATE_ERR`"
+
+#~ msgid ":const:`NAMESPACE_ERR`"
+#~ msgstr ":const:`NAMESPACE_ERR`"
+
+#~ msgid ":const:`NOT_FOUND_ERR`"
+#~ msgstr ":const:`NOT_FOUND_ERR`"
+
+#~ msgid ":const:`NOT_SUPPORTED_ERR`"
+#~ msgstr ":const:`NOT_SUPPORTED_ERR`"
+
+#~ msgid ":const:`NO_DATA_ALLOWED_ERR`"
+#~ msgstr ":const:`NO_DATA_ALLOWED_ERR`"
+
+#~ msgid ":const:`NO_MODIFICATION_ALLOWED_ERR`"
+#~ msgstr ":const:`NO_MODIFICATION_ALLOWED_ERR`"
+
+#~ msgid ":const:`SYNTAX_ERR`"
+#~ msgstr ":const:`SYNTAX_ERR`"
+
+#~ msgid ":const:`WRONG_DOCUMENT_ERR`"
+#~ msgstr ":const:`WRONG_DOCUMENT_ERR`"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 12:24+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -55,6 +55,16 @@ msgstr ":func:`exists`، :func:`lexists`، :func:`isdir`، :func:`isfile`، :fun
 
 msgid "Return a normalized absolutized version of the pathname *path*. On most platforms, this is equivalent to calling ``normpath(join(os.getcwd(), path))``."
 msgstr "نسخه‌ی نرمال‌شده و مطلق‌شده از مسیر *path* را برمی‌گرداند. در بیشتر سکوها، این معادل فراخوانی ``normpath(join(os.getcwd(), path))`` است."
+
+msgid "On Windows the path is normalized by the operating system, therefore the result can differ from ``normpath(join(os.getcwd(), path))``. A drive-relative path is resolved against the current directory of the specified drive, and the drive letter is capitalized. Trailing dots and spaces are stripped. For example::"
+msgstr ""
+
+msgid ""
+">>> os.path.abspath('c:spam')\n"
+"'C:\\\\Temp\\\\spam'\n"
+">>> os.path.abspath('c:/temp/spam. . .')\n"
+"'c:\\\\temp\\\\spam'"
+msgstr ""
 
 msgid ":func:`os.path.join` and :func:`os.path.normpath`."
 msgstr ":func:`os.path.join` و :func:`os.path.normpath`."
@@ -232,7 +242,8 @@ msgstr "با حذف جداکننده‌های اضافی و ارجاع‌های 
 msgid "On POSIX systems, in accordance with `IEEE Std 1003.1 2013 Edition; 4.13 Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_, if a pathname begins with exactly two slashes, the first component following the leading characters may be interpreted in an implementation-defined manner, although more than two leading characters shall be treated as a single character."
 msgstr "در سیستم‌های POSIX، مطابق با `IEEE Std 1003.1 2013 Edition; 4.13 Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_، اگر یک مسیرنام دقیقاً با دو اسلش آغاز شود، اولین کامپوننت پس از نویسه‌های پیشرو ممکن است به‌صورت تعریف‌شده توسط پیاده‌سازی تفسیر شود، اگرچه بیش از دو نویسه‌ی پیشرو باید به‌عنوان یک نویسه‌ی واحد در نظر گرفته شود."
 
-msgid "Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path (if they are supported by the operating system). On Windows, this function will also resolve MS-DOS (also called 8.3) style names such as ``C:\\\\PROGRA~1`` to ``C:\\\\Program Files``."
+#, fuzzy
+msgid "Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path (if they are supported by the operating system). On Windows, this function will also resolve MS-DOS (also called 8.3) style names such as ``C:\\\\PROGRA~1`` to ``C:\\\\Program Files``. The returned path uses the case reported by the operating system, which can differ from the case of *path*, in particular the drive letter is capitalized."
 msgstr "مسیر کانونیکال نام پرونده مشخص‌شده را بازمی‌گرداند و هرگونه پیوند نمادین موجود در مسیر را حذف می‌کند (اگر توسط سیستم‌عامل پشتیبانی شوند). در ویندوز، این تابع همچنین نام‌های به سبک MS-DOS (که به 8.3 نیز شناخته می‌شوند) مانند ``C:\\\\PROGRA~1`` را به ``C:\\\\Program Files`` تبدیل می‌کند."
 
 msgid "By default, the path is evaluated up to the first component that does not exist, is a symlink loop, or whose evaluation raises :exc:`OSError`. All such components are appended unchanged to the existing part of the path."

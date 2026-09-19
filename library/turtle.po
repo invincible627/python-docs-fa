@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:01+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -182,11 +182,14 @@ msgstr "begin_fill()"
 msgid "Next we'll create a loop::"
 msgstr "در ادامه یک حلقه ایجاد می‌کنیم::"
 
+#, fuzzy
 msgid ""
+"start = pos()\n"
+"\n"
 "while True:\n"
 "    forward(200)\n"
 "    left(170)\n"
-"    if abs(pos()) < 1:\n"
+"    if distance(start) < 1:\n"
 "        break"
 msgstr ""
 "while True:\n"
@@ -195,7 +198,8 @@ msgstr ""
 "    if abs(pos()) < 1:\n"
 "        break"
 
-msgid "``abs(pos()) < 1`` is a good way to know when the turtle is back at its home position."
+#, fuzzy
+msgid "``distance(start) < 1`` is a good way to know when the turtle is back at its start position."
 msgstr "``abs(pos()) < 1`` راه خوبی برای تشخیص زمان بازگشت لاک‌پشت به موقعیت خانه‌ی خود است."
 
 msgid "Finally, complete the filling::"
@@ -1706,6 +1710,11 @@ msgstr "یک سه‌تایی (fontname, fontsize, fonttype)"
 msgid "Write text - the string representation of *arg* - at the current turtle position according to *align* (\"left\", \"center\" or \"right\") and with the given font.  If *move* is true, the pen is moved to the bottom-right corner of the text.  By default, *move* is ``False``."
 msgstr "متن - نمایش رشته‌ای *arg* - را در موقعیت فعلی لاک‌پشت بر اساس *align* (\"left\"، \"center\" یا \"right\") و با قلم داده‌شده می‌نویسد. اگر *move* درست باشد، قلم به گوشه‌ی پایین سمت راست متن منتقل می‌شود. به‌طور پیش‌فرض، *move* برابر ``False`` است."
 
+msgid ""
+">>> turtle.write(\"Home = \", True, align=\"center\")\n"
+">>> turtle.write((0,0), True)"
+msgstr ""
+
 msgid "Make the turtle invisible.  It's a good idea to do this while you're in the middle of doing some complex drawing, because hiding the turtle speeds up the drawing observably."
 msgstr "لاک‌پشت را نامرئی کنید. بهتر است این کار را هنگامی که در میانه‌ی انجام یک ترسیم پیچیده هستید انجام دهید، زیرا پنهان کردن لاک‌پشت سرعت ترسیم را به‌طور محسوسی افزایش می‌دهد."
 
@@ -1720,6 +1729,22 @@ msgstr ">>> turtle.showturtle()"
 
 msgid "Return ``True`` if the Turtle is shown, ``False`` if it's hidden."
 msgstr "اگر Turtle نمایش داده شده باشد، ``True`` و اگر پنهان باشد، ``False`` را برمی‌گرداند."
+
+#, fuzzy
+msgid ""
+">>> turtle.hideturtle()\n"
+">>> turtle.isvisible()\n"
+"False\n"
+">>> turtle.showturtle()\n"
+">>> turtle.isvisible()\n"
+"True"
+msgstr ""
+">>> turtle.penup()\n"
+">>> turtle.isdown()\n"
+"False\n"
+">>> turtle.pendown()\n"
+">>> turtle.isdown()\n"
+"True"
 
 msgid "a string which is a valid shapename"
 msgstr "رشته‌ای که یک نام شکل (shapename) معتبر باشد"
@@ -2188,6 +2213,14 @@ msgstr "رشته‌رنگ (colorstring) یا تاپل رنگ (color-tuple)، ر�
 
 msgid "If no arguments are given, return current (canvaswidth, canvasheight).  Else resize the canvas the turtles are drawing on.  Do not alter the drawing window.  To observe hidden parts of the canvas, use the scrollbars. With this method, one can make visible those parts of a drawing which were outside the canvas before."
 msgstr "اگر هیچ آرگومانی داده نشود، مقادیر فعلی (canvaswidth, canvasheight) را برمی‌گرداند. در غیر این صورت، بومی را که لاک‌پشت‌ها روی آن ترسیم می‌کنند، تغییر اندازه می‌دهد. پنجره‌ی ترسیم را تغییر نمی‌دهد. برای مشاهده بخش‌های پنهان بوم، از نوارهای پیمایش استفاده کنید. با این متد، می‌توانید بخش‌هایی از یک ترسیم را که پیش‌تر خارج از بوم بودند، نمایان کنید."
+
+msgid ""
+">>> screen.screensize()\n"
+"(400, 300)\n"
+">>> screen.screensize(2000,1500)\n"
+">>> screen.screensize()\n"
+"(2000, 1500)"
+msgstr ""
 
 msgid "e.g. to search for an erroneously escaped turtle ;-)"
 msgstr "مثلاً برای جستجوی لاک‌پشتی که به‌اشتباه فرار کرده است ;-)"
@@ -2730,6 +2763,23 @@ msgstr "``abs(a)`` مقدار مطلق a"
 
 msgid "``a.rotate(angle)`` rotation"
 msgstr "``a.rotate(angle)`` چرخش"
+
+#, fuzzy
+msgid "Exceptions"
+msgstr "توضیح"
+
+msgid "The :mod:`!turtle` module defines the following exception:"
+msgstr ""
+
+msgid "Raised for invalid arguments or operations. For example, a malformed color string:"
+msgstr ""
+
+msgid ""
+">>> turtle.color(\"blau\")\n"
+"Traceback (most recent call last):\n"
+"    ...\n"
+"turtle.TurtleGraphicsError: bad color string: blau"
+msgstr ""
 
 msgid "Explanation"
 msgstr "توضیح"

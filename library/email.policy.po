@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 13:14+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -314,7 +314,8 @@ msgstr "نام به‌عنوان همه‌چیز تا '``:``' تجزیه می‌
 msgid "The name is returned unchanged.  If the input value has a ``name`` attribute and it matches *name* ignoring case, the value is returned unchanged.  Otherwise the *name* and *value* are passed to ``header_factory``, and the resulting header object is returned as the value.  In this case a ``ValueError`` is raised if the input value contains CR or LF characters."
 msgstr "نام بدون تغییر بازگردانده می‌شود. اگر مقدار ورودی دارای ویژگی ``name`` باشد و آن با *name* بدون در نظر گرفتن بزرگی و کوچکی حروف مطابقت داشته باشد، مقدار بدون تغییر بازگردانده می‌شود. در غیر این صورت *name* و *value* به ``header_factory`` داده می‌شوند و شیء سرآیند حاصل به‌عنوان مقدار بازگردانده می‌شود. در این حالت اگر مقدار ورودی شامل نویسه‌های CR یا LF باشد، یک ``ValueError`` پرتاب می‌شود."
 
-msgid "If the value has a ``name`` attribute, it is returned to unmodified. Otherwise the *name*, and the *value* with any CR or LF characters removed, are passed to the ``header_factory``, and the resulting header object is returned.  Any surrogateescaped bytes get turned into the unicode unknown-character glyph."
+#, fuzzy
+msgid "If the value has a ``name`` attribute, it is returned to unmodified. Otherwise the *name*, and the *value* with any CR or LF characters removed, are passed to the ``header_factory``, and the resulting header object is returned.  Any surrogateescaped bytes get turned into the Unicode unknown-character glyph."
 msgstr "اگر مقدار دارای ویژگی ``name`` باشد، بدون تغییر بازگردانده می‌شود. در غیر این صورت، *name* و *value*، پس از حذف هرگونه نویسه CR یا LF از مقدار، به ``header_factory`` فرستاده می‌شوند و شیء سرآیند حاصل بازگردانده می‌شود. بایت‌های surrogateescaped به علامت نویسه‌ی ناشناخته‌ی یونیکد تبدیل می‌شوند."
 
 msgid "Header folding is controlled by the :attr:`refold_source` policy setting. A value is considered to be a 'source value' if and only if it does not have a ``name`` attribute (having a ``name`` attribute means it is a header object of some sort).  If a source value needs to be refolded according to the policy, it is converted into a header object by passing the *name* and the *value* with any CR and LF characters removed to the ``header_factory``.  Folding of a header object is done by calling its ``fold`` method with the current policy."
@@ -362,7 +363,8 @@ msgstr "واکشی مقدار یک سرآیند از یک :class:`~email.message
 msgid "Any header object, or any header that is refolded due to the policy settings, is folded using an algorithm that fully implements the RFC folding algorithms, including knowing where encoded words are required and allowed."
 msgstr "هر شیء سرآیند، یا هر سرآیندی که به‌دلیل تنظیمات سیاست دوباره تا می‌شود، با استفاده از الگوریتمی تا می‌شود که الگوریتم‌های تا کردن RFC را به‌طور کامل پیاده‌سازی می‌کند، از جمله این‌که می‌داند واژه‌های کدگذاری‌شده در کجا الزامی و مجاز هستند."
 
-msgid "From the application view, this means that any header obtained through the :class:`~email.message.EmailMessage` is a header object with extra attributes, whose string value is the fully decoded unicode value of the header.  Likewise, a header may be assigned a new value, or a new header created, using a unicode string, and the policy will take care of converting the unicode string into the correct RFC encoded form."
+#, fuzzy
+msgid "From the application view, this means that any header obtained through the :class:`~email.message.EmailMessage` is a header object with extra attributes, whose string value is the fully decoded value of the header.  Likewise, a header may be assigned a new value, or a new header created, using a string, and the policy will take care of converting the string into the correct RFC encoded form."
 msgstr "از دید برنامه، این بدان معناست که هر سرآیندی که از طریق :class:`~email.message.EmailMessage` دریافت می‌شود، یک شیء سرآیند با ویژگی‌های اضافی است که مقدار رشته‌ای آن، مقدار یونیکد کاملاً کدگشایی‌شده‌ی سرآیند است. به همین ترتیب، می‌توان با استفاده از یک رشته‌ی یونیکد، مقدار جدیدی به یک سرآیند اختصاص داد یا یک سرآیند جدید ایجاد کرد، و سیاست، تبدیل رشته‌ی یونیکد به قالب صحیح کدگذاری‌شده‌ی RFC را بر عهده خواهد گرفت."
 
 msgid "The header objects and their attributes are described in :mod:`~email.headerregistry`."

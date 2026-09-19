@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 14:09+0330\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-17 18:00+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -218,10 +218,19 @@ msgstr "آموزش"
 msgid "Start here: a tour of Python's syntax and features"
 msgstr "از اینجا شروع کنید: سفری در سینتکس و ویژگی‌های پایتون"
 
+#, fuzzy
+msgid "Built-ins reference"
+msgstr "مرجع کتابخانه"
+
+#, fuzzy
+msgid "Built-in functions and classes"
+msgstr "همه‌ی توابع، کلاس‌ها و اصطلاحات"
+
 msgid "Library reference"
 msgstr "مرجع کتابخانه"
 
-msgid "Standard library and builtins"
+#, fuzzy
+msgid "Standard library modules"
 msgstr "کتابخانه‌ی استاندارد و توابع توکار"
 
 msgid "Language reference"
@@ -275,11 +284,30 @@ msgstr "قابلیت‌های منسوخ‌شده"
 msgid "Other resources:"
 msgstr "منابع دیگر:"
 
+#, fuzzy
+msgid "Python developer's guide"
+msgstr "راهنمای توسعه‌دهندگان پایتون"
+
+msgid "Information on contributing to Python"
+msgstr ""
+
 msgid "Python Packaging User Guide"
 msgstr "راهنمای کاربر بسته‌بندی پایتون"
 
 msgid "Resources relating to Python packaging"
 msgstr "منابع مربوط به بسته‌بندی پایتون"
+
+msgid "Audio/visual talks"
+msgstr "گفتارهای صوتی/تصویری"
+
+msgid "Podcasts, talks, and video presentations from the community"
+msgstr ""
+
+msgid "Python Enhancement Proposals"
+msgstr ""
+
+msgid "Index of proposed improvements to Python"
+msgstr ""
 
 msgid "Static Typing with Python"
 msgstr "تایپ‌گذاری ایستا (Static Typing) در پایتون"
@@ -341,32 +369,11 @@ msgstr "حق نشر"
 msgid "About the documentation"
 msgstr "درباره‌ی مستندات"
 
-msgid "Download these documents"
-msgstr "دانلود این مستندات"
-
 msgid "Docs by version"
 msgstr "مستندات بر اساس نسخه"
 
 msgid "All versions"
 msgstr "همه‌ی نسخه‌ها"
-
-msgid "Other resources"
-msgstr "منابع دیگر"
-
-msgid "PEP index"
-msgstr "اندیس PEP"
-
-msgid "Beginner's guide"
-msgstr "راهنمای مبتدیان"
-
-msgid "Book list"
-msgstr "لیست کتاب‌ها"
-
-msgid "Audio/visual talks"
-msgstr "گفتارهای صوتی/تصویری"
-
-msgid "Python developer’s guide"
-msgstr "راهنمای توسعه‌دهندگان پایتون"
 
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
@@ -3508,3 +3515,18 @@ msgstr ""
 #, python-format
 msgid "Failed to parse type_comment for %r: %s"
 msgstr ""
+
+#~ msgid "Download these documents"
+#~ msgstr "دانلود این مستندات"
+
+#~ msgid "Other resources"
+#~ msgstr "منابع دیگر"
+
+#~ msgid "PEP index"
+#~ msgstr "اندیس PEP"
+
+#~ msgid "Beginner's guide"
+#~ msgstr "راهنمای مبتدیان"
+
+#~ msgid "Book list"
+#~ msgstr "لیست کتاب‌ها"

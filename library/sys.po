@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-12 18:39+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -1206,7 +1206,8 @@ msgstr "یک تابع فراخوانی می‌شود (یا وارد بلوک ک�
 msgid "``'line'``"
 msgstr "``'line'``"
 
-msgid "The interpreter is about to execute a new line of code or re-execute the condition of a loop.  The local trace function is called; *arg* is ``None``; the return value specifies the new local trace function.  See :file:`Objects/lnotab_notes.txt` for a detailed explanation of how this works. Per-line events may be disabled for a frame by setting :attr:`~frame.f_trace_lines` to :const:`False` on that :ref:`frame <frame-objects>`."
+#, fuzzy
+msgid "The interpreter is about to execute a new line of code or re-execute the condition of a loop.  The local trace function is called; *arg* is ``None``; the return value specifies the new local trace function.  See :source:`InternalDocs/code_objects.md` for a detailed explanation of how this works. Per-line events may be disabled for a frame by setting :attr:`~frame.f_trace_lines` to :const:`False` on that :ref:`frame <frame-objects>`."
 msgstr "مفسر در شرف اجرای یک خط جدید از کد یا اجرای مجدد شرط یک حلقه است. تابع ردگیری محلی فراخوانی می‌شود؛ *arg* برابر ``None`` است؛ مقدار بازگشتی، تابع ردگیری محلی جدید را تعیین می‌کند. برای توضیح مفصل چگونگی کار این سازوکار، :file:`Objects/lnotab_notes.txt` را ببینید. رویدادهای هر خط را می‌توان برای یک فریم با تنظیم :attr:`~frame.f_trace_lines` روی :const:`False` در آن :ref:`فریم <frame-objects>` غیرفعال کرد."
 
 msgid "A function (or other code block) is about to return.  The local trace function is called; *arg* is the value that will be returned, or ``None`` if the event is caused by an exception being raised.  The trace function's return value is ignored."

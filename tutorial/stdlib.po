@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-14 09:30+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -65,7 +65,8 @@ msgstr ""
 ">>> help(os)\n"
 "<returns an extensive manual page created from the module's docstrings>"
 
-msgid "For daily file and directory management tasks, the :mod:`shutil` module provides a higher level interface that is easier to use::"
+#, fuzzy
+msgid "For daily file and directory management tasks, the :mod:`shutil` module provides a higher-level interface that is easier to use::"
 msgstr "برای کارهای روزمره‌ی مدیریت پرونده‌ها و پوشه‌ها، ماژول :mod:`shutil` یک رابط سطح بالاتر ارائه می‌دهد که استفاده از آن ساده‌تر است::"
 
 msgid ""
@@ -99,7 +100,8 @@ msgstr ""
 msgid "Command-line arguments"
 msgstr "آرگومان‌های خط فرمان"
 
-msgid "Common utility scripts often need to process command line arguments. These arguments are stored in the :mod:`sys` module's *argv* attribute as a list.  For instance, let's take the following :file:`demo.py` file::"
+#, fuzzy
+msgid "Common utility scripts often need to process command-line arguments. These arguments are stored in the :mod:`sys` module's *argv* attribute as a list.  For instance, let's take the following :file:`demo.py` file::"
 msgstr "اسکریپت‌های کاربردی معمولاً نیاز دارند آرگومان‌های خط فرمان را پردازش کنند. این آرگومان‌ها در ویژگی *argv* ماژول :mod:`sys` به‌صورت یک فهرست ذخیره می‌شوند. برای مثال، پرونده :file:`demo.py` زیر را در نظر بگیرید::"
 
 msgid ""
@@ -117,7 +119,8 @@ msgstr "خروجی اجرای ``python demo.py one two three`` در خط فرم�
 msgid "['demo.py', 'one', 'two', 'three']"
 msgstr "['demo.py', 'one', 'two', 'three']"
 
-msgid "The :mod:`argparse` module provides a more sophisticated mechanism to process command line arguments.  The following script extracts one or more filenames and an optional number of lines to be displayed::"
+#, fuzzy
+msgid "The :mod:`argparse` module provides a more sophisticated mechanism to process command-line arguments.  The following script extracts one or more filenames and an optional number of lines to be displayed::"
 msgstr "ماژول :mod:`argparse` سازوکار پیشرفته‌تری برای پردازش آرگومان‌های خط فرمان فراهم می‌کند. اسکریپت زیر یک یا چند نام پرونده و همچنین تعداد اختیاری سطرهایی که باید نمایش داده شوند را استخراج می‌کند::"
 
 msgid ""

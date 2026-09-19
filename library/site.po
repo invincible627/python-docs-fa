@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -153,6 +153,12 @@ msgstr "یک پوشه را به sys.path اضافه می‌کند و پروند�
 
 msgid "Return a list containing all global site-packages directories."
 msgstr "فهرستی شامل تمام پوشه‌های site-packages سراسری را برمی‌گرداند."
+
+msgid "For each directory given in *prefixes* (or :data:`PREFIXES` if *prefixes* is ``None``), this function will compute its site-packages subdirectory depending on the system environment, and will return a list of full paths, which are not checked for existence."
+msgstr ""
+
+msgid "Added the optional *prefixes* parameter."
+msgstr ""
 
 msgid "Return the path of the user base directory, :data:`USER_BASE`.  If it is not initialized yet, this function will also set it, respecting :envvar:`PYTHONUSERBASE`."
 msgstr "مسیر پوشه‌ی پایه‌ی کاربر، :data:`USER_BASE` را برمی‌گرداند. اگر هنوز مقداردهی اولیه نشده باشد، این تابع آن را نیز با رعایت :envvar:`PYTHONUSERBASE` تنظیم می‌کند."

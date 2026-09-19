@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 17:01+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -213,7 +213,8 @@ msgstr ""
 msgid "In many ways the object returned by :func:`range` behaves as if it is a list, but in fact it isn't. It is an object which returns the successive items of the desired sequence when you iterate over it, but it doesn't really make the list, thus saving space."
 msgstr "از بسیاری جهات، شی‌ءای که توسط :func:`range` برگردانده می‌شود طوری رفتار می‌کند که گویی یک فهرست است، اما در واقع چنین نیست. این یک شیء است که هنگام پیمایش، آیتم‌های متوالی دنباله‌ی موردنظر را برمی‌گرداند، اما واقعاً فهرست را ایجاد نمی‌کند و در نتیجه در فضا صرفه‌جویی می‌شود."
 
-msgid "We say such an object is :term:`iterable`, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted.  We have seen that the :keyword:`for` statement is such a construct, while an example of a function that takes an iterable is :func:`sum`::"
+#, fuzzy
+msgid "We say such an object is :term:`iterable`, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is :term:`exhausted`.  We have seen that the :keyword:`for` statement is such a construct, while an example of a function that takes an iterable is :func:`sum`::"
 msgstr "می‌گوییم چنین شی‌ءای :term:`پیمایش‌پذیر <iterable>` است؛ یعنی برای استفاده به‌عنوان هدف توابع و ساختارهایی مناسب است که انتظار دارند چیزی وجود داشته باشد که بتوانند از آن آیتم‌های متوالی را تا زمانی که چیزی باقی نمانده است دریافت کنند. دیدیم که دستور :keyword:`for` چنین ساختاری است، در حالی که نمونه‌ای از تابعی که یک شیء پیمایش‌پذیر دریافت می‌کند :func:`sum` است::"
 
 msgid ""

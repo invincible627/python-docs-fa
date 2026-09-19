@@ -8,7 +8,7 @@ checkout. Used by both:
   - scripts/update_python_version.py  (manual, deliberate version bumps,
     full clone, creates new .po files for brand-new pages)
   - .github/workflows/sync-with-cpython.yml (nightly automated msgid sync,
-    sparse checkout, merge-only, opens an issue for fuzzy strings)
+    sparse checkout, merge-only by default, opens an issue for fuzzy strings)
 
 Keeping this logic in one place means both paths build .pot files and run
 msgmerge/msgfmt identically -- no more silent flag drift (e.g. one path
@@ -21,9 +21,18 @@ AND Sphinx's own internal UI-string catalog (sphinx/locale/sphinx.pot).
 sync_sphinx_catalog() combines both into one POT before merging, so
 neither set of strings clobbers the other.
 
+New upstream pages
+------------------
+When CPython adds a page (e.g. the whole Doc/library/builtins section), there
+is a .pot for it but no .po in this repo. By default the sync only *reports*
+these. Pass --create-new to sync-only (or create_new=True to merge_all) to
+create an empty .po for each one via msginit, then normalise it with the same
+msgmerge flags used everywhere else. New files have empty msgstrs, so the
+English text shows until someone translates them.
+
 This module is a library first, CLI second. As a CLI it exposes just the
 "mechanical middle" of the sync -- build .pot templates, merge them into
-existing .po files, flag new upstream pages with no .po yet, validate --
+existing .po files, create/flag new upstream pages with no .po yet, validate --
 so the GitHub Actions workflow can shell out to one command instead of
 reimplementing the loop in bash/awk.
 """
@@ -43,6 +52,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 # the workflow included them, so whichever ran second would produce a huge
 # rewrap-only diff on top of (and obscuring) any real content changes.
 MSGMERGE_FLAGS = ["--update", "--backup=off", "--no-location", "--no-wrap"]
+
+DEFAULT_LOCALE = "fa"
 
 IGNORED_DIR_NAMES = {".git", ".cpython-src", ".pot-templates"}
 
@@ -91,8 +102,8 @@ def fetch_cpython_full(tag: str, workdir: Path) -> None:
 
 def fetch_cpython_sparse(tag: str, workdir: Path) -> None:
     """Sparse, blobless clone of just Doc/ + Include/. Used by the nightly
-    workflow, where we only ever merge into .po files that already exist,
-    so we don't need the rest of the tree."""
+    workflow. Doc/ contains everything needed to build every .pot, including
+    ones for brand-new pages, so this is enough for --create-new too."""
     if workdir.exists():
         shutil.rmtree(workdir)
     run(
@@ -138,7 +149,7 @@ class MergeReport:
     )  # .po with no matching .pot upstream
     new_pot_no_po: list = field(
         default_factory=list
-    )  # .pot with no .po yet (new upstream page)
+    )  # .pot with no .po yet (new upstream page), not created
 
     def summary(self) -> str:
         lines = [
@@ -176,13 +187,16 @@ def merge_existing(pot_root: Path, repo_root: Path = REPO_ROOT) -> MergeReport:
 
 def detect_new_pot_files(pot_root: Path, repo_root: Path = REPO_ROOT) -> list:
     """Find .pot files with no corresponding .po file yet -- i.e. pages
-    added upstream since the last sync. Both entry points can call this;
-    only the version-bump script actually creates the .po (see
-    create_po_for_new_pot), but the nightly workflow can now at least
-    *report* these instead of silently dropping them (item 1)."""
+    added upstream since the last sync. Returns paths relative to pot_root.
+
+    sphinx.pot is excluded: sphinx.po is managed by sync_sphinx_catalog(),
+    which needs Sphinx's own catalog too, so it must not be created from the
+    CPython pot alone."""
     new_pot = []
     for pot_path in sorted(pot_root.rglob("*.pot")):
         rel = pot_path.relative_to(pot_root)
+        if rel == Path("sphinx.pot"):
+            continue
         po_path = repo_root / rel.with_suffix(".po")
         if not po_path.exists():
             new_pot.append(rel)
@@ -190,20 +204,32 @@ def detect_new_pot_files(pot_root: Path, repo_root: Path = REPO_ROOT) -> list:
 
 
 def create_po_for_new_pot(
-    pot_root: Path, rel_pot_paths: list, locale: str = "fa", repo_root: Path = REPO_ROOT
+    pot_root: Path,
+    rel_pot_paths: list,
+    locale: str = DEFAULT_LOCALE,
+    repo_root: Path = REPO_ROOT,
 ) -> list:
-    """Create a fresh .po (via msginit) for each given new .pot. Only called
-    from the version-bump script -- the nightly workflow reports these via
-    detect_new_pot_files() but leaves creation to a human-reviewed run."""
+    """Create a fresh .po for each given new .pot (paths relative to pot_root).
+
+    Uses msginit to get a proper header (Language, Plural-Forms, ...), then
+    runs msgmerge with MSGMERGE_FLAGS so the new file is formatted exactly
+    like every other file (no location comments, no wrapping) and doesn't
+    produce a rewrap-only diff on the next sync. Existing .po files are never
+    overwritten. Parent directories (e.g. a new library/builtins/ folder) are
+    created as needed."""
     created = []
     for rel in rel_pot_paths:
         pot_path = pot_root / rel
         po_path = repo_root / rel.with_suffix(".po")
+        if po_path.exists():
+            print(f"  ! {rel.with_suffix('.po')} already exists, skipping")
+            continue
         po_path.parent.mkdir(parents=True, exist_ok=True)
         run(
             [
                 "msginit",
                 "--no-translator",
+                "--no-wrap",
                 "-l",
                 locale,
                 "-i",
@@ -212,12 +238,17 @@ def create_po_for_new_pot(
                 str(po_path),
             ]
         )
-        created.append(rel)
+        run(["msgmerge", *MSGMERGE_FLAGS, str(po_path), str(pot_path)])
+        print(f"  + created {po_path.relative_to(repo_root)}")
+        created.append(rel.with_suffix(".po"))
     return created
 
 
 def merge_all(
-    pot_root: Path, create_new: bool, locale: str = "fa", repo_root: Path = REPO_ROOT
+    pot_root: Path,
+    create_new: bool,
+    locale: str = DEFAULT_LOCALE,
+    repo_root: Path = REPO_ROOT,
 ) -> MergeReport:
     report = merge_existing(pot_root, repo_root)
     new_pot = detect_new_pot_files(pot_root, repo_root)
@@ -319,16 +350,19 @@ def check_po_files(repo_root: Path = REPO_ROOT) -> list:
 
 
 # ---------------------------------------------------------------------------
-# CLI -- the "sync-only" mode the workflow shells out to (item 4)
+# CLI -- the "sync-only" mode the workflow shells out to
 # ---------------------------------------------------------------------------
 
 
 def _cli_sync_only(args: argparse.Namespace) -> int:
     """Sparse clone + build gettext + merge into existing .po files +
-    validate. This is everything the nightly workflow needs, in one call,
-    instead of inline bash/awk. Report-only for new upstream pages (does
-    NOT create new .po files -- that stays a deliberate, human-run action
-    via update_python_version.py)."""
+    (optionally) create .po files for new upstream pages + validate.
+
+    Without --create-new this is report-only for new upstream pages.
+    With --create-new, empty .po files are created for them, so they show up
+    in the commit and can be translated. --fail-on-new makes the run exit
+    non-zero if new pages were found but not created (useful in CI to make
+    sure they don't get ignored)."""
     workdir = REPO_ROOT / ".cpython-src"
     tag = args.tag
     doc_venv_dir = workdir / "Doc" / "venv"
@@ -340,12 +374,14 @@ def _cli_sync_only(args: argparse.Namespace) -> int:
     pot_root = build_gettext(workdir / "Doc")
 
     print("\n== Merging into existing .po files ==")
-    report = merge_all(pot_root, create_new=False)
+    report = merge_all(pot_root, create_new=args.create_new, locale=args.locale)
     print(f"\n{report.summary()}")
+    if report.new_po_created:
+        print("\nCreated .po files for new upstream pages:")
+        for rel in report.new_po_created:
+            print(f"  + {rel}")
     if report.new_pot_no_po:
-        print(
-            "\nNew upstream pages with no .po yet (run update_python_version.py to create):"
-        )
+        print("\nNew upstream pages with no .po yet (re-run with --create-new):")
         for rel in report.new_pot_no_po:
             print(f"  - {rel}")
 
@@ -369,6 +405,8 @@ def _cli_sync_only(args: argparse.Namespace) -> int:
 
     if bad:
         return 1
+    if args.fail_on_new and report.new_pot_no_po:
+        return 2
     return 0
 
 
@@ -379,10 +417,27 @@ def main() -> None:
     sync = sub.add_parser(
         "sync-only",
         help="Sparse-checkout sync used by the nightly workflow: fetch, "
-        "build gettext, merge into existing .po files, report new "
-        "upstream pages, validate. Does not create new .po files.",
+        "build gettext, merge into existing .po files, report (or create) "
+        "new upstream pages, validate.",
     )
     sync.add_argument("tag", help="CPython git tag to sync against, e.g. v3.14.7")
+    sync.add_argument(
+        "--create-new",
+        action="store_true",
+        help="create empty .po files for upstream pages that have no .po yet "
+        "(default: only report them)",
+    )
+    sync.add_argument(
+        "--fail-on-new",
+        action="store_true",
+        help="exit with status 2 if new upstream pages have no .po and "
+        "--create-new was not given",
+    )
+    sync.add_argument(
+        "--locale",
+        default=DEFAULT_LOCALE,
+        help=f"locale for newly created .po files (default: {DEFAULT_LOCALE})",
+    )
     sync.add_argument(
         "--keep-src",
         action="store_true",

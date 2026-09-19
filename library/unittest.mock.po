@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-15 12:26+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -513,7 +513,8 @@ msgstr "اگر ``side_effect`` یک تابع باشد، تابع ناهمگام 
 msgid "if ``side_effect`` is an exception, the async function will raise the exception,"
 msgstr "اگر ``side_effect`` یک استثنا باشد، تابع ناهمگام آن استثنا را پرتاب خواهد کرد،"
 
-msgid "if ``side_effect`` is an iterable, the async function will return the next value of the iterable, however, if the sequence of result is exhausted, ``StopAsyncIteration`` is raised immediately,"
+#, fuzzy
+msgid "if ``side_effect`` is an iterable, the async function will return the next value of the iterable, however, if the sequence of result is :term:`exhausted`, ``StopAsyncIteration`` is raised immediately,"
 msgstr "اگر ``side_effect`` یک پیمایش‌پذیر باشد، تابع ناهمگام مقدار بعدی پیمایش‌پذیر را برمی‌گرداند، اما اگر دنباله‌ی نتایج به پایان برسد، ``StopAsyncIteration`` بلافاصله پرتاب می‌شود،"
 
 msgid "if ``side_effect`` is not defined, the async function will return the value defined by ``return_value``, hence, by default, the async function returns a new :class:`AsyncMock` object."
@@ -612,7 +613,8 @@ msgstr "اگر می‌خواهید ماک همچنان مقدار برگشتی �
 msgid "To remove a :attr:`~Mock.side_effect`, and return to the default behaviour, set the :attr:`!side_effect` to ``None``:"
 msgstr "برای حذف :attr:`~Mock.side_effect` و بازگشت به رفتار پیش‌فرض، :attr:`!side_effect` را روی ``None`` تنظیم کنید:"
 
-msgid "The :attr:`~Mock.side_effect` can also be any iterable object. Repeated calls to the mock will return values from the iterable (until the iterable is exhausted and a :exc:`StopIteration` is raised):"
+#, fuzzy
+msgid "The :attr:`~Mock.side_effect` can also be any iterable object. Repeated calls to the mock will return values from the iterable (until the iterable is :term:`exhausted` and a :exc:`StopIteration` is raised):"
 msgstr ":attr:`~Mock.side_effect` همچنین می‌تواند هر شیء پیمایش‌پذیری باشد. فراخوانی‌های مکرر به ماک، مقدارهایی از پیمایش‌پذیر را برمی‌گرداند (تا زمانی که پیمایش‌پذیر تمام شود و :exc:`StopIteration` پرتاب شود):"
 
 msgid "If any members of the iterable are exceptions they will be raised instead of returned::"
@@ -2112,5 +2114,6 @@ msgstr "اما اگر ``None`` را به آن انتساب دهید، این ن�
 msgid "Even if you set all three at once when initializing the mock, the order of precedence remains the same:"
 msgstr "حتی اگر هر سه را هنگام مقداردهی اولیه ماک یک‌جا تنظیم کنید، ترتیب اولویت یکسان باقی می‌ماند:"
 
-msgid "If :attr:`~Mock.side_effect` is exhausted, the order of precedence will not cause a value to be obtained from the successors. Instead, ``StopIteration`` exception is raised."
+#, fuzzy
+msgid "If :attr:`~Mock.side_effect` is :term:`exhausted`, the order of precedence will not cause a value to be obtained from the successors. Instead, ``StopIteration`` exception is raised."
 msgstr "اگر :attr:`~Mock.side_effect` به پایان رسیده باشد، ترتیب اولویت باعث نمی‌شود مقداری از جانشین‌ها به دست آید. در عوض، استثنای ``StopIteration`` پرتاب می‌شود."

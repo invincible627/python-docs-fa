@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-19 20:08+0330\n"
 "PO-Revision-Date: 2026-09-13 16:13+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -595,8 +595,12 @@ msgstr "اشیاء HTTPPasswordMgr"
 msgid "These methods are available on :class:`HTTPPasswordMgr` and :class:`HTTPPasswordMgrWithDefaultRealm` objects."
 msgstr "این متدها بر روی اشیاء :class:`HTTPPasswordMgr` و :class:`HTTPPasswordMgrWithDefaultRealm` در دسترس هستند."
 
-msgid "*uri* can be either a single URI, or a sequence of URIs. *realm*, *user* and *passwd* must be strings. This causes ``(user, passwd)`` to be used as authentication tokens when authentication for *realm* and a super-URI of any of the given URIs is given."
+#, fuzzy
+msgid "*uri* can be either a single URI, or a sequence of URIs. *realm*, *user* and *passwd* must be strings. This causes ``(user, passwd)`` to be used as authentication tokens when authentication for *realm* and a super-URI of any of the given URIs is given. If a URI includes a scheme, its credentials only match authentication URIs with the same scheme or no scheme. A URI without a scheme matches authentication URIs with any scheme."
 msgstr "*uri* می‌تواند یک URI واحد یا دنباله‌ای از URIها باشد. *realm*، *user* و *passwd* باید رشته باشند. این امر باعث می‌شود وقتی احراز هویت برای *realm* و یک ابر-URI (super-URI) از هر یک از URIهای داده‌شده ارائه شود، از ``(user, passwd)`` به‌عنوان توکن‌های احراز هویت استفاده شود."
+
+msgid "Authentication credentials for URIs with a scheme are now scoped by that scheme."
+msgstr ""
 
 msgid "Get user/password for given realm and URI, if any.  This method will return ``(None, None)`` if there is no matching user/password."
 msgstr "نام کاربری/گذرواژه را برای قلمرو و URI داده‌شده، در صورت وجود، دریافت می‌کند. اگر هیچ نام کاربری/گذرواژه منطبقی وجود نداشته باشد، این متد ``(None, None)`` را برمی‌گرداند."
@@ -628,6 +632,9 @@ msgstr "اشیاء AbstractBasicAuthHandler"
 msgid "Handle an authentication request by getting a user/password pair, and re-trying the request.  *authreq* should be the name of the header where the information about the realm is included in the request, *host* specifies the URL and path to authenticate for, *req* should be the (failed) :class:`Request` object, and *headers* should be the error headers."
 msgstr "با دریافت یک جفت کاربر/گذرواژه و تلاش دوباره برای درخواست، به یک درخواست احراز هویت رسیدگی کنید.  *authreq* باید نام سرآیندی در درخواست باشد که اطلاعات مربوط به قلمرو در آن گنجانده شده است، *host* نشانی URL و مسیر برای احراز هویت را مشخص می‌کند، *req* باید شیء :class:`Request` (ناموفق) باشد، و *headers* باید سرآیندهای خطا باشند."
 
+msgid "*headers* must be a mapping-like object with case-insensitive lookup that implements the ``get_all()`` method, such as :class:`email.message.Message` or :class:`wsgiref.headers.Headers`."
+msgstr ""
+
 msgid "*host* is either an authority (e.g. ``\"python.org\"``) or a URL containing an authority component (e.g. ``\"https://python.org/\"``). In either case, the authority must not contain a userinfo component (so, ``\"python.org\"`` and ``\"python.org:80\"`` are fine, ``\"joe:password@python.org\"`` is not)."
 msgstr "*host* یا یک مرجع (authority) است (مثلاً ``\"python.org\"``) یا یک URL حاوی یک کامپوننت مرجع (authority) است (مثلاً ``\"https://python.org/\"``). در هر دو حالت، مرجع (authority) نباید شامل یک کامپوننت اطلاعات کاربر (userinfo) باشد (بنابراین، ``\"python.org\"`` و ``\"python.org:80\"`` مجاز هستند، اما ``\"joe:password@python.org\"`` مجاز نیست)."
 
@@ -645,6 +652,9 @@ msgstr "اشیاء AbstractDigestAuthHandler"
 
 msgid "*authreq* should be the name of the header where the information about the realm is included in the request, *host* should be the host to authenticate to, *req* should be the (failed) :class:`Request` object, and *headers* should be the error headers."
 msgstr "*authreq* باید نام سرآیندی باشد که اطلاعات مربوط به قلمرو در درخواست، در آن گنجانده شده است، *host* باید میزبانی باشد که در برابر آن احراز هویت می‌شود، *req* باید شیء ناموفق :class:`Request` باشد، و *headers* باید سرآیندهای خطا باشند."
+
+msgid "*headers* must be a mapping-like object with case-insensitive lookup, such as :class:`email.message.Message` or :class:`wsgiref.headers.Headers`."
+msgstr ""
 
 msgid "HTTPDigestAuthHandler Objects"
 msgstr "اشیاء HTTPDigestAuthHandler"
