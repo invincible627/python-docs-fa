@@ -390,119 +390,119 @@ msgstr "نسخه‌ی پایدار فعلی"
 
 #, python-format
 msgid "The %s extension is required by needs_extensions settings, but it is not loaded."
-msgstr ""
+msgstr "افزونه‌ی %s توسط تنظیمات needs_extensions لازم است، اما بارگذاری نشده است."
 
 #, python-format
 msgid "This project needs the extension %s at least in version %s and therefore cannot be built with the loaded version (%s)."
-msgstr ""
+msgstr "این پروژه به افزونه‌ی %s حداقل در نسخه‌ی %s نیاز دارد و بنابراین نمی‌تواند با نسخه‌ی بارگذاری‌شده‌ی (%s) ساخته شود."
 
 #, python-format
 msgid "Cannot find source directory (%s)"
-msgstr ""
+msgstr "نمی‌توان پوشه‌ی مبدأ (%s) را پیدا کرد."
 
 #, python-format
 msgid "Output directory (%s) is not a directory"
-msgstr ""
+msgstr "پوشه‌ی خروجی (%s) یک پوشه نیست."
 
 msgid "Source directory and destination directory cannot be identical"
-msgstr ""
+msgstr "پوشه‌ی مبدأ و پوشه‌ی مقصد نمی‌توانند یکسان باشند."
 
 #, python-format
 msgid "Running Sphinx v%s"
-msgstr ""
+msgstr "در حال اجرای Sphinx v%s"
 
 #, python-format
 msgid "This project needs at least Sphinx v%s and therefore cannot be built with this version."
-msgstr ""
+msgstr "این پروژه حداقل به Sphinx v%s نیاز دارد و بنابراین نمی‌تواند با این نسخه ساخته شود."
 
 msgid "making output directory"
-msgstr ""
+msgstr "در حال ایجاد پوشه‌ی خروجی"
 
 #, python-format
 msgid "while setting up extension %s:"
-msgstr ""
+msgstr "هنگام راه‌اندازی افزونه‌ی %s:"
 
 msgid "'setup' as currently defined in conf.py isn't a Python callable. Please modify its definition to make it a callable function. This is needed for conf.py to behave as a Sphinx extension."
-msgstr ""
+msgstr "'setup' آن‌گونه که اکنون در conf.py تعریف شده، یک فراخوانی‌پذیر پایتون نیست. لطفاً تعریف آن را طوری تغییر دهید که یک تابع فراخوانی‌پذیر شود. این کار لازم است تا conf.py بتواند به‌عنوان یک افزونه‌ی Sphinx رفتار کند."
 
 #, python-format
 msgid "loading translations [%s]... "
-msgstr ""
+msgstr "در حال بارگذاری ترجمه‌های [%s]... "
 
 msgid "done"
-msgstr ""
+msgstr "انجام شد"
 
 msgid "not available for built-in messages"
-msgstr ""
+msgstr "برای پیام‌های توکار در دسترس نیست"
 
 msgid "loading pickled environment"
-msgstr ""
+msgstr "در حال بارگذاری محیط پیکل‌شده"
 
 #, python-format
 msgid "failed: %s"
-msgstr ""
+msgstr "شکست: %s"
 
 msgid "No builder selected, using default: html"
-msgstr ""
+msgstr "سازنده‌ای انتخاب نشده است، استفاده از پیش‌فرض: html"
 
 msgid "build finished with problems."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید."
 
 msgid "build succeeded."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد."
 
 msgid "build finished with problems, 1 warning (with warnings treated as errors)."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، ۱ هشدار (با در نظر گرفتن هشدارها به‌عنوان خطا)."
 
 msgid "build finished with problems, 1 warning."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، ۱ هشدار."
 
 msgid "build succeeded, 1 warning."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد، ۱ هشدار."
 
 #, python-format
 msgid "build finished with problems, %s warnings (with warnings treated as errors)."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، %s هشدار (با در نظر گرفتن هشدارها به‌عنوان خطا)."
 
 #, python-format
 msgid "build finished with problems, %s warnings."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، %s هشدار."
 
 #, python-format
 msgid "build succeeded, %s warnings."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد، %s هشدار."
 
 #, python-format
 msgid "node class %r is already registered, its visitors will be overridden"
-msgstr ""
+msgstr "کلاس گره‌ی %r از قبل ثبت شده است؛ بازدیدکنندگان آن بازنویسی خواهند شد"
 
 #, python-format
 msgid "directive %r is already registered and will not be overridden"
-msgstr ""
+msgstr "دایرکتیو %r از قبل ثبت شده است و بازنویسی نخواهد شد"
 
 #, python-format
 msgid "role %r is already registered and will not be overridden"
-msgstr ""
+msgstr "نقش %r از قبل ثبت شده است و بازنویسی نخواهد شد"
 
 #, python-format
 msgid "the %s extension does not declare if it is safe for parallel reading, assuming it isn't - please ask the extension author to check and make it explicit"
-msgstr ""
+msgstr "افزونه‌ی %s اعلام نمی‌کند که آیا برای خواندن موازی ایمن است یا نه؛ فرض بر این است که ایمن نیست — لطفاً از نویسنده‌ی افزونه بخواهید آن را بررسی و صریح کند"
 
 #, python-format
 msgid "the %s extension is not safe for parallel reading"
-msgstr ""
+msgstr "افزونه‌ی %s برای خواندن موازی ایمن نیست"
 
 #, python-format
 msgid "the %s extension does not declare if it is safe for parallel writing, assuming it isn't - please ask the extension author to check and make it explicit"
-msgstr ""
+msgstr "افزونه‌ی %s اعلام نمی‌کند که آیا برای نوشتن موازی ایمن است یا نه؛ فرض بر این است که ایمن نیست — لطفاً از نویسنده‌ی افزونه بخواهید آن را بررسی و صریحاً اعلام کند"
 
 #, python-format
 msgid "the %s extension is not safe for parallel writing"
-msgstr ""
+msgstr "افزونه‌ی %s برای نوشتن موازی ایمن نیست"
 
 #, python-format
 msgid "doing serial %s"
-msgstr ""
+msgstr "در حال انجام سریال %s"
 
 #, python-format
 msgid "config directory doesn't contain a conf.py file (%s)"
