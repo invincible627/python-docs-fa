@@ -289,7 +289,7 @@ msgid "Python developer's guide"
 msgstr "راهنمای توسعه‌دهندگان پایتون"
 
 msgid "Information on contributing to Python"
-msgstr ""
+msgstr "اطلاعاتی درباره‌ی مشارکت در پایتون"
 
 msgid "Python Packaging User Guide"
 msgstr "راهنمای کاربر بسته‌بندی پایتون"
@@ -301,13 +301,13 @@ msgid "Audio/visual talks"
 msgstr "گفتارهای صوتی/تصویری"
 
 msgid "Podcasts, talks, and video presentations from the community"
-msgstr ""
+msgstr "پادکست‌ها، گفتارها و ارائه‌های تصویری از سوی کامیونیتی"
 
 msgid "Python Enhancement Proposals"
-msgstr ""
+msgstr "پیشنهادهای بهبود پایتون"
 
 msgid "Index of proposed improvements to Python"
-msgstr ""
+msgstr "اندیس بهبودهای پیشنهادی پایتون"
 
 msgid "Static Typing with Python"
 msgstr "تایپ‌گذاری ایستا (Static Typing) در پایتون"
@@ -397,165 +397,165 @@ msgstr "نسخه‌ی پایدار فعلی"
 
 #, python-format
 msgid "The %s extension is required by needs_extensions settings, but it is not loaded."
-msgstr ""
+msgstr "افزونه‌ی %s توسط تنظیمات needs_extensions لازم است، اما بارگذاری نشده است."
 
 #, python-format
 msgid "This project needs the extension %s at least in version %s and therefore cannot be built with the loaded version (%s)."
-msgstr ""
+msgstr "این پروژه به افزونه‌ی %s حداقل در نسخه‌ی %s نیاز دارد و بنابراین نمی‌تواند با نسخه‌ی بارگذاری‌شده‌ی (%s) ساخته شود."
 
 #, python-format
 msgid "Cannot find source directory (%s)"
-msgstr ""
+msgstr "نمی‌توان پوشه‌ی مبدأ (%s) را پیدا کرد."
 
 #, python-format
 msgid "Output directory (%s) is not a directory"
-msgstr ""
+msgstr "پوشه‌ی خروجی (%s) یک پوشه نیست."
 
 msgid "Source directory and destination directory cannot be identical"
-msgstr ""
+msgstr "پوشه‌ی مبدأ و پوشه‌ی مقصد نمی‌توانند یکسان باشند."
 
 #, python-format
 msgid "Running Sphinx v%s"
-msgstr ""
+msgstr "در حال اجرای Sphinx v%s"
 
 #, python-format
 msgid "This project needs at least Sphinx v%s and therefore cannot be built with this version."
-msgstr ""
+msgstr "این پروژه حداقل به Sphinx v%s نیاز دارد و بنابراین نمی‌تواند با این نسخه ساخته شود."
 
 msgid "making output directory"
-msgstr ""
+msgstr "در حال ایجاد پوشه‌ی خروجی"
 
 #, python-format
 msgid "while setting up extension %s:"
-msgstr ""
+msgstr "هنگام راه‌اندازی افزونه‌ی %s:"
 
 msgid "'setup' as currently defined in conf.py isn't a Python callable. Please modify its definition to make it a callable function. This is needed for conf.py to behave as a Sphinx extension."
-msgstr ""
+msgstr "'setup' آن‌گونه که اکنون در conf.py تعریف شده، یک فراخوانی‌پذیر پایتون نیست. لطفاً تعریف آن را طوری تغییر دهید که یک تابع فراخوانی‌پذیر شود. این کار لازم است تا conf.py بتواند به‌عنوان یک افزونه‌ی Sphinx رفتار کند."
 
 #, python-format
 msgid "loading translations [%s]... "
-msgstr ""
+msgstr "در حال بارگذاری ترجمه‌های [%s]... "
 
 msgid "done"
-msgstr ""
+msgstr "انجام شد"
 
 msgid "not available for built-in messages"
-msgstr ""
+msgstr "برای پیام‌های توکار در دسترس نیست"
 
 msgid "loading pickled environment"
-msgstr ""
+msgstr "در حال بارگذاری محیط پیکل‌شده"
 
 #, python-format
 msgid "failed: %s"
-msgstr ""
+msgstr "شکست: %s"
 
 msgid "No builder selected, using default: html"
-msgstr ""
+msgstr "سازنده‌ای انتخاب نشده است، استفاده از پیش‌فرض: html"
 
 msgid "build finished with problems."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید."
 
 msgid "build succeeded."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد."
 
 msgid "build finished with problems, 1 warning (with warnings treated as errors)."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، ۱ هشدار (با در نظر گرفتن هشدارها به‌عنوان خطا)."
 
 msgid "build finished with problems, 1 warning."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، ۱ هشدار."
 
 msgid "build succeeded, 1 warning."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد، ۱ هشدار."
 
 #, python-format
 msgid "build finished with problems, %s warnings (with warnings treated as errors)."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، %s هشدار (با در نظر گرفتن هشدارها به‌عنوان خطا)."
 
 #, python-format
 msgid "build finished with problems, %s warnings."
-msgstr ""
+msgstr "ساخت با مشکلات به پایان رسید، %s هشدار."
 
 #, python-format
 msgid "build succeeded, %s warnings."
-msgstr ""
+msgstr "ساخت با موفقیت انجام شد، %s هشدار."
 
 #, python-format
 msgid "node class %r is already registered, its visitors will be overridden"
-msgstr ""
+msgstr "کلاس گره‌ی %r از قبل ثبت شده است؛ بازدیدکنندگان آن بازنویسی خواهند شد"
 
 #, python-format
 msgid "directive %r is already registered and will not be overridden"
-msgstr ""
+msgstr "دایرکتیو %r از قبل ثبت شده است و بازنویسی نخواهد شد"
 
 #, python-format
 msgid "role %r is already registered and will not be overridden"
-msgstr ""
+msgstr "نقش %r از قبل ثبت شده است و بازنویسی نخواهد شد"
 
 #, python-format
 msgid "the %s extension does not declare if it is safe for parallel reading, assuming it isn't - please ask the extension author to check and make it explicit"
-msgstr ""
+msgstr "افزونه‌ی %s اعلام نمی‌کند که آیا برای خواندن موازی ایمن است یا نه؛ فرض بر این است که ایمن نیست — لطفاً از نویسنده‌ی افزونه بخواهید آن را بررسی و صریح کند"
 
 #, python-format
 msgid "the %s extension is not safe for parallel reading"
-msgstr ""
+msgstr "افزونه‌ی %s برای خواندن موازی ایمن نیست"
 
 #, python-format
 msgid "the %s extension does not declare if it is safe for parallel writing, assuming it isn't - please ask the extension author to check and make it explicit"
-msgstr ""
+msgstr "افزونه‌ی %s اعلام نمی‌کند که آیا برای نوشتن موازی ایمن است یا نه؛ فرض بر این است که ایمن نیست — لطفاً از نویسنده‌ی افزونه بخواهید آن را بررسی و صریحاً اعلام کند"
 
 #, python-format
 msgid "the %s extension is not safe for parallel writing"
-msgstr ""
+msgstr "افزونه‌ی %s برای نوشتن موازی ایمن نیست"
 
 #, python-format
 msgid "doing serial %s"
-msgstr ""
+msgstr "در حال انجام سریال %s"
 
 #, python-format
 msgid "config directory doesn't contain a conf.py file (%s)"
-msgstr ""
+msgstr "پوشه‌ی پیکربندی (%s) شامل یک فایل conf.py نمی‌شود"
 
 msgid "Invalid configuration value found: 'language = None'. Update your configuration to a valid language code. Falling back to 'en' (English)."
-msgstr ""
+msgstr "مقدار پیکربندی نامعتبر یافت شد: 'language = None'. پیکربندی خود را به یک کد زبان معتبر به‌روزرسانی کنید. بازگشت به 'en' (English)."
 
 #, python-format
 msgid "'%s' must be '0' or '1', got '%s'"
-msgstr ""
+msgstr "'%s' باید '0' یا '1' باشد، '%s' دریافت شد"
 
 #, python-format
 msgid "cannot override dictionary config setting %r, ignoring (use %r to set individual elements)"
-msgstr ""
+msgstr "نمی‌توان تنظیم پیکربندی دیکشنری %r را بازنویسی کرد، نادیده گرفته می‌شود (برای تنظیم عناصر مجزا از %r استفاده کنید)"
 
 #, python-format
 msgid "invalid number %r for config value %r, ignoring"
-msgstr ""
+msgstr "عدد نامعتبر %r برای مقدار پیکربندی %r، نادیده گرفته می‌شود"
 
 #, python-format
 msgid "cannot override config setting %r with unsupported type, ignoring"
-msgstr ""
+msgstr "نمی‌توان تنظیم پیکربندی %r را با نوع پشتیبانی‌نشده بازنویسی کرد، نادیده گرفته می‌شود"
 
 #, python-format
 msgid "unknown config value %r in override, ignoring"
-msgstr ""
+msgstr "مقدار پیکربندی ناشناخته %r در بازنویسی، نادیده گرفته می‌شود"
 
 #, python-format
 msgid "No such config value: %r"
-msgstr ""
+msgstr "چنین مقدار پیکربندی وجود ندارد: %r"
 
 #, python-format
 msgid "Config value %r already present"
-msgstr ""
+msgstr "مقدار پیکربندی %r از قبل موجود است"
 
 #, python-format
 msgid "cannot cache unpickleable configuration value: %r (because it contains a function, class, or module object)"
-msgstr ""
+msgstr "نمی‌توان مقدار پیکربندی پیکل‌ناپذیر را نهان کرد: %r (چون شامل یک تابع، کلاس یا شیء ماژول است)"
 
 #, python-format
 msgid "There is a syntax error in your configuration file: %s\n"
-msgstr ""
+msgstr "یک خطای سینتکس در پرونده‌ی پیکربندی شما وجود دارد: %s\n"
 
 msgid "The configuration file (or one of the modules it imports) called sys.exit()"
-msgstr ""
+msgstr "پرونده‌ی پیکربندی (یا یکی از ماژول‌هایی که ایمپورت می‌کند) sys.exit() را فراخوانی کرد"
 
 #, python-format
 msgid ""
@@ -563,18 +563,21 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"یک خطای برنامه‌ای در پرونده‌ی پیکربندی شما وجود دارد:\n"
+"\n"
+"%s"
 
 #, python-format
 msgid "Failed to convert %r to a frozenset"
-msgstr ""
+msgstr "تبدیل %r به frozenset ناموفق بود"
 
 #, python-format
 msgid "Converting `source_suffix = %r` to `source_suffix = %r`."
-msgstr ""
+msgstr "در حال تبدیل `source_suffix = %r` به `source_suffix = %r`."
 
 #, python-format
 msgid "The config value `source_suffix' expects a dictionary, a string, or a list of strings. Got `%r' instead (type %s)."
-msgstr ""
+msgstr "مقدار پیکربندی `source_suffix' انتظار می‌رود یک دیکشنری، یک رشته، یا لیستی از رشته‌ها باشد. به‌جای آن `%r' دریافت شد (نوع %s)."
 
 #, python-format
 msgid "Section %s"
@@ -582,58 +585,58 @@ msgstr "بخش %s"
 
 #, python-format
 msgid "Fig. %s"
-msgstr ""
+msgstr "شکل %s"
 
 #, python-format
 msgid "Table %s"
-msgstr ""
+msgstr "جدول %s"
 
 #, python-format
 msgid "Listing %s"
-msgstr ""
+msgstr "فهرست %s"
 
 #, python-brace-format
 msgid "The config value `{name}` has to be a one of {candidates}, but `{current}` is given."
-msgstr ""
+msgstr "مقدار پیکربندی `{name}` باید یکی از {candidates} باشد، اما `{current}` داده شده است."
 
 #, python-brace-format
 msgid "The config value `{name}' has type `{current.__name__}'; expected {permitted}."
-msgstr ""
+msgstr "مقدار پیکربندی `{name}' از نوع `{current.__name__}' است؛ {permitted} انتظار می‌رفت."
 
 #, python-brace-format
 msgid "The config value `{name}' has type `{current.__name__}', defaults to `{default.__name__}'."
-msgstr ""
+msgstr "مقدار پیکربندی `{name}' از نوع `{current.__name__}' است، به‌طور پیش‌فرض `{default.__name__}' است."
 
 #, python-format
 msgid "primary_domain %r not found, ignored."
-msgstr ""
+msgstr "primary_domain %r یافت نشد، نادیده گرفته شد."
 
 msgid "Sphinx now uses \"index\" as the master document by default. To keep pre-2.0 behaviour, set \"master_doc = 'contents'\"."
-msgstr ""
+msgstr "Sphinx اکنون به‌طور پیش‌فرض از \"index\" به‌عنوان سند اصلی استفاده می‌کند. برای حفظ رفتار پیش از ۲.۰، \"master_doc = 'contents'\" را تنظیم کنید."
 
 #, python-format
 msgid "Pygments lexer name %r is not known"
-msgstr ""
+msgstr "نام لکسر Pygments %r ناشناخته است"
 
 #, python-format
 msgid "Lexing literal_block %r as \"%s\" resulted in an error at token: %r. Retrying in relaxed mode."
-msgstr ""
+msgstr "لکسر کردن literal_block %r به‌عنوان \"%s\" منجر به خطا در توکن: %r شد. تلاش مجدد در حالت آسوده."
 
 #, python-format
 msgid "Theme configuration sections other than [theme] and [options] are not supported (tried to get a value from %r)."
-msgstr ""
+msgstr "بخش‌های پیکربندی تم غیر از [theme] و [options] پشتیبانی نمی‌شوند (تلاش شد مقداری از %r دریافت شود)."
 
 #, python-format
 msgid "setting %s.%s occurs in none of the searched theme configs"
-msgstr ""
+msgstr "تنظیم %s.%s در هیچ‌کدام از پیکربندی‌های تم جست‌وجوشده وجود ندارد"
 
 #, python-format
 msgid "unsupported theme option %r given"
-msgstr ""
+msgstr "گزینه‌ی تم پشتیبانی‌نشده %r داده شد"
 
 #, python-format
 msgid "file %r on theme path is not a valid zipfile or contains no theme"
-msgstr ""
+msgstr "پرونده‌ی %r در مسیر تم یک zipfile معتبر نیست یا شامل تم نیست"
 
 #, python-format
 msgid "no theme named %r found (missing theme.toml?)"
