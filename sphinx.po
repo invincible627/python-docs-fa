@@ -218,20 +218,17 @@ msgstr "آموزش"
 msgid "Start here: a tour of Python's syntax and features"
 msgstr "از اینجا شروع کنید: سفری در سینتکس و ویژگی‌های پایتون"
 
-#, fuzzy
 msgid "Built-ins reference"
-msgstr "مرجع کتابخانه"
+msgstr "مرجع توکارها"
 
-#, fuzzy
 msgid "Built-in functions and classes"
-msgstr "همه‌ی توابع، کلاس‌ها و اصطلاحات"
+msgstr "توابع و کلاس‌های توکار"
 
 msgid "Library reference"
 msgstr "مرجع کتابخانه"
 
-#, fuzzy
 msgid "Standard library modules"
-msgstr "کتابخانه‌ی استاندارد و توابع توکار"
+msgstr "ماژول‌های کتابخانه‌ی استاندارد"
 
 msgid "Language reference"
 msgstr "مرجع زبان"
@@ -284,7 +281,6 @@ msgstr "قابلیت‌های منسوخ‌شده"
 msgid "Other resources:"
 msgstr "منابع دیگر:"
 
-#, fuzzy
 msgid "Python developer's guide"
 msgstr "راهنمای توسعه‌دهندگان پایتون"
 
@@ -640,218 +636,220 @@ msgstr "پرونده‌ی %r در مسیر تم یک zipfile معتبر نیست
 
 #, python-format
 msgid "no theme named %r found (missing theme.toml?)"
-msgstr ""
+msgstr "هیچ تمی با نام %r یافت نشد (theme.toml گم شده است؟)"
 
 #, python-format
 msgid "The %r theme has circular inheritance"
-msgstr ""
+msgstr "تم %r ارث‌بری حلقه‌ای دارد"
 
 #, python-format
 msgid "The %r theme inherits from %r, which is not a loaded theme. Loaded themes are: %s"
-msgstr ""
+msgstr "تم %r از %r ارث می‌برد، که یک تم بارگذاری‌شده نیست. تم‌های بارگذاری‌شده عبارت‌اند از: %s"
 
 #, python-format
 msgid "The %r theme has too many ancestors"
-msgstr ""
+msgstr "تم %r نیاکان زیادی دارد"
 
 #, python-format
 msgid "no theme configuration file found in %r"
-msgstr ""
+msgstr "هیچ پرونده‌ی پیکربندی تمی در %r پیدا نشد"
 
 #, python-format
 msgid "theme %r doesn't have the \"theme\" table"
-msgstr ""
+msgstr "تم %r جدول \"theme\" را ندارد"
 
 #, python-format
 msgid "The %r theme \"[theme]\" table is not a table"
-msgstr ""
+msgstr "جدول \"[theme]\" تم %r یک جدول نیست"
 
 #, python-format
 msgid "The %r theme must define the \"theme.inherit\" setting"
-msgstr ""
+msgstr "تم %r باید تنظیم \"theme.inherit\" را تعریف کند"
 
 #, python-format
 msgid "The %r theme \"[options]\" table is not a table"
-msgstr ""
+msgstr "جدول \"[options]\" تم %r یک جدول نیست"
 
 #, python-format
 msgid "The \"theme.pygments_style\" setting must be a table. Hint: \"%s\""
-msgstr ""
+msgstr "تنظیم \"theme.pygments_style\" باید یک جدول باشد. راهنما: \"%s\""
 
 #, python-format
 msgid "Event %r already present"
-msgstr ""
+msgstr "رویداد %r از قبل موجود است"
 
 #, python-format
 msgid "Unknown event name: %s"
-msgstr ""
+msgstr "نام رویداد ناشناخته: %s"
 
 #, python-format
 msgid "Handler %r for event %r threw an exception"
-msgstr ""
+msgstr "هندلر %r برای رویداد %r یک استثنا پرتاب کرد"
 
 #, python-format
 msgid ""
 "multiple files found for the document \"%s\": %s\n"
 "Use %r for the build."
 msgstr ""
+"چندین پرونده برای سند \"%s\" یافت شد: %s\n"
+"برای ساخت از %r استفاده کنید."
 
 #, python-format
 msgid "Ignored unreadable document %r."
-msgstr ""
+msgstr "سند ناخوانای %r نادیده گرفته شد."
 
 #, python-format
 msgid "Builder class %s has no \"name\" attribute"
-msgstr ""
+msgstr "کلاس سازنده‌ی %s ویژگی \"name\" را ندارد"
 
 #, python-format
 msgid "Builder %r already exists (in module %s)"
-msgstr ""
+msgstr "سازنده‌ی %r از قبل وجود دارد (در ماژول %s)"
 
 #, python-format
 msgid "Builder name %s not registered or available through entry point"
-msgstr ""
+msgstr "نام سازنده‌ی %s ثبت نشده است یا از طریق نقطه‌ی ورود در دسترس نیست"
 
 #, python-format
 msgid "Builder name %s not registered"
-msgstr ""
+msgstr "نام سازنده‌ی %s ثبت نشده است"
 
 #, python-format
 msgid "domain %s already registered"
-msgstr ""
+msgstr "دامنه‌ی %s از قبل ثبت شده است"
 
 #, python-format
 msgid "domain %s not yet registered"
-msgstr ""
+msgstr "دامنه‌ی %s هنوز ثبت نشده است"
 
 #, python-format
 msgid "The %r directive is already registered to domain %s"
-msgstr ""
+msgstr "دایرکتیو %r از قبل در دامنه‌ی %s ثبت شده است"
 
 #, python-format
 msgid "The %r role is already registered to domain %s"
-msgstr ""
+msgstr "نقش %r از قبل در دامنه‌ی %s ثبت شده است"
 
 #, python-format
 msgid "The %r index is already registered to domain %s"
-msgstr ""
+msgstr "اندیس %r از قبل در دامنه‌ی %s ثبت شده است"
 
 #, python-format
 msgid "The %r object_type is already registered"
-msgstr ""
+msgstr "نوع شیء %r از قبل ثبت شده است"
 
 #, python-format
 msgid "The %r crossref_type is already registered"
-msgstr ""
+msgstr "نوع ارجاع متقابل %r از قبل ثبت شده است"
 
 #, python-format
 msgid "source_suffix %r is already registered"
-msgstr ""
+msgstr "source_suffix %r از قبل ثبت شده است"
 
 #, python-format
 msgid "source_parser for %r is already registered"
-msgstr ""
+msgstr "source_parser برای %r از قبل ثبت شده است"
 
 #, python-format
 msgid "Source parser for %s not registered"
-msgstr ""
+msgstr "تجزیه‌گر مبدأ برای %s ثبت نشده است"
 
 #, python-format
 msgid "Translator for %r already exists"
-msgstr ""
+msgstr "مترجم برای %r از قبل وجود دارد"
 
 #, python-format
 msgid "kwargs for add_node() must be a (visit, depart) function tuple: %r=%r"
-msgstr ""
+msgstr "آرگومان‌های کلیدواژه‌ای برای add_node() باید یک تاپل تابعی (visit, depart) باشند: %r=%r"
 
 #, python-format
 msgid "enumerable_node %r already registered"
-msgstr ""
+msgstr "enumerable_node %r از قبل ثبت شده است"
 
 #, python-format
 msgid "math renderer %s is already registered"
-msgstr ""
+msgstr "رندرکننده‌ی ریاضی %s از قبل ثبت شده است"
 
 #, python-format
 msgid "the extension %r was already merged with Sphinx since version %s; this extension is ignored."
-msgstr ""
+msgstr "افزونه‌ی %r از نسخه‌ی %s از قبل با Sphinx ادغام شده است؛ این افزونه نادیده گرفته می‌شود."
 
 msgid "Original exception:\n"
-msgstr ""
+msgstr "استثنای اصلی:\n"
 
 #, python-format
 msgid "Could not import extension %s"
-msgstr ""
+msgstr "نمی‌توان افزونه‌ی %s را ایمپورت کرد"
 
 #, python-format
 msgid "extension %r has no setup() function; is it really a Sphinx extension module?"
-msgstr ""
+msgstr "افزونه‌ی %r تابع setup() ندارد؛ آیا واقعاً یک ماژول افزونه‌ی Sphinx است؟"
 
 #, python-format
 msgid "The %s extension used by this project needs at least Sphinx v%s; it therefore cannot be built with this version."
-msgstr ""
+msgstr "افزونه‌ی %s که این پروژه استفاده می‌کند حداقل به Sphinx v%s نیاز دارد؛ بنابراین نمی‌تواند با این نسخه ساخته شود."
 
 #, python-format
 msgid "extension %r returned an unsupported object from its setup() function; it should return None or a metadata dictionary"
-msgstr ""
+msgstr "افزونه‌ی %r یک شیء پشتیبانی‌نشده از تابع setup() خود برگرداند؛ باید None یا یک دیکشنری فراداده برگرداند"
 
 #, python-format
 msgid "`None` is not a valid filetype for %r."
-msgstr ""
+msgstr "`None` یک نوع پرونده‌ی معتبر برای %r نیست"
 
 #, python-format
 msgid "Common Vulnerabilities and Exposures; CVE %s"
-msgstr ""
+msgstr "آسیب‌پذیری‌ها و مواجهه‌های رایج؛ CVE %s"
 
 #, python-format
 msgid "invalid CVE number %s"
-msgstr ""
+msgstr "شماره‌ی CVE نامعتبر %s"
 
 #, python-format
 msgid "Common Weakness Enumeration; CWE %s"
-msgstr ""
+msgstr "شمارش ضعف‌های رایج؛ CWE %s"
 
 #, python-format
 msgid "invalid CWE number %s"
-msgstr ""
+msgstr "شماره‌ی CWE نامعتبر %s"
 
 #, python-format
 msgid "Python Enhancement Proposals; PEP %s"
-msgstr ""
+msgstr "پیشنهادهای بهبود پایتون؛ PEP %s"
 
 #, python-format
 msgid "invalid PEP number %s"
-msgstr ""
+msgstr "شماره‌ی PEP نامعتبر %s"
 
 #, python-format
 msgid "invalid RFC number %s"
-msgstr ""
+msgstr "شماره‌ی RFC نامعتبر %s"
 
 msgid "[source]"
 msgstr "[source]"
 
 msgid "highlighting module code... "
-msgstr ""
+msgstr "در حال برجسته‌سازی کد ماژول... "
 
 msgid "[docs]"
-msgstr ""
+msgstr "[docs]"
 
 msgid "Module code"
-msgstr ""
+msgstr "کد ماژول"
 
 #, python-format
 msgid "<h1>Source code for %s</h1>"
-msgstr ""
+msgstr "<h1>کد منبع برای %s</h1>"
 
 msgid "Overview: module code"
-msgstr ""
+msgstr "نمای کلی: کد ماژول"
 
 msgid "<h1>All modules for which code is available</h1>"
-msgstr ""
+msgstr "<h1>همه‌ی ماژول‌هایی که کد برای آن‌ها در دسترس است</h1>"
 
 #, python-format
 msgid "hardcoded link %r could be replaced by an extlink (try using %r instead)"
-msgstr ""
+msgstr "پیوند سخت‌کد‌شده‌ی %r می‌تواند با یک extlink جایگزین شود (به‌جای آن از %r استفاده کنید)"
 
 #, python-format
 msgid "section \"%s\" gets labeled as \"%s\""
