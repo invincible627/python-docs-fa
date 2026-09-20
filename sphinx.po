@@ -144,7 +144,7 @@ msgid "Stable ABI"
 msgstr "ABI پایدار"
 
 msgid "(as an opaque struct)"
-msgstr "(به‌عنوان یک ساختار مبهم)"
+msgstr "(به‌عنوان یک ساختار کدر)"
 
 msgid "(including all members)"
 msgstr "شامل تمام اعضا"
@@ -168,13 +168,13 @@ msgid "Return value: Always NULL."
 msgstr "مقدار بازگشتی: همیشه NULL."
 
 msgid "Return value: New reference."
-msgstr "مقدار بازگشتی: مرجع جدید."
+msgstr "مقدار بازگشتی: ارجاع جدید."
 
 msgid "Return value: Borrowed reference."
-msgstr "مقدار بازگشتی: مرجع امانتی."
+msgstr "مقدار بازگشتی: ارجاع امانتی."
 
 msgid "CPython implementation detail:"
-msgstr "جزئیات پیاده‌سازی در CPython:"
+msgstr "جزئیات پیاده‌سازی در سی‌پایتون:"
 
 msgid "Deprecated since version %s, will be removed in version %s"
 msgstr "منسوخ شده از نسخه‌ی %s, در نسخه‌ی %s حذف خواهد شد"
@@ -261,10 +261,10 @@ msgid "For C/C++ programmers"
 msgstr "برای برنامه‌نویسان C/C++"
 
 msgid "Python's C API"
-msgstr "رابط برنامه‌نویسی C پایتون"
+msgstr "API C پایتون"
 
 msgid "C API reference"
-msgstr "مرجع رابط برنامه‌نویسی C"
+msgstr "مرجع API C"
 
 msgid "FAQs"
 msgstr "سوالات متداول"
@@ -853,99 +853,99 @@ msgstr "پیوند سخت‌کد‌شده‌ی %r می‌تواند با یک ex
 
 #, python-format
 msgid "section \"%s\" gets labeled as \"%s\""
-msgstr ""
+msgstr "بخش \"%s\" به‌عنوان \"%s\" برچسب می‌خورد"
 
 #, python-format
 msgid "duplicate label %s, other instance in %s"
-msgstr ""
+msgstr "برچسب تکراری %s، نمونه‌ی دیگر در %s"
 
 msgid "Link to this equation"
-msgstr ""
+msgstr "پیوند به این معادله"
 
 msgid "====================== slowest reading durations ======================="
-msgstr ""
+msgstr "====================== کندترین مدت‌های خواندن ======================="
 
 #, python-format
 msgid "missing '+' or '-' in '%s' option."
-msgstr ""
+msgstr "علامت '+' یا '-' در گزینه‌ی '%s' گم شده است."
 
 #, python-format
 msgid "'%s' is not a valid option."
-msgstr ""
+msgstr "'%s' یک گزینه‌ی معتبر نیست."
 
 #, python-format
 msgid "'%s' is not a valid pyversion option"
-msgstr ""
+msgstr "'%s' یک گزینه‌ی معتبر pyversion نیست"
 
 msgid "invalid TestCode type"
-msgstr ""
+msgstr "نوع TestCode نامعتبر"
 
 #, python-format
 msgid "Testing of doctests in the sources finished, look at the results in %(outdir)s/output.txt."
-msgstr ""
+msgstr "آزمون doctestها در منابع به پایان رسید، نتایج را در %(outdir)s/output.txt ببینید."
 
 #, python-format
 msgid "no code/output in %s block at %s:%s"
-msgstr ""
+msgstr "هیچ کد/خروجی‌ای در بلوک %s در %s:%s وجود ندارد"
 
 #, python-format
 msgid "ignoring invalid doctest code: %r"
-msgstr ""
+msgstr "نادیده گرفتن کد doctest نامعتبر: %r"
 
 #, python-format
 msgid "LaTeX command %r cannot be run (needed for math display), check the imgmath_latex setting"
-msgstr ""
+msgstr "دستور LaTeX %r نمی‌تواند اجرا شود (لازم برای نمایش ریاضی)، تنظیم imgmath_latex را بررسی کنید"
 
 #, python-format
 msgid "%s command %r cannot be run (needed for math display), check the imgmath_%s setting"
-msgstr ""
+msgstr "دستور %s %r نمی‌تواند اجرا شود (لازم برای نمایش ریاضی)، تنظیم imgmath_%s را بررسی کنید"
 
 #, python-format
 msgid "display latex %r: %s"
-msgstr ""
+msgstr "نمایش latex %r: %s"
 
 #, python-format
 msgid "inline latex %r: %s"
-msgstr ""
+msgstr "latex درون‌خطی %r: %s"
 
 #, python-format
 msgid "invalid regex %r in %s"
-msgstr ""
+msgstr "regex نامعتبر %r در %s"
 
 #, python-format
 msgid "module %s could not be imported: %s"
-msgstr ""
+msgstr "ماژول %s نمی‌تواند ایمپورت شود: %s"
 
 #, python-format
 msgid "the following modules are documented but were not specified in coverage_modules: %s"
-msgstr ""
+msgstr "ماژول‌های زیر مستند شده‌اند اما در coverage_modules مشخص نشده‌اند: %s"
 
 msgid "the following modules are specified in coverage_modules but were not documented"
-msgstr ""
+msgstr "ماژول‌های زیر در coverage_modules مشخص شده‌اند اما مستند نشده‌اند"
 
 #, python-format, python-brace-format
 msgid "Testing of coverage in the sources finished, look at the results in %(outdir)s{sep}python.txt."
-msgstr ""
+msgstr "آزمون پوشش در منابع به پایان رسید، نتایج را در %(outdir)s{sep}python.txt ببینید."
 
 #, python-format
 msgid "invalid regex %r in coverage_c_regexes"
-msgstr ""
+msgstr "regex نامعتبر %r در coverage_c_regexes"
 
 #, python-format
 msgid "undocumented c api: %s [%s] in file %s"
-msgstr ""
+msgstr "c api مستند‌نشده: %s [%s] در پرونده‌ی %s"
 
 #, python-format
 msgid "undocumented python function: %s :: %s"
-msgstr ""
+msgstr "تابع پایتون مستند‌نشده: %s :: %s"
 
 #, python-format
 msgid "undocumented python class: %s :: %s"
-msgstr ""
+msgstr "کلاس پایتون مستند‌نشده: %s :: %s"
 
 #, python-format
 msgid "undocumented python method: %s :: %s :: %s"
-msgstr ""
+msgstr "متد پایتون مستند‌نشده: %s :: %s :: %s"
 
 #, python-format
 msgid ""
@@ -953,6 +953,9 @@ msgid ""
 "\n"
 "Traceback: %s"
 msgstr ""
+"نمی‌توان دستور تبدیل تصویر %r را اجرا کرد. 'sphinx.ext.imgconverter' به‌طور پیش‌فرض به ImageMagick نیاز دارد. مطمئن شوید نصب شده است، یا گزینه‌ی 'image_converter' را روی یک دستور تبدیل سفارشی تنظیم کنید.\n"
+"\n"
+"ردگیری: %s"
 
 #, python-format
 msgid ""
@@ -962,28 +965,33 @@ msgid ""
 "[stdout]\n"
 "%r"
 msgstr ""
+"دستور convert با خطا خارج شد:\n"
+"[stderr]\n"
+"%r\n"
+"[stdout]\n"
+"%r"
 
 #, python-format
 msgid "convert command %r cannot be run, check the image_converter setting"
-msgstr ""
+msgstr "دستور convert %r نمی‌تواند اجرا شود، تنظیم image_converter را بررسی کنید"
 
 msgid "Graphviz directive cannot have both content and a filename argument"
-msgstr ""
+msgstr "دایرکتیو Graphviz نمی‌تواند هم محتوا و هم آرگومان نام پرونده داشته باشد"
 
 #, python-format
 msgid "External Graphviz file %r not found or reading it failed"
-msgstr ""
+msgstr "پرونده‌ی Graphviz خارجی %r یافت نشد یا خواندنش ناموفق بود"
 
 msgid "Ignoring \"graphviz\" directive without content."
-msgstr ""
+msgstr "نادیده گرفتن دایرکتیو \"graphviz\" بدون محتوا."
 
 #, python-format
 msgid "graphviz_dot executable path must be set! %r"
-msgstr ""
+msgstr "مسیر فایل اجرایی graphviz_dot باید تنظیم شود! %r"
 
 #, python-format
 msgid "dot command %r cannot be run (needed for graphviz output), check the graphviz_dot setting"
-msgstr ""
+msgstr "دستور dot %r نمی‌تواند اجرا شود (لازم برای خروجی graphviz)، تنظیم graphviz_dot را بررسی کنید"
 
 #, python-format
 msgid ""
@@ -993,6 +1001,11 @@ msgid ""
 "[stdout]\n"
 "%r"
 msgstr ""
+"دستور dot با خطا خارج شد:\n"
+"[stderr]\n"
+"%r\n"
+"[stdout]\n"
+"%r"
 
 #, python-format
 msgid ""
@@ -1002,374 +1015,382 @@ msgid ""
 "[stdout]\n"
 "%r"
 msgstr ""
+"دستور dot پرونده‌ی خروجی تولید نکرد:\n"
+"[stderr]\n"
+"%r\n"
+"[stdout]\n"
+"%r"
 
 #, python-format
 msgid "graphviz_output_format must be either 'png' or 'svg', but is %r"
-msgstr ""
+msgstr "graphviz_output_format باید یا 'png' یا 'svg' باشد، اما %r است"
 
 #, python-format
 msgid "dot code %r: %s"
-msgstr ""
+msgstr "کد dot %r: %s"
 
 #, python-format
 msgid "[graph: %s]"
-msgstr ""
+msgstr "[graph: %s]"
 
 msgid "[graph]"
-msgstr ""
+msgstr "[graph]"
 
 msgid "Todo"
-msgstr ""
+msgstr "کارهای انجام‌نشده"
 
 #, python-format
 msgid "TODO entry found: %s"
-msgstr ""
+msgstr "ورودی TODO یافت شد: %s"
 
 msgid "<<original entry>>"
-msgstr ""
+msgstr "<<ورودی اصلی>>"
 
 #, python-format
 msgid "(The <<original entry>> is located in %s, line %d.)"
-msgstr ""
+msgstr "(<<ورودی اصلی>> در %s، سطر %d قرار دارد.)"
 
 msgid "original entry"
-msgstr ""
+msgstr "ورودی اصلی"
 
 msgid "non-whitespace stripped by dedent"
-msgstr ""
+msgstr "فاصله‌های غیر‌سفید توسط dedent حذف شد"
 
 #, python-format
 msgid "Invalid caption: %s"
-msgstr ""
+msgstr "عنوان نامعتبر: %s"
 
 #, python-format
 msgid "line number spec is out of range(1-%d): %r"
-msgstr ""
+msgstr "مشخصه‌ی شماره سطر خارج از محدوده‌ی (1-%d) است: %r"
 
 #, python-format
 msgid "Cannot use both \"%s\" and \"%s\" options"
-msgstr ""
+msgstr "نمی‌توان هم از گزینه‌ی \"%s\" و هم از گزینه‌ی \"%s\" استفاده کرد"
 
 #, python-format
 msgid "Include file '%s' not found or reading it failed"
-msgstr ""
+msgstr "پرونده‌ی ضمیمه‌ی '%s' یافت نشد یا خواندنش ناموفق بود"
 
 #, python-format
 msgid "Encoding %r used for reading included file '%s' seems to be wrong, try giving an :encoding: option"
-msgstr ""
+msgstr "کدگذاری %r استفاده‌شده برای خواندن پرونده‌ی ضمیمه‌ی '%s' نادرست به نظر می‌رسد، سعی کنید یک گزینه‌ی :encoding: بدهید"
 
 #, python-format
 msgid "Object named %r not found in include file %r"
-msgstr ""
+msgstr "شیء نام‌دار %r در پرونده‌ی ضمیمه‌ی %r یافت نشد"
 
 msgid "Cannot use \"lineno-match\" with a disjoint set of \"lines\""
-msgstr ""
+msgstr "نمی‌توان از \"lineno-match\" با مجموعه‌ی ناپیوسته‌ای از \"lines\" استفاده کرد"
 
 #, python-format
 msgid "Line spec %r: no lines pulled from include file %r"
-msgstr ""
+msgstr "مشخصه‌ی سطر %r: هیچ سطری از پرونده‌ی ضمیمه‌ی %r استخراج نشد"
 
 msgid "\":file:\" option for csv-table directive now recognizes an absolute path as a relative path from source directory. Please update your document."
-msgstr ""
+msgstr "گزینه‌ی \":file:\" برای دایرکتیو csv-table اکنون یک مسیر مطلق را به‌عنوان مسیر نسبی از پوشه‌ی مبدأ می‌شناسد. لطفاً سند خود را به‌روزرسانی کنید."
 
 #, python-format
 msgid "toctree glob pattern %r didn't match any documents"
-msgstr ""
+msgstr "الگوی glob توک‌تری %r با هیچ سندی مطابقت نداشت"
 
 #, python-format
 msgid "toctree contains reference to excluded document %r"
-msgstr ""
+msgstr "توک‌تری حاوی ارجاع به سند حذف‌شده %r است"
 
 #, python-format
 msgid "toctree contains reference to nonexisting document %r"
-msgstr ""
+msgstr "توک‌تری حاوی ارجاع به سند ناموجود %r است"
 
 #, python-format
 msgid "duplicated entry found in toctree: %s"
-msgstr ""
+msgstr "ورودی تکراری در توک‌تری یافت شد: %s"
 
 msgid "Section author: "
-msgstr ""
+msgstr "نویسنده‌ی بخش: "
 
 msgid "Module author: "
-msgstr ""
+msgstr "نویسنده‌ی ماژول: "
 
 msgid "Code author: "
-msgstr ""
+msgstr "نویسنده‌ی کد: "
 
 msgid "Author: "
-msgstr ""
+msgstr "نویسنده: "
 
 msgid ".. acks content is not a list"
-msgstr ""
+msgstr ".. محتوای acks یک فهرست نیست"
 
 msgid ".. hlist content is not a list"
-msgstr ""
+msgstr ".. محتوای hlist یک فهرست نیست"
 
 #, python-format
 msgid "The overview file is in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌ی نمای کلی در %(outdir)s است."
 
 #, python-format
 msgid "no changes in version %s."
-msgstr "هیچ تغیری در نسخه‌ی %s نبوده"
+msgstr "هیچ تغییری در نسخه‌ی %s نبوده"
 
 msgid "writing summary file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی خلاصه..."
 
 msgid "Builtins"
-msgstr ""
+msgstr "توکارها"
 
 msgid "Module level"
-msgstr ""
+msgstr "سطح ماژول"
 
 msgid "copying source files..."
-msgstr ""
+msgstr "در حال کپی پرونده‌های مبدأ..."
 
 #, python-format
 msgid "could not read %r for changelog creation"
-msgstr ""
+msgstr "نمی‌توان %r را برای ایجاد تغییرنامه خواند"
 
 #, python-format
 msgid "The manual pages are in %(outdir)s."
-msgstr ""
+msgstr "صفحات راهنما در %(outdir)s هستند."
 
 msgid "no \"man_pages\" config value found; no manual pages will be written"
-msgstr ""
+msgstr "هیچ مقدار پیکربندی \"man_pages\" یافت نشد؛ هیچ صفحه‌ی راهنمایی نوشته نخواهد شد"
 
 msgid "writing"
-msgstr ""
+msgstr "در حال نوشتن"
 
 #, python-format
 msgid "\"man_pages\" config value references unknown document %s"
-msgstr ""
+msgstr "مقدار پیکربندی \"man_pages\" به سند ناشناخته‌ی %s ارجاع می‌دهد"
 
 #, python-format
 msgid "a suitable image for %s builder not found: %s (%s)"
-msgstr ""
+msgstr "تصویر مناسبی برای سازنده‌ی %s یافت نشد: %s (%s)"
 
 #, python-format
 msgid "a suitable image for %s builder not found: %s"
-msgstr ""
+msgstr "تصویر مناسبی برای سازنده‌ی %s یافت نشد: %s"
 
 msgid "building [mo]: "
-msgstr ""
+msgstr "در حال ساخت [mo]: "
 
 msgid "writing output... "
-msgstr ""
+msgstr "در حال نوشتن خروجی... "
 
 #, python-format
 msgid "all of %d po files"
-msgstr ""
+msgstr "همه‌ی %d پرونده‌ی po"
 
 #, python-format
 msgid "targets for %d po files that are specified"
-msgstr ""
+msgstr "هدف‌ها برای %d پرونده‌ی po که مشخص شده‌اند"
 
 #, python-format
 msgid "targets for %d po files that are out of date"
-msgstr ""
+msgstr "هدف‌ها برای %d پرونده‌ی po که قدیمی هستند"
 
 msgid "all source files"
-msgstr ""
+msgstr "همه‌ی پرونده‌های مبدأ"
 
 #, python-format
 msgid "file %r given on command line does not exist, "
-msgstr ""
+msgstr "پرونده‌ی %r داده‌شده در خط فرمان وجود ندارد، "
 
 #, python-format
 msgid "file %r given on command line is not under the source directory, ignoring"
-msgstr ""
+msgstr "پرونده‌ی %r داده‌شده در خط فرمان زیر پوشه‌ی مبدأ نیست، نادیده گرفته می‌شود"
 
 #, python-format
 msgid "file %r given on command line is not a valid document, ignoring"
-msgstr ""
+msgstr "پرونده‌ی %r داده‌شده در خط فرمان یک سند معتبر نیست، نادیده گرفته می‌شود"
 
 #, python-format
 msgid "%d source files given on command line"
-msgstr ""
+msgstr "%d پرونده‌ی مبدأ داده‌شده در خط فرمان"
 
 #, python-format
 msgid "targets for %d source files that are out of date"
-msgstr ""
+msgstr "هدف‌ها برای %d پرونده‌ی مبدأ که قدیمی هستند"
 
 #, python-format
 msgid "building [%s]: "
-msgstr ""
+msgstr "در حال ساخت [%s]: "
 
 msgid "looking for now-outdated files... "
-msgstr ""
+msgstr "در حال جست‌وجوی پرونده‌های تازه قدیمی‌شده... "
 
 #, python-format
 msgid "%d found"
-msgstr ""
+msgstr "%d یافت شد"
 
 msgid "none found"
-msgstr ""
+msgstr "هیچ‌کدام یافت نشد"
 
 msgid "pickling environment"
-msgstr ""
+msgstr "در حال پیکل کردن محیط"
 
 msgid "checking consistency"
-msgstr ""
+msgstr "در حال بررسی سازگاری"
 
 msgid "no targets are out of date."
-msgstr ""
+msgstr "هیچ هدفی قدیمی نیست."
 
 msgid "updating environment: "
-msgstr ""
+msgstr "در حال به‌روزرسانی محیط: "
 
 #, python-format
 msgid "%s added, %s changed, %s removed"
-msgstr ""
+msgstr "%s اضافه شد، %s تغییر کرد، %s حذف شد"
 
 #, python-format
 msgid "Sphinx is unable to load the master document (%s) because it matches a built-in exclude pattern %r. Please move your master document to a different location."
-msgstr ""
+msgstr "Sphinx نمی‌تواند سند اصلی (%s) را بارگذاری کند چون با الگوی حذف توکار %r مطابقت دارد. لطفاً سند اصلی خود را به مکان دیگری منتقل کنید."
 
 #, python-format
 msgid "Sphinx is unable to load the master document (%s) because it matches an exclude pattern specified in conf.py, %r. Please remove this pattern from conf.py."
-msgstr ""
+msgstr "Sphinx نمی‌تواند سند اصلی (%s) را بارگذاری کند چون با الگوی حذف مشخص‌شده در conf.py، %r مطابقت دارد. لطفاً این الگو را از conf.py حذف کنید."
 
 #, python-format
 msgid "Sphinx is unable to load the master document (%s) because it is not included in the custom include_patterns = %r. Ensure that a pattern in include_patterns matches the master document."
-msgstr ""
+msgstr "Sphinx نمی‌تواند سند اصلی (%s) را بارگذاری کند چون در include_patterns سفارشی = %r گنجانده نشده است. مطمئن شوید که یک الگو در include_patterns با سند اصلی مطابقت دارد."
 
 #, python-format
 msgid "Sphinx is unable to load the master document (%s). The master document must be within the source directory or a subdirectory of it."
-msgstr ""
+msgstr "Sphinx نمی‌تواند سند اصلی (%s) را بارگذاری کند. سند اصلی باید در پوشه‌ی مبدأ یا زیرپوشه‌ای از آن باشد."
 
 msgid "reading sources... "
-msgstr ""
+msgstr "در حال خواندن منابع... "
 
 #, python-format
 msgid "docnames to write: %s"
-msgstr ""
+msgstr "نام اسناد برای نوشتن: %s"
 
 msgid "no docnames to write!"
-msgstr ""
+msgstr "هیچ نام سندی برای نوشتن نیست!"
 
 msgid "preparing documents"
-msgstr ""
+msgstr "در حال آماده‌سازی اسناد"
 
 msgid "copying assets"
-msgstr ""
+msgstr "در حال کپی دارایی‌ها"
 
 #, python-format
 msgid "undecodable source characters, replacing with \"?\": %r"
-msgstr ""
+msgstr "نویسه‌های مبدأ کدگشایی‌ناپذیر، جایگزینی با \"?\": %r"
 
 #, python-format
 msgid "The ePub file is in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌ی ePub در %(outdir)s است."
 
 msgid "writing nav.xhtml file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی nav.xhtml..."
 
 msgid "conf value \"epub_language\" (or \"language\") should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_language\" (یا \"language\") برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_uid\" should be XML NAME for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_uid\" برای EPUB3 باید XML NAME باشد"
 
 msgid "conf value \"epub_title\" (or \"html_title\") should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_title\" (یا \"html_title\") برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_author\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_author\" برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_contributor\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_contributor\" برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_description\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_description\" برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_publisher\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_publisher\" برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_copyright\" (or \"copyright\")should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_copyright\" (یا \"copyright\") برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"epub_identifier\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"epub_identifier\" برای EPUB3 نباید خالی باشد"
 
 msgid "conf value \"version\" should not be empty for EPUB3"
-msgstr ""
+msgstr "مقدار پیکربندی \"version\" برای EPUB3 نباید خالی باشد"
 
 #, python-format
 msgid "invalid css_file: %r, ignored"
-msgstr ""
+msgstr "css_file نامعتبر: %r، نادیده گرفته شد"
 
 #, python-format
 msgid "The XML files are in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌های XML در %(outdir)s هستند."
 
 #, python-format
 msgid "error writing file %s: %s"
-msgstr ""
+msgstr "خطا در نوشتن پرونده‌ی %s: %s"
 
 #, python-format
 msgid "The pseudo-XML files are in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌های شبه-XML در %(outdir)s هستند."
 
 #, python-format
 msgid "The Texinfo files are in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌های Texinfo در %(outdir)s هستند."
 
 msgid ""
 "\n"
 "Run 'make' in that directory to run these through makeinfo\n"
 "(use 'make info' here to do that automatically)."
 msgstr ""
+"\n"
+"در آن پوشه 'make' را اجرا کنید تا این‌ها از طریق makeinfo پردازش شوند\n"
+"(از 'make info' در اینجا استفاده کنید تا این کار به‌طور خودکار انجام شود)."
 
 msgid "no \"texinfo_documents\" config value found; no documents will be written"
-msgstr ""
+msgstr "هیچ مقدار پیکربندی \"texinfo_documents\" یافت نشد؛ هیچ سندی نوشته نخواهد شد"
 
 #, python-format
 msgid "\"texinfo_documents\" config value references unknown document %s"
-msgstr ""
+msgstr "مقدار پیکربندی \"texinfo_documents\" به سند ناشناخته‌ی %s ارجاع می‌دهد"
 
 #, python-format
 msgid "processing %s"
-msgstr ""
+msgstr "در حال پردازش %s"
 
 msgid "resolving references..."
-msgstr ""
+msgstr "در حال حل ارجاعات..."
 
 msgid " (in "
-msgstr ""
+msgstr " (در "
 
 msgid "copying images... "
-msgstr ""
+msgstr "در حال کپی تصاویر... "
 
 #, python-format
 msgid "cannot copy image file %r: %s"
-msgstr ""
+msgstr "نمی‌توان پرونده‌ی تصویر %r را کپی کرد: %s"
 
 msgid "copying Texinfo support files"
-msgstr ""
+msgstr "در حال کپی پرونده‌های پشتیبانی Texinfo"
 
 #, python-format
 msgid "error writing file Makefile: %s"
-msgstr ""
+msgstr "خطا در نوشتن پرونده‌ی Makefile: %s"
 
 #, python-format
 msgid "duplicated ToC entry found: %s"
-msgstr ""
+msgstr "ورودی تکراری در فهرست مطالب یافت شد: %s"
 
 #, python-format
 msgid "cannot read image file %r: copying it instead"
-msgstr ""
+msgstr "نمی‌توان پرونده‌ی تصویر %r را خواند: به‌جای آن کپی می‌شود"
 
 #, python-format
 msgid "cannot write image file %r: %s"
-msgstr ""
+msgstr "نمی‌توان پرونده‌ی تصویر %r را نوشت: %s"
 
 msgid "Pillow not found - copying image files"
-msgstr ""
+msgstr "Pillow یافت نشد - در حال کپی پرونده‌های تصویر"
 
 msgid "writing mimetype file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی mimetype..."
 
 msgid "writing META-INF/container.xml file..."
 msgstr ""
