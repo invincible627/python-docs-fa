@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-14 09:47+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -401,6 +401,9 @@ msgstr "می‌توان از نقاط ``xarr`` و ``yarr`` برای رسم نم�
 
 msgid "Scatter plot of the estimated probability density function."
 msgstr "نمودار پراکندگی تابع چگالی احتمال تخمینی."
+
+msgid "Because the returned ``f_hat`` function is typically called many times, it caches the *data* for performance. To support dynamic datasets, this cache automatically refreshes whenever the length of the *data* changes. This allows new samples to be added as they become available."
+msgstr ""
 
 msgid "Return a function that makes a random selection from the estimated probability density function produced by ``kde(data, h, kernel)``."
 msgstr "تابعی را برمی‌گرداند که یک انتخاب تصادفی از تابع چگالی احتمال برآوردی که توسط ``kde(data, h, kernel)`` تولید شده است، انجام می‌دهد."
