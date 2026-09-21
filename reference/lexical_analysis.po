@@ -602,7 +602,7 @@ msgid "Except for this limitation, the choice of quote character (``'`` or ``\"`
 msgstr "به جز این محدودیت، انتخاب نویسه‌ی علامت نقل‌قول (``'`` یا ``\"``) تأثیری بر نحوه‌ی تجزیه‌ی لفظی ندارد."
 
 msgid "Inside a string literal, the backslash (``\\``) character introduces an :dfn:`escape sequence`, which has special meaning depending on the character after the backslash. For example, ``\\\"`` denotes the double quote character, and does *not* end the string:"
-msgstr "در یک لفظی رشته، نویسه‌ی بک‌اسلش (``\\``) یک :dfn:`دنباله‌ی خنثی‌سازی <escape sequence>` را آغاز می‌کند که بسته به نویسه‌ی پس از بک‌اسلش، معنای خاصی دارد. برای مثال، ``\\\"`` نشان‌دهنده‌ی نویسه‌ی علامت نقل‌قول دوتایی است و رشته را به پایان *نمی‌رساند*:"
+msgstr "در یک لفظی رشته، نویسه‌ی بک‌اسلش (``\\``) یک :dfn:`دنباله‌ی خنثی‌سازی (escape sequence)` را آغاز می‌کند که بسته به نویسه‌ی پس از بک‌اسلش، معنای خاصی دارد. برای مثال، ``\\\"`` نشان‌دهنده‌ی نویسه‌ی علامت نقل‌قول دوتایی است و رشته را به پایان *نمی‌رساند*:"
 
 msgid ""
 ">>> print(\"Say \\\"Hello\\\" to everyone!\")\n"
@@ -618,7 +618,7 @@ msgid "Triple-quoted strings"
 msgstr "رشته‌های سه‌علامت‌نقل‌قولی"
 
 msgid "Strings can also be enclosed in matching groups of three single or double quotes. These are generally referred to as :dfn:`triple-quoted strings`::"
-msgstr "رشته‌ها همچنین می‌توانند درون گروه‌های سه‌تایی همسان از علامت‌های نقل‌قول تکی یا دوتایی محصور شوند. به این رشته‌ها به‌طور کلی :dfn:`رشته‌های سه‌نقل‌قولی <triple-quoted strings>` گفته می‌شود::"
+msgstr "رشته‌ها همچنین می‌توانند درون گروه‌های سه‌تایی همسان از علامت‌های نقل‌قول تکی یا دوتایی محصور شوند. به این رشته‌ها به‌طور کلی :dfn:`رشته‌های سه‌نقل‌قولی (triple-quoted strings)` گفته می‌شود::"
 
 msgid "\"\"\"This is a triple-quoted string.\"\"\""
 msgstr "\"\"\"این یک رشته سه‌نقل‌قولی است.\"\"\""
@@ -954,7 +954,7 @@ msgid "Bytes literals"
 msgstr "مقادیر لفظی بایتی"
 
 msgid ":dfn:`Bytes literals` are always prefixed with '``b``' or '``B``'; they produce an instance of the :class:`bytes` type instead of the :class:`str` type. They may only contain ASCII characters; bytes with a numeric value of 128 or greater must be expressed with escape sequences (typically :ref:`string-escape-hex` or :ref:`string-escape-oct`):"
-msgstr ":dfn:`مقادیر لفظی بایت <Bytes literals>` همیشه پیشوند '``b``' یا '``B``' دارند؛ آن‌ها نمونه‌ای از نوع :class:`bytes` را به جای نوع :class:`str` تولید می‌کنند. آن‌ها فقط می‌توانند شامل نویسه‌های ASCII باشند؛ بایت‌هایی با مقدار عددی ۱۲۸ یا بیشتر باید با دنباله‌های خنثی‌سازی نوشته شوند (معمولاً :ref:`string-escape-hex` یا :ref:`string-escape-oct`):"
+msgstr ":dfn:`مقادیر لفظی بایت (Bytes literals)` همیشه پیشوند '``b``' یا '``B``' دارند؛ آن‌ها نمونه‌ای از نوع :class:`bytes` را به جای نوع :class:`str` تولید می‌کنند. آن‌ها فقط می‌توانند شامل نویسه‌های ASCII باشند؛ بایت‌هایی با مقدار عددی ۱۲۸ یا بیشتر باید با دنباله‌های خنثی‌سازی نوشته شوند (معمولاً :ref:`string-escape-hex` یا :ref:`string-escape-oct`):"
 
 msgid ""
 ">>> b'\\x89PNG\\r\\n\\x1a\\n'\n"
@@ -974,7 +974,7 @@ msgid "Raw string literals"
 msgstr "مقادیر لفظی رشته خام"
 
 msgid "Both string and bytes literals may optionally be prefixed with a letter '``r``' or '``R``'; such constructs are called :dfn:`raw string literals` and :dfn:`raw bytes literals` respectively and treat backslashes as literal characters. As a result, in raw string literals, :ref:`escape sequences <escape-sequences>` are not treated specially:"
-msgstr "هم مقادیر لفظی رشته و هم مقادیر لفظی بایت می‌توانند به‌صورت اختیاری با حرف '``r``' یا '``R``' پیشوند بگیرند؛ به چنین ساختارهایی به‌ترتیب :dfn:`مقادیر لفظی رشته خام <raw string literals>` و :dfn:`مقادیر لفظی بایت خام <raw bytes literals>` گفته می‌شود و آن‌ها بک‌اسلش‌ها را به‌عنوان نویسه‌های لفظی در نظر می‌گیرند. در نتیجه، در مقادیر لفظی رشته خام، :ref:`دنباله‌های خنثی‌سازی <escape-sequences>` به‌صورت ویژه پردازش نمی‌شوند:"
+msgstr "هم مقادیر لفظی رشته و هم مقادیر لفظی بایت می‌توانند به‌صورت اختیاری با حرف '``r``' یا '``R``' پیشوند بگیرند؛ به چنین ساختارهایی به‌ترتیب :dfn:`مقادیر لفظی رشته خام (raw string literals)` و :dfn:`مقادیر لفظی بایت خام (raw bytes literals)` گفته می‌شود و آن‌ها بک‌اسلش‌ها را به‌عنوان نویسه‌های لفظی در نظر می‌گیرند. در نتیجه، در مقادیر لفظی رشته خام، :ref:`دنباله‌های خنثی‌سازی <escape-sequences>` به‌صورت ویژه پردازش نمی‌شوند:"
 
 msgid ""
 ">>> r'\\d{4}-\\d{2}-\\d{2}'\n"
@@ -999,7 +999,7 @@ msgid "Many restrictions on expressions within f-strings have been removed. Nota
 msgstr "بسیاری از محدودیت‌های مربوط به عبارت‌های درون اف‌استرینگ‌ها برداشته شده‌اند. به‌ویژه، رشته‌های تودرتو، کامنت‌ها و بک‌اسلش‌ها اکنون مجاز هستند."
 
 msgid "A :dfn:`formatted string literal` or :dfn:`f-string` is a string literal that is prefixed with '``f``' or '``F``'. Unlike other string literals, f-strings do not have a constant value. They may contain *replacement fields* delimited by curly braces ``{}``. Replacement fields contain expressions which are evaluated at run time. For example::"
-msgstr "یک :dfn:`لفظی رشته قالب‌بندی‌شده <formatted string literal>` یا :dfn:`اف‌استرینگ <f-string>`، لفظی رشته‌ای است که با '``f``' یا '``F``' پیشوند دارد. برخلاف سایر مقادیر لفظی رشته، اف‌استرینگ‌ها مقدار ثابت ندارند. آن‌ها ممکن است حاوی *فیلدهای جایگزینی* باشند که با آکولاد ``{}`` محصور شده‌اند. فیلدهای جایگزینی حاوی عبارت‌هایی هستند که در ران‌تایم ارزیابی می‌شوند. برای مثال::"
+msgstr "یک :dfn:`لفظی رشته قالب‌بندی‌شده (formatted string literal)` یا :dfn:`اف‌استرینگ (f-string)`، لفظی رشته‌ای است که با '``f``' یا '``F``' پیشوند دارد. برخلاف سایر مقادیر لفظی رشته، اف‌استرینگ‌ها مقدار ثابت ندارند. آن‌ها ممکن است حاوی *فیلدهای جایگزینی* باشند که با آکولاد ``{}`` محصور شده‌اند. فیلدهای جایگزینی حاوی عبارت‌هایی هستند که در ران‌تایم ارزیابی می‌شوند. برای مثال::"
 
 msgid ""
 ">>> who = 'nobody'\n"
@@ -1209,7 +1209,7 @@ msgid "t-strings"
 msgstr "تی‌استرینگ‌ها (t-strings)"
 
 msgid "A :dfn:`template string literal` or :dfn:`t-string` is a string literal that is prefixed with '``t``' or '``T``'. These strings follow the same syntax rules as :ref:`formatted string literals <f-strings>`. For differences in evaluation rules, see the :ref:`Standard Library section on t-strings <stdtypes-tstrings>`"
-msgstr ":dfn:`رشته‌ی الگو (template string literal) <template string literal>` یا :dfn:`تی‌استرینگ (t-string) <t-string>` یک رشته‌ی لفظی (string literal) است که با '``t``' یا '``T``' پیشوند داده‌شده است. این رشته‌ها از همان قواعد نحوی :ref:`رشته‌های قالب‌بندی‌شده <f-strings>` پیروی می‌کنند. برای تفاوت‌ها در قواعد ارزیابی، :ref:`بخش کتابخانه‌ی استاندارد درباره‌ی تی‌استرینگ‌ها <stdtypes-tstrings>` را ببینید"
+msgstr ":dfn:`رشته‌ی الگو (template string literal)` یا :dfn:`تی‌استرینگ (t-string)` یک رشته‌ی لفظی (string literal) است که با '``t``' یا '``T``' پیشوند داده‌شده است. این رشته‌ها از همان قواعد نحوی :ref:`رشته‌های قالب‌بندی‌شده <f-strings>` پیروی می‌کنند. برای تفاوت‌ها در قواعد ارزیابی، :ref:`بخش کتابخانه‌ی استاندارد درباره‌ی تی‌استرینگ‌ها <stdtypes-tstrings>` را ببینید"
 
 msgid "Formal grammar for f-strings"
 msgstr "دستور زبان رسمی برای اف‌استرینگ‌ها"
@@ -1455,7 +1455,7 @@ msgid "Operators and delimiters"
 msgstr "عملگرها و جداکننده‌ها"
 
 msgid "The following grammar defines :dfn:`operator` and :dfn:`delimiter` tokens, that is, the generic :data:`~token.OP` token type. A :ref:`list of these tokens and their names <token_operators_delimiters>` is also available in the :mod:`!token` module documentation."
-msgstr "دستور زبان زیر توکن‌های :dfn:`عملگر <operator>` و :dfn:`جداکننده <delimiter>` را تعریف می‌کند، یعنی نوع توکن عام :data:`~token.OP`. :ref:`فهرستی از این توکن‌ها و نام‌های آن‌ها <token_operators_delimiters>` نیز در مستندات ماژول :mod:`!token` در دسترس است."
+msgstr "دستور زبان زیر توکن‌های :dfn:`عملگر (operator)` و :dfn:`جداکننده (delimiter)` را تعریف می‌کند، یعنی نوع توکن عام :data:`~token.OP`. :ref:`فهرستی از این توکن‌ها و نام‌های آن‌ها <token_operators_delimiters>` نیز در مستندات ماژول :mod:`!token` در دسترس است."
 
 msgid "Generally, *operators* are used to combine :ref:`expressions <expressions>`, while *delimiters* serve other purposes. However, there is no clear, formal distinction between the two categories."
 msgstr "به‌طور کلی، *عملگرها* برای ترکیب :ref:`عبارت‌ها <expressions>` به کار می‌روند، در حالی که *جداکننده‌ها* کاربردهای دیگری دارند. با این حال، تمایز روشن و رسمی میان این دو دسته وجود ندارد."

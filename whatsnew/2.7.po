@@ -564,7 +564,7 @@ msgid "PEP 3106: Dictionary Views"
 msgstr "PEP 3106: نماهای دیکشنری"
 
 msgid "The dictionary methods :meth:`~dict.keys`, :meth:`~dict.values`, and :meth:`~dict.items` are different in Python 3.x.  They return an object called a :dfn:`view` instead of a fully materialized list."
-msgstr "متدهای دیکشنری :meth:`~dict.keys`، :meth:`~dict.values` و :meth:`~dict.items` در پایتون 3.x متفاوت هستند. آن‌ها به‌جای فهرستی کاملاً عینیت‌یافته (materialized)، شیئی به نام :dfn:`نما <view>` برمی‌گردانند."
+msgstr "متدهای دیکشنری :meth:`~dict.keys`، :meth:`~dict.values` و :meth:`~dict.items` در پایتون 3.x متفاوت هستند. آن‌ها به‌جای فهرستی کاملاً عینیت‌یافته (materialized)، شیئی به نام :dfn:`نما (view)` برمی‌گردانند."
 
 msgid "It's not possible to change the return values of :meth:`~dict.keys`, :meth:`~dict.values`, and :meth:`~dict.items` in Python 2.7 because too much code would break.  Instead the 3.x versions were added under the new names :meth:`!viewkeys`, :meth:`!viewvalues`, and :meth:`!viewitems`."
 msgstr "تغییر مقادیر بازگشتیِ :meth:`~dict.keys`، :meth:`~dict.values` و :meth:`~dict.items` در پایتون 2.7 ممکن نیست، زیرا کدهای زیادی می‌شکستند. در عوض، نسخه‌های 3.x با نام‌های جدید :meth:`!viewkeys`، :meth:`!viewvalues` و :meth:`!viewitems` افزوده شدند."

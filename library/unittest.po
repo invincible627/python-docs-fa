@@ -43,25 +43,25 @@ msgid "test fixture"
 msgstr "تدارکات آزمون (test fixture)"
 
 msgid "A :dfn:`test fixture` represents the preparation needed to perform one or more tests, and any associated cleanup actions.  This may involve, for example, creating temporary or proxy databases, directories, or starting a server process."
-msgstr "یک :dfn:`تدارک آزمون <test fixture>` نشان‌دهنده‌ی آماده‌سازی لازم برای اجرای یک یا چند آزمون و هرگونه اقدام پاک‌سازی مرتبط است. این ممکن است برای مثال شامل ایجاد پایگاه‌های داده‌ی موقت یا پراکسی، پوشه‌ها، یا راه‌اندازی یک فرایند سرور باشد."
+msgstr "یک :dfn:`تدارک آزمون (test fixture)` نشان‌دهنده‌ی آماده‌سازی لازم برای اجرای یک یا چند آزمون و هرگونه اقدام پاک‌سازی مرتبط است. این ممکن است برای مثال شامل ایجاد پایگاه‌های داده‌ی موقت یا پراکسی، پوشه‌ها، یا راه‌اندازی یک فرایند سرور باشد."
 
 msgid "test case"
 msgstr "مورد آزمون"
 
 msgid "A :dfn:`test case` is the individual unit of testing.  It checks for a specific response to a particular set of inputs.  :mod:`!unittest` provides a base class, :class:`TestCase`, which may be used to create new test cases."
-msgstr "یک :dfn:`مورد آزمون <test case>` واحد منفرد آزمون است. این مورد، پاسخ مشخصی به یک مجموعه‌ی معین از ورودی‌ها را بررسی می‌کند. :mod:`!unittest` کلاس پایه‌ای، :class:`TestCase`، را فراهم می‌کند که می‌توان از آن برای ایجاد موارد آزمون جدید استفاده کرد."
+msgstr "یک :dfn:`مورد آزمون (test case)` واحد منفرد آزمون است. این مورد، پاسخ مشخصی به یک مجموعه‌ی معین از ورودی‌ها را بررسی می‌کند. :mod:`!unittest` کلاس پایه‌ای، :class:`TestCase`، را فراهم می‌کند که می‌توان از آن برای ایجاد موارد آزمون جدید استفاده کرد."
 
 msgid "test suite"
 msgstr "بدنه آزمون"
 
 msgid "A :dfn:`test suite` is a collection of test cases, test suites, or both.  It is used to aggregate tests that should be executed together."
-msgstr "یک :dfn:`بدنه آزمون <test suite>` مجموعه‌ای از موارد آزمون، بدنه‌های آزمون، یا هر دو است. این برای تجمیع آزمون‌هایی که باید با هم اجرا شوند استفاده می‌شود."
+msgstr "یک :dfn:`بدنه آزمون (test suite)` مجموعه‌ای از موارد آزمون، بدنه‌های آزمون، یا هر دو است. این برای تجمیع آزمون‌هایی که باید با هم اجرا شوند استفاده می‌شود."
 
 msgid "test runner"
 msgstr "اجراکننده آزمون"
 
 msgid "A :dfn:`test runner` is a component which orchestrates the execution of tests and provides the outcome to the user.  The runner may use a graphical interface, a textual interface, or return a special value to indicate the results of executing the tests."
-msgstr "یک :dfn:`اجراکننده آزمون <test runner>` کامپوننتی است که اجرای آزمون‌ها را هماهنگ می‌کند و نتیجه را در اختیار کاربر قرار می‌دهد. این اجراکننده ممکن است از یک رابط گرافیکی، یک رابط متنی استفاده کند یا مقدار خاصی را برای نشان دادن نتایج اجرای آزمون‌ها برگرداند."
+msgstr "یک :dfn:`اجراکننده آزمون (test runner)` کامپوننتی است که اجرای آزمون‌ها را هماهنگ می‌کند و نتیجه را در اختیار کاربر قرار می‌دهد. این اجراکننده ممکن است از یک رابط گرافیکی، یک رابط متنی استفاده کند یا مقدار خاصی را برای نشان دادن نتایج اجرای آزمون‌ها برگرداند."
 
 msgid "Module :mod:`doctest`"
 msgstr "ماژول :mod:`doctest`"
@@ -378,7 +378,7 @@ msgid "Organizing test code"
 msgstr "سازمان‌دهی کد آزمون"
 
 msgid "The basic building blocks of unit testing are :dfn:`test cases` --- single scenarios that must be set up and checked for correctness.  In :mod:`!unittest`, test cases are represented by :class:`unittest.TestCase` instances. To make your own test cases you must write subclasses of :class:`TestCase` or use :class:`FunctionTestCase`."
-msgstr "اجزای سازنده‌ی اساسی آزمون واحد، :dfn:`موارد آزمون <test cases>` هستند --- سناریوهای منفردی که باید راه‌اندازی و از نظر صحت بررسی شوند. در :mod:`!unittest`، موارد آزمون با نمونه‌های :class:`unittest.TestCase` نمایش داده می‌شوند. برای ساخت موارد آزمون خودتان، باید زیرکلاس‌هایی از :class:`TestCase` بنویسید یا از :class:`FunctionTestCase` استفاده کنید."
+msgstr "اجزای سازنده‌ی اساسی آزمون واحد، :dfn:`موارد آزمون (test cases)` هستند --- سناریوهای منفردی که باید راه‌اندازی و از نظر صحت بررسی شوند. در :mod:`!unittest`، موارد آزمون با نمونه‌های :class:`unittest.TestCase` نمایش داده می‌شوند. برای ساخت موارد آزمون خودتان، باید زیرکلاس‌هایی از :class:`TestCase` بنویسید یا از :class:`FunctionTestCase` استفاده کنید."
 
 msgid "The testing code of a :class:`TestCase` instance should be entirely self contained, such that it can be run either in isolation or in arbitrary combination with any number of other test cases."
 msgstr "کد آزمون یک نمونه :class:`TestCase` باید کاملاً مستقل باشد، به‌طوری که بتوان آن را به‌تنهایی یا در ترکیب دلخواه با هر تعداد از موردهای آزمون دیگر اجرا کرد."
@@ -402,7 +402,7 @@ msgstr ""
 "        self.assertEqual(widget.size(), (50, 50))"
 
 msgid "Note that in order to test something, we use one of the :ref:`assert\\* methods <assert-methods>` provided by the :class:`TestCase` base class.  If the test fails, an exception will be raised with an explanatory message, and :mod:`!unittest` will identify the test case as a :dfn:`failure`.  Any other exceptions will be treated as :dfn:`errors`."
-msgstr "توجه داشته باشید که برای آزمایش یک مورد، از یکی از :ref:`متدهای assert\\* <assert-methods>` ارائه‌شده توسط کلاس پایه‌ی :class:`TestCase` استفاده می‌کنیم. اگر آزمایش شکست بخورد، یک استثنا همراه با پیام توضیحی پرتاب خواهد شد و :mod:`!unittest` مورد آزمایشی را به‌عنوان :dfn:`شکست <failure>` شناسایی خواهد کرد. سایر استثناها به‌عنوان :dfn:`خطاها <errors>` در نظر گرفته خواهند شد."
+msgstr "توجه داشته باشید که برای آزمایش یک مورد، از یکی از :ref:`متدهای assert\\* <assert-methods>` ارائه‌شده توسط کلاس پایه‌ی :class:`TestCase` استفاده می‌کنیم. اگر آزمایش شکست بخورد، یک استثنا همراه با پیام توضیحی پرتاب خواهد شد و :mod:`!unittest` مورد آزمایشی را به‌عنوان :dfn:`شکست (failure)` شناسایی خواهد کرد. سایر استثناها به‌عنوان :dfn:`خطاها (errors)` در نظر گرفته خواهند شد."
 
 msgid "Tests can be numerous, and their set-up can be repetitive.  Luckily, we can factor out set-up code by implementing a method called :meth:`~TestCase.setUp`, which the testing framework will automatically call for every single test we run::"
 msgstr "آزمون‌ها می‌توانند متعدد باشند و راه‌اندازی آن‌ها می‌تواند تکراری باشد. خوشبختانه، می‌توانیم کد راه‌اندازی را با پیاده‌سازی متدی به نام :meth:`~TestCase.setUp` جدا کنیم، که چارچوب آزمون آن را برای تک‌تک آزمون‌هایی که اجرا می‌کنیم به‌طور خودکار فراخوانی می‌کند::"
@@ -470,10 +470,10 @@ msgid "If :meth:`~TestCase.setUp` succeeded, :meth:`~TestCase.tearDown` will be 
 msgstr "اگر :meth:`~TestCase.setUp` با موفقیت انجام شده باشد، :meth:`~TestCase.tearDown` اجرا خواهد شد، چه متد آزمون موفق شده باشد چه نه."
 
 msgid "Such a working environment for the testing code is called a :dfn:`test fixture`.  A new TestCase instance is created as a unique test fixture used to execute each individual test method.  Thus :meth:`~TestCase.setUp`, :meth:`~TestCase.tearDown`, and :meth:`!TestCase.__init__` will be called once per test."
-msgstr "به چنین محیط کاری برای کد آزمون، :dfn:`ثابت آزمایشی آزمون <test fixture>` گفته می‌شود. یک نمونه جدید از TestCase به‌عنوان یک ثابت آزمایشی آزمون یکتا برای اجرای هر متد آزمون به‌طور جداگانه ایجاد می‌شود. بنابراین :meth:`~TestCase.setUp`، :meth:`~TestCase.tearDown` و :meth:`!TestCase.__init__` یک بار به ازای هر آزمون فراخوانی خواهند شد."
+msgstr "به چنین محیط کاری برای کد آزمون، :dfn:`ثابت آزمایشی آزمون (test fixture)` گفته می‌شود. یک نمونه جدید از TestCase به‌عنوان یک ثابت آزمایشی آزمون یکتا برای اجرای هر متد آزمون به‌طور جداگانه ایجاد می‌شود. بنابراین :meth:`~TestCase.setUp`، :meth:`~TestCase.tearDown` و :meth:`!TestCase.__init__` یک بار به ازای هر آزمون فراخوانی خواهند شد."
 
 msgid "It is recommended that you use TestCase implementations to group tests together according to the features they test.  :mod:`!unittest` provides a mechanism for this: the :dfn:`test suite`, represented by :mod:`!unittest`'s :class:`TestSuite` class.  In most cases, calling :func:`unittest.main` will do the right thing and collect all the module's test cases for you and execute them."
-msgstr "توصیه می‌شود از پیاده‌سازی‌های TestCase برای گروه‌بندی آزمون‌ها بر اساس قابلیت‌هایی که مورد آزمون قرار می‌دهند استفاده کنید. :mod:`!unittest` سازوکاری برای این منظور فراهم می‌کند: :dfn:`بدنه‌ی آزمون <test suite>`، که توسط کلاس :class:`TestSuite` از :mod:`!unittest` نمایش داده می‌شود. در بیشتر موارد، فراخوانی :func:`unittest.main` کار درست را انجام می‌دهد و تمام موارد آزمون ماژول را برای شما جمع‌آوری و اجرا می‌کند."
+msgstr "توصیه می‌شود از پیاده‌سازی‌های TestCase برای گروه‌بندی آزمون‌ها بر اساس قابلیت‌هایی که مورد آزمون قرار می‌دهند استفاده کنید. :mod:`!unittest` سازوکاری برای این منظور فراهم می‌کند: :dfn:`بدنه‌ی آزمون (test suite)`، که توسط کلاس :class:`TestSuite` از :mod:`!unittest` نمایش داده می‌شود. در بیشتر موارد، فراخوانی :func:`unittest.main` کار درست را انجام می‌دهد و تمام موارد آزمون ماژول را برای شما جمع‌آوری و اجرا می‌کند."
 
 msgid "However, should you want to customize the building of your test suite, you can do it yourself::"
 msgstr "با این حال، اگر بخواهید ساخت بدنه‌ی آزمون خود را سفارشی‌سازی کنید، می‌توانید خودتان این کار را انجام دهید::"

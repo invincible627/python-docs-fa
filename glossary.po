@@ -474,7 +474,7 @@ msgid "exhausted"
 msgstr "به‌پایان‌رسیده"
 
 msgid "An :term:`iterator` that has produced all of its values is said to be :dfn:`exhausted`. Further attempts to get the next value (for example, calls to :func:`next`) raise :exc:`StopIteration` (or :exc:`StopAsyncIteration` in the case of an :term:`asynchronous iterator`)."
-msgstr "یک :term:`پیمایش‌گر <iterator>` که تمام مقادیر خود را تولید کرده است، :dfn:`به پایان‌رسیده <exhausted>` نامیده می‌شود. تلاش‌های بیشتر برای دریافت مقدار بعدی (مثلاً فراخوانی‌های :func:`next`) باعث ایجاد :exc:`StopIteration` می‌شوند (یا :exc:`StopAsyncIteration` در صورت :term:`پیمایش‌گر ناهمگام <asynchronous iterator>`)."
+msgstr "یک :term:`پیمایش‌گر <iterator>` که تمام مقادیر خود را تولید کرده است، :dfn:`به پایان‌رسیده (exhausted)` نامیده می‌شود. تلاش‌های بیشتر برای دریافت مقدار بعدی (مثلاً فراخوانی‌های :func:`next`) باعث ایجاد :exc:`StopIteration` می‌شوند (یا :exc:`StopAsyncIteration` در صورت :term:`پیمایش‌گر ناهمگام <asynchronous iterator>`)."
 
 msgid "expression"
 msgstr "عبارت"

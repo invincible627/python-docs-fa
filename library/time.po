@@ -41,7 +41,7 @@ msgid "The :dfn:`epoch` is the point where the time starts, the return value of 
 msgstr ":dfn:`epoch` نقطه‌ای است که زمان از آن آغاز می‌شود، یعنی مقدار بازگشتی ``time.gmtime(0)``. این زمان در همه‌ی پلتفرم‌ها ۱ ژانویه‌ی ۱۹۷۰، ۰۰:۰۰:۰۰ (UTC) است."
 
 msgid "The term :dfn:`seconds since the epoch` refers to the total number of elapsed seconds since the epoch, typically excluding `leap seconds`_.  Leap seconds are excluded from this total on all POSIX-compliant platforms."
-msgstr "اصطلاح :dfn:`ثانیه‌های سپری‌شده از مبدأ زمانی <seconds since the epoch>` به تعداد کل ثانیه‌های سپری‌شده از مبدأ زمانی اشاره دارد، معمولاً به استثنای `leap seconds`_. ثانیه‌های کبیسه در تمام پلتفرم‌های سازگار با POSIX از این مجموع حذف می‌شوند."
+msgstr "اصطلاح :dfn:`ثانیه‌های سپری‌شده از مبدأ زمانی (seconds since the epoch)` به تعداد کل ثانیه‌های سپری‌شده از مبدأ زمانی اشاره دارد، معمولاً به استثنای `leap seconds`_. ثانیه‌های کبیسه در تمام پلتفرم‌های سازگار با POSIX از این مجموع حذف می‌شوند."
 
 msgid "The functions in this module may not handle dates and times before the epoch_ or far in the future.  The cut-off point in the future is determined by the C library; for 32-bit systems, it is typically in 2038."
 msgstr "توابع این ماژول ممکن است تاریخ‌ها و زمان‌های پیش از epoch_ یا آینده‌ی بسیار دور را مدیریت نکنند. نقطه‌ی قطع در آینده توسط کتابخانه‌ی C تعیین می‌شود؛ برای سیستم‌های ۳۲‌بیتی، معمولاً در سال ۲۰۳۸ است."

@@ -44,7 +44,7 @@ msgid "This module does not work or is not available on WebAssembly. See :ref:`w
 msgstr "این ماژول روی WebAssembly کار نمی‌کند یا در دسترس نیست. برای اطلاعات بیشتر :ref:`wasm-availability` را ببینید."
 
 msgid "The Python interface is a straightforward transliteration of the Unix system call and library interface for sockets to Python's object-oriented style: the :func:`~socket.socket` function returns a :dfn:`socket object` whose methods implement the various socket system calls.  Parameter types are somewhat higher-level than in the C interface: as with :meth:`read` and :meth:`write` operations on Python files, buffer allocation on receive operations is automatic, and buffer length is implicit on send operations."
-msgstr "رابط پایتون، بازنویسی مستقیمی از رابط فراخوانی سیستمی و کتابخانه‌ای یونیکس برای سوکت‌ها به سبک شیءگرای پایتون است: تابع :func:`~socket.socket` یک :dfn:`شیء سوکت <socket object>` برمی‌گرداند که متدهای آن فراخوانی‌های سیستمی مختلف سوکت را پیاده‌سازی می‌کنند. انواع پارامترها تا حدودی سطح بالاتری نسبت به رابط C دارند: همان‌طور که در عملیات :meth:`read` و :meth:`write` بر پرونده‌های پایتون وجود دارد، تخصیص بافر در عملیات دریافت خودکار است و طول بافر در عملیات ارسال ضمنی است."
+msgstr "رابط پایتون، بازنویسی مستقیمی از رابط فراخوانی سیستمی و کتابخانه‌ای یونیکس برای سوکت‌ها به سبک شیءگرای پایتون است: تابع :func:`~socket.socket` یک :dfn:`شیء سوکت (socket object)` برمی‌گرداند که متدهای آن فراخوانی‌های سیستمی مختلف سوکت را پیاده‌سازی می‌کنند. انواع پارامترها تا حدودی سطح بالاتری نسبت به رابط C دارند: همان‌طور که در عملیات :meth:`read` و :meth:`write` بر پرونده‌های پایتون وجود دارد، تخصیص بافر در عملیات دریافت خودکار است و طول بافر در عملیات ارسال ضمنی است."
 
 msgid "Module :mod:`socketserver`"
 msgstr "ماژول :mod:`socketserver`"

@@ -189,7 +189,7 @@ msgid "Numeric Types --- :class:`int`, :class:`float`, :class:`complex`"
 msgstr "انواع عددی --- :class:`int`، :class:`float`، :class:`complex`"
 
 msgid "There are three distinct numeric types: :dfn:`integers`, :dfn:`floating-point numbers`, and :dfn:`complex numbers`.  In addition, Booleans are a subtype of integers.  Integers have unlimited precision.  Floating-point numbers are usually implemented using :c:expr:`double` in C; information about the precision and internal representation of floating-point numbers for the machine on which your program is running is available in :data:`sys.float_info`.  Complex numbers have a real and imaginary part, which are each a floating-point number.  To extract these parts from a complex number *z*, use ``z.real`` and ``z.imag``. (The standard library includes the additional numeric types :mod:`fractions.Fraction`, for rationals, and :mod:`decimal.Decimal`, for floating-point numbers with user-definable precision.)"
-msgstr "سه نوع عددی متمایز وجود دارد: :dfn:`عددهای صحیح <integers>`، :dfn:`عددهای ممیز شناور <floating-point numbers>` و :dfn:`عددهای مختلط <complex numbers>`. علاوه بر این، بولی‌ها زیرنوعی از عددهای صحیح هستند. عددهای صحیح دقتی نامحدود دارند. عددهای ممیز شناور معمولاً با استفاده از :c:expr:`double` در C پیاده‌سازی می‌شوند؛ اطلاعات مربوط به دقت و نمایش درونی عددهای ممیز شناور برای ماشینی که برنامه شما روی آن اجرا می‌شود، در :data:`sys.float_info` موجود است. عددهای مختلط دارای بخش حقیقی و بخش موهومی هستند که هر یک از آن‌ها یک عدد ممیز شناور است. برای استخراج این بخش‌ها از یک عدد مختلط *z*، از ``z.real`` و ``z.imag`` استفاده کنید. (کتابخانه استاندارد همچنین شامل نوع‌های عددی دیگری است: :mod:`fractions.Fraction` برای اعداد گویا و :mod:`decimal.Decimal` برای عددهای ممیز شناور با دقت قابل تعریف توسط کاربر.)"
+msgstr "سه نوع عددی متمایز وجود دارد: :dfn:`عددهای صحیح (integers)`، :dfn:`عددهای ممیز شناور (floating-point numbers)` و :dfn:`عددهای مختلط (complex numbers)`. علاوه بر این، بولی‌ها زیرنوعی از عددهای صحیح هستند. عددهای صحیح دقتی نامحدود دارند. عددهای ممیز شناور معمولاً با استفاده از :c:expr:`double` در C پیاده‌سازی می‌شوند؛ اطلاعات مربوط به دقت و نمایش درونی عددهای ممیز شناور برای ماشینی که برنامه شما روی آن اجرا می‌شود، در :data:`sys.float_info` موجود است. عددهای مختلط دارای بخش حقیقی و بخش موهومی هستند که هر یک از آن‌ها یک عدد ممیز شناور است. برای استخراج این بخش‌ها از یک عدد مختلط *z*، از ``z.real`` و ``z.imag`` استفاده کنید. (کتابخانه استاندارد همچنین شامل نوع‌های عددی دیگری است: :mod:`fractions.Fraction` برای اعداد گویا و :mod:`decimal.Decimal` برای عددهای ممیز شناور با دقت قابل تعریف توسط کاربر.)"
 
 msgid "Numbers are created by numeric literals or as the result of built-in functions and operators.  Unadorned integer literals (including hex, octal and binary numbers) yield integers.  Numeric literals containing a decimal point or an exponent sign yield floating-point numbers.  Appending ``'j'`` or ``'J'`` to a numeric literal yields an imaginary number (a complex number with a zero real part) which you can add to an integer or float to get a complex number with real and imaginary parts."
 msgstr "اعداد با مقادیر لفظی عددی یا به‌عنوان نتیجه‌ی توابع توکار و عملگرها ساخته می‌شوند. مقادیر لفظی عدد صحیح ساده (از جمله اعداد مبنای شانزده، مبنای هشت و مبنای دو) اعداد صحیح تولید می‌کنند. مقادیر لفظی عددی حاوی ممیز اعشار یا علامت توان، اعداد ممیز شناور تولید می‌کنند. افزودن ``'j'`` یا ``'J'`` به انتهای یک لفظی عددی، یک عدد موهومی (یک عدد مختلط با بخش حقیقی صفر) ایجاد می‌کند که می‌توانید آن را به یک عدد صحیح یا ممیز شناور اضافه کنید تا عدد مختلطی با بخش‌های حقیقی و موهومی به دست آورید."
@@ -421,7 +421,7 @@ msgid "``x | y``"
 msgstr "``x | y``"
 
 msgid "bitwise :dfn:`or` of *x* and *y*"
-msgstr ":dfn:`یا <or>` بیتیِ *x* و *y*"
+msgstr ":dfn:`یا (or)` بیتیِ *x* و *y*"
 
 msgid "\\(4)"
 msgstr "\\(4)"
@@ -430,13 +430,13 @@ msgid "``x ^ y``"
 msgstr "``x ^ y``"
 
 msgid "bitwise :dfn:`exclusive or` of *x* and *y*"
-msgstr ":dfn:`یای انحصاری بیتی <exclusive or>` *x* و *y*"
+msgstr ":dfn:`یای انحصاری بیتی (exclusive or)` *x* و *y*"
 
 msgid "``x & y``"
 msgstr "``x & y``"
 
 msgid "bitwise :dfn:`and` of *x* and *y*"
-msgstr ":dfn:`و <and>` بیتیِ *x* و *y*"
+msgstr ":dfn:`و (and)` بیتیِ *x* و *y*"
 
 msgid "``x << n``"
 msgstr "``x << n``"
@@ -880,7 +880,7 @@ msgid "Return an :term:`iterator` object.  The object is required to support the
 msgstr "یک شیء :term:`پیمایش‌گر <iterator>` بازمی‌گرداند. این شیء موظف است از پروتکل پیمایش‌گری که در ادامه شرح داده شده است پشتیبانی کند. اگر یک ظرف از انواع مختلف تکرار پشتیبانی می‌کند، می‌توان متدهای اضافی‌ای ارائه داد که به‌طور خاص برای آن انواع تکرار، پیمایش‌گر درخواست کنند. (نمونه‌ای از شیءای که از چند شکل پیمایش پشتیبانی می‌کند، ساختاری درختی است که هم پیمایش عرضی (breadth-first) و هم پیمایش عمقی (depth-first) را پشتیبانی می‌کند.) این متد متناظر با جایگاه :c:member:`~PyTypeObject.tp_iter` در ساختار نوع اشیاء پایتون در Python/C API است."
 
 msgid "The iterator objects themselves are required to support the following two methods, which together form the :dfn:`iterator protocol`:"
-msgstr "خود اشیاء پیمایش‌گر ملزم به پشتیبانی از دو متد زیر هستند که در مجموع :dfn:`پروتکل پیمایش‌گر <iterator protocol>` را تشکیل می‌دهند:"
+msgstr "خود اشیاء پیمایش‌گر ملزم به پشتیبانی از دو متد زیر هستند که در مجموع :dfn:`پروتکل پیمایش‌گر (iterator protocol)` را تشکیل می‌دهند:"
 
 msgid "Return the :term:`iterator` object itself.  This is required to allow both containers and iterators to be used with the :keyword:`for` and :keyword:`in` statements.  This method corresponds to the :c:member:`~PyTypeObject.tp_iter` slot of the type structure for Python objects in the Python/C API."
 msgstr "خودِ شیء :term:`پیمایش‌گر <iterator>` را بازمی‌گرداند.  این امر برای آن ضروری است که بتوان هم از ظرف‌ها و هم از پیمایش‌گرها همراه با دستورهای :keyword:`for` و :keyword:`in` استفاده کرد.  این متد متناظر با جایگاه :c:member:`~PyTypeObject.tp_iter` از ساختار نوع اشیاء پایتون در Python/C API است."
@@ -1710,7 +1710,7 @@ msgid "Text Sequence Type --- :class:`str`"
 msgstr "نوع دنباله‌ی متنی --- :class:`str`"
 
 msgid "Textual data in Python is handled with :class:`str` objects, or :dfn:`strings`. Strings are immutable :ref:`sequences <typesseq>` of Unicode code points.  String literals are written in a variety of ways:"
-msgstr "داده‌های متنی در پایتون با اشیاء :class:`str` یا :dfn:`رشته‌ها <strings>` مدیریت می‌شوند. رشته‌ها :ref:`دنباله‌هایی <typesseq>` تغییرناپذیر از نقاط کد یونیکد هستند.  رشته‌های لفظیی به روش‌های گوناگونی نوشته می‌شوند:"
+msgstr "داده‌های متنی در پایتون با اشیاء :class:`str` یا :dfn:`رشته‌ها (strings)` مدیریت می‌شوند. رشته‌ها :ref:`دنباله‌هایی <typesseq>` تغییرناپذیر از نقاط کد یونیکد هستند.  رشته‌های لفظیی به روش‌های گوناگونی نوشته می‌شوند:"
 
 msgid "Single quotes: ``'allows embedded \"double\" quotes'``"
 msgstr "علامت نقل‌قول تکی: ``'allows embedded \"double\" quotes'``"
@@ -2868,7 +2868,7 @@ msgid "Many restrictions on expressions within f-strings have been removed. Nota
 msgstr "بسیاری از محدودیت‌های مربوط به عبارت‌های درون اف‌استرینگ‌ها برداشته شده‌اند. به‌ویژه، رشته‌های تودرتو، کامنت‌ها و بک‌اسلش‌ها اکنون مجاز هستند."
 
 msgid "An :dfn:`f-string` (formally a :dfn:`formatted string literal`) is a string literal that is prefixed with ``f`` or ``F``. This type of string literal allows embedding the results of arbitrary Python expressions within *replacement fields*, which are delimited by curly brackets (``{}``). Each replacement field must contain an expression, optionally followed by:"
-msgstr "یک :dfn:`اف‌استرینگ <f-string>` (به‌طور رسمی یک :dfn:`رشته‌ی لفظی قالب‌بندی‌شده <formatted string literal>`) یک رشته‌ی لفظی است که پیشوند ``f`` یا ``F`` دارد. این نوع از رشته‌ی لفظی امکان تعبیه نتایج عبارت‌های دلخواه پایتون را درون *فیلدهای جایگزینی* فراهم می‌کند، که با آکولادها (``{}``) محدود شده‌اند. هر فیلد جایگزینی باید شامل یک عبارت باشد، و به‌صورت اختیاری به دنبال آن:"
+msgstr "یک :dfn:`اف‌استرینگ (f-string)` (به‌طور رسمی یک :dfn:`رشته‌ی لفظی قالب‌بندی‌شده (formatted string literal)`) یک رشته‌ی لفظی است که پیشوند ``f`` یا ``F`` دارد. این نوع از رشته‌ی لفظی امکان تعبیه نتایج عبارت‌های دلخواه پایتون را درون *فیلدهای جایگزینی* فراهم می‌کند، که با آکولادها (``{}``) محدود شده‌اند. هر فیلد جایگزینی باید شامل یک عبارت باشد، و به‌صورت اختیاری به دنبال آن:"
 
 msgid "a *debug specifier* -- an equal sign (``=``);"
 msgstr "یک *مشخص‌کننده اشکال‌زدایی* — یک علامت مساوی (``=``)؛"
@@ -4643,7 +4643,7 @@ msgid "Set Types --- :class:`set`, :class:`frozenset`"
 msgstr "انواع مجموعه‌ای --- :class:`set`، :class:`frozenset`"
 
 msgid "A :dfn:`set` object is an unordered collection of distinct :term:`hashable` objects. Common uses include membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference. (For other containers see the built-in :class:`dict`, :class:`list`, and :class:`tuple` classes, and the :mod:`collections` module.) See :ref:`time-complexity` for the costs of the various set operations."
-msgstr "یک شیء :dfn:`مجموعه <set>` یک جمع‌آوری نامرتب از اشیاء :term:`هش‌پذیر <hashable>` متمایز است. کاربردهای رایج شامل تست عضویت، حذف تکرارها از یک دنباله، و محاسبه‌ی عملیات ریاضی نظیر اشتراک، اجتماع، تفاضل، و تفاضل متقارن می‌باشد. (برای سایر ظرف‌ها به کلاس‌های توکار :class:`dict`، :class:`list`، و :class:`tuple`، و ماژول :mod:`collections` مراجعه کنید.) برای هزینه‌های عملیات‌های مختلف مجموعه به :ref:`time-complexity` مراجعه کنید."
+msgstr "یک شیء :dfn:`مجموعه (set)` یک جمع‌آوری نامرتب از اشیاء :term:`هش‌پذیر <hashable>` متمایز است. کاربردهای رایج شامل تست عضویت، حذف تکرارها از یک دنباله، و محاسبه‌ی عملیات ریاضی نظیر اشتراک، اجتماع، تفاضل، و تفاضل متقارن می‌باشد. (برای سایر ظرف‌ها به کلاس‌های توکار :class:`dict`، :class:`list`، و :class:`tuple`، و ماژول :mod:`collections` مراجعه کنید.) برای هزینه‌های عملیات‌های مختلف مجموعه به :ref:`time-complexity` مراجعه کنید."
 
 msgid "Like other collections, sets support ``x in set``, ``len(set)``, and ``for x in set``.  Being an unordered collection, sets do not record element position or order of insertion.  Accordingly, sets do not support indexing, slicing, or other sequence-like behavior."
 msgstr "مانند سایر مجموعه‌ها، مجموعه‌ها از ``x in set``، ``len(set)`` و ``for x in set`` پشتیبانی می‌کنند. از آن‌جا که مجموعه‌ها بدون ترتیب هستند، موقعیت عنصر یا ترتیب درج را ثبت نمی‌کنند. بنابراین، مجموعه‌ها از اندیس‌دهی، اسلایس یا سایر رفتارهای مشابه دنباله پشتیبانی نمی‌کنند."
@@ -4781,7 +4781,7 @@ msgid "Mapping Types --- :class:`dict`"
 msgstr "انواع نگاشت --- :class:`dict`"
 
 msgid "A :term:`mapping` object maps :term:`hashable` values to arbitrary objects. Mappings are mutable objects.  There is currently only one standard mapping type, the :dfn:`dictionary`.  (For other containers see the built-in :class:`list`, :class:`set`, and :class:`tuple` classes, and the :mod:`collections` module.) See :ref:`time-complexity` for the costs of the various dictionary operations."
-msgstr "یک شیء :term:`نگاشت <mapping>` مقادیر :term:`هش‌پذیر <hashable>` را به اشیای دلخواه نگاشت می‌کند. نگاشت‌ها اشیای تغییرپذیر هستند. در حال حاضر تنها یک نوع نگاشت استاندارد وجود دارد، یعنی :dfn:`دیکشنری <dictionary>`. (برای سایر ظرف‌ها به کلاس‌های توکار :class:`list`، :class:`set` و :class:`tuple` و ماژول :mod:`collections` مراجعه کنید.) برای هزینه‌های عملیات‌های مختلف دیکشنری به :ref:`time-complexity` مراجعه کنید."
+msgstr "یک شیء :term:`نگاشت <mapping>` مقادیر :term:`هش‌پذیر <hashable>` را به اشیای دلخواه نگاشت می‌کند. نگاشت‌ها اشیای تغییرپذیر هستند. در حال حاضر تنها یک نوع نگاشت استاندارد وجود دارد، یعنی :dfn:`دیکشنری (dictionary)`. (برای سایر ظرف‌ها به کلاس‌های توکار :class:`list`، :class:`set` و :class:`tuple` و ماژول :mod:`collections` مراجعه کنید.) برای هزینه‌های عملیات‌های مختلف دیکشنری به :ref:`time-complexity` مراجعه کنید."
 
 msgid "A dictionary's keys are *almost* arbitrary values.  Values that are not :term:`hashable`, that is, values containing lists, dictionaries or other mutable types (that are compared by value rather than by object identity) may not be used as keys. Values that compare equal (such as ``1``, ``1.0``, and ``True``) can be used interchangeably to index the same dictionary entry."
 msgstr "کلیدهای یک دیکشنری *تقریباً* مقادیر دلخواه هستند. مقادیری که :term:`هش‌پذیر <hashable>` نیستند، یعنی مقادیری که شامل فهرست‌ها، دیکشنری‌ها یا سایر انواع تغییرپذیر هستند (که بر اساس مقدار مقایسه می‌شوند، نه بر اساس هویت شیء) نمی‌توانند به‌عنوان کلید استفاده شوند. مقادیری که برابر یکدیگر مقایسه می‌شوند (مانند ``1``، ``1.0`` و ``True``) می‌توانند به‌جای یکدیگر برای اندیس‌دهی به یک آیتم دیکشنری استفاده شوند."
@@ -5761,7 +5761,7 @@ msgid "Methods are functions that are called using the attribute notation. There
 msgstr "متدها توابعی هستند که با استفاده از نمادگذاری ویژگی فراخوانی می‌شوند. دو نوع وجود دارد: :ref:`متدهای توکار <builtin-methods>` (مانند :meth:`~list.append` روی فهرست‌ها) و :ref:`متدهای نمونه کلاس <instance-methods>`. متدهای توکار با نوع‌هایی که از آن‌ها پشتیبانی می‌کنند توصیف شده‌اند."
 
 msgid "If you access a method (a function defined in a class namespace) through an instance, you get a special object: a :dfn:`bound method` (also called :ref:`instance method <instance-methods>`) object. When called, it will add the ``self`` argument to the argument list.  Bound methods have two special read-only attributes: :attr:`m.__self__ <method.__self__>` is the object on which the method operates, and :attr:`m.__func__ <method.__func__>` is the function implementing the method.  Calling ``m(arg-1, arg-2, ..., arg-n)`` is completely equivalent to calling ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)``."
-msgstr "اگر از طریق یک نمونه به یک متد (تابعی که در فضای نام یک کلاس تعریف شده است) دسترسی پیدا کنید، یک شیء خاص دریافت می‌کنید: یک شیء :dfn:`متد مقید <bound method>` (bound method) که به آن :ref:`متد نمونه <instance-methods>` نیز گفته می‌شود. هنگام فراخوانی، آرگومان ``self`` را به فهرست آرگومان‌ها اضافه می‌کند. متدهای مقید دو ویژگی فقط‌خواندنی خاص دارند: :attr:`m.__self__ <method.__self__>` شیءای است که متد روی آن عمل می‌کند، و :attr:`m.__func__ <method.__func__>` تابعی است که متد را پیاده‌سازی می‌کند. فراخوانی ``m(arg-1, arg-2, ..., arg-n)`` کاملاً معادل فراخوانی ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)`` است."
+msgstr "اگر از طریق یک نمونه به یک متد (تابعی که در فضای نام یک کلاس تعریف شده است) دسترسی پیدا کنید، یک شیء خاص دریافت می‌کنید: یک شیء :dfn:`متد مقید (bound method)` (bound method) که به آن :ref:`متد نمونه <instance-methods>` نیز گفته می‌شود. هنگام فراخوانی، آرگومان ``self`` را به فهرست آرگومان‌ها اضافه می‌کند. متدهای مقید دو ویژگی فقط‌خواندنی خاص دارند: :attr:`m.__self__ <method.__self__>` شیءای است که متد روی آن عمل می‌کند، و :attr:`m.__func__ <method.__func__>` تابعی است که متد را پیاده‌سازی می‌کند. فراخوانی ``m(arg-1, arg-2, ..., arg-n)`` کاملاً معادل فراخوانی ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)`` است."
 
 msgid "Like :ref:`function objects <user-defined-funcs>`, bound method objects support getting arbitrary attributes.  However, since method attributes are actually stored on the underlying function object (:attr:`method.__func__`), setting method attributes on bound methods is disallowed.  Attempting to set an attribute on a method results in an :exc:`AttributeError` being raised.  In order to set a method attribute, you need to explicitly set it on the underlying function object:"
 msgstr "مانند :ref:`اشیای تابع <user-defined-funcs>`، اشیای متد مقید از دریافت ویژگی‌های دلخواه پشتیبانی می‌کنند. با این حال، از آنجا که ویژگی‌های متد در واقع روی شیء تابع زیربنایی ذخیره شده‌اند (:attr:`method.__func__`)، تنظیم ویژگی‌های متد روی متدهای مقید مجاز نیست. تلاش برای تنظیم یک ویژگی روی یک متد منجر به پرتاب :exc:`AttributeError` می‌شود. برای تنظیم یک ویژگی متد، باید آن را به‌صراحت روی شیء تابع زیربنایی تنظیم کنید:"

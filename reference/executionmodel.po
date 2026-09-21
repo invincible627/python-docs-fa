@@ -31,10 +31,10 @@ msgid "Structure of a program"
 msgstr "ساختار یک برنامه"
 
 msgid "A Python program is constructed from code blocks. A :dfn:`block` is a piece of Python program text that is executed as a unit. The following are blocks: a module, a function body, and a class definition. Each command typed interactively is a block.  A script file (a file given as standard input to the interpreter or specified as a command line argument to the interpreter) is a code block.  A script command (a command specified on the interpreter command line with the :option:`-c` option) is a code block. A module run as a top level script (as module ``__main__``) from the command line using a :option:`-m` argument is also a code block. The string argument passed to the built-in functions :func:`eval` and :func:`exec` is a code block."
-msgstr "یک برنامه پایتون از بلوک‌های کد ساخته شده است. یک :dfn:`بلوک <block>` بخشی از متن برنامه پایتون است که به‌عنوان یک واحد اجرا می‌شود. موارد زیر بلوک هستند: ماژول، بدنه تابع، و تعریف کلاس. هر دستوری که به‌صورت تعاملی تایپ شود یک بلوک است. یک پرونده اسکریپت (پرونده‌ای که به‌عنوان ورودی استاندارد به مفسر داده شود یا به‌عنوان آرگومان خط فرمان برای مفسر مشخص شود) یک بلوک کد است. یک دستور اسکریپت (دستوری که در خط فرمان مفسر با گزینه :option:`-c` مشخص شده است) یک بلوک کد است. ماژولی که به‌عنوان اسکریپت سطح بالا (به‌عنوان ماژول ``__main__``) از خط فرمان با استفاده از آرگومان :option:`-m` اجرا می‌شود نیز یک بلوک کد است. آرگومان رشته‌ای که به توابع توکار :func:`eval` و :func:`exec` داده می‌شود یک بلوک کد است."
+msgstr "یک برنامه پایتون از بلوک‌های کد ساخته شده است. یک :dfn:`بلوک (block)` بخشی از متن برنامه پایتون است که به‌عنوان یک واحد اجرا می‌شود. موارد زیر بلوک هستند: ماژول، بدنه تابع، و تعریف کلاس. هر دستوری که به‌صورت تعاملی تایپ شود یک بلوک است. یک پرونده اسکریپت (پرونده‌ای که به‌عنوان ورودی استاندارد به مفسر داده شود یا به‌عنوان آرگومان خط فرمان برای مفسر مشخص شود) یک بلوک کد است. یک دستور اسکریپت (دستوری که در خط فرمان مفسر با گزینه :option:`-c` مشخص شده است) یک بلوک کد است. ماژولی که به‌عنوان اسکریپت سطح بالا (به‌عنوان ماژول ``__main__``) از خط فرمان با استفاده از آرگومان :option:`-m` اجرا می‌شود نیز یک بلوک کد است. آرگومان رشته‌ای که به توابع توکار :func:`eval` و :func:`exec` داده می‌شود یک بلوک کد است."
 
 msgid "A code block is executed in an :dfn:`execution frame`.  A frame contains some administrative information (used for debugging) and determines where and how execution continues after the code block's execution has completed."
-msgstr "یک بلوک کد در یک :dfn:`فریم اجرا <execution frame>` اجرا می‌شود. یک فریم شامل برخی اطلاعات مدیریتی (که برای اشکال‌زدایی استفاده می‌شود) است و تعیین می‌کند که پس از تکمیل اجرای بلوک کد، اجرا در کجا و چگونه ادامه یابد."
+msgstr "یک بلوک کد در یک :dfn:`فریم اجرا (execution frame)` اجرا می‌شود. یک فریم شامل برخی اطلاعات مدیریتی (که برای اشکال‌زدایی استفاده می‌شود) است و تعیین می‌کند که پس از تکمیل اجرای بلوک کد، اجرا در کجا و چگونه ادامه یابد."
 
 msgid "Naming and binding"
 msgstr "نام‌گذاری و مقیدسازی"
@@ -43,7 +43,7 @@ msgid "Binding of names"
 msgstr "پیوند نام‌ها"
 
 msgid ":dfn:`Names` refer to objects.  Names are introduced by name binding operations."
-msgstr ":dfn:`نام‌ها <Names>` به اشیاء اشاره می‌کنند. نام‌ها توسط عملیات مقیدسازی نام معرفی می‌شوند."
+msgstr ":dfn:`نام‌ها (Names)` به اشیاء اشاره می‌کنند. نام‌ها توسط عملیات مقیدسازی نام معرفی می‌شوند."
 
 msgid "The following constructs bind names:"
 msgstr "سازه‌های زیر نام‌ها را مقید می‌کنند:"
@@ -94,16 +94,16 @@ msgid "If a name is bound in a block, it is a local variable of that block, unle
 msgstr "اگر نامی در یک بلوک مقید شود، یک متغیر محلی آن بلوک است، مگر اینکه به‌عنوان :keyword:`nonlocal` یا :keyword:`global` اعلام شده باشد. اگر نامی در سطح ماژول مقید شود، یک متغیر سراسری است. (متغیرهای بلوک کد ماژول هم محلی و هم سراسری هستند.) اگر متغیری در یک بلوک کد استفاده شود اما در آنجا تعریف نشده باشد، یک :term:`متغیر آزاد <free variable>` است."
 
 msgid "Each occurrence of a name in the program text refers to the :dfn:`binding` of that name established by the following name resolution rules."
-msgstr "هر ظهور یک نام در متن برنامه به :dfn:`پیوند <binding>` آن نام اشاره دارد که بر اساس قواعد حل نام زیر برقرار شده است."
+msgstr "هر ظهور یک نام در متن برنامه به :dfn:`پیوند (binding)` آن نام اشاره دارد که بر اساس قواعد حل نام زیر برقرار شده است."
 
 msgid "Resolution of names"
 msgstr "حل نام‌ها"
 
 msgid "A :dfn:`scope` defines the visibility of a name within a block.  If a local variable is defined in a block, its scope includes that block.  If the definition occurs in a function block, the scope extends to any blocks contained within the defining one, unless a contained block introduces a different binding for the name."
-msgstr "یک :dfn:`محدوده <scope>` قابلیت مشاهده‌ی یک نام درون یک بلوک را تعریف می‌کند. اگر یک متغیر محلی در یک بلوک تعریف شود، محدوده‌ی آن شامل آن بلوک می‌شود. اگر تعریف در یک بلوک تابع انجام شود، محدوده به هر بلوکی که درون بلوک تعریف‌کننده قرار دارد گسترش می‌یابد، مگر اینکه بلوکی درون آن، مقیدسازی متفاوتی برای آن نام ایجاد کند."
+msgstr "یک :dfn:`محدوده (scope)` قابلیت مشاهده‌ی یک نام درون یک بلوک را تعریف می‌کند. اگر یک متغیر محلی در یک بلوک تعریف شود، محدوده‌ی آن شامل آن بلوک می‌شود. اگر تعریف در یک بلوک تابع انجام شود، محدوده به هر بلوکی که درون بلوک تعریف‌کننده قرار دارد گسترش می‌یابد، مگر اینکه بلوکی درون آن، مقیدسازی متفاوتی برای آن نام ایجاد کند."
 
 msgid "When a name is used in a code block, it is resolved using the nearest enclosing scope.  The set of all such scopes visible to a code block is called the block's :dfn:`environment`."
-msgstr "هنگامی که از یک نام در یک بلوک کد استفاده می‌شود، آن نام با استفاده از نزدیک‌ترین محدوده‌ی دربرگیرنده تعیین می‌شود. مجموعه‌ی همه‌ی چنین محدوده‌هایی که برای یک بلوک کد قابل مشاهده هستند، :dfn:`محیط <environment>` آن بلوک نامیده می‌شود."
+msgstr "هنگامی که از یک نام در یک بلوک کد استفاده می‌شود، آن نام با استفاده از نزدیک‌ترین محدوده‌ی دربرگیرنده تعیین می‌شود. مجموعه‌ی همه‌ی چنین محدوده‌هایی که برای یک بلوک کد قابل مشاهده هستند، :dfn:`محیط (environment)` آن بلوک نامیده می‌شود."
 
 msgid "When a name is not found at all, a :exc:`NameError` exception is raised. If the current scope is a function scope, and the name refers to a local variable that has not yet been bound to a value at the point where the name is used, an :exc:`UnboundLocalError` exception is raised. :exc:`UnboundLocalError` is a subclass of :exc:`NameError`."
 msgstr "هنگامی که نامی به‌هیچ‌وجه پیدا نشود، یک استثنای :exc:`NameError` پرتاب می‌شود. اگر محدوده فعلی یک محدوده تابع باشد و نام به متغیر محلی اشاره کند که هنوز در نقطه‌ای که نام استفاده می‌شود به مقداری متصل نشده باشد، یک استثنای :exc:`UnboundLocalError` پرتاب می‌شود. :exc:`UnboundLocalError` زیرکلاسی از :exc:`NameError` است."

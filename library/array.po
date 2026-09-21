@@ -29,7 +29,7 @@ msgid ":mod:`!array` --- Efficient arrays of numeric values"
 msgstr ":mod:`!array` --- آرایه‌های کارآمد از مقادیر عددی"
 
 msgid "This module defines an object type which can compactly represent an array of basic values: characters, integers, floating-point numbers.  Arrays are mutable :term:`sequence` types and behave very much like lists, except that the type of objects stored in them is constrained.  The type is specified at object creation time by using a :dfn:`type code`, which is a single character.  The following type codes are defined:"
-msgstr "این ماژول یک نوع شیء را تعریف می‌کند که می‌تواند آرایه‌ای از مقادیر پایه را به‌صورت فشرده بازنمایی کند: نویسه‌ها، اعداد صحیح و اعداد ممیز شناور. آرایه‌ها انواعی از :term:`دنباله <sequence>` تغییرپذیر هستند و بسیار شبیه فهرست‌ها رفتار می‌کنند، با این تفاوت که نوع اشیاء ذخیره‌شده در آن‌ها محدود است. این نوع در زمان ایجاد شیء با استفاده از یک :dfn:`کد نوع <type code>` مشخص می‌شود که یک نویسه واحد است. کدهای نوع زیر تعریف شده‌اند:"
+msgstr "این ماژول یک نوع شیء را تعریف می‌کند که می‌تواند آرایه‌ای از مقادیر پایه را به‌صورت فشرده بازنمایی کند: نویسه‌ها، اعداد صحیح و اعداد ممیز شناور. آرایه‌ها انواعی از :term:`دنباله <sequence>` تغییرپذیر هستند و بسیار شبیه فهرست‌ها رفتار می‌کنند، با این تفاوت که نوع اشیاء ذخیره‌شده در آن‌ها محدود است. این نوع در زمان ایجاد شیء با استفاده از یک :dfn:`کد نوع (type code)` مشخص می‌شود که یک نویسه واحد است. کدهای نوع زیر تعریف شده‌اند:"
 
 msgid "Type code"
 msgstr "کد نوع"

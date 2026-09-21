@@ -31,7 +31,7 @@ msgid "Objects, values and types"
 msgstr "اشیاء، مقادیر و انواع"
 
 msgid ":dfn:`Objects` are Python's abstraction for data.  All data in a Python program is represented by objects or by relations between objects. Even code is represented by objects."
-msgstr ":dfn:`اشیاء <Objects>` انتزاع پایتون برای داده‌ها هستند. تمام داده‌ها در یک برنامه پایتون به‌وسیله اشیاء یا روابط میان اشیاء نمایش داده می‌شوند. حتی کد نیز به‌وسیله اشیاء نمایش داده می‌شود."
+msgstr ":dfn:`اشیاء (Objects)` انتزاع پایتون برای داده‌ها هستند. تمام داده‌ها در یک برنامه پایتون به‌وسیله اشیاء یا روابط میان اشیاء نمایش داده می‌شوند. حتی کد نیز به‌وسیله اشیاء نمایش داده می‌شود."
 
 msgid "Every object has an identity, a type and a value.  An object's *identity* never changes once it has been created; you may think of it as the object's address in memory.  The :keyword:`is` operator compares the identity of two objects; the :func:`id` function returns an integer representing its identity."
 msgstr "هر شیء یک هویت، یک نوع و یک مقدار دارد. *هویت* یک شیء پس از ایجاد شدن هرگز تغییر نمی‌کند؛ می‌توانید آن را به‌عنوان نشانی شیء در حافظه در نظر بگیرید. عملگر :keyword:`is` هویت دو شیء را مقایسه می‌کند؛ تابع :func:`id` عدد صحیحی را برمی‌گرداند که نشان‌دهنده‌ی هویت آن است."
@@ -196,7 +196,7 @@ msgid "Strings"
 msgstr "رشته‌ها"
 
 msgid "A string (:class:`str`) is a sequence of values that represent :dfn:`characters`, or more formally, *Unicode code points*. All the code points in the range ``0`` to ``0x10FFFF`` can be represented in a string."
-msgstr "یک رشته (:class:`str`) دنباله‌ای از مقادیر است که :dfn:`نویسه‌ها <characters>`، یا به‌طور رسمی‌تر، *نقاط کد یونیکد* را نشان می‌دهند. همه‌ی نقاط کد در بازه‌ی ``0`` تا ``0x10FFFF`` را می‌توان در یک رشته نمایش داد."
+msgstr "یک رشته (:class:`str`) دنباله‌ای از مقادیر است که :dfn:`نویسه‌ها (characters)`، یا به‌طور رسمی‌تر، *نقاط کد یونیکد* را نشان می‌دهند. همه‌ی نقاط کد در بازه‌ی ``0`` تا ``0x10FFFF`` را می‌توان در یک رشته نمایش داد."
 
 msgid "Python doesn't have a dedicated *character* type. Instead, every code point in the string is represented as a string object with length ``1``."
 msgstr "پایتون یک نوع اختصاصی برای *نویسه* ندارد. در عوض، هر نقطه‌کد در رشته به‌عنوان یک شیء رشته با طول ``1`` نمایش داده می‌شود."
@@ -430,7 +430,7 @@ msgid "Coroutine functions"
 msgstr "توابع هم‌روال"
 
 msgid "A function or method which is defined using :keyword:`async def` is called a :dfn:`coroutine function`.  Such a function, when called, returns a :term:`coroutine` object.  It may contain :keyword:`await` expressions, as well as :keyword:`async with` and :keyword:`async for` statements. See also the :ref:`coroutine-objects` section."
-msgstr "به تابع یا متدی که با استفاده از :keyword:`async def` تعریف‌شده باشد، یک :dfn:`تابع هم‌روال <coroutine function>` گفته می‌شود. چنین تابعی، هنگام فراخوانی، یک شیء :term:`هم‌روال <coroutine>` برمی‌گرداند. این تابع ممکن است شامل عبارت‌های :keyword:`await`، و همچنین دستورهای :keyword:`async with` و :keyword:`async for` باشد. همچنین بخش :ref:`coroutine-objects` را ببینید."
+msgstr "به تابع یا متدی که با استفاده از :keyword:`async def` تعریف‌شده باشد، یک :dfn:`تابع هم‌روال (coroutine function)` گفته می‌شود. چنین تابعی، هنگام فراخوانی، یک شیء :term:`هم‌روال <coroutine>` برمی‌گرداند. این تابع ممکن است شامل عبارت‌های :keyword:`await`، و همچنین دستورهای :keyword:`async with` و :keyword:`async for` باشد. همچنین بخش :ref:`coroutine-objects` را ببینید."
 
 msgid "Asynchronous generator functions"
 msgstr "توابع تولیدگر ناهمگام"
@@ -1032,7 +1032,7 @@ msgid "Special method names"
 msgstr "نام متدهای ویژه"
 
 msgid "A class can implement certain operations that are invoked by special syntax (such as arithmetic operations or subscripting and slicing) by defining methods with special names. This is Python's approach to :dfn:`operator overloading`, allowing classes to define their own behavior with respect to language operators.  For instance, if a class defines a method named :meth:`~object.__getitem__`, and ``x`` is an instance of this class, then ``x[i]`` is roughly equivalent to ``type(x).__getitem__(x, i)``.  Except where mentioned, attempts to execute an operation raise an exception when no appropriate method is defined (typically :exc:`AttributeError` or :exc:`TypeError`)."
-msgstr "یک کلاس می‌تواند عملیات خاصی را که با سینتکس ویژه فراخوانی می‌شوند (مانند عملیات حسابی یا اندیس‌گذاری و اسلایس) با تعریف متدهایی با نام‌های ویژه پیاده‌سازی کند. این رویکرد پایتون به :dfn:`اضافه‌بارگذاری عملگر <operator overloading>` (operator overloading) است و به کلاس‌ها اجازه می‌دهد رفتار خود را در قبال عملگرهای زبان تعریف کنند.  برای نمونه، اگر کلاسی متدی به نام :meth:`~object.__getitem__` تعریف کند و ``x`` نمونه‌ای از این کلاس باشد، آنگاه ``x[i]`` تقریباً معادل ``type(x).__getitem__(x, i)`` است.  به‌جز در مواردی که ذکر شده است، تلاش برای اجرای یک عملیات، هنگامی که متد مناسبی تعریف نشده باشد، باعث پرتاب یک استثنا می‌شود (معمولاً :exc:`AttributeError` یا :exc:`TypeError`)."
+msgstr "یک کلاس می‌تواند عملیات خاصی را که با سینتکس ویژه فراخوانی می‌شوند (مانند عملیات حسابی یا اندیس‌گذاری و اسلایس) با تعریف متدهایی با نام‌های ویژه پیاده‌سازی کند. این رویکرد پایتون به :dfn:`اضافه‌بارگذاری عملگر (operator overloading)` (operator overloading) است و به کلاس‌ها اجازه می‌دهد رفتار خود را در قبال عملگرهای زبان تعریف کنند.  برای نمونه، اگر کلاسی متدی به نام :meth:`~object.__getitem__` تعریف کند و ``x`` نمونه‌ای از این کلاس باشد، آنگاه ``x[i]`` تقریباً معادل ``type(x).__getitem__(x, i)`` است.  به‌جز در مواردی که ذکر شده است، تلاش برای اجرای یک عملیات، هنگامی که متد مناسبی تعریف نشده باشد، باعث پرتاب یک استثنا می‌شود (معمولاً :exc:`AttributeError` یا :exc:`TypeError`)."
 
 msgid "Setting a special method to ``None`` indicates that the corresponding operation is not available.  For example, if a class sets :meth:`~object.__iter__` to ``None``, the class is not iterable, so calling :func:`iter` on its instances will raise a :exc:`TypeError` (without falling back to :meth:`~object.__getitem__`). [#]_"
 msgstr "تنظیم یک متد ویژه روی ``None`` نشان می‌دهد که عملیات متناظر در دسترس نیست. برای مثال، اگر کلاسی :meth:`~object.__iter__` را روی ``None`` تنظیم کند، آن کلاس پیمایش‌پذیر نیست، بنابراین فراخوانی :func:`iter` روی نمونه‌های آن، استثنای :exc:`TypeError` را پرتاب می‌کند (بدون بازگشت به :meth:`~object.__getitem__`). [#]_"

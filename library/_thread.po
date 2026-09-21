@@ -26,7 +26,7 @@ msgid ":mod:`!_thread` --- Low-level threading API"
 msgstr ":mod:`!_thread` --- API نخ‌بندی سطح پایین"
 
 msgid "This module provides low-level primitives for working with multiple threads (also called :dfn:`light-weight processes` or :dfn:`tasks`) --- multiple threads of control sharing their global data space.  For synchronization, simple locks (also called :dfn:`mutexes` or :dfn:`binary semaphores`) are provided. The :mod:`threading` module provides an easier to use and higher-level threading API built on top of this module."
-msgstr "این ماژول، ساختارهای اولیه سطح‌پایینی برای کار با چندین نخ (که به آن‌ها :dfn:`فرایندهای سبک‌وزن <light-weight processes>` یا :dfn:`وظایف <tasks>` نیز گفته می‌شود) --- چندین نخ کنترل که فضای داده سراسری خود را به اشتراک می‌گذارند. برای همگام‌سازی، قفل‌های ساده‌ای (که به آن‌ها :dfn:`قفل‌های متقابل <mutexes>` یا :dfn:`سمافورهای دودویی <binary semaphores>` نیز گفته می‌شود) فراهم شده‌اند. ماژول :mod:`threading`، یک API نخ‌بندی سطح‌بالا و آسان‌تر برای استفاده ارائه می‌دهد که بر پایه این ماژول ساخته شده است."
+msgstr "این ماژول، ساختارهای اولیه سطح‌پایینی برای کار با چندین نخ (که به آن‌ها :dfn:`فرایندهای سبک‌وزن (light-weight processes)` یا :dfn:`وظایف (tasks)` نیز گفته می‌شود) --- چندین نخ کنترل که فضای داده سراسری خود را به اشتراک می‌گذارند. برای همگام‌سازی، قفل‌های ساده‌ای (که به آن‌ها :dfn:`قفل‌های متقابل (mutexes)` یا :dfn:`سمافورهای دودویی (binary semaphores)` نیز گفته می‌شود) فراهم شده‌اند. ماژول :mod:`threading`، یک API نخ‌بندی سطح‌بالا و آسان‌تر برای استفاده ارائه می‌دهد که بر پایه این ماژول ساخته شده است."
 
 msgid "This module used to be optional, it is now always available."
 msgstr "این ماژول پیش‌تر اختیاری بود، اما اکنون همیشه در دسترس است."

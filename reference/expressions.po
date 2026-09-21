@@ -95,7 +95,7 @@ msgid "Private name mangling"
 msgstr "تغییر نام خصوصی (private name mangling)"
 
 msgid "When an identifier that textually occurs in a class definition begins with two or more underscore characters and does not end in two or more underscores, it is considered a :dfn:`private name` of that class."
-msgstr "هرگاه شناسه‌ای که در متن تعریف یک کلاس آمده باشد با ۲ یا چند نویسه زیرخط آغاز شود و به ۲ یا چند زیرخط ختم نشود، یک :dfn:`نام خصوصی <private name>` برای آن کلاس محسوب می‌شود."
+msgstr "هرگاه شناسه‌ای که در متن تعریف یک کلاس آمده باشد با ۲ یا چند نویسه زیرخط آغاز شود و به ۲ یا چند زیرخط ختم نشود، یک :dfn:`نام خصوصی (private name)` برای آن کلاس محسوب می‌شود."
 
 msgid "The :ref:`class specifications <class>`."
 msgstr ":ref:`مشخصات کلاس <class>`."
@@ -131,7 +131,7 @@ msgid "Literals"
 msgstr "مقادیر لفظی"
 
 msgid "A :dfn:`literal` is a textual representation of a value. Python supports numeric, string and bytes literals. :ref:`Format strings <f-strings>` and :ref:`template strings <t-strings>` are treated as string literals."
-msgstr ":dfn:`لفظی <literal>` نمایشی متنی از یک مقدار است. پایتون از مقادیر لفظی عددی، رشته‌ای و بایتی پشتیبانی می‌کند. :ref:`اف‌استرینگ‌ها <f-strings>` و :ref:`رشته‌های قالبی <t-strings>` به‌عنوان مقادیر لفظی رشته‌ای در نظر گرفته می‌شوند."
+msgstr ":dfn:`لفظی (literal)` نمایشی متنی از یک مقدار است. پایتون از مقادیر لفظی عددی، رشته‌ای و بایتی پشتیبانی می‌کند. :ref:`اف‌استرینگ‌ها <f-strings>` و :ref:`رشته‌های قالبی <t-strings>` به‌عنوان مقادیر لفظی رشته‌ای در نظر گرفته می‌شوند."
 
 msgid "Numeric literals consist of a single :token:`NUMBER <python-grammar:NUMBER>` token, which names an integer, floating-point number, or an imaginary number. See the :ref:`numbers` section in Lexical analysis documentation for details."
 msgstr "مقادیر لفظی عددی از یک توکن :token:`NUMBER <python-grammar:NUMBER>` تشکیل شده‌اند که یک عدد صحیح، عدد ممیز شناور یا عدد موهومی را مشخص می‌کند. برای جزئیات، بخش :ref:`numbers` را در مستندات تحلیل واژگانی ببینید."
@@ -321,7 +321,7 @@ msgid "Since Python 3.6, in an :keyword:`async def` function, an :keyword:`!asyn
 msgstr "از پایتون 3.6، در یک تابع :keyword:`async def`، می‌توان از یک بند :keyword:`!async for` برای تکرار بر روی یک :term:`asynchronous iterator` استفاده کرد. یک درک در یک تابع :keyword:`!async def` می‌تواند شامل یک بند :keyword:`!for` یا :keyword:`!async for` پس از عبارت آغازین باشد، می‌تواند شامل بندهای :keyword:`!for` یا :keyword:`!async for` اضافی باشد، و همچنین می‌تواند از عبارت‌های :keyword:`await` استفاده کند."
 
 msgid "If a comprehension contains :keyword:`!async for` clauses, or if it contains :keyword:`!await` expressions or other asynchronous comprehensions anywhere except the iterable expression in the leftmost :keyword:`!for` clause, it is called an :dfn:`asynchronous comprehension`. An asynchronous comprehension may suspend the execution of the coroutine function in which it appears. See also :pep:`530`."
-msgstr "اگر یک درک شامل بندهای :keyword:`!async for` باشد، یا شامل عبارت‌های :keyword:`!await` یا دیگر درک‌های ناهمگام در هر جایی به‌جز عبارت پیمایش‌پذیر در چپ‌ترین بند :keyword:`!for` باشد، به آن :dfn:`درک ناهمگام <asynchronous comprehension>` گفته می‌شود. یک درک ناهمگام ممکن است اجرای تابع هم‌روالی که در آن ظاهر می‌شود را معلق کند. همچنین :pep:`530` را ببینید."
+msgstr "اگر یک درک شامل بندهای :keyword:`!async for` باشد، یا شامل عبارت‌های :keyword:`!await` یا دیگر درک‌های ناهمگام در هر جایی به‌جز عبارت پیمایش‌پذیر در چپ‌ترین بند :keyword:`!for` باشد، به آن :dfn:`درک ناهمگام (asynchronous comprehension)` گفته می‌شود. یک درک ناهمگام ممکن است اجرای تابع هم‌روالی که در آن ظاهر می‌شود را معلق کند. همچنین :pep:`530` را ببینید."
 
 msgid "Asynchronous comprehensions were introduced."
 msgstr "درک‌های ناهمگام معرفی شدند."
@@ -366,7 +366,7 @@ msgid "If a comma-separated sequence of dict items is given, they are evaluated 
 msgstr "اگر دنباله‌ای از آیتم‌های دیکشنری که با کاما از هم جدا شده‌اند داده شود، آن‌ها از چپ به راست ارزیابی می‌شوند تا ورودی‌های دیکشنری را تعریف کنند: هر شیء کلید به‌عنوان کلیدی در دیکشنری برای ذخیره مقدار متناظر استفاده می‌شود. این بدان معناست که شما می‌توانید یک کلید را چندین بار در فهرست آیتم‌های دیکشنری مشخص کنید و مقدار دیکشنری نهایی برای آن کلید، آخرین مقدار داده‌شده خواهد بود."
 
 msgid "A double asterisk ``**`` denotes :dfn:`dictionary unpacking`. Its operand must be a :term:`mapping`.  Each mapping item is added to the new dictionary.  Later values replace values already set by earlier dict items and earlier dictionary unpackings."
-msgstr "نماد دو ستاره ``**`` نشان‌دهنده :dfn:`واگشایی دیکشنری <dictionary unpacking>` است. عملوند آن باید یک :term:`نگاشت <mapping>` باشد. هر آیتم از نگاشت به دیکشنری جدید اضافه می‌شود. مقادیر بعدی جایگزین مقادیری می‌شوند که از پیش توسط آیتم‌های دیکشنری پیشین و واگشایی‌های دیکشنری پیشین تعیین شده‌اند."
+msgstr "نماد دو ستاره ``**`` نشان‌دهنده :dfn:`واگشایی دیکشنری (dictionary unpacking)` است. عملوند آن باید یک :term:`نگاشت <mapping>` باشد. هر آیتم از نگاشت به دیکشنری جدید اضافه می‌شود. مقادیر بعدی جایگزین مقادیری می‌شوند که از پیش توسط آیتم‌های دیکشنری پیشین و واگشایی‌های دیکشنری پیشین تعیین شده‌اند."
 
 msgid "Unpacking into dictionary displays, originally proposed by :pep:`448`."
 msgstr "واگشایی در نمایش‌های دیکشنری، که در ابتدا در :pep:`448` پیشنهاد شده بود."
@@ -384,7 +384,7 @@ msgid "Generator expressions"
 msgstr "عبارت‌های تولیدگر"
 
 msgid "The syntax for :dfn:`generator expressions` is the same as for list :ref:`comprehensions <comprehensions>`, except that they are enclosed in parentheses instead of brackets. For example::"
-msgstr "سینتکس :dfn:`عبارت‌های تولیدگر <generator expressions>` همانند :ref:`درک‌های فهرستی <comprehensions>` است، با این تفاوت که آن‌ها به جای کروشه در پرانتز قرار می‌گیرند. برای مثال::"
+msgstr "سینتکس :dfn:`عبارت‌های تولیدگر (generator expressions)` همانند :ref:`درک‌های فهرستی <comprehensions>` است، با این تفاوت که آن‌ها به جای کروشه در پرانتز قرار می‌گیرند. برای مثال::"
 
 msgid ""
 ">>> iterator = (x ** 2 for x in range(10))\n"
@@ -510,7 +510,7 @@ msgid "To avoid interfering with the expected operation of the generator express
 msgstr "برای جلوگیری از اخلال در عملکرد مورد انتظار خود عبارت تولیدگر، عبارت‌های ``yield`` و ``yield from`` در محدوده تودرتوی ضمنی ممنوع هستند."
 
 msgid "If a generator expression contains either :keyword:`!async for` clauses or :keyword:`await` expressions it is called an :dfn:`asynchronous generator expression`. An asynchronous generator expression returns a new asynchronous generator object, which is an asynchronous iterator (see :ref:`async-iterators`)."
-msgstr "اگر یک عبارت تولیدگر شامل بندهای :keyword:`!async for` یا عبارات :keyword:`await` باشد، به آن :dfn:`عبارت تولیدگر ناهمگام <asynchronous generator expression>` گفته می‌شود. یک عبارت تولیدگر ناهمگام یک شیء تولیدگر ناهمگام جدید برمی‌گرداند که یک پیمایش‌گر ناهمگام است (به :ref:`async-iterators` مراجعه کنید)."
+msgstr "اگر یک عبارت تولیدگر شامل بندهای :keyword:`!async for` یا عبارات :keyword:`await` باشد، به آن :dfn:`عبارت تولیدگر ناهمگام (asynchronous generator expression)` گفته می‌شود. یک عبارت تولیدگر ناهمگام یک شیء تولیدگر ناهمگام جدید برمی‌گرداند که یک پیمایش‌گر ناهمگام است (به :ref:`async-iterators` مراجعه کنید)."
 
 msgid "The formal grammar for generator expressions is:"
 msgstr "دستور زبان صوری عبارت‌های تولیدگر:"
@@ -758,7 +758,7 @@ msgid "Subscriptions and slicings"
 msgstr "زیرنویسی‌ها و اسلایس کردن‌ها"
 
 msgid "The :dfn:`subscription` syntax is usually used for selecting an element from a :ref:`container <sequence-types>` -- for example, to get a value from a :class:`dict`::"
-msgstr "سینتکس :dfn:`زیرنویسی <subscription>` معمولاً برای انتخاب یک عنصر از یک :ref:`ظرف <sequence-types>` استفاده می‌شود -- برای مثال، برای دریافت یک مقدار از یک :class:`dict`::"
+msgstr "سینتکس :dfn:`زیرنویسی (subscription)` معمولاً برای انتخاب یک عنصر از یک :ref:`ظرف <sequence-types>` استفاده می‌شود -- برای مثال، برای دریافت یک مقدار از یک :class:`dict`::"
 
 msgid ""
 ">>> digits_by_name = {'one': 1, 'two': 2}\n"
@@ -770,7 +770,7 @@ msgstr ""
 "2"
 
 msgid "In the subscription syntax, the object being subscribed -- a :ref:`primary <primaries>` -- is followed by a :dfn:`subscript` in square brackets. In the simplest case, the subscript is a single expression."
-msgstr "در سینتکس زیرنویسی (subscription)، پس از شیء مورد زیرنویسی — یک :ref:`اولیه <primaries>` — یک :dfn:`زیرنویس (subscript) <subscript>` در کروشه‌های مربع قرار می‌گیرد. در ساده‌ترین حالت، زیرنویس یک عبارت واحد است."
+msgstr "در سینتکس زیرنویسی (subscription)، پس از شیء مورد زیرنویسی — یک :ref:`اولیه <primaries>` — یک :dfn:`زیرنویس (subscript)` در کروشه‌های مربع قرار می‌گیرد. در ساده‌ترین حالت، زیرنویس یک عبارت واحد است."
 
 msgid "Depending on the type of the object being subscribed, the subscript is sometimes called a :term:`key` (for mappings), :term:`index` (for sequences), or *type argument* (for :term:`generic types <generic type>`). Syntactically, these are all equivalent::"
 msgstr "بسته به نوع شیءای که زیرنویس بر آن اعمال می‌شود، زیرنویس گاهی :term:`کلید <key>` (برای نگاشت‌ها)، :term:`اندیس <index>` (برای دنباله‌ها)، یا *آرگومان نوع* (برای :term:`انواع عام <generic type>`) نامیده می‌شود. از نظر سینتکسی، همه این‌ها معادل هستند::"
@@ -847,7 +847,7 @@ msgid "Slicings"
 msgstr "اسلایس‌ها"
 
 msgid "A more advanced form of subscription, :dfn:`slicing`, is commonly used to extract a portion of a :ref:`sequence <datamodel-sequences>`. In this form, the subscript is a :term:`slice`: up to three expressions separated by colons. Any of the expressions may be omitted, but a slice must contain at least one colon::"
-msgstr "شکل پیشرفته‌تری از زیرنویسی، یعنی :dfn:`اسلایس کردن <slicing>`، معمولاً برای استخراج بخشی از یک :ref:`دنباله <datamodel-sequences>` استفاده می‌شود. در این حالت، زیرنویس یک :term:`اسلایس <slice>` است: حداکثر سه عبارت که با دونقطه از یکدیگر جدا شده‌اند. هر یک از عبارت‌ها ممکن است حذف شود، اما یک اسلایس باید دست‌کم شامل یک دونقطه باشد::"
+msgstr "شکل پیشرفته‌تری از زیرنویسی، یعنی :dfn:`اسلایس کردن (slicing)`، معمولاً برای استخراج بخشی از یک :ref:`دنباله <datamodel-sequences>` استفاده می‌شود. در این حالت، زیرنویس یک :term:`اسلایس <slice>` است: حداکثر سه عبارت که با دونقطه از یکدیگر جدا شده‌اند. هر یک از عبارت‌ها ممکن است حذف شود، اما یک اسلایس باید دست‌کم شامل یک دونقطه باشد::"
 
 msgid ""
 ">>> number_names = ['zero', 'one', 'two', 'three', 'four', 'five']\n"
@@ -1208,7 +1208,7 @@ msgid "Unlike C, all comparison operations in Python have the same priority, whi
 msgstr "برخلاف C، تمام عملیات مقایسه‌ای در پایتون اولویت یکسانی دارند که از اولویت هر عملیات حسابی، جابه‌جایی یا عملیات بیت‌به‌بیتی پایین‌تر است. همچنین برخلاف C، عبارت‌هایی مانند ``a < b < c`` تفسیری دارند که در ریاضیات مرسوم است:"
 
 msgid "Comparisons yield boolean values: ``True`` or ``False``. Custom :dfn:`rich comparison methods` may return non-boolean values. In this case Python will call :func:`bool` on such value in boolean contexts."
-msgstr "مقایسه‌ها مقادیر بولی را حاصل می‌کنند: ``True`` یا ``False``. ممکن است :dfn:`متدهای مقایسه غنی <rich comparison methods>` سفارشی، مقادیر غیربولی برگردانند. در این صورت، پایتون در زمینه‌های بولی، :func:`bool` را روی چنین مقداری فراخوانی می‌کند."
+msgstr "مقایسه‌ها مقادیر بولی را حاصل می‌کنند: ``True`` یا ``False``. ممکن است :dfn:`متدهای مقایسه غنی (rich comparison methods)` سفارشی، مقادیر غیربولی برگردانند. در این صورت، پایتون در زمینه‌های بولی، :func:`bool` را روی چنین مقداری فراخوانی می‌کند."
 
 msgid "Comparisons can be chained arbitrarily, e.g., ``x < y <= z`` is equivalent to ``x < y and y <= z``, except that ``y`` is evaluated only once (but in both cases ``z`` is not evaluated at all when ``x < y`` is found to be false)."
 msgstr "می‌توان مقایسه‌ها را به‌صورت دلخواه زنجیره‌ای کرد، برای مثال ``x < y <= z`` معادل ``x < y and y <= z`` است، با این تفاوت که ``y`` تنها یک بار ارزیابی می‌شود (اما در هر دو حالت، وقتی ``x < y`` نادرست باشد، ``z`` اصلاً ارزیابی نمی‌شود)."
@@ -1229,7 +1229,7 @@ msgid "Chapter :ref:`objects` states that objects have a value (in addition to t
 msgstr "فصل :ref:`objects` بیان می‌کند که اشیاء دارای یک مقدار هستند (علاوه بر نوع و هویت). مقدار یک شیء در پایتون مفهومی نسبتاً انتزاعی است: برای مثال، هیچ روش دسترسی کانونیکالی برای مقدار یک شیء وجود ندارد. همچنین الزامی وجود ندارد که مقدار یک شیء به شکل خاصی ساخته شود، مثلاً از تمام ویژگی‌های داده‌ای آن تشکیل شده باشد. عملگرهای مقایسه‌ای مفهوم خاصی از اینکه مقدار یک شیء چیست را پیاده‌سازی می‌کنند. می‌توان آن‌ها را به‌عنوان تعریف‌کننده‌ی مقدار یک شیء به‌صورت غیرمستقیم، از طریق پیاده‌سازی مقایسه‌ی خود در نظر گرفت."
 
 msgid "Because all types are (direct or indirect) subtypes of :class:`object`, they inherit the default comparison behavior from :class:`object`.  Types can customize their comparison behavior by implementing :dfn:`rich comparison methods` like :meth:`~object.__lt__`, described in :ref:`customization`."
-msgstr "از آنجا که همه انواع (مستقیم یا غیرمستقیم) زیرنوع‌هایی از :class:`object` هستند، رفتار مقایسه پیش‌فرض را از :class:`object` به ارث می‌برند. انواع می‌توانند رفتار مقایسه خود را با پیاده‌سازی :dfn:`متدهای مقایسه غنی <rich comparison methods>` مانند :meth:`~object.__lt__` سفارشی‌سازی کنند، همان‌طور که در :ref:`customization` توضیح داده شده است."
+msgstr "از آنجا که همه انواع (مستقیم یا غیرمستقیم) زیرنوع‌هایی از :class:`object` هستند، رفتار مقایسه پیش‌فرض را از :class:`object` به ارث می‌برند. انواع می‌توانند رفتار مقایسه خود را با پیاده‌سازی :dfn:`متدهای مقایسه غنی (rich comparison methods)` مانند :meth:`~object.__lt__` سفارشی‌سازی کنند، همان‌طور که در :ref:`customization` توضیح داده شده است."
 
 msgid "The default behavior for equality comparison (``==`` and ``!=``) is based on the identity of the objects.  Hence, equality comparison of instances with the same identity results in equality, and equality comparison of instances with different identities results in inequality.  A motivation for this default behavior is the desire that all objects should be reflexive (i.e. ``x is y`` implies ``x == y``)."
 msgstr "رفتار پیش‌فرض برای مقایسه برابری (``==`` و ``!=``) بر اساس هویت اشیء است. بنابراین، مقایسه برابری نمونه‌هایی با هویت یکسان منجر به برابری می‌شود، و مقایسه برابری نمونه‌هایی با هویت‌های متفاوت منجر به نابرابری می‌شود. انگیزه این رفتار پیش‌فرض، این خواست است که همه اشیء باید بازتابی باشند (یعنی ``x is y`` دلالت بر ``x == y`` دارد)."
@@ -1460,7 +1460,7 @@ msgid "Except when part of a list or set display, an expression list containing 
 msgstr "مگر وقتی که بخشی از یک نمایش فهرست یا مجموعه باشد، یک فهرست عبارت شامل حداقل یک ویرگول، یک تاپل حاصل می‌دهد. طول تاپل برابر تعداد عبارت‌های داخل فهرست است. عبارت‌ها از چپ به راست ارزیابی می‌شوند."
 
 msgid "An asterisk ``*`` denotes :dfn:`iterable unpacking`.  Its operand must be an :term:`iterable`.  The iterable is expanded into a sequence of items, which are included in the new tuple, list, or set, at the site of the unpacking."
-msgstr "ستاره ``*`` نشان‌دهنده‌ی :dfn:`واگشایی پیمایش‌پذیر <iterable unpacking>` است. عملوند آن باید یک :term:`پیمایش‌پذیر <iterable>` باشد. این پیمایش‌پذیر به دنباله‌ای از آیتم‌ها بسط داده می‌شود که در محل واگشایی، در تاپل، فهرست یا مجموعه‌ی جدید گنجانده می‌شوند."
+msgstr "ستاره ``*`` نشان‌دهنده‌ی :dfn:`واگشایی پیمایش‌پذیر (iterable unpacking)` است. عملوند آن باید یک :term:`پیمایش‌پذیر <iterable>` باشد. این پیمایش‌پذیر به دنباله‌ای از آیتم‌ها بسط داده می‌شود که در محل واگشایی، در تاپل، فهرست یا مجموعه‌ی جدید گنجانده می‌شوند."
 
 msgid "Iterable unpacking in expression lists, originally proposed by :pep:`448`."
 msgstr "واگشایی پیمایش‌پذیرها در فهرست‌های عبارت، که در ابتدا در :pep:`448` پیشنهاد شد."
@@ -1628,7 +1628,7 @@ msgid "If x is very close to an exact integer multiple of y, it's possible for `
 msgstr "اگر x بسیار نزدیک به یک مضرب عدد صحیح دقیق از y باشد، ممکن است ``x//y`` به‌دلیل گرد کردن ۱ واحد بزرگ‌تر از ``(x-x%y)//y`` باشد. در چنین مواردی، پایتون نتیجه‌ی دوم را برمی‌گرداند تا حفظ شود که ``divmod(x,y)[0] * y + x % y`` بسیار نزدیک به ``x`` باشد."
 
 msgid "The Unicode standard distinguishes between :dfn:`code points` (e.g. U+0041) and :dfn:`abstract characters` (e.g. \"LATIN CAPITAL LETTER A\"). While most abstract characters in Unicode are only represented using one code point, there is a number of abstract characters that can in addition be represented using a sequence of more than one code point.  For example, the abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\" can be represented as a single :dfn:`precomposed character` at code position U+00C7, or as a sequence of a :dfn:`base character` at code position U+0043 (LATIN CAPITAL LETTER C), followed by a :dfn:`combining character` at code position U+0327 (COMBINING CEDILLA)."
-msgstr "استاندارد یونیکد میان :dfn:`نقاط کد (code points) <code points>` (مثلاً U+0041) و :dfn:`نویسه‌های انتزاعی (abstract characters) <abstract characters>` (مثلاً \"LATIN CAPITAL LETTER A\") تمایز قائل می‌شود. در حالی که بیشتر نویسه‌های انتزاعی در یونیکد تنها با استفاده از یک نقطه کد بازنمایی می‌شوند، تعدادی از نویسه‌های انتزاعی وجود دارند که علاوه بر این می‌توانند با استفاده از دنباله‌ای از بیش از یک نقطه کد نیز بازنمایی شوند. برای مثال، نویسه انتزاعی \"LATIN CAPITAL LETTER C WITH CEDILLA\" می‌تواند به‌عنوان یک :dfn:`نویسه پیش‌ترکیب‌شده (precomposed character) <precomposed character>` در موقعیت کد U+00C7 بازنمایی شود، یا به‌عنوان دنباله‌ای از یک :dfn:`نویسه پایه (base character) <base character>` در موقعیت کد U+0043 (LATIN CAPITAL LETTER C) و به‌دنبال آن یک :dfn:`نویسه ترکیبی (combining character) <combining character>` در موقعیت کد U+0327 (COMBINING CEDILLA) بازنمایی شود."
+msgstr "استاندارد یونیکد میان :dfn:`نقاط کد (code points)` (مثلاً U+0041) و :dfn:`نویسه‌های انتزاعی (abstract characters)` (مثلاً \"LATIN CAPITAL LETTER A\") تمایز قائل می‌شود. در حالی که بیشتر نویسه‌های انتزاعی در یونیکد تنها با استفاده از یک نقطه کد بازنمایی می‌شوند، تعدادی از نویسه‌های انتزاعی وجود دارند که علاوه بر این می‌توانند با استفاده از دنباله‌ای از بیش از یک نقطه کد نیز بازنمایی شوند. برای مثال، نویسه انتزاعی \"LATIN CAPITAL LETTER C WITH CEDILLA\" می‌تواند به‌عنوان یک :dfn:`نویسه پیش‌ترکیب‌شده (precomposed character)` در موقعیت کد U+00C7 بازنمایی شود، یا به‌عنوان دنباله‌ای از یک :dfn:`نویسه پایه (base character)` در موقعیت کد U+0043 (LATIN CAPITAL LETTER C) و به‌دنبال آن یک :dfn:`نویسه ترکیبی (combining character)` در موقعیت کد U+0327 (COMBINING CEDILLA) بازنمایی شود."
 
 msgid "The comparison operators on strings compare at the level of Unicode code points. This may be counter-intuitive to humans.  For example, ``\"\\u00C7\" == \"\\u0043\\u0327\"`` is ``False``, even though both strings represent the same abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\"."
 msgstr "عملگرهای مقایسه روی رشته‌ها، مقایسه را در سطح نقاط کد یونیکد انجام می‌دهند. این موضوع ممکن است برای انسان‌ها غیرشهودی باشد. برای مثال، ``\"\\u00C7\" == \"\\u0043\\u0327\"`` برابر ``False`` است، با وجود اینکه هر دو رشته نشان‌دهنده‌ی همان نویسه‌ی انتزاعی «LATIN CAPITAL LETTER C WITH CEDILLA» هستند."

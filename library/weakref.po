@@ -31,7 +31,7 @@ msgid "**Source code:** :source:`Lib/weakref.py`"
 msgstr "**کد منبع:** :source:`Lib/weakref.py`"
 
 msgid "The :mod:`!weakref` module allows the Python programmer to create :dfn:`weak references` to objects."
-msgstr "ماژول :mod:`!weakref` به برنامه‌نویس پایتون اجازه می‌دهد تا :dfn:`ارجاع‌های ضعیف <weak references>` به اشیاء ایجاد کند."
+msgstr "ماژول :mod:`!weakref` به برنامه‌نویس پایتون اجازه می‌دهد تا :dfn:`ارجاع‌های ضعیف (weak references)` به اشیاء ایجاد کند."
 
 msgid "In the following, the term :dfn:`referent` means the object which is referred to by a weak reference."
 msgstr "در ادامه، اصطلاح :dfn:`referent` به معنای شیءای است که یک ارجاع ضعیف به آن اشاره می‌کند."
