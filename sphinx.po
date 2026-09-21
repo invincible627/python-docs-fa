@@ -1393,178 +1393,180 @@ msgid "writing mimetype file..."
 msgstr "در حال نوشتن پرونده‌ی mimetype..."
 
 msgid "writing META-INF/container.xml file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی META-INF/container.xml..."
 
 msgid "writing content.opf file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی content.opf..."
 
 #, python-format
 msgid "unknown mimetype for %s, ignoring"
-msgstr ""
+msgstr "mimetype ناشناخته برای %s، نادیده گرفته می‌شود"
 
 msgid "node has an invalid level"
-msgstr ""
+msgstr "گره سطح نامعتبری دارد"
 
 msgid "writing toc.ncx file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی toc.ncx..."
 
 #, python-format
 msgid "writing %s file..."
-msgstr ""
+msgstr "در حال نوشتن پرونده‌ی %s..."
 
 msgid "The dummy builder generates no files."
-msgstr ""
+msgstr "سازنده‌ی ساختگی هیچ پرونده‌ای تولید نمی‌کند."
 
 #, python-format
 msgid "The message catalogs are in %(outdir)s."
-msgstr ""
+msgstr "کاتالوگ‌های پیام در %(outdir)s هستند."
 
 #, python-format
 msgid "targets for %d template files"
-msgstr ""
+msgstr "هدف‌ها برای %d پرونده‌ی قالب"
 
 msgid "reading templates... "
-msgstr ""
+msgstr "در حال خواندن قالب‌ها... "
 
 msgid "writing message catalogs... "
-msgstr ""
+msgstr "در حال نوشتن کاتالوگ‌های پیام... "
 
 #, python-format
 msgid "The HTML page is in %(outdir)s."
-msgstr ""
+msgstr "صفحه‌ی HTML در %(outdir)s است."
 
 msgid "assembling single document"
-msgstr ""
+msgstr "در حال سرهم‌بندی سند واحد"
 
 msgid "writing additional files"
-msgstr ""
+msgstr "در حال نوشتن پرونده‌های اضافی"
 
 #, python-format
 msgid "Look for any errors in the above output or in %(outdir)s/output.txt"
-msgstr ""
+msgstr "هر خطایی را در خروجی بالا یا در %(outdir)s/output.txt جست‌وجو کنید"
 
 #, python-format
 msgid "broken link: %s (%s)"
-msgstr ""
+msgstr "پیوند شکسته: %s (%s)"
 
 #, python-format
 msgid "Anchor '%s' not found"
-msgstr ""
+msgstr "لنگر '%s' یافت نشد"
 
 #, python-format
 msgid "Failed to compile regex in linkcheck_allowed_redirects: %r %s"
-msgstr ""
+msgstr "کامپایل regex در linkcheck_allowed_redirects ناموفق بود: %r %s"
 
 #, python-format
 msgid "The text files are in %(outdir)s."
-msgstr ""
+msgstr "پرونده‌های متنی در %(outdir)s هستند."
 
 #, python-brace-format
 msgid "inconsistent footnote references in translated message. original: {0}, translated: {1}"
-msgstr ""
+msgstr "ارجاعات پانویس ناسازگار در پیام ترجمه‌شده. اصلی: {0}، ترجمه‌شده: {1}"
 
 #, python-brace-format
 msgid "inconsistent references in translated message. original: {0}, translated: {1}"
-msgstr ""
+msgstr "ارجاعات ناسازگار در پیام ترجمه‌شده. اصلی: {0}، ترجمه‌شده: {1}"
 
 #, python-brace-format
 msgid "inconsistent citation references in translated message. original: {0}, translated: {1}"
-msgstr ""
+msgstr "ارجاعات استنادی ناسازگار در پیام ترجمه‌شده. اصلی: {0}، ترجمه‌شده: {1}"
 
 #, python-brace-format
 msgid "inconsistent term references in translated message. original: {0}, translated: {1}"
-msgstr ""
+msgstr "ارجاعات اصطلاحی ناسازگار در پیام ترجمه‌شده. اصلی: {0}، ترجمه‌شده: {1}"
 
 #, python-format
 msgid "%b %d, %Y"
-msgstr ""
+msgstr "%b %d, %Y"
 
 msgid "could not calculate translation progress!"
-msgstr ""
+msgstr "نمی‌توان پیشرفت ترجمه را محاسبه کرد!"
 
 msgid "no translated elements!"
-msgstr ""
+msgstr "هیچ عنصر ترجمه‌شده‌ای وجود ندارد!"
 
 #, python-format
 msgid "4 column based index found. It might be a bug of extensions you use: %r"
-msgstr ""
+msgstr "اندیس مبتنی بر ۴ ستون یافت شد. ممکن است اشکالی از افزونه‌هایی باشد که استفاده می‌کنید: %r"
 
 #, python-format
 msgid "Footnote [%s] is not referenced."
-msgstr ""
+msgstr "پاورقی [%s] ارجاع داده نشده است."
 
 msgid "Footnote [*] is not referenced."
-msgstr ""
+msgstr "پاورقی [*] ارجاع داده نشده است."
 
 msgid "Footnote [#] is not referenced."
-msgstr ""
+msgstr "پاورقی [#] ارجاع داده نشده است."
 
 msgid "Usage:"
-msgstr ""
+msgstr "کاربرد:"
 
 #, python-brace-format
 msgid "{0} [OPTIONS] <COMMAND> [<ARGS>]"
-msgstr ""
+msgstr "{0} [OPTIONS] <COMMAND> [<ARGS>]"
 
 msgid "  The Sphinx documentation generator."
-msgstr ""
+msgstr "  تولیدکننده‌ی مستندات Sphinx."
 
 msgid "Commands:"
-msgstr ""
+msgstr "دستورات:"
 
 msgid "Options"
 msgstr "گزینه‌ها"
 
 msgid "For more information, visit https://www.sphinx-doc.org/en/master/man/."
-msgstr ""
+msgstr "برای اطلاعات بیشتر، به https://www.sphinx-doc.org/en/master/man/ مراجعه کنید."
 
 #, python-brace-format
 msgid ""
 "{0}: error: {1}\n"
 "Run '{0} --help' for information"
 msgstr ""
+"{0}: خطا: {1}\n"
+"برای کسب اطلاعات '{0} --help' را اجرا کنید"
 
 msgid "   Manage documentation with Sphinx."
-msgstr ""
+msgstr "   مدیریت مستندات با Sphinx."
 
 msgid "Show the version and exit."
-msgstr ""
+msgstr "نمایش نسخه و خروج."
 
 msgid "Show this message and exit."
-msgstr ""
+msgstr "نمایش این پیام و خروج."
 
 msgid "Logging"
-msgstr ""
+msgstr "گزارش‌گیری"
 
 msgid "Increase verbosity (can be repeated)"
-msgstr ""
+msgstr "افزایش پرگویی (قابل تکرار)"
 
 msgid "Only print errors and warnings."
-msgstr ""
+msgstr "فقط خطاها و هشدارها را چاپ کن."
 
 msgid "No output at all"
-msgstr ""
+msgstr "هیچ خروجی‌ای"
 
 msgid "<command>"
-msgstr ""
+msgstr "<command>"
 
 msgid "See 'sphinx --help'.\n"
-msgstr ""
+msgstr "به 'sphinx --help' مراجعه کنید.\n"
 
 msgid "new config"
-msgstr ""
+msgstr "پیکربندی جدید"
 
 msgid "config changed"
-msgstr ""
+msgstr "پیکربندی تغییر کرد"
 
 msgid "extensions changed"
-msgstr ""
+msgstr "افزونه‌ها تغییر کردند"
 
 msgid "build environment version not current"
-msgstr ""
+msgstr "نسخه‌ی محیط ساخت فعلی نیست"
 
 msgid "source directory has changed"
-msgstr ""
+msgstr "پوشه‌ی مبدأ تغییر کرده است"
 
 #, python-format
 msgid "The configuration has changed (1 option: %r)"
