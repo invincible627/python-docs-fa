@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-21 11:59+0000\n"
-"PO-Revision-Date: 2026-09-14 10:04+0330\n"
+"PO-Revision-Date: 2026-09-21 15:40+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -291,9 +291,8 @@ msgstr "تابعی که برای اشیایی فراخوانی می‌شود ک�
 msgid "If ``True``, dictionaries will be outputted sorted by key. Default ``False``."
 msgstr "اگر ``True`` باشد، دیکشنری‌ها بر اساس کلید مرتب‌شده خروجی داده می‌شوند. پیش‌فرض ``False`` است."
 
-#, fuzzy
 msgid "Keys in key/value pairs of JSON are always of the type :class:`str`. When a dictionary is converted into JSON, all the keys of the dictionary are converted to strings. As a result of this, if a dictionary is converted into JSON and then back into a dictionary, the dictionary may not equal the original one. That is, ``loads(dumps(x)) != x`` if x has non-string keys. *sort_keys* sorts the keys before they are converted to strings, so numeric keys are sorted by value, not by their string representation."
-msgstr "کلیدها در جفت‌های کلید/مقدارِ JSON همیشه از نوع :class:`str` هستند. وقتی یک دیکشنری به JSON تبدیل می‌شود، تمام کلیدهای دیکشنری به رشته‌ها تبدیل می‌شوند. در نتیجه، اگر یک دیکشنری به JSON و سپس دوباره به دیکشنری تبدیل شود، دیکشنری حاصل ممکن است با دیکشنری اصلی برابر نباشد. یعنی، ``loads(dumps(x)) != x`` اگر x کلیدهای غیررشته‌ای داشته باشد. *sort_keys* کلیدها را قبل از تبدیل به رشته مرتب می‌کند، بنابراین کلیدهای عددی بر اساس مقدارشان مرتب می‌شوند، نه بر اساس نمایش رشته‌ای‌شان."
+msgstr "کلیدهای جفت‌های کلید/مقدار JSON همیشه از نوع :class:`str` هستند. هنگامی که یک دیکشنری به JSON تبدیل می‌شود، همه‌ی کلیدهای دیکشنری به رشته تبدیل می‌شوند. در نتیجه، اگر یک دیکشنری به JSON تبدیل و سپس دوباره به دیکشنری تبدیل شود، ممکن است دیکشنری حاصل با دیکشنری اصلی برابر نباشد. به بیان دیگر، اگر `x` دارای کلیدهای غیررشته‌ای باشد، آنگاه ``loads(dumps(x)) != x`` خواهد بود. *sort_keys* کلیدها را پیش از تبدیل آن‌ها به رشته مرتب می‌کند؛ بنابراین، کلیدهای عددی بر اساس مقدارشان مرتب می‌شوند، نه بر اساس نمایش رشته‌ای آن‌ها."
 
 msgid "Allow strings for *indent* in addition to integers."
 msgstr "پذیرش رشته‌ها برای *indent* علاوه بر اعداد صحیح."
