@@ -30,7 +30,7 @@ from pathlib import Path
 
 import polib
 
-ROLE_PATTERN = re.compile(r":(?:\w+:)?[\w.-]+:`([^`]+)`")
+ROLE_PATTERN = re.compile(r":((?:\w+:)?[\w.-]+):`([^`]+)`")
 # Sphinx itself accepts `label<target>` (no space) as well as the more
 # common `label <target>` -- both are valid RST role syntax, and the
 # upstream English source uses the no-space form in a few places (e.g.
@@ -64,6 +64,10 @@ RAW_STRING_LINE = re.compile(
     r'^(?:msgid|msgstr(?:\[\d+\])?|msgctxt)?\s*"((?:[^"\\]|\\.)*)"\s*$'
 )
 
+DISPLAY_ONLY_ROLES = {"dfn", "kbd", "guilabel", "menuselection", "samp", "file"}
+
+DFN_PATTERN = re.compile(r":dfn:`")
+DFN_ANGLE = re.compile(r":dfn:`[^`]*<[^`>]+>`")
 
 def find_invalid_escapes_in_raw(raw: str):
     """Scan raw (undecoded) quoted-string content left-to-right the way
@@ -113,10 +117,12 @@ def check_raw_escapes(path: Path):
 
 def extract_role_targets(text: str):
     """For each Sphinx role, return its target: the <target> anchor if
-    present, otherwise the role's full display text (which IS the target
-    when there's no explicit anchor)."""
+    present, otherwise the role's full display text. Display-only roles
+    (like :dfn:) are skipped, since their text is translatable."""
     targets = []
-    for body in ROLE_PATTERN.findall(text):
+    for role, body in ROLE_PATTERN.findall(text):
+        if role in DISPLAY_ONLY_ROLES:
+            continue
         m = TARGET_PATTERN.match(body)
         targets.append(m.group(2).strip() if m else body.strip())
     return targets
@@ -142,6 +148,16 @@ def check_file(path: Path):
                 findings.append(f"missing role target(s): {missing}")
             if extra:
                 findings.append(f"role target(s) not in source: {extra}")
+
+        # --- :dfn: checks (display-only role, so compare count, not text) ---
+        msgid_dfn_count = len(DFN_PATTERN.findall(entry.msgid))
+        msgstr_dfn_count = len(DFN_PATTERN.findall(entry.msgstr))
+        if msgid_dfn_count != msgstr_dfn_count:
+            findings.append(
+                f":dfn: count differs ({msgid_dfn_count} vs {msgstr_dfn_count})"
+            )
+        if DFN_ANGLE.search(entry.msgstr):
+            findings.append(":dfn: contains <...>, which Sphinx renders literally")
 
         for label, pattern in LITERAL_PATTERNS:
             expected = Counter(pattern.findall(entry.msgid))
