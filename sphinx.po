@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-22 13:47+0330\n"
+"PO-Revision-Date: 2026-09-22 15:22+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -405,10 +405,10 @@ msgstr "نمی‌توان پوشه‌ی مبدأ (%s) را پیدا کرد."
 
 #, python-format
 msgid "Output directory (%s) is not a directory"
-msgstr "پوشه‌ی خروجی (%s) یک پوشه نیست."
+msgstr "پوشه‌ی خروجی (%s) یک پوشه نیست"
 
 msgid "Source directory and destination directory cannot be identical"
-msgstr "پوشه‌ی مبدأ و پوشه‌ی مقصد نمی‌توانند یکسان باشند."
+msgstr "پوشه‌ی مبدأ و پوشه‌ی مقصد نمی‌توانند یکسان باشند"
 
 #, python-format
 msgid "Running Sphinx v%s"
@@ -795,7 +795,7 @@ msgstr "افزونه‌ی %r یک شیء پشتیبانی‌نشده از تاب
 
 #, python-format
 msgid "`None` is not a valid filetype for %r."
-msgstr "`None` یک نوع پرونده‌ی معتبر برای %r نیست"
+msgstr "`None` یک نوع پرونده‌ی معتبر برای %r نیست."
 
 #, python-format
 msgid "Common Vulnerabilities and Exposures; CVE %s"
@@ -1130,7 +1130,7 @@ msgstr "پرونده‌ی نمای کلی در %(outdir)s است."
 
 #, python-format
 msgid "no changes in version %s."
-msgstr "هیچ تغییری در نسخه‌ی %s نبوده"
+msgstr "هیچ تغییری در نسخه‌ی %s نبوده."
 
 msgid "writing summary file..."
 msgstr "در حال نوشتن پرونده‌ی خلاصه..."
@@ -1615,7 +1615,7 @@ msgstr "locale_dir %s وجود ندارد"
 
 #, python-format
 msgid "Invalid Babel locale: %r."
-msgstr "locale نامعتبر Babel: %r."
+msgstr "نامعتبر بودن locale Babel: %r."
 
 #, python-format
 msgid "Invalid date format. Quote the string by single quote if you want to output it directly: %s"
@@ -1737,7 +1737,7 @@ msgstr "نوع ورودی اندیس ناشناخته‌ی %s یافت شد"
 
 #, python-format
 msgid "Invalid math_eqref_format: %r"
-msgstr "math_eqref_format نامعتبر: %r"
+msgstr "نامعتبر بودن math_eqref_format: %r"
 
 msgid "Link to this definition"
 msgstr "پیوند به این تعریف"
@@ -1769,73 +1769,73 @@ msgid "Link to this toctree"
 msgstr "پیوند به این توکتری"
 
 msgid "Could not obtain image size. :scale: option is ignored."
-msgstr ""
+msgstr "اندازه‌ی تصویر به‌دست نیامد. گزینه‌ی :scale: نادیده گرفته می‌شود."
 
 #, python-format
 msgid "%s %s"
-msgstr ""
+msgstr "%s %s"
 
 #, python-format
 msgid "duplicate label of equation %s, other instance in %s"
-msgstr ""
+msgstr "برچسب تکراری معادله‌ی %s، نمونه‌ی دیگر در %s"
 
 #, python-format
 msgid "%s() (built-in function)"
-msgstr ""
+msgstr "%s()(تابع توکار)"
 
 #, python-format
 msgid "%s() (%s method)"
-msgstr ""
+msgstr "%s() (%s متد)"
 
 #, python-format
 msgid "%s() (class)"
-msgstr ""
+msgstr "%s() (کلاس)"
 
 #, python-format
 msgid "%s (global variable or constant)"
-msgstr ""
+msgstr "%s (متغیر سراسری یا ثابت)"
 
 #, python-format
 msgid "%s (%s attribute)"
-msgstr ""
+msgstr "%s (%s ویژگی)"
 
 msgid "Arguments"
-msgstr ""
+msgstr "آرگومان‌ها"
 
 msgid "Throws"
-msgstr ""
+msgstr "پرتاب‌ها"
 
 msgid "Returns"
-msgstr ""
+msgstr "بازگشتی‌ها"
 
 msgid "Return type"
-msgstr ""
+msgstr "نوع بازگشتی"
 
 #, python-format
 msgid "%s (module)"
-msgstr ""
+msgstr "%s (ماژول)"
 
 msgid "function"
-msgstr ""
+msgstr "تابع"
 
 msgid "method"
-msgstr ""
+msgstr "متد"
 
 msgid "class"
-msgstr ""
+msgstr "کلاس"
 
 msgid "data"
-msgstr ""
+msgstr "داده"
 
 msgid "attribute"
-msgstr ""
+msgstr "ویژگی"
 
 msgid "module"
-msgstr ""
+msgstr "ماژول"
 
 #, python-format
 msgid "duplicate %s description of %s, other %s in %s"
-msgstr ""
+msgstr "توصیف %s تکراری از %s، %s دیگر در %s"
 
 #, python-format
 msgid "Added in version %s"
@@ -1855,125 +1855,127 @@ msgstr "حذف شده در نسخه‌ی %s"
 
 #, python-format
 msgid "%s (directive)"
-msgstr ""
+msgstr "%s (دایرکتیو)"
 
 #, python-format
 msgid ":%s: (directive option)"
-msgstr ""
+msgstr ":%s: (گزینه‌ی دایرکتیو)"
 
 #, python-format
 msgid "%s (role)"
-msgstr ""
+msgstr "%s (نقش)"
 
 msgid "directive"
-msgstr ""
+msgstr "دایرکتیو"
 
 msgid "directive-option"
-msgstr ""
+msgstr "گزینه‌ی دایرکتیو"
 
 msgid "role"
-msgstr ""
+msgstr "نقش"
 
 #, python-format
 msgid "duplicate description of %s %s, other instance in %s"
-msgstr ""
+msgstr "توصیف تکراری از %s %s، نمونه‌ی دیگر در %s"
 
 #, python-format
 msgid "duplicate citation %s, other instance in %s"
-msgstr ""
+msgstr "ارجاع تکراری %s، نمونه‌ی دیگر در %s"
 
 #, python-format
 msgid "Citation [%s] is not referenced."
-msgstr ""
+msgstr "ارجاع [%s] استفاده نشده است."
 
 msgid "Attention"
-msgstr ""
+msgstr "توجه"
 
 msgid "Caution"
-msgstr ""
+msgstr "احتیاط"
 
 msgid "Danger"
-msgstr ""
+msgstr "خطر"
 
 msgid "Error"
-msgstr ""
+msgstr "خطا"
 
 msgid "Hint"
-msgstr ""
+msgstr "اشاره"
 
 msgid "Important"
-msgstr ""
+msgstr "مهم"
 
 msgid "Note"
-msgstr ""
+msgstr "یادداشت"
 
 msgid "See also"
-msgstr ""
+msgstr "همچنین ببینید"
 
 msgid "Tip"
-msgstr ""
+msgstr "نکته"
 
 msgid "Warning"
-msgstr ""
+msgstr "هشدار"
 
 msgid "automatically insert docstrings from modules"
-msgstr ""
+msgstr "درج خودکار رشته‌های مستند از ماژول‌ها"
 
 msgid "automatically test code snippets in doctest blocks"
-msgstr ""
+msgstr "آزمون خودکار قطعه‌کدها در بلوک‌های doctest"
 
 msgid "link between Sphinx documentation of different projects"
-msgstr ""
+msgstr "پیوند بین مستندات Sphinx پروژه‌های مختلف"
 
 msgid "write \"todo\" entries that can be shown or hidden on build"
-msgstr ""
+msgstr "نوشتن ورودی‌های \\\"todo\\\" که می‌توانند در ساخت نمایش داده شوند یا پنهان شوند"
 
 msgid "checks for documentation coverage"
-msgstr ""
+msgstr "بررسی پوشش مستندات"
 
 msgid "include math, rendered as PNG or SVG images"
-msgstr ""
+msgstr "گنجاندن ریاضی، رندرشده به‌صورت تصاویر PNG یا SVG"
 
 msgid "include math, rendered in the browser by MathJax"
-msgstr ""
+msgstr "گنجاندن ریاضی، رندرشده در مرورگر توسط MathJax"
 
 msgid "conditional inclusion of content based on config values"
-msgstr ""
+msgstr "گنجاندن شرطی محتوا بر اساس مقادیر پیکربندی"
 
 msgid "include links to the source code of documented Python objects"
-msgstr ""
+msgstr "گنجاندن پیوندها به کد منبع اشیاء مستندشده‌ی پایتون"
 
 msgid "create .nojekyll file to publish the document on GitHub pages"
-msgstr ""
+msgstr "ایجاد پرونده‌ی .nojekyll برای انتشار سند در صفحات گیت‌هاب"
 
 msgid "Please enter a valid path name."
-msgstr ""
+msgstr "لطفاً یک نام مسیر معتبر وارد کنید."
 
 msgid "Please enter some text."
-msgstr ""
+msgstr "لطفاً مقداری متن وارد کنید."
 
 #, python-format
 msgid "Please enter one of %s."
-msgstr ""
+msgstr "لطفاً یکی از %s را وارد کنید."
 
 msgid "Please enter either 'y' or 'n'."
-msgstr ""
+msgstr "لطفاً یا 'y' یا 'n' را وارد کنید."
 
 msgid "Please enter a file suffix, e.g. '.rst' or '.txt'."
-msgstr ""
+msgstr "لطفاً یک پسوند پرونده وارد کنید، مثلاً '.rst' یا '.txt'."
 
 #, python-format
 msgid "Welcome to the Sphinx %s quickstart utility."
-msgstr ""
+msgstr "به ابزار شروع سریع Sphinx %s خوش آمدید."
 
 msgid ""
 "Please enter values for the following settings (just press Enter to\n"
 "accept a default value, if one is given in brackets)."
 msgstr ""
+"لطفاً مقادیری برای تنظیمات زیر وارد کنید (برای پذیرش مقدار پیش‌فرض، فقط Enter را فشار دهید،\n"
+"اگر مقداری در براکت داده شده است)."
 
 #, python-format
 msgid "Selected root path: %s"
-msgstr ""
+msgstr "مسیر ریشه‌ی انتخاب‌شده: %s"
 
 msgid "Enter the root path for documentation."
 msgstr "مسیر ریشه برای مستندات را وارد کنید."
@@ -1982,40 +1984,46 @@ msgid "Root path for the documentation"
 msgstr "مسیر ریشه برای مستندات"
 
 msgid "Error: an existing conf.py has been found in the selected root path."
-msgstr ""
+msgstr "خطا: یک conf.py از قبل در مسیر ریشه‌ی انتخاب‌شده وجود دارد."
 
 msgid "sphinx-quickstart will not overwrite existing Sphinx projects."
-msgstr ""
+msgstr "sphinx-quickstart پروژه‌های Sphinx موجود را بازنویسی نمی‌کند."
 
 msgid "Please enter a new root path (or just Enter to exit)"
-msgstr ""
+msgstr "لطفاً یک مسیر ریشه‌ی جدید وارد کنید (یا فقط Enter را برای خروج فشار دهید)"
 
 msgid ""
 "You have two options for placing the build directory for Sphinx output.\n"
 "Either, you use a directory \"_build\" within the root path, or you separate\n"
 "\"source\" and \"build\" directories within the root path."
 msgstr ""
+"شما دو گزینه برای قرار دادن پوشه‌ی ساخت خروجی Sphinx دارید.\n"
+"یا از یک پوشه‌ی \"_build\" در مسیر ریشه استفاده می‌کنید، یا پوشه‌های\n"
+"\"source\" و \"build\" را در مسیر ریشه جدا می‌کنید."
 
 msgid "Separate source and build directories (y/n)"
-msgstr ""
+msgstr "جدا کردن پوشه‌های source و build (y/n)"
 
 msgid ""
 "Inside the root directory, two more directories will be created; \"_templates\"\n"
 "for custom HTML templates and \"_static\" for custom stylesheets and other static\n"
 "files. You can enter another prefix (such as \".\") to replace the underscore."
 msgstr ""
+"درون پوشه‌ی ریشه، دو پوشه‌ی دیگر ایجاد می‌شود؛ \"_templates\"\n"
+"برای قالب‌های HTML سفارشی و \"_static\" برای شیوه‌نامه‌های سفارشی و سایر پرونده‌های\n"
+"ایستا. می‌توانید پیشوند دیگری (مثل \".\") برای جایگزینی زیرخط وارد کنید."
 
 msgid "Name prefix for templates and static dir"
-msgstr ""
+msgstr "پیشوند نام برای پوشه‌های قالب و ایستا"
 
 msgid "The project name will occur in several places in the built documentation."
-msgstr ""
+msgstr "نام پروژه در چندین جای مستندات ساخته‌شده ظاهر خواهد شد."
 
 msgid "Project name"
-msgstr ""
+msgstr "نام پروژه"
 
 msgid "Author name(s)"
-msgstr ""
+msgstr "نام نویسنده(ها)"
 
 msgid ""
 "Sphinx has the notion of a \"version\" and a \"release\" for the\n"
