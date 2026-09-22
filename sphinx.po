@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-17 18:00+0330\n"
+"PO-Revision-Date: 2026-09-22 13:47+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
 
 msgid "Stable"
 msgstr "پایدار"
@@ -1570,203 +1570,203 @@ msgstr "پوشه‌ی مبدأ تغییر کرده است"
 
 #, python-format
 msgid "The configuration has changed (1 option: %r)"
-msgstr ""
+msgstr "پیکربندی تغییر کرده است (۱ گزینه: %r)"
 
 #, python-format
 msgid "The configuration has changed (%d options: %s)"
-msgstr ""
+msgstr "پیکربندی تغییر کرده است (%d گزینه: %s)"
 
 #, python-format
 msgid "The configuration has changed (%d options: %s, ...)"
-msgstr ""
+msgstr "پیکربندی تغییر کرده است (%d گزینه: %s، ...)"
 
 msgid "This environment is incompatible with the selected builder, please choose another doctree directory."
-msgstr ""
+msgstr "این محیط با سازنده‌ی انتخاب‌شده ناسازگار است، لطفاً پوشه‌ی doctree دیگری انتخاب کنید."
 
 #, python-format
 msgid "Failed to scan documents in %s: %r"
-msgstr ""
+msgstr "اسکن اسناد در %s ناموفق بود: %r"
 
 #, python-format
 msgid "Domain %r is not registered"
-msgstr ""
+msgstr "دامنه‌ی %r ثبت نشده است"
 
 msgid "document isn't included in any toctree"
-msgstr ""
+msgstr "سند در هیچ توک‌تری گنجانده نشده است"
 
 msgid "self referenced toctree found. Ignored."
-msgstr ""
+msgstr "توک‌تری خود‌ارجاع یافت شد. نادیده گرفته شد."
 
 #, python-format
 msgid "document is referenced in multiple toctrees: %s, selecting: %s <- %s"
-msgstr ""
+msgstr "سند در چندین توک‌تری ارجاع داده شده است: %s، انتخاب: %s <- %s"
 
 #, python-format
 msgid "reading error: %s, %s"
-msgstr ""
+msgstr "خطای خواندن: %s، %s"
 
 #, python-format
 msgid "writing error: %s, %s"
-msgstr ""
+msgstr "خطای نوشتن: %s، %s"
 
 #, python-format
 msgid "locale_dir %s does not exist"
-msgstr ""
+msgstr "locale_dir %s وجود ندارد"
 
 #, python-format
 msgid "Invalid Babel locale: %r."
-msgstr ""
+msgstr "locale نامعتبر Babel: %r."
 
 #, python-format
 msgid "Invalid date format. Quote the string by single quote if you want to output it directly: %s"
-msgstr ""
+msgstr "قالب تاریخ نامعتبر. اگر می‌خواهید مستقیماً چاپ شود، رشته را با نقل‌قول تک احاطه کنید: %s"
 
 #, python-format
 msgid "Problem in %s domain: field is supposed to use role '%s', but that role is not in the domain."
-msgstr ""
+msgstr "مشکل در دامنه‌ی %s: فیلد باید از نقش '%s' استفاده کند، اما آن نقش در دامنه نیست."
 
 #, python-format
 msgid "%r is deprecated for index entries (from entry %r). Use 'pair: %s' instead."
-msgstr ""
+msgstr "%r برای ورودی‌های اندیس منسوخ شده است (از ورودی %r). به‌جای آن از 'pair: %s' استفاده کنید."
 
 #, python-format
 msgid "toctree contains ref to nonexisting file %r"
-msgstr ""
+msgstr "توک‌تری حاوی ارجاع به پرونده‌ی ناموجود %r است"
 
 #, python-format
 msgid "exception while evaluating only directive expression: %s"
-msgstr ""
+msgstr "استثنا هنگام ارزیابی عبارت دایرکتیو only: %s"
 
 msgid "skipped"
-msgstr ""
+msgstr "رد شد"
 
 msgid "failed"
-msgstr ""
+msgstr "شکست خورد"
 
 #, python-format
 msgid "Aborted attempted copy from %s to %s (the destination path has existing data)."
-msgstr ""
+msgstr "تلاش برای کپی از %s به %s لغو شد (مسیر مقصد داده‌ی موجود دارد)."
 
 #, python-format
 msgid "unknown directive name: %s"
-msgstr ""
+msgstr "نام دایرکتیو ناشناخته: %s"
 
 #, python-format
 msgid "unknown role name: %s"
-msgstr ""
+msgstr "نام نقش ناشناخته: %s"
 
 #, python-format
 msgid "unknown node type: %r"
-msgstr ""
+msgstr "نوع گره ناشناخته: %r"
 
 #, python-format
 msgid "Aborted attempted copy from rendered template %s to %s (the destination path has existing data)."
-msgstr ""
+msgstr "تلاش برای کپی از قالب رندرشده‌ی %s به %s لغو شد (مسیر مقصد داده‌ی موجود دارد)."
 
 #, python-format
 msgid "Writing evaluated template result to %s"
-msgstr ""
+msgstr "در حال نوشتن نتیجه‌ی قالب ارزیابی‌شده در %s"
 
 #, python-format
 msgid "default role %s not found"
-msgstr ""
+msgstr "نقش پیش‌فرض %s یافت نشد"
 
 #, python-format
 msgid "inventory <%s> contains duplicate definitions of %s"
-msgstr ""
+msgstr "inventory <%s> شامل تعریف‌های تکراری %s است"
 
 #, python-format
 msgid "inventory <%s> contains multiple definitions for %s"
-msgstr ""
+msgstr "inventory <%s> شامل تعریف‌های متعدد برای %s است"
 
 msgid "Footnotes"
-msgstr ""
+msgstr "پاورقی‌ها"
 
 #, python-format
 msgid "[image: %s]"
-msgstr ""
+msgstr "[image: %s]"
 
 msgid "[image]"
-msgstr ""
+msgstr "[image]"
 
 msgid "Index"
-msgstr ""
+msgstr "اندیس"
 
 msgid "encountered title node not in section, topic, table, admonition or sidebar"
-msgstr ""
+msgstr "گره عنوانی یافت شد که در بخش، موضوع، جدول، آدمانیشن یا نوار کناری نیست"
 
 msgid "caption not inside a figure."
-msgstr ""
+msgstr "عنوان داخل شکل نیست."
 
 #, python-format
 msgid "unimplemented node type: %r"
-msgstr ""
+msgstr "نوع گره پیاده‌سازی‌نشده: %r"
 
 #, python-format
 msgid "unknown %r toplevel_sectioning for class %r"
-msgstr ""
+msgstr "%r toplevel_sectioning ناشناخته برای کلاس %r"
 
 #, python-format
 msgid "no Babel option known for language %r"
-msgstr ""
+msgstr "هیچ گزینه‌ی Babel برای زبان %r شناخته‌شده نیست"
 
 msgid "too large :maxdepth:, ignored."
-msgstr ""
+msgstr ":maxdepth: بسیار بزرگ، نادیده گرفته شد."
 
 #, python-format
 msgid "template %s not found; loading from legacy %s instead"
-msgstr ""
+msgstr "قالب %s یافت نشد؛ به‌جای آن از %s قدیمی بارگذاری می‌شود"
 
 msgid "document title is not a single Text node"
-msgstr ""
+msgstr "عنوان سند یک گره Text واحد نیست"
 
 #, python-format
 msgid "unsupported rubric heading level: %s"
-msgstr ""
+msgstr "سطح عنوان rubric پشتیبانی‌نشده: %s"
 
 msgid "both tabularcolumns and :widths: option are given. :widths: is ignored."
-msgstr ""
+msgstr "هم tabularcolumns و هم گزینه‌ی :widths: داده شده‌اند. :widths: نادیده گرفته می‌شود."
 
 #, python-format
 msgid "dimension unit %s is invalid. Ignored."
-msgstr ""
+msgstr "واحد ابعاد %s نامعتبر است. نادیده گرفته شد."
 
 #, python-format
 msgid "unknown index entry type %s found"
-msgstr ""
+msgstr "نوع ورودی اندیس ناشناخته‌ی %s یافت شد"
 
 #, python-format
 msgid "Invalid math_eqref_format: %r"
-msgstr ""
+msgstr "math_eqref_format نامعتبر: %r"
 
 msgid "Link to this definition"
-msgstr ""
+msgstr "پیوند به این تعریف"
 
 #, python-format
 msgid "numfig_format is not defined for %s"
-msgstr ""
+msgstr "numfig_format برای %s تعریف نشده است"
 
 #, python-format
 msgid "Any IDs not assigned for %s node"
-msgstr ""
+msgstr "هیچ شناسه‌ای برای گره‌ی %s اختصاص داده نشده است"
 
 msgid "Link to this term"
-msgstr ""
+msgstr "پیوند به این اصطلاح"
 
 msgid "Link to this heading"
-msgstr ""
+msgstr "پیوند به این عنوان"
 
 msgid "Link to this table"
-msgstr ""
+msgstr "پیوند به این جدول"
 
 msgid "Link to this code"
-msgstr ""
+msgstr "پیوند به این کد"
 
 msgid "Link to this image"
-msgstr ""
+msgstr "پیوند به این تصویر"
 
 msgid "Link to this toctree"
-msgstr ""
+msgstr "پیوند به این توکتری"
 
 msgid "Could not obtain image size. :scale: option is ignored."
 msgstr ""
