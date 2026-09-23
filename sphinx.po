@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-22 15:22+0330\n"
+"PO-Revision-Date: 2026-09-23 17:54+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -1926,7 +1926,7 @@ msgid "link between Sphinx documentation of different projects"
 msgstr "پیوند بین مستندات Sphinx پروژه‌های مختلف"
 
 msgid "write \"todo\" entries that can be shown or hidden on build"
-msgstr "نوشتن ورودی‌های \\\"todo\\\" که می‌توانند در ساخت نمایش داده شوند یا پنهان شوند"
+msgstr "نوشتن ورودی‌های \"todo\" که می‌توانند در ساخت نمایش داده شوند یا پنهان شوند"
 
 msgid "checks for documentation coverage"
 msgstr "بررسی پوشش مستندات"
@@ -2032,12 +2032,17 @@ msgid ""
 "something like 2.5.1 or 3.0a1. If you don't need this dual structure,\n"
 "just set both to the same value."
 msgstr ""
+"Sphinx مفهوم \"version\" و \"release\" را برای نرم‌افزار دارد.\n"
+"هر نسخه می‌تواند چندین انتشار داشته باشد. برای مثال، برای\n"
+"Python نسخه چیزی مثل 2.5 یا 3.0 است، در حالی که انتشار\n"
+"چیزی مثل 2.5.1 یا 3.0a1 است. اگر به این ساختار دوگانه نیاز ندارید،\n"
+"فقط هر دو را روی یک مقدار تنظیم کنید."
 
 msgid "Project version"
-msgstr ""
+msgstr "نسخه‌ی پروژه"
 
 msgid "Project release"
-msgstr ""
+msgstr "انتشار پروژه"
 
 msgid ""
 "If the documents are to be written in a language other than English,\n"
@@ -2047,17 +2052,25 @@ msgid ""
 "For a list of supported codes, see\n"
 "https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language."
 msgstr ""
+"اگر اسناد به زبانی غیر از انگلیسی نوشته می‌شوند،\n"
+"می‌توانید زبانی را با کد زبان آن انتخاب کنید. Sphinx سپس\n"
+"متنی که تولید می‌کند را به آن زبان ترجمه می‌کند.\n"
+"\n"
+"برای فهرست کدهای پشتیبانی‌شده، به\n"
+"https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language مراجعه کنید."
 
 msgid "Project language"
-msgstr ""
+msgstr "زبان پروژه"
 
 msgid ""
 "The file name suffix for source files. Commonly, this is either \".txt\"\n"
 "or \".rst\". Only files with this suffix are considered documents."
 msgstr ""
+"پسوند نام پرونده برای پرونده‌های مبدأ. معمولاً، این یا \".txt\"\n"
+"است یا \".rst\". فقط پرونده‌هایی با این پسوند سند در نظر گرفته می‌شوند."
 
 msgid "Source file suffix"
-msgstr ""
+msgstr "پسوند پرونده‌ی مبدأ"
 
 msgid ""
 "One document is special in that it is considered the top node of the\n"
@@ -2065,68 +2078,81 @@ msgid ""
 "of the documents. Normally, this is \"index\", but if your \"index\"\n"
 "document is a custom template, you can also set this to another filename."
 msgstr ""
+"یک سند از این نظر ویژه است که گره رأس \"درخت محتوا\"\n"
+"در نظر گرفته می‌شود، یعنی ریشه‌ی ساختار سلسله‌مراتبی\n"
+"اسناد است. معمولاً این سند \"index\" است، اما اگر سند \"index\"\n"
+"شما یک قالب سفارشی باشد، می‌توانید آن را روی نام پرونده‌ی دیگری نیز تنظیم کنید."
 
 msgid "Name of your master document (without suffix)"
-msgstr ""
+msgstr "نام سند اصلی شما (بدون پسوند)"
 
 #, python-format
 msgid "Error: the master file %s has already been found in the selected root path."
-msgstr ""
+msgstr "خطا: پرونده‌ی اصلی %s از قبل در مسیر ریشه‌ی انتخاب‌شده یافت شده است."
 
 msgid "sphinx-quickstart will not overwrite the existing file."
-msgstr ""
+msgstr "sphinx-quickstart پرونده‌ی موجود را بازنویسی نمی‌کند."
 
 msgid "Please enter a new file name, or rename the existing file and press Enter"
-msgstr ""
+msgstr "لطفاً یک نام پرونده‌ی جدید وارد کنید، یا پرونده‌ی موجود را تغییر نام دهید و Enter را فشار دهید"
 
 msgid "Indicate which of the following Sphinx extensions should be enabled:"
-msgstr ""
+msgstr "مشخص کنید کدام‌یک از افزونه‌های Sphinx زیر باید فعال شوند:"
 
 msgid "Note: imgmath and mathjax cannot be enabled at the same time. imgmath has been deselected."
-msgstr ""
+msgstr "توجه: imgmath و mathjax نمی‌توانند هم‌زمان فعال شوند. imgmath از حالت انتخاب خارج شده است."
 
 msgid ""
 "A Makefile and a Windows command file can be generated for you so that you\n"
 "only have to run e.g. `make html' instead of invoking sphinx-build\n"
 "directly."
 msgstr ""
+"یک Makefile و یک پرونده‌ی دستور ویندوز می‌تواند برای شما تولید شود تا\n"
+"فقط لازم باشد مثلاً `make html' را اجرا کنید، به‌جای اینکه sphinx-build را\n"
+"مستقیماً فراخوانی کنید."
 
 msgid "Create Makefile? (y/n)"
-msgstr ""
+msgstr "ایجاد Makefile؟ (y/n)"
 
 msgid "Create Windows command file? (y/n)"
-msgstr ""
+msgstr "ایجاد پرونده‌ی دستور ویندوز؟ (y/n)"
 
 #, python-format
 msgid "Creating file %s."
-msgstr ""
+msgstr "در حال ایجاد پرونده %s."
 
 #, python-format
 msgid "File %s already exists, skipping."
-msgstr ""
+msgstr "پرونده‌ی %s از قبل وجود دارد، رد می‌شود."
 
 msgid "Finished: An initial directory structure has been created."
-msgstr ""
+msgstr "پایان: یک ساختار پوشه‌ی اولیه ایجاد شد."
 
 #, python-format
 msgid ""
 "You should now populate your master file %s and create other documentation\n"
 "source files. "
 msgstr ""
+"اکنون باید پرونده‌ی اصلی %s خود را پر کنید و سایر پرونده‌های مبدأ\n"
+"مستندات را ایجاد کنید. "
 
 msgid ""
 "Use the Makefile to build the docs, like so:\n"
 "   make builder"
 msgstr ""
+"برای ساخت مستندات از Makefile به این شکل استفاده کنید:\n"
+"   make builder"
 
 #, python-format
 msgid ""
 "Use the sphinx-build command to build the docs, like so:\n"
 "   sphinx-build -b builder %s %s"
 msgstr ""
+"برای ساخت مستندات از دستور sphinx-build به این شکل استفاده کنید:\n"
+"   sphinx-build -b builder %s %s"
 
 msgid "where \"builder\" is one of the supported builders, e.g. html, latex or linkcheck."
-msgstr ""
+msgstr "که در آن \"builder\" یکی از سازنده‌های پشتیبانی‌شده است، مثلاً html، latex یا linkcheck."
 
 msgid ""
 "\n"
@@ -2136,107 +2162,113 @@ msgid ""
 "project and then generates a complete documentation directory and sample\n"
 "Makefile to be used with sphinx-build.\n"
 msgstr ""
+"\n"
+"تولید پرونده‌های موردنیاز برای یک پروژه‌ی Sphinx.\n"
+"\n"
+"sphinx-quickstart یک ابزار تعاملی است که چند سؤال درباره‌ی پروژه‌ی شما\n"
+"می‌پرسد و سپس یک پوشه‌ی کامل مستندات و یک Makefile نمونه\n"
+"برای استفاده با sphinx-build تولید می‌کند.\n"
 
 msgid "For more information, visit <https://www.sphinx-doc.org/>."
-msgstr ""
+msgstr "برای اطلاعات بیشتر، به <https://www.sphinx-doc.org/> مراجعه کنید."
 
 msgid "quiet mode"
-msgstr ""
+msgstr "حالت بی‌صدا"
 
 msgid "project root"
-msgstr ""
+msgstr "ریشه‌ی پروژه"
 
 msgid "Structure options"
-msgstr ""
+msgstr "گزینه‌های ساختار"
 
 msgid "if specified, separate source and build dirs"
-msgstr ""
+msgstr "در صورت مشخص شدن، پوشه‌های مبدأ و ساخت را جدا کنید"
 
 msgid "if specified, create build dir under source dir"
-msgstr ""
+msgstr "در صورت مشخص شدن، پوشه‌ی ساخت را زیر پوشه‌ی مبدأ ایجاد کنید"
 
 msgid "replacement for dot in _templates etc."
-msgstr ""
+msgstr "جایگزین نقطه در _templates و غیره."
 
 msgid "Project basic options"
-msgstr ""
+msgstr "گزینه‌های پایه‌ی پروژه"
 
 msgid "project name"
-msgstr ""
+msgstr "نام پروژه"
 
 msgid "author names"
-msgstr ""
+msgstr "نام نویسندگان"
 
 msgid "version of project"
-msgstr ""
+msgstr "نسخه‌ی پروژه"
 
 msgid "release of project"
-msgstr ""
+msgstr "انتشار پروژه"
 
 msgid "document language"
-msgstr ""
+msgstr "زبان سند"
 
 msgid "source file suffix"
-msgstr ""
+msgstr "پسوند پرونده‌ی مبدأ"
 
 msgid "master document name"
-msgstr ""
+msgstr "نام سند اصلی"
 
 msgid "use epub"
-msgstr ""
+msgstr "استفاده از epub"
 
 msgid "Extension options"
-msgstr ""
+msgstr "گزینه‌های افزونه"
 
 #, python-format
 msgid "enable %s extension"
-msgstr ""
+msgstr "فعال‌سازی افزونه‌ی %s"
 
 msgid "enable arbitrary extensions"
-msgstr ""
+msgstr "فعال‌سازی افزونه‌های دلخواه"
 
 msgid "Makefile and Batchfile creation"
-msgstr ""
+msgstr "ایجاد Makefile و Batchfile"
 
 msgid "create makefile"
-msgstr ""
+msgstr "ایجاد makefile"
 
 msgid "do not create makefile"
-msgstr ""
+msgstr "makefile ایجاد نکنید"
 
 msgid "create batchfile"
-msgstr ""
+msgstr "ایجاد batchfile"
 
 msgid "do not create batchfile"
-msgstr ""
+msgstr "batchfile ایجاد نکنید"
 
 msgid "use make-mode for Makefile/make.bat"
-msgstr ""
+msgstr "استفاده از حالت make برای Makefile/make.bat"
 
 msgid "Project templating"
-msgstr ""
+msgstr "قالب‌بندی پروژه"
 
 msgid "template directory for template files"
-msgstr ""
+msgstr "پوشه‌ی قالب برای پرونده‌های قالب"
 
 msgid "define a template variable"
-msgstr ""
+msgstr "تعریف یک متغیر قالب"
 
 msgid "\"quiet\" is specified, but any of \"project\" or \"author\" is not specified."
-msgstr ""
+msgstr "\"quiet\" مشخص شده است، اما هیچ‌یک از \"project\" یا \"author\" مشخص نشده است."
 
 msgid "Error: specified path is not a directory, or sphinx files already exist."
-msgstr ""
+msgstr "خطا: مسیر مشخص‌شده یک پوشه نیست، یا پرونده‌های sphinx از قبل وجود دارند."
 
 msgid "sphinx-quickstart only generate into a empty directory. Please specify a new root path."
-msgstr ""
+msgstr "sphinx-quickstart فقط در یک پوشه‌ی خالی تولید می‌کند. لطفاً یک مسیر ریشه‌ی جدید مشخص کنید."
 
 #, python-format
 msgid "Invalid template variable: %s"
-msgstr ""
+msgstr "متغیر قالب نامعتبر: %s"
 
 msgid "job number should be a positive number"
-msgstr ""
+msgstr "تعداد کار باید یک عدد مثبت باشد"
 
 msgid ""
 "\n"
@@ -2255,63 +2287,78 @@ msgid ""
 "By default, everything that is outdated is built. Output only for selected\n"
 "files can be built by specifying individual filenames.\n"
 msgstr ""
+"\n"
+"تولید مستندات از پرونده‌های مبدأ.\n"
+"\n"
+"sphinx-build مستندات را از پرونده‌های موجود در SOURCEDIR تولید می‌کند و آن را در\n"
+"OUTPUTDIR قرار می‌دهد. این ابزار به‌دنبال 'conf.py' در SOURCEDIR برای تنظیمات\n"
+"پیکربندی می‌گردد. ابزار 'sphinx-quickstart' می‌تواند برای تولید پرونده‌های قالب،\n"
+"از جمله 'conf.py' استفاده شود.\n"
+"\n"
+"sphinx-build می‌تواند مستندات را در قالب‌های مختلفی ایجاد کند. یک قالب با\n"
+"مشخص کردن نام سازنده در خط فرمان انتخاب می‌شود؛ مقدار پیش‌فرض آن\n"
+"HTML است. سازنده‌ها همچنین می‌توانند سایر وظایف مربوط به پردازش\n"
+"مستندات را انجام دهند.\n"
+"\n"
+"به‌طور پیش‌فرض، هر چیزی که قدیمی باشد ساخته می‌شود. خروجی فقط برای پرونده‌های\n"
+"انتخاب‌شده می‌تواند با مشخص کردن نام‌های پرونده‌ی مجزا ساخته شود.\n"
 
 msgid "path to documentation source files"
 msgstr "مسیر منابع مستندات"
 
 msgid "path to output directory"
-msgstr ""
+msgstr "مسیر پوشه‌ی خروجی"
 
 msgid "(optional) a list of specific files to rebuild. Ignored if --write-all is specified"
-msgstr ""
+msgstr "(اختیاری) فهرستی از پرونده‌های مشخص برای بازسازی. در صورت مشخص شدن --write-all نادیده گرفته می‌شود"
 
 msgid "general options"
 msgstr "گزینه‌های عمومی"
 
 msgid "builder to use (default: 'html')"
-msgstr ""
+msgstr "سازنده‌ی مورد استفاده (پیش‌فرض: 'html')"
 
 msgid "run in parallel with N processes, when possible. 'auto' uses the number of CPU cores"
-msgstr ""
+msgstr "در صورت امکان، با N فرایند به‌صورت موازی اجرا شود. 'auto' از تعداد هسته‌های CPU استفاده می‌کند"
 
 msgid "write all files (default: only write new and changed files)"
-msgstr ""
+msgstr "نوشتن همه‌ی پرونده‌ها (پیش‌فرض: فقط پرونده‌های جدید و تغییر‌یافته نوشته می‌شوند)"
 
 msgid "don't use a saved environment, always read all files"
-msgstr ""
+msgstr "از محیط ذخیره‌شده استفاده نکنید، همیشه همه‌ی پرونده‌ها را بخوانید"
 
 msgid "path options"
-msgstr ""
+msgstr "گزینه‌های مسیر"
 
 msgid "directory for doctree and environment files (default: OUTPUT_DIR/.doctrees)"
-msgstr ""
+msgstr "پوشه‌ی پرونده‌های doctree و محیط (پیش‌فرض: OUTPUT_DIR/.doctrees)"
 
 msgid "directory for the configuration file (conf.py) (default: SOURCE_DIR)"
-msgstr ""
+msgstr "پوشه‌ی پرونده‌ی پیکربندی (conf.py) (پیش‌فرض: SOURCE_DIR)"
 
 msgid "use no configuration file, only use settings from -D options"
-msgstr ""
+msgstr "از هیچ پرونده‌ی پیکربندی استفاده نکنید؛ فقط از تنظیمات گزینه‌های -D استفاده کنید"
 
 msgid "override a setting in configuration file"
-msgstr ""
+msgstr "بازنویسی یک تنظیم در پرونده‌ی پیکربندی"
 
 msgid "pass a value into HTML templates"
-msgstr ""
+msgstr "انتقال یک مقدار به قالب‌های HTML"
 
 msgid "define tag: include \"only\" blocks with TAG"
-msgstr ""
+msgstr "تعریف تگ: گنجاندن \"only\" بلوک‌ها با TAG"
 
 msgid "nitpicky mode: warn about all missing references"
-msgstr ""
+msgstr "حالت سخت‌گیرانه: هشدار درباره‌ی همه‌ی ارجاعات گم‌شده"
 
 msgid "console output options"
-msgstr ""
+msgstr "گزینه‌های خروجی کنسول"
 
 msgid "increase verbosity (can be repeated)"
-msgstr ""
+msgstr "افزایش پرگویی (قابل تکرار)"
 
 msgid "no output on stdout, just warnings on stderr"
-msgstr ""
+msgstr "هیچ خروجی‌ای روی stdout نیست، فقط هشدارها روی stderr"
 
 msgid "no output at all, not even warnings"
 msgstr ""
