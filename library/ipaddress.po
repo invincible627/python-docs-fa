@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-24 04:09+0000\n"
-"PO-Revision-Date: 2026-09-15 08:12+0330\n"
+"PO-Revision-Date: 2026-09-24 07:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -188,9 +188,8 @@ msgstr "اگر این یک نشانی حلقه‌ای (loopback) باشد، ``Tr
 msgid "``True`` if the address is reserved for link-local usage.  See :RFC:`3927`."
 msgstr "اگر نشانی برای استفاده‌ی محلی پیوند (link-local) رزرو شده باشد، ``True`` است. :RFC:`3927` را ببینید."
 
-#, fuzzy
 msgid ":class:`IPv6Address` object representing the IPv4-mapped IPv6 address. See :RFC:`4291`."
-msgstr "شیء :class:`IPv4Address` که نشان‌دهنده‌ی نشانی IPv6 با نگاشت IPv4 است. :RFC:`4291` را ببینید."
+msgstr "شیء :class:`IPv6Address` که نشان‌دهنده‌ی نشانی IPv6 با نگاشت IPv4 است. :RFC:`4291` را ببینید."
 
 msgid "Returns a string representation of the IP address, controlled by an explicit format string. *fmt* can be one of the following: ``'s'``, the default option, equivalent to :func:`str`, ``'b'`` for a zero-padded binary string, ``'X'`` or ``'x'`` for an uppercase or lowercase hexadecimal representation, or ``'n'``, which is equivalent to ``'b'`` for IPv4 addresses and ``'x'`` for IPv6. For binary and hexadecimal representations, the form specifier ``'#'`` and the grouping option ``'_'`` are available. ``__format__`` is used by ``format``, ``str.format`` and f-strings."
 msgstr "یک نمایش رشته‌ای از نشانی IP را، که با یک رشته‌ی قالب‌بندی صریح کنترل می‌شود، برمی‌گرداند. *fmt* می‌تواند یکی از موارد زیر باشد: ``'s'``، گزینه‌ی پیش‌فرض، معادل :func:`str`، ``'b'`` برای رشته‌ی دودویی که با صفر پر شده است، ``'X'`` یا ``'x'`` برای نمایش مبنای شانزده با حروف بزرگ یا کوچک، یا ``'n'``، که برای نشانی‌های IPv4 معادل ``'b'`` و برای IPv6 معادل ``'x'`` است. برای نمایش‌های دودویی و مبنای شانزده، مشخص‌کننده‌ی قالب ``'#'`` و گزینه‌ی گروه‌بندی ``'_'`` در دسترس هستند. ``__format__`` توسط ``format``، ``str.format`` و اف‌استرینگ‌ها استفاده می‌شود."

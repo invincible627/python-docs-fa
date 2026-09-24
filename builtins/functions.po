@@ -11,13 +11,14 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-24 04:09+0000\n"
-"PO-Revision-Date: 2026-09-19 20:08+0330\n"
+"PO-Revision-Date: 2026-09-24 07:55+0330\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
 
 msgid "Built-in Functions"
 msgstr "توابع توکار"
@@ -504,9 +505,8 @@ msgstr "پیش از این، هنگام برخورد با بایت‌های ته
 msgid "``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` can now be passed in flags to enable support for top-level ``await``, ``async for``, and ``async with``."
 msgstr "اکنون می‌توان ``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` را در پرچم‌ها ارسال کرد تا از ``await``، ``async for`` و ``async with`` در سطح بالای کد (top-level) پشتیبانی شود."
 
-#, fuzzy
 msgid ":exc:`SyntaxError` is raised instead of :exc:`ValueError` when null bytes are encountered in *source*."
-msgstr "پیش از این، هنگام برخورد با بایت‌های تهی در *source*، استثنای :exc:`TypeError` پرتاب می‌شد."
+msgstr "هنگامی که بایت‌های تهی در *source* یافت شوند، :exc:`SyntaxError` به‌جای :exc:`ValueError` پرتاب می‌شود."
 
 msgid "Convert a single string or number to a complex number, or create a complex number from real and imaginary parts."
 msgstr "تبدیل یک رشته یا عدد به یک عدد مختلط، یا ایجاد یک عدد مختلط از بخش‌های حقیقی و موهومی یک عدد."
