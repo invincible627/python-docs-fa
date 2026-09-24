@@ -8,7 +8,6 @@
 | bugs.po | 100.0% | 0.0% | 31 | 0 |
 | builtins/constants.po | 100.0% | 0.0% | 22 | 0 |
 | builtins/exceptions.po | 100.0% | 0.0% | 203 | 0 |
-| builtins/functions.po | 100.0% | 0.0% | 521 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
 | builtins/stdtypes.po | 100.0% | 0.0% | 1583 | 0 |
 | builtins/threadsafety.po | 100.0% | 0.0% | 122 | 0 |
@@ -478,7 +477,6 @@
 | library/zlib.po | 100.0% | 0.0% | 96 | 0 |
 | library/zoneinfo.po | 100.0% | 0.0% | 84 | 0 |
 | reference/compound_stmts.po | 100.0% | 0.0% | 480 | 0 |
-| reference/datamodel.po | 100.0% | 0.0% | 913 | 0 |
 | reference/executionmodel.po | 100.0% | 0.0% | 145 | 0 |
 | reference/expressions.po | 100.0% | 0.0% | 595 | 0 |
 | reference/grammar.po | 100.0% | 0.0% | 6 | 0 |
@@ -539,9 +537,11 @@
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
+| reference/datamodel.po | 99.9% | 0.0% | 913 | 1 |
 | library/ctypes.po | 99.9% | 0.0% | 676 | 1 |
+| builtins/functions.po | 99.8% | 0.0% | 521 | 1 |
 | library/statistics.po | 99.6% | 0.0% | 248 | 1 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
 | license.po | 0.0% | 0.0% | 0 | 129 |
-| **مجموع** | **98.6%** | **0.0%** | **70408** | **972** |
+| **مجموع** | **98.6%** | **0.0%** | **70408** | **974** |
 <!-- TRANSLATION_STATUS_END -->
