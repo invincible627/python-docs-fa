@@ -9,12 +9,18 @@ Verify Sphinx markup consistency between msgid and msgstr:
   - Literal/code spans (``...``), substitution refs (|...|), and %s/{name}
     placeholders — these must match verbatim, since they're not prose.
   - Invalid C-string escape sequences in msgstr (a lone backslash followed
-    by a character that isn't one of \\ " n t r f b a v) — these make
-    `msgfmt` fail with "invalid control sequence" and must be found before
-    they break a build.
+    by a character that isn't a valid escape, see VALID_ESCAPE_CHARS) — these
+    make `msgfmt` fail with "invalid control sequence" and must be found
+    before they break a build.
+  - Files that cannot be parsed at all are reported (and fail the run)
+    instead of aborting it, so one broken file doesn't hide findings in the
+    rest.
+
+Fuzzy entries are checked too: the docs are built with
+gettext_allow_fuzzy_translations=1, so they reach the rendered output.
 
 Output is grouped by file, with a per-file mismatch count and a grand
-total at the end.
+total at the end. Exits 1 if anything was found.
 
 Requires: pip install polib
 
@@ -50,9 +56,11 @@ LITERAL_PATTERNS = [
 
 # Valid C-string escapes that gettext/msgfmt accept inside a quoted
 # string. A backslash followed by anything else is what msgfmt rejects
-# with "invalid control sequence". This mirrors the set the old
-# autofix bash script treated as "leave alone": \\  \"  \n \t \r \f \b \a \v
-VALID_ESCAPE_CHARS = set('\\"ntrfbav')
+# with "invalid control sequence". Besides the single-character escapes
+# (\\  \"  \n \t \r \f \b \a \v), msgfmt also accepts octal (\101) and
+# hex (\x41) escapes; only the first character after the backslash matters
+# here, since the remaining digits are ordinary characters to this scanner.
+VALID_ESCAPE_CHARS = set('\\"ntrfbav') | set("01234567") | {"x"}
 
 # One raw quoted-string line as it appears in the .po file. Matches
 # both the first line of an entry, which carries a keyword prefix
@@ -69,16 +77,17 @@ DISPLAY_ONLY_ROLES = {"dfn", "kbd", "guilabel", "menuselection", "samp", "file"}
 DFN_PATTERN = re.compile(r":dfn:`")
 DFN_ANGLE = re.compile(r":dfn:`[^`]*<[^`>]+>`")
 
+
 def find_invalid_escapes_in_raw(raw: str):
     """Scan raw (undecoded) quoted-string content left-to-right the way
     a C-string tokenizer would, consuming two characters whenever a
     backslash is seen, and return the invalid `\\X` sequences found.
 
     MUST run on raw file text, not on polib's .msgid/.msgstr - polib
-    decodes \\\\ into a single \\ before Claude ever sees it, so scanning
-    decoded text turns safe, doubled backslashes (\\\\d in the file,
-    meaning a literal backslash-d) into false positives that look like
-    a lone backslash followed by an invalid character."""
+    decodes \\\\ into a single \\ before this script ever sees it, so
+    scanning decoded text turns safe, doubled backslashes (\\\\d in the
+    file, meaning a literal backslash-d) into false positives that look
+    like a lone backslash followed by an invalid character."""
     invalid = []
     i = 0
     n = len(raw)
@@ -217,15 +226,30 @@ def main():
     per_file_counts = []
     escape_total = 0
     escape_files = 0
+    parse_errors = []
 
     for f in files:
-        results = check_file(f)
+        # The raw escape scan runs first and independently of polib: a file
+        # with a bad escape is exactly the kind polib may choke on, and the
+        # escape findings explain why.
+        try:
+            escape_findings = check_raw_escapes(f)
+        except (OSError, ValueError) as exc:  # ValueError: UnicodeDecodeError
+            escape_findings = []
+            parse_errors.append((f, exc))
+
+        try:
+            results = check_file(f)
+        except (OSError, ValueError) as exc:  # polib raises OSError on bad syntax
+            results = []
+            if not escape_findings:  # otherwise the escapes already explain it
+                parse_errors.append((f, exc))
+
         if results:
             print_file_group(f, results)
             total += len(results)
             per_file_counts.append((f, len(results)))
 
-        escape_findings = check_raw_escapes(f)
         if escape_findings:
             print(f"\n{'=' * 70}")
             print(f"{f}  ({len(escape_findings)} invalid escape sequence line(s))")
@@ -235,6 +259,13 @@ def main():
                 print(f"    {line[:120]}")
             escape_total += len(escape_findings)
             escape_files += 1
+
+    if parse_errors:
+        print(f"\n{'=' * 70}")
+        print(f"{len(parse_errors)} file(s) could not be parsed:")
+        print("=" * 70)
+        for f, exc in parse_errors:
+            print(f"  {f}: {exc}")
 
     if total:
         print(f"\n{'=' * 70}")
@@ -254,7 +285,7 @@ def main():
             f"in each line above."
         )
 
-    if total or escape_total:
+    if total or escape_total or parse_errors:
         sys.exit(1)
 
     print("No markup mismatches found.")

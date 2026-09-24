@@ -7,6 +7,10 @@ a markdown file (default: STATUS.md) from the current state of all .po
 files. Meant to run on a schedule so the table never goes stale, replacing
 the old Transifex-exported report.
 
+The file is only rewritten when the table itself changes. The date line is
+not refreshed on its own, so a scheduled run with no real changes leaves the
+file (and git history) untouched.
+
 Requires: pip install polib
 
 Usage:
@@ -94,6 +98,14 @@ def main():
         sys.exit(1)
 
     table = build_table()
+
+    # If the freshly built table is already in the block, nothing but the date
+    # would change -- skip the write so we don't create a commit every night.
+    current_block = text[text.index(START_MARKER) : text.index(END_MARKER)]
+    if table in current_block:
+        print(f"{args.file} already up to date (table unchanged).")
+        return
+
     block = (
         f"{START_MARKER}\n"
         f"### وضعیت ترجمه فایل‌ها\n"

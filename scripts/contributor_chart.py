@@ -6,7 +6,9 @@ The chart uses the translated totals recorded in ``TEAM.md``
 git-blame attribution while preserving Transifex-era and restored counts, and
 draws a pastel bar chart saved to ``reports/contributor_stats_latest.png``
 (fixed filename, overwritten each run). The README block between the
-``STATS_START``/``STATS_END`` markers is refreshed with a new date.
+``STATS_START``/``STATS_END`` markers is refreshed with a new date, but only
+when its content (counts or chart path) actually changed, so a nightly run
+with no real changes doesn't create a commit.
 
 Requires: ``pip install polib matplotlib``
 
@@ -23,10 +25,11 @@ import sys
 from pathlib import Path
 
 import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
 
-matplotlib.use("Agg")
+matplotlib.use("Agg")  # must be selected before pyplot is imported
+
+import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.ticker as mticker  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -40,6 +43,8 @@ CHART_FILENAME = f"{CHART_PREFIX}latest.png"
 README_PATH = REPO_ROOT / "README.md"
 STATS_START = "<!-- STATS_START -->"
 STATS_END = "<!-- STATS_END -->"
+
+DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 PASTEL_COLORS = [
     "#A6C7E8",
@@ -119,13 +124,18 @@ def refresh_readme(
         re.escape(STATS_START) + ".*?" + re.escape(STATS_END),
         flags=re.DOTALL,
     )
-    if not pattern.search(text):
+    match = pattern.search(text)
+    if not match:
         print(f"  error: could not find {STATS_START}/{STATS_END} in {README_PATH}")
         return False
-    new_text = pattern.sub(block, text)
-    if new_text == text:
-        print("  README block unchanged")
+
+    # Ignore the date when deciding whether anything changed; otherwise the
+    # block differs every day and the nightly run always makes a commit.
+    if DATE_RE.sub("", match.group(0)) == DATE_RE.sub("", block):
+        print("  README block unchanged (ignoring date)")
         return False
+
+    new_text = pattern.sub(lambda _: block, text)
     if dry_run:
         print("[dry-run] would update README stats block")
     else:
@@ -162,7 +172,9 @@ def main() -> None:
         print(f"[dry-run] would save chart to {out_path}")
     else:
         CHART_DIR.mkdir(parents=True, exist_ok=True)
-        plt.savefig(out_path)
+        # Software=None drops the matplotlib version string from the PNG
+        # metadata, so upgrading matplotlib alone doesn't change the file.
+        plt.savefig(out_path, metadata={"Software": None})
         print(f"Saved user contributions chart to {out_path}")
     plt.close()
 

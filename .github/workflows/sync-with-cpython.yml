@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       cpython_tag:
-        description: 'CPython tag to sync against (e.g. 3.14)'
+        description: 'CPython tag/branch to sync against (e.g. 3.14)'
         required: false
         default: '3.14'
 
@@ -14,13 +14,15 @@ permissions:
   contents: write
   issues: write
 
+# Shared with maintenance.yml so the two never push at the same time.
 concurrency:
-  group: sync
+  group: repo-writes
   cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     env:
       CPYTHON_TAG: ${{ github.event.inputs.cpython_tag || '3.14' }}
     steps:
@@ -29,115 +31,149 @@ jobs:
         with:
           fetch-depth: 0
 
+      # --- Skip the expensive build if upstream hasn't moved -------------
+      - name: Get upstream head
+        id: upstream
+        run: |
+          sha=$(git ls-remote https://github.com/python/cpython \
+                  "refs/heads/$CPYTHON_TAG" "refs/tags/$CPYTHON_TAG" \
+                | head -1 | cut -f1)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          # Marker lives outside the repo so `git add --all` never sees it.
+          echo "$sha" > "$RUNNER_TEMP/sync-marker"
+
+      - name: Check whether this upstream head was already synced
+        id: seen
+        # Fail open: no SHA -> no lookup -> full run.
+        if: steps.upstream.outputs.sha != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/sync-marker
+          key: synced-${{ env.CPYTHON_TAG }}-${{ steps.upstream.outputs.sha }}
+          lookup-only: true
+
+      - name: Decide whether to run
+        run: |
+          if [ "${{ steps.seen.outputs.cache-hit }}" = "true" ] \
+             && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "Upstream ${{ steps.upstream.outputs.sha }} already synced; skipping."
+            echo "SKIP=true" >> "$GITHUB_ENV"
+          fi
+
+      # --- Sync ------------------------------------------------------------
       - name: Set up Python
+        if: env.SKIP != 'true'
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
       - name: Install gettext
+        if: env.SKIP != 'true'
         run: sudo apt-get install -y gettext
 
       - name: Install Python dependencies
+        if: env.SKIP != 'true'
+        # Consider installing from CPython's Doc/requirements.txt instead of
+        # unpinned sphinx, so Sphinx upgrades can't change msgids on their own.
         run: pip install sphinx sphinx-intl
 
-      # Item 4: fetch/build/merge/validate now all live in one shared
-      # module (scripts/po_sync.py) instead of inline bash/awk here, so
-      # this workflow can't drift from update_python_version.py the way
-      # it did before (missing --no-location --no-wrap on one side).
       - name: Sync msgids (fetch, build gettext, merge, validate)
+        if: env.SKIP != 'true'
         run: python scripts/po_sync.py sync-only "$CPYTHON_TAG" --create-new
 
-      - name: Ensure translation label exists
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh label create "translation" \
-            --color "0075ca" \
-            --description "Translation review needed" \
-            --repo ${{ github.repository }} \
-            2>/dev/null || true
-
-      - name: Open issue for new and fuzzy strings
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          tmpfile=$(mktemp)
-
-          # --- New PO files (untracked, since nothing is staged yet) ---
-          new_files=$(git ls-files --others --exclude-standard -- '*.po' \
-            ':(exclude).cpython-src' ':(exclude).pot-templates')
-          if [ -n "$new_files" ]; then
-            new_count=$(echo "$new_files" | wc -l)
-            {
-              echo "## 🆕 New PO files ($new_count)"
-              echo "$new_files" | sed 's/^/- `/; s/$/`/'
-              echo ""
-            } >> "$tmpfile"
-          fi
-
-          # --- Fuzzy strings ---
-          fuzzy_out=$(mktemp)
-          while IFS= read -r f; do
-            fuzzy=$(msgattrib --only-fuzzy --no-obsolete "$f" 2>/dev/null)
-            if [ -n "$fuzzy" ]; then
-              entries=$(echo "$fuzzy" | awk '
-                /^msgid / {
-                  first=$0; msg=$0"\n"; lines=1; incapture=1; next
-                }
-                incapture && /^"/ {
-                  msg = msg $0 "\n"; lines++; next
-                }
-                incapture && /^msgstr/ {
-                  incapture=0
-                  if (!(first == "msgid \"\"" && lines==1)) {
-                    printf "- %s\n", msg
-                  }
-                  next
-                }
-              ')
-              count=$(echo "$entries" | grep -c '^- ' || true)
-              if [ "${count:-0}" -gt 0 ]; then
-                echo "### $f ($count fuzzy)" >> "$fuzzy_out"
-                echo "$entries" | head -20 >> "$fuzzy_out"
-                echo "" >> "$fuzzy_out"
-              fi
-            fi
-          done < <(find . -name "*.po" \
-            -not -path "./.git/*" \
-            -not -path "./.cpython-src/*" \
-            -not -path "./.pot-templates/*")
-
-          if [ -s "$fuzzy_out" ]; then
-            {
-              echo "## 🔍 Fuzzy strings"
-              cat "$fuzzy_out"
-            } >> "$tmpfile"
-          fi
-
-          # --- One issue for both ---
-          if [ -s "$tmpfile" ]; then
-            echo "Triggered by sync with \`$CPYTHON_TAG\`." >> "$tmpfile"
-            gh issue create \
-              --title "🔍 Translation review needed after CPython sync ($(date +%Y-%m-%d))" \
-              --body-file "$tmpfile" \
-              --label "translation" \
-              --repo ${{ github.repository }}
-          fi
-          rm -f "$tmpfile" "$fuzzy_out"
-
       - name: Stage changes
+        if: env.SKIP != 'true'
         run: git add --all
 
       - name: Unstage POT-Creation-Date-only changes
+        if: env.SKIP != 'true'
         run: python scripts/unstage_cosmetic.py
 
-      - name: Commit if changed
+      # --- Build the report from what is actually staged -------------------
+      - name: Build review report (new files + newly fuzzy strings)
+        if: env.SKIP != 'true'
+        run: |
+          report="$RUNNER_TEMP/report.md"
+          : > "$report"
+          work=$(mktemp -d)
+
+          # New PO files
+          new_files=$(git diff --staged --name-only --diff-filter=A -- '*.po')
+          if [ -n "$new_files" ]; then
+            {
+              echo "## 🆕 New PO files ($(echo "$new_files" | wc -l))"
+              echo "$new_files" | sed 's/^/- `/; s/$/`/'
+              echo ""
+            } >> "$report"
+          fi
+
+          # Fuzzy entries that are new in this run (present now, absent at HEAD)
+          fuzzy_out="$work/fuzzy.md"
+          : > "$fuzzy_out"
+          git diff --staged --name-only --diff-filter=M -- '*.po' |
+          while IFS= read -r f; do
+            git show "HEAD:$f" > "$work/old_full.po"
+            msgattrib --only-fuzzy --no-obsolete --no-wrap "$work/old_full.po" > "$work/old.po" 2>/dev/null || : > "$work/old.po"
+            msgattrib --only-fuzzy --no-obsolete --no-wrap "$f"                > "$work/new.po" 2>/dev/null || : > "$work/new.po"
+            # entries in exactly one of old/new, then keep those also in new
+            msgcomm --less-than=2 --no-wrap "$work/old.po" "$work/new.po" > "$work/sym.po"   2>/dev/null || : > "$work/sym.po"
+            msgcomm --no-wrap "$work/new.po" "$work/sym.po"                > "$work/added.po" 2>/dev/null || : > "$work/added.po"
+            count=$(grep -c '^#, .*fuzzy' "$work/added.po" || true)
+            if [ "${count:-0}" -gt 0 ]; then
+              {
+                echo "### \`$f\` ($count new fuzzy)"
+                grep -E '^msgid ".+"' "$work/added.po" | sed 's/^msgid /- /' | head -10
+                [ "$count" -gt 10 ] && echo "- … and $((count - 10)) more"
+                echo ""
+              } >> "$fuzzy_out"
+            fi
+          done
+
+          if [ -s "$fuzzy_out" ]; then
+            { echo "## 🔍 Newly fuzzy strings"; cat "$fuzzy_out"; } >> "$report"
+          fi
+
+      # --- Commit + push ---------------------------------------------------
+      - name: Commit and push if changed
+        id: commit
+        if: env.SKIP != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --staged --quiet; then
-            echo "Nothing to commit, skipping."
+            echo "Nothing to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore: sync msgids with CPython $CPYTHON_TAG"
+          git pull --rebase
           git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      # Only after a successful push, so a failed run can't create duplicates.
+      - name: Open issue for new files / newly fuzzy strings
+        if: env.SKIP != 'true' && steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          report="$RUNNER_TEMP/report.md"
+          if [ -s "$report" ]; then
+            gh label create "translation" \
+              --color "0075ca" \
+              --description "Translation review needed" \
+              --repo "${{ github.repository }}" 2>/dev/null || true
+            echo "Triggered by sync with \`$CPYTHON_TAG\` (commit $(git rev-parse --short HEAD))." >> "$report"
+            gh issue create \
+              --title "🔍 Translation review needed after CPython sync ($(date +%Y-%m-%d))" \
+              --body-file "$report" \
+              --label "translation" \
+              --repo "${{ github.repository }}"
+          fi
+
+      # Record the upstream head as synced (only reached if everything above passed).
+      - name: Remember synced upstream head
+        if: env.SKIP != 'true' && steps.upstream.outputs.sha != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/sync-marker
+          key: synced-${{ env.CPYTHON_TAG }}-${{ steps.upstream.outputs.sha }}
