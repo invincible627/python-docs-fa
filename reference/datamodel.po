@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"POT-Creation-Date: 2026-09-24 04:09+0000\n"
 "PO-Revision-Date: 2026-09-12 16:43+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -814,6 +814,9 @@ msgstr "رشته‌ای که نگاشت از آفست‌های :term:`بایت�
 
 msgid "This attribute of code objects is deprecated, and may be removed in Python 3.15."
 msgstr "این ویژگی از اشیای کد منسوخ شده است و ممکن است در پایتون 3.15 حذف شود."
+
+msgid "A :class:`bytes` object containing encoded source location information. The exact format is an implementation detail and may change between Python versions. Use :meth:`~codeobject.co_lines` and :meth:`~codeobject.co_positions` for supported access to line and position information. To create a modified copy of a code object, use :meth:`~codeobject.replace`."
+msgstr ""
 
 msgid "The required stack size of the code object"
 msgstr "اندازه‌ی پشته‌ی مورد نیاز شیء کد"
