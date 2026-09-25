@@ -8,6 +8,7 @@
 | bugs.po | 100.0% | 0.0% | 31 | 0 |
 | builtins/constants.po | 100.0% | 0.0% | 22 | 0 |
 | builtins/exceptions.po | 100.0% | 0.0% | 203 | 0 |
+| builtins/functions.po | 100.0% | 0.0% | 522 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
 | builtins/stdtypes.po | 100.0% | 0.0% | 1583 | 0 |
 | builtins/threadsafety.po | 100.0% | 0.0% | 122 | 0 |
@@ -146,6 +147,7 @@
 | howto/perf_profiling.po | 100.0% | 0.0% | 50 | 0 |
 | howto/pyporting.po | 100.0% | 0.0% | 13 | 0 |
 | howto/regex.po | 100.0% | 0.0% | 337 | 0 |
+| howto/remote_debugging.po | 100.0% | 0.0% | 154 | 0 |
 | howto/sockets.po | 100.0% | 0.0% | 63 | 0 |
 | howto/sorting.po | 100.0% | 0.0% | 92 | 0 |
 | howto/timerfd.po | 100.0% | 0.0% | 12 | 0 |
@@ -226,6 +228,7 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
+| library/ctypes.po | 100.0% | 0.0% | 677 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -394,6 +397,7 @@
 | library/sqlite3.po | 100.0% | 0.0% | 480 | 0 |
 | library/ssl.po | 100.0% | 0.0% | 547 | 0 |
 | library/stat.po | 100.0% | 0.0% | 92 | 0 |
+| library/statistics.po | 100.0% | 0.0% | 249 | 0 |
 | library/string.po | 100.0% | 0.0% | 224 | 0 |
 | library/string.templatelib.po | 100.0% | 0.0% | 56 | 0 |
 | library/stringprep.po | 100.0% | 0.0% | 25 | 0 |
@@ -433,6 +437,7 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
+| library/turtle.po | 100.0% | 0.0% | 684 | 0 |
 | library/types.po | 100.0% | 0.0% | 105 | 0 |
 | library/typing.po | 100.0% | 0.0% | 833 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 43 | 0 |
@@ -475,6 +480,7 @@
 | library/zlib.po | 100.0% | 0.0% | 96 | 0 |
 | library/zoneinfo.po | 100.0% | 0.0% | 84 | 0 |
 | reference/compound_stmts.po | 100.0% | 0.0% | 480 | 0 |
+| reference/datamodel.po | 100.0% | 0.0% | 914 | 0 |
 | reference/executionmodel.po | 100.0% | 0.0% | 145 | 0 |
 | reference/expressions.po | 100.0% | 0.0% | 595 | 0 |
 | reference/grammar.po | 100.0% | 0.0% | 6 | 0 |
@@ -535,13 +541,7 @@
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| reference/datamodel.po | 99.9% | 0.0% | 913 | 1 |
-| library/ctypes.po | 99.9% | 0.0% | 676 | 1 |
-| builtins/functions.po | 99.8% | 0.0% | 521 | 1 |
-| library/statistics.po | 99.6% | 0.0% | 248 | 1 |
-| library/turtle.po | 98.4% | 0.4% | 673 | 8 |
-| howto/remote_debugging.po | 88.3% | 1.3% | 136 | 16 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
 | license.po | 0.0% | 0.0% | 0 | 129 |
-| **مجموع** | **98.6%** | **0.0%** | **70382** | **998** |
+| **مجموع** | **98.6%** | **0.0%** | **70415** | **970** |
 <!-- TRANSLATION_STATUS_END -->
