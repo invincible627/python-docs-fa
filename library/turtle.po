@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"POT-Creation-Date: 2026-09-25 04:09+0000\n"
 "PO-Revision-Date: 2026-09-21 13:27+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
@@ -30,32 +30,34 @@ msgstr ":mod:`!turtle` --- گرافیک لاک‌پشتی"
 msgid "**Source code:** :source:`Lib/turtle.py`"
 msgstr "**کد منبع:** :source:`Lib/turtle.py`"
 
-msgid "Introduction"
-msgstr "مقدمه"
-
-msgid "Turtle graphics is an implementation of `the popular geometric drawing tools introduced in Logo <https://en.wikipedia.org/wiki/Turtle_ (robot)>`_, developed by Wally Feurzeig, Seymour Papert and Cynthia Solomon in 1967."
-msgstr "گرافیک لاک‌پشتی، پیاده‌سازی `ابزارهای محبوب ترسیم هندسی معرفی‌شده در Logo <https://en.wikipedia.org/wiki/Turtle_ (robot)>`_ است که توسط Wally Feurzeig، Seymour Papert و Cynthia Solomon در ۱۹۶۷ توسعه‌یافته است."
-
-msgid "This is an :term:`optional module`. If it is missing from your copy of CPython, look for documentation from your distributor (that is, whoever provided Python to you). If you are the distributor, see :ref:`optional-module-requirements`."
-msgstr "این یک :term:`optional module` است. اگر این ماژول در نسخه CPython شما موجود نیست، به مستندات توزیع‌کننده خود مراجعه کنید (یعنی هر کسی که پایتون را در اختیار شما قرار داده است). اگر شما توزیع‌کننده هستید، :ref:`optional-module-requirements` را ببینید."
-
-msgid "Get started"
-msgstr "شروع کنید"
-
-msgid "Imagine a robotic turtle starting at (0, 0) in the x-y plane.  After an ``import turtle``, give it the command ``turtle.forward(15)``, and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves.  Give it the command ``turtle.right(25)``, and it rotates in-place 25 degrees clockwise."
-msgstr "تصور کنید یک لاک‌پشت رباتیک در نقطه‌ی (۰، ۰) در صفحه‌ی x-y قرار دارد. پس از ``import turtle``، فرمان ``turtle.forward(15)`` را به آن بدهید، و ۱۵ پیکسل در جهتی که رو به آن دارد حرکت می‌کند (روی صفحه‌نمایش!) و در حین حرکت، سطری رسم می‌کند. فرمان ``turtle.right(25)`` را به آن بدهید، و ۲۵ درجه در جهت عقربه‌های ساعت درجا می‌چرخد."
-
 msgid "Turtle can draw intricate shapes using programs that repeat simple moves."
 msgstr "Turtle می‌تواند با استفاده از برنامه‌هایی که حرکات ساده را تکرار می‌کنند، شکل‌های پیچیده‌ای رسم کند."
 
-msgid "In Python, turtle graphics provides a representation of a physical \"turtle\" (a little robot with a pen) that draws on a sheet of paper on the floor."
-msgstr "در پایتون، گرافیک لاک‌پشتی یک بازنمایی از یک «لاک‌پشت» فیزیکی (یک ربات کوچک با قلم) ارائه می‌دهد که روی یک برگه کاغذ روی زمین ترسیم می‌کند."
+#, fuzzy
+msgid "Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an ``import turtle``, give it the command ``turtle.forward(15)``, and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves. Give it the command ``turtle.right(25)``, and it rotates in-place 25 degrees clockwise."
+msgstr "تصور کنید یک لاک‌پشت رباتیک در نقطه‌ی (۰، ۰) در صفحه‌ی x-y قرار دارد. پس از ``import turtle``، فرمان ``turtle.forward(15)`` را به آن بدهید، و ۱۵ پیکسل در جهتی که رو به آن دارد حرکت می‌کند (روی صفحه‌نمایش!) و در حین حرکت، سطری رسم می‌کند. فرمان ``turtle.right(25)`` را به آن بدهید، و ۲۵ درجه در جهت عقربه‌های ساعت درجا می‌چرخد."
 
-msgid "It's an effective and well-proven way for learners to encounter programming concepts and interaction with software, as it provides instant, visible feedback. It also provides convenient access to graphical output in general."
-msgstr "این روشی مؤثر و کاملاً آزموده‌شده برای یادگیرندگان است تا با مفاهیم برنامه‌نویسی و تعامل با نرم‌افزار آشنا شوند، زیرا بازخوردی فوری و قابل‌مشاهده فراهم می‌کند. همچنین به‌طور کلی دسترسی آسانی به خروجی گرافیکی فراهم می‌کند."
+msgid "Turtle graphics is an implementation of `the drawing tools introduced in Logo <https://en.wikipedia.org/wiki/Turtle_(robot)>`_ in 1967. It was created as an educational tool, and its instant, visible feedback makes it an effective way for learners to encounter programming concepts. It is also a convenient way to produce simple graphical output without bringing in external libraries."
+msgstr ""
 
-msgid "Turtle drawing was originally created as an educational tool, to be used by teachers in the classroom. For the programmer who needs to produce some graphical output it can be a way to do that without the overhead of introducing more complex or external libraries into their work."
-msgstr "رسم با Turtle در ابتدا به‌عنوان یک ابزار آموزشی ساخته شد تا معلمان در کلاس درس از آن استفاده کنند. برای برنامه‌نویسی که نیاز به تولید خروجی گرافیکی دارد، این می‌تواند راهی برای انجام این کار بدون سربار ناشی از وارد کردن کتابخانه‌های پیچیده‌تر یا خارجی به کارش باشد."
+msgid "This document includes four main sections:"
+msgstr ""
+
+msgid ":ref:`turtle-tutorial` teaches the basics of turtle drawing."
+msgstr ""
+
+msgid ":ref:`turtle-reference` describes the functions, methods and classes this module defines."
+msgstr ""
+
+msgid ":ref:`turtle-howtos` details how to handle specific tasks."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`turtle-explanation` provides background on the object-oriented interface."
+msgstr ":ref:`توضیح رابط شیءگرا <turtle-explanation>`"
+
+msgid "Turtle graphics requires the :mod:`tkinter` :term:`optional module`. The python.org installers for Windows and macOS include it, but some Linux distributions and other platforms may package it separately. If ``import turtle`` fails with an error mentioning ``_tkinter``, look for documentation from your distributor (that is, whoever provided Python to you). Check this in advance if you're planning to use turtle graphics with a learner."
+msgstr ""
 
 msgid "Tutorial"
 msgstr "آموزش"
@@ -105,7 +107,8 @@ msgstr ""
 msgid "Notice how the turtle, represented by an arrow, points in different directions as you steer it."
 msgstr "توجه کنید که چگونه لاک‌پشت، که با یک پیکان نمایش داده می‌شود، همان‌طور که آن را هدایت می‌کنید به جهت‌های مختلف اشاره می‌کند."
 
-msgid "Experiment with those commands, and also with ``backward()`` and ``right()``."
+#, fuzzy
+msgid "Experiment with those commands, and also with ``backward()`` and ``right()``. Many commands also have terser aliases, such as ``fd()`` for :func:`forward`."
 msgstr "آن دستورات را آزمایش کنید، و همچنین ``backward()`` و ``right()`` را نیز آزمایش کنید."
 
 msgid "Pen control"
@@ -211,26 +214,11 @@ msgstr "end_fill()"
 msgid "(Note that filling only actually takes place when you give the ``end_fill()`` command.)"
 msgstr "(توجه داشته باشید که پر کردن در واقع تنها زمانی انجام می‌شود که دستور ``end_fill()`` را صادر کنید.)"
 
-msgid "How to..."
-msgstr "چگونه..."
+msgid "How-to guides"
+msgstr ""
 
 msgid "This section covers some typical turtle use-cases and approaches."
 msgstr "این بخش برخی از موارد استفاده و رویکردهای رایج turtle را پوشش می‌دهد."
-
-msgid "Get started as quickly as possible"
-msgstr "هرچه سریع‌تر شروع کنید"
-
-msgid "One of the joys of turtle graphics is the immediate, visual feedback that's available from simple commands - it's an excellent way to introduce children to programming ideas, with a minimum of overhead (not just children, of course)."
-msgstr "یکی از لذت‌های گرافیک لاک‌پشتی (turtle graphics)، بازخورد فوری و بصری است که از طریق دستورات ساده در دسترس است — این روشی عالی برای آشنا کردن کودکان با ایده‌های برنامه‌نویسی، با حداقل سربار است (البته نه فقط کودکان)."
-
-msgid "The turtle module makes this possible by exposing all its basic functionality as functions, available with ``from turtle import *``. The :ref:`turtle graphics tutorial <turtle-tutorial>` covers this approach."
-msgstr "ماژول turtle این امکان را با در دسترس قرار دادن تمام قابلیت‌های پایه‌ی خود به‌صورت توابع فراهم می‌کند؛ این توابع با ``from turtle import *`` در دسترس هستند. :ref:`آموزش گرافیک turtle <turtle-tutorial>` این روش را پوشش می‌دهد."
-
-msgid "It's worth noting that many of the turtle commands also have even more terse equivalents, such as ``fd()`` for :func:`forward`. These are especially useful when working with learners for whom typing is not a skill."
-msgstr "شایان ذکر است که بسیاری از فرمان‌های turtle معادل‌های حتی مختصرتری نیز دارند، مانند ``fd()`` برای :func:`forward`. این معادل‌ها به‌ویژه هنگام کار با یادگیرندگانی که تایپ کردن جزو مهارت‌های آن‌ها نیست، مفید هستند."
-
-msgid "You'll need to have the :mod:`Tk interface package <tkinter>` installed on your system for turtle graphics to work. Be warned that this is not always straightforward, so check this in advance if you're planning to use turtle graphics with a learner."
-msgstr "برای کار کردن گرافیک لاک‌پشتی، باید :mod:`بسته‌ی رابط Tk <tkinter>` بر روی سیستم شما نصب شده باشد. توجه داشته باشید که این کار همیشه ساده نیست، بنابراین اگر قصد دارید از گرافیک لاک‌پشتی با یک یادگیرنده استفاده کنید، این مورد را از قبل بررسی کنید."
 
 msgid "Automatically begin and end filling"
 msgstr "آغاز و پایان پر کردن به‌صورت خودکار"
@@ -369,8 +357,8 @@ msgstr ""
 "t.screen.title('Object-oriented turtle demo')\n"
 "t.screen.bgcolor(\"orange\")"
 
-msgid "Turtle graphics reference"
-msgstr "مرجع گرافیک لاک‌پشتی"
+msgid "Reference"
+msgstr ""
 
 msgid "In the following documentation the argument list for functions is given. Methods, of course, have the additional first argument *self* which is omitted here."
 msgstr "در مستندات زیر، فهرست آرگومان‌های توابع داده شده است. متدها، البته، آرگومان اول اضافه‌ای به نام *self* دارند که در اینجا حذف شده است."
@@ -3260,6 +3248,48 @@ msgstr "مثالی ساده‌ی دیگر"
 
 msgid "Have fun!"
 msgstr "لذت ببرید!"
+
+#~ msgid "Introduction"
+#~ msgstr "مقدمه"
+
+#~ msgid "Turtle graphics is an implementation of `the popular geometric drawing tools introduced in Logo <https://en.wikipedia.org/wiki/Turtle_ (robot)>`_, developed by Wally Feurzeig, Seymour Papert and Cynthia Solomon in 1967."
+#~ msgstr "گرافیک لاک‌پشتی، پیاده‌سازی `ابزارهای محبوب ترسیم هندسی معرفی‌شده در Logo <https://en.wikipedia.org/wiki/Turtle_ (robot)>`_ است که توسط Wally Feurzeig، Seymour Papert و Cynthia Solomon در ۱۹۶۷ توسعه‌یافته است."
+
+#~ msgid "This is an :term:`optional module`. If it is missing from your copy of CPython, look for documentation from your distributor (that is, whoever provided Python to you). If you are the distributor, see :ref:`optional-module-requirements`."
+#~ msgstr "این یک :term:`optional module` است. اگر این ماژول در نسخه CPython شما موجود نیست، به مستندات توزیع‌کننده خود مراجعه کنید (یعنی هر کسی که پایتون را در اختیار شما قرار داده است). اگر شما توزیع‌کننده هستید، :ref:`optional-module-requirements` را ببینید."
+
+#~ msgid "Get started"
+#~ msgstr "شروع کنید"
+
+#~ msgid "In Python, turtle graphics provides a representation of a physical \"turtle\" (a little robot with a pen) that draws on a sheet of paper on the floor."
+#~ msgstr "در پایتون، گرافیک لاک‌پشتی یک بازنمایی از یک «لاک‌پشت» فیزیکی (یک ربات کوچک با قلم) ارائه می‌دهد که روی یک برگه کاغذ روی زمین ترسیم می‌کند."
+
+#~ msgid "It's an effective and well-proven way for learners to encounter programming concepts and interaction with software, as it provides instant, visible feedback. It also provides convenient access to graphical output in general."
+#~ msgstr "این روشی مؤثر و کاملاً آزموده‌شده برای یادگیرندگان است تا با مفاهیم برنامه‌نویسی و تعامل با نرم‌افزار آشنا شوند، زیرا بازخوردی فوری و قابل‌مشاهده فراهم می‌کند. همچنین به‌طور کلی دسترسی آسانی به خروجی گرافیکی فراهم می‌کند."
+
+#~ msgid "Turtle drawing was originally created as an educational tool, to be used by teachers in the classroom. For the programmer who needs to produce some graphical output it can be a way to do that without the overhead of introducing more complex or external libraries into their work."
+#~ msgstr "رسم با Turtle در ابتدا به‌عنوان یک ابزار آموزشی ساخته شد تا معلمان در کلاس درس از آن استفاده کنند. برای برنامه‌نویسی که نیاز به تولید خروجی گرافیکی دارد، این می‌تواند راهی برای انجام این کار بدون سربار ناشی از وارد کردن کتابخانه‌های پیچیده‌تر یا خارجی به کارش باشد."
+
+#~ msgid "How to..."
+#~ msgstr "چگونه..."
+
+#~ msgid "Get started as quickly as possible"
+#~ msgstr "هرچه سریع‌تر شروع کنید"
+
+#~ msgid "One of the joys of turtle graphics is the immediate, visual feedback that's available from simple commands - it's an excellent way to introduce children to programming ideas, with a minimum of overhead (not just children, of course)."
+#~ msgstr "یکی از لذت‌های گرافیک لاک‌پشتی (turtle graphics)، بازخورد فوری و بصری است که از طریق دستورات ساده در دسترس است — این روشی عالی برای آشنا کردن کودکان با ایده‌های برنامه‌نویسی، با حداقل سربار است (البته نه فقط کودکان)."
+
+#~ msgid "The turtle module makes this possible by exposing all its basic functionality as functions, available with ``from turtle import *``. The :ref:`turtle graphics tutorial <turtle-tutorial>` covers this approach."
+#~ msgstr "ماژول turtle این امکان را با در دسترس قرار دادن تمام قابلیت‌های پایه‌ی خود به‌صورت توابع فراهم می‌کند؛ این توابع با ``from turtle import *`` در دسترس هستند. :ref:`آموزش گرافیک turtle <turtle-tutorial>` این روش را پوشش می‌دهد."
+
+#~ msgid "It's worth noting that many of the turtle commands also have even more terse equivalents, such as ``fd()`` for :func:`forward`. These are especially useful when working with learners for whom typing is not a skill."
+#~ msgstr "شایان ذکر است که بسیاری از فرمان‌های turtle معادل‌های حتی مختصرتری نیز دارند، مانند ``fd()`` برای :func:`forward`. این معادل‌ها به‌ویژه هنگام کار با یادگیرندگانی که تایپ کردن جزو مهارت‌های آن‌ها نیست، مفید هستند."
+
+#~ msgid "You'll need to have the :mod:`Tk interface package <tkinter>` installed on your system for turtle graphics to work. Be warned that this is not always straightforward, so check this in advance if you're planning to use turtle graphics with a learner."
+#~ msgstr "برای کار کردن گرافیک لاک‌پشتی، باید :mod:`بسته‌ی رابط Tk <tkinter>` بر روی سیستم شما نصب شده باشد. توجه داشته باشید که این کار همیشه ساده نیست، بنابراین اگر قصد دارید از گرافیک لاک‌پشتی با یک یادگیرنده استفاده کنید، این مورد را از قبل بررسی کنید."
+
+#~ msgid "Turtle graphics reference"
+#~ msgstr "مرجع گرافیک لاک‌پشتی"
 
 #~ msgid "Changes since Python 2.6"
 #~ msgstr "تغییرات از پایتون 2.6"
