@@ -123,8 +123,9 @@ def _is_bot(name: str, email: str) -> bool:
 def git_blame_porcelain(path: Path) -> dict[str, dict]:
     """Run ``git blame --porcelain`` and return a commit-hash → info map.
 
-    Each value is a dict with keys: ``name``, ``email``, ``subject``, and
-    ``lines`` (a set of 1-based line numbers blamed to that commit).
+    Each value is a dict with keys: ``name``, ``email``, ``subject``,
+    ``author_time`` (unix timestamp, int), and ``lines`` (a set of 1-based
+    line numbers blamed to that commit).
     """
     result = subprocess.run(
         [
@@ -160,13 +161,26 @@ def git_blame_porcelain(path: Path) -> dict[str, dict]:
             result_line = int(parts[2])
             current_hash = h
             if h not in commits:
-                commits[h] = {"name": "", "email": "", "subject": "", "lines": set()}
+                commits[h] = {
+                    "name": "",
+                    "email": "",
+                    "subject": "",
+                    "author_time": -1,
+                    "lines": set(),
+                }
             commits[h]["lines"].add(result_line)
         elif raw_line.startswith("author ") and current_hash:
             commits[current_hash]["name"] = raw_line[len("author ") :].strip()
         elif raw_line.startswith("author-mail ") and current_hash:
             email = raw_line[len("author-mail ") :].strip().strip("<>")
             commits[current_hash]["email"] = email.lower()
+        elif raw_line.startswith("author-time ") and current_hash:
+            try:
+                commits[current_hash]["author_time"] = int(
+                    raw_line[len("author-time ") :].strip()
+                )
+            except ValueError:
+                pass
         elif raw_line.startswith("summary ") and current_hash:
             commits[current_hash]["subject"] = raw_line[len("summary ") :]
 
@@ -204,13 +218,15 @@ def real_author_for_lines(
     """Return the git username of the most recent real (non-bot, non-mechanical)
     author who touched any of ``line_numbers``, or None.
 
-    ``git blame --porcelain`` outputs commits in file order, not
-    chronologically.  We pick the candidate whose blamed lines have the
-    highest line number as a proxy for recency, which avoids an extra
-    ``git log`` call per entry and is accurate enough for string-level work.
+    Recency is determined by each candidate commit's ``author-time`` (a unix
+    timestamp reported directly by ``git blame --porcelain``), not by line
+    position in the file. Line number is not a valid proxy for edit time: a
+    numerically later line is not necessarily edited more recently, so using
+    it as a stand-in silently misattributes entries whose msgstr lines were
+    last touched by different commits.
     """
     best_name: str | None = None
-    best_line: int = -1
+    best_time: int = -1
 
     for info in blame.values():
         overlap = info["lines"] & line_numbers
@@ -218,9 +234,9 @@ def real_author_for_lines(
             continue
         if _is_bot(info["name"], info["email"]) or _is_mechanical(info["subject"]):
             continue
-        candidate_line = max(overlap)
-        if candidate_line > best_line:
-            best_line = candidate_line
+        candidate_time = info["author_time"]
+        if candidate_time > best_time:
+            best_time = candidate_time
             best_name = info["name"]
 
     return best_name
