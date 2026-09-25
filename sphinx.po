@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-23 17:54+0330\n"
+"PO-Revision-Date: 2026-09-25 17:47+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -2361,47 +2361,47 @@ msgid "no output on stdout, just warnings on stderr"
 msgstr "هیچ خروجی‌ای روی stdout نیست، فقط هشدارها روی stderr"
 
 msgid "no output at all, not even warnings"
-msgstr ""
+msgstr "هیچ خروجی‌ای، حتی هشدارها"
 
 msgid "do emit colored output (default: auto-detect)"
-msgstr ""
+msgstr "خروجی رنگی تولید کنید (پیش‌فرض: تشخیص خودکار)"
 
 msgid "do not emit colored output (default: auto-detect)"
-msgstr ""
+msgstr "خروجی رنگی تولید نکنید (پیش‌فرض: تشخیص خودکار)"
 
 msgid "warning control options"
-msgstr ""
+msgstr "گزینه‌های کنترل هشدار"
 
 msgid "write warnings (and errors) to given file"
-msgstr ""
+msgstr "نوشتن هشدارها (و خطاها) در پرونده‌ی داده‌شده"
 
 msgid "turn warnings into errors"
-msgstr ""
+msgstr "تبدیل هشدارها به خطا"
 
 msgid "show full traceback on exception"
-msgstr ""
+msgstr "نمایش ردگیری کامل هنگام استثنا"
 
 msgid "run Pdb on exception"
-msgstr ""
+msgstr "اجرای Pdb هنگام استثنا"
 
 msgid "raise an exception on warnings"
-msgstr ""
+msgstr "پرتاب استثنا هنگام هشدارها"
 
 msgid "cannot combine -a option and filenames"
-msgstr ""
+msgstr "نمی‌توان گزینه‌ی -a و نام پرونده‌ها را با هم ترکیب کرد"
 
 #, python-format
 msgid "cannot open warning file '%s': %s"
-msgstr ""
+msgstr "نمی‌توان پرونده‌ی هشدار «%s» را باز کرد: %s"
 
 msgid "-D option argument must be in the form name=value"
-msgstr ""
+msgstr "آرگومان گزینه‌ی -D باید به شکل name=value باشد"
 
 msgid "-A option argument must be in the form name=value"
-msgstr ""
+msgstr "آرگومان گزینه‌ی -A باید به شکل name=value باشد"
 
 msgid "Collapse sidebar"
-msgstr ""
+msgstr "جمع کردن نوار کناری"
 
 msgid "Table of Contents"
 msgstr "فهرست مطالب"
@@ -2410,20 +2410,20 @@ msgid "Search"
 msgstr "جست‌وجو"
 
 msgid "Go"
-msgstr ""
+msgstr "رفتن"
 
 msgid "Show Source"
 msgstr "نمایش منبع"
 
 msgid "Contents"
-msgstr ""
+msgstr "محتویات"
 
 #, python-format
 msgid "Search %(docstitle)s"
-msgstr ""
+msgstr "جست‌وجو در %(docstitle)s"
 
 msgid "Overview"
-msgstr ""
+msgstr "نمای کلی"
 
 msgid "Welcome! This is"
 msgstr "خوش آمدید! این"
@@ -2432,186 +2432,190 @@ msgid "the documentation for"
 msgstr "مستندات"
 
 msgid "last updated"
-msgstr ""
+msgstr "آخرین به‌روزرسانی"
 
 msgid "Indices and tables:"
-msgstr ""
+msgstr "اندیس‌ها و جدول‌ها:"
 
 msgid "Complete Table of Contents"
 msgstr "فهرست مطالب کامل"
 
 msgid "lists all sections and subsections"
-msgstr ""
+msgstr "همه‌ی بخش‌ها و زیربخش‌ها را فهرست می‌کند"
 
 msgid "Search Page"
-msgstr ""
+msgstr "صفحه‌ی جست‌وجو"
 
 msgid "search this documentation"
-msgstr ""
+msgstr "این مستند را جست‌وجو کنید"
 
 msgid "Global Module Index"
-msgstr ""
+msgstr "اندیس سراسری ماژول‌ها"
 
 msgid "quick access to all modules"
-msgstr ""
+msgstr "دسترسی سریع به همه‌ی ماژول‌ها"
 
 msgid "General Index"
-msgstr ""
+msgstr "اندیس کلی"
 
 msgid "all functions, classes, terms"
-msgstr ""
+msgstr "همه‌ی توابع، کلاس‌ها و اصطلاحات"
 
 msgid "This Page"
 msgstr "این صفحه"
 
 #, python-format
 msgid "Index &#x2013; %(key)s"
-msgstr ""
+msgstr "اندیس &#x2013; %(key)s"
 
 msgid "Full index on one page"
-msgstr ""
+msgstr "اندیس کامل در یک صفحه"
 
 msgid "Quick search"
-msgstr ""
+msgstr "جست‌وجو سریع"
 
 msgid "Index pages by letter"
-msgstr ""
+msgstr "صفحه‌های اندیس بر اساس حرف"
 
 msgid "can be huge"
-msgstr ""
+msgstr "می‌تواند بزرگ باشد"
 
 msgid "Previous topic"
-msgstr ""
+msgstr "موضوع قبلی"
 
 msgid "previous chapter"
-msgstr ""
+msgstr "فصل قبلی"
 
 msgid "Next topic"
-msgstr ""
+msgstr "موضوع بعدی"
 
 msgid "next chapter"
-msgstr ""
+msgstr "فصل بعدی"
 
 msgid "Navigation"
-msgstr ""
+msgstr "ناوبری"
 
 #, python-format
 msgid "Search within %(docstitle)s"
-msgstr ""
+msgstr "جست‌وجو در %(docstitle)s"
 
 msgid "About these documents"
 msgstr "درباره‌ی مستندات"
 
 #, python-format
 msgid "&#169; %(copyright_prefix)s %(copyright)s."
-msgstr ""
+msgstr "&#169; %(copyright_prefix)s %(copyright)s."
 
 #, python-format
 msgid "Last updated on %(last_updated)s."
-msgstr ""
+msgstr "آخرین به‌روزرسانی در %(last_updated)s."
 
 #, python-format
 msgid "Created using <a href=\"https://www.sphinx-doc.org/\">Sphinx</a> %(sphinx_version)s."
-msgstr ""
+msgstr "ساخته‌شده با <a href=\\\"https://www.sphinx-doc.org/\\\">Sphinx</a> %(sphinx_version)s."
 
 msgid ""
 "Please activate JavaScript to enable the search\n"
 "    functionality."
 msgstr ""
+"لطفاً برای فعال‌سازی قابلیت جست‌وجو،\\n\n"
+"    JavaScript را فعال کنید."
 
 msgid ""
 "Searching for multiple words only shows matches that contain\n"
 "    all words."
 msgstr ""
+"جست‌وجو برای چندین واژه فقط تطبیق‌هایی را نشان می‌دهد که شامل\\n\n"
+"    همه‌ی واژه‌ها باشند."
 
 msgid "search"
-msgstr ""
+msgstr "جست‌وجو"
 
 msgid "Hide Search Matches"
-msgstr ""
+msgstr "پنهان کردن تطبیق‌های جست‌وجو"
 
 msgid "Search Results"
-msgstr ""
+msgstr "نتایج جست‌وجو"
 
 msgid "Your search did not match any documents. Please make sure that all words are spelled correctly and that you've selected enough categories."
-msgstr ""
+msgstr "جست‌وجوی شما با هیچ سندی مطابقت نداشت. لطفاً مطمئن شوید که همه‌ی واژه‌ها درست نوشته شده‌اند و دسته‌بندی‌های کافی را انتخاب کرده‌اید."
 
 #, python-brace-format
 msgid "Search finished, found one page matching the search query."
 msgid_plural "Search finished, found ${resultCount} pages matching the search query."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "جست‌وجو به پایان رسید؛ یک صفحه مطابق با عبارت جست‌وجو یافت شد."
+msgstr[1] "جست‌وجو به پایان رسید؛ ${resultCount} صفحه مطابق با عبارت جست‌وجو یافت شد."
 
 msgid "Searching"
-msgstr ""
+msgstr "در حال جست‌وجو"
 
 msgid "Preparing search..."
-msgstr ""
+msgstr "در حال آماده‌سازی جست‌وجو..."
 
 msgid ", in "
-msgstr ""
+msgstr "، در "
 
 #, python-format
 msgid "%(filename)s &#8212; %(docstitle)s"
-msgstr ""
+msgstr "%(filename)s &#8212; %(docstitle)s"
 
 #, python-format
 msgid "Changes in Version %(version)s &#8212; %(docstitle)s"
-msgstr ""
+msgstr "تغییرات در نسخه‌ی %(version)s &#8212; %(docstitle)s"
 
 #, python-format
 msgid "Automatically generated list of changes in version %(version)s"
-msgstr ""
+msgstr "فهرست خودکار‌تولیدشده‌ی تغییرات در نسخه‌ی %(version)s"
 
 msgid "Library changes"
-msgstr ""
+msgstr "تغییرات کتابخانه"
 
 msgid "C API changes"
-msgstr ""
+msgstr "تغییرات API C"
 
 msgid "Other changes"
-msgstr ""
+msgstr "تغییرات دیگر"
 
 msgid "Expand sidebar"
-msgstr ""
+msgstr "باز کردن نوار کناری"
 
 msgid "Positional-only parameter separator (PEP 570)"
-msgstr ""
+msgstr "جداکننده‌ی پارامتر فقط‌جایگاهی (PEP 570)"
 
 msgid "Keyword-only parameters separator (PEP 3102)"
-msgstr ""
+msgstr "جداکننده‌ی پارامترهای فقط کلیدواژه‌ای (PEP 3102)"
 
 #, python-format
 msgid "%s() (in module %s)"
-msgstr ""
+msgstr "%s() (در ماژول %s)"
 
 #, python-format
 msgid "%s (in module %s)"
-msgstr ""
+msgstr "%s (در ماژول %s)"
 
 #, python-format
 msgid "%s (built-in variable)"
-msgstr ""
+msgstr "%s (متغیر توکار)"
 
 #, python-format
 msgid "%s (built-in class)"
-msgstr ""
+msgstr "%s (کلاس توکار)"
 
 #, python-format
 msgid "%s (class in %s)"
-msgstr ""
+msgstr "%s (کلاس در %s)"
 
 #, python-format
 msgid "%s() (%s class method)"
-msgstr ""
+msgstr "%s() (%s متد کلاس)"
 
 #, python-format
 msgid "%s() (%s static method)"
-msgstr ""
+msgstr "%s() (%s متد ایستا)"
 
 #, python-format
 msgid "%s (%s property)"
-msgstr ""
+msgstr "%s (%s پراپرتی)"
 
 #, python-format
 msgid "%s (type alias in %s)"
