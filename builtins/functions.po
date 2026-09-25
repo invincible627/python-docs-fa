@@ -482,7 +482,7 @@ msgid "The argument *optimize* specifies the optimization level of the compiler;
 msgstr "آرگومان *optimize* سطح بهینه‌سازی کامپایلر را مشخص می‌کند؛ مقدار پیش‌فرض ``-1`` سطح بهینه‌سازی مفسر را مطابق گزینه‌های :option:`-O` انتخاب می‌کند. سطوح صریح عبارت‌اند از: ``0`` (بدون بهینه‌سازی؛ ``__debug__`` برابر با true است)، ``1`` (دستورهای assert حذف می‌شوند و ``__debug__`` برابر false است)، و ``2`` (علاوه بر آن، docstringها نیز حذف می‌شوند)."
 
 msgid "This function raises :exc:`SyntaxError` if the compiled source is invalid, including a *source* containing a null character or that cannot be decoded; :exc:`ValueError` if *mode* or *flags* is invalid, or if a string *source* contains surrogate characters; :exc:`MemoryError` or :exc:`RecursionError` if *source* is too complex to parse or compile, for example an expression with many thousands of nested operators; and :exc:`OverflowError` if *source* is too large."
-msgstr ""
+msgstr "این تابع :exc:`SyntaxError` را پرتاب میکند اگر منبعِ کامپایل‌شده نامعتبر باشد، از جمله یک *source* که حاوی نویسه‌ی null است یا که قابل رمزگشایی نیست؛ :exc:`ValueError` اگر *حالت* یا *پرچم‌ها* نامعتبر باشند، یا اگر یک رشته *source* حاوی نویسه‌های جایگزین باشد؛ :exc:`MemoryError` یا :exc:`RecursionError` اگر *source* برای تجزیه یا کامپایل بیش از حد پیچیده باشد، برای مثال یک عبارت با هزاران عملگر تو در تو؛ و :exc:`OverflowError` اگر *source* بیش از حد بزرگ باشد."
 
 msgid "If you want to parse Python code into its AST representation, see :func:`ast.parse`."
 msgstr "اگر می‌خواهید کد پایتون را به نمایش AST آن تجزیه کنید، به :func:`ast.parse` مراجعه کنید."

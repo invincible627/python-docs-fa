@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-25 04:09+0000\n"
-"PO-Revision-Date: 2026-09-15 07:29+0330\n"
+"PO-Revision-Date: 2026-09-25 08:57+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
 "Language: fa\n"
@@ -27,7 +27,7 @@ msgid "This protocol enables external tools to attach to a running CPython proce
 msgstr "این پروتکل به ابزارهای خارجی امکان می‌دهد به یک فرآیند در حال اجرای CPython متصل شوند و کد پایتون را از راه دور اجرا کنند."
 
 msgid "Attaching to another Python process may require additional permissions or configuration, depending on the platform."
-msgstr ""
+msgstr "پیوستن به یک فرایند پایتون دیگر ممکن است نیازمند مجوزهای اضافی یا پیکربندی باشد، که بستگی به پلتفرم دارد."
 
 msgid "Disabling remote debugging"
 msgstr "غیرفعال‌سازی اشکال‌زدایی از راه دور"
@@ -47,69 +47,69 @@ msgstr "پایتون را با پرچم ساخت :option:`--without-remote-debug
 msgid "Permission requirements"
 msgstr "الزامات دسترسی"
 
-#, fuzzy
 msgid "Attaching to a running Python process for remote debugging requires special configuration on most platforms. The specific requirements and troubleshooting steps depend on your operating system:"
-msgstr "اتصال به یک فرایند پایتون در حال اجرا برای اشکال‌زدایی از راه دور، در بیشتر پلتفرم‌ها به دسترسی‌های ارتقاء‌یافته نیاز دارد. نیازمندی‌های خاص و مراحل عیب‌یابی به سیستم‌عامل شما بستگی دارند:"
+msgstr "پیوستن به یک فرایند پایتون در حال اجرا برای اشکال‌زدایی از راه دور نیازمند پیکربندی خاص در اکثر پلتفرم‌هاست. نیازمندی‌های خاص و مراحل عیب‌یابی به سیستم‌عامل شما بستگی دارد:"
 
 msgid "Linux"
 msgstr "لینوکس"
 
 msgid "In general, you can debug your own processes, but there are several common configurations that may disable this. Some Linux distributions enable **ptrace restrictions**, aka \"Yama,\" as a form of system hardening. Recent versions of the ``setpriv`` command (util-linux 2.41, released June 2025) let you loosen ptrace restrictions on a per-process basis:"
-msgstr ""
+msgstr "به طور کلی، شما می‌توانید فرایندهای خود را اشکال‌زدایی کنید، اما چندین پیکربندی رایج وجود دارد که ممکن است این کار را غیرفعال کنند. برخی توزیع‌های لینوکس **محدودیت‌های ptrace** را، که به نام «یاما» (Yama) نیز شناخته می‌شود، به عنوان یک شکل از سخت‌سازی سیستم فعال می‌کنند. نسخه‌های اخیر دستور ``setpriv`` (util-linux ۲.۴۱، منتشر شده در ژوئن ۲۰۲۵) به شما اجازه می‌دهند محدودیت‌های ptrace را بر اساس هر فرایند شل کنید:"
 
 msgid "``setpriv --ptracer any python3``"
-msgstr ""
+msgstr "``setpriv --ptracer any python3``"
 
 msgid "(This is configured on the process *being debugged*.) You can also turn off ptrace restrictions for all processes until reboot with:"
-msgstr ""
+msgstr "(این روی فرایندی که *در حال اشکال‌زدایی است* پیکربندی شده است.) شما همچنین می‌توانید محدودیت‌های ptrace را برای تمام فرایندها تا زمان راه‌اندازی مجدد (reboot) با دستور زیر غیرفعال کنید:"
 
 msgid "``echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope``"
 msgstr "``echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope``"
 
 msgid "This can also be configured persistently, usually in ``/etc/sysctl.d``."
-msgstr ""
+msgstr "این همچنین می‌تواند به صورت پایدار پیکربندی شود، معمولاً در ``/etc/sysctl.d``."
 
-#, fuzzy
 msgid "Disabling ``ptrace_scope`` reduces system hardening and should only be done in low-security environments."
-msgstr "غیرفعال کردن ``ptrace_scope`` مستحکم‌سازی سیستم را کاهش می‌دهد و باید فقط در محیط‌های مورد اعتماد انجام شود."
+msgstr "غیرفعال کردن ``ptrace_scope`` امنیت سیستم را کاهش می‌دهد و تنها باید در محیط‌های کم‌ریسک انجام شود."
 
 msgid "It is also possible that the ``ptrace`` system call is disabled because of a security filter. In particular, this was common with older versions of some container software. Docker 19.03 or newer (released 2019) and containerd 1.6.7 or newer (released 2022) will automatically allow usage of the ``ptrace`` system call inside containers, when running on Linux kernel 4.8 or higher. If you cannot upgrade to these versions, you can create your container with an option like ``--security-opt seccomp=unconfined`` to disable the system call security filter for that container. This weakens the container's isolation and should only be done in low-security environments."
-msgstr ""
+msgstr "این نیز ممکن است که فراخوانی سیستم ``ptrace`` به دلیل یک فیلتر امنیتی غیرفعال شده باشد. به طور خاص، این در نسخه‌های قدیمی برخی نرم‌افزارهای ظرف رایج بود. داکر ۱۹.۰۳ یا جدیدتر (منتشر شده در ۲۰۱۹) و containerd ۱.۶.۷ یا جدیدتر (منتشر شده در ۲۰۲۲) به طور خودکار استفاده از فراخوانی سیستم ``ptrace`` را در داخل ظرف‌ها مجاز می‌کنند، وقتی روی هسته لینوکس ۴.۸ یا بالاتر اجرا می‌شوند. اگر شما نمی‌توانید به این نسخه‌ها ارتقا دهید، می‌توانید ظرف خود را با گزینه‌ای مانند ``--security-opt seccomp=unconfined`` بسازید تا فیلتر امنیتی فراخوانی سیستم برای آن ظرف غیرفعال شود. این کار جداسازی ظرف را ضعیف می‌کند و تنها باید در محیط‌های کم‌ریسک انجام شود."
 
 msgid "If you need to trace a process that you *do not* own, you will need superuser access or equivalent. This also applies to processes that have changed their security credentials, e.g., set-user-ID or set-group-ID processes (though this is unusual for Python). Try running the debugging command with ``sudo -E``."
-msgstr ""
+msgstr "اگر شما نیاز دارید یک فرایندی را که *مالک آن نیستید* رد کنید، شما به دسترسی سوپرکاربر یا معادل آن نیاز خواهید داشت. این موضوع همچنین بر روی فرایندهایی که اعتبار امنیتی خود را تغییر داده‌اند اعمال می‌شود، مانند فرایندهای set-user-ID یا set-group-ID (هرچند این برای پایتون غیرمعمول است). سعی کنید دستور اشکال‌زدایی را با ``sudo -E`` اجرا کنید."
 
 msgid "The ``CAP_SYS_PTRACE`` capability is equivalent to superuser access, in that it allows debugging *any* process, not just your own. You may see advice on the internet suggesting using it to work around ptrace restrictions or system call filters. This may work in practice, as would ``sudo``, but this gives the debugging process much more access than it needs and should only be done in low-security environments."
-msgstr ""
+msgstr "قابلیت ``CAP_SYS_PTRACE`` معادل دسترسی سوپرکاربر است، به طوری که امکان اشکال‌زدایی *هر* فرایندی را فراهم می‌کند، نه فقط فرآیند خودتان. ممکن است در اینترنت توصیه‌هایی ببینید که استفاده از آن برای دور زدن محدودیت‌های ptrace یا فیلترهای فراخوانی سیستم را پیشنهاد می‌دهند. این کار در عمل ممکن است جواب دهد، همانند ``sudo``، اما این کار به فرآیند اشکال‌زدایی دسترسی بسیار بیشتری می‌دهد از آنچه که نیاز دارد و تنها باید در محیط‌های کم‌امنیت انجام شود."
 
 msgid "Finally, note that a process can only have one tracer at a time. If you have already attached to a Python process under ``strace``, ``gdb``, etc., you won't be able to simultaneously use remote debugging. (Superuser access cannot get around this restriction.)"
-msgstr ""
+msgstr "در نهایت، توجه داشته باشید که یک فرآیند در یک زمان تنها می‌تواند یک ردیاب داشته باشد. اگر قبلاً به یک فرآیند پایتون تحت ``strace``، ``gdb`` و غیره متصل شده‌ید، نمی‌توانید به طور همزمان از اشکال‌زدایی از راه دور استفاده کنید. (دسترسی سوپرکاربر نمی‌تواند این محدودیت را دور بزند.)"
 
 msgid "macOS"
 msgstr "macOS"
 
 msgid "By default, macOS disables the ability to debug other processes."
-msgstr ""
+msgstr "به طور پیش‌فرض، macOS امکان اشکال‌زدایی فرآیندهای دیگر را غیرفعال می‌کند."
 
 msgid "You can modify your Python binary to opt in to being debugged by giving it an **ad-hoc code signature** with an **entitlement** enabling it to be debugged. (An ad-hoc \"signature\" is just a configuration without any actual cryptographic signature or a need for a certificate or anything else such as an Apple developer program membership.)"
-msgstr ""
+msgstr "شما می‌توانید دودویی پایتون خود را تغییر دهید تا برای اشکال‌زدایی قابل انتخاب باشد، با دادن یک **امضای کد ad-hoc** با یک **حق دسترسی** که امکان اشکال‌زدایی را فعال می‌کند. (یک «امضای» ad-hoc تنها یک پیکربندی است بدون هیچ امضای رمزنگاری واقعی یا نیاز به گواهی یا چیز دیگری مانند عضویت در برنامه توسعه‌دهنده اپل.)"
 
 msgid "The following commands will create a file ``get-task-allow.plist`` with the necessary entitlement and add it to the Python binary:"
-msgstr ""
+msgstr "دستورات زیر یک پرونده ``get-task-allow.plist`` با حق دسترسی لازم ایجاد کرده و آن را به باینری پایتون اضافه می‌کنند:"
 
 msgid ""
 "echo '{\"com.apple.security.get-task-allow\": true}' | plutil -convert xml1 -o get-task-allow.plist -\n"
 "codesign --sign - --entitlements get-task-allow.plist path/to/bin/python3"
 msgstr ""
+"echo '{\"com.apple.security.get-task-allow\": true}' | plutil -convert xml1 -o get-task-allow.plist -\n"
+"codesign --sign - --entitlements get-task-allow.plist path/to/bin/python3"
 
 msgid "where ``path/to/bin/python3`` is the path to your Python binary, which you can find by e.g. running ``which python3`` or evaluating ``sys.base_executable`` at the Python REPL. (These instructions are for a non-framework build of Python. Framework builds may need to be configured differently.)"
-msgstr ""
+msgstr "که در آن ``path/to/bin/python3`` مسیر باینری پایتون شماست، जिसे می‌توانید با اجرای ``which python3`` یا ارزیابی ``sys.base_executable`` در REPL پایتون پیدا کنید. (این دستورالعمل‌ها برای یک ساخت غیرچارچوب پایتون است. ساخت‌های چارچوب ممکن است نیاز به پیکربندی متفاوت داشته باشند.)"
 
 msgid "You should then be able to debug your own Python processes started with that binary."
-msgstr ""
+msgstr "سپس شما باید بتوانید فرآیندهای پایتون خود را که با آن باینری آغاز شده‌اند، اشکال‌زدایی کنید."
 
 msgid "Alternatively, much as with Linux, processes with superuser privileges e.g. ``sudo`` are not subject to this check and can debug any user's process on the system (though there are additional checks on specific binaries, such as OS-provided commands, due to System Integrity Protection)."
-msgstr ""
+msgstr "به طور جایگزین، همانند لینوکس، فرآیندهایی با امتیازات سوپرکاربر مانند ``sudo`` مشمول این بررسی نیستند و می‌توانند فرآیند هر کاربری را در سیستم اشکال‌زدایی کنند (هرچند بر روی باینری‌های خاص، مانند دستورات ارائه‌شده توسط سیستم‌عامل، بررسی‌های اضافی وجود دارد به دلیل System Integrity Protection)."
 
 msgid "Windows"
 msgstr "ویندوز"

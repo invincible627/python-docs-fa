@@ -403,7 +403,7 @@ msgid "Scatter plot of the estimated probability density function."
 msgstr "نمودار پراکندگی تابع چگالی احتمال تخمینی."
 
 msgid "Because the returned ``f_hat`` function is typically called many times, it caches the *data* for performance. To support dynamic datasets, this cache automatically refreshes whenever the length of the *data* changes. This allows new samples to be added as they become available."
-msgstr ""
+msgstr "از آنجا که تابع برگردانده‌شده ``f_hat`` معمولاً بارها صدا زده می‌شود، آن *data* را برای عملکرد در نهانگاه می‌ریزد. برای حمایت از مجموعه‌داده‌های پویا، این نهانگاه به‌صورت خودکار هرگاه طول *data* تغییر کند، به‌روزرسانی می‌شود. این کار امکان افزودن نمونه‌های جدید را به محض در دسترس قرار گرفتن آن‌ها فراهم می‌کند."
 
 msgid "Return a function that makes a random selection from the estimated probability density function produced by ``kde(data, h, kernel)``."
 msgstr "تابعی را برمی‌گرداند که یک انتخاب تصادفی از تابع چگالی احتمال برآوردی که توسط ``kde(data, h, kernel)`` تولید شده است، انجام می‌دهد."
