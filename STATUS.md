@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-24)
+(به‌روزرسانی: 2026-09-25)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -146,7 +146,6 @@
 | howto/perf_profiling.po | 100.0% | 0.0% | 50 | 0 |
 | howto/pyporting.po | 100.0% | 0.0% | 13 | 0 |
 | howto/regex.po | 100.0% | 0.0% | 337 | 0 |
-| howto/remote_debugging.po | 100.0% | 0.0% | 146 | 0 |
 | howto/sockets.po | 100.0% | 0.0% | 63 | 0 |
 | howto/sorting.po | 100.0% | 0.0% | 92 | 0 |
 | howto/timerfd.po | 100.0% | 0.0% | 12 | 0 |
@@ -434,7 +433,6 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
-| library/turtle.po | 100.0% | 0.0% | 689 | 0 |
 | library/types.po | 100.0% | 0.0% | 105 | 0 |
 | library/typing.po | 100.0% | 0.0% | 833 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 43 | 0 |
@@ -541,7 +539,9 @@
 | library/ctypes.po | 99.9% | 0.0% | 676 | 1 |
 | builtins/functions.po | 99.8% | 0.0% | 521 | 1 |
 | library/statistics.po | 99.6% | 0.0% | 248 | 1 |
+| library/turtle.po | 98.4% | 0.4% | 673 | 8 |
+| howto/remote_debugging.po | 88.3% | 1.3% | 136 | 16 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
 | license.po | 0.0% | 0.0% | 0 | 129 |
-| **مجموع** | **98.6%** | **0.0%** | **70408** | **974** |
+| **مجموع** | **98.6%** | **0.0%** | **70382** | **998** |
 <!-- TRANSLATION_STATUS_END -->
