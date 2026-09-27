@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-26 03:59+0000\n"
+"POT-Creation-Date: 2026-09-27 04:09+0000\n"
 "PO-Revision-Date: 2026-09-26 07:42+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -1434,13 +1434,11 @@ msgstr ""
 "ژان-لوپ گایلی        مارک آدلر\n"
 "jloup@gzip.org          madler@alumni.caltech.edu"
 
-
 msgid "cfuhash"
 msgstr "cfuhash"
 
 msgid "The implementation of the hash table used by the :mod:`tracemalloc` is based on the cfuhash project::"
 msgstr "پیاده‌سازی جدول هش استفاده شده توسط :mod:`tracemalloc` بر پایه‌ی پروژه cfuhash است::"
-
 
 msgid ""
 "Copyright (c) 2005 Don Owens\n"
@@ -1494,13 +1492,11 @@ msgstr ""
 "\n"
 "در هیچ رویدادی صاحب کپی‌رایت یا مشارکت‌کنندگان مسئول هیچ‌گونه خسارت مستقیم، غیرمستقیم، اتفاقی، خاص، نمادین، یا تبعی نخواهد بود (از جمله اما نه محدود به، تامین کالا یا خدمات جایگزین؛ از دست رفتن استفاده، داده، یا سود؛ یا وقفه‌ی کسب‌وکار) هرچند ناشی از هر причиنی و تحت هر نظریه‌ی مسئولیتی، سواء در قرارداد، مسئولیت دقیق، یا تقصیر (از جمله بی‌توجهی یا غیره) ناشی از هر روش استفاده از این نرم‌افزار، حتی اگر از امکان چنین خسارتی آگاه شده باشند."
 
-
 msgid "libmpdec"
 msgstr "libmpdec"
 
 msgid "The :mod:`!_decimal` C extension underlying the :mod:`decimal` module is built using an included copy of the libmpdec library unless the build is configured ``--with-system-libmpdec``::"
 msgstr "افزونه‌ی C :mod:`!_decimal` که پایه‌ی ماژول :mod:`decimal` را تشکیل می‌دهد، با استفاده از یک کپی گنجانده‌شده از کتابخانه libmpdec ساخته شده است، مگر اینکه ساخت با ``--with-system-libmpdec`` پیکربندی شده باشد::"
-
 
 msgid ""
 "Copyright (c) 2008-2020 Stefan Krah. All rights reserved.\n"
@@ -1544,7 +1540,6 @@ msgstr "مجموعه‌ی آزمون C14N W3C"
 
 msgid "The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-c14n2-testcases/ and is distributed under the 3-clause BSD license::"
 msgstr "مجموعه‌ی آزمون C14N ۲.۰ در بسته :mod:`test` (``Lib/test/xmltestdata/c14n-20/``) از وب‌سایت W3C در آدرس https://www.w3.org/TR/xml-c14n2-testcases/ دریافت شده و تحت مجوز BSD سه‌شرطه توزیع می‌شود::"
-
 
 msgid ""
 "Copyright (c) 2013 W3C(R) (MIT, ERCIM, Keio, Beihang),\n"
@@ -1602,13 +1597,11 @@ msgstr ""
 "(شامل بی‌دقتی یا غیره) ناشی از هر روش استفاده از این نرم‌افزار،\n"
 "حتی اگر از امکان چنین خسارتی آگاه شده باشند."
 
-
 msgid "mimalloc"
 msgstr "mimalloc"
 
 msgid "MIT License::"
 msgstr "مجوز MIT::"
-
 
 msgid ""
 "Copyright (c) 2018-2021 Microsoft Corporation, Daan Leijen\n"
@@ -1638,7 +1631,6 @@ msgstr ""
 "اعلام کپی‌رایت بالا و این اعلام مجوز باید در تمام کپی‌ها یا بخش‌های اساسی نرم‌افزار گنجانده شود.\n"
 "\n"
 "نرم‌افزار «همان‌طور که هست» ارائه می‌شود، بدون هیچ‌گونه ضمانتی، صریح یا ضمنی، شامل اما نه محدود به ضمانت‌های قابلیت فروش، مناسب بودن برای هدف خاص و عدم نقض. در هیچ رویدادی نویسندگان یا صاحبان کپی‌رایت مسئول هیچ ادعای، خسارتی یا مسئولیت دیگری نخواهند بود، چه در یک اقدام قراردادی، تقصیری یا غیره، ناشی از، خارج از یا در ارتباط با نرم‌افزار یا استفاده یا سایر معاملات در نرم‌افزار."
-
 
 msgid "asyncio"
 msgstr "asyncio"
@@ -1691,7 +1683,6 @@ msgstr "دنباله‌های نامحدود سراسری (GUS)"
 msgid "The file :file:`Python/qsbr.c` is adapted from FreeBSD's \"Global Unbounded Sequences\" safe memory reclamation scheme in `subr_smr.c <https://github.com/freebsd/freebsd-src/blob/main/sys/kern/subr_smr.c>`_. The file is distributed under the 2-Clause BSD License::"
 msgstr "پرونده :file:`Python/qsbr.c` از طرح‌واره بازیافت حافظه‌ی مطمئن «Global Unbounded Sequences» در FreeBSD در `subr_smr.c <https://github.com/freebsd/freebsd-src/blob/main/sys/kern/subr_smr.c>`_ اقتباس شده است. این پرونده تحت مجوز BSD دو‌شرطه توزیع می‌شود::"
 
-
 msgid ""
 "Copyright (c) 2019,2020 Jeffrey Roberson <jeff@FreeBSD.org>\n"
 "\n"
@@ -1730,7 +1721,6 @@ msgstr "اتصال‌های Zstandard"
 
 msgid "Zstandard bindings in :file:`Modules/_zstd` and :file:`Lib/compression/zstd` are based on code from the `pyzstd library <https://github.com/Rogdham/pyzstd/>`_, copyright Ma Lin and contributors. The pyzstd code is distributed under the 3-Clause BSD License::"
 msgstr "اتصال‌های Zstandard در :file:`Modules/_zstd` و :file:`Lib/compression/zstd` بر پایه کد از `کتابخانه pyzstd <https://github.com/Rogdham/pyzstd/>`_ هستند، کپی‌رایت ما لین و مشارکت‌کنندگان. کد pyzstd تحت مجوز BSD سه‌شرطه توزیع می‌شود::"
-
 
 msgid ""
 "Copyright (c) 2020-present, Ma Lin and contributors.\n"
@@ -1780,7 +1770,6 @@ msgstr "پایگاه داده نویسه‌های یونیکد (UCD)"
 
 msgid "An extract of the `Unicode Character Database <https://www.unicode.org/ucd/>`__, converted to an internal format, is used by the :mod:`unicodedata` module and for the Unicode support of the :class:`str` type. The original Unicode data files are distributed under the `Unicode License <https://www.unicode.org/license.txt>`__::"
 msgstr "یک استخراج از `Unicode Character Database <https://www.unicode.org/ucd/>`__، به یک فرمت داخلی تبدیل‌شده، توسط ماژول :mod:`unicodedata` و برای پشتیبانی یونیکد نوع :class:`str` استفاده می‌شود. پرونده‌های داده اصلی یونیکد تحت `Unicode License <https://www.unicode.org/license.txt>`__ توزیع می‌شوند::"
-
 
 msgid ""
 "UNICODE LICENSE V3\n"
