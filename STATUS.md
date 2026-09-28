@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-27)
+(به‌روزرسانی: 2026-09-28)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -228,7 +228,6 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
-| library/ctypes.po | 100.0% | 0.0% | 677 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -344,6 +343,7 @@
 | library/numbers.po | 100.0% | 0.0% | 34 | 0 |
 | library/numeric.po | 100.0% | 0.0% | 3 | 0 |
 | library/operator.po | 100.0% | 0.0% | 189 | 0 |
+| library/optparse.po | 100.0% | 0.0% | 532 | 0 |
 | library/os.path.po | 100.0% | 0.0% | 112 | 0 |
 | library/os.po | 100.0% | 0.0% | 1075 | 0 |
 | library/ossaudiodev.po | 100.0% | 0.0% | 3 | 0 |
@@ -450,6 +450,7 @@
 | library/urllib.request.po | 100.0% | 0.0% | 298 | 0 |
 | library/urllib.robotparser.po | 100.0% | 0.0% | 19 | 0 |
 | library/uu.po | 100.0% | 0.0% | 4 | 0 |
+| library/uuid.po | 100.0% | 0.0% | 79 | 0 |
 | library/venv.po | 100.0% | 0.0% | 137 | 0 |
 | library/warnings.po | 100.0% | 0.0% | 162 | 0 |
 | library/wave.po | 100.0% | 0.0% | 61 | 0 |
@@ -540,8 +541,7 @@
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| library/optparse.po | 99.4% | 0.6% | 529 | 0 |
-| library/uuid.po | 94.9% | 5.1% | 75 | 0 |
+| library/ctypes.po | 99.9% | 0.0% | 677 | 1 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
-| **مجموع** | **98.8%** | **0.0%** | **70537** | **841** |
+| **مجموع** | **98.8%** | **0.0%** | **70544** | **842** |
 <!-- TRANSLATION_STATUS_END -->
