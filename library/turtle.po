@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-25 04:09+0000\n"
+"POT-Creation-Date: 2026-09-29 04:09+0000\n"
 "PO-Revision-Date: 2026-09-21 13:27+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -33,10 +33,14 @@ msgstr "**کد منبع:** :source:`Lib/turtle.py`"
 msgid "Turtle can draw intricate shapes using programs that repeat simple moves."
 msgstr "Turtle می‌تواند با استفاده از برنامه‌هایی که حرکات ساده را تکرار می‌کنند، شکل‌های پیچیده‌ای رسم کند."
 
+msgid "A yellow starburst of thin spikes with a red outline, drawn by turtle."
+msgstr ""
+
 msgid "Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an ``import turtle``, give it the command ``turtle.forward(15)``, and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves. Give it the command ``turtle.right(25)``, and it rotates in-place 25 degrees clockwise."
 msgstr "یک لاک‌پشت رباتی را تصور کنید که در مختصات (۰، ۰) در صفحه x-y آغاز می‌کند. پس از یک ``import turtle``، به آن دستور ``turtle.forward(15)`` را بدهید، و آن ۱۵ پیکسل در جهت رو به روی خود حرکت می‌کند (روی صفحه!)، و در حین حرکت یک سطر می‌کشد. به آن دستور ``turtle.right(25)`` را بدهید، و آن ۲۵ درجه در جهت عقربه‌های ساعت در جای خود می‌چرخد."
 
-msgid "Turtle graphics is an implementation of `the drawing tools introduced in Logo <https://en.wikipedia.org/wiki/Turtle_(robot)>`_ in 1967. It was created as an educational tool, and its instant, visible feedback makes it an effective way for learners to encounter programming concepts. It is also a convenient way to produce simple graphical output without bringing in external libraries."
+#, fuzzy
+msgid "Turtle graphics is an implementation of `the drawing tools introduced in Logo <https://en.wikipedia.org/wiki/Turtle_(robot)>`__ in 1967. It was created as an educational tool, and its instant, visible feedback makes it an effective way for learners to encounter programming concepts. It is also a convenient way to produce simple graphical output without bringing in external libraries."
 msgstr "گرافیک لاک‌پشت پیاده‌سازیِ `ابزارهای ترسیم معرفی‌شده در Logo <https://en.wikipedia.org/wiki/Turtle_(robot)>`_ در سال ۱۹۶۷ است. این ابزار به‌عنوان یک ابزار آموزشی ایجاد‌شده، و بازخورد آنی و قابل‌مشاهده‌ی آن، آن را به روشی موثر برای یادگیرندگان جهت آشنایی با مفاهیم برنامه‌نویسی تبدیل می‌کند. این همچنین روشی راحت برای تولید خروجی گرافیکی ساده بدون وارد کردن کتابخانه‌های خارجی است."
 
 msgid "This document includes four main sections:"
@@ -48,7 +52,8 @@ msgstr ":ref:`turtle-tutorial` مبانی ترسیم لاک‌پشتی را آم
 msgid ":ref:`turtle-reference` describes the functions, methods and classes this module defines."
 msgstr ":ref:`turtle-reference` توابع، متدها و کلاس‌هایی را که این ماژول تعریف می‌کند، توصیف می‌کند."
 
-msgid ":ref:`turtle-howtos` details how to handle specific tasks."
+#, fuzzy
+msgid ":ref:`turtle-howtos` detail how to handle specific tasks."
 msgstr ":ref:`turtle-howtos` نحوه انجام وظایف خاص را تشریح می‌کند."
 
 msgid ":ref:`turtle-explanation` provides background on the object-oriented interface."
@@ -105,7 +110,8 @@ msgstr ""
 msgid "Notice how the turtle, represented by an arrow, points in different directions as you steer it."
 msgstr "توجه کنید که چگونه لاک‌پشت، که با یک پیکان نمایش داده می‌شود، همان‌طور که آن را هدایت می‌کنید به جهت‌های مختلف اشاره می‌کند."
 
-msgid "Experiment with those commands, and also with ``backward()`` and ``right()``. Many commands also have terser aliases, such as ``fd()`` for :func:`forward`."
+#, fuzzy
+msgid "Experiment with those commands, and also with ``backward()`` and ``right()``. Many commands also have shorter aliases, such as ``fd()`` for :func:`forward`."
 msgstr "با آن دستورات آزمایش کنید، و همچنین با ``backward()`` و ``right()``. بسیاری از دستورات همچنین نام‌های مستعار کوتاه‌تری دارند، مانند ``fd()`` برای :func:`forward`."
 
 msgid "Pen control"
@@ -211,511 +217,24 @@ msgstr "end_fill()"
 msgid "(Note that filling only actually takes place when you give the ``end_fill()`` command.)"
 msgstr "(توجه داشته باشید که پر کردن در واقع تنها زمانی انجام می‌شود که دستور ``end_fill()`` را صادر کنید.)"
 
-msgid "How-to guides"
-msgstr "راهنماهای عملی"
-
-msgid "This section covers some typical turtle use-cases and approaches."
-msgstr "این بخش برخی از موارد استفاده و رویکردهای رایج turtle را پوشش می‌دهد."
-
-msgid "Automatically begin and end filling"
-msgstr "آغاز و پایان پر کردن به‌صورت خودکار"
-
-msgid "Starting with Python 3.14, you can use the :func:`fill` :term:`context manager` instead of :func:`begin_fill` and :func:`end_fill` to automatically begin and end fill. Here is an example::"
-msgstr "از پایتون 3.14 به بعد، می‌توانید به‌جای :func:`begin_fill` و :func:`end_fill` از :func:`fill` به‌عنوان :term:`context manager` استفاده کنید تا شروع و پایان پر کردن به‌طور خودکار انجام شود. در اینجا مثالی آورده شده است::"
-
-msgid ""
-"with fill():\n"
-"    for i in range(4):\n"
-"        forward(100)\n"
-"        right(90)\n"
-"\n"
-"forward(200)"
-msgstr ""
-"with fill():\n"
-"    for i in range(4):\n"
-"        forward(100)\n"
-"        right(90)\n"
-"\n"
-"forward(200)"
-
-msgid "The code above is equivalent to::"
-msgstr "کد بالا معادل است با::"
-
-msgid ""
-"begin_fill()\n"
-"for i in range(4):\n"
-"    forward(100)\n"
-"    right(90)\n"
-"end_fill()\n"
-"\n"
-"forward(200)"
-msgstr ""
-"begin_fill()\n"
-"for i in range(4):\n"
-"    forward(100)\n"
-"    right(90)\n"
-"end_fill()\n"
-"\n"
-"forward(200)"
-
-msgid "Use the ``turtle`` module namespace"
-msgstr "از فضای نام ماژول ``turtle`` استفاده کنید"
-
-msgid "Using ``from turtle import *`` is convenient - but be warned that it imports a rather large collection of objects, and if you're doing anything but turtle graphics you run the risk of a name conflict (this becomes even more an issue if you're using turtle graphics in a script where other modules might be imported)."
-msgstr "استفاده از ``from turtle import *`` مناسب است، اما توجه داشته باشید که این دستور مجموعه‌ای نسبتاً بزرگ از شیء‌ها را ایمپورت می‌کند و اگر کاری به‌جز گرافیک turtle انجام می‌دهید، با خطر تعارض نام مواجه می‌شوید (این موضوع به‌ویژه زمانی مشکل‌سازتر می‌شود که از گرافیک turtle در اسکریپتی استفاده می‌کنید که ممکن است ماژول‌های دیگر نیز ایمپورت شوند)."
-
-msgid "The solution is to use ``import turtle`` - ``fd()`` becomes ``turtle.fd()``, ``width()`` becomes ``turtle.width()`` and so on. (If typing \"turtle\" over and over again becomes tedious, use for example ``import turtle as t`` instead.)"
-msgstr "راه‌حل استفاده از ``import turtle`` است - ``fd()`` به ``turtle.fd()`` تبدیل می‌شود، ``width()`` به ``turtle.width()`` تبدیل می‌شود و به همین ترتیب. (اگر تایپ کردن مکرر \"turtle\" خسته‌کننده شد، برای مثال به‌جای آن از ``import turtle as t`` استفاده کنید.)"
-
-msgid "Use turtle graphics in a script"
-msgstr "استفاده از گرافیک لاک‌پشتی (turtle graphics) در یک اسکریپت"
-
-msgid "It's recommended to use the ``turtle`` module namespace as described immediately above, for example::"
-msgstr "توصیه می‌شود همان‌طور که بلافاصله در بالا توضیح داده شد، از فضای نام ماژول ``turtle`` استفاده کنید، برای مثال::"
-
-msgid ""
-"import turtle as t\n"
-"from random import random\n"
-"\n"
-"for i in range(100):\n"
-"    steps = int(random() * 100)\n"
-"    angle = int(random() * 360)\n"
-"    t.right(angle)\n"
-"    t.fd(steps)"
-msgstr ""
-"import turtle as t\n"
-"from random import random\n"
-"\n"
-"for i in range(100):\n"
-"    steps = int(random() * 100)\n"
-"    angle = int(random() * 360)\n"
-"    t.right(angle)\n"
-"    t.fd(steps)"
-
-msgid "Another step is also required though - as soon as the script ends, Python will also close the turtle's window. Add::"
-msgstr "البته یک مرحله دیگر نیز لازم است — به محض اینکه اسکریپت تمام شود، پایتون پنجره turtle را نیز خواهد بست. اضافه کنید::"
-
-msgid "t.mainloop()"
-msgstr "t.mainloop()"
-
-msgid "to the end of the script. The script will now wait to be dismissed and will not exit until it is terminated, for example by closing the turtle graphics window."
-msgstr "به انتهای اسکریپت. اسکریپت اکنون منتظر می‌ماند تا بسته شود و تا زمانی که پایان داده نشود، خارج نخواهد شد، برای مثال با بستن پنجره‌ی گرافیک turtle."
-
-msgid "Use object-oriented turtle graphics"
-msgstr "استفاده از گرافیک لاک‌پشتی شیءگرا"
-
-msgid ":ref:`Explanation of the object-oriented interface <turtle-explanation>`"
-msgstr ":ref:`توضیح رابط شیءگرا <turtle-explanation>`"
-
-msgid "Other than for very basic introductory purposes, or for trying things out as quickly as possible, it's more usual and much more powerful to use the object-oriented approach to turtle graphics. For example, this allows multiple turtles on screen at once."
-msgstr "به‌جز برای اهداف مقدماتی بسیار ساده، یا برای امتحان کردن موارد مختلف در سریع‌ترین حالت ممکن، استفاده از رویکرد شیء‌گرا برای گرافیک لاک‌پشتی معمول‌تر و بسیار قدرتمندتر است. برای مثال، این رویکرد امکان داشتن چندین لاک‌پشت به‌طور همزمان روی صفحه را می‌دهد."
-
-msgid "In this approach, the various turtle commands are methods of objects (mostly of ``Turtle`` objects). You *can* use the object-oriented approach in the shell, but it would be more typical in a Python script."
-msgstr "در این رویکرد، دستورات مختلف turtle متدهایی از اشیاء هستند (بیشتر از اشیاء ``Turtle``). شما *می‌توانید* از رویکرد شیءگرا در پوسته استفاده کنید، اما این کار در یک اسکریپت پایتون معمول‌تر است."
-
-msgid "The example above then becomes::"
-msgstr "مثال بالا سپس به‌صورت زیر درمی‌آید::"
-
-msgid ""
-"from turtle import Turtle\n"
-"from random import random\n"
-"\n"
-"t = Turtle()\n"
-"for i in range(100):\n"
-"    steps = int(random() * 100)\n"
-"    angle = int(random() * 360)\n"
-"    t.right(angle)\n"
-"    t.fd(steps)\n"
-"\n"
-"t.screen.mainloop()"
-msgstr ""
-"from turtle import Turtle\n"
-"from random import random\n"
-"\n"
-"t = Turtle()\n"
-"for i in range(100):\n"
-"    steps = int(random() * 100)\n"
-"    angle = int(random() * 360)\n"
-"    t.right(angle)\n"
-"    t.fd(steps)\n"
-"\n"
-"t.screen.mainloop()"
-
-msgid "Note the last line. ``t.screen`` is an instance of the :class:`Screen` that a Turtle instance exists on; it's created automatically along with the turtle."
-msgstr "به خط آخر توجه کنید. ``t.screen`` نمونه‌ای از :class:`Screen` است که یک نمونه‌ی Turtle بر روی آن قرار دارد؛ این صفحه به‌صورت خودکار به‌همراه لاک‌پشت ایجاد می‌شود."
-
-msgid "The turtle's screen can be customised, for example::"
-msgstr "می‌توان صفحه‌ی turtle را سفارشی کرد، برای مثال::"
-
-msgid ""
-"t.screen.title('Object-oriented turtle demo')\n"
-"t.screen.bgcolor(\"orange\")"
-msgstr ""
-"t.screen.title('Object-oriented turtle demo')\n"
-"t.screen.bgcolor(\"orange\")"
-
 msgid "Reference"
 msgstr "ارجاع"
 
-msgid "In the following documentation the argument list for functions is given. Methods, of course, have the additional first argument *self* which is omitted here."
-msgstr "در مستندات زیر، فهرست آرگومان‌های توابع داده شده است. متدها، البته، آرگومان اول اضافه‌ای به نام *self* دارند که در اینجا حذف شده است."
-
-msgid "Turtle methods"
+#, fuzzy
+msgid "Turtle methods and functions"
 msgstr "متدهای Turtle"
-
-msgid "Turtle motion"
-msgstr "حرکت لاک‌پشت"
-
-msgid "Move and draw"
-msgstr "حرکت و ترسیم"
-
-msgid ":func:`forward` | :func:`fd`"
-msgstr ":func:`forward` | :func:`fd`"
-
-msgid ":func:`backward` | :func:`bk` | :func:`back`"
-msgstr ":func:`backward` | :func:`bk` | :func:`back`"
-
-msgid ":func:`right` | :func:`rt`"
-msgstr ":func:`right` | :func:`rt`"
-
-msgid ":func:`left` | :func:`lt`"
-msgstr ":func:`left` | :func:`lt`"
-
-msgid ":func:`goto` | :func:`setpos` | :func:`setposition`"
-msgstr ":func:`goto` | :func:`setpos` | :func:`setposition`"
-
-msgid ":func:`teleport`"
-msgstr ":func:`teleport`"
-
-msgid ":func:`setx`"
-msgstr ":func:`setx`"
-
-msgid ":func:`sety`"
-msgstr ":func:`sety`"
-
-msgid ":func:`setheading` | :func:`seth`"
-msgstr ":func:`setheading` | :func:`seth`"
-
-msgid ":func:`home`"
-msgstr ":func:`home`"
-
-msgid ":func:`circle`"
-msgstr ":func:`circle`"
-
-msgid ":func:`dot`"
-msgstr ":func:`dot`"
-
-msgid ":func:`stamp`"
-msgstr ":func:`stamp`"
-
-msgid ":func:`clearstamp`"
-msgstr ":func:`clearstamp`"
-
-msgid ":func:`clearstamps`"
-msgstr ":func:`clearstamps`"
-
-msgid ":func:`undo`"
-msgstr ":func:`undo`"
-
-msgid ":func:`speed`"
-msgstr ":func:`speed`"
-
-msgid "Tell Turtle's state"
-msgstr "گزارش وضعیت Turtle"
-
-msgid ":func:`position` | :func:`pos`"
-msgstr ":func:`position` | :func:`pos`"
-
-msgid ":func:`towards`"
-msgstr ":func:`towards`"
-
-msgid ":func:`xcor`"
-msgstr ":func:`xcor`"
-
-msgid ":func:`ycor`"
-msgstr ":func:`ycor`"
-
-msgid ":func:`heading`"
-msgstr ":func:`heading`"
-
-msgid ":func:`distance`"
-msgstr ":func:`distance`"
-
-msgid "Setting and measurement"
-msgstr "تنظیم و اندازه‌گیری"
-
-msgid ":func:`degrees`"
-msgstr ":func:`degrees`"
-
-msgid ":func:`radians`"
-msgstr ":func:`radians`"
-
-msgid "Drawing state"
-msgstr "وضعیت ترسیم"
-
-msgid ":func:`pendown` | :func:`pd` | :func:`down`"
-msgstr ":func:`pendown` | :func:`pd` | :func:`down`"
-
-msgid ":func:`penup` | :func:`pu` | :func:`up`"
-msgstr ":func:`penup` | :func:`pu` | :func:`up`"
-
-msgid ":func:`pensize` | :func:`width`"
-msgstr ":func:`pensize` | :func:`width`"
-
-msgid ":func:`pen`"
-msgstr ":func:`pen`"
-
-msgid ":func:`isdown`"
-msgstr ":func:`isdown`"
-
-msgid "Color control"
-msgstr "کنترل رنگ"
-
-msgid ":func:`color`"
-msgstr ":func:`color`"
-
-msgid ":func:`pencolor`"
-msgstr ":func:`pencolor`"
-
-msgid ":func:`fillcolor`"
-msgstr ":func:`fillcolor`"
-
-msgid "Filling"
-msgstr "پر کردن"
-
-msgid ":func:`filling`"
-msgstr ":func:`filling`"
-
-msgid ":func:`fill`"
-msgstr ":func:`fill`"
-
-msgid ":func:`begin_fill`"
-msgstr ":func:`begin_fill`"
-
-msgid ":func:`end_fill`"
-msgstr ":func:`end_fill`"
-
-msgid "More drawing control"
-msgstr "کنترل بیشتر ترسیم"
-
-msgid ":func:`reset`"
-msgstr ":func:`reset`"
-
-msgid ":func:`clear`"
-msgstr ":func:`clear`"
-
-msgid ":func:`write`"
-msgstr ":func:`write`"
-
-msgid "Turtle state"
-msgstr "وضعیت Turtle"
-
-msgid "Visibility"
-msgstr "قابلیت مشاهده"
-
-msgid ":func:`showturtle` | :func:`st`"
-msgstr ":func:`showturtle` | :func:`st`"
-
-msgid ":func:`hideturtle` | :func:`ht`"
-msgstr ":func:`hideturtle` | :func:`ht`"
-
-msgid ":func:`isvisible`"
-msgstr ":func:`isvisible`"
-
-msgid "Appearance"
-msgstr "ظاهر"
-
-msgid ":func:`shape`"
-msgstr ":func:`shape`"
-
-msgid ":func:`resizemode`"
-msgstr ":func:`resizemode`"
-
-msgid ":func:`shapesize` | :func:`turtlesize`"
-msgstr ":func:`shapesize` | :func:`turtlesize`"
-
-msgid ":func:`shearfactor`"
-msgstr ":func:`shearfactor`"
-
-msgid ":func:`tiltangle`"
-msgstr ":func:`tiltangle`"
-
-msgid ":func:`tilt`"
-msgstr ":func:`tilt`"
-
-msgid ":func:`shapetransform`"
-msgstr ":func:`shapetransform`"
-
-msgid ":func:`get_shapepoly`"
-msgstr ":func:`get_shapepoly`"
-
-msgid "Using events"
-msgstr "استفاده از رویدادها"
-
-msgid ":func:`onclick`"
-msgstr ":func:`onclick`"
-
-msgid ":func:`onrelease`"
-msgstr ":func:`onrelease`"
-
-msgid ":func:`ondrag`"
-msgstr ":func:`ondrag`"
-
-msgid "Special Turtle methods"
-msgstr "متدهای ویژه‌ی Turtle"
-
-msgid ":func:`poly`"
-msgstr ":func:`poly`"
-
-msgid ":func:`begin_poly`"
-msgstr ":func:`begin_poly`"
-
-msgid ":func:`end_poly`"
-msgstr ":func:`end_poly`"
-
-msgid ":func:`get_poly`"
-msgstr ":func:`get_poly`"
-
-msgid ":func:`clone`"
-msgstr ":func:`clone`"
-
-msgid ":func:`getturtle` | :func:`getpen`"
-msgstr ":func:`getturtle` | :func:`getpen`"
-
-msgid ":func:`getscreen`"
-msgstr ":func:`getscreen`"
-
-msgid ":func:`setundobuffer`"
-msgstr ":func:`setundobuffer`"
-
-msgid ":func:`undobufferentries`"
-msgstr ":func:`undobufferentries`"
-
-msgid "Methods of TurtleScreen/Screen"
-msgstr "متدهای TurtleScreen/Screen"
-
-msgid "Window control"
-msgstr "کنترل پنجره"
-
-msgid ":func:`bgcolor`"
-msgstr ":func:`bgcolor`"
-
-msgid ":func:`bgpic`"
-msgstr ":func:`bgpic`"
-
-msgid ":func:`clearscreen`"
-msgstr ":func:`clearscreen`"
-
-msgid ":func:`resetscreen`"
-msgstr ":func:`resetscreen`"
-
-msgid ":func:`screensize`"
-msgstr ":func:`screensize`"
-
-msgid ":func:`setworldcoordinates`"
-msgstr ":func:`setworldcoordinates`"
-
-msgid "Animation control"
-msgstr "کنترل پویانمایی"
-
-msgid ":func:`no_animation`"
-msgstr ":func:`no_animation`"
-
-msgid ":func:`delay`"
-msgstr ":func:`delay`"
-
-msgid ":func:`tracer`"
-msgstr ":func:`tracer`"
-
-msgid ":func:`update`"
-msgstr ":func:`update`"
-
-msgid "Using screen events"
-msgstr "استفاده از رویدادهای صفحه"
-
-msgid ":func:`listen`"
-msgstr ":func:`listen`"
-
-msgid ":func:`onkey` | :func:`onkeyrelease`"
-msgstr ":func:`onkey` | :func:`onkeyrelease`"
-
-msgid ":func:`onkeypress`"
-msgstr ":func:`onkeypress`"
-
-msgid ":func:`onclick` | :func:`onscreenclick`"
-msgstr ":func:`onclick` | :func:`onscreenclick`"
-
-msgid ":func:`ontimer`"
-msgstr ":func:`ontimer`"
-
-msgid ":func:`mainloop` | :func:`done`"
-msgstr ":func:`mainloop` | :func:`done`"
-
-msgid "Settings and special methods"
-msgstr "تنظیمات و متدهای ویژه"
-
-msgid ":func:`mode`"
-msgstr ":func:`mode`"
-
-msgid ":func:`colormode`"
-msgstr ":func:`colormode`"
-
-msgid ":func:`getcanvas`"
-msgstr ":func:`getcanvas`"
-
-msgid ":func:`getshapes`"
-msgstr ":func:`getshapes`"
-
-msgid ":func:`register_shape` | :func:`addshape`"
-msgstr ":func:`register_shape` | :func:`addshape`"
-
-msgid ":func:`turtles`"
-msgstr ":func:`turtles`"
-
-msgid ":func:`window_height`"
-msgstr ":func:`window_height`"
-
-msgid ":func:`window_width`"
-msgstr ":func:`window_width`"
-
-msgid "Input methods"
-msgstr "متدهای ورودی"
-
-msgid ":func:`textinput`"
-msgstr ":func:`textinput`"
-
-msgid ":func:`numinput`"
-msgstr ":func:`numinput`"
-
-msgid "Methods specific to Screen"
-msgstr "متدهای خاص Screen"
-
-msgid ":func:`bye`"
-msgstr ":func:`bye`"
-
-msgid ":func:`exitonclick`"
-msgstr ":func:`exitonclick`"
-
-msgid ":func:`save`"
-msgstr ":func:`save`"
-
-msgid ":func:`setup`"
-msgstr ":func:`setup`"
-
-msgid ":func:`title`"
-msgstr ":func:`title`"
-
-msgid "Methods of RawTurtle/Turtle and corresponding functions"
-msgstr "متدهای RawTurtle/Turtle و توابع متناظر"
 
 msgid "Most of the examples in this section refer to a Turtle instance called ``turtle``."
 msgstr "بیشتر مثال‌های این بخش به یک نمونه از Turtle به نام ``turtle`` اشاره دارند."
 
+msgid "Move and draw"
+msgstr "حرکت و ترسیم"
+
 msgid "Parameters"
 msgstr "پارامترها"
 
-msgid "a number (integer or float)"
-msgstr "یک عدد (صحیح یا اعشاری)"
+msgid "a number"
+msgstr "یک عدد"
 
 msgid "Move the turtle forward by the specified *distance*, in the direction the turtle is headed."
 msgstr "لاکی‌پشت را به اندازه‌ی *distance* مشخص‌شده، در جهتی که لاکی‌پشت رو به آن دارد، به جلو حرکت می‌دهد."
@@ -739,10 +258,8 @@ msgstr ""
 ">>> turtle.position()\n"
 "(-50.00,0.00)"
 
-msgid "a number"
-msgstr "یک عدد"
-
-msgid "Move the turtle backward by *distance*, opposite to the direction the turtle is headed.  Do not change the turtle's heading."
+#, fuzzy
+msgid "Move the turtle backward by *distance*, opposite to the direction the turtle is headed. The turtle's heading does not change."
 msgstr "لاک‌پشت را به اندازه‌ی *distance* به عقب حرکت دهید، برخلاف جهتی که لاک‌پشت به آن رو دارد. جهت لاک‌پشت را تغییر ندهید."
 
 msgid ""
@@ -758,7 +275,8 @@ msgstr ""
 ">>> turtle.position()\n"
 "(-30.00,0.00)"
 
-msgid "Turn turtle right by *angle* units.  (Units are by default degrees, but can be set via the :func:`degrees` and :func:`radians` functions.)  Angle orientation depends on the turtle mode, see :func:`mode`."
+#, fuzzy
+msgid "Turn the turtle right by the specified *angle*. The angle is measured in degrees by default; the unit can be changed with :func:`degrees` or :func:`radians`. How the heading is measured depends on the turtle mode, see :func:`mode`."
 msgstr "لاک‌پشت را به اندازه‌ی *angle* واحد به راست بچرخانید. (واحدها به‌طور پیش‌فرض درجه هستند، اما می‌توان آن‌ها را از طریق توابع :func:`degrees` و :func:`radians` تنظیم کرد.) جهت زاویه به حالت لاک‌پشت بستگی دارد، :func:`mode` را ببینید."
 
 msgid ""
@@ -774,7 +292,8 @@ msgstr ""
 ">>> turtle.heading()\n"
 "337.0"
 
-msgid "Turn turtle left by *angle* units.  (Units are by default degrees, but can be set via the :func:`degrees` and :func:`radians` functions.)  Angle orientation depends on the turtle mode, see :func:`mode`."
+#, fuzzy
+msgid "Turn the turtle left by the specified *angle*. The angle is measured in degrees by default; the unit can be changed with :func:`degrees` or :func:`radians`. How the heading is measured depends on the turtle mode, see :func:`mode`."
 msgstr "لاک‌پشت را به میزان *angle* واحد به چپ بچرخانید. (واحدها به‌طور پیش‌فرض درجه هستند، اما می‌توان آن‌ها را از طریق توابع :func:`degrees` و :func:`radians` تنظیم کرد.) جهت زاویه به حالت لاک‌پشت بستگی دارد، :func:`mode` را ببینید."
 
 msgid ""
@@ -796,23 +315,22 @@ msgstr "یک عدد یا یک جفت/بردار از اعداد"
 msgid "a number or ``None``"
 msgstr "یک عدد یا ``None``"
 
-msgid "If *y* is ``None``, *x* must be a pair of coordinates or a :class:`Vec2D` (e.g. as returned by :func:`pos`)."
+#, fuzzy
+msgid "Move the turtle to an absolute position. If *y* is ``None``, *x* must be a pair of coordinates or a :class:`Vec2D`, for example as returned by :func:`pos`. If the pen is down, a line is drawn. The turtle's heading does not change."
 msgstr "اگر *y* برابر ``None`` باشد، *x* باید یک جفت مختصات یا یک :class:`Vec2D` باشد (مثلاً مانند مقداری که توسط :func:`pos` بازگردانده می‌شود)."
 
-msgid "Move turtle to an absolute position.  If the pen is down, draw line.  Do not change the turtle's orientation."
-msgstr "لاک‌پشت را به یک موقعیت مطلق حرکت می‌دهد. اگر قلم پایین باشد، خط رسم می‌کند. جهت لاک‌پشت را تغییر نمی‌دهد."
-
+#, fuzzy
 msgid ""
 ">>> tp = turtle.pos()\n"
 ">>> tp\n"
 "(0.00,0.00)\n"
-">>> turtle.setpos(60,30)\n"
+">>> turtle.goto(60,30)\n"
 ">>> turtle.pos()\n"
 "(60.00,30.00)\n"
-">>> turtle.setpos((20,80))\n"
+">>> turtle.goto((20,80))\n"
 ">>> turtle.pos()\n"
 "(20.00,80.00)\n"
-">>> turtle.setpos(tp)\n"
+">>> turtle.goto(tp)\n"
 ">>> turtle.pos()\n"
 "(0.00,0.00)"
 msgstr ""
@@ -862,7 +380,8 @@ msgstr ""
 ">>> turtle.pos()\n"
 "(20.00,30.00)"
 
-msgid "Set the turtle's first coordinate to *x*, leave second coordinate unchanged."
+#, fuzzy
+msgid "Set the turtle's x coordinate to *x*. The y coordinate is unchanged."
 msgstr "مختصات اول لاک‌پشت را روی *x* تنظیم کنید و مختصات دوم را بدون تغییر باقی بگذارید."
 
 msgid ""
@@ -878,7 +397,8 @@ msgstr ""
 ">>> turtle.position()\n"
 "(10.00,240.00)"
 
-msgid "Set the turtle's second coordinate to *y*, leave first coordinate unchanged."
+#, fuzzy
+msgid "Set the turtle's y coordinate to *y*. The x coordinate is unchanged."
 msgstr "مختصات دوم لاک‌پشت را روی *y* تنظیم می‌کند و مختصات اول را بدون تغییر باقی می‌گذارد."
 
 msgid ""
@@ -894,7 +414,8 @@ msgstr ""
 ">>> turtle.position()\n"
 "(0.00,-10.00)"
 
-msgid "Set the orientation of the turtle to *to_angle*.  Here are some common directions in degrees:"
+#, fuzzy
+msgid "Set the turtle's heading to *to_angle*. Here are some common directions in degrees:"
 msgstr "جهت لاک‌پشت را روی *to_angle* تنظیم کنید. در اینجا چند جهت رایج بر حسب درجه آمده است:"
 
 msgid "standard mode"
@@ -936,7 +457,8 @@ msgstr ""
 ">>> turtle.heading()\n"
 "90.0"
 
-msgid "Move turtle to the origin -- coordinates (0,0) -- and set its heading to its start-orientation (which depends on the mode, see :func:`mode`)."
+#, fuzzy
+msgid "Move the turtle to the origin, coordinates (0,0). The turtle's heading is set to its start orientation, which depends on the turtle mode, see :func:`mode`."
 msgstr "لاک‌پشت را به مبدأ -- مختصات (۰،۰) -- منتقل کنید و جهت آن را برابر با جهت‌گیری اولیه‌اش تنظیم کنید (که به حالت بستگی دارد، :func:`mode` را ببینید)."
 
 msgid ""
@@ -960,16 +482,15 @@ msgstr ""
 ">>> turtle.heading()\n"
 "0.0"
 
-msgid "a number (or ``None``)"
-msgstr "یک عدد (یا ``None``)"
+msgid "an integer or ``None``"
+msgstr "یک عدد صحیح یا ``None``"
 
-msgid "an integer (or ``None``)"
-msgstr "یک عدد صحیح (یا ``None``)"
-
-msgid "Draw a circle with given *radius*.  The center is *radius* units left of the turtle; *extent* -- an angle -- determines which part of the circle is drawn.  If *extent* is not given, draw the entire circle.  If *extent* is not a full circle, one endpoint of the arc is the current pen position.  Draw the arc in counterclockwise direction if *radius* is positive, otherwise in clockwise direction.  Finally the direction of the turtle is changed by the amount of *extent*."
+#, fuzzy
+msgid "Draw a circle with the given *radius*. The center is *radius* units left of the turtle; *extent*, an angle, determines which part of the circle is drawn. If *extent* is not given, draw the entire circle. If *extent* is not a full circle, one endpoint of the arc is the current pen position. Draw the arc in counterclockwise direction if *radius* is positive, otherwise in clockwise direction. Finally, the turtle's heading is changed by *extent*."
 msgstr "دایره‌ای با *radius* داده‌شده رسم می‌کند. مرکز آن *radius* واحد در سمت چپ لاک‌پشت قرار دارد؛ *extent* — یک زاویه — تعیین می‌کند کدام بخش از دایره رسم شود. اگر *extent* داده نشود، کل دایره رسم می‌شود. اگر *extent* دایره‌ی کامل نباشد، یکی از نقاط پایانی کمان، موقعیت فعلی قلم است. اگر *radius* مثبت باشد، کمان در جهت پادساعت‌گرد رسم می‌شود، در غیر این صورت در جهت ساعت‌گرد. در نهایت، جهت لاک‌پشت به اندازه‌ی *extent* تغییر می‌کند."
 
-msgid "As the circle is approximated by an inscribed regular polygon, *steps* determines the number of steps to use.  If not given, it will be calculated automatically.  May be used to draw regular polygons."
+#, fuzzy
+msgid "As the circle is approximated by an inscribed regular polygon, *steps* determines the number of steps to use. If not given, it will be calculated automatically. May be used to draw regular polygons."
 msgstr "از آن‌جا که دایره با یک چندضلعی منتظم محاطی تقریب زده می‌شود، *steps* تعداد گام‌های مورد استفاده را تعیین می‌کند. اگر داده نشود، به‌صورت خودکار محاسبه خواهد شد. می‌تواند برای رسم چندضلعی‌های منتظم به کار رود."
 
 msgid ""
@@ -1072,6 +593,9 @@ msgstr ""
 ">>> turtle.position()\n"
 "(200.00,-0.00)"
 
+msgid "an integer (or ``None``)"
+msgstr "یک عدد صحیح (یا ``None``)"
+
 msgid "Delete all or first/last *n* of turtle's stamps.  If *n* is ``None``, delete all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last *n* stamps."
 msgstr "همه یا اولین/آخرین *n* تا از مهرهای turtle را حذف می‌کند. اگر *n* ``None`` باشد، همه مهرها را حذف می‌کند؛ اگر *n* > ۰ باشد، اولین *n* مهر را حذف می‌کند، در غیر این صورت اگر *n* < ۰ باشد، آخرین *n* مهر را حذف می‌کند."
 
@@ -1155,7 +679,11 @@ msgstr ""
 ">>> turtle.speed()\n"
 "9"
 
-msgid "Return the turtle's current location (x,y) (as a :class:`Vec2D` vector)."
+msgid "Tell Turtle's state"
+msgstr "گزارش وضعیت Turtle"
+
+#, fuzzy
+msgid "Return the turtle's current location (x,y) as a :class:`Vec2D` vector."
 msgstr "موقعیت فعلی لاک‌پشت (x,y) را برمی‌گرداند (به‌عنوان یک بردار :class:`Vec2D`)."
 
 msgid ""
@@ -1171,7 +699,8 @@ msgstr "یک عدد یا یک جفت/بردار از اعداد یا یک نمو
 msgid "a number if *x* is a number, else ``None``"
 msgstr "اگر *x* یک عدد باشد، یک عدد، در غیر این صورت ``None``"
 
-msgid "Return the angle between the line from turtle position to position specified by (x,y), the vector or the other turtle.  This depends on the turtle's start orientation which depends on the mode - \"standard\"/\"world\" or \"logo\"."
+#, fuzzy
+msgid "Return the angle of the line from the turtle's position to (x,y). If *y* is ``None``, *x* must be a pair of coordinates, a :class:`Vec2D`, for example as returned by :func:`pos`, or another turtle. The angle is measured from the turtle's start orientation, which depends on the turtle mode, see :func:`mode`."
 msgstr "زاویه بین خط از موقعیت لاک‌پشت تا موقعیت مشخص‌شده با (x,y)، بردار یا لاک‌پشت دیگر را برمی‌گرداند. این به جهت‌گیری اولیه لاک‌پشت بستگی دارد که به حالت - \"standard\"/\"world\" یا \"logo\" بستگی دارد."
 
 msgid ""
@@ -1223,7 +752,8 @@ msgstr ""
 ">>> print(round(turtle.ycor(), 5))\n"
 "86.60254"
 
-msgid "Return the turtle's current heading (value depends on the turtle mode, see :func:`mode`)."
+#, fuzzy
+msgid "Return the turtle's current heading. The value depends on the turtle mode, see :func:`mode`."
 msgstr "جهت فعلی لاک‌پشت را برمی‌گرداند (مقدار به حالت لاک‌پشت بستگی دارد، :func:`mode` را ببینید)."
 
 msgid ""
@@ -1237,8 +767,9 @@ msgstr ""
 ">>> turtle.heading()\n"
 "67.0"
 
-msgid "Return the distance from the turtle to (x,y), the given vector, or the given other turtle, in turtle step units."
-msgstr "فاصله از لاک‌پشت تا (x,y)، بردار داده‌شده، یا لاک‌پشت دیگر داده‌شده را بر حسب واحدهای گام لاک‌پشت برمی‌گرداند."
+#, fuzzy
+msgid "Return the distance from the turtle to (x,y) in turtle step units. If *y* is ``None``, *x* must be a pair of coordinates, a :class:`Vec2D`, for example as returned by :func:`pos`, or another turtle."
+msgstr "اگر *y* برابر ``None`` باشد، *x* باید یک جفت مختصات یا یک :class:`Vec2D` باشد (مثلاً مانند مقداری که توسط :func:`pos` بازگردانده می‌شود)."
 
 msgid ""
 ">>> turtle.home()\n"
@@ -1264,7 +795,8 @@ msgstr ""
 msgid "Settings for measurement"
 msgstr "تنظیمات اندازه‌گیری"
 
-msgid "Set angle measurement units, i.e. set number of \"degrees\" for a full circle. Default value is 360 degrees."
+#, fuzzy
+msgid "Set the angle measurement units to degrees. The number of degrees in a full circle is set to *fullcircle*, which defaults to 360."
 msgstr "واحدهای اندازه‌گیری زاویه را تنظیم کنید، یعنی تعداد «درجه‌ها» برای یک دایره کامل را مشخص کنید. مقدار پیش‌فرض ۳۶۰ درجه است."
 
 msgid ""
@@ -1296,7 +828,8 @@ msgstr ""
 ">>> turtle.heading()\n"
 "90.0"
 
-msgid "Set the angle measurement units to radians.  Equivalent to ``degrees(2*math.pi)``."
+#, fuzzy
+msgid "Set the angle measurement units to radians.  Equivalent to ``degrees(2 * math.pi)``."
 msgstr "واحدهای اندازه‌گیری زاویه را روی رادیان تنظیم می‌کند. معادل ``degrees(2*math.pi)`` است."
 
 msgid ""
@@ -1315,6 +848,9 @@ msgstr ""
 ">>> turtle.radians()\n"
 ">>> turtle.heading()\n"
 "1.5707963267948966"
+
+msgid "Drawing state"
+msgstr "وضعیت ترسیم"
 
 msgid "Pull the pen down -- drawing when moving."
 msgstr "قلم را پایین بکشید -- هنگام حرکت ترسیم می‌کند."
@@ -1427,6 +963,9 @@ msgstr ""
 ">>> turtle.pendown()\n"
 ">>> turtle.isdown()\n"
 "True"
+
+msgid "Color control"
+msgstr "کنترل رنگ"
 
 msgid "Return or set the pencolor."
 msgstr "pencolor را برمی‌گرداند یا تنظیم می‌کند."
@@ -1598,6 +1137,9 @@ msgstr ""
 msgid "See also: Screen method :func:`colormode`."
 msgstr "همچنین ببینید: متد Screen به نام :func:`colormode`."
 
+msgid "Filling"
+msgstr "پر کردن"
+
 msgid "Return fillstate (``True`` if filling, ``False`` else)."
 msgstr "وضعیت پر کردن را برمی‌گرداند (اگر در حال پر کردن باشد ``True``، در غیر این صورت ``False``)."
 
@@ -1648,6 +1190,9 @@ msgstr "شکل رسم‌شده پس از آخرین فراخوانی :func:`begi
 
 msgid "Whether or not overlap regions for self-intersecting polygons or multiple shapes are filled depends on the operating system graphics, type of overlap, and number of overlaps.  For example, the Turtle star above may be either all yellow or have some white regions."
 msgstr "پر شدن یا پر نشدن ناحیه‌های هم‌پوشانی برای چندضلعی‌های خودمتقاطع یا شکل‌های متعدد، به گرافیک سیستم‌عامل، نوع هم‌پوشانی و تعداد هم‌پوشانی‌ها بستگی دارد. برای مثال، ستاره‌ی Turtle در بالا ممکن است کاملاً زرد باشد یا ناحیه‌های سفیدی داشته باشد."
+
+msgid "More drawing control"
+msgstr "کنترل بیشتر ترسیم"
 
 msgid "Delete the turtle's drawings from the screen, re-center the turtle and set variables to the default values."
 msgstr "نقاشی‌های لاک‌پشت را از صفحه پاک می‌کند، لاک‌پشت را دوباره در مرکز قرار می‌دهد و متغیرها را روی مقادیر پیش‌فرض تنظیم می‌کند."
@@ -1702,6 +1247,12 @@ msgstr ""
 ">>> turtle.write(\"Home = \", True, align=\"center\")\n"
 ">>> turtle.write((0,0), True)"
 
+msgid "Turtle state"
+msgstr "وضعیت Turtle"
+
+msgid "Visibility"
+msgstr "قابلیت مشاهده"
+
 msgid "Make the turtle invisible.  It's a good idea to do this while you're in the middle of doing some complex drawing, because hiding the turtle speeds up the drawing observably."
 msgstr "لاک‌پشت را نامرئی کنید. بهتر است این کار را هنگامی که در میانه‌ی انجام یک ترسیم پیچیده هستید انجام دهید، زیرا پنهان کردن لاک‌پشت سرعت ترسیم را به‌طور محسوسی افزایش می‌دهد."
 
@@ -1731,6 +1282,9 @@ msgstr ""
 ">>> turtle.showturtle()\n"
 ">>> turtle.isvisible()\n"
 "True"
+
+msgid "Appearance"
+msgstr "ظاهر"
 
 msgid "a string which is a valid shapename"
 msgstr "رشته‌ای که یک نام شکل (shapename) معتبر باشد"
@@ -1904,6 +1458,9 @@ msgstr ""
 ">>> turtle.get_shapepoly()\n"
 "((50, -20), (30, 20), (-50, 20), (-30, -20))"
 
+msgid "Using events"
+msgstr "استفاده از رویدادها"
+
 msgid "a function with two arguments which will be called with the coordinates of the clicked point on the canvas"
 msgstr "تابعی با دو آرگومان که با مختصات نقطه‌ی کلیک‌شده روی بوم فراخوانی خواهد شد"
 
@@ -1964,6 +1521,9 @@ msgstr ">>> turtle.ondrag(turtle.goto)"
 
 msgid "Subsequently, clicking and dragging the Turtle will move it across the screen thereby producing handdrawings (if pen is down)."
 msgstr "سپس، کلیک کردن و کشیدن Turtle آن را در سراسر صفحه حرکت می‌دهد و بدین ترتیب ترسیم‌های دستی ایجاد می‌کند (اگر قلم پایین باشد)."
+
+msgid "Special Turtle methods"
+msgstr "متدهای ویژه‌ی Turtle"
 
 msgid "Record the vertices of a polygon drawn in the ``with turtle.poly():`` block. The first and last vertices will be connected."
 msgstr "رئوس یک چندضلعی ترسیم‌شده در بلوک ``with turtle.poly():`` را ثبت کنید. اولین و آخرین رأس به یکدیگر متصل می‌شوند."
@@ -2049,9 +1609,6 @@ msgstr ""
 "<turtle._Screen object at 0x...>\n"
 ">>> ts.bgcolor(\"pink\")"
 
-msgid "an integer or ``None``"
-msgstr "یک عدد صحیح یا ``None``"
-
 msgid "Set or disable undobuffer.  If *size* is an integer, an empty undobuffer of given size is installed.  *size* gives the maximum number of turtle actions that can be undone by the :func:`undo` method/function.  If *size* is ``None``, the undobuffer is disabled."
 msgstr "بافر لغو (undobuffer) را تنظیم یا غیرفعال کنید. اگر *size* یک عدد صحیح باشد، یک بافر لغو (undobuffer) خالی با اندازه‌ی داده‌شده نصب می‌شود. *size* حداکثر تعداد کنش‌های لاک‌پشت را که می‌توان با متد/تابع :func:`undo` آن‌ها را واگرد کرد، مشخص می‌کند. اگر *size* برابر ``None`` باشد، بافر لغو (undobuffer) غیرفعال می‌شود."
 
@@ -2109,11 +1666,14 @@ msgstr ""
 msgid "The :class:`Shape` class is used internally by the :func:`register_shape` method in different ways.  The application programmer has to deal with the Shape class *only* when using compound shapes like shown above!"
 msgstr "کلاس :class:`Shape` به‌صورت داخلی توسط متد :func:`register_shape` به روش‌های مختلفی استفاده می‌شود. برنامه‌نویس برنامه *فقط* هنگام استفاده از شکل‌های ترکیبی مانند آنچه در بالا نشان داده شد، باید با کلاس Shape سروکار داشته باشد!"
 
-msgid "Methods of TurtleScreen/Screen and corresponding functions"
-msgstr "متدهای TurtleScreen/Screen و توابع مربوطه"
+msgid "Screen methods and functions"
+msgstr ""
 
 msgid "Most of the examples in this section refer to a TurtleScreen instance called ``screen``."
 msgstr "بیشتر مثال‌های این بخش به یک نمونه از TurtleScreen به نام ``screen`` اشاره می‌کنند."
+
+msgid "Window control"
+msgstr "کنترل پنجره"
 
 msgid "Return or set the background color of the TurtleScreen."
 msgstr "رنگ پس‌زمینه‌ی TurtleScreen را برمی‌گرداند یا تنظیم می‌کند."
@@ -2251,6 +1811,9 @@ msgstr ""
 ">>> for _ in range(8):\n"
 "...     left(45); fd(2)   # a regular octagon"
 
+msgid "Animation control"
+msgstr "کنترل پویانمایی"
+
 msgid "Temporarily disable turtle animation. The code written inside the ``no_animation`` block will not be animated; once the code block is exited, the drawing will appear."
 msgstr "پویانمایی turtle را به‌طور موقت غیرفعال می‌کند. کد نوشته‌شده درون بلوک ``no_animation`` پویانمایی نخواهد شد؛ پس از خروج از بلوک کد، ترسیم ظاهر می‌شود."
 
@@ -2313,6 +1876,9 @@ msgstr "به‌روزرسانی TurtleScreen را انجام می‌دهد. زم
 
 msgid "See also the RawTurtle/Turtle method :func:`speed`."
 msgstr "همچنین متد :func:`speed` در RawTurtle/Turtle را ببینید."
+
+msgid "Using screen events"
+msgstr "استفاده از رویدادهای صفحه"
 
 msgid "Set focus on TurtleScreen (in order to collect key-events).  Dummy arguments are provided in order to be able to pass :func:`listen` to the onclick method."
 msgstr "تمرکز را روی TurtleScreen تنظیم کنید (برای جمع‌آوری رویدادهای کلید). آرگومان‌های ساختگی ارائه شده‌اند تا بتوانید :func:`listen` را به متد onclick بفرستید."
@@ -2409,6 +1975,9 @@ msgstr "حلقه‌ی رویداد را با فراخوانی تابع mainloop 
 msgid ">>> screen.mainloop()"
 msgstr ">>> screen.mainloop()"
 
+msgid "Input methods"
+msgstr "متدهای ورودی"
+
 msgid "string"
 msgstr "رشته"
 
@@ -2423,6 +1992,9 @@ msgstr "یک پنجره محاوره برای دریافت یک عدد باز م
 
 msgid ">>> screen.numinput(\"Poker\", \"Your stakes:\", 1000, minval=10, maxval=10000)"
 msgstr ">>> screen.numinput(\"Poker\", \"Your stakes:\", 1000, minval=10, maxval=10000)"
+
+msgid "Settings and special methods"
+msgstr "تنظیمات و متدهای ویژه"
 
 msgid "one of the strings \"standard\", \"logo\" or \"world\""
 msgstr "یکی از رشته‌های \"standard\"، \"logo\" یا \"world\""
@@ -2585,8 +2157,9 @@ msgstr ""
 ">>> screen.window_width()\n"
 "640"
 
-msgid "Methods specific to Screen, not inherited from TurtleScreen"
-msgstr "متدهای مختص Screen، که از TurtleScreen به ارث نمی‌رسند"
+#, fuzzy
+msgid "Screen-only methods"
+msgstr "متدهای Turtle"
 
 msgid "Shut the turtlegraphics window."
 msgstr "پنجره‌ی گرافیک لاک‌پشتی را ببندید."
@@ -2775,29 +2348,148 @@ msgstr ""
 "    ...\n"
 "turtle.TurtleGraphicsError: bad color string: blau"
 
-msgid "Explanation"
-msgstr "توضیح"
+msgid "How-to guides"
+msgstr "راهنماهای عملی"
 
-msgid "A turtle object draws on a screen object, and there a number of key classes in the turtle object-oriented interface that can be used to create them and relate them to each other."
-msgstr "یک شیء turtle روی یک شیء screen ترسیم می‌کند، و تعدادی کلاس کلیدی در رابط شیءگرای turtle وجود دارد که می‌توان از آن‌ها برای ایجاد آن‌ها و برقراری ارتباط میان آن‌ها با یکدیگر استفاده کرد."
+msgid "This section covers some typical turtle use-cases and approaches."
+msgstr "این بخش برخی از موارد استفاده و رویکردهای رایج turtle را پوشش می‌دهد."
 
-msgid "A :class:`Turtle` instance will automatically create a :class:`Screen` instance if one is not already present."
-msgstr "اگر نمونه‌ای از قبل موجود نباشد، یک نمونه :class:`Turtle` به‌طور خودکار یک نمونه :class:`Screen` ایجاد می‌کند."
+msgid "Automatically begin and end filling"
+msgstr "آغاز و پایان پر کردن به‌صورت خودکار"
 
-msgid "``Turtle`` is a subclass of :class:`RawTurtle`, which *doesn't* automatically create a drawing surface - a *canvas* will need to be provided or created for it. The *canvas* can be a :class:`!tkinter.Canvas`, :class:`ScrolledCanvas` or :class:`TurtleScreen`."
-msgstr "``Turtle`` زیرکلاسی از :class:`RawTurtle` است که به‌طور خودکار یک سطح ترسیم ایجاد *نمی‌کند* — باید یک *بوم* برای آن فراهم یا ایجاد شود. این *بوم* می‌تواند یک :class:`!tkinter.Canvas`، :class:`ScrolledCanvas` یا :class:`TurtleScreen` باشد."
+msgid "Starting with Python 3.14, you can use the :func:`fill` :term:`context manager` instead of :func:`begin_fill` and :func:`end_fill` to automatically begin and end fill. Here is an example::"
+msgstr "از پایتون 3.14 به بعد، می‌توانید به‌جای :func:`begin_fill` و :func:`end_fill` از :func:`fill` به‌عنوان :term:`context manager` استفاده کنید تا شروع و پایان پر کردن به‌طور خودکار انجام شود. در اینجا مثالی آورده شده است::"
 
-msgid ":class:`TurtleScreen` is the basic drawing surface for a turtle. :class:`Screen` is a subclass of ``TurtleScreen``, and includes :ref:`some additional methods <screenspecific>` for managing its appearance (including size and title) and behaviour. ``TurtleScreen``'s constructor needs a :class:`!tkinter.Canvas` or a :class:`ScrolledCanvas` as an argument."
-msgstr ":class:`TurtleScreen` سطح ترسیم پایه برای یک لاک‌پشت است. :class:`Screen` زیرکلاسی از ``TurtleScreen`` است و شامل :ref:`برخی متدهای اضافی <screenspecific>` برای مدیریت ظاهر آن (از جمله اندازه و عنوان) و رفتار آن است. سازنده‌ی ``TurtleScreen`` به یک :class:`!tkinter.Canvas` یا یک :class:`ScrolledCanvas` به‌عنوان آرگومان نیاز دارد."
+msgid ""
+"with fill():\n"
+"    for i in range(4):\n"
+"        forward(100)\n"
+"        right(90)\n"
+"\n"
+"forward(200)"
+msgstr ""
+"with fill():\n"
+"    for i in range(4):\n"
+"        forward(100)\n"
+"        right(90)\n"
+"\n"
+"forward(200)"
 
-msgid "The functional interface for turtle graphics uses the various methods of ``Turtle`` and ``TurtleScreen``/``Screen``. Behind the scenes, a screen object is automatically created whenever a function derived from a ``Screen`` method is called. Similarly, a turtle object is automatically created whenever any of the functions derived from a Turtle method is called."
-msgstr "رابط تابعی برای گرافیک لاک‌پشتی از متدهای مختلف ``Turtle`` و ``TurtleScreen``/``Screen`` استفاده می‌کند. در پشت صحنه، هر زمان که تابعی مشتق‌شده از یک متد ``Screen`` فراخوانی شود، یک شیء صفحه به‌طور خودکار ایجاد می‌شود. به‌طور مشابه، هر زمان که هر یک از توابع مشتق‌شده از یک متد Turtle فراخوانی شود، یک شیء لاک‌پشت به‌طور خودکار ایجاد می‌شود."
+msgid "The code above is equivalent to::"
+msgstr "کد بالا معادل است با::"
 
-msgid "To use multiple turtles on a screen, the object-oriented interface must be used."
-msgstr "برای استفاده از چندین لاک‌پشت در یک صفحه، باید از رابط شیءگرا استفاده شود."
+msgid ""
+"begin_fill()\n"
+"for i in range(4):\n"
+"    forward(100)\n"
+"    right(90)\n"
+"end_fill()\n"
+"\n"
+"forward(200)"
+msgstr ""
+"begin_fill()\n"
+"for i in range(4):\n"
+"    forward(100)\n"
+"    right(90)\n"
+"end_fill()\n"
+"\n"
+"forward(200)"
 
-msgid "Help and configuration"
-msgstr "راهنما و پیکربندی"
+msgid "Use the ``turtle`` module namespace"
+msgstr "از فضای نام ماژول ``turtle`` استفاده کنید"
+
+msgid "Using ``from turtle import *`` is convenient - but be warned that it imports a rather large collection of objects, and if you're doing anything but turtle graphics you run the risk of a name conflict (this becomes even more an issue if you're using turtle graphics in a script where other modules might be imported)."
+msgstr "استفاده از ``from turtle import *`` مناسب است، اما توجه داشته باشید که این دستور مجموعه‌ای نسبتاً بزرگ از شیء‌ها را ایمپورت می‌کند و اگر کاری به‌جز گرافیک turtle انجام می‌دهید، با خطر تعارض نام مواجه می‌شوید (این موضوع به‌ویژه زمانی مشکل‌سازتر می‌شود که از گرافیک turtle در اسکریپتی استفاده می‌کنید که ممکن است ماژول‌های دیگر نیز ایمپورت شوند)."
+
+msgid "The solution is to use ``import turtle`` - ``fd()`` becomes ``turtle.fd()``, ``width()`` becomes ``turtle.width()`` and so on. (If typing \"turtle\" over and over again becomes tedious, use for example ``import turtle as t`` instead.)"
+msgstr "راه‌حل استفاده از ``import turtle`` است - ``fd()`` به ``turtle.fd()`` تبدیل می‌شود، ``width()`` به ``turtle.width()`` تبدیل می‌شود و به همین ترتیب. (اگر تایپ کردن مکرر \"turtle\" خسته‌کننده شد، برای مثال به‌جای آن از ``import turtle as t`` استفاده کنید.)"
+
+msgid "Use turtle graphics in a script"
+msgstr "استفاده از گرافیک لاک‌پشتی (turtle graphics) در یک اسکریپت"
+
+msgid "It's recommended to use the ``turtle`` module namespace as described immediately above, for example::"
+msgstr "توصیه می‌شود همان‌طور که بلافاصله در بالا توضیح داده شد، از فضای نام ماژول ``turtle`` استفاده کنید، برای مثال::"
+
+msgid ""
+"import turtle as t\n"
+"from random import random\n"
+"\n"
+"for i in range(100):\n"
+"    steps = int(random() * 100)\n"
+"    angle = int(random() * 360)\n"
+"    t.right(angle)\n"
+"    t.fd(steps)"
+msgstr ""
+"import turtle as t\n"
+"from random import random\n"
+"\n"
+"for i in range(100):\n"
+"    steps = int(random() * 100)\n"
+"    angle = int(random() * 360)\n"
+"    t.right(angle)\n"
+"    t.fd(steps)"
+
+msgid "Another step is also required though - as soon as the script ends, Python will also close the turtle's window. Add::"
+msgstr "البته یک مرحله دیگر نیز لازم است — به محض اینکه اسکریپت تمام شود، پایتون پنجره turtle را نیز خواهد بست. اضافه کنید::"
+
+msgid "t.mainloop()"
+msgstr "t.mainloop()"
+
+msgid "to the end of the script. The script will now wait to be dismissed and will not exit until it is terminated, for example by closing the turtle graphics window."
+msgstr "به انتهای اسکریپت. اسکریپت اکنون منتظر می‌ماند تا بسته شود و تا زمانی که پایان داده نشود، خارج نخواهد شد، برای مثال با بستن پنجره‌ی گرافیک turtle."
+
+msgid "Use object-oriented turtle graphics"
+msgstr "استفاده از گرافیک لاک‌پشتی شیءگرا"
+
+msgid ":ref:`Explanation of the object-oriented interface <turtle-explanation>`"
+msgstr ":ref:`توضیح رابط شیءگرا <turtle-explanation>`"
+
+msgid "Other than for very basic introductory purposes, or for trying things out as quickly as possible, it's more usual and much more powerful to use the object-oriented approach to turtle graphics. For example, this allows multiple turtles on screen at once."
+msgstr "به‌جز برای اهداف مقدماتی بسیار ساده، یا برای امتحان کردن موارد مختلف در سریع‌ترین حالت ممکن، استفاده از رویکرد شیء‌گرا برای گرافیک لاک‌پشتی معمول‌تر و بسیار قدرتمندتر است. برای مثال، این رویکرد امکان داشتن چندین لاک‌پشت به‌طور همزمان روی صفحه را می‌دهد."
+
+msgid "In this approach, the various turtle commands are methods of objects (mostly of ``Turtle`` objects). You *can* use the object-oriented approach in the shell, but it would be more typical in a Python script."
+msgstr "در این رویکرد، دستورات مختلف turtle متدهایی از اشیاء هستند (بیشتر از اشیاء ``Turtle``). شما *می‌توانید* از رویکرد شیءگرا در پوسته استفاده کنید، اما این کار در یک اسکریپت پایتون معمول‌تر است."
+
+msgid "The example above then becomes::"
+msgstr "مثال بالا سپس به‌صورت زیر درمی‌آید::"
+
+msgid ""
+"from turtle import Turtle\n"
+"from random import random\n"
+"\n"
+"t = Turtle()\n"
+"for i in range(100):\n"
+"    steps = int(random() * 100)\n"
+"    angle = int(random() * 360)\n"
+"    t.right(angle)\n"
+"    t.fd(steps)\n"
+"\n"
+"t.screen.mainloop()"
+msgstr ""
+"from turtle import Turtle\n"
+"from random import random\n"
+"\n"
+"t = Turtle()\n"
+"for i in range(100):\n"
+"    steps = int(random() * 100)\n"
+"    angle = int(random() * 360)\n"
+"    t.right(angle)\n"
+"    t.fd(steps)\n"
+"\n"
+"t.screen.mainloop()"
+
+msgid "Note the last line. ``t.screen`` is an instance of the :class:`Screen` that a Turtle instance exists on; it's created automatically along with the turtle."
+msgstr "به خط آخر توجه کنید. ``t.screen`` نمونه‌ای از :class:`Screen` است که یک نمونه‌ی Turtle بر روی آن قرار دارد؛ این صفحه به‌صورت خودکار به‌همراه لاک‌پشت ایجاد می‌شود."
+
+msgid "The turtle's screen can be customised, for example::"
+msgstr "می‌توان صفحه‌ی turtle را سفارشی کرد، برای مثال::"
+
+msgid ""
+"t.screen.title('Object-oriented turtle demo')\n"
+"t.screen.bgcolor(\"orange\")"
+msgstr ""
+"t.screen.title('Object-oriented turtle demo')\n"
+"t.screen.bgcolor(\"orange\")"
 
 msgid "How to use help"
 msgstr "نحوه استفاده از help"
@@ -3048,6 +2740,27 @@ msgstr "ممکن است یک پرونده :file:`turtle.cfg` در پوشه‌ا�
 msgid "The :file:`Lib/turtledemo` directory contains a :file:`turtle.cfg` file.  You can study it as an example and see its effects when running the demos (preferably not from within the demo-viewer)."
 msgstr "پوشه‌ی :file:`Lib/turtledemo` شامل یک پرونده‌ی :file:`turtle.cfg` است. می‌توانید آن را به‌عنوان نمونه بررسی کنید و اثرات آن را هنگام اجرای دموها مشاهده کنید (ترجیحاً نه از درون نمایشگر دمو)."
 
+msgid "Explanation"
+msgstr "توضیح"
+
+msgid "A turtle object draws on a screen object, and there a number of key classes in the turtle object-oriented interface that can be used to create them and relate them to each other."
+msgstr "یک شیء turtle روی یک شیء screen ترسیم می‌کند، و تعدادی کلاس کلیدی در رابط شیءگرای turtle وجود دارد که می‌توان از آن‌ها برای ایجاد آن‌ها و برقراری ارتباط میان آن‌ها با یکدیگر استفاده کرد."
+
+msgid "A :class:`Turtle` instance will automatically create a :class:`Screen` instance if one is not already present."
+msgstr "اگر نمونه‌ای از قبل موجود نباشد، یک نمونه :class:`Turtle` به‌طور خودکار یک نمونه :class:`Screen` ایجاد می‌کند."
+
+msgid "``Turtle`` is a subclass of :class:`RawTurtle`, which *doesn't* automatically create a drawing surface - a *canvas* will need to be provided or created for it. The *canvas* can be a :class:`!tkinter.Canvas`, :class:`ScrolledCanvas` or :class:`TurtleScreen`."
+msgstr "``Turtle`` زیرکلاسی از :class:`RawTurtle` است که به‌طور خودکار یک سطح ترسیم ایجاد *نمی‌کند* — باید یک *بوم* برای آن فراهم یا ایجاد شود. این *بوم* می‌تواند یک :class:`!tkinter.Canvas`، :class:`ScrolledCanvas` یا :class:`TurtleScreen` باشد."
+
+msgid ":class:`TurtleScreen` is the basic drawing surface for a turtle. :class:`Screen` is a subclass of ``TurtleScreen``, and includes :ref:`some additional methods <screenspecific>` for managing its appearance (including size and title) and behaviour. ``TurtleScreen``'s constructor needs a :class:`!tkinter.Canvas` or a :class:`ScrolledCanvas` as an argument."
+msgstr ":class:`TurtleScreen` سطح ترسیم پایه برای یک لاک‌پشت است. :class:`Screen` زیرکلاسی از ``TurtleScreen`` است و شامل :ref:`برخی متدهای اضافی <screenspecific>` برای مدیریت ظاهر آن (از جمله اندازه و عنوان) و رفتار آن است. سازنده‌ی ``TurtleScreen`` به یک :class:`!tkinter.Canvas` یا یک :class:`ScrolledCanvas` به‌عنوان آرگومان نیاز دارد."
+
+msgid "The functional interface for turtle graphics uses the various methods of ``Turtle`` and ``TurtleScreen``/``Screen``. Behind the scenes, a screen object is automatically created whenever a function derived from a ``Screen`` method is called. Similarly, a turtle object is automatically created whenever any of the functions derived from a Turtle method is called."
+msgstr "رابط تابعی برای گرافیک لاک‌پشتی از متدهای مختلف ``Turtle`` و ``TurtleScreen``/``Screen`` استفاده می‌کند. در پشت صحنه، هر زمان که تابعی مشتق‌شده از یک متد ``Screen`` فراخوانی شود، یک شیء صفحه به‌طور خودکار ایجاد می‌شود. به‌طور مشابه، هر زمان که هر یک از توابع مشتق‌شده از یک متد Turtle فراخوانی شود، یک شیء لاک‌پشت به‌طور خودکار ایجاد می‌شود."
+
+msgid "To use multiple turtles on a screen, the object-oriented interface must be used."
+msgstr "برای استفاده از چندین لاک‌پشت در یک صفحه، باید از رابط شیءگرا استفاده شود."
+
 msgid ":mod:`!turtledemo` --- Demo scripts"
 msgstr ":mod:`!turtledemo` --- اسکریپت‌های نمایشی"
 
@@ -3120,6 +2833,9 @@ msgstr "``colormixer``"
 msgid "experiment with r, g, b"
 msgstr "با r، g و b آزمایش کنید"
 
+msgid ":func:`ondrag`"
+msgstr ":func:`ondrag`"
+
 msgid "``forest``"
 msgstr "``forest``"
 
@@ -3171,6 +2887,9 @@ msgstr "``paint``"
 msgid "super minimalistic drawing program"
 msgstr "برنامه‌ی ترسیم بسیار ساده‌گرا"
 
+msgid ":func:`onclick`"
+msgstr ":func:`onclick`"
+
 msgid "``peace``"
 msgstr "``peace``"
 
@@ -3185,6 +2904,9 @@ msgstr "``penrose``"
 
 msgid "aperiodic tiling with kites and darts"
 msgstr "کاشی‌کاری غیرتناوبی با بادبادک‌ها و تیرها"
+
+msgid ":func:`stamp`"
+msgstr ":func:`stamp`"
 
 msgid "``planet_and_moon``"
 msgstr "``planet_and_moon``"
@@ -3228,6 +2950,9 @@ msgstr "``tree``"
 msgid "a (graphical) breadth first tree (using generators)"
 msgstr "یک درخت پیمایش سطح اول (گرافیکی) (با استفاده از تولیدگرها)"
 
+msgid ":func:`clone`"
+msgstr ":func:`clone`"
+
 msgid "``two_canvases``"
 msgstr "``two_canvases``"
 
@@ -3243,8 +2968,317 @@ msgstr "``yinyang``"
 msgid "another elementary example"
 msgstr "مثالی ساده‌ی دیگر"
 
+msgid ":func:`circle`"
+msgstr ":func:`circle`"
+
 msgid "Have fun!"
 msgstr "لذت ببرید!"
+
+#~ msgid "In the following documentation the argument list for functions is given. Methods, of course, have the additional first argument *self* which is omitted here."
+#~ msgstr "در مستندات زیر، فهرست آرگومان‌های توابع داده شده است. متدها، البته، آرگومان اول اضافه‌ای به نام *self* دارند که در اینجا حذف شده است."
+
+#~ msgid "Turtle motion"
+#~ msgstr "حرکت لاک‌پشت"
+
+#~ msgid ":func:`forward` | :func:`fd`"
+#~ msgstr ":func:`forward` | :func:`fd`"
+
+#~ msgid ":func:`backward` | :func:`bk` | :func:`back`"
+#~ msgstr ":func:`backward` | :func:`bk` | :func:`back`"
+
+#~ msgid ":func:`right` | :func:`rt`"
+#~ msgstr ":func:`right` | :func:`rt`"
+
+#~ msgid ":func:`left` | :func:`lt`"
+#~ msgstr ":func:`left` | :func:`lt`"
+
+#~ msgid ":func:`goto` | :func:`setpos` | :func:`setposition`"
+#~ msgstr ":func:`goto` | :func:`setpos` | :func:`setposition`"
+
+#~ msgid ":func:`teleport`"
+#~ msgstr ":func:`teleport`"
+
+#~ msgid ":func:`setx`"
+#~ msgstr ":func:`setx`"
+
+#~ msgid ":func:`sety`"
+#~ msgstr ":func:`sety`"
+
+#~ msgid ":func:`setheading` | :func:`seth`"
+#~ msgstr ":func:`setheading` | :func:`seth`"
+
+#~ msgid ":func:`home`"
+#~ msgstr ":func:`home`"
+
+#~ msgid ":func:`dot`"
+#~ msgstr ":func:`dot`"
+
+#~ msgid ":func:`clearstamp`"
+#~ msgstr ":func:`clearstamp`"
+
+#~ msgid ":func:`clearstamps`"
+#~ msgstr ":func:`clearstamps`"
+
+#~ msgid ":func:`undo`"
+#~ msgstr ":func:`undo`"
+
+#~ msgid ":func:`speed`"
+#~ msgstr ":func:`speed`"
+
+#~ msgid ":func:`position` | :func:`pos`"
+#~ msgstr ":func:`position` | :func:`pos`"
+
+#~ msgid ":func:`towards`"
+#~ msgstr ":func:`towards`"
+
+#~ msgid ":func:`xcor`"
+#~ msgstr ":func:`xcor`"
+
+#~ msgid ":func:`ycor`"
+#~ msgstr ":func:`ycor`"
+
+#~ msgid ":func:`heading`"
+#~ msgstr ":func:`heading`"
+
+#~ msgid ":func:`distance`"
+#~ msgstr ":func:`distance`"
+
+#~ msgid "Setting and measurement"
+#~ msgstr "تنظیم و اندازه‌گیری"
+
+#~ msgid ":func:`degrees`"
+#~ msgstr ":func:`degrees`"
+
+#~ msgid ":func:`radians`"
+#~ msgstr ":func:`radians`"
+
+#~ msgid ":func:`pendown` | :func:`pd` | :func:`down`"
+#~ msgstr ":func:`pendown` | :func:`pd` | :func:`down`"
+
+#~ msgid ":func:`penup` | :func:`pu` | :func:`up`"
+#~ msgstr ":func:`penup` | :func:`pu` | :func:`up`"
+
+#~ msgid ":func:`pensize` | :func:`width`"
+#~ msgstr ":func:`pensize` | :func:`width`"
+
+#~ msgid ":func:`pen`"
+#~ msgstr ":func:`pen`"
+
+#~ msgid ":func:`isdown`"
+#~ msgstr ":func:`isdown`"
+
+#~ msgid ":func:`color`"
+#~ msgstr ":func:`color`"
+
+#~ msgid ":func:`pencolor`"
+#~ msgstr ":func:`pencolor`"
+
+#~ msgid ":func:`fillcolor`"
+#~ msgstr ":func:`fillcolor`"
+
+#~ msgid ":func:`filling`"
+#~ msgstr ":func:`filling`"
+
+#~ msgid ":func:`fill`"
+#~ msgstr ":func:`fill`"
+
+#~ msgid ":func:`begin_fill`"
+#~ msgstr ":func:`begin_fill`"
+
+#~ msgid ":func:`end_fill`"
+#~ msgstr ":func:`end_fill`"
+
+#~ msgid ":func:`reset`"
+#~ msgstr ":func:`reset`"
+
+#~ msgid ":func:`clear`"
+#~ msgstr ":func:`clear`"
+
+#~ msgid ":func:`write`"
+#~ msgstr ":func:`write`"
+
+#~ msgid ":func:`showturtle` | :func:`st`"
+#~ msgstr ":func:`showturtle` | :func:`st`"
+
+#~ msgid ":func:`hideturtle` | :func:`ht`"
+#~ msgstr ":func:`hideturtle` | :func:`ht`"
+
+#~ msgid ":func:`isvisible`"
+#~ msgstr ":func:`isvisible`"
+
+#~ msgid ":func:`shape`"
+#~ msgstr ":func:`shape`"
+
+#~ msgid ":func:`resizemode`"
+#~ msgstr ":func:`resizemode`"
+
+#~ msgid ":func:`shapesize` | :func:`turtlesize`"
+#~ msgstr ":func:`shapesize` | :func:`turtlesize`"
+
+#~ msgid ":func:`shearfactor`"
+#~ msgstr ":func:`shearfactor`"
+
+#~ msgid ":func:`tiltangle`"
+#~ msgstr ":func:`tiltangle`"
+
+#~ msgid ":func:`tilt`"
+#~ msgstr ":func:`tilt`"
+
+#~ msgid ":func:`shapetransform`"
+#~ msgstr ":func:`shapetransform`"
+
+#~ msgid ":func:`get_shapepoly`"
+#~ msgstr ":func:`get_shapepoly`"
+
+#~ msgid ":func:`onrelease`"
+#~ msgstr ":func:`onrelease`"
+
+#~ msgid ":func:`poly`"
+#~ msgstr ":func:`poly`"
+
+#~ msgid ":func:`begin_poly`"
+#~ msgstr ":func:`begin_poly`"
+
+#~ msgid ":func:`end_poly`"
+#~ msgstr ":func:`end_poly`"
+
+#~ msgid ":func:`get_poly`"
+#~ msgstr ":func:`get_poly`"
+
+#~ msgid ":func:`getturtle` | :func:`getpen`"
+#~ msgstr ":func:`getturtle` | :func:`getpen`"
+
+#~ msgid ":func:`getscreen`"
+#~ msgstr ":func:`getscreen`"
+
+#~ msgid ":func:`setundobuffer`"
+#~ msgstr ":func:`setundobuffer`"
+
+#~ msgid ":func:`undobufferentries`"
+#~ msgstr ":func:`undobufferentries`"
+
+#~ msgid "Methods of TurtleScreen/Screen"
+#~ msgstr "متدهای TurtleScreen/Screen"
+
+#~ msgid ":func:`bgcolor`"
+#~ msgstr ":func:`bgcolor`"
+
+#~ msgid ":func:`bgpic`"
+#~ msgstr ":func:`bgpic`"
+
+#~ msgid ":func:`clearscreen`"
+#~ msgstr ":func:`clearscreen`"
+
+#~ msgid ":func:`resetscreen`"
+#~ msgstr ":func:`resetscreen`"
+
+#~ msgid ":func:`screensize`"
+#~ msgstr ":func:`screensize`"
+
+#~ msgid ":func:`setworldcoordinates`"
+#~ msgstr ":func:`setworldcoordinates`"
+
+#~ msgid ":func:`no_animation`"
+#~ msgstr ":func:`no_animation`"
+
+#~ msgid ":func:`delay`"
+#~ msgstr ":func:`delay`"
+
+#~ msgid ":func:`tracer`"
+#~ msgstr ":func:`tracer`"
+
+#~ msgid ":func:`update`"
+#~ msgstr ":func:`update`"
+
+#~ msgid ":func:`listen`"
+#~ msgstr ":func:`listen`"
+
+#~ msgid ":func:`onkey` | :func:`onkeyrelease`"
+#~ msgstr ":func:`onkey` | :func:`onkeyrelease`"
+
+#~ msgid ":func:`onkeypress`"
+#~ msgstr ":func:`onkeypress`"
+
+#~ msgid ":func:`onclick` | :func:`onscreenclick`"
+#~ msgstr ":func:`onclick` | :func:`onscreenclick`"
+
+#~ msgid ":func:`ontimer`"
+#~ msgstr ":func:`ontimer`"
+
+#~ msgid ":func:`mainloop` | :func:`done`"
+#~ msgstr ":func:`mainloop` | :func:`done`"
+
+#~ msgid ":func:`mode`"
+#~ msgstr ":func:`mode`"
+
+#~ msgid ":func:`colormode`"
+#~ msgstr ":func:`colormode`"
+
+#~ msgid ":func:`getcanvas`"
+#~ msgstr ":func:`getcanvas`"
+
+#~ msgid ":func:`getshapes`"
+#~ msgstr ":func:`getshapes`"
+
+#~ msgid ":func:`register_shape` | :func:`addshape`"
+#~ msgstr ":func:`register_shape` | :func:`addshape`"
+
+#~ msgid ":func:`turtles`"
+#~ msgstr ":func:`turtles`"
+
+#~ msgid ":func:`window_height`"
+#~ msgstr ":func:`window_height`"
+
+#~ msgid ":func:`window_width`"
+#~ msgstr ":func:`window_width`"
+
+#~ msgid ":func:`textinput`"
+#~ msgstr ":func:`textinput`"
+
+#~ msgid ":func:`numinput`"
+#~ msgstr ":func:`numinput`"
+
+#~ msgid "Methods specific to Screen"
+#~ msgstr "متدهای خاص Screen"
+
+#~ msgid ":func:`bye`"
+#~ msgstr ":func:`bye`"
+
+#~ msgid ":func:`exitonclick`"
+#~ msgstr ":func:`exitonclick`"
+
+#~ msgid ":func:`save`"
+#~ msgstr ":func:`save`"
+
+#~ msgid ":func:`setup`"
+#~ msgstr ":func:`setup`"
+
+#~ msgid ":func:`title`"
+#~ msgstr ":func:`title`"
+
+#~ msgid "Methods of RawTurtle/Turtle and corresponding functions"
+#~ msgstr "متدهای RawTurtle/Turtle و توابع متناظر"
+
+#~ msgid "a number (integer or float)"
+#~ msgstr "یک عدد (صحیح یا اعشاری)"
+
+#~ msgid "Move turtle to an absolute position.  If the pen is down, draw line.  Do not change the turtle's orientation."
+#~ msgstr "لاک‌پشت را به یک موقعیت مطلق حرکت می‌دهد. اگر قلم پایین باشد، خط رسم می‌کند. جهت لاک‌پشت را تغییر نمی‌دهد."
+
+#~ msgid "a number (or ``None``)"
+#~ msgstr "یک عدد (یا ``None``)"
+
+#~ msgid "Return the distance from the turtle to (x,y), the given vector, or the given other turtle, in turtle step units."
+#~ msgstr "فاصله از لاک‌پشت تا (x,y)، بردار داده‌شده، یا لاک‌پشت دیگر داده‌شده را بر حسب واحدهای گام لاک‌پشت برمی‌گرداند."
+
+#~ msgid "Methods of TurtleScreen/Screen and corresponding functions"
+#~ msgstr "متدهای TurtleScreen/Screen و توابع مربوطه"
+
+#~ msgid "Methods specific to Screen, not inherited from TurtleScreen"
+#~ msgstr "متدهای مختص Screen، که از TurtleScreen به ارث نمی‌رسند"
+
+#~ msgid "Help and configuration"
+#~ msgstr "راهنما و پیکربندی"
 
 #~ msgid "Introduction"
 #~ msgstr "مقدمه"
