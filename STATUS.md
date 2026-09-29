@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-28)
+(به‌روزرسانی: 2026-09-29)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -436,7 +436,6 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
-| library/turtle.po | 100.0% | 0.0% | 684 | 0 |
 | library/types.po | 100.0% | 0.0% | 105 | 0 |
 | library/typing.po | 100.0% | 0.0% | 833 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 43 | 0 |
@@ -509,7 +508,6 @@
 | tutorial/whatnow.po | 100.0% | 0.0% | 18 | 0 |
 | using/android.po | 100.0% | 0.0% | 27 | 0 |
 | using/cmdline.po | 100.0% | 0.0% | 270 | 0 |
-| using/configure.po | 100.0% | 0.0% | 468 | 0 |
 | using/editors.po | 100.0% | 0.0% | 6 | 0 |
 | using/index.po | 100.0% | 0.0% | 2 | 0 |
 | using/ios.po | 100.0% | 0.0% | 91 | 0 |
@@ -542,6 +540,8 @@
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
 | library/ctypes.po | 99.9% | 0.0% | 677 | 1 |
+| using/configure.po | 99.6% | 0.0% | 466 | 2 |
+| library/turtle.po | 95.9% | 3.8% | 562 | 2 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
-| **مجموع** | **98.8%** | **0.0%** | **70544** | **842** |
+| **مجموع** | **98.8%** | **0.0%** | **70420** | **846** |
 <!-- TRANSLATION_STATUS_END -->
