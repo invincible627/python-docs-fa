@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-29)
+(به‌روزرسانی: 2026-09-30)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -11,7 +11,6 @@
 | builtins/functions.po | 100.0% | 0.0% | 522 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
 | builtins/stdtypes.po | 100.0% | 0.0% | 1583 | 0 |
-| builtins/threadsafety.po | 100.0% | 0.0% | 122 | 0 |
 | builtins/time-complexity.po | 100.0% | 0.0% | 120 | 0 |
 | c-api/abstract.po | 100.0% | 0.0% | 3 | 0 |
 | c-api/allocation.po | 100.0% | 0.0% | 40 | 0 |
@@ -73,7 +72,6 @@
 | c-api/reflection.po | 100.0% | 0.0% | 17 | 0 |
 | c-api/sequence.po | 100.0% | 0.0% | 32 | 0 |
 | c-api/set.po | 100.0% | 0.0% | 35 | 0 |
-| c-api/slice.po | 100.0% | 0.0% | 25 | 0 |
 | c-api/stable.po | 100.0% | 0.0% | 45 | 0 |
 | c-api/structures.po | 100.0% | 0.0% | 206 | 0 |
 | c-api/subinterpreters.po | 100.0% | 0.0% | 87 | 0 |
@@ -541,7 +539,9 @@
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
 | library/ctypes.po | 99.9% | 0.0% | 677 | 1 |
 | using/configure.po | 99.6% | 0.0% | 466 | 2 |
+| builtins/threadsafety.po | 96.6% | 3.4% | 114 | 0 |
 | library/turtle.po | 95.9% | 3.8% | 562 | 2 |
+| c-api/slice.po | 92.3% | 3.8% | 24 | 1 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
-| **مجموع** | **98.8%** | **0.0%** | **70420** | **846** |
+| **مجموع** | **98.8%** | **0.0%** | **70411** | **847** |
 <!-- TRANSLATION_STATUS_END -->
