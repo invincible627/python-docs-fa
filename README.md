@@ -35,8 +35,8 @@
 برای بحث، هماهنگی و به‌روزرسانی‌های مرتبط با ترجمه، می‌توانید از کانال‌های زیر استفاده کنید:
 
 <ul dir="rtl">
-    <li><a href="https://discord.gg/yeqtNeaFYf">Discord مستندات پایتون به فارسی</a></li>
-    <li>بخش <a href="https://github.com/python/python-docs-fa/issues">Issues</a> در این مخزن جهت گزارش مشکلات یا پیشنهادات؛ سه قالب موجود است: درخواست ترجمه‌ی صفحه، پرسش یا پیشنهاد واژه‌نامه، و گزارش اشکال در ترجمه.</li>
+    <li><a href="https://t.me/python_docs_farsi">گروه تلگرام ترجمه مستندات</a></li>
+    <li>بخش <a href="https://github.com/python/python-docs-fa/issues">Issues</a> در این مخزن جهت گزارش مشکلات یا پیشنهادات؛ سه قالب موجود است: اشکال در واژه‌یاب، پیشنهاد تغییرات در ترجمه، اشکال در ترجمه.</li>
 </ul>
 
 تمام مشارکت‌کنندگان موظف‌اند از [آیین‌نامه‌ی رفتاری PSF](https://www.python.org/psf/conduct/) پیروی کنند.
