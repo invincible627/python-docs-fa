@@ -51,9 +51,16 @@ def gh(*args):
 def fetch_items():
     owner, name = REPO.split("/", 1)
     out = gh(
-        "api", "graphql",
-        "-f", f"query={QUERY}",
-        "-F", f"owner={owner}", "-F", f"name={name}", "-f", f"label={LABEL}",
+        "api",
+        "graphql",
+        "-f",
+        f"query={QUERY}",
+        "-F",
+        f"owner={owner}",
+        "-F",
+        f"name={name}",
+        "-f",
+        f"label={LABEL}",
     )
     nodes = json.loads(out)["data"]["repository"]["issues"]["nodes"]
     items = []
@@ -91,22 +98,24 @@ def splice(body, block):
     lines = body.split("\n")
     for i, line in enumerate(lines):
         if line.strip() == HEADING:
-            lines[i + 1:i + 1] = ["", section]
+            lines[i + 1 : i + 1] = ["", section]
             return "\n".join(lines)
     raise SystemExit(f"Heading not found in issue #{MASTER}: {HEADING}")
 
 
 def main():
-    body = gh("issue", "view", str(MASTER), "--repo", REPO,
-              "--json", "body", "-q", ".body")
+    body = gh(
+        "issue", "view", str(MASTER), "--repo", REPO, "--json", "body", "-q", ".body"
+    )
     old = body.replace("\r\n", "\n").rstrip("\n")
     new = splice(body, render(fetch_items())).rstrip("\n")
 
     if new == old:
         print("Master issue already up to date.")
         return
-    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False,
-                                     encoding="utf-8") as f:
+    with tempfile.NamedTemporaryFile(
+        "w", suffix=".md", delete=False, encoding="utf-8"
+    ) as f:
         f.write(new + "\n")
     gh("issue", "edit", str(MASTER), "--repo", REPO, "--body-file", f.name)
     print(f"Updated issue #{MASTER}.")
