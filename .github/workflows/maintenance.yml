@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: read
 
 # Shared with sync-cpython.yml so the two never push at the same time.
 concurrency:
@@ -43,6 +45,12 @@ jobs:
 
       - name: Update contributor chart and README stats block
         run: python3 scripts/contributor_chart.py
+
+      - name: Update master issue with pending review items
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MASTER_ISSUE: '83'
+        run: python3 scripts/update_master_issue.py
 
       - name: Stage changes
         run: git add --all
