@@ -2,7 +2,7 @@
 name: اشکال در ترجمه
 about: گزارش نادرستی یا خطا در ترجمه‌ی یک صفحه
 title: "[ترجمه] "
-labels: bug
+labels: اشکال
 assignees: ''
 ---
 

@@ -124,15 +124,11 @@ jobs:
         run: |
           report="$RUNNER_TEMP/report.md"
           if [ -s "$report" ]; then
-            gh label create "translation" \
-              --color "0075ca" \
-              --description "Translation review needed" \
-              --repo "${{ github.repository }}" 2>/dev/null || true
             echo "Triggered by sync with \`$CPYTHON_TAG\` (commit $(git rev-parse --short HEAD))." >> "$report"
             gh issue create \
               --title "🔍 Translation review needed after CPython sync ($(date +%Y-%m-%d))" \
               --body-file "$report" \
-              --label "translation" \
+              --label "تغییرات خودکار در ترجمه‌ها" \
               --repo "${{ github.repository }}"
           fi
 
