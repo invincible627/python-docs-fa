@@ -51,7 +51,18 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 # whole point: previously the script omitted --no-location --no-wrap while
 # the workflow included them, so whichever ran second would produce a huge
 # rewrap-only diff on top of (and obscuring) any real content changes.
-MSGMERGE_FLAGS = ["--update", "--backup=off", "--no-location", "--no-wrap"]
+#
+# --previous keeps the old msgid (as a `#| msgid` comment) on entries that
+# msgmerge marks fuzzy. scripts/review_report.py relies on it to show an
+# old -> new diff of each newly fuzzy string in the review issue. msgmerge
+# drops these comments again once an entry is no longer fuzzy.
+MSGMERGE_FLAGS = [
+    "--update",
+    "--backup=off",
+    "--no-location",
+    "--no-wrap",
+    "--previous",
+]
 
 DEFAULT_LOCALE = "fa"
 

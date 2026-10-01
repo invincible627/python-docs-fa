@@ -73,9 +73,11 @@ jobs:
 
       - name: Install Python dependencies
         if: env.SKIP != 'true'
-        # Consider installing from CPython's Doc/requirements.txt instead of
-        # unpinned sphinx, so Sphinx upgrades can't change msgids on their own.
-        run: pip install sphinx sphinx-intl
+        # polib is used by scripts/review_report.py to build the issue body.
+        # Consider installing sphinx from CPython's Doc/requirements.txt
+        # instead of unpinned, so Sphinx upgrades can't change msgids on
+        # their own.
+        run: pip install sphinx sphinx-intl polib
 
       - name: Sync msgids (fetch, build gettext, merge, validate)
         if: env.SKIP != 'true'
@@ -90,48 +92,12 @@ jobs:
         run: python scripts/unstage_cosmetic.py
 
       # --- Build the report from what is actually staged -------------------
-      - name: Build review report (new files + newly fuzzy strings)
+      # New PO files, newly fuzzy strings (old -> new diff) and new
+      # untranslated strings. Writes an empty file if there is nothing to
+      # report, in which case no issue is opened.
+      - name: Build review report (new files, newly fuzzy, new untranslated)
         if: env.SKIP != 'true'
-        run: |
-          report="$RUNNER_TEMP/report.md"
-          : > "$report"
-          work=$(mktemp -d)
-
-          # New PO files
-          new_files=$(git diff --staged --name-only --diff-filter=A -- '*.po')
-          if [ -n "$new_files" ]; then
-            {
-              echo "## 🆕 New PO files ($(echo "$new_files" | wc -l))"
-              echo "$new_files" | sed 's/^/- `/; s/$/`/'
-              echo ""
-            } >> "$report"
-          fi
-
-          # Fuzzy entries that are new in this run (present now, absent at HEAD)
-          fuzzy_out="$work/fuzzy.md"
-          : > "$fuzzy_out"
-          git diff --staged --name-only --diff-filter=M -- '*.po' |
-          while IFS= read -r f; do
-            git show "HEAD:$f" > "$work/old_full.po"
-            msgattrib --only-fuzzy --no-obsolete --no-wrap "$work/old_full.po" > "$work/old.po" 2>/dev/null || : > "$work/old.po"
-            msgattrib --only-fuzzy --no-obsolete --no-wrap "$f"                > "$work/new.po" 2>/dev/null || : > "$work/new.po"
-            # entries in exactly one of old/new, then keep those also in new
-            msgcomm --less-than=2 --no-wrap "$work/old.po" "$work/new.po" > "$work/sym.po"   2>/dev/null || : > "$work/sym.po"
-            msgcomm --no-wrap "$work/new.po" "$work/sym.po"                > "$work/added.po" 2>/dev/null || : > "$work/added.po"
-            count=$(grep -c '^#, .*fuzzy' "$work/added.po" || true)
-            if [ "${count:-0}" -gt 0 ]; then
-              {
-                echo "### \`$f\` ($count new fuzzy)"
-                grep -E '^msgid ".+"' "$work/added.po" | sed 's/^msgid /- /' | head -10
-                [ "$count" -gt 10 ] && echo "- … and $((count - 10)) more"
-                echo ""
-              } >> "$fuzzy_out"
-            fi
-          done
-
-          if [ -s "$fuzzy_out" ]; then
-            { echo "## 🔍 Newly fuzzy strings"; cat "$fuzzy_out"; } >> "$report"
-          fi
+        run: python scripts/review_report.py --output "$RUNNER_TEMP/report.md"
 
       # --- Commit + push ---------------------------------------------------
       - name: Commit and push if changed
@@ -151,7 +117,7 @@ jobs:
           echo "committed=true" >> "$GITHUB_OUTPUT"
 
       # Only after a successful push, so a failed run can't create duplicates.
-      - name: Open issue for new files / newly fuzzy strings
+      - name: Open issue for new files / fuzzy / untranslated strings
         if: env.SKIP != 'true' && steps.commit.outputs.committed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
