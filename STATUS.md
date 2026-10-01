@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-09-30)
+(به‌روزرسانی: 2026-10-01)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -168,7 +168,6 @@
 | library/asynchat.po | 100.0% | 0.0% | 4 | 0 |
 | library/asyncio-api-index.po | 100.0% | 0.0% | 100 | 0 |
 | library/asyncio-dev.po | 100.0% | 0.0% | 84 | 0 |
-| library/asyncio-eventloop.po | 100.0% | 0.0% | 426 | 0 |
 | library/asyncio-exceptions.po | 100.0% | 0.0% | 19 | 0 |
 | library/asyncio-extending.po | 100.0% | 0.0% | 27 | 0 |
 | library/asyncio-future.po | 100.0% | 0.0% | 66 | 0 |
@@ -179,7 +178,6 @@
 | library/asyncio-protocol.po | 100.0% | 0.0% | 194 | 0 |
 | library/asyncio-queue.po | 100.0% | 0.0% | 49 | 0 |
 | library/asyncio-runner.po | 100.0% | 0.0% | 41 | 0 |
-| library/asyncio-stream.po | 100.0% | 0.0% | 105 | 0 |
 | library/asyncio-subprocess.po | 100.0% | 0.0% | 80 | 0 |
 | library/asyncio-sync.po | 100.0% | 0.0% | 100 | 0 |
 | library/asyncio-task.po | 100.0% | 0.0% | 280 | 0 |
@@ -392,7 +390,6 @@
 | library/socketserver.po | 100.0% | 0.0% | 99 | 0 |
 | library/spwd.po | 100.0% | 0.0% | 4 | 0 |
 | library/sqlite3.po | 100.0% | 0.0% | 480 | 0 |
-| library/ssl.po | 100.0% | 0.0% | 547 | 0 |
 | library/stat.po | 100.0% | 0.0% | 92 | 0 |
 | library/statistics.po | 100.0% | 0.0% | 249 | 0 |
 | library/string.po | 100.0% | 0.0% | 224 | 0 |
@@ -538,10 +535,13 @@
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
 | library/ctypes.po | 99.9% | 0.0% | 677 | 1 |
+| library/asyncio-eventloop.po | 99.8% | 0.0% | 426 | 1 |
 | using/configure.po | 99.6% | 0.0% | 466 | 2 |
+| library/ssl.po | 99.3% | 0.0% | 546 | 4 |
+| library/asyncio-stream.po | 99.1% | 0.0% | 105 | 1 |
 | builtins/threadsafety.po | 96.6% | 3.4% | 114 | 0 |
 | library/turtle.po | 95.9% | 3.8% | 562 | 2 |
 | c-api/slice.po | 92.3% | 3.8% | 24 | 1 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
-| **مجموع** | **98.8%** | **0.0%** | **70411** | **847** |
+| **مجموع** | **98.8%** | **0.0%** | **70410** | **853** |
 <!-- TRANSLATION_STATUS_END -->
