@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-25 17:47+0330\n"
+"PO-Revision-Date: 2026-09-29 18:57+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
 "Language: fa\n"
@@ -2619,192 +2619,196 @@ msgstr "%s (%s پراپرتی)"
 
 #, python-format
 msgid "%s (type alias in %s)"
-msgstr ""
+msgstr "%s (مستعار نوع در %s)"
 
 msgid "Python Module Index"
-msgstr ""
+msgstr "اندیس ماژول‌های پایتون"
 
 msgid "modules"
-msgstr ""
+msgstr "ماژول‌ها"
 
 msgid "Deprecated"
-msgstr ""
+msgstr "منسوخ"
 
 msgid "exception"
-msgstr ""
+msgstr "استثنا"
 
 msgid "class method"
-msgstr ""
+msgstr "متد کلاس"
 
 msgid "static method"
-msgstr ""
+msgstr "متد ایستا"
 
 msgid "property"
-msgstr ""
+msgstr "پراپرتی"
 
 msgid "type alias"
-msgstr ""
+msgstr "مستعار نوع"
 
 #, python-format
 msgid "duplicate object description of %s, other instance in %s, use :no-index: for one of them"
-msgstr ""
+msgstr "توصیف شیء تکراری برای %s، نمونه‌ی دیگر در %s، برای یکی از آن‌ها از :no-index: استفاده کنید"
 
 #, python-format
 msgid "more than one target found for cross-reference %r: %s"
-msgstr ""
+msgstr "بیش از یک هدف برای ارجاع متقابل %r یافت شد: %s"
 
 msgid " (deprecated)"
-msgstr ""
+msgstr " \" (منسوخ)"
 
 msgid "Parameters"
-msgstr ""
+msgstr "پارامترها"
 
 msgid "Variables"
-msgstr ""
+msgstr "متغیر‌ها"
 
 msgid "Raises"
-msgstr ""
+msgstr "پرتاب‌ها"
 
 msgid "Template Parameters"
-msgstr ""
+msgstr "پارامترهای قالب"
 
 #, python-format
 msgid "%s (C++ %s)"
-msgstr ""
+msgstr "%s (C++ %s)"
 
 #, python-format
 msgid ""
 "Duplicate C++ declaration, also defined at %s:%s.\n"
 "Declaration is '.. cpp:%s:: %s'."
 msgstr ""
+"اعلان C++ تکراری، همچنین در %s:%s تعریف شده است.\n"
+"اعلان '.. cpp:%s:: %s' است."
 
 msgid "Return values"
-msgstr ""
+msgstr "مقادیر بازگشتی"
 
 msgid "union"
-msgstr ""
+msgstr "اجتماع"
 
 msgid "member"
-msgstr ""
+msgstr "عضو"
 
 msgid "type"
-msgstr ""
+msgstr "نوع"
 
 msgid "concept"
-msgstr ""
+msgstr "مفهوم"
 
 msgid "enum"
-msgstr ""
+msgstr "شمارشی"
 
 msgid "enumerator"
-msgstr ""
+msgstr "شمارشگر"
 
 msgid "function parameter"
-msgstr ""
+msgstr "پارامتر تابع"
 
 msgid "template parameter"
-msgstr ""
+msgstr "پارامتر قالب"
 
 #, python-format
 msgid "%s (C %s)"
-msgstr ""
+msgstr "%s (C %s)"
 
 #, python-format
 msgid ""
 "Duplicate C declaration, also defined at %s:%s.\n"
 "Declaration is '.. c:%s:: %s'."
 msgstr ""
+"اعلان C تکراری، همچنین در %s:%s تعریف شده است.\n"
+"اعلان '.. c:%s:: %s' است."
 
 msgid "variable"
-msgstr ""
+msgstr "متغیر"
 
 msgid "macro"
-msgstr ""
+msgstr "ماکرو"
 
 msgid "struct"
-msgstr ""
+msgstr "ساختار"
 
 #, python-format
 msgid "environment variable; %s"
-msgstr ""
+msgstr "متغیر محیطی؛ %s"
 
 #, python-format
 msgid "%s; configuration value"
-msgstr ""
+msgstr "%s؛ مقدار پیکربندی"
 
 msgid "Type"
-msgstr ""
+msgstr "نوع"
 
 msgid "Default"
-msgstr ""
+msgstr "پیش‌فرض"
 
 #, python-format
 msgid "Malformed option description %r, should look like \"opt\", \"-opt args\", \"--opt args\", \"/opt args\" or \"+opt args\""
-msgstr ""
+msgstr "توصیف گزینه‌ی بدشکل %r، باید به شکل \"opt\"، \"-opt args\"، \"--opt args\"، \"/opt args\" یا \"+opt args\" باشد"
 
 #, python-format
 msgid "%s command line option"
-msgstr ""
+msgstr "گزینه‌ی خط فرمان %s"
 
 msgid "command line option"
-msgstr ""
+msgstr "گزینه‌ی خط فرمان"
 
 msgid "glossary term must be preceded by empty line"
-msgstr ""
+msgstr "واژه‌ی واژه‌نامه باید پس از یک سطر خالی بیاید"
 
 msgid "glossary terms must not be separated by empty lines"
-msgstr ""
+msgstr "واژه‌های واژه‌نامه نباید با سطرهای خالی جدا شوند"
 
 msgid "glossary seems to be misformatted, check indentation"
-msgstr ""
+msgstr "به نظر می‌رسد واژه‌نامه بدشکل است، تورفتگی را بررسی کنید"
 
 msgid "glossary term"
-msgstr ""
+msgstr "واژه‌ی واژه‌نامه"
 
 msgid "grammar token"
-msgstr ""
+msgstr "توکن دستور زبان"
 
 msgid "reference label"
-msgstr ""
+msgstr "برچسب ارجاع"
 
 msgid "environment variable"
-msgstr ""
+msgstr "متغیر محیطی"
 
 msgid "program option"
-msgstr ""
+msgstr "گزینه‌ی برنامه"
 
 msgid "document"
-msgstr ""
+msgstr "سند"
 
 msgid "Module Index"
-msgstr ""
+msgstr "اندیس ماژول‌ها"
 
 #, python-format
 msgid "duplicate %s description of %s, other instance in %s"
-msgstr ""
+msgstr "توصیف %s تکراری از %s، نمونه‌ی دیگر در %s"
 
 msgid "numfig is disabled. :numref: is ignored."
-msgstr ""
+msgstr "numfig غیرفعال است. :numref: نادیده گرفته می‌شود."
 
 #, python-format
 msgid "Failed to create a cross reference. Any number is not assigned: %s"
-msgstr ""
+msgstr "ایجاد ارجاع متقابل ناموفق بود. هیچ شماره‌ای اختصاص داده نشده است: %s"
 
 #, python-format
 msgid "the link has no caption: %s"
-msgstr ""
+msgstr "پیوند عنوان ندارد: %s"
 
 #, python-format
 msgid "invalid numfig_format: %s (%r)"
-msgstr ""
+msgstr "numfig_format نامعتبر: %s (%r)"
 
 #, python-format
 msgid "invalid numfig_format: %s"
-msgstr ""
+msgstr "numfig_format نامعتبر: %s"
 
 #, python-format
 msgid "undefined label: %r"
-msgstr ""
+msgstr "برچسب تعریف‌نشده: %r"
 
 #, python-format
 msgid "Failed to create a cross reference. A title or caption not found: %r"
