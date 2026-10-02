@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-01)
+(به‌روزرسانی: 2026-10-02)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -11,6 +11,7 @@
 | builtins/functions.po | 100.0% | 0.0% | 522 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
 | builtins/stdtypes.po | 100.0% | 0.0% | 1583 | 0 |
+| builtins/threadsafety.po | 100.0% | 0.0% | 118 | 0 |
 | builtins/time-complexity.po | 100.0% | 0.0% | 120 | 0 |
 | c-api/abstract.po | 100.0% | 0.0% | 3 | 0 |
 | c-api/allocation.po | 100.0% | 0.0% | 40 | 0 |
@@ -72,6 +73,7 @@
 | c-api/reflection.po | 100.0% | 0.0% | 17 | 0 |
 | c-api/sequence.po | 100.0% | 0.0% | 32 | 0 |
 | c-api/set.po | 100.0% | 0.0% | 35 | 0 |
+| c-api/slice.po | 100.0% | 0.0% | 26 | 0 |
 | c-api/stable.po | 100.0% | 0.0% | 45 | 0 |
 | c-api/structures.po | 100.0% | 0.0% | 206 | 0 |
 | c-api/subinterpreters.po | 100.0% | 0.0% | 87 | 0 |
@@ -224,6 +226,7 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
+| library/ctypes.po | 100.0% | 0.0% | 678 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -431,6 +434,7 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
+| library/turtle.po | 100.0% | 0.0% | 586 | 0 |
 | library/types.po | 100.0% | 0.0% | 105 | 0 |
 | library/typing.po | 100.0% | 0.0% | 833 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 43 | 0 |
@@ -503,6 +507,7 @@
 | tutorial/whatnow.po | 100.0% | 0.0% | 18 | 0 |
 | using/android.po | 100.0% | 0.0% | 27 | 0 |
 | using/cmdline.po | 100.0% | 0.0% | 270 | 0 |
+| using/configure.po | 100.0% | 0.0% | 468 | 0 |
 | using/editors.po | 100.0% | 0.0% | 6 | 0 |
 | using/index.po | 100.0% | 0.0% | 2 | 0 |
 | using/ios.po | 100.0% | 0.0% | 91 | 0 |
@@ -534,14 +539,9 @@
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/changelog.po | 100.0% | 0.0% | 1 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| library/ctypes.po | 99.9% | 0.0% | 677 | 1 |
 | library/asyncio-eventloop.po | 99.8% | 0.0% | 426 | 1 |
-| using/configure.po | 99.6% | 0.0% | 466 | 2 |
 | library/ssl.po | 99.3% | 0.0% | 546 | 4 |
 | library/asyncio-stream.po | 99.1% | 0.0% | 105 | 1 |
-| builtins/threadsafety.po | 96.6% | 3.4% | 114 | 0 |
-| library/turtle.po | 95.9% | 3.8% | 562 | 2 |
-| c-api/slice.po | 92.3% | 3.8% | 24 | 1 |
 | sphinx.po | 13.3% | 0.0% | 129 | 841 |
-| **مجموع** | **98.8%** | **0.0%** | **70410** | **853** |
+| **مجموع** | **98.8%** | **0.0%** | **70443** | **847** |
 <!-- TRANSLATION_STATUS_END -->

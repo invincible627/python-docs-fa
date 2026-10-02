@@ -16,3 +16,4 @@
 | pangominn | translator | 2 |
 | mdflx | reviewer | 1 |
 | ashykng | translator | 1 |
+| mahdyaralipor | translator | 24 |
