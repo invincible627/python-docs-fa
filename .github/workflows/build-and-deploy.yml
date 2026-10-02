@@ -2,11 +2,10 @@ name: Build and Deploy to GitHub Pages
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 6 * * *'
   push:
     branches:
       - 3.14
-    paths-ignore: []
   workflow_dispatch:
 
 permissions:

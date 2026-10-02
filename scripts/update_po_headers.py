@@ -26,7 +26,9 @@ edits only the header, so translations and their line wrapping are
 preserved byte-for-byte.
 
 Automated accounts (GitHub Actions, Transifex sync jobs, ``[bot]`` users)
-are excluded from the credits.
+are excluded from the credits. Real contributors who commit with a GitHub
+``@users.noreply.github.com`` address (email privacy enabled) are credited
+like anyone else.
 
 Requires: git history for the repo.
 
@@ -47,10 +49,14 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-BOT_AUTHOR_RE = re.compile(r"(?i)(github[^\w]*action|\[bot\])")
-BOT_EMAIL_RE = re.compile(
-    r"(?i)(\[bot\]|@users\.noreply\.github\.com$|\+github-actions)"
-)
+# Bots only. Note there is deliberately no blanket "@users.noreply.github.com"
+# clause: that is also the address real users commit with when GitHub's
+# "keep my email private" setting is on, and excluding it silently drops them
+# from the credits. Bot noreply addresses (e.g.
+# 41898282+github-actions[bot]@users.noreply.github.com) are still caught by
+# the "[bot]" / "+github-actions" patterns.
+BOT_AUTHOR_RE = re.compile(r"(?i)(github[^\w]*action|\[bot\]|transifex)")
+BOT_EMAIL_RE = re.compile(r"(?i)(\[bot\]|\+github-actions|transifex)")
 TRANSLATOR_LINE_RE = re.compile(r"^# .+, \d{4}$")
 LAST_TRANSLATOR_RE = re.compile(r'^(\s*)"Last-Translator: .*\\n"\s*$')
 LANGUAGE_TEAM_START_RE = re.compile(r'^\s*"Language-Team: (.*)$')

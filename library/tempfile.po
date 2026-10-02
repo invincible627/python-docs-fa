@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-14 15:36+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,9 +216,8 @@ msgstr "پوشه‌ای که نام آن با متغیر محیطی :envvar:`TMP
 msgid "A platform-specific location:"
 msgstr "یک مکان وابسته به سکو:"
 
-#, fuzzy
 msgid "On Windows, the directories :file:`%USERPROFILE%\\\\AppData\\\\Local\\\\Temp`, :file:`%SYSTEMROOT%\\\\Temp`, :file:`C:\\\\TEMP`, :file:`C:\\\\TMP`, :file:`\\\\TEMP`, and :file:`\\\\TMP`, in that order."
-msgstr "در ویندوز، پوشه‌های :file:`C:\\\\TEMP`، :file:`C:\\\\TMP`، :file:`\\\\TEMP`، و :file:`\\\\TMP`، به همین ترتیب."
+msgstr "در ویندوز، دایرکتوری‌های :file:`%USERPROFILE%\\\\AppData\\\\Local\\\\Temp`، :file:`%SYSTEMROOT%\\\\Temp`، :file:`C:\\\\TEMP`، :file:`C:\\\\TMP`، :file:`\\\\TEMP`، و :file:`\\\\TMP`، به همین ترتیب."
 
 msgid "On all other platforms, the directories :file:`/tmp`, :file:`/var/tmp`, and :file:`/usr/tmp`, in that order."
 msgstr "در تمام سکوهای دیگر، پوشه‌های :file:`/tmp`، :file:`/var/tmp` و :file:`/usr/tmp`، به همین ترتیب."

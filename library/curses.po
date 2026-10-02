@@ -14,10 +14,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-13 14:57+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,15 +46,14 @@ msgstr "این ماژول در :ref:`سکوهای موبایل <mobile-availabil
 msgid "This is an :term:`optional module`. If it is missing from your copy of CPython, look for documentation from your distributor (that is, whoever provided Python to you). If you are the distributor, see :ref:`optional-module-requirements`."
 msgstr "این یک :term:`ماژول اختیاری <optional module>` است. اگر در نسخه CPython شما موجود نیست، به مستندات توزیع‌کننده خود (یعنی هر کسی که پایتون را در اختیار شما قرار داده است) مراجعه کنید. اگر شما توزیع‌کننده هستید، :ref:`optional-module-requirements` را ببینید."
 
-#, fuzzy
 msgid "Whenever the documentation mentions a *character* it can be specified as an integer, a one-character Unicode string or a one-byte byte string. An integer is the code of a single encoded byte, optionally combined with attributes and a color pair, as returned by :meth:`window.inch`."
-msgstr "هر جا که مستندات به یک *نویسه* اشاره می‌کند، می‌توان آن را به‌صورت یک عدد صحیح، یک رشته یونیکد تک‌نویسه‌ای یا یک رشته بایتی تک‌بایتی مشخص کرد."
+msgstr "هرگاه مستندات به یک *نویسه* اشاره کند، می‌توان آن را به صورت یک عدد صحیح، یک رشته‌ی یونیکد تک‌نویسه یا یک رشته‌ی بایتی تک‌بایتی مشخص کرد. یک عدد صحیح کد یک بایت واحد کدگذاری شده است، که به صورت اختیاری با ویژگی‌ها و یک جفت رنگ ترکیب شده است، همان‌طور که توسط :meth:`window.inch` بازگردانده می‌شود."
 
 msgid "Whenever the documentation mentions a *character string* it can be specified as a Unicode string or a byte string."
 msgstr "هرگاه در مستندات به یک *رشته‌ی نویسه‌ای* اشاره شود، می‌توان آن را به‌صورت یک رشته‌ی یونیکد یا یک رشته‌ی بایت مشخص کرد."
 
 msgid "Whether curses may be used from several threads depends on the underlying library and how it was built. In many implementations, including the default build of ncurses, the screen state is shared and not thread-safe; since the blocking and refresh methods (such as :meth:`~window.getch` and :meth:`~window.refresh`) release the :term:`GIL`, unsynchronized use from several threads can then crash the interpreter. Serialize the calls."
-msgstr ""
+msgstr "استفاده از curses از چند نخ به کتابخانه‌ی زیرین و نحوه‌ی ساختِ آن بستگی دارد. در بسیاری از پیاده‌سازی‌ها، از جمله ساخت پیش‌فرض ncurses، وضعیت صفحه مشترک و نخ‌ایمن نیست؛ چون متدهای مسدود‌کننده و تازه‌سازی (مانند :meth:`~window.getch` و :meth:`~window.refresh`) :term:`GIL <GIL>` را رها می‌کنند، استفاده‌ی ناهمگام از چند نخ می‌تواند مفسر را فروپاشی کند. فراخوانی‌ها را به‌ترتیب انجام دهید."
 
 msgid "Module :mod:`curses.ascii`"
 msgstr "ماژول :mod:`curses.ascii`"
@@ -281,9 +280,8 @@ msgstr "یک تاپل  ``(fg, bg)`` را برمی‌گرداند که شامل �
 msgid "Return the number of the color-pair set by the attribute value *attr*. :func:`color_pair` is the counterpart to this function."
 msgstr "شماره‌ی جفت‌رنگ تنظیم‌شده با مقدار ویژگی *attr* را برمی‌گرداند. :func:`color_pair` همتای این تابع است."
 
-#, fuzzy
 msgid "Equivalent to ``tputs(str, 1, putchar)``; emit the value of a specified terminfo capability, a bytes object, for the current terminal. Note that the output of :func:`putp` always goes to standard output."
-msgstr "معادل ``tputs(str, 1, putchar)`` است؛ مقدار یک قابلیت terminfo مشخص برای پایانه جاری را منتشر می‌کند. توجه داشته باشید که خروجی :func:`putp` همیشه به خروجی استاندارد می‌رود."
+msgstr "معادل با ``tputs(str, 1, putchar)`` است؛ مقدار یک قابلیت terminfo مشخص، که یک شیء بایتی است، را برای ترمینال جاری صادر می‌کند. توجه داشته باشید که خروجی :func:`putp` همیشه به خروجی استاندارد می‌رود."
 
 msgid ":func:`setupterm` (or :func:`initscr`) must be called first."
 msgstr "ابتدا باید :func:`setupterm` (یا :func:`initscr`) فراخوانی شود."
@@ -357,9 +355,8 @@ msgstr "مقدار قابلیت عددی متناظر با نام قابلیت t
 msgid "Return the value of the string capability corresponding to the terminfo capability name *capname* as a bytes object.  Return ``None`` if *capname* is not a terminfo \"string capability\", or is canceled or absent from the terminal description."
 msgstr "مقدار قابلیت رشته‌ای متناظر با نام قابلیت *capname* در terminfo را به‌عنوان یک شیء bytes برمی‌گرداند. اگر *capname* یک «قابلیت رشته‌ای» terminfo نباشد، یا لغو شده باشد یا در توصیف پایانه وجود نداشته باشد، ``None`` را برمی‌گرداند."
 
-#, fuzzy
 msgid "Instantiate the bytes object *str* with the supplied parameters, where *str* should be a parameterized byte string obtained from the terminfo database.  For example, ``tparm(tigetstr(\"cup\"), 5, 3)`` could result in ``b'\\033[6;4H'``, the exact result depending on terminal type.  Up to nine integer parameters may be supplied."
-msgstr "شیء bytes یعنی *str* با پارامترهای ارائه‌شده نمونه‌سازی می‌شود، که در آن *str* باید رشته‌ای پارامتری‌شده باشد که از پایگاه داده‌ی terminfo به دست آمده است. برای مثال، ``tparm(tigetstr(\"cup\"), 5, 3)`` ممکن است به ``b'\\033[6;4H'`` منجر شود، که نتیجه‌ی دقیق به نوع پایانه بستگی دارد. می‌توان تا ۹ پارامتر عدد صحیح ارائه کرد."
+msgstr "شیء بایتی *str* را با پارامترهای داده شده نمونه‌سازی کنید، جایی که *str* باید یک رشته‌ی بایتی پارامتره‌یافته شده از پایگاه داده‌ی terminfo باشد. برای مثال، ``tparm(tigetstr(\"cup\"), 5, 3)`` می‌تواند منجر به ``b'\\033[6;4H'`` شود، نتیجه‌ی دقیق بستگی به نوع ترمینال دارد. حداکثر نه پارامتر عدد صحیح می‌تواند داده شود."
 
 msgid "Specify that the file descriptor *fd* be used for typeahead checking.  If *fd* is ``-1``, then no typeahead checking is done."
 msgstr "مشخص می‌کند که توصیف‌گر پرونده *fd* برای بررسی پیش‌تایپ (typeahead) به کار رود. اگر *fd* ``-1`` باشد، هیچ‌گونه بررسی پیش‌تایپ (typeahead) انجام نمی‌شود."
@@ -367,15 +364,14 @@ msgstr "مشخص می‌کند که توصیف‌گر پرونده *fd* برای
 msgid "The curses library does \"line-breakout optimization\" by looking for typeahead periodically while updating the screen.  If input is found, and it is coming from a tty, the current update is postponed until refresh or doupdate is called again, allowing faster response to commands typed in advance. This function allows specifying a different file descriptor for typeahead checking."
 msgstr "کتابخانه curses با بررسی دوره‌ای ورودی از پیش‌تایپ‌شده (typeahead) در حین به‌روزرسانی صفحه، «بهینه‌سازی شکست خط» (line-breakout optimization) را انجام می‌دهد. اگر ورودی یافت شود و از یک tty بیاید، به‌روزرسانی فعلی تا زمانی که refresh یا doupdate دوباره فراخوانی شود، به تعویق می‌افتد تا پاسخ سریع‌تری به فرمان‌هایی که از پیش‌تایپ‌شده‌اند داده شود. این تابع امکان تعیین یک توصیف‌گر پرونده متفاوت برای بررسی typeahead را فراهم می‌کند."
 
-#, fuzzy
 msgid "Return a bytes object which is a printable representation of the character *ch*; any attributes and color pair are ignored. Control characters are represented as a caret followed by the character, for example as ``b'^C'``. Printing characters are left as they are."
-msgstr "یک شیء bytes برمی‌گرداند که نمایش قابل‌چاپ نویسه *ch* است. نویسه‌های کنترلی به‌صورت یک نشانک (caret) و سپس خود نویسه نمایش داده می‌شوند، برای مثال به‌صورت ``b'^C'``. نویسه‌های چاپ‌شدنی همان‌طور که هستند باقی می‌مانند."
+msgstr "یک شیء بایتی بازمی‌گرداند که نمایانگر قابل چاپ نویسه *ch* است؛ هرگونه ویژگی و جفت رنگ نادیده گرفته می‌شوند. نویسه‌های کنترلی به صورت یک نشانک به دنبال خود نویسه نمایش داده می‌شوند، برای مثال به صورت ``b'^C'``. نویسه‌های قابل چاپ همان‌طور که هستند باقی می‌مانند."
 
 msgid "Push *ch* so the next :meth:`~window.getch` will return it."
 msgstr "*ch* را فشار دهید تا :meth:`~window.getch` بعدی آن را برگرداند."
 
 msgid "*ch* may be an integer (a key code or the code of an encoded byte), a byte, or a string of length 1 which encodes to a single byte."
-msgstr ""
+msgstr "*ch* می‌تواند یک عدد صحیح (یک کد کلید یا کد یک بایت کدگذاری شده)، یک بایت، یا یک رشته با طول 1 باشد که به یک بایت واحد کدگذاری می‌شود."
 
 msgid "Only one *ch* can be pushed before :meth:`!getch` is called."
 msgstr "تنها یک *ch* را می‌توان پیش از فراخوانی :meth:`!getch` پوش کرد (push)."
@@ -387,7 +383,7 @@ msgid "Push *ch* so the next :meth:`~window.get_wch` will return it."
 msgstr "*ch* را فشار دهید تا :meth:`~window.get_wch` بعدی آن را برگرداند."
 
 msgid "*ch* may be an integer (a character code, not a key code) or a string of length 1."
-msgstr ""
+msgstr "*ch* می‌تواند یک عدد صحیح (یک کد نویسه، نه کد کلید) یا یک رشته با طول 1 باشد."
 
 msgid "Only one *ch* can be pushed before :meth:`!get_wch` is called."
 msgstr "تنها یک *ch* را می‌توان پیش از فراخوانی :meth:`!get_wch` فشار داد."
@@ -569,9 +565,8 @@ msgstr "آزمایش می‌کند که آیا جفت داده‌شده از م�
 msgid "Previously it returned ``1`` or ``0`` instead of ``True`` or ``False``."
 msgstr "پیش‌تر، به‌جای ``True`` یا ``False``، ``1`` یا ``0`` را برمی‌گرداند."
 
-#, fuzzy
 msgid "Encoding used to encode the string arguments of the methods and to decode their results on a build without wide-character support. The encoding attribute is inherited from the parent window when a subwindow is created, for example with :meth:`window.subwin`. By default, current locale encoding is used (see :func:`locale.getencoding`)."
-msgstr "کدگذاری مورد استفاده برای کدگذاری آرگومان‌های متد (رشته‌ها و نویسه‌های یونیکد). هنگامی که یک زیرپنجره ایجاد می‌شود، ویژگی encoding از پنجره والد به ارث می‌رسد، برای مثال با :meth:`window.subwin`. به‌طور پیش‌فرض، از کدگذاری locale فعلی استفاده می‌شود (به :func:`locale.getencoding` مراجعه کنید)."
+msgstr "کدگذاری مورد استفاده برای کدگذاری آرگومان‌های رشته‌ای متدها و کدگشایی نتایج آن‌ها در ساخت بدون پشتیبانی از نویسه‌های پهن. ویژگی کدگذاری از پنجره والد هنگام ایجاد یک زیرپنجره ارث می‌شود، برای مثال با :meth:`window.subwin`. به طور پیش‌فرض، کدگذاری locale جاری استفاده می‌شود (به :func:`locale.getencoding` مراجعه کنید)."
 
 msgid "Clear the window."
 msgstr "پنجره را پاک کنید."
@@ -583,25 +578,25 @@ msgid "Return the given window's current background character/attribute pair. It
 msgstr "جفت نویسه/ویژگی پس‌زمینه‌ی جاری پنجره‌ی داده‌شده را برمی‌گرداند. اجزای آن را می‌توان مانند اجزای :meth:`inch` استخراج کرد."
 
 msgid "Read a key press, after moving the cursor to *y*, *x* if specified, and return it as an integer. The window is refreshed first if it is not a pad and was modified since the last refresh. Wait until a key is pressed, or return ``-1`` if the read is non-blocking or times out (see :meth:`nodelay` and :meth:`timeout`)."
-msgstr ""
+msgstr "یک فشردنِ کلید را بخوانید، پس از انتقال نشانگر به *y*، *x* در صورت تعیین، و آن را به عنوان یک عدد صحیح برگردانید. پنجره ابتدا تازه‌سازی می‌شود اگر پد نباشد و از آخرین تازه‌سازی تغییر کرده باشد. تا فشردن یک کلید صبر کنید، یا ``-1`` برگردانید اگر خواندن غیرمسدودکننده باشد یا زمان‌به‌حد برسد (به :meth:`nodelay` و :meth:`timeout` مراجعه کنید)."
 
 msgid "An ordinary key is returned as the code of a single byte of its encoding in the current locale, so a character encoded with several bytes takes several calls. For example, in a UTF-8 locale ``'é'`` is read as ``195``, then ``169``. Use :meth:`get_wch` to read it as a single character."
-msgstr ""
+msgstr "یک کلید معمولی به عنوان کد یک بایتِ تکی از کدگذاریِ آن در locale جاری برگردانده می‌شود، بنابراین یک نویسه که با چند بایت کدگذاری شده است، چند فراخوانی می‌طلبد. برای مثال، در یک locale از نوع UTF-8، ``'é'`` به عنوان ``195`` خوانده می‌شود، سپس ``169``. برای خواندن آن به عنوان یک نویسه تکی از :meth:`get_wch` استفاده کنید."
 
 msgid "In keypad mode (see :meth:`keypad`) function keys and other special keys are returned as one of the :ref:`KEY_* constants <curses-key-constants>`, which cannot be mistaken for an ordinary key. Otherwise, or if their escape sequence does not arrive in time (see :meth:`notimeout` and :func:`set_escdelay`), their bytes are returned one at a time."
-msgstr ""
+msgstr "در حالت کی‌پد (به :meth:`keypad` مراجعه کنید) کلیدهای تابع و سایر کلیدهای ویژه به عنوان یکی از :ref:`ثابت‌های KEY_* <curses-key-constants>` برگردانده می‌شوند، که نمی‌توان آن‌ها را با یک کلید معمولی اشتباه گرفت. در غیر این صورت، یا اگر دنباله‌ی گریز آن‌ها به موقع نرسد (به :meth:`notimeout` و :func:`set_escdelay` مراجعه کنید)، بایت‌های آن‌ها یکی‌یکی برگردانده می‌شوند."
 
 msgid "In echo mode (see :func:`echo`) the key is added to the window as by :meth:`addch`; special keys are not echoed."
-msgstr ""
+msgstr "در حالت اکو (به :func:`echo` مراجعه کنید) کلید همانند :meth:`addch` به پنجره اضافه می‌شود؛ کلیدهای ویژه اکو نمی‌شوند."
 
 msgid "Read a key press, after moving the cursor to *y*, *x* if specified, and return it as a one-character :class:`str`. The window is refreshed first if it is not a pad and was modified since the last refresh. Wait until a key is pressed, or raise :exc:`error` if the read is non-blocking or times out (see :meth:`nodelay` and :meth:`timeout`)."
-msgstr ""
+msgstr "یک فشردنِ کلید را بخوانید، پس از انتقال نشانگر به *y*، *x* در صورت تعیین، و آن را به عنوان یک :class:`str` تک‌نویسه برگردانید. پنجره ابتدا تازه‌سازی می‌شود اگر پد نباشد و از آخرین تازه‌سازی تغییر کرده باشد. تا فشردن یک کلید صبر کنید، یا :exc:`error` را پرتاب کنید اگر خواندن غیرمسدودکننده باشد یا زمان‌به‌حد برسد (به :meth:`nodelay` و :meth:`timeout` مراجعه کنید)."
 
 msgid "In keypad mode (see :meth:`keypad`) function keys and other special keys are returned as one of the :ref:`KEY_* constants <curses-key-constants>`, an integer. Otherwise, or if their escape sequence does not arrive in time (see :meth:`notimeout` and :func:`set_escdelay`), their characters are returned one at a time."
-msgstr ""
+msgstr "در حالت کی‌پد (به :meth:`keypad` مراجعه کنید) کلیدهای تابع و سایر کلیدهای ویژه به عنوان یکی از :ref:`ثابت‌های KEY_* <curses-key-constants>` برگردانده می‌شوند، یک عدد صحیح. در غیر این صورت، یا اگر دنباله‌ی گریز آن‌ها به موقع نرسد (به :meth:`notimeout` و :func:`set_escdelay` مراجعه کنید)، نویسه‌های آن‌ها یکی‌یکی برگردانده می‌شوند."
 
 msgid "Read a key press as :meth:`getch` does, but return it as a :class:`str`: an ordinary key as a one-character string, the byte decoded as Latin-1, and a special key as its name, such as ``'KEY_UP'`` (see :func:`keyname`). Raise :exc:`error` instead of returning ``-1`` if there is no input."
-msgstr ""
+msgstr "یک فشردنِ کلید را همانند :meth:`getch` بخوانید، اما آن را به عنوان یک :class:`str` برگردانید: یک کلید معمولی به عنوان یک رشته‌ی تک‌نویسه، بایت رمزگشایی‌شده به عنوان Latin-1، و یک کلید ویژه به عنوان نام آن، مانند ``'KEY_UP'`` (به :func:`keyname` مراجعه کنید). اگر ورودی وجود نداشته باشد، به جای برگرداندن ``-1``، :exc:`error` را پرتاب کنید."
 
 msgid "Return a tuple ``(y, x)`` of the height and width of the window."
 msgstr "یک تاپل ``(y, x)`` شامل ارتفاع و عرض پنجره برمی‌گرداند."
@@ -609,9 +604,8 @@ msgstr "یک تاپل ``(y, x)`` شامل ارتفاع و عرض پنجره بر
 msgid "Return the beginning coordinates of this window relative to its parent window as a tuple ``(y, x)``.  Return ``(-1, -1)`` if this window has no parent."
 msgstr "مختصات آغازین این پنجره را نسبت به پنجره والد آن به‌صورت یک تاپل ``(y, x)`` برمی‌گرداند. اگر این پنجره والدی نداشته باشد، ``(-1, -1)`` را برمی‌گرداند."
 
-#, fuzzy
 msgid "Read a line of input from the user, with primitive line editing capacity, after moving the cursor to *y*, *x* if specified. Return it as a bytes object, in the encoding of the current locale and without the terminating newline. At most *n* bytes are read; *n* defaults to and cannot exceed 2047."
-msgstr "یک شیء bytes را با قابلیت ابتدایی ویرایش خط از کاربر بخوانید. حداکثر *n* نویسه خوانده می‌شود؛ مقدار پیش‌فرض *n* ۲۰۴۷ است و نمی‌تواند از ۲۰۴۷ فراتر رود."
+msgstr "یک سطر ورودی را از کاربر بخوانید، با قابلیتِ ابتداییِ ویرایش سطر، پس از انتقال نشانگر به *y*، *x* در صورت تعیین. آن را به عنوان یک شیء بایت‌ها برگردانید، در کدگذاریِ locale جاری و بدون کاراکترِ خط‌جداکننده‌ی پایانی. حداکثر *n* بایت خوانده می‌شود؛ *n* به پیش‌فرض ۲۰۴۷ است و نمی‌تواند از آن بیشتر باشد."
 
 msgid "The maximum value for *n* was increased from 1023 to 2047."
 msgstr "حداکثر مقدار برای *n* از ۱۰۲۳ به ۲۰۴۷ افزایش یافت."
@@ -650,7 +644,7 @@ msgid "Insert a character string (as many characters as will fit on the line) be
 msgstr "یک رشته‌ی نویسه‌ای (به تعداد نویسه‌هایی که در خط جا می‌شوند) پیش از نویسه‌ی زیر مکان‌نما درج می‌شود. همه‌ی نویسه‌های سمت راست مکان‌نما به سمت راست جابه‌جا می‌شوند و راست‌ترین نویسه‌های خط از دست می‌روند. موقعیت مکان‌نما تغییر نمی‌کند (پس از حرکت به *y*، *x*، در صورت مشخص بودن)."
 
 msgid "Read the text of the window from the current cursor position, or from *y*, *x* if specified, to the end of the line, and return it as a bytes object, in the encoding of the current locale. Attributes and color pairs are stripped. At most *n* bytes are read; *n* defaults to and cannot exceed 2047."
-msgstr ""
+msgstr "متن پنجره را از موقعیتِ جاریِ نشانگر، یا از *y*، *x* در صورت تعیین، تا پایانِ سطر بخوانید، و آن را به عنوان یک شیء بایت‌ها برگردانید، در کدگذاریِ locale جاری. ویژگی‌ها و جفت‌های رنگ حذف می‌شوند. حداکثر *n* بایت خوانده می‌شود؛ *n* به پیش‌فرض ۲۰۴۷ است و نمی‌تواند از آن بیشتر باشد."
 
 msgid "Return ``True`` if the specified line was modified since the last call to :meth:`refresh`; otherwise return ``False``.  Raise a :exc:`curses.error` exception if *line* is not valid for the given window."
 msgstr "اگر سطر مشخص‌شده از آخرین فراخوانی :meth:`refresh` تغییر کرده باشد، ``True`` را برمی‌گرداند؛ در غیر این صورت ``False`` را برمی‌گرداند. اگر *line* برای پنجره داده‌شده معتبر نباشد، استثنای :exc:`curses.error` پرتاب می‌شود."
@@ -658,9 +652,8 @@ msgstr "اگر سطر مشخص‌شده از آخرین فراخوانی :meth:`
 msgid "Return ``True`` if the specified window was modified since the last call to :meth:`refresh`; otherwise return ``False``."
 msgstr "اگر پنجره‌ی مشخص‌شده از آخرین فراخوانی :meth:`refresh` تغییر کرده باشد، ``True`` را برمی‌گرداند؛ در غیر این صورت ``False`` را برمی‌گرداند."
 
-#, fuzzy
 msgid "If *flag* is ``True``, escape sequences generated by some keys (keypad,  function keys) will be interpreted by :mod:`!curses`. If *flag* is ``False``, escape sequences will be left as is in the input stream. Keypad mode is disabled by default, but :func:`wrapper` enables it for the main window."
-msgstr "اگر *flag* برابر ``True`` باشد، دنباله‌های خنثی‌سازی تولیدشده توسط برخی کلیدها (صفحه‌کلید عددی، کلیدهای تابعی) توسط :mod:`!curses` تفسیر می‌شوند. اگر *flag* برابر ``False`` باشد، دنباله‌های خنثی‌سازی در جریان ورودی به‌همان صورت باقی می‌مانند."
+msgstr "اگر *flag* برابر ``True`` باشد، دنباله‌های گریز تولیدشده توسط برخی کلیدها (کی‌پد، کلیدهای تابع) توسط :mod:`!curses` تفسیر می‌شوند. اگر *flag* برابر ``False`` باشد، دنباله‌های گریز در جریان ورودی بدون تغییر باقی می‌مانند. حالت کی‌پد به پیش‌فرض غیرفعال است، اما :func:`wrapper` آن را برای پنجره‌ی اصلی فعال می‌کند."
 
 msgid "If *flag* is ``True``, cursor is left where it is on update, instead of being at \"cursor position.\"  This reduces cursor movement where possible."
 msgstr "اگر *flag* برابر ``True`` باشد، مکان‌نما هنگام به‌روزرسانی در همان جای خود باقی می‌ماند، به جای آنکه در «موقعیت مکان‌نما» قرار گیرد. این کار حرکت مکان‌نما را تا حد ممکن کاهش می‌دهد."

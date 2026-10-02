@@ -8,15 +8,16 @@
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2025
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+# Neev Modh <141932641+neevmodh@users.noreply.github.com>, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-27 04:09+0000\n"
 "PO-Revision-Date: 2026-09-13 08:55+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,14 +37,14 @@ msgstr "انتخاب یک کتابخانه تجزیه آرگومان"
 msgid "The standard library includes three argument parsing libraries:"
 msgstr "کتابخانه استاندارد شامل ۳ کتابخانه تجزیه آرگومان است:"
 
-msgid ":mod:`getopt`: a module that closely mirrors the procedural C ``getopt`` API. Included in the standard library since before the initial Python 1.0 release."
-msgstr ":mod:`getopt`: ماژولی که API رویه‌ای ``getopt`` در زبان C را به‌دقت بازتاب می‌دهد. از پیش از نخستین انتشار Python 1.0 در کتابخانه استاندارد گنجانده شده است."
+msgid ":mod:`getopt`: a module that closely mirrors the procedural C ``getopt`` API."
+msgstr ":mod:`getopt`: ماژولی که API رویه‌ای ``getopt`` در زبان C را به‌دقت بازتاب می‌دهد."
 
-msgid ":mod:`!optparse`: a declarative replacement for ``getopt`` that provides equivalent functionality without requiring each application to implement its own procedural option parsing logic. Included in the standard library since the Python 2.3 release."
-msgstr ":mod:`!optparse`: جایگزینی اعلانی برای ``getopt`` که قابلیت معادلی را بدون نیاز به اینکه هر برنامه منطق تجزیه گزینه‌های خود را به‌صورت رویه‌ای پیاده‌سازی کند، فراهم می‌کند. از نسخه Python 2.3 در کتابخانه استاندارد گنجانده شده است."
+msgid ":mod:`!optparse`: a declarative replacement for ``getopt`` that provides equivalent functionality without requiring each application to implement its own procedural option parsing logic."
+msgstr ":mod:`!optparse`: جایگزینی اعلانی برای ``getopt`` که قابلیت معادلی را بدون نیاز به اینکه هر برنامه منطق تجزیه گزینه‌های خود را به‌صورت رویه‌ای پیاده‌سازی کند، فراهم می‌کند."
 
-msgid ":mod:`argparse`: a more opinionated alternative to ``optparse`` that provides more functionality by default, at the expense of reduced application flexibility in controlling exactly how arguments are processed. Included in the standard library since the Python 2.7 and Python 3.2 releases."
-msgstr ":mod:`argparse`: جایگزینی سخت‌گیرانه‌تر برای ``optparse`` که به‌طور پیش‌فرض قابلیت‌های بیشتری فراهم می‌کند، اما به بهای کاهش انعطاف‌پذیری برنامه در کنترل دقیق چگونگی پردازش آرگومان‌ها. از زمان انتشار Python 2.7 و Python 3.2 در کتابخانه استاندارد گنجانده شده است."
+msgid ":mod:`argparse`: a more opinionated alternative to ``optparse`` that provides more functionality by default, at the expense of reduced application flexibility in controlling exactly how arguments are processed."
+msgstr ":mod:`argparse`: جایگزینی سخت‌گیرانه‌تر برای ``optparse`` که به‌طور پیش‌فرض قابلیت‌های بیشتری فراهم می‌کند، اما به بهای کاهش انعطاف‌پذیری برنامه در کنترل دقیق چگونگی پردازش آرگومان‌ها."
 
 msgid "In the absence of more specific argument parsing design constraints, :mod:`argparse` is the recommended choice for implementing command line applications, as it offers the highest level of baseline functionality with the least application level code."
 msgstr "در نبود محدودیت‌های طراحی خاص‌تر برای تجزیه آرگومان، :mod:`argparse` گزینه توصیه‌شده برای پیاده‌سازی برنامه‌های خط فرمان است، زیرا بالاترین سطح از قابلیت‌های پایه را با کمترین کد در سطح برنامه ارائه می‌دهد."

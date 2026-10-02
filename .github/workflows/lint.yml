@@ -2,10 +2,12 @@ name: Lint Check
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # After the 04:00 sync and 05:00 maintenance, so it lints tonight's result.
+    # (Pushes made with GITHUB_TOKEN do not trigger this workflow.)
+    - cron: '0 7 * * *'
   push:
     branches:
-      - '*'
+      - '**'   # '*' does not match branch names containing a slash
   pull_request:
     branches:
       - '*'
@@ -59,7 +61,7 @@ jobs:
         working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Check PO file validity
-        run: find . -name '*.po' -exec msgfmt --check {} \;
+        run: find . -name '*.po' -print0 | xargs -0 -n1 msgfmt --check -o /dev/null
         working-directory: Doc/locales/fa/LC_MESSAGES
 
       - name: Check markup preservation

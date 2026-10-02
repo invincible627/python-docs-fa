@@ -5,14 +5,15 @@
 #
 # Translators:
 # Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+# mahdyaralipor <mahdyaralipor0@gmail.com>, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-30 04:09+0000\n"
 "PO-Revision-Date: 2026-09-19 20:08+0330\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -416,17 +417,11 @@ msgstr ""
 msgid ":meth:`set.update`, :meth:`set.union`, :meth:`set.intersection` and :meth:`set.difference` can take multiple iterables as arguments. They all iterate through all the passed iterables and do the following:"
 msgstr ":meth:`set.update`، :meth:`set.union`، :meth:`set.intersection` و :meth:`set.difference` می‌توانند چندین پیمایش‌پذیر را به‌عنوان آرگومان بگیرند. همه‌ی آن‌ها تمام پیمایش‌پذیرهای داده‌شده را پیمایش می‌کنند و کار زیر را انجام می‌دهند:"
 
-msgid ":meth:`set.update` and :meth:`set.union` lock both objects only when"
-msgstr ":meth:`set.update` و :meth:`set.union` هر دو شیء را فقط زمانی قفل می‌کنند که"
+msgid ":meth:`set.update` and :meth:`set.union` lock both objects only when the other operand is a :class:`set`, :class:`frozenset`, or :class:`dict`."
+msgstr ":meth:`set.update` و :meth:`set.union` هر دو شیء را تنها زمانی قفل می‌کنند که عملوند دیگر یک :class:`set`، :class:`frozenset` یا :class:`dict` باشد."
 
-msgid "the other operand is a :class:`set`, :class:`frozenset`, or :class:`dict`."
-msgstr "عملوند دیگر یک :class:`set`، :class:`frozenset` یا :class:`dict` است."
-
-msgid ":meth:`set.intersection` and :meth:`set.difference` always try to lock"
-msgstr ":meth:`set.intersection` و :meth:`set.difference` همیشه سعی می‌کنند قفل کنند"
-
-msgid "all objects."
-msgstr "تمام اشیاء."
+msgid ":meth:`set.intersection` and :meth:`set.difference` always try to lock all objects."
+msgstr ":meth:`set.intersection` و :meth:`set.difference` همیشه سعی می‌کنند همه‌ی اشیاء را قفل کنند."
 
 msgid ":meth:`set.symmetric_difference` tries to lock both objects."
 msgstr ":meth:`set.symmetric_difference` تلاش می‌کند هر دو شیء را قفل کند."
@@ -434,17 +429,11 @@ msgstr ":meth:`set.symmetric_difference` تلاش می‌کند هر دو شیء
 msgid "The update variants of the above methods also have some differences between them:"
 msgstr "گونه‌های به‌روزرسانی متدهای بالا نیز تفاوت‌هایی با یکدیگر دارند:"
 
-msgid ":meth:`set.difference_update` and :meth:`set.intersection_update` try"
-msgstr ":meth:`set.difference_update` و :meth:`set.intersection_update` تلاش می‌کنند"
+msgid ":meth:`set.difference_update` and :meth:`set.intersection_update` try to lock all objects one-by-one."
+msgstr ":meth:`set.difference_update` و :meth:`set.intersection_update` سعی می‌کنند همه‌ی اشیاء را یکی‌یکی قفل کنند."
 
-msgid "to lock all objects one-by-one."
-msgstr "برای قفل کردن همه‌ی اشیاء به‌صورت یکی‌یکی."
-
-msgid ":meth:`set.symmetric_difference_update` only locks the arguments if it is"
-msgstr ":meth:`set.symmetric_difference_update` آرگومان‌ها را تنها در صورتی قفل می‌کند که"
-
-msgid "of type :class:`set`, :class:`frozenset`, or :class:`dict`."
-msgstr "از نوع :class:`set`، :class:`frozenset` یا :class:`dict`."
+msgid ":meth:`set.symmetric_difference_update` only locks the arguments if it is of type :class:`set`, :class:`frozenset`, or :class:`dict`."
+msgstr ":meth:`set.symmetric_difference_update` آرگومان‌ها را تنها در صورتی قفل می‌کند که از نوع :class:`set`، :class:`frozenset` یا :class:`dict` باشند."
 
 msgid "The following methods always try to lock both objects:"
 msgstr "متدهای زیر همیشه تلاش می‌کنند هر دو شیء را قفل کنند:"
@@ -638,3 +627,15 @@ msgstr ""
 
 msgid "Resizing or reallocating the underlying object (such as calling :meth:`bytearray.resize`) while a memoryview is exported raises :exc:`BufferError`. This is enforced regardless of threading."
 msgstr "تغییر اندازه یا تخصیص مجدد شیء زیرین (مانند فراخوانی :meth:`bytearray.resize`) در حالی که یک memoryview اکسپورت شده باشد، :exc:`BufferError` را پرتاب می‌کند. این امر صرف‌نظر از نخ‌بندی اعمال می‌شود."
+
+#~ msgid ":meth:`set.update` and :meth:`set.union` lock both objects only when"
+#~ msgstr ":meth:`set.update` و :meth:`set.union` هر دو شیء را فقط زمانی قفل می‌کنند که"
+
+#~ msgid "all objects."
+#~ msgstr "تمام اشیاء."
+
+#~ msgid "to lock all objects one-by-one."
+#~ msgstr "برای قفل کردن همه‌ی اشیاء به‌صورت یکی‌یکی."
+
+#~ msgid "of type :class:`set`, :class:`frozenset`, or :class:`dict`."
+#~ msgstr "از نوع :class:`set`، :class:`frozenset` یا :class:`dict`."

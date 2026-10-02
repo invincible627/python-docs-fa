@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-15 12:24+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"PO-Revision-Date: 2026-09-21 13:24+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +57,7 @@ msgid "Return a normalized absolutized version of the pathname *path*. On most p
 msgstr "نسخه‌ی نرمال‌شده و مطلق‌شده از مسیر *path* را برمی‌گرداند. در بیشتر سکوها، این معادل فراخوانی ``normpath(join(os.getcwd(), path))`` است."
 
 msgid "On Windows the path is normalized by the operating system, therefore the result can differ from ``normpath(join(os.getcwd(), path))``. A drive-relative path is resolved against the current directory of the specified drive, and the drive letter is capitalized. Trailing dots and spaces are stripped. For example::"
-msgstr ""
+msgstr "در ویندوز مسیر توسط سیستم‌عامل نرمال‌سازی می‌شود، بنابراین نتیجه می‌تواند از ``normpath(join(os.getcwd(), path))`` متفاوت باشد. یک مسیر نسبی به درایو در برابر پوشه‌ی جاری درایو مشخص شده حل می‌شود، و حرف درایو بزرگ می‌شود. نقطه‌ها و فاصله‌های انتهایی حذف می‌شوند. برای مثال::"
 
 msgid ""
 ">>> os.path.abspath('c:spam')\n"
@@ -65,6 +65,10 @@ msgid ""
 ">>> os.path.abspath('c:/temp/spam. . .')\n"
 "'c:\\\\temp\\\\spam'"
 msgstr ""
+">>> os.path.abspath('c:spam')\n"
+"'C:\\\\Temp\\\\spam'\n"
+">>> os.path.abspath('c:/temp/spam. . .')\n"
+"'c:\\\\temp\\\\spam'"
 
 msgid ":func:`os.path.join` and :func:`os.path.normpath`."
 msgstr ":func:`os.path.join` و :func:`os.path.normpath`."
@@ -170,7 +174,7 @@ msgid "Return ``True`` if *path* refers to an :func:`existing <exists>` director
 msgstr "اگر *path* به یک ورودی پوشه‌ی :func:`existing <exists>` اشاره کند که یک پیوند نمادین باشد، ``True`` را برمی‌گرداند. اگر ران‌تایم پایتون از پیوندهای نمادین پشتیبانی نکند، همیشه ``False`` را برمی‌گرداند."
 
 msgid "Return ``True`` if pathname *path* is a :dfn:`mount point`: a point in a file system where a different file system has been mounted.  On POSIX, the function checks whether *path*'s parent, :file:`{path}/..`, is on a different device than *path*, or whether :file:`{path}/..` and *path* point to the same i-node on the same device --- this should detect mount points for all Unix and POSIX variants.  It is not able to reliably detect bind mounts on the same filesystem. On Linux systems, it will always return ``True`` for btrfs subvolumes, even if they aren't mount points. On Windows, a drive letter root and a share UNC are always mount points, and for any other path ``GetVolumePathName`` is called to see if it is different from the input path."
-msgstr "اگر مسیر *path* یک :dfn:`نقطه اتصال <mount point>` باشد، مقدار ``True`` را برمی‌گرداند: نقطه‌ای در یک سامانه فایل‌بندی که سامانه فایل‌بندی‌ای دیگر در آن سوار شده است. در POSIX، این تابع بررسی می‌کند که آیا والد *path*، یعنی :file:`{path}/..`، روی دستگاهی متفاوت از *path* قرار دارد، یا اینکه :file:`{path}/..` و *path* به یک i-node روی همان دستگاه اشاره می‌کنند --- این باید نقاط اتصال را برای تمام انواع Unix و POSIX تشخیص دهد. این تابع نمی‌تواند اتصال‌های مقید‌سازی (bind mounts) را روی همان سامانه فایل‌بندی به‌طور قابل‌اطمینان تشخیص دهد. در سیستم‌های لینوکس، این تابع همیشه برای زیرحجم‌های btrfs مقدار ``True`` را برمی‌گرداند، حتی اگر نقاط اتصال نباشند. در ویندوز، ریشه‌ی حرف درایو و UNC اشتراکی همیشه نقاط اتصال هستند، و برای هر مسیر دیگر ``GetVolumePathName`` فراخوانی می‌شود تا بررسی شود که آیا با مسیر ورودی متفاوت است یا خیر."
+msgstr "اگر مسیر *path* یک :dfn:`نقطه اتصال (mount point)` باشد، مقدار ``True`` را برمی‌گرداند: نقطه‌ای در یک سامانه فایل‌بندی که سامانه فایل‌بندی‌ای دیگر در آن سوار شده است. در POSIX، این تابع بررسی می‌کند که آیا والد *path*، یعنی :file:`{path}/..`، روی دستگاهی متفاوت از *path* قرار دارد، یا اینکه :file:`{path}/..` و *path* به یک i-node روی همان دستگاه اشاره می‌کنند --- این باید نقاط اتصال را برای تمام انواع Unix و POSIX تشخیص دهد. این تابع نمی‌تواند اتصال‌های مقید‌سازی (bind mounts) را روی همان سامانه فایل‌بندی به‌طور قابل‌اطمینان تشخیص دهد. در سیستم‌های لینوکس، این تابع همیشه برای زیرحجم‌های btrfs مقدار ``True`` را برمی‌گرداند، حتی اگر نقاط اتصال نباشند. در ویندوز، ریشه‌ی حرف درایو و UNC اشتراکی همیشه نقاط اتصال هستند، و برای هر مسیر دیگر ``GetVolumePathName`` فراخوانی می‌شود تا بررسی شود که آیا با مسیر ورودی متفاوت است یا خیر."
 
 msgid "Added support for detecting non-root mount points on Windows."
 msgstr "پشتیبانی برای تشخیص نقاط اتصال غیرریشه در ویندوز افزوده شد."
@@ -242,9 +246,8 @@ msgstr "با حذف جداکننده‌های اضافی و ارجاع‌های 
 msgid "On POSIX systems, in accordance with `IEEE Std 1003.1 2013 Edition; 4.13 Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_, if a pathname begins with exactly two slashes, the first component following the leading characters may be interpreted in an implementation-defined manner, although more than two leading characters shall be treated as a single character."
 msgstr "در سیستم‌های POSIX، مطابق با `IEEE Std 1003.1 2013 Edition; 4.13 Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_، اگر یک مسیرنام دقیقاً با دو اسلش آغاز شود، اولین کامپوننت پس از نویسه‌های پیشرو ممکن است به‌صورت تعریف‌شده توسط پیاده‌سازی تفسیر شود، اگرچه بیش از دو نویسه‌ی پیشرو باید به‌عنوان یک نویسه‌ی واحد در نظر گرفته شود."
 
-#, fuzzy
 msgid "Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path (if they are supported by the operating system). On Windows, this function will also resolve MS-DOS (also called 8.3) style names such as ``C:\\\\PROGRA~1`` to ``C:\\\\Program Files``. The returned path uses the case reported by the operating system, which can differ from the case of *path*, in particular the drive letter is capitalized."
-msgstr "مسیر کانونیکال نام پرونده مشخص‌شده را بازمی‌گرداند و هرگونه پیوند نمادین موجود در مسیر را حذف می‌کند (اگر توسط سیستم‌عامل پشتیبانی شوند). در ویندوز، این تابع همچنین نام‌های به سبک MS-DOS (که به 8.3 نیز شناخته می‌شوند) مانند ``C:\\\\PROGRA~1`` را به ``C:\\\\Program Files`` تبدیل می‌کند."
+msgstr "مسیر کانونیکال پرونده‌ی مشخص شده را برمی‌گرداند، با حذف هرگونه پیوند نمادین که در مسیر مواجه می‌شود (در صورت پشتیبانی توسط سیستم‌عامل). در ویندوز، این تابع همچنین نام‌های به سبک MS-DOS (که 8.3 نیز نامیده می‌شوند) مانند ``C:\\\\PROGRA~1`` را به ``C:\\\\Program Files`` حل می‌کند. مسیر برگردانده‌شده از حالت (case) گزارش‌شده توسط سیستم‌عامل استفاده می‌کند، که می‌تواند از حالت *path* متفاوت باشد، به‌ویژه حرف درایو بزرگ می‌شود."
 
 msgid "By default, the path is evaluated up to the first component that does not exist, is a symlink loop, or whose evaluation raises :exc:`OSError`. All such components are appended unchanged to the existing part of the path."
 msgstr "به‌طور پیش‌فرض، مسیر تا نخستین کامپوننتی که وجود ندارد، یک حلقه‌ی پیوند نمادین است، یا ارزیابی آن باعث پرتاب :exc:`OSError` می‌شود، ارزیابی می‌شود. همه‌ی چنین کامپوننت‌هایی بدون تغییر به بخش موجود مسیر افزوده می‌شوند."

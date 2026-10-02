@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-13 16:38+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
@@ -609,13 +609,11 @@ msgstr "پیام خطا هنگامی که شیئی که از پروتکل مدی
 msgid ":pep:`784`: Zstandard support in the standard library"
 msgstr ":pep:`784`: پشتیبانی از Zstandard در کتابخانه استاندارد"
 
-#, fuzzy
 msgid "The new :mod:`compression` package contains modules :mod:`!compression.lzma`, :mod:`!compression.bz2`, :mod:`!compression.gzip` and :mod:`!compression.zlib` which re-export the :mod:`lzma`, :mod:`bz2`, :mod:`gzip` and :mod:`zlib` modules respectively. The new import names under :mod:`!compression` are the preferred names for importing these compression modules from Python 3.14. However, the existing modules names have not been deprecated. Any deprecation or removal of the existing compression modules will occur no sooner than five years after the release of 3.14."
-msgstr "بسته جدید :mod:`!compression` شامل ماژول‌های :mod:`!compression.lzma`، :mod:`!compression.bz2`، :mod:`!compression.gzip` و :mod:`!compression.zlib` است که به ترتیب ماژول‌های :mod:`lzma`، :mod:`bz2`، :mod:`gzip` و :mod:`zlib` را بازاکسپورت (re-export) می‌کنند. نام‌های ایمپورت جدید زیر :mod:`!compression`، نام‌های ترجیحی برای ایمپورت کردن این ماژول‌های فشرده‌سازی از پایتون 3.14 هستند. با این حال، نام‌های ماژول‌های موجود منسوخ نشده‌اند. هرگونه منسوخ‌سازی یا حذف ماژول‌های فشرده‌سازی موجود، زودتر از پنج سال پس از انتشار 3.14 رخ نخواهد داد."
+msgstr "بسته جدید :mod:`compression` شامل ماژول‌های :mod:`!compression.lzma`، :mod:`!compression.bz2`، :mod:`!compression.gzip` و :mod:`!compression.zlib` می‌باشد که به‌ترتیب ماژول‌های :mod:`lzma`، :mod:`bz2`، :mod:`gzip` و :mod:`zlib` را بازاکسپورت می‌کنند. نام‌های ایمپورت جدید تحت :mod:`!compression` نام‌های ترجیح‌دار برای ایمپورت کردن این ماژول‌های فشرده‌سازی از پایتون ۳.۱۴ هستند. با این حال، نام‌های ماژول‌های موجود منسوخ نشده‌اند. هرگونه منسوخ‌سازی یا حذف ماژول‌های فشرده‌سازی موجود زودتر از پنج سال پس از انتشار ۳.۱۴ رخ نخواهد داد."
 
-#, fuzzy
 msgid "The new :mod:`compression.zstd` module provides compression and decompression APIs for the Zstandard format via bindings to `Meta's zstd library <https://facebook.github.io/zstd/>`__. Zstandard is a widely adopted, highly efficient, and fast compression format. In addition to the APIs introduced in :mod:`!compression.zstd`, support for reading and writing Zstandard compressed archives has been added to the :mod:`tarfile`, :mod:`zipfile`, and :mod:`shutil` modules."
-msgstr "ماژول جدید :mod:`!compression.zstd` APIهای فشرده‌سازی و واگشایی را برای قالب Zstandard از طریق پیوند با `کتابخانه zstd شرکت Meta <https://facebook.github.io/zstd/>`__ فراهم می‌کند. Zstandard یک قالب فشرده‌سازی پذیرفته‌شده به‌طور گسترده، بسیار کارآمد و سریع است. علاوه بر APIهای معرفی‌شده در :mod:`!compression.zstd`، پشتیبانی از خواندن و نوشتن آرشیوهای فشرده‌شده با Zstandard به ماژول‌های :mod:`tarfile`، :mod:`zipfile` و :mod:`shutil` افزوده شده است."
+msgstr "ماژول جدید :mod:`compression.zstd` واسط‌های برنامه‌نویسی (API) برای فشرده‌سازی و واگشایی فرمت Zstandard را از طریق باندینگ به `کتابخانه zstd متا <https://facebook.github.io/zstd/>`__ فراهم می‌کند. Zstandard یک فرمت فشرده‌سازی به‌طور گسترده پذیرفته‌شده، بسیار کارآمد و سریع است. علاوه بر واسط‌های برنامه‌نویسی معرفی‌شده در :mod:`!compression.zstd`، پشتیبانی از خواندن و نوشتن آرشیوهای فشرده‌شده Zstandard به ماژول‌های :mod:`tarfile`، :mod:`zipfile` و :mod:`shutil` اضافه شده است."
 
 msgid "Here's an example of using the new module to compress some data:"
 msgstr "در اینجا مثالی از استفاده از ماژول جدید برای فشرده‌سازی برخی داده‌ها آمده است:"
@@ -1701,7 +1699,7 @@ msgid "Add two new monitoring events, :monitoring-event:`BRANCH_LEFT` and :monit
 msgstr "دو رویداد نظارتی جدید، :monitoring-event:`BRANCH_LEFT` و :monitoring-event:`BRANCH_RIGHT`، افزوده شده‌اند. این دو رویداد جایگزین رویداد :monitoring-event:`!BRANCH` شده و آن را منسوخ می‌کنند. (مشارکت‌شده توسط Mark Shannon در :gh:`122548`.)"
 
 msgid "Add :func:`sys.monitoring.clear_tool_id` to unregister all events and callback functions associated with a tool identifier. :func:`sys.monitoring.free_tool_id` now calls it before releasing the tool identifier, instead of leaving its events and callbacks registered. (Contributed by Tian Gao in :gh:`116750`.)"
-msgstr ""
+msgstr "برای لغو ثبت تمام رویدادها و توابع کال‌بک مرتبط با یک شناسه ابزار، :func:`sys.monitoring.clear_tool_id` را اضافه کنید. :func:`sys.monitoring.free_tool_id` اکنون قبل از آزاد کردن شناسه ابزار، آن را فراخوانی می‌کند، به جای اینکه رویدادها و کال‌بک‌های آن را ثبت نگه دارد. (مشارکت تیان گائو در :gh:`116750`.)"
 
 msgid "sysconfig"
 msgstr "sysconfig"

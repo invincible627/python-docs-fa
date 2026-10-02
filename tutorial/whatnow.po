@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-15 11:29+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -33,11 +33,10 @@ msgid "This tutorial is part of Python's documentation set.   Some other documen
 msgstr "این آموزش بخشی از مجموعه‌ی مستندات پایتون است. برخی دیگر از اسناد این مجموعه عبارت‌اند از:"
 
 msgid ":ref:`builtins-index`: gives details about Python's built-in types and functions."
-msgstr ""
+msgstr ":ref:`builtins-index`: جزئیاتی درباره نوع‌های توکار و توابع پایتون ارائه می‌دهد."
 
-#, fuzzy
 msgid ":ref:`library-index`: gives complete (though terse) reference material about types, functions, and the modules in the standard library.  The standard Python distribution includes a *lot* of additional code. There are modules to read Unix mailboxes, retrieve documents via HTTP, generate random numbers, parse command-line options, compress data, and many other tasks. Skimming through the Library Reference will give you an idea of what's available."
-msgstr "بهتر است این راهنما را نیز مرور کنید؛ این راهنما اطلاعات مرجع کاملی (هرچند مختصر) درباره‌ی نوع‌ها، توابع و ماژول‌های موجود در کتابخانه‌ی استاندارد ارائه می‌دهد. توزیع استاندارد پایتون شامل *مقدار بسیار زیادی* کد اضافی است. ماژول‌هایی برای خواندن صندوق‌های پستی یونیکس، دریافت اسناد از طریق HTTP، تولید اعداد تصادفی، تجزیه‌ی گزینه‌های خط فرمان، فشرده‌سازی داده‌ها و بسیاری وظایف دیگر وجود دارند. مرور اجمالی «مرجع کتابخانه» دید خوبی از امکانات موجود به شما خواهد داد."
+msgstr ":ref:`library-index`: مواد ارجاع کامل (هرچند مختصر) درباره نوع‌ها، توابع، و ماژول‌های موجود در کتابخانه استاندارد ارائه می‌دهد. توزیع استاندارد پایتون شامل *بسیاری* کدهای اضافی می‌شود. ماژول‌هایی برای خواندن جعبه‌های پست الکترونیک یونیکس، بازیابی اسناد از طریق HTTP، تولید اعداد تصادفی، تجزیه گزینه‌های خط فرمان، فشرده‌سازی داده‌ها، و بسیاری از وظایف دیگر وجود دارد. مرور مرجع کتابخانه ایده‌ای از آنچه در دسترس است به شما می‌دهد."
 
 msgid ":ref:`installing-index` explains how to install additional modules written by other Python users."
 msgstr ":ref:`installing-index` توضیح می‌دهد چگونه ماژول‌های اضافی نوشته‌شده توسط دیگر کاربران پایتون را نصب کنید."

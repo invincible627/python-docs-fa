@@ -14,10 +14,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -378,16 +378,14 @@ msgstr "چند نویسه‌ی دیگر نیز در رشته‌ی قالب‌ب�
 msgid "``|``"
 msgstr "``|``"
 
-#, fuzzy
 msgid "Indicates that the remaining arguments in the Python argument list are optional. The C variables corresponding to optional arguments should be initialized to their default value --- when an optional argument is not specified, :c:func:`PyArg_ParseTuple` does not touch the contents of the corresponding C variable(s). For example, the format string ``\"OO|OO\"`` corresponds to the Python signature ``f(a, b, c=None, d=None)``."
-msgstr "نشان می‌دهد که آرگومان‌های باقی‌مانده در فهرست آرگومان‌های پایتون اختیاری هستند. متغیرهای C متناظر با آرگومان‌های اختیاری باید با مقدار پیش‌فرض خود مقداردهی اولیه شوند --- هنگامی که یک آرگومان اختیاری مشخص نشده باشد، :c:func:`PyArg_ParseTuple` به محتویات متغیر(های) C متناظر دست نمی‌برد."
+msgstr "مشخص می‌کند که آرگومان‌های باقی‌مانده در فهرست آرگومان‌های پایتون اختیاری هستند. متغیرهای C متناظر با آرگومان‌های اختیاری باید به مقدار پیش‌فرض خود مقداردهی اولیه شوند --- وقتی یک آرگومان اختیاری مشخص نشده باشد، :c:func:`PyArg_ParseTuple` محتوای متغیر(های) C متناظر را دست‌نخورده می‌گذارد. برای مثال، رشته‌ی قالب ``\"OO|OO\"`` با امضای پایتون ``f(a, b, c=None, d=None)`` متناظر است."
 
 msgid "``$``"
 msgstr "``$``"
 
-#, fuzzy
 msgid ":c:func:`PyArg_ParseTupleAndKeywords` only: Indicates that the remaining arguments in the Python argument list are keyword-only. They are optional if ``|`` was specified before ``$``, and required otherwise. ``|`` cannot be specified after ``$``. For example, the format string ``\"O|O$O\"`` corresponds to the Python signature ``f(a, b=None, *, c=None)``, and the format string ``\"OO$OO\"`` corresponds to ``f(a, b, *, c, d)``."
-msgstr "فقط برای :c:func:`PyArg_ParseTupleAndKeywords`: نشان می‌دهد که آرگومان‌های باقی‌مانده در فهرست آرگومان‌های پایتون، فقط‌کلیدواژه‌ای هستند. در حال حاضر، همه‌ی آرگومان‌های فقط‌کلیدواژه‌ای باید آرگومان‌های اختیاری نیز باشند، بنابراین ``|`` باید همیشه پیش از ``$`` در رشته قالب تعیین شود."
+msgstr "فقط :c:func:`PyArg_ParseTupleAndKeywords`: مشخص می‌کند که آرگومان‌های باقی‌مانده در فهرست آرگومان‌های پایتون فقط‌کلیدواژه هستند. اگر ``|`` قبل از ``$`` مشخص شده باشد، آن‌ها اختیاری هستند، و در غیر این صورت ضروری. ``|`` نمی‌تواند بعد از ``$`` مشخص شود. برای مثال، رشته‌ی قالب ``\"O|O$O\"`` با امضای پایتون ``f(a, b=None, *, c=None)`` متناظر است، و رشته‌ی قالب ``\"OO$OO\"`` با ``f(a, b, *, c, d)`` متناظر است."
 
 msgid "``:``"
 msgstr "``:``"

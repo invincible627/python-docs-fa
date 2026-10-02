@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,16 +25,14 @@ msgstr ""
 msgid "Introduction"
 msgstr "مقدمه"
 
-#, fuzzy
 msgid "The Python standard library consists of a collection of modules. There are many ways to dissect this collection.  Most modules are written in Python, but some are written in C. All can be imported into your program to add functionality.  Some modules provide interfaces that are highly specific to Python, like printing a stack trace; some provide interfaces that are specific to particular operating systems, such as access to specific hardware; others provide interfaces that are specific to a particular application domain, like web development. Some modules are available in all versions and ports of Python; others are only available when the underlying system supports or requires them; yet others are available only when a particular configuration option was chosen at the time when Python was compiled and installed."
-msgstr "با این حال، بخش عمده‌ی کتابخانه از مجموعه‌ای از ماژول‌ها تشکیل شده است. راه‌های بسیاری برای تجزیه‌ی این مجموعه وجود دارد. برخی ماژول‌ها به زبان C نوشته شده‌اند و به‌صورت توکار در مفسر پایتون قرار دارند؛ برخی دیگر به زبان پایتون نوشته شده‌اند و به‌صورت کد منبع ایمپورت می‌شوند. برخی ماژول‌ها رابط‌هایی ارائه می‌دهند که بسیار مختص پایتون هستند، مانند چاپ ردگیری پشته؛ برخی رابط‌هایی ارائه می‌دهند که مخصوص سیستم‌عامل‌های خاصی هستند، مانند دسترسی به سخت‌افزار خاص؛ برخی دیگر رابط‌هایی ارائه می‌دهند که مخصوص یک حوزه کاربردی خاص هستند، مانند وب جهان‌گستر. برخی ماژول‌ها در همه‌ی نسخه‌ها و پورت‌های پایتون در دسترس هستند؛ برخی دیگر فقط زمانی در دسترس هستند که سیستم زیربنایی آن‌ها را پشتیبانی کند یا به آن‌ها نیاز داشته باشد؛ برخی دیگر نیز فقط زمانی در دسترس هستند که یک گزینه پیکربندی خاص در زمان کامپایل و نصب پایتون انتخاب شده باشد."
+msgstr "کتابخانه‌ی استاندارد پایتون از یک مجموعه از ماژول‌ها تشکیل شده است. روش‌های زیادی برای تجزیه این مجموعه وجود دارد. اکثر ماژول‌ها به زبان پایتون نوشته شده‌اند، اما برخی به زبان C نوشته شده‌اند. همه می‌توانند به برنامه‌ی شما وارد (import) شوند تا کارکرد اضافه کنند. برخی ماژول‌ها رابط‌هایی فراهم می‌کنند که به طور کامل به پایتون اختصاص دارند، مانند چاپ ردگیری پشته؛ برخی رابط‌هایی فراهم می‌کنند که به سیستم‌عامل‌های خاص اختصاص دارند، مانند دسترسی به سخت‌افزار خاص؛ دیگران رابط‌هایی فراهم می‌کنند که به یک دامنه‌ی برنامه خاص اختصاص دارند، مانند توسعه‌ی وب. برخی ماژول‌ها در همه نسخه‌ها و پورت‌های پایتون موجود هستند؛ برخی دیگر تنها زمانی موجود هستند که سیستم پایه آن‌ها را پشتیبانی یا نیاز داشته باشد؛ و برخی دیگر تنها زمانی موجود هستند که یک گزینه‌ی پیکربندی خاص در زمانی که پایتون کامپایل و نصب شده انتخاب شده باشد."
 
-#, fuzzy
 msgid "If you start reading this manual from the start, and skip to the next chapter when you get bored, you will get a reasonable overview of the available modules and application areas that are supported by the Python library.  Of course, you don't *have* to read it like a novel --- you can also browse the table of contents (in front of the manual), or look for a specific function, module or term in the index (in the back).  And finally, if you enjoy learning about random subjects, you choose a random page and read a section or two.  Regardless of the order in which you read the sections of this manual, it helps to first read :ref:`built-in-funcs`, as the remainder of this section assumes familiarity with this material."
-msgstr "این بدان معناست که اگر مطالعه‌ی این راهنما را از ابتدا آغاز کنید و هرگاه حوصله‌تان سر رفت به فصل بعدی بروید، نمای کلی معقولی از ماژول‌ها و حوزه‌های کاربردی موجود که کتابخانه‌ی پایتون از آن‌ها پشتیبانی می‌کند به دست خواهید آورد. البته *لازم* نیست آن را مانند یک رمان بخوانید --- همچنین می‌توانید فهرست مطالب (در ابتدای راهنما) را مرور کنید، یا به دنبال تابع، ماژول یا اصطلاح خاصی در نمایه (در انتها) بگردید. و سرانجام، اگر از یادگیری درباره‌ی موضوعات تصادفی لذت می‌برید، یک شماره صفحه‌ی تصادفی انتخاب می‌کنید (ماژول :mod:`random` را ببینید) و یک یا دو بخش می‌خوانید. صرف‌نظر از ترتیبی که بخش‌های این راهنما را می‌خوانید، مفید است با فصل :ref:`built-in-funcs` شروع کنید، زیرا ادامه‌ی راهنما فرض می‌کند که با این مطلب آشنا هستید."
+msgstr "اگر از ابتدا این راهنما را خواندن آغاز کنید، و وقتی خسته شدید به فصل بعد بروید، شما یک دیدگاه کلی معقول از ماژول‌های موجود و حوزه‌های برنامه که توسط کتابخانه‌ی پایتون پشتیبانی می‌شوند بدست می‌آورید. البته، شما لازم نیست آن را مانند یک رمان بخوانید --- شما همچنین می‌توانید فهرست مطالب را (در ابتدای راهنما) مرور کنید، یا به دنبال یک تابع، ماژول یا واژه خاص در اندیس (در انتها) بگردید. و در نهایت، اگر از یادگیری موضوعات تصادفی لذت می‌برید، یک صفحه تصادفی انتخاب کنید و یک یا دو بخش بخوانید. صرف‌نظر از ترتیبی که شما بخش‌های این راهنما را می‌خوانید، بهتر است ابتدا :ref:`built-in-funcs` را بخوانید، زیرا باقی این بخش با شناخت این مواد فرض می‌کند."
 
 msgid "The built-in functions and classes (which can be used without an :keyword:`import` statement) are described in :ref:`builtins-index`."
-msgstr ""
+msgstr "توابع و کلاس‌های توکار (که می‌توان بدون یک دستور :keyword:`import` از آن‌ها استفاده کرد) در :ref:`builtins-index` توصیف شده‌اند."
 
 msgid "Notes on availability"
 msgstr "نکاتی درباره‌ی دسترس‌پذیری"

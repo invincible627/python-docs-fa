@@ -26,6 +26,8 @@
 
 - [STATUS.md](STATUS.md) — جدول وضعیت ترجمه‌ی پرونده‌ها که به‌صورت خودکار به‌روزرسانی می‌شود.
 
+- [ایشوی جامع](https://github.com/python/python-docs-fa/issues/83) — ایشوی جامع برای پیگیری کارهای پروژه. میتوانید با بررسی این لیست ایشویی را انتخاب کرده و به آن مشارکت کنید.
+
 ### شاخه‌های نسخه
 
 ترجمه‌ها به‌ازای هر نسخه‌ی پایتون در یک شاخه‌ی جدا نگهداری می‌شوند. شاخه‌ی فعلی و پیش‌فرض، نسخه‌ی `3.14` است و پول‌ریکوئست‌ها باید روی همین شاخه باز شوند (برای مثال روی پرونده‌های `tutorial/`، `library/`، `c-api/` و غیره). هنگام انتشار نسخه‌ی جدید پایتون، هماهنگ‌کننده‌ها شاخه‌ی جدیدی ایجاد و ترجمه‌ها را به آن منتقل می‌کنند.
@@ -35,8 +37,8 @@
 برای بحث، هماهنگی و به‌روزرسانی‌های مرتبط با ترجمه، می‌توانید از کانال‌های زیر استفاده کنید:
 
 <ul dir="rtl">
-    <li><a href="https://discord.gg/yeqtNeaFYf">Discord مستندات پایتون به فارسی</a></li>
-    <li>بخش <a href="https://github.com/python/python-docs-fa/issues">Issues</a> در این مخزن جهت گزارش مشکلات یا پیشنهادات؛ سه قالب موجود است: درخواست ترجمه‌ی صفحه، پرسش یا پیشنهاد واژه‌نامه، و گزارش اشکال در ترجمه.</li>
+    <li><a href="https://t.me/python_docs_farsi">گروه تلگرام ترجمه مستندات</a></li>
+    <li>بخش <a href="https://github.com/python/python-docs-fa/issues">Issues</a> در این مخزن جهت گزارش مشکلات یا پیشنهادات؛ سه قالب موجود است: اشکال در واژه‌یاب، پیشنهاد تغییرات در ترجمه، اشکال در ترجمه.</li>
 </ul>
 
 تمام مشارکت‌کنندگان موظف‌اند از [آیین‌نامه‌ی رفتاری PSF](https://www.python.org/psf/conduct/) پیروی کنند.
@@ -47,6 +49,6 @@
 
 <!-- STATS_START -->
 ### مشارکت‌های کاربران
-![نمودار مشارکت‌های کاربران؛ sepehr-rs 38277، Revisto 3984، danialbehzadi 677، invincible627 358، khosro_o 63، ParhamF 41، Ariyan_Bolandi 37، nikovinix7878 13، thaghgoo 12، Ramiz_222 10](reports/contributor_stats_latest.png)
-(به‌روزرسانی: 2026-09-20)
+![نمودار مشارکت‌های کاربران؛ sepehr-rs 38277، Revisto 3984، danialbehzadi 677، invincible627 358، khosro_o 63، ParhamF 41، Ariyan_Bolandi 37، mahdyaralipor 24، nikovinix7878 13، thaghgoo 12](reports/contributor_stats_latest.png)
+(به‌روزرسانی: 2026-10-02)
 <!-- STATS_END -->

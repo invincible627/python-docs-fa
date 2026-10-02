@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-14 17:11+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"PO-Revision-Date: 2026-09-21 13:28+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -287,23 +287,20 @@ msgstr "به موقعیت *y,x* درون پنجره بروید و *str* یا *ch
 msgid "Attributes allow displaying text in highlighted forms such as boldface, underline, reverse code, or in color.  They'll be explained in more detail in the next subsection."
 msgstr "ویژگی‌ها امکان نمایش متن در قالب‌های برجسته مانند پررنگ، زیرخط، کد معکوس یا رنگی را فراهم می‌کنند. این ویژگی‌ها در زیربخش بعدی با جزئیات بیشتر توضیح داده خواهند شد."
 
-#, fuzzy
 msgid "The :meth:`~curses.window.addstr` method takes a Python string or bytestring as the value to be displayed.  The contents of bytestrings are sent to the terminal as-is. On a build without wide-character support strings are encoded using the value of the window's :attr:`~window.encoding` attribute; this defaults to the default system encoding as returned by :func:`locale.getencoding`."
-msgstr "متد :meth:`~curses.window.addstr` یک رشته یا رشته‌بایتی (bytestring) پایتون را به‌عنوان مقدار برای نمایش می‌گیرد. محتوای رشته‌بایتی‌ها به‌صورت دست‌نخورده به پایانه فرستاده می‌شود. رشته‌ها با استفاده از مقدار ویژگی :attr:`~window.encoding` پنجره به بایت کدگذاری می‌شوند؛ این مقدار به‌طور پیش‌فرض برابر با کدگذاری پیش‌فرض سیستم است که توسط :func:`locale.getencoding` برگردانده می‌شود."
+msgstr "متد :meth:`~curses.window.addstr` یک رشته یا بایت‌رشته پایتون را به عنوان مقداری که باید نمایش داده شود می‌پذیرد. محتوای بایت‌رشته‌ها به صورت همانند به ترمینال ارسال می‌شوند. در ساخت بدون پشتیبانی از نویسه‌های پهن، رشته‌ها با استفاده از مقدار ویژگی :attr:`~window.encoding` پنجره کدگذاری می‌شوند؛ این به طور پیش‌فرض به کدگذاری پیش‌فرض سیستم پیش می‌رود که توسط :func:`locale.getencoding` برگردانده می‌شود."
 
 msgid "The :meth:`~curses.window.addch` methods take a character, which can be either a string of length 1, a bytestring of length 1, or an integer."
 msgstr "متدهای :meth:`~curses.window.addch` یک نویسه دریافت می‌کنند، که می‌تواند یک رشته به طول ۱، یک رشته‌بایت (bytestring) به طول ۱، یا یک عدد صحیح باشد."
 
-#, fuzzy
 msgid "Constants are provided for the characters of the terminal's alternate character set. For example, :const:`ACS_PLMINUS` is a +/- symbol, and :const:`ACS_ULCORNER` is the upper left corner of a box (handy for drawing borders).  You can also use the appropriate Unicode character."
-msgstr "ثابت‌هایی برای نویسه‌های توسعه‌ای ارائه شده‌اند؛ این ثابت‌ها اعداد صحیحی بزرگ‌تر از ۲۵۵ هستند. برای مثال، :const:`ACS_PLMINUS` یک نماد +/- است، و :const:`ACS_ULCORNER` گوشه‌ی بالا سمت چپ یک جعبه است (برای رسم سطرهای مرزی مفید است). شما همچنین می‌توانید از نویسه‌ی یونیکد مناسب استفاده کنید."
+msgstr "ثابت‌ها برای نویسه‌های مجموعه‌ی جایگزین ترمینال فراهم شده‌اند. برای مثال، :const:`ACS_PLMINUS` نماد +/- است، و :const:`ACS_ULCORNER` گوشه‌ی بالا-چپ یک جعبه است (مناسب برای رسم کادرها). شما همچنین می‌توانید از نویسه‌ی یونیکد مناسب استفاده کنید."
 
 msgid "Windows remember where the cursor was left after the last operation, so if you leave out the *y,x* coordinates, the string or character will be displayed wherever the last operation left off.  You can also move the cursor with the ``move(y,x)`` method.  Because some terminals always display a flashing cursor, you may want to ensure that the cursor is positioned in some location where it won't be distracting; it can be confusing to have the cursor blinking at some apparently random location."
 msgstr "پنجره‌ها به یاد می‌آورند که مکان‌نما پس از آخرین عملیات کجا مانده است، بنابراین اگر مختصات *y,x* را وارد نکنید، رشته یا نویسه در هر جایی که آخرین عملیات مکان‌نما را رها کرده است نمایش داده می‌شود. همچنین می‌توانید مکان‌نما را با متد ``move(y,x)`` جابه‌جا کنید. از آنجا که برخی پایانه‌ها همیشه یک مکان‌نمای چشمک‌زن را نمایش می‌دهند، ممکن است بخواهید اطمینان حاصل کنید که مکان‌نما در موقعیتی قرار گرفته است که باعث حواس‌پرتی نمی‌شود؛ چشمک زدن مکان‌نما در موقعیتی که ظاهراً تصادفی است می‌تواند گیج‌کننده باشد."
 
-#, fuzzy
 msgid "If your application doesn't need a blinking cursor at all, you can call ``curs_set(False)`` to make it invisible. The window method :meth:`~curses.window.leaveok` does something different: when its argument is true, curses leaves the cursor wherever the last update put it, instead of moving it back to the window's cursor position."
-msgstr "اگر برنامه‌ی شما اصلاً به یک مکان‌نمای چشمک‌زن نیاز ندارد، می‌توانید ``curs_set(False)`` را فراخوانی کنید تا آن را نامرئی کنید. برای سازگاری با نسخه‌های قدیمی‌تر curses، تابع ``leaveok(bool)`` وجود دارد که مترادف :func:`~curses.curs_set` است. هنگامی که *bool* true باشد، کتابخانه curses تلاش می‌کند مکان‌نمای چشمک‌زن را مهار کند، و شما نیازی نیست نگران باقی ماندن آن در موقعیت‌های غیرعادی باشید."
+msgstr "اگر برنامه‌ی شما اصلاً به یک نشانگر چشمک‌زن نیاز ندارد، می‌توانید ``curs_set(False)`` را فراخوانی کنید تا نامرئی شود. متد پنجره :meth:`~curses.window.leaveok` کار متفاوتی انجام می‌دهد: وقتی آرگومان آن درست باشد، curses نشانگر را هر جایی که آخرین به‌روزرسانی آن را قرار داده است رها می‌کند، به جای اینکه آن را به موقعیت نشانگر پنجره بازگرداند."
 
 msgid "Attributes and Color"
 msgstr "ویژگی‌ها و رنگ"
@@ -411,30 +408,24 @@ msgstr "ورودی کاربر"
 msgid "The C curses library offers only very simple input mechanisms. Python's :mod:`curses` module adds a basic text-input widget.  (Other libraries such as :pypi:`Urwid` have more extensive collections of widgets.)"
 msgstr "کتابخانه curses در C فقط سازوکارهای ورودی بسیار ساده‌ای را ارائه می‌دهد. ماژول :mod:`curses` پایتون یک ابزارک پایه برای ورودی متن می‌افزاید. (سایر کتابخانه‌ها مانند :pypi:`Urwid` مجموعه‌های گسترده‌تری از ابزارک‌ها دارند.)"
 
-#, fuzzy
 msgid "There are three methods for getting input from a window:"
-msgstr "برای دریافت ورودی از یک پنجره، دو متد وجود دارد:"
+msgstr "سه متد برای دریافت ورودی از یک پنجره وجود دارد:"
 
-#, fuzzy
 msgid ":meth:`~curses.window.get_wch` refreshes the screen and then waits for the user to hit a key, displaying the key if :func:`~curses.echo` has been called earlier.  You can optionally specify a coordinate to which the cursor should be moved before pausing."
-msgstr ":meth:`~curses.window.getch` صفحه را تازه‌سازی می‌کند و سپس منتظر می‌ماند تا کاربر کلیدی را فشار دهد، و در صورتی که پیش‌تر :func:`~curses.echo` فراخوانی شده باشد، آن کلید را نمایش می‌دهد. شما می‌توانید به‌اختیار مختصاتی را مشخص کنید که مکان‌نما باید پیش از مکث به آن منتقل شود."
+msgstr ":meth:`~curses.window.get_wch` صفحه را بازسازی می‌کند و سپس منتظر می‌ماند تا کاربر دکمه‌ای را بزند، دکمه را نمایش می‌دهد اگر :func:`~curses.echo` قبلاً فراخوانی شده باشد. شما می‌توانید به‌صورت اختیاری مختصاتی را مشخص کنید که نشانگر باید قبل از توقف به آنجا منتقل شود."
 
 msgid ":meth:`~curses.window.getch` does the same thing but returns the code of the key instead of a character. With ncurses this is a single byte of the key's encoding in the current locale, so a character encoded with several bytes takes several calls, one byte per call."
-msgstr ""
+msgstr ":meth:`~curses.window.getch` کار مشابهی انجام می‌دهد اما کد دکمه را به جای نویسه برمی‌گرداند. با ncurses این یک بایت واحد از کدگذاری دکمه در locale جاری است، بنابراین یک نویسه که با چند بایت کدگذاری شده است چندین فراخوانی می‌گیرد، یک بایت در هر فراخوانی."
 
-#, fuzzy
 msgid ":meth:`~curses.window.getkey` does the same as :meth:`!getch` but returns a string: an ordinary key as a 1-character string, and a special key as its name, such as ``KEY_UP``."
-msgstr ":meth:`~curses.window.getkey` همین کار را انجام می‌دهد، اما عدد صحیح را به رشته تبدیل می‌کند. نویسه‌های منفرد به‌صورت رشته‌های تک‌نویسه‌ای برگردانده می‌شوند و برای کلیدهای خاص مانند کلیدهای تابعی، رشته‌های طولانی‌تری برگردانده می‌شوند که شامل یک نام کلیدی مانند ``KEY_UP`` یا ``^G`` است."
+msgstr ":meth:`~curses.window.getkey` همان کار :meth:`!getch` را انجام می‌دهد اما یک رشته برمی‌گرداند: یک دکمه معمولی به عنوان یک رشته ۱-نویسه، و یک دکمه خاص به عنوان نام آن، مانند ``KEY_UP``."
 
-#, fuzzy
 msgid "It's possible to not wait for the user using the :meth:`~curses.window.nodelay` window method. After ``nodelay(True)``, the reads for the window become non-blocking. To signal that no input is ready, :meth:`!get_wch` and :meth:`!getkey` raise an exception, and :meth:`!getch` returns ``-1``. There's also a :func:`~curses.halfdelay` function, which can be used to (in effect) set a timer on each read; if no input becomes available within a specified delay (measured in tenths of a second), the read fails the same way."
-msgstr "می‌توانید با استفاده از متد پنجره‌ی :meth:`~curses.window.nodelay`، منتظر کاربر نمانید. پس از ``nodelay(True)``، :meth:`!getch` و :meth:`!getkey` برای پنجره غیرمسدودکننده می‌شوند. برای نشان دادن اینکه هیچ ورودی آماده نیست، :meth:`!getch` ``curses.ERR`` (مقداری -۱) را برمی‌گرداند و :meth:`!getkey` یک استثنا پرتاب می‌کند. همچنین تابع :func:`~curses.halfdelay` وجود دارد که می‌توان از آن عملاً برای تنظیم یک زمان‌سنج برای هر :meth:`!getch` استفاده کرد؛ اگر هیچ ورودی ظرف یک تأخیر مشخص (که بر حسب دهم‌های ثانیه اندازه‌گیری می‌شود) در دسترس قرار نگیرد، curses یک استثنا پرتاب می‌کند."
+msgstr "استفاده از متد پنجره :meth:`~curses.window.nodelay` امکان عدم انتظار برای کاربر را فراهم می‌کند. پس از ``nodelay(True)``، خواندن‌ها برای پنجره غیرمسدودکننده می‌شوند. برای سیگنال دادن اینکه هیچ ورودی آماده نیست، :meth:`!get_wch` و :meth:`!getkey` یک استثنا پرتاب می‌کنند، و :meth:`!getch` ``-1`` برمی‌گرداند. همچنین تابع :func:`~curses.halfdelay` وجود دارد که می‌تواند (در اثر) یک تایمر روی هر خواندن تنظیم کند؛ اگر هیچ ورودی در تاخیر مشخص شده (بر حسب دهم ثانیه) موجود نشود، خواندن به همان روش شکست می‌خورد."
 
-#, fuzzy
 msgid "Special keys such as Page Up, Home, or the cursor keys are returned by all three as one of the :ref:`KEY_* constants <curses-key-constants>`, all larger than 255. You can compare the value returned to constants such as :const:`curses.KEY_PPAGE`, :const:`curses.KEY_HOME`, or :const:`curses.KEY_LEFT`.  The main loop of your program may look something like this::"
-msgstr "متد :meth:`!getch` یک عدد صحیح برمی‌گرداند؛ اگر بین ۰ و ۲۵۵ باشد، نشان‌دهنده‌ی کد ASCII کلید فشرده‌شده است. مقادیر بزرگ‌تر از ۲۵۵ نشان‌دهنده‌ی کلیدهای خاصی مانند Page Up، Home یا کلیدهای مکان‌نما هستند. می‌توانید مقدار برگردانده‌شده را با ثابت‌هایی مانند :const:`curses.KEY_PPAGE`، :const:`curses.KEY_HOME` یا :const:`curses.KEY_LEFT` مقایسه کنید. ممکن است حلقه‌ی اصلی برنامه‌ی شما چیزی شبیه به این باشد::"
+msgstr "دکمه‌های خاص مانند Page Up، Home، یا دکمه‌های نشانگر توسط هر سه به عنوان یکی از :ref:`KEY_* constants <curses-key-constants>` برگردانده می‌شوند، که همگی بزرگتر از ۲۵۵ هستند. شما می‌توانید مقدار برگردانده شده را با ثابت‌هایی مانند :const:`curses.KEY_PPAGE`، :const:`curses.KEY_HOME`، یا :const:`curses.KEY_LEFT` مقایسه کنید. حلقه‌ی اصلی برنامه‌ی شما ممکن است چیزی شبیه به این باشد::"
 
-#, fuzzy
 msgid ""
 "while True:\n"
 "    c = stdscr.get_wch()\n"
@@ -446,10 +437,10 @@ msgid ""
 "        x = y = 0"
 msgstr ""
 "while True:\n"
-"    c = stdscr.getch()\n"
-"    if c == ord('p'):\n"
+"    c = stdscr.get_wch()\n"
+"    if c == 'p':\n"
 "        PrintDocument()\n"
-"    elif c == ord('q'):\n"
+"    elif c == 'q':\n"
 "        break  # Exit the while loop\n"
 "    elif c == curses.KEY_HOME:\n"
 "        x = y = 0"
@@ -457,11 +448,9 @@ msgstr ""
 msgid "The :mod:`curses.ascii` module supplies ASCII class membership functions that take either integer or 1-character string arguments; these may be useful in writing more readable tests for such loops.  It also supplies conversion functions  that take either integer or 1-character-string arguments and return the same type.  For example, :func:`curses.ascii.ctrl` returns the control character corresponding to its argument."
 msgstr "ماژول :mod:`curses.ascii` توابع عضویت در کلاس‌های ASCII را فراهم می‌کند که آرگومان‌هایی از نوع عدد صحیح یا رشته‌ی تک‌نویسه‌ای می‌پذیرند؛ این توابع ممکن است در نوشتن آزمون‌های خواناتر برای چنین حلقه‌هایی مفید باشند. این ماژول همچنین توابع تبدیل را فراهم می‌کند که آرگومان‌هایی از نوع عدد صحیح یا رشته‌ی تک‌نویسه‌ای می‌پذیرند و همان نوع را برمی‌گردانند. برای مثال، :func:`curses.ascii.ctrl` نویسه‌ی کنترلی متناظر با آرگومان خود را برمی‌گرداند."
 
-#, fuzzy
 msgid "There's also a method to retrieve an entire line, :meth:`~curses.window.getstr`.  It isn't used very often, because its functionality is quite limited; the only editing keys available are the erase and kill characters, and the Enter key, which terminates the line. It returns a bytes object, and can optionally be limited to a fixed number of bytes. ::"
-msgstr "همچنین متدی برای دریافت یک رشته‌ی کامل وجود دارد، :meth:`~curses.window.getstr`. این متد چندان زیاد استفاده نمی‌شود، زیرا قابلیت آن بسیار محدود است؛ تنها کلیدهای ویرایش موجود، کلید Backspace و کلید Enter هستند و کلید Enter رشته را خاتمه می‌دهد. به‌صورت اختیاری می‌توان آن را به تعداد ثابتی از نویسه‌ها محدود کرد. ::"
+msgstr "همچنین متدی برای بازیابی یک سطر کامل وجود دارد، :meth:`~curses.window.getstr`. این متد بسیار استفاده نمی‌شود، زیرا کارکرد آن کاملاً محدود است؛ تنها دکمه‌های ویرایش موجود نویسه‌های erase و kill، و دکمه Enter هستند که سطر را خاتمه می‌دهند. این متد یک شیء bytes برمی‌گرداند، و می‌تواند به‌صورت اختیاری به تعداد ثابتی از بایت‌ها محدود شود. ::"
 
-#, fuzzy
 msgid ""
 "curses.echo()            # Enable echoing of characters\n"
 "\n"
@@ -470,7 +459,7 @@ msgid ""
 msgstr ""
 "curses.echo()            # Enable echoing of characters\n"
 "\n"
-"# Get a 15-character string, with the cursor on the top line\n"
+"# Get a line of at most 15 bytes, with the cursor on the top line\n"
 "s = stdscr.getstr(0,0, 15)"
 
 msgid "The :mod:`curses.textpad` module supplies a text box that supports an Emacs-like set of keybindings.  Various methods of the :class:`~curses.textpad.Textbox` class support editing with input validation and gathering the edit results either with or without trailing spaces.  Here's an example::"

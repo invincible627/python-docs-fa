@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-08-28 11:22+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -339,19 +339,19 @@ msgid "``DOMException`` is currently not supported in :mod:`!xml.dom.minidom`. I
 msgstr "``DOMException`` در حال حاضر در :mod:`!xml.dom.minidom` پشتیبانی نمی‌شود. در عوض، :mod:`!xml.dom.minidom` از استثناهای استاندارد پایتون مانند :exc:`TypeError` و :exc:`AttributeError` استفاده می‌کند."
 
 msgid "Each of the :class:`~xml.dom.NodeList` and :class:`~xml.dom.NamedNodeMap` interfaces has two implementations, which provide additional methods and operations."
-msgstr ""
+msgstr "هر یک از رابط‌های :class:`~xml.dom.NodeList` و :class:`~xml.dom.NamedNodeMap` دو پیاده‌سازی دارند، که متدها و عملیات‌های اضافی فراهم می‌کنند."
 
 msgid ":attr:`~xml.dom.Node.childNodes` is a subclass of :class:`list`, or, for nodes which cannot have children, a subclass of :class:`tuple`. It supports iteration, concatenation, indexing and slicing."
-msgstr ""
+msgstr ":attr:`~xml.dom.Node.childNodes` یک زیرکلاس از :class:`list` است، یا برای گره‌هایی که نمی‌توانند فرزند داشته باشند، یک زیرکلاس از :class:`tuple` است. این ویژگی پیمایش، الحاق، نمایه‌سازی و برش را پشتیبانی می‌کند."
 
 msgid ":attr:`~xml.dom.Node.attributes` supports ``len()``, the :keyword:`in` operator, subscription by a name or by a ``(namespaceURI, localName)`` tuple, assignment and deletion, and the methods :meth:`!get`, :meth:`!keys`, :meth:`!keysNS`, :meth:`!values`, :meth:`!items` and :meth:`!itemsNS`. :attr:`~xml.dom.DocumentType.entities` and :attr:`~xml.dom.DocumentType.notations` are read-only and support only ``len()`` and subscription by a name."
-msgstr ""
+msgstr ":attr:`~xml.dom.Node.attributes` از ``len()``، عملگر :keyword:`in`، زیرنویسی با یک نام یا با یک تاپل ``(namespaceURI, localName)``، انتساب و حذف، و متدهای :meth:`!get`، :meth:`!keys`، :meth:`!keysNS`، :meth:`!values`، :meth:`!items` و :meth:`!itemsNS` پشتیبانی می‌کند. :attr:`~xml.dom.DocumentType.entities` و :attr:`~xml.dom.DocumentType.notations` فقط‌خواندنی هستند و تنها از ``len()`` و زیرنویسی با یک نام پشتیبانی می‌کنند."
 
 msgid ":attr:`~xml.dom.Document.strictErrorChecking` and :attr:`~xml.dom.Attr.specified` are always ``False``."
-msgstr ""
+msgstr ":attr:`~xml.dom.Document.strictErrorChecking` و :attr:`~xml.dom.Attr.specified` همیشه ``False`` هستند."
 
 msgid ":meth:`~xml.dom.Element.removeAttribute` and :meth:`~xml.dom.Element.removeAttributeNS` raise :exc:`~xml.dom.NotFoundErr` if there is no matching attribute, while the DOM specifies that this has no effect."
-msgstr ""
+msgstr ":meth:`~xml.dom.Element.removeAttribute` و :meth:`~xml.dom.Element.removeAttributeNS` استثنای :exc:`~xml.dom.NotFoundErr` را پرتاب می‌کنند اگر ویژگی مطابقتی وجود نداشته باشد، در حالی که DOM تعیین می‌کند که این کار اثری ندارد."
 
 msgid "The following interfaces have no implementation in :mod:`!xml.dom.minidom`:"
 msgstr "رابط‌های زیر در :mod:`!xml.dom.minidom` پیاده‌سازی ندارند:"

@@ -8,15 +8,16 @@
 # Alireza Shabani (Revisto) <theRevisto@gmail.com>, 2025
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026
+# mahdyaralipor <mahdyaralipor0@gmail.com>, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-09-28 04:10+0000\n"
 "PO-Revision-Date: 2026-09-13 18:16+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1374,6 +1375,9 @@ msgstr ""
 msgid "It is also possible to use indexes different from 0, but you must know what you're doing, just as in C: You can access or change arbitrary memory locations. Generally you only use this feature if you receive a pointer from a C function, and you *know* that the pointer actually points to an array instead of a single item."
 msgstr "همچنین می‌توانید از اندیس‌هایی غیر از ۰ استفاده کنید، اما باید بدانید چه کاری انجام می‌دهید، درست مانند C: می‌توانید به مکان‌های دلخواه حافظه دسترسی داشته باشید یا آن‌ها را تغییر دهید. به‌طور کلی، فقط زمانی از این قابلیت استفاده می‌کنید که یک اشاره‌گر از یک تابع C دریافت کرده‌اید و *می‌دانید* که آن اشاره‌گر در واقع به‌جای یک آیتم واحد، به یک آرایه اشاره می‌کند."
 
+msgid "Because pointer objects support subscription, they implicitly support :term:`iteration <iterator>`. Unless doing this in a controlled manner, such as by manually calling :func:`next` on a :func:`pointer` iterator, this will typically lead to infinite loops or crashes, because ctypes has no way of knowing when to stop iteration. In other words, a ``pointer`` iterator will infinitely yield arbitrary memory."
+msgstr "از آنجا که اشیاء اشاره‌گر از زیرنویسی پشتیبانی می‌کنند، به طور ضمنی از :term:`پیمایش <iterator>` پشتیبانی می‌کنند. مگر اینکه این کار به صورت کنترل‌شده انجام شود، مانند فراخوانی دستی :func:`next` بر روی یک پیمایش‌گر :func:`pointer`، این کار معمولاً منجر به حلقه‌های بی‌نهایت یا فروپاشی می‌شود، زیرا ctypes راهی برای دانستن زمان توقف پیمایش ندارد. به عبارت دیگر، یک پیمایش‌گر ``pointer`` به طور بی‌نهایت حافظه‌ی تصادفی تولید می‌کند."
+
 msgid "Behind the scenes, the :func:`pointer` function does more than simply create pointer instances, it has to create pointer *types* first. This is done with the :func:`POINTER` function, which accepts any :mod:`!ctypes` type, and returns a new type::"
 msgstr "در پشت صحنه، تابع :func:`pointer` فراتر از صرف ایجاد نمونه‌های اشاره‌گر عمل می‌کند؛ ابتدا باید *انواع* اشاره‌گر را ایجاد کند. این کار با تابع :func:`POINTER` انجام می‌شود که هر نوعی از :mod:`!ctypes` را می‌پذیرد و نوع جدیدی را برمی‌گرداند::"
 
@@ -2347,6 +2351,9 @@ msgstr "برای دسترسی مستقیم به API پایتون C، یک شیء
 
 msgid "An instance of :class:`PyDLL` that exposes Python C API functions as attributes.  Note that all these functions are assumed to return C :c:expr:`int`, which is of course not always the truth, so you have to assign the correct :attr:`!restype` attribute to use these functions."
 msgstr "نمونه‌ای از :class:`PyDLL` که توابع Python C API را به‌عنوان ویژگی‌ها در دسترس قرار می‌دهد. توجه داشته باشید که فرض می‌شود همه‌ی این توابع مقداری از نوع C :c:expr:`int` را برمی‌گردانند، که البته همیشه درست نیست، بنابراین برای استفاده از این توابع باید ویژگی :attr:`!restype` صحیح را اختصاص دهید."
+
+msgid "Note that if the Python interpreter is statically linked, this will be ``None``, as ``dlopen`` is not possible in this case."
+msgstr "توجه داشته باشید که اگر مفسر پایتون به‌صورت ایستا پیوند شده باشد، این مقدار ``None`` خواهد بود، زیرا در این حالت ``dlopen`` ممکن نیست."
 
 msgid "Loading a library through any of these objects raises an :ref:`auditing event <auditing>` ``ctypes.dlopen`` with string argument ``name``, the name used to load the library."
 msgstr "بارگذاری یک کتابخانه از طریق هر یک از این اشیاء، یک :ref:`رویداد حسابرسی <auditing>` ``ctypes.dlopen`` را با آرگومان رشته‌ای ``name``، نام استفاده‌شده برای بارگذاری کتابخانه، پرتاب می‌کند."

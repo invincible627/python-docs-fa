@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-14 13:33+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -393,7 +393,7 @@ msgid "When items are appended or inserted, the array of references is resized. 
 msgstr "هنگامی که آیتم‌ها افزوده یا درج می‌شوند، اندازه‌ی آرایه‌ی ارجاع‌ها تغییر می‌کند. تمهیداتی به کار گرفته شده است تا عملکرد افزودن مکرر آیتم‌ها بهبود یابد؛ هنگامی که آرایه باید بزرگ شود، مقداری فضای اضافی تخصیص داده می‌شود تا چند بار بعدی نیازی به تغییر اندازه‌ی واقعی نباشد."
 
 msgid "See :ref:`time-complexity` for the costs of the various list operations."
-msgstr ""
+msgstr "برای هزینه‌های عملیات‌های مختلف فهرست، به :ref:`time-complexity` مراجعه کنید."
 
 msgid "How are dictionaries implemented in CPython?"
 msgstr "دیکشنری‌ها در CPython چگونه پیاده‌سازی شده‌اند؟"
@@ -405,7 +405,7 @@ msgid "Dictionaries work by computing a hash code for each key stored in the dic
 msgstr "دیکشنری‌ها با محاسبه‌ی کد هش (hash code) برای هر کلید ذخیره‌شده در دیکشنری، از طریق تابع توکار :func:`hash` کار می‌کنند. کد هش بسته به کلید و یک بذر  به‌ازای هر فرایند، تفاوت زیادی دارد؛ برای مثال، کد هش ``'Python'`` می‌تواند ``-539294296`` باشد، در حالی که کد هش ``'python'``، رشته‌ای که تنها یک بیت تفاوت دارد، می‌تواند ``1142331976`` باشد. سپس از کد هش برای محاسبه‌ی محلی در یک آرایه‌ی داخلی استفاده می‌شود که مقدار در آن ذخیره خواهد شد. با فرض این‌که شما کلیدهایی را ذخیره می‌کنید که همگی مقادیر هش متفاوتی دارند، این بدان معناست که دیکشنری‌ها برای بازیابی یک کلید به زمان ثابت -- *O*\\ (1)، در نمادگذاری Big-O -- نیاز دارند."
 
 msgid "See :ref:`time-complexity` for the costs of the various dictionary operations."
-msgstr ""
+msgstr "برای هزینه‌های عملیات‌های مختلف دیکشنری، به :ref:`time-complexity` مراجعه کنید."
 
 msgid "Why must dictionary keys be immutable?"
 msgstr "چرا کلیدهای دیکشنری باید تغییرناپذیر باشند؟"

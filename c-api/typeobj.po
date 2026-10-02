@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-15 08:25+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1956,9 +1956,8 @@ msgstr "اشاره‌گر اختیاری به تابعی که آیتم بعدی 
 msgid "PyObject *tp_iternext(PyObject *self);"
 msgstr "PyObject *tp_iternext(PyObject *self);"
 
-#, fuzzy
 msgid "When the iterator is :term:`exhausted`, the ``tp_iternext`` function must return ``NULL``; a :exc:`StopIteration` exception may or may not be set. When another error occurs, it must return ``NULL`` too. The presence of ``tp_iternext`` signals that the instances of this type are iterators."
-msgstr "هنگامی که پیمایش‌گر به پایان می‌رسد، باید ``NULL`` برگرداند؛ استثنای :exc:`StopIteration` ممکن است تنظیم شده باشد یا نباشد. هنگامی که خطای دیگری رخ می‌دهد، نیز باید ``NULL`` برگرداند. وجود آن نشان می‌دهد که نمونه‌های این نوع، پیمایش‌گر هستند."
+msgstr "وقتی پیمایش‌گر :term:`به پایان رسیده <exhausted>` باشد، تابع ``tp_iternext`` باید ``NULL`` برگرداند؛ یک استثنای :exc:`StopIteration` ممکن است تنظیم شده باشد یا خیر. وقتی خطای دیگری رخ می‌دهد، نیز باید ``NULL`` برگرداند. وجود ``tp_iternext`` سیگنال می‌دهد که نمونه‌های این نوع پیمایش‌گر هستند."
 
 msgid "Iterator types should also define the :c:member:`~PyTypeObject.tp_iter` function, and that function should return the iterator instance itself (not a new iterator instance)."
 msgstr "نوع‌های پیمایش‌گر باید تابع :c:member:`~PyTypeObject.tp_iter` را نیز تعریف کنند، و این تابع باید خودِ نمونه‌ی پیمایش‌گر را برگرداند (نه یک نمونه‌ی پیمایش‌گر جدید)."

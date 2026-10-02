@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
-"PO-Revision-Date: 2026-09-14 13:34+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"PO-Revision-Date: 2026-09-21 13:26+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -393,24 +393,23 @@ msgstr "هشدارها همچنین می‌توانند با استفاده از
 msgid "See :ref:`warning-filter` and :ref:`describing-warning-filters` for more details."
 msgstr "برای جزئیات بیشتر به :ref:`warning-filter` و :ref:`describing-warning-filters` مراجعه کنید."
 
-#, fuzzy
 msgid "Skip the first line of the source, allowing use of non-Unix forms of ``#!cmd``."
-msgstr "سطر اول منبع را رد می‌کند و امکان استفاده از شکل‌های غیر یونیکسی ``#!cmd`` را فراهم می‌سازد. این فقط برای یک ترفند مخصوص DOS در نظر گرفته شده است."
+msgstr "از سطر اول منبع بگذرید، که امکان استفاده از فرم‌های غیریونیکس ``#!cmd`` را می‌دهد."
 
 msgid "This can be used to turn a Python script into a Windows batch file. Similarly to adding a shebang line and setting the executable bit on Unix, the extension of the Python script can be changed to ``.bat`` and the following line can be added at the start of the script:"
-msgstr ""
+msgstr "این می‌تواند برای تبدیل یک اسکریپت پایتون به یک پرونده دسته‌ای ویندوز استفاده شود. به‌طوری مشابه با اضافه کردن خط مفسر و تنظیم بیت قابل اجرا در یونیکس، پسوند اسکریپت پایتون می‌تواند به ``.bat`` تغییر یابد و سطر زیر می‌تواند در ابتدای اسکریپت اضافه شود:"
 
 msgid "@py -x \"%~f0\" %* & exit /b"
-msgstr ""
+msgstr "@py -x \"%~f0\" %* & exit /b"
 
 msgid "Or, to specify the path to the Python interpreter explicitly:"
-msgstr ""
+msgstr "یا برای مشخص کردن مسیر مفسر پایتون به‌صورت صریح:"
 
 msgid "@\"C:\\Path\\to\\python.exe\" -x \"%~f0\" %* & exit /b"
-msgstr ""
+msgstr "@\"C:\\Path\\to\\python.exe\" -x \"%~f0\" %* & exit /b"
 
 msgid "Unlike a shebang line which is a Python comment, this line is not valid Python syntax, and the :option:`-x` option is needed to skip it."
-msgstr ""
+msgstr "برخلاف خط مفسر که یک کامنت پایتون است، این سطر سینتکس معتبر پایتون نیست، و گزینه :option:`-x` برای رد کردن آن لازم است."
 
 msgid "Reserved for various implementation-specific options.  CPython currently defines the following possible values:"
 msgstr "برای گزینه‌های مختلف مخصوص پیاده‌سازی رزرو شده است.  سی‌پایتون در حال حاضر مقادیر ممکن زیر را تعریف می‌کند:"

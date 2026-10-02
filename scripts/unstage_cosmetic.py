@@ -2,72 +2,80 @@
 """
 scripts/unstage_cosmetic.py
 
-Unstage (and revert) any currently-staged file whose only diff is the
-`POT-Creation-Date` header line. Ported out of the nightly workflow's
+Unstage (and revert) any currently-staged .po/.pot file whose only diff is
+the `POT-Creation-Date` header line. Ported out of the nightly workflow's
 inline bash/awk step so the manual version-bump script can produce the
-same minimal, noise-free diffs (item 3) -- previously only the workflow
-did this, so a human running update_python_version.py and committing
-with `git commit -am` would bake pure-timestamp churn into history,
-which then became a spurious baseline for the *next* nightly diff too.
+same minimal, noise-free diffs -- previously only the workflow did this, so
+a human running update_python_version.py and committing with `git commit -am`
+would bake pure-timestamp churn into history, which then became a spurious
+baseline for the *next* nightly diff too.
+
+Scope is deliberately narrow: only *modified* .po/.pot files are considered.
+Added, deleted, renamed and binary files (e.g. the contributor chart) are
+never touched -- a binary diff has no +/- content lines, which would
+otherwise look "cosmetic" and get silently reverted.
 
 Usage:
     python scripts/unstage_cosmetic.py
 
-Must be run with a git repo that already has changes staged (e.g. after
-`git add --all`).
+Must be run in a git repo that already has changes staged (e.g. after
+`git add --all`). Requires git >= 2.23 (`git restore`).
 """
 from __future__ import annotations
 
+import re
 import subprocess
 import sys
 
+PO_SUFFIXES = (".po", ".pot")
+# A changed line that is the POT-Creation-Date header, and nothing else.
+COSMETIC_LINE = re.compile(r'^[+-]"POT-Creation-Date:')
 
-def run(cmd: list) -> subprocess.CompletedProcess:
-    return subprocess.run(cmd, capture_output=True, text=True, check=True)
+
+def run(cmd: list[str]) -> subprocess.CompletedProcess:
+    try:
+        return subprocess.run(cmd, capture_output=True, text=True, check=True)
+    except subprocess.CalledProcessError as exc:
+        sys.exit(f"`{' '.join(cmd)}` failed:\n{exc.stderr}")
 
 
-def staged_files() -> list:
-    result = run(["git", "diff", "--staged", "--name-only"])
-    return [line for line in result.stdout.splitlines() if line]
+def staged_modified_po_files() -> list[str]:
+    # -z: NUL-separated, unquoted paths (safe for non-ASCII/special names).
+    out = run(
+        ["git", "diff", "--staged", "--name-only", "--diff-filter=M", "-z"]
+    ).stdout
+    return [p for p in out.split("\0") if p.endswith(PO_SUFFIXES)]
 
 
 def has_only_cosmetic_diff(path: str) -> bool:
-    """True if every changed (+/-) content line in the staged diff for
-    `path` is a POT-Creation-Date line (i.e. nothing else changed)."""
-    result = subprocess.run(
-        ["git", "diff", "--staged", "-U0", "--", path],
-        capture_output=True,
-        text=True,
-    )
-    changed_lines = [
+    """True if there is at least one changed content line and every one
+    of them is the POT-Creation-Date header."""
+    diff = run(["git", "diff", "--staged", "-U0", "--", path]).stdout
+    changed = [
         line
-        for line in result.stdout.splitlines()
+        for line in diff.splitlines()
         if line.startswith(("+", "-")) and not line.startswith(("+++", "---"))
     ]
-    if not changed_lines:
-        return True
-    return all("POT-Creation-Date" in line for line in changed_lines)
+    return bool(changed) and all(COSMETIC_LINE.match(line) for line in changed)
 
 
 def main() -> None:
-    files = staged_files()
+    files = staged_modified_po_files()
     if not files:
-        print("No staged files.")
+        print("No staged .po/.pot modifications.")
         return
 
-    unstaged = []
-    for path in files:
-        if has_only_cosmetic_diff(path):
-            run(["git", "restore", "--staged", path])
-            run(["git", "restore", path])
-            unstaged.append(path)
-
-    if unstaged:
-        print(f"Unstaged {len(unstaged)} file(s) with only POT-Creation-Date changes:")
-        for path in unstaged:
-            print(f"  - {path}")
-    else:
+    cosmetic = [p for p in files if has_only_cosmetic_diff(p)]
+    if not cosmetic:
         print("No cosmetic-only files to unstage.")
+        return
+
+    # Reset index and working tree to HEAD in one call.
+    run(["git", "restore", "--source=HEAD", "--staged", "--worktree", "--"] + cosmetic)
+
+    print(f"Unstaged {len(cosmetic)} file(s) with only POT-Creation-Date changes:")
+    for path in cosmetic:
+        print(f"  - {path}")
 
 
 if __name__ == "__main__":

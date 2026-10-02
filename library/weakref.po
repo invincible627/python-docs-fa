@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-19 20:08+0330\n"
+"POT-Creation-Date: 2026-09-21 11:59+0000\n"
 "PO-Revision-Date: 2026-09-15 08:24+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
-"Language-Team: Persian (https://github.com/python/python-docs-fa/fa/)\n"
+"Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "**Source code:** :source:`Lib/weakref.py`"
 msgstr "**کد منبع:** :source:`Lib/weakref.py`"
 
 msgid "The :mod:`!weakref` module allows the Python programmer to create :dfn:`weak references` to objects."
-msgstr "ماژول :mod:`!weakref` به برنامه‌نویس پایتون اجازه می‌دهد تا :dfn:`ارجاع‌های ضعیف <weak references>` به اشیاء ایجاد کند."
+msgstr "ماژول :mod:`!weakref` به برنامه‌نویس پایتون اجازه می‌دهد تا :dfn:`ارجاع‌های ضعیف (weak references)` به اشیاء ایجاد کند."
 
 msgid "In the following, the term :dfn:`referent` means the object which is referred to by a weak reference."
 msgstr "در ادامه، اصطلاح :dfn:`referent` به معنای شیءای است که یک ارجاع ضعیف به آن اشاره می‌کند."
@@ -243,9 +243,8 @@ msgstr "یک نهایی‌ساز تا پیش از آنکه فراخوانی شو
 msgid "Exceptions raised by finalizer callbacks during garbage collection will be shown on the standard error output, but cannot be propagated.  They are handled in the same way as exceptions raised from an object's :meth:`~object.__del__` method or a weak reference's callback."
 msgstr "استثناهایی که توسط کال‌بک‌های نهایی‌ساز در حین زباله‌روبی پرتاب می‌شوند، در خروجی خطای استاندارد نمایش داده خواهند شد، اما نمی‌توانند انتشار یابند. آن‌ها به همان شیوه‌ای مدیریت می‌شوند که استثناهای پرتاب‌شده از متد :meth:`~object.__del__` یک شیء یا کال‌بک یک ارجاع ضعیف مدیریت می‌شوند."
 
-#, fuzzy
 msgid "When the program exits (or more generally, at :term:`interpreter shutdown`), each remaining live finalizer is called unless its :attr:`atexit` attribute has been set to false. They are called in reverse order of creation."
-msgstr "هنگام خروج برنامه، هر نهایی‌ساز زنده‌ی باقی‌مانده فراخوانی می‌شود، مگر آنکه ویژگی :attr:`atexit` آن روی false تنظیم شده باشد. آن‌ها به ترتیب معکوس ایجاد فراخوانی می‌شوند."
+msgstr "وقتی برنامه خارج می‌شود (یا به‌طور کلی‌تر، در :term:`خاموش شدن مفسر <interpreter shutdown>`)، هر نهایی‌ساز زنده باقی‌مانده فراخوانی می‌شود، مگر اینکه ویژگی :attr:`atexit` آن روی false تنظیم شده باشد. آن‌ها به ترتیب معکوس ایجاد فراخوانی می‌شوند."
 
 msgid "A finalizer will never invoke its callback during the later part of the :term:`interpreter shutdown` when module globals are liable to have been replaced by :const:`None`."
 msgstr "یک نهایی‌ساز هرگز کال‌بک خود را در بخش پایانی :term:`خاموش شدن مفسر <interpreter shutdown>` فراخوانی نمی‌کند، هنگامی که متغیرهای سراسری ماژول ممکن است با :const:`None` جایگزین شده باشند."
@@ -262,9 +261,8 @@ msgstr "اگر *self* زنده باشد، تاپل ``(obj, func, args, kwargs)``
 msgid "Property which is true if the finalizer is alive, false otherwise."
 msgstr "ویژگی‌ای که اگر نهایی‌ساز زنده باشد، true است، در غیر این صورت false است."
 
-#, fuzzy
 msgid "A writable boolean property which by default is true.  At :term:`interpreter shutdown`, all remaining live finalizers for which :attr:`.atexit` is true are called in reverse order of creation."
-msgstr "یک ویژگی بولی قابل‌نوشتن که مقدار آن به‌طور پیش‌فرض درست است. هنگام خروج برنامه، تمام نهایی‌سازهای زنده‌ی باقی‌مانده‌ای که مقدار :attr:`.atexit` آن‌ها درست است، فراخوانی می‌شوند. آن‌ها به ترتیب معکوس ایجاد فراخوانی می‌شوند."
+msgstr "یک ویژگی بولی قابل‌نوشتن که به‌صورت پیش‌فرض true است. در :term:`خاموش شدن مفسر <interpreter shutdown>`، تمام نهایی‌سازهای زنده باقی‌مانده که برای آن‌ها :attr:`.atexit` برابر true باشد، به ترتیب معکوس ایجاد فراخوانی می‌شوند."
 
 msgid "It is important to ensure that *func*, *args* and *kwargs* do not own any references to *obj*, either directly or indirectly, since otherwise *obj* will never be garbage collected.  In particular, *func* should not be a bound method of *obj*."
 msgstr "مهم است اطمینان حاصل کنید که *func*، *args* و *kwargs* مالک هیچ ارجاعی به *obj* نباشند، چه به‌طور مستقیم و چه به‌طور غیرمستقیم، زیرا در غیر این صورت *obj* هرگز زباله‌روبی نخواهد شد. به‌ویژه، *func* نباید یک متد مقید (bound method) به *obj* باشد."
