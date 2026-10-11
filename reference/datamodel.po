@@ -470,7 +470,7 @@ msgid "Built-in methods"
 msgstr "متدهای توکار"
 
 msgid "This is really a different disguise of a built-in function, this time containing an object passed to the C function as an implicit extra argument.  An example of a built-in method is ``alist.append()``, assuming *alist* is a list object. In this case, the special read-only attribute :attr:`!__self__` is set to the object denoted by *alist*. (The attribute has the same semantics as it does with :attr:`other instance methods <method.__self__>`.)"
-msgstr "این در واقع نمای متفاوتی از یک تابع توکار است و این بار شامل یک شیء است که به‌عنوان یک آرگومان اضافی ضمنی به تابع C ارسال می‌شود. نمونه‌ای از یک متد توکار ``alist.append()`` است، با فرض اینکه *alist* یک شیء فهرست باشد. در این حالت، ویژگی خاص فقط‌خواندنی :attr:`!__self__` به شیئی که *alist* به آن اشاره دارد تنظیم می‌شود. (این ویژگی همان معنایی را دارد که در :attr:`سایر متدهای نمونه <method.__self__>` دارد.)"
+msgstr "این در واقع نمای متفاوتی از یک تابع توکار است و این بار شامل یک شیء است که به‌عنوان یک آرگومان اضافی ضمنی به تابع C ارسال می‌شود. نمونه‌ای از یک متد توکار ``alist.append()`` است، با فرض اینکه *alist* یک شیء فهرست باشد. در این حالت، ویژگی خاص فقط‌خواندنی :attr:`!__self__` به شیء‌ای که *alist* به آن اشاره دارد تنظیم می‌شود. (این ویژگی همان معنایی را دارد که در :attr:`سایر متدهای نمونه <method.__self__>` دارد.)"
 
 msgid "Classes"
 msgstr "کلاس‌ها"
@@ -635,7 +635,7 @@ msgid "Custom class types are typically created by class definitions (see sectio
 msgstr "انواع کلاس سفارشی معمولاً با تعاریف کلاس ایجاد می‌شوند (بخش :ref:`کلاس <class>` را ببینید). هر کلاس یک فضای نام دارد که با یک شیء دیکشنری پیاده‌سازی شده است. ارجاع‌ها به ویژگی‌های کلاس به جست‌وجوهایی در این دیکشنری تبدیل می‌شوند، برای مثال ``C.x`` به ``C.__dict__[\"x\"]`` تبدیل می‌شود (اگرچه چند قلاب  وجود دارند که امکان روش‌های دیگری برای یافتن ویژگی‌ها را فراهم می‌کنند). هنگامی که نام ویژگی در آنجا یافت نشود، جست‌وجوی ویژگی در کلاس‌های پایه ادامه می‌یابد. این جست‌وجو در کلاس‌های پایه از ترتیب حل متد C3 استفاده می‌کند که حتی در حضور ساختارهای وراثت «الماسی» (diamond) که در آن‌ها چندین مسیر وراثت به یک جد مشترک بازمی‌گردند، به‌درستی رفتار می‌کند. جزئیات بیشتر درباره‌ی C3 MRO مورد استفاده در پایتون را می‌توان در :ref:`python_2.3_mro` یافت."
 
 msgid "When a class attribute reference (for class :class:`!C`, say) would yield a class method object, it is transformed into an instance method object whose :attr:`~method.__self__` attribute is :class:`!C`. When it would yield a :class:`staticmethod` object, it is transformed into the object wrapped by the static method object. See section :ref:`descriptors` for another way in which attributes retrieved from a class may differ from those actually contained in its :attr:`~object.__dict__`."
-msgstr "هرگاه ارجاع به یک ویژگی کلاس (مثلاً برای کلاس :class:`!C`) قرار باشد یک شیء متد کلاس بازگرداند، آن شیء به یک شیء متد نمونه تبدیل می‌شود که ویژگی :attr:`~method.__self__` آن :class:`!C` است. هرگاه قرار باشد یک شیء :class:`staticmethod` بازگرداند، آن شیء به شیئی تبدیل می‌شود که شیء متد ایستا آن را دربرگرفته است. برای حالت دیگری که در آن ویژگی‌های بازیابی‌شده از یک کلاس ممکن است با ویژگی‌هایی که واقعاً در :attr:`~object.__dict__` آن قرار دارند متفاوت باشند، بخش :ref:`descriptors` را ببینید."
+msgstr "هرگاه ارجاع به یک ویژگی کلاس (مثلاً برای کلاس :class:`!C`) قرار باشد یک شیء متد کلاس بازگرداند، آن شیء به یک شیء متد نمونه تبدیل می‌شود که ویژگی :attr:`~method.__self__` آن :class:`!C` است. هرگاه قرار باشد یک شیء :class:`staticmethod` بازگرداند، آن شیء به شیء‌ای تبدیل می‌شود که شیء متد ایستا آن را دربرگرفته است. برای حالت دیگری که در آن ویژگی‌های بازیابی‌شده از یک کلاس ممکن است با ویژگی‌هایی که واقعاً در :attr:`~object.__dict__` آن قرار دارند متفاوت باشند، بخش :ref:`descriptors` را ببینید."
 
 msgid "Class attribute assignments update the class's dictionary, never the dictionary of a base class."
 msgstr "انتساب‌های ویژگی کلاس، دیکشنری کلاس را به‌روزرسانی می‌کنند و هرگز دیکشنری یک کلاس پایه را به‌روزرسانی نمی‌کنند."
@@ -1024,7 +1024,7 @@ msgid "Static method objects"
 msgstr "اشیای متد ایستا"
 
 msgid "Static method objects provide a way of defeating the transformation of function objects to method objects described above. A static method object is a wrapper around any other object, usually a user-defined method object. When a static method object is retrieved from a class or a class instance, the object actually returned is the wrapped object, which is not subject to any further transformation. Static method objects are also callable. Static method objects are created by the built-in :func:`staticmethod` constructor."
-msgstr "اشیای متد ایستا راهی برای خنثی کردن تبدیل اشیای تابع به اشیای متد که در بالا توضیح داده شد، فراهم می‌کنند. یک شیء متد ایستا، پوششی برای هر شیء دیگر است، معمولاً یک شیء متد تعریف‌شده توسط کاربر. هنگامی که یک شیء متد ایستا از یک کلاس یا یک نمونه از کلاس بازیابی می‌شود، شیئی که واقعاً برگردانده می‌شود، شیء پوشیده‌شده است که مشمول هیچ تبدیل دیگری نمی‌شود. اشیای متد ایستا همچنین قابل فراخوانی هستند. اشیای متد ایستا توسط سازنده‌ی توکار :func:`staticmethod` ایجاد می‌شوند."
+msgstr "اشیای متد ایستا راهی برای خنثی کردن تبدیل اشیای تابع به اشیای متد که در بالا توضیح داده شد، فراهم می‌کنند. یک شیء متد ایستا، پوششی برای هر شیء دیگر است، معمولاً یک شیء متد تعریف‌شده توسط کاربر. هنگامی که یک شیء متد ایستا از یک کلاس یا یک نمونه از کلاس بازیابی می‌شود، شیء‌ای که واقعاً برگردانده می‌شود، شیء پوشیده‌شده است که مشمول هیچ تبدیل دیگری نمی‌شود. اشیای متد ایستا همچنین قابل فراخوانی هستند. اشیای متد ایستا توسط سازنده‌ی توکار :func:`staticmethod` ایجاد می‌شوند."
 
 msgid "Class method objects"
 msgstr "اشیای متد کلاس"
@@ -1325,13 +1325,13 @@ msgid "Invoking Descriptors"
 msgstr "فراخوانی توصیف‌گرها"
 
 msgid "In general, a descriptor is an object attribute with \"binding behavior\", one whose attribute access has been overridden by methods in the descriptor protocol:  :meth:`~object.__get__`, :meth:`~object.__set__`, and :meth:`~object.__delete__`. If any of those methods are defined for an object, it is said to be a descriptor."
-msgstr "به‌طور کلی، توصیف‌گر یک ویژگی شیء با «رفتار پیوندی» است؛ ویژگی‌ای که دسترسی به آن با متدهای پروتکل توصیف‌گر بازنویسی شده است: :meth:`~object.__get__`، :meth:`~object.__set__` و :meth:`~object.__delete__`. اگر هر یک از آن متدها برای شیئی تعریف شده باشند، به آن شیء توصیف‌گر گفته می‌شود."
+msgstr "به‌طور کلی، توصیف‌گر یک ویژگی شیء با «رفتار پیوندی» است؛ ویژگی‌ای که دسترسی به آن با متدهای پروتکل توصیف‌گر بازنویسی شده است: :meth:`~object.__get__`، :meth:`~object.__set__` و :meth:`~object.__delete__`. اگر هر یک از آن متدها برای شیء‌ای تعریف شده باشند، به آن شیء توصیف‌گر گفته می‌شود."
 
 msgid "The default behavior for attribute access is to get, set, or delete the attribute from an object's dictionary. For instance, ``a.x`` has a lookup chain starting with ``a.__dict__['x']``, then ``type(a).__dict__['x']``, and continuing through the base classes of ``type(a)`` excluding metaclasses."
 msgstr "رفتار پیش‌فرض برای دسترسی به ویژگی این است که ویژگی از دیکشنری یک شیء دریافت، تنظیم یا حذف شود. برای مثال، ``a.x`` دارای یک زنجیره جستجو است که با ``a.__dict__['x']`` آغاز می‌شود، سپس به ``type(a).__dict__['x']`` می‌رسد و از میان کلاس‌های پایه‌ی ``type(a)`` به‌جز فراکلاس‌ها ادامه می‌یابد."
 
 msgid "However, if the looked-up value is an object defining one of the descriptor methods, then Python may override the default behavior and invoke the descriptor method instead.  Where this occurs in the precedence chain depends on which descriptor methods were defined and how they were called."
-msgstr "با این حال، اگر مقدار جستجوشده شیئی باشد که یکی از متدهای توصیف‌گر را تعریف می‌کند، پایتون ممکن است رفتار پیش‌فرض را نادیده بگیرد و در عوض متد توصیف‌گر را فراخوانی کند. اینکه این امر در کجای زنجیره اولویت رخ می‌دهد، به این بستگی دارد که کدام متدهای توصیف‌گر تعریف شده‌اند و چگونه فراخوانی شده‌اند."
+msgstr "با این حال، اگر مقدار جستجوشده شیء‌ای باشد که یکی از متدهای توصیف‌گر را تعریف می‌کند، پایتون ممکن است رفتار پیش‌فرض را نادیده بگیرد و در عوض متد توصیف‌گر را فراخوانی کند. اینکه این امر در کجای زنجیره اولویت رخ می‌دهد، به این بستگی دارد که کدام متدهای توصیف‌گر تعریف شده‌اند و چگونه فراخوانی شده‌اند."
 
 msgid "The starting point for descriptor invocation is a binding, ``a.x``. How the arguments are assembled depends on ``a``:"
 msgstr "نقطه‌ی شروع برای فراخوانی توصیف‌گر، یک اتصال، ``a.x`` است. نحوه‌ی جمع‌آوری آرگومان‌ها به ``a`` بستگی دارد:"
@@ -1635,7 +1635,7 @@ msgid "After the class object is created, it is passed to the class decorators i
 msgstr "پس از ایجاد شیء کلاس، این شیء به دکوراتورهای کلاس گنجانده‌شده در تعریف کلاس (در صورت وجود) پاس داده می‌شود و شیء حاصل به‌عنوان کلاس تعریف‌شده در فضای نام محلی مقید می‌شود."
 
 msgid "When a new class is created by ``type.__new__``, the object provided as the namespace parameter is copied to a new ordered mapping and the original object is discarded. The new copy is wrapped in a read-only proxy, which becomes the :attr:`~type.__dict__` attribute of the class object."
-msgstr "هنگامی که یک کلاس جدید توسط ``type.__new__`` ایجاد می‌شود، شیئی که به‌عنوان پارامتر فضای نام ارائه شده است به یک نگاشت ترتیبی جدید کپی می‌شود و شیء اصلی دور انداخته می‌شود. نسخه‌ی جدید در یک پراکسی فقط‌خواندنی قرار می‌گیرد، که به ویژگی :attr:`~type.__dict__` شیء کلاس تبدیل می‌شود."
+msgstr "هنگامی که یک کلاس جدید توسط ``type.__new__`` ایجاد می‌شود، شیء‌ای که به‌عنوان پارامتر فضای نام ارائه شده است به یک نگاشت ترتیبی جدید کپی می‌شود و شیء اصلی دور انداخته می‌شود. نسخه‌ی جدید در یک پراکسی فقط‌خواندنی قرار می‌گیرد، که به ویژگی :attr:`~type.__dict__` شیء کلاس تبدیل می‌شود."
 
 msgid ":pep:`3135` - New super"
 msgstr ":pep:`3135` - super جدید"
@@ -1865,7 +1865,7 @@ msgid "It is recommended that both mappings and sequences implement the :meth:`~
 msgstr "توصیه می‌شود که هم نگاشت‌ها و هم دنباله‌ها متد :meth:`~object.__contains__` را پیاده‌سازی کنند تا امکان استفاده‌ی کارآمد از عملگر ``in`` فراهم شود؛ برای نگاشت‌ها، ``in`` باید کلیدهای نگاشت را جستجو کند؛ برای دنباله‌ها، باید مقادیر را جستجو کند.  همچنین توصیه می‌شود که هم نگاشت‌ها و هم دنباله‌ها متد :meth:`~object.__iter__` را پیاده‌سازی کنند تا امکان پیمایش کارآمد ظرف فراهم شود؛ برای نگاشت‌ها، :meth:`!__iter__` باید کلیدهای شیء را پیمایش کند؛ برای دنباله‌ها، باید مقادیر را پیمایش کند."
 
 msgid "Called to implement the built-in function :func:`len`.  Should return the length of the object, an integer ``>=`` 0.  Also, an object that doesn't define a :meth:`~object.__bool__` method and whose :meth:`!__len__` method returns zero is considered to be false in a Boolean context."
-msgstr "برای پیاده‌سازی تابع توکار :func:`len` فراخوانی می‌شود. باید طول شیء را برگرداند، که یک عدد صحیح ``>=`` ۰ است. همچنین، شیئی که متد :meth:`~object.__bool__` را تعریف نکرده باشد و متد :meth:`!__len__` آن صفر برگرداند، در یک زمینه بولی نادرست در نظر گرفته می‌شود."
+msgstr "برای پیاده‌سازی تابع توکار :func:`len` فراخوانی می‌شود. باید طول شیء را برگرداند، که یک عدد صحیح ``>=`` ۰ است. همچنین، شیء‌ای که متد :meth:`~object.__bool__` را تعریف نکرده باشد و متد :meth:`!__len__` آن صفر برگرداند، در یک زمینه بولی نادرست در نظر گرفته می‌شود."
 
 msgid "In CPython, the length is required to be at most :data:`sys.maxsize`. If the length is larger than :data:`!sys.maxsize` some features (such as :func:`len`) may raise :exc:`OverflowError`.  To prevent raising :exc:`!OverflowError` by truth value testing, an object must define a :meth:`~object.__bool__` method."
 msgstr "در CPython، طول باید حداکثر :data:`sys.maxsize` باشد. اگر طول بزرگ‌تر از :data:`!sys.maxsize` باشد، برخی قابلیت‌ها (مانند :func:`len`) ممکن است :exc:`OverflowError` را پرتاب کنند. برای جلوگیری از پرتاب :exc:`!OverflowError` در آزمون مقدار درستی، یک شیء باید متد :meth:`~object.__bool__` را تعریف کند."

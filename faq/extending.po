@@ -99,7 +99,7 @@ msgstr ""
 "                    const char *arg_format, ...);"
 
 msgid "This works for any object that has methods -- whether built-in or user-defined. You are responsible for eventually :c:func:`Py_DECREF`\\ 'ing the return value."
-msgstr "این برای هر شیئی که متد دارد، چه توکار و چه تعریف‌شده توسط کاربر، کار می‌کند. شما مسئولید که در نهایت مقدار بازگشتی را :c:func:`Py_DECREF` کنید."
+msgstr "این برای هر شیء‌ای که متد دارد، چه توکار و چه تعریف‌شده توسط کاربر، کار می‌کند. شما مسئولید که در نهایت مقدار بازگشتی را :c:func:`Py_DECREF` کنید."
 
 msgid "To call, e.g., a file object's \"seek\" method with arguments 10, 0 (assuming the file object pointer is \"f\")::"
 msgstr "برای فراخوانی متد \"seek\" یک شیء پرونده، مثلاً با آرگومان‌های ۱۰، ۰ (با فرض اینکه اشاره‌گر شیء پرونده \"f\" باشد)::"

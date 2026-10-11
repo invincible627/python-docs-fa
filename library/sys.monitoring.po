@@ -351,7 +351,7 @@ msgid "A special value that is passed to a callback function to indicate that th
 msgstr "مقدار ویژه‌ای که به یک تابع کال‌بک ارسال می‌شود تا نشان دهد که آرگومانی برای فراخوانی وجود ندارد."
 
 msgid "When an active event occurs, the registered callback function is called. Callback functions returning an object other than :data:`DISABLE` will have no effect. Different events will provide the callback function with different arguments, as follows:"
-msgstr "هنگامی که یک رویداد فعال رخ می‌دهد، تابع کال‌بک ثبت‌شده فراخوانی می‌شود. توابع کال‌بکی که شیئی غیر از :data:`DISABLE` برمی‌گردانند، بی‌اثر خواهند بود. رویدادهای مختلف، آرگومان‌های مختلفی را در اختیار تابع کال‌بک قرار می‌دهند، به شرح زیر:"
+msgstr "هنگامی که یک رویداد فعال رخ می‌دهد، تابع کال‌بک ثبت‌شده فراخوانی می‌شود. توابع کال‌بکی که شیء‌ای غیر از :data:`DISABLE` برمی‌گردانند، بی‌اثر خواهند بود. رویدادهای مختلف، آرگومان‌های مختلفی را در اختیار تابع کال‌بک قرار می‌دهند، به شرح زیر:"
 
 msgid ":monitoring-event:`PY_START` and :monitoring-event:`PY_RESUME`::"
 msgstr ":monitoring-event:`PY_START` و :monitoring-event:`PY_RESUME`::"
@@ -372,7 +372,7 @@ msgid "func(code: CodeType, instruction_offset: int, callable: object, arg0: obj
 msgstr "func(code: CodeType, instruction_offset: int, callable: object, arg0: object) -> object"
 
 msgid "*code* represents the code object where the call is being made, while *callable* is the object that is about to be called (and thus triggered the event). If there are no arguments, *arg0* is set to :data:`sys.monitoring.MISSING`."
-msgstr "*code* نمایانگر شیء کدی است که فراخوانی در آن انجام می‌شود، در حالی که *callable* شیئی است که قرار است فراخوانی شود (و در نتیجه رویداد را فعال کرده است). اگر آرگومانی وجود نداشته باشد، *arg0* برابر با :data:`sys.monitoring.MISSING` تنظیم می‌شود."
+msgstr "*code* نمایانگر شیء کدی است که فراخوانی در آن انجام می‌شود، در حالی که *callable* شیء‌ای است که قرار است فراخوانی شود (و در نتیجه رویداد را فعال کرده است). اگر آرگومانی وجود نداشته باشد، *arg0* برابر با :data:`sys.monitoring.MISSING` تنظیم می‌شود."
 
 msgid "For instance methods, *callable* will be the function object as found on the class with *arg0* set to the instance (i.e. the ``self`` argument to the method)."
 msgstr "برای متدهای نمونه، *callable* شیء تابعی خواهد بود که در کلاس یافت می‌شود، با *arg0* تنظیم‌شده به نمونه (یعنی آرگومان ``self`` متد)."

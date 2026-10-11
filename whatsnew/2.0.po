@@ -122,10 +122,10 @@ msgid "*decode_func* is the opposite of *encode_func*, taking an 8-bit string an
 msgstr "*decode_func* برعکس *encode_func* است؛ یک رشته هشت‌بیتی را دریافت می‌کند و یک تاپل دوتایی ``(ustring, length)`` برمی‌گرداند که از رشته یونیکد حاصل *ustring* و عدد صحیح *length* تشکیل شده است؛ *length* مشخص می‌کند چه مقدار از رشته هشت‌بیتی مصرف شده است."
 
 msgid "*stream_reader* is a class that supports decoding input from a stream. *stream_reader(file_obj)* returns an object that supports the :meth:`!read`, :meth:`!readline`, and :meth:`!readlines` methods.  These methods will all translate from the given encoding and return Unicode strings."
-msgstr "*stream_reader* کلاسی است که کدگشایی ورودی از یک جریان را پشتیبانی می‌کند. *stream_reader(file_obj)* شیئی را برمی‌گرداند که متدهای :meth:`!read`، :meth:`!readline` و :meth:`!readlines` را پشتیبانی می‌کند. همه‌ی این متدها از کدگذاری داده‌شده ترجمه می‌کنند و رشته‌های یونیکد برمی‌گردانند."
+msgstr "*stream_reader* کلاسی است که کدگشایی ورودی از یک جریان را پشتیبانی می‌کند. *stream_reader(file_obj)* شیء‌ای را برمی‌گرداند که متدهای :meth:`!read`، :meth:`!readline` و :meth:`!readlines` را پشتیبانی می‌کند. همه‌ی این متدها از کدگذاری داده‌شده ترجمه می‌کنند و رشته‌های یونیکد برمی‌گردانند."
 
 msgid "*stream_writer*, similarly, is a class that supports encoding output to a stream.  *stream_writer(file_obj)* returns an object that supports the :meth:`!write` and :meth:`!writelines` methods.  These methods expect Unicode strings, translating them to the given encoding on output."
-msgstr "*stream_writer*، به‌طور مشابه، کلاسی است که از کدگذاری خروجی به یک جریان پشتیبانی می‌کند.  *stream_writer(file_obj)* شیئی را برمی‌گرداند که از متدهای :meth:`!write` و :meth:`!writelines` پشتیبانی می‌کند.  این متدها رشته‌های یونیکد دریافت می‌کنند و آن‌ها را در خروجی به کدگذاری داده‌شده تبدیل می‌کنند."
+msgstr "*stream_writer*، به‌طور مشابه، کلاسی است که از کدگذاری خروجی به یک جریان پشتیبانی می‌کند.  *stream_writer(file_obj)* شیء‌ای را برمی‌گرداند که از متدهای :meth:`!write` و :meth:`!writelines` پشتیبانی می‌کند.  این متدها رشته‌های یونیکد دریافت می‌کنند و آن‌ها را در خروجی به کدگذاری داده‌شده تبدیل می‌کنند."
 
 msgid "For example, the following code writes a Unicode string into a file,  encoding it as UTF-8::"
 msgstr "برای مثال، کد زیر یک رشته یونیکد را در یک پرونده می‌نویسد و آن را به‌صورت UTF-8 کدگذاری می‌کند::"

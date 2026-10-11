@@ -284,7 +284,7 @@ msgid "Conversion flags (optional), which affect the result of some conversion t
 msgstr "پرچم‌های تبدیل (اختیاری) که بر نتیجه‌ی برخی از نوع‌های تبدیل تأثیر می‌گذارند."
 
 msgid "Minimum field width (optional). If specified as an ``'*'`` (asterisk), the actual width is given in the next argument, which must be of type :c:expr:`int`, and the object to convert comes after the minimum field width and optional precision."
-msgstr "حداقل عرض میدان (اختیاری). اگر به‌صورت ``'*'`` (ستاره) مشخص شود، عرض واقعی در آرگومان بعدی داده می‌شود که باید از نوع :c:expr:`int` باشد، و شیئی که باید تبدیل شود، پس از حداقل عرض میدان و دقت اختیاری قرار می‌گیرد."
+msgstr "حداقل عرض میدان (اختیاری). اگر به‌صورت ``'*'`` (ستاره) مشخص شود، عرض واقعی در آرگومان بعدی داده می‌شود که باید از نوع :c:expr:`int` باشد، و شیء‌ای که باید تبدیل شود، پس از حداقل عرض میدان و دقت اختیاری قرار می‌گیرد."
 
 msgid "Precision (optional), given as a ``'.'`` (dot) followed by the precision. If specified as ``'*'`` (an asterisk), the actual precision is given in the next argument, which must be of type :c:expr:`int`, and the value to convert comes after the precision."
 msgstr "دقت (اختیاری)، به‌صورت ``'.'`` (نقطه) و به دنبال آن مقدار دقت داده می‌شود. اگر به‌صورت ``'*'`` (ستاره) تعیین شود، دقت واقعی در آرگومان بعدی داده می‌شود که باید از نوع :c:expr:`int` باشد، و مقداری که باید تبدیل شود پس از دقت می‌آید."
@@ -689,7 +689,7 @@ msgid ":ref:`PyArg_Parse\\* converter <arg-parsing>`: decode :class:`bytes` obje
 msgstr ":ref:`مبدل PyArg_Parse\\* <arg-parsing>`: اشیاء :class:`bytes` را -- که به‌طور مستقیم یا غیرمستقیم از طریق رابط :class:`os.PathLike` به دست آمده‌اند -- با استفاده از :c:func:`PyUnicode_DecodeFSDefaultAndSize` به :class:`str` کدگشایی می‌کند؛ اشیاء :class:`str` بدون تغییر به خروجی داده می‌شوند. *result* باید نشانی یک متغیر C از نوع :c:expr:`PyObject*` (یا :c:expr:`PyUnicodeObject*`) باشد. در صورت موفقیت، متغیر را به یک :term:`ارجاع قوی <strong reference>` جدید به :ref:`شیء یونیکد <unicodeobjects>` -- که باید هنگامی که دیگر استفاده نمی‌شود آزاد شود -- تنظیم می‌کند و یک مقدار ناصفر (:c:macro:`Py_CLEANUP_SUPPORTED`) را برمی‌گرداند. نتیجه نمی‌تواند شامل نویسه‌های تهی تعبیه‌شده باشد. در صورت شکست، ``0`` را همراه با یک استثنای تنظیم‌شده برمی‌گرداند."
 
 msgid "If *obj* is ``NULL``, release the strong reference to the object referred to by *result* and return ``1``."
-msgstr "اگر *obj* برابر ``NULL`` باشد، ارجاع قوی به شیئی را که *result* به آن ارجاع می‌دهد آزاد کنید و ``1`` را بازگردانید."
+msgstr "اگر *obj* برابر ``NULL`` باشد، ارجاع قوی به شیء‌ای را که *result* به آن ارجاع می‌دهد آزاد کنید و ``1`` را بازگردانید."
 
 msgid "Decode a string from the :term:`filesystem encoding and error handler`."
 msgstr "کدگشایی یک رشته از :term:`کدگذاری سامانه فایل‌بندی و هندلر خطا <filesystem encoding and error handler>`."

@@ -616,7 +616,7 @@ msgid "A :exc:`ResourceWarning` is issued at interpreter shutdown if the :data:`
 msgstr "اگر فهرست :data:`gc.garbage` هنگام خاموشی مفسر خالی نباشد، یک :exc:`ResourceWarning` صادر می‌شود، و اگر :const:`gc.DEBUG_UNCOLLECTABLE` تنظیم شده باشد، تمام اشیای گردآوری‌نشدنی چاپ می‌شوند. هدف از این کار آن است که برنامه‌نویس آگاه شود که کد او شامل مشکلات نهایی‌سازی شیء است."
 
 msgid "A :exc:`ResourceWarning` is also issued when a :term:`file object` is destroyed without having been explicitly closed.  While the deallocator for such object ensures it closes the underlying operating system resource (usually, a file descriptor), the delay in deallocating the object could produce various issues, especially under Windows.  Here is an example of enabling the warning from the command line:"
-msgstr "همچنین یک :exc:`ResourceWarning` زمانی صادر می‌شود که یک :term:`file object` بدون بسته‌شدن صریح نابود شود. هرچند آزادساز حافظه چنین شیئی تضمین می‌کند که منبع زیرین سیستم‌عامل (معمولاً یک توصیف‌گر پرونده) بسته شود، تأخیر در تخصیص‌زدایی شیء می‌تواند مشکلات گوناگونی به‌وجود آورد، به‌ویژه در ویندوز. در ادامه نمونه‌ای از فعال‌سازی این هشدار از طریق خط فرمان آمده است:"
+msgstr "همچنین یک :exc:`ResourceWarning` زمانی صادر می‌شود که یک :term:`file object` بدون بسته‌شدن صریح نابود شود. هرچند آزادساز حافظه چنین شیء‌ای تضمین می‌کند که منبع زیرین سیستم‌عامل (معمولاً یک توصیف‌گر پرونده) بسته شود، تأخیر در تخصیص‌زدایی شیء می‌تواند مشکلات گوناگونی به‌وجود آورد، به‌ویژه در ویندوز. در ادامه نمونه‌ای از فعال‌سازی این هشدار از طریق خط فرمان آمده است:"
 
 msgid ""
 "$ python -q -Wdefault\n"

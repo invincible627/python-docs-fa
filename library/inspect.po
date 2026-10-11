@@ -395,7 +395,7 @@ msgid "gi_yieldfrom"
 msgstr "gi_yieldfrom"
 
 msgid "object being iterated by ``yield from``, or ``None``"
-msgstr "شیئی که ``yield from`` روی آن پیمایش می‌کند، یا ``None``"
+msgstr "شیء‌ای که ``yield from`` روی آن پیمایش می‌کند، یا ``None``"
 
 msgid "gi_state"
 msgstr "gi_state"

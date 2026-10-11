@@ -485,7 +485,7 @@ msgid "How would we mock this class, and in particular its \"iter\" method?"
 msgstr "چگونه می‌توانیم این کلاس را ماک کنیم، و به‌ویژه متد \"iter\" آن را؟"
 
 msgid "To configure the values returned from the iteration (implicit in the call to :class:`list`), we need to configure the object returned by the call to ``foo.iter()``."
-msgstr "برای پیکربندی مقدارهایی که از پیمایش بازگردانده می‌شوند (که در فراخوانی :class:`list` به‌صورت ضمنی انجام می‌شود)، باید شیئی را که فراخوانی ``foo.iter()`` بازمی‌گرداند پیکربندی کنیم."
+msgstr "برای پیکربندی مقدارهایی که از پیمایش بازگردانده می‌شوند (که در فراخوانی :class:`list` به‌صورت ضمنی انجام می‌شود)، باید شیء‌ای را که فراخوانی ``foo.iter()`` بازمی‌گرداند پیکربندی کنیم."
 
 msgid "There are also generator expressions and more `advanced uses <http://www.dabeaz.com/coroutines/index.html>`_ of generators, but we aren't concerned about them here. A very good introduction to generators and how powerful they are is: `Generator Tricks for Systems Programmers <http://www.dabeaz.com/generators/>`_."
 msgstr "همچنین عبارات تولیدگر و `استفاده‌های پیشرفته‌تر <http://www.dabeaz.com/coroutines/index.html>`_ از تولیدگرها وجود دارند، اما در اینجا به آن‌ها نمی‌پردازیم. مقدمه‌ای بسیار خوب درباره تولیدگرها و میزان قدرت آن‌ها عبارت است از: `Generator Tricks for Systems Programmers <http://www.dabeaz.com/generators/>`_."

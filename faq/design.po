@@ -307,7 +307,7 @@ msgid "Python lambda expressions cannot contain statements because Python's synt
 msgstr "عبارت‌های lambda پایتون نمی‌توانند شامل دستور باشند، زیرا چارچوب نحوی پایتون نمی‌تواند دستورهای تودرتو درون عبارت‌ها را مدیریت کند. با این حال، در پایتون، این مشکل جدی‌ای نیست. برخلاف فرم‌های lambda در زبان‌های دیگر، که قابلیت‌هایی اضافه می‌کنند، lambdaهای پایتون تنها یک نمادگذاری خلاصه هستند، اگر حوصله‌ی تعریف یک تابع را نداشته باشید."
 
 msgid "Functions are already first class objects in Python, and can be declared in a local scope.  Therefore the only advantage of using a lambda instead of a locally defined function is that you don't need to invent a name for the function -- but that's just a local variable to which the function object (which is exactly the same type of object that a lambda expression yields) is assigned!"
-msgstr "توابع در پایتون از پیش اشیای درجه‌یک هستند و می‌توانند در یک محدوده محلی تعریف شوند. بنابراین تنها مزیت استفاده از لامبدا به جای یک تابع تعریف‌شده به‌صورت محلی این است که نیازی نیست برای تابع نامی ابداع کنید -- اما آن فقط یک متغیر محلی است که شیء تابع (که دقیقاً همان نوع شیئی است که یک عبارت لامبدا برمی‌گرداند) به آن انتساب داده می‌شود!"
+msgstr "توابع در پایتون از پیش اشیای درجه‌یک هستند و می‌توانند در یک محدوده محلی تعریف شوند. بنابراین تنها مزیت استفاده از لامبدا به جای یک تابع تعریف‌شده به‌صورت محلی این است که نیازی نیست برای تابع نامی ابداع کنید -- اما آن فقط یک متغیر محلی است که شیء تابع (که دقیقاً همان نوع شیء‌ای است که یک عبارت لامبدا برمی‌گرداند) به آن انتساب داده می‌شود!"
 
 msgid "Can Python be compiled to machine code, C or some other language?"
 msgstr "آیا پایتون می‌تواند به کد ماشین، C یا زبان دیگری کامپایل شود؟"

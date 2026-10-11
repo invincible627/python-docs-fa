@@ -792,7 +792,7 @@ msgstr "افزونه‌ی %s که این پروژه استفاده می‌کند
 
 #, python-format
 msgid "extension %r returned an unsupported object from its setup() function; it should return None or a metadata dictionary"
-msgstr "افزونه‌ی %r شیئی پشتیبانی‌نشده از تابع ()setup خود بازگرداند؛ باید None یا دیکشنری فراداده بازگرداند"
+msgstr "افزونه‌ی %r شیء‌ای پشتیبانی‌نشده از تابع ()setup خود بازگرداند؛ باید None یا دیکشنری فراداده بازگرداند"
 
 #, python-format
 msgid "`None` is not a valid filetype for %r."
@@ -1079,7 +1079,7 @@ msgstr "کدگذاری %r که برای خواندن پرونده‌ی include�
 
 #, python-format
 msgid "Object named %r not found in include file %r"
-msgstr "شیئی با نام %r در پرونده‌ی include شده‌ی %r پیدا نشد"
+msgstr "شیء‌ای با نام %r در پرونده‌ی include شده‌ی %r پیدا نشد"
 
 msgid "Cannot use \"lineno-match\" with a disjoint set of \"lines\""
 msgstr "نمی‌توان «lineno-match» را با مجموعه‌ای ناپیوسته از «lines» استفاده کرد"

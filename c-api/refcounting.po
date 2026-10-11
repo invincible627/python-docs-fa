@@ -38,7 +38,7 @@ msgid "Use the :c:func:`Py_SET_REFCNT()` function to set an object reference cou
 msgstr "برای تنظیم شمارش ارجاع یک شیء، از تابع :c:func:`Py_SET_REFCNT()` استفاده کنید."
 
 msgid "On :term:`free-threaded builds <free-threaded build>` of Python, returning 1 isn't sufficient to determine if it's safe to treat *o* as having no access by other threads. Use :c:func:`PyUnstable_Object_IsUniquelyReferenced` for that instead."
-msgstr "در :term:`ساخت‌های نخ‌آزاد <free-threaded build>` پایتون، بازگرداندن 1 برای تعیین اینکه آیا در نظر گرفتن *o* به‌عنوان شیئی که هیچ نخ دیگری به آن دسترسی ندارد، ایمن است، کافی نیست. برای این کار به‌جای آن از :c:func:`PyUnstable_Object_IsUniquelyReferenced` استفاده کنید."
+msgstr "در :term:`ساخت‌های نخ‌آزاد <free-threaded build>` پایتون، بازگرداندن 1 برای تعیین اینکه آیا در نظر گرفتن *o* به‌عنوان شیء‌ای که هیچ نخ دیگری به آن دسترسی ندارد، ایمن است، کافی نیست. برای این کار به‌جای آن از :c:func:`PyUnstable_Object_IsUniquelyReferenced` استفاده کنید."
 
 msgid "See also the function :c:func:`PyUnstable_Object_IsUniqueReferencedTemporary()`."
 msgstr "همچنین تابع :c:func:`PyUnstable_Object_IsUniqueReferencedTemporary()` را ببینید."
@@ -132,7 +132,7 @@ msgid "Do not expect this function to actually modify *o* in any way. For at lea
 msgstr "انتظار نداشته باشید که این تابع واقعاً *o* را به هیچ نحوی تغییر دهد. برای حداقل :pep:`برخی اشیاء <683>`، این تابع هیچ اثری ندارد."
 
 msgid "The deallocation function can cause arbitrary Python code to be invoked (e.g. when a class instance with a :meth:`~object.__del__` method is deallocated).  While exceptions in such code are not propagated, the executed code has free access to all Python global variables.  This means that any object that is reachable from a global variable should be in a consistent state before :c:func:`Py_DECREF` is invoked.  For example, code to delete an object from a list should copy a reference to the deleted object in a temporary variable, update the list data structure, and then call :c:func:`Py_DECREF` for the temporary variable."
-msgstr "تابع آزادسازی می‌تواند باعث فراخوانی کد دلخواه پایتون شود (مثلاً وقتی نمونه‌ای از کلاسی دارای متد :meth:`~object.__del__` آزادسازی می‌شود). اگرچه استثناهای چنین کدی منتشر نمی‌شوند، کد اجرا‌شده به تمام متغیرهای سراسری پایتون دسترسی آزاد دارد. این بدان معناست که هر شیئی که از یک متغیر سراسری قابل دسترسی باشد، باید پیش از فراخوانی :c:func:`Py_DECREF` در وضعیت سازگار قرار داشته باشد. برای مثال، کدی که شیئی را از یک فهرست حذف می‌کند، باید ارجاعی به شیء حذف‌شده را در یک متغیر موقت کپی کند، ساختار داده فهرست را به‌روزرسانی کند و سپس :c:func:`Py_DECREF` را برای متغیر موقت فراخوانی کند."
+msgstr "تابع آزادسازی می‌تواند باعث فراخوانی کد دلخواه پایتون شود (مثلاً وقتی نمونه‌ای از کلاسی دارای متد :meth:`~object.__del__` آزادسازی می‌شود). اگرچه استثناهای چنین کدی منتشر نمی‌شوند، کد اجرا‌شده به تمام متغیرهای سراسری پایتون دسترسی آزاد دارد. این بدان معناست که هر شیء‌ای که از یک متغیر سراسری قابل دسترسی باشد، باید پیش از فراخوانی :c:func:`Py_DECREF` در وضعیت سازگار قرار داشته باشد. برای مثال، کدی که شیء‌ای را از یک فهرست حذف می‌کند، باید ارجاعی به شیء حذف‌شده را در یک متغیر موقت کپی کند، ساختار داده فهرست را به‌روزرسانی کند و سپس :c:func:`Py_DECREF` را برای متغیر موقت فراخوانی کند."
 
 msgid "Similar to :c:func:`Py_DECREF`, but the object *o* can be ``NULL``, in which case this has no effect. The same warning from :c:func:`Py_DECREF` applies here as well."
 msgstr "مشابه :c:func:`Py_DECREF`، اما شیء *o* می‌تواند ``NULL`` باشد که در این صورت هیچ اثری ندارد. همان هشدارِ مربوط به :c:func:`Py_DECREF` در اینجا نیز صدق می‌کند."
@@ -141,7 +141,7 @@ msgid "Release a :term:`strong reference` for object *o*. The object may be ``NU
 msgstr "یک :term:`ارجاع قوی <strong reference>` برای شیء *o* را آزاد می‌کند. شیء ممکن است ``NULL`` باشد که در این صورت ماکرو هیچ اثری ندارد؛ در غیر این صورت، اثر آن همانند :c:func:`Py_DECREF` است، با این تفاوت که آرگومان نیز به ``NULL`` تنظیم می‌شود. هشدار مربوط به :c:func:`Py_DECREF` در مورد شیء ارسال‌شده اعمال نمی‌شود، زیرا ماکرو با دقت از یک متغیر موقت استفاده می‌کند و آرگومان را پیش از آزاد کردن ارجاع به ``NULL`` تنظیم می‌کند."
 
 msgid "It is a good idea to use this macro whenever releasing a reference to an object that might be traversed during garbage collection."
-msgstr "هر زمان که ارجاعی به شیئی را که ممکن است در حین زباله‌روبی پیمایش شود آزاد می‌کنید، استفاده از این ماکرو ایده‌ی خوبی است."
+msgstr "هر زمان که ارجاعی به شیء‌ای را که ممکن است در حین زباله‌روبی پیمایش شود آزاد می‌کنید، استفاده از این ماکرو ایده‌ی خوبی است."
 
 msgid "The macro argument is now only evaluated once. If the argument has side effects, these are no longer duplicated."
 msgstr "آرگومان ماکرو اکنون فقط یک بار ارزیابی می‌شود. اگر آرگومان دارای اثرات جانبی باشد، این اثرات دیگر تکرار نمی‌شوند."

@@ -2131,7 +2131,7 @@ msgid "The :c:member:`~PyTypeObject.tp_traverse` implementation must name its ar
 msgstr "پیاده‌سازی :c:member:`~PyTypeObject.tp_traverse` باید آرگومان‌های خود را دقیقاً *visit* و *arg* نام‌گذاری کند تا بتواند از :c:func:`Py_VISIT` استفاده کند."
 
 msgid "Second, we need to provide a method for clearing any subobjects that can participate in cycles::"
-msgstr "دوم، باید متدی برای پاک کردن هر زیرشیئی که می‌تواند در چرخه‌ها شرکت کند ارائه دهیم::"
+msgstr "دوم، باید متدی برای پاک کردن هر زیرشیء‌ای که می‌تواند در چرخه‌ها شرکت کند ارائه دهیم::"
 
 msgid ""
 "static int\n"

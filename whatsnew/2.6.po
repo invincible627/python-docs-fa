@@ -177,7 +177,7 @@ msgstr ""
 "    with-block"
 
 msgid "The expression is evaluated, and it should result in an object that supports the context management protocol (that is, has :meth:`~object.__enter__` and :meth:`~object.__exit__` methods)."
-msgstr "عبارت ارزیابی می‌شود و باید به شیئی منجر شود که از پروتکل مدیریت زمینه پشتیبانی کند (یعنی متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد)."
+msgstr "عبارت ارزیابی می‌شود و باید به شیء‌ای منجر شود که از پروتکل مدیریت زمینه پشتیبانی کند (یعنی متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد)."
 
 msgid "The object's :meth:`~object.__enter__` is called before *with-block* is executed and therefore can run set-up code. It also may return a value that is bound to the name *variable*, if given.  (Note carefully that *variable* is *not* assigned the result of *expression*.)"
 msgstr "متد :meth:`~object.__enter__` شیء پیش از اجرای *with-block* فراخوانی می‌شود و بنابراین می‌تواند کد راه‌اندازی را اجرا کند. این متد همچنین ممکن است مقداری را برگرداند که در صورت تعیین، به نام *variable* مقید می‌شود.  (دقت کنید که نتیجه‌ی *expression* به *variable* منتسب *نمی‌شود*.)"
@@ -258,7 +258,7 @@ msgid "A high-level explanation of the context management protocol is:"
 msgstr "توضیح سطح بالایی از پروتکل مدیریت زمینه چنین است:"
 
 msgid "The expression is evaluated and should result in an object called a \"context manager\".  The context manager must have :meth:`~object.__enter__` and :meth:`~object.__exit__` methods."
-msgstr "عبارت ارزیابی می‌شود و باید به شیئی منجر شود که «مدیر زمینه» نامیده می‌شود. مدیر زمینه باید متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد."
+msgstr "عبارت ارزیابی می‌شود و باید به شیء‌ای منجر شود که «مدیر زمینه» نامیده می‌شود. مدیر زمینه باید متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد."
 
 msgid "The context manager's :meth:`~object.__enter__` method is called.  The value returned is assigned to *VAR*.  If no ``as VAR`` clause is present, the value is simply discarded."
 msgstr "متد :meth:`~object.__enter__` مدیر زمینه فراخوانی می‌شود. مقدار بازگشتی به *VAR* انتساب داده می‌شود. اگر بند ``as VAR`` وجود نداشته باشد، مقدار به سادگی دور انداخته می‌شود."
@@ -279,7 +279,7 @@ msgid "(For people unfamiliar with database terminology: a set of changes to the
 msgstr "(برای کسانی که با اصطلاحات پایگاه داده آشنایی ندارند: مجموعه‌ای از تغییرات پایگاه داده در قالب یک تراکنش گروه‌بندی می‌شود. تراکنش‌ها می‌توانند یا ثبت نهایی شوند، به این معنا که همه‌ی تغییرات در پایگاه داده نوشته می‌شوند، یا بازگردانی شوند، به این معنا که همه‌ی تغییرات دور ریخته می‌شوند و پایگاه داده بدون تغییر باقی می‌ماند. برای اطلاعات بیشتر به هر کتاب درسی پایگاه داده مراجعه کنید.)"
 
 msgid "Let's assume there's an object representing a database connection. Our goal will be to let the user write code like this::"
-msgstr "فرض کنید شیئی وجود دارد که نمایانگر یک اتصال به پایگاه داده است. هدف ما این خواهد بود که به کاربر اجازه دهیم کدی مانند این بنویسد::"
+msgstr "فرض کنید شیء‌ای وجود دارد که نمایانگر یک اتصال به پایگاه داده است. هدف ما این خواهد بود که به کاربر اجازه دهیم کدی مانند این بنویسد::"
 
 msgid ""
 "db_connection = DatabaseConnection()\n"
@@ -2418,7 +2418,7 @@ msgstr ""
 "    ..."
 
 msgid "Finally, :func:`~test.support.warnings_helper.check_warnings` resets the :mod:`warnings` module's warning filters and returns an object that will record all warning messages triggered (:issue:`3781`)::"
-msgstr "در نهایت، :func:`~test.support.warnings_helper.check_warnings` پالایه‌های هشدار ماژول :mod:`warnings` را بازنشانی می‌کند و شیئی را برمی‌گرداند که تمام پیام‌های هشدارِ فعال‌شده را ثبت خواهد کرد (:issue:`3781`)::"
+msgstr "در نهایت، :func:`~test.support.warnings_helper.check_warnings` پالایه‌های هشدار ماژول :mod:`warnings` را بازنشانی می‌کند و شیء‌ای را برمی‌گرداند که تمام پیام‌های هشدارِ فعال‌شده را ثبت خواهد کرد (:issue:`3781`)::"
 
 msgid ""
 "with test_support.check_warnings() as wrec:\n"
@@ -2924,7 +2924,7 @@ msgid "Importing modules simultaneously in two different threads no longer deadl
 msgstr "ایمپورت کردن هم‌زمان ماژول‌ها در دو نخ مختلف دیگر دچار بن‌بست نمی‌شود؛ اکنون یک استثنای :exc:`ImportError` را بالا می‌آورد. یک تابع جدید در API به نام :c:func:`!PyImport_ImportModuleNoBlock`، ابتدا به دنبال ماژول در ``sys.modules`` می‌گردد و سپس پس از به دست آوردن قفل ایمپورت، سعی می‌کند آن را ایمپورت کند. اگر قفل ایمپورت در اختیار نخ دیگری باشد، یک استثنای :exc:`ImportError` بالا می‌آورد. (مشارکت توسط Christian Heimes.)"
 
 msgid "Several functions return information about the platform's floating-point support.  :c:func:`PyFloat_GetMax` returns the maximum representable floating-point value, and :c:func:`PyFloat_GetMin` returns the minimum positive value.  :c:func:`PyFloat_GetInfo` returns an object containing more information from the :file:`float.h` file, such as ``\"mant_dig\"`` (number of digits in the mantissa), ``\"epsilon\"`` (smallest difference between 1.0 and the next largest value representable), and several others. (Contributed by Christian Heimes; :issue:`1534`.)"
-msgstr "چندین تابع اطلاعات مربوط به پشتیبانی پلتفرم از ممیز شناور را برمی‌گردانند. :c:func:`PyFloat_GetMax` بزرگ‌ترین مقدار ممیز شناور قابل‌نمایش را برمی‌گرداند و :c:func:`PyFloat_GetMin` کوچک‌ترین مقدار مثبت را برمی‌گرداند. :c:func:`PyFloat_GetInfo` شیئی حاوی اطلاعات بیشتری از پرونده‌ی :file:`float.h` برمی‌گرداند، مانند ``\"mant_dig\"`` (تعداد ارقام مانتيس)، ``\"epsilon\"`` (کوچک‌ترین تفاوت میان 1.0 و مقدار بزرگ‌تر قابل‌نمایش بعدی) و چندین مورد دیگر. (ارائه‌شده توسط کریستین هایمز؛ :issue:`1534`.)"
+msgstr "چندین تابع اطلاعات مربوط به پشتیبانی پلتفرم از ممیز شناور را برمی‌گردانند. :c:func:`PyFloat_GetMax` بزرگ‌ترین مقدار ممیز شناور قابل‌نمایش را برمی‌گرداند و :c:func:`PyFloat_GetMin` کوچک‌ترین مقدار مثبت را برمی‌گرداند. :c:func:`PyFloat_GetInfo` شیء‌ای حاوی اطلاعات بیشتری از پرونده‌ی :file:`float.h` برمی‌گرداند، مانند ``\"mant_dig\"`` (تعداد ارقام مانتيس)، ``\"epsilon\"`` (کوچک‌ترین تفاوت میان 1.0 و مقدار بزرگ‌تر قابل‌نمایش بعدی) و چندین مورد دیگر. (ارائه‌شده توسط کریستین هایمز؛ :issue:`1534`.)"
 
 msgid "C functions and methods that use :c:func:`PyComplex_AsCComplex` will now accept arguments that have a :meth:`~object.__complex__` method.  In particular, the functions in the :mod:`cmath` module will now accept objects with this method. This is a backport of a Python 3.0 change. (Contributed by Mark Dickinson; :issue:`1675423`.)"
 msgstr "توابع و متدهای C که از :c:func:`PyComplex_AsCComplex` استفاده می‌کنند، اکنون آرگومان‌هایی را که متد :meth:`~object.__complex__` دارند می‌پذیرند. به‌طور خاص، توابع ماژول :mod:`cmath` اکنون اشیایی را که این متد را دارند می‌پذیرند. این یک بک‌پورت از تغییری در پایتون 3.0 است. (مشارکت‌شده توسط Mark Dickinson؛ :issue:`1675423`.)"

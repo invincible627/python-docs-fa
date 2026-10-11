@@ -483,7 +483,7 @@ msgid "When the Python interpreter is interrupted by Ctrl-C (SIGINT) and the res
 msgstr "وقتی مفسر پایتون با Ctrl-C (SIGINT) دچار وقفه شود و استثنای :exc:`KeyboardInterrupt` حاصل گرفته نشود، فرایند پایتون اکنون از طریق سیگنال SIGINT یا با کد خروج صحیح خارج می‌شود، به‌گونه‌ای که فرایند فراخواننده بتواند تشخیص دهد که فرایند پایتون به دلیل Ctrl-C از بین رفته است. پوسته‌های POSIX و Windows از این برای خاتمه‌ی صحیح اسکریپت‌ها در نشست‌های تعاملی استفاده می‌کنند. (مشارکت‌شده توسط Google از طریق Gregory P. Smith در :issue:`1054041`.)"
 
 msgid "Some advanced styles of programming require updating the :class:`types.CodeType` object for an existing function.  Since code objects are immutable, a new code object needs to be created, one that is modeled on the existing code object.  With 19 parameters, this was somewhat tedious.  Now, the new ``replace()`` method makes it possible to create a clone with a few altered parameters."
-msgstr "برخی سبک‌های پیشرفته برنامه‌نویسی نیازمند به‌روزرسانی شیء :class:`types.CodeType` برای یک تابع موجود هستند. از آنجا که اشیاء کد تغییرناپذیرند، باید شیء کد جدیدی ایجاد شود؛ شیئی که بر اساس شیء کد موجود الگوبرداری شده باشد. با ۱۹ پارامتر، این کار تا حدی خسته‌کننده بود. اکنون، متد جدید ``replace()`` امکان ایجاد رونوشتی با چند پارامتر تغییر‌یافته را فراهم می‌کند."
+msgstr "برخی سبک‌های پیشرفته برنامه‌نویسی نیازمند به‌روزرسانی شیء :class:`types.CodeType` برای یک تابع موجود هستند. از آنجا که اشیاء کد تغییرناپذیرند، باید شیء کد جدیدی ایجاد شود؛ شیء‌ای که بر اساس شیء کد موجود الگوبرداری شده باشد. با ۱۹ پارامتر، این کار تا حدی خسته‌کننده بود. اکنون، متد جدید ``replace()`` امکان ایجاد رونوشتی با چند پارامتر تغییر‌یافته را فراهم می‌کند."
 
 msgid "Here's an example that alters the :func:`statistics.mean` function to prevent the *data* parameter from being used as a keyword argument::"
 msgstr "در اینجا مثالی است که تابع :func:`statistics.mean` را تغییر می‌دهد تا از استفاده شدن پارامتر *data* به‌عنوان آرگومان کلیدواژه‌ای جلوگیری کند::"
@@ -1629,7 +1629,7 @@ msgid "Deprecated methods ``getchildren()`` and ``getiterator()`` in the :mod:`~
 msgstr "متدهای منسوخ ``getchildren()`` و ``getiterator()`` در ماژول :mod:`~xml.etree.ElementTree` اکنون به‌جای :exc:`PendingDeprecationWarning`، یک :exc:`DeprecationWarning` منتشر می‌کنند. این متدها در پایتون 3.9 حذف خواهند شد. (مشارکت‌شده توسط Serhiy Storchaka در :issue:`29209`.)"
 
 msgid "Passing an object that is not an instance of :class:`concurrent.futures.ThreadPoolExecutor` to :meth:`loop.set_default_executor() <asyncio.loop.set_default_executor>` is deprecated and will be prohibited in Python 3.9. (Contributed by Elvis Pranskevichus in :issue:`34075`.)"
-msgstr "گذراندن شیئی که نمونه‌ای از :class:`concurrent.futures.ThreadPoolExecutor` نیست به :meth:`loop.set_default_executor() <asyncio.loop.set_default_executor>` منسوخ شده است و در پایتون 3.9 ممنوع خواهد شد. (مشارکت‌شده توسط Elvis Pranskevichus در :issue:`34075`.)"
+msgstr "گذراندن شیء‌ای که نمونه‌ای از :class:`concurrent.futures.ThreadPoolExecutor` نیست به :meth:`loop.set_default_executor() <asyncio.loop.set_default_executor>` منسوخ شده است و در پایتون 3.9 ممنوع خواهد شد. (مشارکت‌شده توسط Elvis Pranskevichus در :issue:`34075`.)"
 
 msgid "The :meth:`~object.__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput` have been deprecated."
 msgstr "متدهای :meth:`~object.__getitem__` در :class:`xml.dom.pulldom.DOMEventStream`، :class:`wsgiref.util.FileWrapper` و :class:`fileinput.FileInput` منسوخ شده‌اند."

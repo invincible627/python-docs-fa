@@ -542,7 +542,7 @@ msgid "pydoc"
 msgstr "pydoc"
 
 msgid "The documentation string is now shown not only for class, function, method etc, but for any object that has its own :attr:`~definition.__doc__` attribute. (Contributed by Serhiy Storchaka in :issue:`40257`.)"
-msgstr "رشته مستند اکنون نه‌تنها برای کلاس، تابع، متد و غیره، بلکه برای هر شیئی که ویژگی :attr:`~definition.__doc__` مخصوص به خود را داشته باشد نمایش داده می‌شود. (مشارکت Serhiy Storchaka در :issue:`40257`.)"
+msgstr "رشته مستند اکنون نه‌تنها برای کلاس، تابع، متد و غیره، بلکه برای هر شیء‌ای که ویژگی :attr:`~definition.__doc__` مخصوص به خود را داشته باشد نمایش داده می‌شود. (مشارکت Serhiy Storchaka در :issue:`40257`.)"
 
 msgid "random"
 msgstr "random"

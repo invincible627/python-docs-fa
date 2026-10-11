@@ -355,7 +355,7 @@ msgid ":gh:`157213`: Fix :func:`asyncio.gather` leaving stale await-graph edges 
 msgstr ":gh:`157213`: رفع مشکلی در :func:`asyncio.gather` که یال‌های گراف await منسوخ را روی فرزندانی که بیشتر از آن عمر می‌کنند، باقی می‌گذاشت."
 
 msgid ":gh:`156002`: :mod:`zipfile` again reads members through a third-party decompressor installed by monkey-patching the private ``_get_decompressor()`` to return an object that only implements old BZ2Decompressor API from Python 3.3. Note that decompressors without ``needs_input`` and two-argument ``decompress()`` are vulnerable to :cve:`2026-15310`."
-msgstr ":gh:`156002`: :mod:`zipfile` دوباره اعضا را از طریق یک واگشای شخص ثالث می‌خواند که با اصلاح پویا (monkey-patching) متد خصوصی ``_get_decompressor()`` برای بازگرداندن شیئی که تنها API قدیمی BZ2Decompressor را از پایتون ۳.۳ پیاده‌سازی می‌کند، نصب شده است. توجه داشته باشید که واگشاهای بدون ``needs_input`` و ``decompress()`` دو آرگومانی در برابر :cve:`2026-15310` آسیب‌پذیر هستند."
+msgstr ":gh:`156002`: :mod:`zipfile` دوباره اعضا را از طریق یک واگشای شخص ثالث می‌خواند که با اصلاح پویا (monkey-patching) متد خصوصی ``_get_decompressor()`` برای بازگرداندن شیء‌ای که تنها API قدیمی BZ2Decompressor را از پایتون ۳.۳ پیاده‌سازی می‌کند، نصب شده است. توجه داشته باشید که واگشاهای بدون ``needs_input`` و ``decompress()`` دو آرگومانی در برابر :cve:`2026-15310` آسیب‌پذیر هستند."
 
 msgid ":gh:`157159`: The usage message printed by ``python -m tabnanny`` when no arguments are given now suggests ``python -m`` instead of the source file."
 msgstr ":gh:`157159`: پیام راهنمایی که توسط ``python -m tabnanny`` هنگام داده نشدن هیچ آرگومانی چاپ می‌شود، اکنون به‌جای پرونده‌ی منبع، ``python -m`` را پیشنهاد می‌کند."
@@ -4636,7 +4636,7 @@ msgid ":gh:`137530`: :mod:`dataclasses` Fix annotations for generated ``__init__
 msgstr ":gh:`137530`: :mod:`dataclasses`: رفع حاشیه‌نویسی‌ها برای متدهای تولیدشده ``__init__`` با جایگزین کردن حاشیه‌نویسی‌هایی که به صورت درون‌خطی در کد منبع تولیدشده بودند، با توابع ``__annotate__`` متصل به متدها."
 
 msgid ":gh:`140348`: Fix regression in Python 3.14.0 where using the ``|`` operator on a :class:`typing.Union` object combined with an object that is not a type would raise an error."
-msgstr ":gh:`140348`: رفع رگرسیون در نسخه‌ی 3.14.0 پایتون که در آن استفاده از عملگر ``|`` روی یک شیء :class:`typing.Union` ترکیب‌شده با شیئی که نوع داده نیست، خطایی را پرتاب می‌کرد."
+msgstr ":gh:`140348`: رفع رگرسیون در نسخه‌ی 3.14.0 پایتون که در آن استفاده از عملگر ``|`` روی یک شیء :class:`typing.Union` ترکیب‌شده با شیء‌ای که نوع داده نیست، خطایی را پرتاب می‌کرد."
 
 msgid ":gh:`76007`: :mod:`decimal`: Deprecate ``__version__`` and replace with :data:`decimal.SPEC_VERSION`."
 msgstr ":gh:`76007`: :mod:`decimal`: منسوخ کردن ``__version__`` و جایگزینی آن با :data:`decimal.SPEC_VERSION`."
@@ -9625,7 +9625,7 @@ msgid ":gh:`125541`: Pressing :kbd:`Ctrl-C` while blocked in :meth:`threading.Lo
 msgstr ":gh:`125541`: فشردن کلید :kbd:`Ctrl-C` هنگام مسدود بودن در :meth:`threading.Lock.acquire`، :meth:`threading.RLock.acquire` و :meth:`threading.Thread.join` اکنون فراخوانی تابع را متوقف کرده و یک استثنای :exc:`KeyboardInterrupt` را در ویندوز بالا می‌آورد (raise می‌کند)، مشابه عملکرد این توابع در macOS و لینوکس."
 
 msgid ":gh:`125519`: Improve traceback if :func:`importlib.reload` is called with an object that is not a module. Patch by Alex Waygood."
-msgstr ":gh:`125519`: بهبود ردگیری (traceback) در صورتی که :func:`importlib.reload` با شیئی فراخوانی شود که ماژول نیست. وصله (patch) توسط Alex Waygood."
+msgstr ":gh:`125519`: بهبود ردگیری (traceback) در صورتی که :func:`importlib.reload` با شیء‌ای فراخوانی شود که ماژول نیست. وصله (patch) توسط Alex Waygood."
 
 msgid ":gh:`125451`: Fix deadlock when :class:`concurrent.futures.ProcessPoolExecutor` shuts down concurrently with an error when feeding a job to a worker process."
 msgstr ":gh:`125451`: رفع بن‌بست هنگام خاموش شدن همزمان :class:`concurrent.futures.ProcessPoolExecutor` با یک خطا در هنگام ارسال کار به یک فرایند کارگر."
@@ -9739,7 +9739,7 @@ msgid ":gh:`126222`: Do not include count of \"peek\" items in ``_PyUop_num_popp
 msgstr ":gh:`126222`: عدم گنجاندن تعداد آیتم‌های «peek» در ``_PyUop_num_popped``. این کار تضمین می‌کند که وقتی یک ریزعملیات (micro-op) با خطا خارج می‌شود، تعداد درستی از آیتم‌ها از پشته خارج (pop) شوند."
 
 msgid ":gh:`126366`: Fix crash when using ``yield from`` on an object that raises an exception in its ``__iter__``."
-msgstr ":gh:`126366`: رفع فروپاشی هنگام استفاده از ``yield from`` روی شیئی که در ``__iter__`` خود یک استثنا ایجاد می‌کند."
+msgstr ":gh:`126366`: رفع فروپاشی هنگام استفاده از ``yield from`` روی شیء‌ای که در ``__iter__`` خود یک استثنا ایجاد می‌کند."
 
 msgid ":gh:`126209`: Fix an issue with ``skip_file_prefixes`` parameter which resulted in an inconsistent behaviour between the C and Python implementations of :func:`warnings.warn`. Patch by Daehee Kim."
 msgstr ":gh:`126209`: رفع مشکلی در پارامتر ``skip_file_prefixes`` که به رفتار ناسازگار بین پیاده‌سازی‌های C و پایتون تابع :func:`warnings.warn` منجر می‌شد. وصله توسط Daehee Kim."
@@ -10669,7 +10669,7 @@ msgid ":gh:`120289`: Fixed the use-after-free issue in :mod:`!cProfile` by disal
 msgstr ":gh:`120289`: با غیرمجاز کردن ``disable()`` و ``clear()`` در تایمرهای خارجی، مسئله‌ی استفاده پس از آزادسازی (use-after-free) در :mod:`!cProfile` رفع شد."
 
 msgid ":gh:`82017`: Added support for converting any objects that have the :meth:`!as_integer_ratio` method to a :class:`~fractions.Fraction`."
-msgstr ":gh:`82017`: پشتیبانی از تبدیل هر شیئی که دارای متد :meth:`!as_integer_ratio` است به یک :class:`~fractions.Fraction` اضافه شد."
+msgstr ":gh:`82017`: پشتیبانی از تبدیل هر شیء‌ای که دارای متد :meth:`!as_integer_ratio` است به یک :class:`~fractions.Fraction` اضافه شد."
 
 msgid ":gh:`114053`: Fix edge-case bug where :func:`typing.get_type_hints` would produce incorrect results if type parameters in a class scope were overridden by assignments in a class scope and ``from __future__ import annotations`` semantics were enabled. Patch by Alex Waygood."
 msgstr ":gh:`114053`: رفع باگ حالت مرزی که در آن :func:`typing.get_type_hints` نتایج نادرستی تولید می‌کرد اگر پارامترهای نوع در محدوده‌ی یک کلاس توسط انتساب‌ها در محدوده‌ی کلاس بازنویسی می‌شدند و معناشناسی ``from __future__ import annotations`` فعال بود. اصلاحیه توسط Alex Waygood."
@@ -12811,7 +12811,7 @@ msgid ":gh:`89739`: The :mod:`zipimport` module can now read ZIP64 files."
 msgstr ":gh:`89739`: ماژول :mod:`zipimport` اکنون می‌تواند پرونده‌های ZIP64 را بخواند."
 
 msgid ":issue:`33533`: :func:`asyncio.as_completed` now returns an object that is both an asynchronous iterator and plain iterator. The new asynchronous iteration pattern allows for easier correlation between prior tasks and their completed results. This is a closer match to :func:`concurrent.futures.as_completed`'s iteration pattern. Patch by Justin Arthur."
-msgstr ":issue:`33533`: تابع :func:`asyncio.as_completed` اکنون شیئی را برمی‌گرداند که هم پیمایش‌گر ناهمگام و هم پیمایش‌گر ساده است. الگوی پیمایش ناهمگام جدید امکان همبستگی آسان‌تر بین وظایف قبلی و نتایج تکمیل‌شده آن‌ها را فراهم می‌کند. این تطابق نزدیک‌تری با الگوی پیمایش :func:`concurrent.futures.as_completed` است. وصل توسط جاستین آرتور."
+msgstr ":issue:`33533`: تابع :func:`asyncio.as_completed` اکنون شیء‌ای را برمی‌گرداند که هم پیمایش‌گر ناهمگام و هم پیمایش‌گر ساده است. الگوی پیمایش ناهمگام جدید امکان همبستگی آسان‌تر بین وظایف قبلی و نتایج تکمیل‌شده آن‌ها را فراهم می‌کند. این تطابق نزدیک‌تری با الگوی پیمایش :func:`concurrent.futures.as_completed` است. وصل توسط جاستین آرتور."
 
 msgid ":issue:`27578`: :func:`inspect.getsource` (and related functions) work with empty module files, returning ``'\\n'`` (or reasonable equivalent) instead of raising ``OSError``. Patch by Kernc."
 msgstr ":issue:`27578`: تابع :func:`inspect.getsource` (و توابع مرتبط با آن) با پرونده‌های ماژول خالی کار می‌کنند و به‌جای بالا آوردن خطای ``OSError``، مقدار ``'\\n'`` (یا معادل منطقی آن) را برمی‌گردانند. اصلاحیه از Kernc."
@@ -19657,7 +19657,7 @@ msgid ":gh:`96268`: Loading a file with invalid UTF-8 will now report the broken
 msgstr ":gh:`96268`: بارگذاری یک پرونده با UTF-8 نامعتبر اکنون نویسه‌ی خراب را در مکان صحیح گزارش می‌دهد."
 
 msgid ":gh:`96237`: The internal field ``_PyInterpreterFrame.f_func`` is renamed to ``_PyInterpreterFrame.f_funcobj`` and may be any object. The ``f_globals`` and ``f_builtin`` fields may hold junk values."
-msgstr ":gh:`96237`: فیلد داخلی ``_PyInterpreterFrame.f_func`` به ``_PyInterpreterFrame.f_funcobj`` تغییر نام داده است و می‌تواند هر شیئی باشد. فیلد‌های ``f_globals`` و ``f_builtin`` ممکن است مقادیر هرز نگه دارند."
+msgstr ":gh:`96237`: فیلد داخلی ``_PyInterpreterFrame.f_func`` به ``_PyInterpreterFrame.f_funcobj`` تغییر نام داده است و می‌تواند هر شیء‌ای باشد. فیلد‌های ``f_globals`` و ``f_builtin`` ممکن است مقادیر هرز نگه دارند."
 
 msgid "It is safest to treat the ``_PyInterpreterFrame`` struct as opaque."
 msgstr "امن‌ترین کار این است که ساختار (struct) ``_PyInterpreterFrame`` را به صورت کدر (opaque) در نظر بگیرید."
@@ -22311,7 +22311,7 @@ msgid ":issue:`46030`: Add ``LOCAL_CREDS``, ``LOCAL_CREDS_PERSISTENT`` and ``SCM
 msgstr ":issue:`46030`: اضافه کردن ثابت‌های FreeBSD به نام‌های ``LOCAL_CREDS``، ``LOCAL_CREDS_PERSISTENT`` و ``SCM_CREDS2`` به ماژول socket."
 
 msgid ":issue:`44439`: Fix ``.write()`` method of a member file in ``ZipFile``, when the input data is an object that supports the buffer protocol, the file length may be wrong."
-msgstr ":issue:`44439`: رفع متد ``.write()`` یک پرونده‌ی عضو در ``ZipFile``؛ هنگامی که داده‌ی ورودی شیئی است که از پروتکل بافر پشتیبانی می‌کند، ممکن است طول پرونده اشتباه باشد."
+msgstr ":issue:`44439`: رفع متد ``.write()`` یک پرونده‌ی عضو در ``ZipFile``؛ هنگامی که داده‌ی ورودی شیء‌ای است که از پروتکل بافر پشتیبانی می‌کند، ممکن است طول پرونده اشتباه باشد."
 
 msgid ":issue:`45171`: Fix handling of the ``stacklevel`` argument to logging functions in the :mod:`logging` module so that it is consistent across all logging functions and, as advertised, similar to the ``stacklevel`` argument used in :meth:`~warnings.warn`."
 msgstr ":issue:`45171`: رفع نحوه‌ی مدیریت آرگومان ``stacklevel`` در توابع گزارش‌گیری در ماژول :mod:`logging` به طوری که در تمام توابع گزارش‌گیری سازگار باشد و همان‌طور که اعلام شده است، مشابه آرگومان ``stacklevel`` مورد استفاده در :meth:`~warnings.warn` باشد."
@@ -23160,7 +23160,7 @@ msgid "*Release date: 2022-01-13*"
 msgstr "*Release date: 2022-01-13*"
 
 msgid ":issue:`46070`: :c:func:`Py_EndInterpreter` now explicitly untracks all objects currently tracked by the GC. Previously, if an object was used later by another interpreter, calling :c:func:`PyObject_GC_UnTrack` on the object crashed if the previous or the next object of the :c:type:`!PyGC_Head` structure became a dangling pointer. Patch by Victor Stinner."
-msgstr ":issue:`46070`: تابع :c:func:`Py_EndInterpreter` اکنون به طور صریح تمام اشیاء در حال ردیابی توسط GC را از لیست ردیابی خارج می‌کند. پیش‌تر، اگر شیئی بعداً توسط مفسر دیگری استفاده می‌شد، فراخوانی :c:func:`PyObject_GC_UnTrack` روی آن شیء در صورتی که شیء قبلی یا بعدی ساختار :c:type:`!PyGC_Head` به یک اشاره‌گر معلق تبدیل می‌شد، باعث فروپاشی می‌شد. وصله توسط Victor Stinner."
+msgstr ":issue:`46070`: تابع :c:func:`Py_EndInterpreter` اکنون به طور صریح تمام اشیاء در حال ردیابی توسط GC را از لیست ردیابی خارج می‌کند. پیش‌تر، اگر شیء‌ای بعداً توسط مفسر دیگری استفاده می‌شد، فراخوانی :c:func:`PyObject_GC_UnTrack` روی آن شیء در صورتی که شیء قبلی یا بعدی ساختار :c:type:`!PyGC_Head` به یک اشاره‌گر معلق تبدیل می‌شد، باعث فروپاشی می‌شد. وصله توسط Victor Stinner."
 
 msgid ":issue:`46347`: Fix memory leak in PyEval_EvalCodeEx."
 msgstr ":issue:`46347`: رفع نشتی حافظه در PyEval_EvalCodeEx."
@@ -24133,7 +24133,7 @@ msgid "the undocumented ``Signature.from_builtin`` and ``Signature.from_function
 msgstr "توابع مستندنشده‌ی ``Signature.from_builtin`` و ``Signature.from_function`` که از نسخه‌ی ۳.۵ پایتون منسوخ شده‌اند؛ به‌جای آن از متد :meth:`Signature.from_callable() <inspect.Signature.from_callable>` استفاده کنید."
 
 msgid ":issue:`45192`: Fix the ``tempfile._infer_return_type`` function so that the ``dir`` argument of the :mod:`tempfile` functions accepts an object implementing the ``os.PathLike`` protocol."
-msgstr ":issue:`45192`: تابع ``tempfile._infer_return_type`` را اصلاح کنید تا آرگومان ``dir`` در توابع ماژول :mod:`tempfile` شیئی را بپذیرد که پروتکل ``os.PathLike`` را پیاده‌سازی می‌کند."
+msgstr ":issue:`45192`: تابع ``tempfile._infer_return_type`` را اصلاح کنید تا آرگومان ``dir`` در توابع ماژول :mod:`tempfile` شیء‌ای را بپذیرد که پروتکل ``os.PathLike`` را پیاده‌سازی می‌کند."
 
 msgid "Patch by Kyungmin Lee."
 msgstr "وصله از Kyungmin Lee."
@@ -25282,7 +25282,7 @@ msgid ":issue:`44446`: Take into account that ``lineno`` might be ``None`` in :c
 msgstr ":issue:`44446`: در نظر گرفتن این احتمال که ممکن است ``lineno`` در :class:`traceback.FrameSummary` برابر با ``None`` باشد."
 
 msgid ":issue:`44439`: Fix in :meth:`bz2.BZ2File.write` / :meth:`lzma.LZMAFile.write` methods, when the input data is an object that supports the buffer protocol, the file length may be wrong."
-msgstr ":issue:`44439`: اصلاح در متدهای :meth:`bz2.BZ2File.write` / :meth:`lzma.LZMAFile.write`؛ هنگامی که داده‌ی ورودی شیئی است که از پروتکل بافر پشتیبانی می‌کند، ممکن است طول پرونده نادرست باشد."
+msgstr ":issue:`44439`: اصلاح در متدهای :meth:`bz2.BZ2File.write` / :meth:`lzma.LZMAFile.write`؛ هنگامی که داده‌ی ورودی شیء‌ای است که از پروتکل بافر پشتیبانی می‌کند، ممکن است طول پرونده نادرست باشد."
 
 msgid ":issue:`44434`: _thread.start_new_thread() no longer calls PyThread_exit_thread() explicitly at the thread exit, the call was redundant. On Linux with the glibc, pthread_exit() aborts the whole process if dlopen() fails to open libgcc_s.so file (ex: EMFILE error). Patch by Victor Stinner."
 msgstr ":issue:`44434`: تابع _thread.start_new_thread() دیگر در زمان خروج از نخ به شکل صریح PyThread_exit_thread() را صدا نمی‌زند، این فراخوانی اضافی بود. روی لینوکس با glibc، تابع pthread_exit() اگر نتواند پرونده‌ی libgcc_s.so را با dlopen() باز کند (مثلاً خطای EMFILE)، کل فرایند را متوقف می‌کند. وصله توسط Victor Stinner."
@@ -34591,7 +34591,7 @@ msgid ":issue:`35606`: Implement :func:`math.prod` as analogous function to :fun
 msgstr ":issue:`35606`: پیاده‌سازی :func:`math.prod` به عنوان تابعی مشابه :func:`sum` که حاصل‌ضرب یک مقدار 'start' (پیش‌فرض: ۱) در یک مجموعه‌ی پیمایش‌پذیر از اعداد را برمی‌گرداند. وصله‌ای از Pablo Galindo."
 
 msgid ":issue:`32417`: Performing arithmetic between :class:`datetime.datetime` subclasses and :class:`datetime.timedelta` now returns an object of the same type as the :class:`datetime.datetime` subclass. As a result, :meth:`datetime.datetime.astimezone` and alternate constructors like :meth:`datetime.datetime.now` and :meth:`datetime.fromtimestamp` called with a ``tz`` argument now *also* retain their subclass."
-msgstr ":issue:`32417`: انجام عملَدهای حسابی بین زیرکلاس‌های :class:`datetime.datetime` و :class:`datetime.timedelta` اکنون شیئی از همان نوعِ زیرکلاس :class:`datetime.datetime` را برمی‌گرداند. در نتیجه، متدهای :meth:`datetime.datetime.astimezone` و سازنده‌های جایگزین مانند :meth:`datetime.datetime.now` و :meth:`datetime.fromtimestamp` که با یک آرگومان ``tz`` فراخوانی می‌شوند، اکنون *همچنین* زیرکلاس خود را حفظ می‌کنند."
+msgstr ":issue:`32417`: انجام عملَدهای حسابی بین زیرکلاس‌های :class:`datetime.datetime` و :class:`datetime.timedelta` اکنون شیء‌ای از همان نوعِ زیرکلاس :class:`datetime.datetime` را برمی‌گرداند. در نتیجه، متدهای :meth:`datetime.datetime.astimezone` و سازنده‌های جایگزین مانند :meth:`datetime.datetime.now` و :meth:`datetime.fromtimestamp` که با یک آرگومان ``tz`` فراخوانی می‌شوند، اکنون *همچنین* زیرکلاس خود را حفظ می‌کنند."
 
 msgid ":issue:`35153`: Add *headers* optional keyword-only parameter to :class:`xmlrpc.client.ServerProxy`, :class:`xmlrpc.client.Transport` and :class:`xmlrpc.client.SafeTransport`.  Patch by Cédric Krier."
 msgstr ":issue:`35153`: اضافه کردن پارامتر اختیاری فقط-کلیدواژه‌ی *headers* به :class:`xmlrpc.client.ServerProxy`، :class:`xmlrpc.client.Transport` و :class:`xmlrpc.client.SafeTransport`. وصله‌ای از Cédric Krier."
@@ -34990,7 +34990,7 @@ msgid ":issue:`33824`: Fix \"LC_ALL=C python3.7 -V\": reset properly the command
 msgstr ":issue:`33824`: رفع \"LC_ALL=C python3.7 -V\": بازنشانی درست تجزیه‌کننده‌ی خط فرمان هنگامی که کدگذاری پس از خواندن پیکربندی پایتون تغییر می‌کند."
 
 msgid ":issue:`33803`: Fix a crash in hamt.c caused by enabling GC tracking for an object that hadn't all of its fields set to NULL."
-msgstr ":issue:`33803`: رفع فروپاشی در hamt.c که به دلیل فعال کردن پیگیری GC برای شیئی ایجاد شده بود که همه‌ی فیلدهای آن روی NULL تنظیم نشده بودند."
+msgstr ":issue:`33803`: رفع فروپاشی در hamt.c که به دلیل فعال کردن پیگیری GC برای شیء‌ای ایجاد شده بود که همه‌ی فیلدهای آن روی NULL تنظیم نشده بودند."
 
 msgid ":issue:`33738`: Seven macro incompatibilities with the Limited API were fixed, and the macros :c:func:`PyIter_Check`, :c:func:`PyIndex_Check` and :c:func:`PyExceptionClass_Name` were added as functions. A script for automatic macro checks was added."
 msgstr ":issue:`33738`: هفت ناسازگاری ماکرو با API محدود (Limited API) رفع شد و ماکروهای :c:func:`PyIter_Check`، :c:func:`PyIndex_Check` و :c:func:`PyExceptionClass_Name` به عنوان تابع اضافه شدند. یک اسکریپت برای بررسی‌های خودکار ماکرو اضافه شد."
@@ -35011,7 +35011,7 @@ msgid ":issue:`30654`: Fixed reset of the SIGINT handler to SIG_DFL on interpret
 msgstr ":issue:`30654`: اصلاح بازنشانی هندلر SIGINT به SIG_DFL هنگام خاموش شدن مفسر حتی زمانی که قبلاً یک هندلر سفارشی تنظیم شده بود. وصله توسط فیلیپ کرلینگ (Philipp Kerling)."
 
 msgid ":issue:`33622`: Fixed a leak when the garbage collector fails to add an object with the ``__del__`` method or referenced by it into the :data:`gc.garbage` list. :c:func:`PyGC_Collect` can now be called when an exception is set and preserves it."
-msgstr ":issue:`33622`: اصلاح یک نشتی زمانی که جمع‌آور زباله در افزودن شیئی با متد ``__del__`` یا ارجاع‌داده‌شده توسط آن به فهرست :data:`gc.garbage` ناموفق است. اکنون می‌توان :c:func:`PyGC_Collect` را زمانی که یک استثنا تنظیم شده است فراخوانی کرد و آن را حفظ نمود."
+msgstr ":issue:`33622`: اصلاح یک نشتی زمانی که جمع‌آور زباله در افزودن شیء‌ای با متد ``__del__`` یا ارجاع‌داده‌شده توسط آن به فهرست :data:`gc.garbage` ناموفق است. اکنون می‌توان :c:func:`PyGC_Collect` را زمانی که یک استثنا تنظیم شده است فراخوانی کرد و آن را حفظ نمود."
 
 msgid ":issue:`33462`: Make dict and dict views reversible. Patch by Rémi Lapeyre."
 msgstr ":issue:`33462`: قابل‌پیمایش معکوس کردن دیکشنری‌ها و نماهای دیکشنری. وصله توسط رمی لاپیر (Rémi Lapeyre)."
@@ -35437,7 +35437,7 @@ msgid ":issue:`31047`: Fix ``ntpath.abspath`` regression where it didn't remove 
 msgstr ":issue:`31047`: رفع رگرسیون در ``ntpath.abspath`` که در آن جداکننده‌ی پایانی در ویندوز حذف نمی‌شد. وصله توسط Tim Graham."
 
 msgid ":issue:`35053`: tracemalloc now tries to update the traceback when an object is reused from a \"free list\" (optimization for faster object creation, used by the builtin list type for example)."
-msgstr ":issue:`35053`: ماژول tracemalloc اکنون تلاش می‌کند وقتی شیئی از یک «فهرست آزاد» (free list) دوباره استفاده می‌شود (بهینه‌سازی برای ایجاد سریع‌تر شیء، که مثلاً توسط نوع فهرست توکار استفاده می‌شود)، ردگیری (traceback) را به‌روزرسانی کند."
+msgstr ":issue:`35053`: ماژول tracemalloc اکنون تلاش می‌کند وقتی شیء‌ای از یک «فهرست آزاد» (free list) دوباره استفاده می‌شود (بهینه‌سازی برای ایجاد سریع‌تر شیء، که مثلاً توسط نوع فهرست توکار استفاده می‌شود)، ردگیری (traceback) را به‌روزرسانی کند."
 
 msgid ":issue:`31553`: Add the --json-lines option to json.tool. Patch by hongweipeng."
 msgstr ":issue:`31553`: افزودن گزینه‌ی --json-lines به json.tool. وصله توسط hongweipeng."

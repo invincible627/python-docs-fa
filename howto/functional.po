@@ -134,7 +134,7 @@ msgid "I'll start by looking at a Python language feature that's an important fo
 msgstr "با بررسی ویژگی‌ای از زبان پایتون آغاز می‌کنم که پایه‌ای مهم برای نوشتن برنامه‌ها به‌سبک تابعی است: پیمایش‌گرها ."
 
 msgid "An iterator is an object representing a stream of data; this object returns the data one element at a time.  A Python iterator must support a method called :meth:`~iterator.__next__` that takes no arguments and always returns the next element of the stream.  If there are no more elements in the stream, :meth:`~iterator.__next__` must raise the :exc:`StopIteration` exception. Iterators don't have to be finite, though; it's perfectly reasonable to write an iterator that produces an infinite stream of data."
-msgstr "پیمایش‌گر شیئی است که جریانی از داده را نشان می‌دهد؛ این شیء داده‌ها را هر بار یک عنصر برمی‌گرداند. یک پیمایش‌گر پایتون باید از متدی به نام :meth:`~iterator.__next__` پشتیبانی کند که هیچ آرگومانی نمی‌گیرد و همیشه عنصر بعدی جریان را برمی‌گرداند. اگر دیگر عنصری در جریان وجود نداشته باشد، :meth:`~iterator.__next__` باید استثنای :exc:`StopIteration` را پرتاب کند. البته پیمایش‌گرها لازم نیست متناهی باشند؛ نوشتن پیمایش‌گری که جریان نامتناهی از داده تولید می‌کند، کاملاً معقول است."
+msgstr "پیمایش‌گر شیء‌ای است که جریانی از داده را نشان می‌دهد؛ این شیء داده‌ها را هر بار یک عنصر برمی‌گرداند. یک پیمایش‌گر پایتون باید از متدی به نام :meth:`~iterator.__next__` پشتیبانی کند که هیچ آرگومانی نمی‌گیرد و همیشه عنصر بعدی جریان را برمی‌گرداند. اگر دیگر عنصری در جریان وجود نداشته باشد، :meth:`~iterator.__next__` باید استثنای :exc:`StopIteration` را پرتاب کند. البته پیمایش‌گرها لازم نیست متناهی باشند؛ نوشتن پیمایش‌گری که جریان نامتناهی از داده تولید می‌کند، کاملاً معقول است."
 
 msgid "The built-in :func:`iter` function takes an arbitrary object and tries to return an iterator that will return the object's contents or elements, raising :exc:`TypeError` if the object doesn't support iteration.  Several of Python's built-in data types support iteration, the most common being lists and dictionaries.  An object is called :term:`iterable` if you can get an iterator for it."
 msgstr "تابع توکار :func:`iter` یک شیء دلخواه را می‌گیرد و تلاش می‌کند پیمایش‌گری برگرداند که محتویات یا عناصر شیء را برمی‌گرداند، و اگر شیء از پیمایش پشتیبانی نکند، :exc:`TypeError` را پرتاب می‌کند. چندین نوع داده‌ی توکار پایتون از پیمایش پشتیبانی می‌کنند، که رایج‌ترین آن‌ها فهرست‌ها و دیکشنری‌ها هستند. یک شیء :term:`پیمایش‌پذیر <iterable>` (پیمایش‌پذیر) نامیده می‌شود اگر بتوانید پیمایش‌گری برای آن دریافت کنید."
@@ -143,7 +143,7 @@ msgid "You can experiment with the iteration interface manually:"
 msgstr "می‌توانید رابط پیمایش را به‌صورت دستی آزمایش کنید:"
 
 msgid "Python expects iterable objects in several different contexts, the most important being the :keyword:`for` statement.  In the statement ``for X in Y``, Y must be an iterator or some object for which :func:`iter` can create an iterator.  These two statements are equivalent::"
-msgstr "پایتون در چندین زمینه مختلف، اشیاء پیمایش‌پذیر را انتظار دارد، مهم‌ترین آن‌ها دستور :keyword:`for` است. در دستور ``for X in Y``، Y باید یک پیمایش‌گر باشد یا شیئی که :func:`iter` بتواند برای آن یک پیمایش‌گر ایجاد کند. این دو دستور معادل هستند::"
+msgstr "پایتون در چندین زمینه مختلف، اشیاء پیمایش‌پذیر را انتظار دارد، مهم‌ترین آن‌ها دستور :keyword:`for` است. در دستور ``for X in Y``، Y باید یک پیمایش‌گر باشد یا شیء‌ای که :func:`iter` بتواند برای آن یک پیمایش‌گر ایجاد کند. این دو دستور معادل هستند::"
 
 msgid ""
 "for i in iter(obj):\n"

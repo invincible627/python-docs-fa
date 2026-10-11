@@ -650,7 +650,7 @@ msgid "A high-level explanation of the context management protocol is:"
 msgstr "توضیح سطح بالای پروتکل مدیریت زمینه چنین است:"
 
 msgid "The expression is evaluated and should result in an object called a \"context manager\".  The context manager must have :meth:`~object.__enter__` and :meth:`~object.__exit__` methods."
-msgstr "عبارت ارزیابی می‌شود و باید به شیئی به نام «مدیر زمینه» منجر شود. مدیر زمینه باید متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد."
+msgstr "عبارت ارزیابی می‌شود و باید به شیء‌ای به نام «مدیر زمینه» منجر شود. مدیر زمینه باید متدهای :meth:`~object.__enter__` و :meth:`~object.__exit__` را داشته باشد."
 
 msgid "The context manager's :meth:`~object.__enter__` method is called.  The value returned is assigned to *VAR*.  If no ``'as VAR'`` clause is present, the value is simply discarded."
 msgstr "متد :meth:`~object.__enter__` مدیر زمینه فراخوانی می‌شود. مقدار بازگشتی به *VAR* منتسب می‌شود. اگر بند ``'as VAR'`` وجود نداشته باشد، مقدار صرفاً دور انداخته می‌شود."
@@ -671,7 +671,7 @@ msgid "(For people unfamiliar with database terminology: a set of changes to the
 msgstr "(برای افرادی که با اصطلاحات پایگاه داده آشنا نیستند: مجموعه‌ای از تغییرات در پایگاه داده در قالب یک تراکنش گروه‌بندی می‌شوند. تراکنش‌ها می‌توانند یا ثبت نهایی شوند، به این معنا که تمام تغییرات در پایگاه داده نوشته می‌شوند، یا بازگردانی شوند، به این معنا که تمام تغییرات دور ریخته می‌شوند و پایگاه داده بدون تغییر باقی می‌ماند. برای اطلاعات بیشتر به هر کتاب درسی پایگاه داده مراجعه کنید.)"
 
 msgid "Let's assume there's an object representing a database connection. Our goal will be to let the user write code like this::"
-msgstr "فرض کنید شیئی وجود دارد که نمایانگر یک اتصال به پایگاه داده است. هدف ما این خواهد بود که به کاربر اجازه دهیم کدی مانند این بنویسد::"
+msgstr "فرض کنید شیء‌ای وجود دارد که نمایانگر یک اتصال به پایگاه داده است. هدف ما این خواهد بود که به کاربر اجازه دهیم کدی مانند این بنویسد::"
 
 msgid ""
 "db_connection = DatabaseConnection()\n"
@@ -1408,7 +1408,7 @@ msgid "The :mod:`socket` module now supports :const:`!AF_NETLINK` sockets on Lin
 msgstr "ماژول :mod:`socket` اکنون از سوکت‌های :const:`!AF_NETLINK` در لینوکس پشتیبانی می‌کند؛ به لطف وصلی از فیلیپ بیوندی. سوکت‌های netlink سازوکاری ویژه‌ی لینوکس برای برقراری ارتباط میان یک فرایند در فضای کاربر و کد هسته هستند؛ مقاله‌ای مقدماتی درباره‌ی آن‌ها در https://www.linuxjournal.com/article/7356 موجود است. در کد پایتون، نشانی‌های netlink به‌صورت تاپلی از ۲ عدد صحیح، ``(pid, group_mask)``، نمایش داده می‌شوند."
 
 msgid "Two new methods on socket objects, ``recv_into(buffer)`` and ``recvfrom_into(buffer)``, store the received data in an object  that supports the buffer protocol instead of returning the data as a string.  This means you can put the data directly into an array or a memory-mapped file."
-msgstr "دو متد جدید روی شیءهای سوکت، ``recv_into(buffer)`` و ``recvfrom_into(buffer)``، داده‌های دریافت‌شده را به‌جای بازگرداندن آن‌ها به‌صورت رشته، در شیئی ذخیره می‌کنند که پروتکل بافر را پشتیبانی می‌کند. این بدان معناست که می‌توانید داده‌ها را مستقیماً در یک آرایه یا یک پرونده نگاشت‌شده در حافظه قرار دهید."
+msgstr "دو متد جدید روی شیءهای سوکت، ``recv_into(buffer)`` و ``recvfrom_into(buffer)``، داده‌های دریافت‌شده را به‌جای بازگرداندن آن‌ها به‌صورت رشته، در شیء‌ای ذخیره می‌کنند که پروتکل بافر را پشتیبانی می‌کند. این بدان معناست که می‌توانید داده‌ها را مستقیماً در یک آرایه یا یک پرونده نگاشت‌شده در حافظه قرار دهید."
 
 msgid "Socket objects also gained :meth:`!getfamily`, :meth:`!gettype`, and :meth:`!getproto` accessor methods to retrieve the family, type, and protocol values for the socket."
 msgstr "به اشیاء سوکت همچنین متدهای دسترسی :meth:`!getfamily`، :meth:`!gettype` و :meth:`!getproto` اضافه شد تا مقادیر خانواده، نوع و پروتکل سوکت را بازیابی کنند."

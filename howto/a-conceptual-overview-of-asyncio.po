@@ -495,7 +495,7 @@ msgid "It's worth pausing for a moment here and making sure you followed the var
 msgstr "ارزش دارد که در اینجا لحظه‌ای درنگ کنید و اطمینان حاصل کنید که روش‌های مختلفی را که جریان کنترل و مقادیر از طریق آن‌ها منتقل می‌شدند، دنبال کرده‌اید. ایده‌های مهم بسیاری پوشش داده شد و ارزش دارد که اطمینان حاصل کنید درک شما استوار است."
 
 msgid "The only way to yield (or effectively cede control) from a coroutine is to ``await`` an object that ``yield``\\ s in its ``__await__`` method. That might sound odd to you. You might be thinking:"
-msgstr "تنها راه برای yield کردن از یک هم‌روال (یا عملاً واگذار کردن کنترل) این است که شیئی را ``await`` کنید که در متد ``__await__`` خود ``yield`` می‌کند. ممکن است این موضوع برای شما عجیب به نظر برسد. شاید فکر کنید:"
+msgstr "تنها راه برای yield کردن از یک هم‌روال (یا عملاً واگذار کردن کنترل) این است که شیء‌ای را ``await`` کنید که در متد ``__await__`` خود ``yield`` می‌کند. ممکن است این موضوع برای شما عجیب به نظر برسد. شاید فکر کنید:"
 
 msgid "1. What about a ``yield`` directly within the coroutine function? The coroutine function becomes an :ref:`async generator function <asynchronous-generator-functions>`, a different beast entirely."
 msgstr "۱. اگر یک ``yield`` به‌طور مستقیم درون تابع هم‌روال باشد چطور؟ تابع هم‌روال به یک :ref:`تابع تولیدگر ناهمگام <asynchronous-generator-functions>` تبدیل می‌شود، که به‌کلی مقوله‌ای متفاوت است."
@@ -507,7 +507,7 @@ msgid "Futures"
 msgstr "آینده‌نماها (Futures)"
 
 msgid "A :ref:`future <asyncio-future-obj>` is an object meant to represent a computation's status and result. The term is a nod to the idea of something still to come or not yet happened, and the object is a way to keep an eye on that something."
-msgstr "یک :ref:`future <asyncio-future-obj>` شیئی است که برای نمایش وضعیت و نتیجه‌ی یک محاسبه در نظر گرفته شده است. این اصطلاح اشاره‌ای به مفهوم چیزی است که هنوز در راه است یا هنوز رخ نداده است، و این شیء راهی برای نظارت بر آن چیز است."
+msgstr "یک :ref:`future <asyncio-future-obj>` شیء‌ای است که برای نمایش وضعیت و نتیجه‌ی یک محاسبه در نظر گرفته شده است. این اصطلاح اشاره‌ای به مفهوم چیزی است که هنوز در راه است یا هنوز رخ نداده است، و این شیء راهی برای نظارت بر آن چیز است."
 
 msgid "A future has a few important attributes. One is its state, which can be either \"pending\", \"cancelled\", or \"done\". Another is its result, which is set when the state transitions to done. Unlike a coroutine, a future does not represent the actual computation to be done; instead, it represents the status and result of that computation, kind of like a status light (red, yellow, or green) or indicator."
 msgstr "یک آینده (future) چند ویژگی مهم دارد. یکی از آن‌ها وضعیت آن است، که می‌تواند \"pending\"، \"cancelled\" یا \"done\" باشد. دیگری نتیجه آن است، که با تغییر وضعیت به done تنظیم می‌شود. برخلاف یک هم‌روال، آینده بیانگر محاسبه واقعی که قرار است انجام شود نیست؛ در عوض، وضعیت و نتیجه آن محاسبه را نشان می‌دهد، تقریباً مانند چراغ وضعیت (قرمز، زرد یا سبز) یا نشانگر."

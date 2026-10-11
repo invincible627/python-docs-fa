@@ -1259,7 +1259,7 @@ msgid "An attribute reference is a primary followed by a period and a name:"
 msgstr "ارجاع به ویژگی یک عبارت اصلی است که پس از آن یک نقطه و یک نام می‌آید:"
 
 msgid "The primary must evaluate to an object of a type that supports attribute references, which most objects do.  This object is then asked to produce the attribute whose name is the identifier. The type and value produced is determined by the object.  Multiple evaluations of the same attribute reference may yield different objects."
-msgstr "عبارت اصلی باید به شیئی از نوعی ارزیابی شود که از ارجاع‌های ویژگی پشتیبانی می‌کند؛ بیشتر اشیاء نیز چنین هستند. سپس از این شیء خواسته می‌شود ویژگی‌ای با نام آن شناسه تولید کند. نوع و مقدار تولیدشده توسط شیء تعیین می‌شود. ارزیابی‌های متعدد یک ارجاع ویژگی یکسان ممکن است اشیاء متفاوتی تولید کنند."
+msgstr "عبارت اصلی باید به شیء‌ای از نوعی ارزیابی شود که از ارجاع‌های ویژگی پشتیبانی می‌کند؛ بیشتر اشیاء نیز چنین هستند. سپس از این شیء خواسته می‌شود ویژگی‌ای با نام آن شناسه تولید کند. نوع و مقدار تولیدشده توسط شیء تعیین می‌شود. ارزیابی‌های متعدد یک ارجاع ویژگی یکسان ممکن است اشیاء متفاوتی تولید کنند."
 
 msgid "This production can be customized by overriding the :meth:`~object.__getattribute__` method or the :meth:`~object.__getattr__` method.  The :meth:`!__getattribute__` method is called first and either returns a value or raises :exc:`AttributeError` if the attribute is not available."
 msgstr "این تولید را می‌توان با بازنویسی متد :meth:`~object.__getattribute__` یا متد :meth:`~object.__getattr__` سفارشی‌سازی کرد. متد :meth:`!__getattribute__` ابتدا فراخوانی می‌شود و یا مقداری را برمی‌گرداند یا در صورت در دسترس نبودن ویژگی، :exc:`AttributeError` را پرتاب می‌کند."

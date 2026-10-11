@@ -85,7 +85,7 @@ msgid "Return a tuple object with the same contents as the sequence or iterable 
 msgstr "یک شیء تاپل با همان محتوای دنباله یا پیمایش‌پذیر *o* برمی‌گرداند، یا در صورت شکست ``NULL`` برمی‌گرداند. اگر *o* یک تاپل باشد، یک ارجاع جدید بازگردانده می‌شود؛ در غیر این صورت، تاپلی با محتوای مناسب ساخته می‌شود. این معادل عبارت پایتونی ``tuple(o)`` است."
 
 msgid "Return the sequence or iterable *o* as an object usable by the other ``PySequence_Fast*`` family of functions. If the object is not a sequence or iterable, raises :exc:`TypeError` with *m* as the message text. Returns ``NULL`` on failure."
-msgstr "دنباله یا پیمایش‌پذیر *o* را به‌صورت شیئی قابل استفاده توسط سایر توابع خانواده ``PySequence_Fast*`` برمی‌گرداند. اگر شیء یک دنباله یا پیمایش‌پذیر نباشد، استثنای :exc:`TypeError` را با *m* به‌عنوان متن پیام ایجاد می‌کند. در صورت شکست، ``NULL`` برمی‌گرداند."
+msgstr "دنباله یا پیمایش‌پذیر *o* را به‌صورت شیء‌ای قابل استفاده توسط سایر توابع خانواده ``PySequence_Fast*`` برمی‌گرداند. اگر شیء یک دنباله یا پیمایش‌پذیر نباشد، استثنای :exc:`TypeError` را با *m* به‌عنوان متن پیام ایجاد می‌کند. در صورت شکست، ``NULL`` برمی‌گرداند."
 
 msgid "The ``PySequence_Fast*`` functions are thus named because they assume *o* is a :c:type:`PyTupleObject` or a :c:type:`PyListObject` and access the data fields of *o* directly."
 msgstr "توابع ``PySequence_Fast*`` به این دلیل چنین نام‌گذاری شده‌اند که فرض می‌کنند *o* یک :c:type:`PyTupleObject` یا :c:type:`PyListObject` است و مستقیماً به فیلدهای داده‌ی *o* دسترسی دارند."

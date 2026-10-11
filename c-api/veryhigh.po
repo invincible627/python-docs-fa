@@ -103,7 +103,7 @@ msgid "This is a simplified interface to :c:func:`PyRun_StringFlags` below, leav
 msgstr "این یک رابط ساده‌شده برای :c:func:`PyRun_StringFlags` در ادامه است که در آن *flags* روی ``NULL`` تنظیم می‌شود."
 
 msgid "Execute Python source code from *str* in the context specified by the objects *globals* and *locals* with the compiler flags specified by *flags*.  *globals* must be a dictionary; *locals* can be any object that implements the mapping protocol.  The parameter *start* specifies the start symbol and must be one of the :ref:`available start symbols <start-symbols>`."
-msgstr "کد منبع پایتون را از *str* در زمینه‌ای که توسط اشیاء *globals* و *locals* مشخص شده است، همراه با پرچم‌های کامپایلر که توسط *flags* مشخص شده‌اند، اجرا می‌کند.  *globals* باید یک دیکشنری باشد؛ *locals* می‌تواند هر شیئی باشد که پروتکل نگاشت را پیاده‌سازی کند.  پارامتر *start* نماد شروع را مشخص می‌کند و باید یکی از :ref:`نمادهای شروع موجود <start-symbols>` باشد."
+msgstr "کد منبع پایتون را از *str* در زمینه‌ای که توسط اشیاء *globals* و *locals* مشخص شده است، همراه با پرچم‌های کامپایلر که توسط *flags* مشخص شده‌اند، اجرا می‌کند.  *globals* باید یک دیکشنری باشد؛ *locals* می‌تواند هر شیء‌ای باشد که پروتکل نگاشت را پیاده‌سازی کند.  پارامتر *start* نماد شروع را مشخص می‌کند و باید یکی از :ref:`نمادهای شروع موجود <start-symbols>` باشد."
 
 msgid "Returns the result of executing the code as a Python object, or ``NULL`` if an exception was raised."
 msgstr "نتیجه‌ی اجرای کد را به‌صورت یک شیء پایتون برمی‌گرداند، یا در صورت رخ دادن استثنا ``NULL`` را برمی‌گرداند."

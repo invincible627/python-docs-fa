@@ -486,7 +486,7 @@ msgid "AttributeErrors"
 msgstr "AttributeErrors"
 
 msgid "When printing :exc:`AttributeError`, :c:func:`!PyErr_Display` will offer suggestions of similar attribute names in the object that the exception was raised from:"
-msgstr "هنگام چاپ :exc:`AttributeError`، :c:func:`!PyErr_Display` پیشنهادهایی از نام‌های ویژگی مشابه در شیئی که استثنا از آن پرتاب شده است ارائه می‌دهد:"
+msgstr "هنگام چاپ :exc:`AttributeError`، :c:func:`!PyErr_Display` پیشنهادهایی از نام‌های ویژگی مشابه در شیء‌ای که استثنا از آن پرتاب شده است ارائه می‌دهد:"
 
 msgid ""
 ">>> collections.namedtoplo\n"
@@ -1039,7 +1039,7 @@ msgid "The :class:`int` type has a new method :meth:`int.bit_count`, returning t
 msgstr "نوع :class:`int` متد جدید :meth:`int.bit_count` دارد که تعداد یک‌ها در گسترش دودویی یک عدد صحیح داده‌شده را برمی‌گرداند؛ این تعداد با نام شمارش جمعیت (population count) نیز شناخته می‌شود. (مشارکت‌شده توسط Niklas Fiekas در :issue:`29882`.)"
 
 msgid "The views returned by :meth:`dict.keys`, :meth:`dict.values` and :meth:`dict.items` now all have a ``mapping`` attribute that gives a :class:`types.MappingProxyType` object wrapping the original dictionary. (Contributed by Dennis Sweeney in :issue:`40890`.)"
-msgstr "نماهایی که توسط :meth:`dict.keys`، :meth:`dict.values` و :meth:`dict.items` بازگردانده می‌شوند، اکنون همگی دارای ویژگی ``mapping`` هستند که شیئی از نوع :class:`types.MappingProxyType` دربرگیرنده‌ی دیکشنری اصلی ارائه می‌دهد. (مشارکت از Dennis Sweeney در :issue:`40890`.)"
+msgstr "نماهایی که توسط :meth:`dict.keys`، :meth:`dict.values` و :meth:`dict.items` بازگردانده می‌شوند، اکنون همگی دارای ویژگی ``mapping`` هستند که شیء‌ای از نوع :class:`types.MappingProxyType` دربرگیرنده‌ی دیکشنری اصلی ارائه می‌دهد. (مشارکت از Dennis Sweeney در :issue:`40890`.)"
 
 msgid ":pep:`618`: The :func:`zip` function now has an optional ``strict`` flag, used to require that all the iterables have an equal length."
 msgstr ":pep:`618`: تابع :func:`zip` اکنون یک پرچم اختیاری ``strict`` دارد که برای الزام به برابر بودن طول همه‌ی پیمایش‌پذیرها استفاده می‌شود."
@@ -1372,7 +1372,7 @@ msgid "inspect"
 msgstr "inspect"
 
 msgid "Add :func:`inspect.get_annotations`, which safely computes the annotations defined on an object. It works around the quirks of accessing the annotations on various types of objects, and makes very few assumptions about the object it examines. :func:`inspect.get_annotations` can also correctly un-stringize stringized annotations.  :func:`inspect.get_annotations` is now considered best practice for accessing the annotations dict defined on any Python object; for more information on best practices for working with annotations, please see :ref:`annotations-howto`. Relatedly, :func:`inspect.signature`, :func:`inspect.Signature.from_callable`, and :func:`!inspect.Signature.from_function` now call :func:`inspect.get_annotations` to retrieve annotations. This means :func:`inspect.signature` and :func:`inspect.Signature.from_callable` can also now un-stringize stringized annotations. (Contributed by Larry Hastings in :issue:`43817`.)"
-msgstr "افزودن :func:`inspect.get_annotations` که حاشیه‌نویسی‌های تعریف‌شده روی یک شیء را به‌صورت ایمن محاسبه می‌کند. این تابع پیچیدگی‌های دسترسی به حاشیه‌نویسی‌ها روی انواع مختلف اشیاء را مدیریت می‌کند و درباره شیئی که بررسی می‌کند، فرض‌های بسیار کمی دارد. :func:`inspect.get_annotations` همچنین می‌تواند حاشیه‌نویسی‌های رشته‌شده (stringized) را به‌درستی از حالت رشته خارج کند (un-stringize). :func:`inspect.get_annotations` اکنون به‌عنوان بهترین روش برای دسترسی به دیکشنری حاشیه‌نویسی‌های تعریف‌شده روی هر شیء پایتون در نظر گرفته می‌شود؛ برای اطلاعات بیشتر درباره بهترین روش‌های کار با حاشیه‌نویسی‌ها، لطفاً :ref:`annotations-howto` را ببینید. در همین راستا، :func:`inspect.signature`، :func:`inspect.Signature.from_callable` و :func:`!inspect.Signature.from_function` اکنون برای بازیابی حاشیه‌نویسی‌ها :func:`inspect.get_annotations` را فراخوانی می‌کنند. این بدان معناست که :func:`inspect.signature` و :func:`inspect.Signature.from_callable` نیز اکنون می‌توانند حاشیه‌نویسی‌های رشته‌شده را از حالت رشته خارج کنند. (مشارکت از Larry Hastings در :issue:`43817`.)"
+msgstr "افزودن :func:`inspect.get_annotations` که حاشیه‌نویسی‌های تعریف‌شده روی یک شیء را به‌صورت ایمن محاسبه می‌کند. این تابع پیچیدگی‌های دسترسی به حاشیه‌نویسی‌ها روی انواع مختلف اشیاء را مدیریت می‌کند و درباره شیء‌ای که بررسی می‌کند، فرض‌های بسیار کمی دارد. :func:`inspect.get_annotations` همچنین می‌تواند حاشیه‌نویسی‌های رشته‌شده (stringized) را به‌درستی از حالت رشته خارج کند (un-stringize). :func:`inspect.get_annotations` اکنون به‌عنوان بهترین روش برای دسترسی به دیکشنری حاشیه‌نویسی‌های تعریف‌شده روی هر شیء پایتون در نظر گرفته می‌شود؛ برای اطلاعات بیشتر درباره بهترین روش‌های کار با حاشیه‌نویسی‌ها، لطفاً :ref:`annotations-howto` را ببینید. در همین راستا، :func:`inspect.signature`، :func:`inspect.Signature.from_callable` و :func:`!inspect.Signature.from_function` اکنون برای بازیابی حاشیه‌نویسی‌ها :func:`inspect.get_annotations` را فراخوانی می‌کنند. این بدان معناست که :func:`inspect.signature` و :func:`inspect.Signature.from_callable` نیز اکنون می‌توانند حاشیه‌نویسی‌های رشته‌شده را از حالت رشته خارج کنند. (مشارکت از Larry Hastings در :issue:`43817`.)"
 
 msgid "itertools"
 msgstr "itertools"

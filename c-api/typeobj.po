@@ -1383,7 +1383,7 @@ msgid "PyObject *tp_repr(PyObject *self);"
 msgstr "PyObject *tp_repr(PyObject *self);"
 
 msgid "The function must return a string or a Unicode object.  Ideally, this function should return a string that, when passed to :func:`eval`, given a suitable environment, returns an object with the same value.  If this is not feasible, it should return a string starting with ``'<'`` and ending with ``'>'`` from which both the type and the value of the object can be deduced."
-msgstr "این تابع باید یک رشته یا یک شیء یونیکد را برگرداند.  در حالت ایده‌آل، این تابع باید رشته‌ای را برگرداند که وقتی به :func:`eval` پاس داده شود، با فراهم بودن محیطی مناسب، شیئی با همان مقدار را بازگرداند.  اگر این کار امکان‌پذیر نباشد، باید رشته‌ای را برگرداند که با ``'<'`` شروع می‌شود و به ``'>'`` ختم می‌شود و از روی آن می‌توان هم نوع و هم مقدار شیء را استنباط کرد."
+msgstr "این تابع باید یک رشته یا یک شیء یونیکد را برگرداند.  در حالت ایده‌آل، این تابع باید رشته‌ای را برگرداند که وقتی به :func:`eval` پاس داده شود، با فراهم بودن محیطی مناسب، شیء‌ای با همان مقدار را بازگرداند.  اگر این کار امکان‌پذیر نباشد، باید رشته‌ای را برگرداند که با ``'<'`` شروع می‌شود و به ``'>'`` ختم می‌شود و از روی آن می‌توان هم نوع و هم مقدار شیء را استنباط کرد."
 
 msgid "**Default:**"
 msgstr "**پیش‌فرض:**"
@@ -1713,7 +1713,7 @@ msgid "int tp_clear(PyObject *);"
 msgstr "int tp_clear(PyObject *);"
 
 msgid "The purpose of this function is to break reference cycles that are causing a :term:`cyclic isolate` so that the objects can be safely destroyed.  A cleared object is a partially destroyed object; the object is not obligated to satisfy design invariants held during normal use."
-msgstr "هدف از این تابع، شکستن چرخه‌های ارجاعی است که یک :term:`cyclic isolate` ایجاد می‌کنند تا اشیاء بتوانند به‌طور ایمن نابود شوند. شیء پاک‌سازی‌شده شیئی است که به‌طور جزئی نابود شده است؛ این شیء موظف نیست ناوردهای طراحی‌ای را که در استفاده‌ی عادی برقرارند رعایت کند."
+msgstr "هدف از این تابع، شکستن چرخه‌های ارجاعی است که یک :term:`cyclic isolate` ایجاد می‌کنند تا اشیاء بتوانند به‌طور ایمن نابود شوند. شیء پاک‌سازی‌شده شیء‌ای است که به‌طور جزئی نابود شده است؛ این شیء موظف نیست ناوردهای طراحی‌ای را که در استفاده‌ی عادی برقرارند رعایت کند."
 
 msgid ":c:member:`!tp_clear` does not need to delete references to objects that can't participate in reference cycles, such as Python strings or Python integers.  However, it may be convenient to clear all references, and write the type's :c:member:`~PyTypeObject.tp_dealloc` function to invoke :c:member:`!tp_clear` to avoid code duplication.  (Beware that :c:member:`!tp_clear` might have already been called. Prefer calling idempotent functions like :c:func:`Py_CLEAR`.)"
 msgstr ":c:member:`!tp_clear` نیازی به حذف ارجاعات به اشیایی ندارد که نمی‌توانند در چرخه‌های ارجاع شرکت کنند، مانند رشته‌های پایتون یا اعداد صحیح پایتون. با این حال، ممکن است پاک‌کردن همه‌ی ارجاعات و نوشتن تابع :c:member:`~PyTypeObject.tp_dealloc` نوع به‌گونه‌ای که :c:member:`!tp_clear` را فراخوانی کند، برای جلوگیری از تکرار کد مناسب باشد. (مراقب باشید که ممکن است :c:member:`!tp_clear` قبلاً فراخوانی شده باشد. فراخوانی توابع هم‌توان مانند :c:func:`Py_CLEAR` را ترجیح دهید.)"
@@ -1749,13 +1749,13 @@ msgid "No guarantees are made about when, if, or how often Python automatically 
 msgstr "هیچ تضمینی درباره‌ی اینکه پایتون چه زمانی، آیا اصلاً، یا هر چند وقت یک‌بار یک شیء را به‌طور خودکار پاک می‌کند ارائه نمی‌شود، مگر در موارد زیر:"
 
 msgid "Python will not automatically clear an object if it is reachable, i.e., there is a reference to it and it is not a member of a :term:`cyclic isolate`."
-msgstr "پایتون به‌طور خودکار شیئی را پاک نمی‌کند که دسترسی‌پذیر باشد؛ یعنی ارجاعی به آن وجود داشته باشد و عضوی از :term:`cyclic isolate` نباشد."
+msgstr "پایتون به‌طور خودکار شیء‌ای را پاک نمی‌کند که دسترسی‌پذیر باشد؛ یعنی ارجاعی به آن وجود داشته باشد و عضوی از :term:`cyclic isolate` نباشد."
 
 msgid "Python will not automatically clear an object if it has not been automatically finalized (see :c:member:`~PyTypeObject.tp_finalize`).  (If the finalizer resurrected the object, the object may or may not be automatically finalized again before it is cleared.)"
 msgstr "اگر یک شیء به‌طور خودکار نهایی‌سازی نشده باشد، پایتون آن را به‌طور خودکار پاک نمی‌کند (به :c:member:`~PyTypeObject.tp_finalize` مراجعه کنید).  (اگر نهایی‌ساز شیء را احیا کرده باشد، ممکن است شیء پیش از پاک شدن، دوباره به‌طور خودکار نهایی‌سازی شود یا نشود.)"
 
 msgid "If an object is a member of a :term:`cyclic isolate`, Python will not automatically clear it if any member of the cyclic isolate has not yet been automatically finalized (:c:member:`~PyTypeObject.tp_finalize`)."
-msgstr "اگر شیئی عضوی از یک :term:`cyclic isolate` باشد، پایتون در صورتی که عضوی از cyclic isolate هنوز به‌طور خودکار نهایی‌سازی نشده باشد، آن را به‌طور خودکار پاک نمی‌کند (:c:member:`~PyTypeObject.tp_finalize`)."
+msgstr "اگر شیء‌ای عضوی از یک :term:`cyclic isolate` باشد، پایتون در صورتی که عضوی از cyclic isolate هنوز به‌طور خودکار نهایی‌سازی نشده باشد، آن را به‌طور خودکار پاک نمی‌کند (:c:member:`~PyTypeObject.tp_finalize`)."
 
 msgid "Python will not destroy an object until after any automatic calls to its :c:member:`!tp_clear` function have returned.  This ensures that the act of breaking a reference cycle does not invalidate the ``self`` pointer while :c:member:`!tp_clear` is still executing."
 msgstr "پایتون تا پس از بازگشت هرگونه فراخوانی خودکار تابع :c:member:`!tp_clear` یک شیء، آن را نابود نمی‌کند.  این تضمین می‌کند که عمل شکستن چرخه ارجاع، اشاره‌گر ``self`` را در حالی که :c:member:`!tp_clear` هنوز در حال اجراست، نامعتبر نکند."
@@ -2069,7 +2069,7 @@ msgid "PyObject *tp_new(PyTypeObject *subtype, PyObject *args, PyObject *kwds);"
 msgstr "PyObject *tp_new(PyTypeObject *subtype, PyObject *args, PyObject *kwds);"
 
 msgid "The *subtype* argument is the type of the object being created; the *args* and *kwds* arguments represent positional and keyword arguments of the call to the type.  Note that *subtype* doesn't have to equal the type whose :c:member:`~PyTypeObject.tp_new` function is called; it may be a subtype of that type (but not an unrelated type)."
-msgstr "آرگومان *subtype* نوع شیئی است که در حال ایجاد شدن است؛ آرگومان‌های *args* و *kwds* آرگومان‌های جایگاهی و کلیدواژه‌ای فراخوانی آن نوع را نشان می‌دهند. توجه داشته باشید که *subtype* لازم نیست با نوعی که تابع :c:member:`~PyTypeObject.tp_new` آن فراخوانی می‌شود برابر باشد؛ می‌تواند زیرنوعی از آن نوع باشد (اما نه نوعی نامرتبط)."
+msgstr "آرگومان *subtype* نوع شیء‌ای است که در حال ایجاد شدن است؛ آرگومان‌های *args* و *kwds* آرگومان‌های جایگاهی و کلیدواژه‌ای فراخوانی آن نوع را نشان می‌دهند. توجه داشته باشید که *subtype* لازم نیست با نوعی که تابع :c:member:`~PyTypeObject.tp_new` آن فراخوانی می‌شود برابر باشد؛ می‌تواند زیرنوعی از آن نوع باشد (اما نه نوعی نامرتبط)."
 
 msgid "The :c:member:`~PyTypeObject.tp_new` function should call ``subtype->tp_alloc(subtype, nitems)`` to allocate space for the object, and then do only as much further initialization as is absolutely necessary.  Initialization that can safely be ignored or repeated should be placed in the :c:member:`~PyTypeObject.tp_init` handler.  A good rule of thumb is that for immutable types, all initialization should take place in :c:member:`~PyTypeObject.tp_new`, while for mutable types, most initialization should be deferred to :c:member:`~PyTypeObject.tp_init`."
 msgstr "تابع :c:member:`~PyTypeObject.tp_new` باید برای تخصیص فضای شیء، ``subtype->tp_alloc(subtype, nitems)`` را فراخوانی کند و سپس تنها به اندازه‌ای که کاملاً ضروری است، مقدار‌دهی اولیه‌ی بیشتری انجام دهد. مقدار‌دهی اولیه‌ای که می‌توان آن را با اطمینان نادیده گرفت یا تکرار کرد، باید در هندلر :c:member:`~PyTypeObject.tp_init` قرار گیرد. یک قاعده سرانگشتی خوب این است که برای نوع‌های تغییرناپذیر، تمام مقدار‌دهی اولیه باید در :c:member:`~PyTypeObject.tp_new` انجام شود، در حالی که برای نوع‌های تغییرپذیر، بیشترِ مقدار‌دهی اولیه باید به :c:member:`~PyTypeObject.tp_init` موکول شود."
@@ -2204,7 +2204,7 @@ msgid "*Automatic finalization* refers to any finalization performed by Python e
 msgstr "*نهایی‌سازی خودکار* به هر نهایی‌سازی‌ای اشاره دارد که توسط پایتون انجام می‌شود، به‌جز از طریق فراخوانی :c:func:`PyObject_CallFinalizer` یا :c:func:`PyObject_CallFinalizerFromDealloc`.  هیچ تضمینی ارائه نمی‌شود که یک شیء چه زمانی، آیا اصلاً، یا هر چند وقت یک‌بار به‌طور خودکار نهایی‌سازی می‌شود، مگر:"
 
 msgid "Python will not automatically finalize an object if it is reachable, i.e., there is a reference to it and it is not a member of a :term:`cyclic isolate`."
-msgstr "پایتون در صورتی که شیئی در دسترس باشد — یعنی ارجاعی به آن وجود داشته باشد و عضوی از یک :term:`cyclic isolate` نباشد — آن را به‌طور خودکار نهایی‌سازی نمی‌کند."
+msgstr "پایتون در صورتی که شیء‌ای در دسترس باشد — یعنی ارجاعی به آن وجود داشته باشد و عضوی از یک :term:`cyclic isolate` نباشد — آن را به‌طور خودکار نهایی‌سازی نمی‌کند."
 
 msgid "Python will not automatically finalize an object if finalizing it would not mark the object as *finalized*.  Currently, this applies to objects whose type does not support garbage collection, i.e., the :c:macro:`Py_TPFLAGS_HAVE_GC` flag is not set.  Such objects can still be manually finalized by calling :c:func:`PyObject_CallFinalizer` or :c:func:`PyObject_CallFinalizerFromDealloc`."
 msgstr "پایتون به‌طور خودکار یک شیء را نهایی‌سازی نمی‌کند اگر نهایی‌سازی آن، آن شیء را به‌عنوان *نهایی‌شده* علامت‌گذاری نکند. در حال حاضر، این مورد بر اشیائی اعمال می‌شود که نوع آن‌ها از زباله‌روبی پشتیبانی نمی‌کند؛ یعنی پرچم :c:macro:`Py_TPFLAGS_HAVE_GC` تنظیم نشده است. این‌گونه اشیاء همچنان می‌توانند با فراخوانی :c:func:`PyObject_CallFinalizer` یا :c:func:`PyObject_CallFinalizerFromDealloc` به‌صورت دستی نهایی‌سازی شوند."
@@ -2638,7 +2638,7 @@ msgid "Must return an :term:`asynchronous iterator` object. See :meth:`~object._
 msgstr "باید یک شیء :term:`asynchronous iterator` برگرداند. برای جزئیات به :meth:`~object.__anext__` مراجعه کنید."
 
 msgid "This slot may be set to ``NULL`` if an object does not implement asynchronous iteration protocol."
-msgstr "اگر شیئی پروتکل پیمایش ناهمگام را پیاده‌سازی نکرده باشد، این جایگاه می‌تواند برابر ``NULL`` قرار داده شود."
+msgstr "اگر شیء‌ای پروتکل پیمایش ناهمگام را پیاده‌سازی نکرده باشد، این جایگاه می‌تواند برابر ``NULL`` قرار داده شود."
 
 msgid "PyObject *am_anext(PyObject *self);"
 msgstr "PyObject *am_anext(PyObject *self);"

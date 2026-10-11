@@ -553,7 +553,7 @@ msgid "asyncio"
 msgstr "asyncio"
 
 msgid ":func:`asyncio.as_completed` now returns an object that is both an :term:`asynchronous iterator` and a plain :term:`iterator` of :term:`awaitables <awaitable>`. The awaitables yielded by asynchronous iteration include original task or future objects that were passed in, making it easier to associate results with the tasks being completed. (Contributed by Justin Arthur in :gh:`77714`.)"
-msgstr ":func:`asyncio.as_completed` اکنون شیئی را برمی‌گرداند که هم یک :term:`پیمایش‌گر ناهمگام <asynchronous iterator>` است و هم یک :term:`پیمایش‌گر <iterator>` ساده از :term:`انتظارپذیرها <awaitable>`. انتظارپذیرهایی که توسط پیمایش ناهمگام تولید می‌شوند، شامل اشیاء اصلی وظیفه یا آینده‌نما هستند که به آن پاس داده شده‌اند؛ این امر مرتبط کردن نتایج با وظایف در حال تکمیل را آسان‌تر می‌کند. (مشارکت‌شده توسط Justin Arthur در :gh:`77714`.)"
+msgstr ":func:`asyncio.as_completed` اکنون شیء‌ای را برمی‌گرداند که هم یک :term:`پیمایش‌گر ناهمگام <asynchronous iterator>` است و هم یک :term:`پیمایش‌گر <iterator>` ساده از :term:`انتظارپذیرها <awaitable>`. انتظارپذیرهایی که توسط پیمایش ناهمگام تولید می‌شوند، شامل اشیاء اصلی وظیفه یا آینده‌نما هستند که به آن پاس داده شده‌اند؛ این امر مرتبط کردن نتایج با وظایف در حال تکمیل را آسان‌تر می‌کند. (مشارکت‌شده توسط Justin Arthur در :gh:`77714`.)"
 
 msgid ":meth:`asyncio.loop.create_unix_server` will now automatically remove the Unix socket when the server is closed. (Contributed by Pierre Ossman in :gh:`111246`.)"
 msgstr ":meth:`asyncio.loop.create_unix_server` اکنون هنگام بسته شدن سرور، سوکت یونیکس را به‌طور خودکار حذف می‌کند. (مشارکت‌شده توسط Pierre Ossman در :gh:`111246`.)"

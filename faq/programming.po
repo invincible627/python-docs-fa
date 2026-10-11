@@ -446,7 +446,7 @@ msgid "There are two factors that produce this result:"
 msgstr "دو عامل وجود دارند که این نتیجه را ایجاد می‌کنند:"
 
 msgid "Variables are simply names that refer to objects.  Doing ``y = x`` doesn't create a copy of the list -- it creates a new variable ``y`` that refers to the same object ``x`` refers to.  This means that there is only one object (the list), and both ``x`` and ``y`` refer to it."
-msgstr "متغیرها صرفاً نام‌هایی هستند که به شیء‌ها ارجاع می‌دهند. با انجام ``y = x`` رونوشتی از فهرست ایجاد نمی‌شود، بلکه یک متغیر جدید ``y`` ایجاد می‌شود که به همان شیئی ارجاع می‌دهد که ``x`` به آن ارجاع می‌دهد. این بدان معناست که تنها یک شیء (فهرست) وجود دارد و هر دو ``x`` و ``y`` به آن ارجاع می‌دهند."
+msgstr "متغیرها صرفاً نام‌هایی هستند که به شیء‌ها ارجاع می‌دهند. با انجام ``y = x`` رونوشتی از فهرست ایجاد نمی‌شود، بلکه یک متغیر جدید ``y`` ایجاد می‌شود که به همان شیء‌ای ارجاع می‌دهد که ``x`` به آن ارجاع می‌دهد. این بدان معناست که تنها یک شیء (فهرست) وجود دارد و هر دو ``x`` و ``y`` به آن ارجاع می‌دهند."
 
 msgid "Lists are :term:`mutable`, which means that you can change their content."
 msgstr "فهرست‌ها :term:`تغییرپذیر <mutable>` هستند، به این معنا که می‌توانید محتوای آن‌ها را تغییر دهید."
@@ -1021,7 +1021,7 @@ msgid "How do I modify a string in place?"
 msgstr "چگونه می‌توانم یک رشته را به‌صورت درجا تغییر دهم؟"
 
 msgid "You can't, because strings are immutable.  In most situations, you should simply construct a new string from the various parts you want to assemble it from.  However, if you need an object with the ability to modify in-place Unicode data, try using an :class:`io.StringIO` object or the :mod:`array` module::"
-msgstr "نمی‌توانید، زیرا رشته‌ها تغییرناپذیرند. در بیشتر مواقع، باید به‌سادگی رشته‌ی جدیدی را از اجزای مختلفی که می‌خواهید از آن‌ها تشکیل شود، بسازید. با این حال، اگر به شیئی با قابلیت اصلاح داده‌های یونیکد به‌صورت درجا نیاز دارید، سعی کنید از یک شیء :class:`io.StringIO` یا ماژول :mod:`array` استفاده کنید::"
+msgstr "نمی‌توانید، زیرا رشته‌ها تغییرناپذیرند. در بیشتر مواقع، باید به‌سادگی رشته‌ی جدیدی را از اجزای مختلفی که می‌خواهید از آن‌ها تشکیل شود، بسازید. با این حال، اگر به شیء‌ای با قابلیت اصلاح داده‌های یونیکد به‌صورت درجا نیاز دارید، سعی کنید از یک شیء :class:`io.StringIO` یا ماژول :mod:`array` استفاده کنید::"
 
 msgid ""
 ">>> import io\n"
@@ -1109,7 +1109,7 @@ msgstr ""
 "getattr(foo, 'bar')()"
 
 msgid "Note that :func:`getattr` works on any object, including classes, class instances, modules, and so on."
-msgstr "توجه داشته باشید که :func:`getattr` روی هر شیئی کار می‌کند، از جمله کلاس‌ها، نمونه‌های کلاس، ماژول‌ها و غیره."
+msgstr "توجه داشته باشید که :func:`getattr` روی هر شیء‌ای کار می‌کند، از جمله کلاس‌ها، نمونه‌های کلاس، ماژول‌ها و غیره."
 
 msgid "This is used in several places in the standard library, like this::"
 msgstr "این در چندین جای کتابخانه‌ی استاندارد استفاده می‌شود، مانند این::"
@@ -1575,7 +1575,7 @@ msgstr ""
 "TypeError: 'tuple' object does not support item assignment"
 
 msgid "The reason for the exception should be immediately clear: ``1`` is added to the object ``a_tuple[0]`` points to (``1``), producing the result object, ``2``, but when we attempt to assign the result of the computation, ``2``, to element ``0`` of the tuple, we get an error because we can't change what an element of a tuple points to."
-msgstr "دلیل این استثنا باید بلافاصله روشن باشد: با اضافه شدن ``1`` به شیئی که ``a_tuple[0]`` به آن اشاره می‌کند (``1``)، شیء نتیجه، ``2``، تولید می‌شود، اما وقتی تلاش می‌کنیم نتیجه‌ی محاسبه، ``2``، را به عنصر ``0`` تاپل انتساب دهیم، با خطا مواجه می‌شویم، زیرا نمی‌توانیم آنچه را که یک عنصر از تاپل به آن اشاره می‌کند تغییر دهیم."
+msgstr "دلیل این استثنا باید بلافاصله روشن باشد: با اضافه شدن ``1`` به شیء‌ای که ``a_tuple[0]`` به آن اشاره می‌کند (``1``)، شیء نتیجه، ``2``، تولید می‌شود، اما وقتی تلاش می‌کنیم نتیجه‌ی محاسبه، ``2``، را به عنصر ``0`` تاپل انتساب دهیم، با خطا مواجه می‌شویم، زیرا نمی‌توانیم آنچه را که یک عنصر از تاپل به آن اشاره می‌کند تغییر دهیم."
 
 msgid "Under the covers, what this augmented assignment statement is doing is approximately this::"
 msgstr "آنچه این دستور انتساب افزوده در پشت صحنه انجام می‌دهد، تقریباً این است::"
@@ -1647,7 +1647,7 @@ msgstr ""
 ">>> a_list = result"
 
 msgid "The object pointed to by a_list has been mutated, and the pointer to the mutated object is assigned back to ``a_list``.  The end result of the assignment is a no-op, since it is a pointer to the same object that ``a_list`` was previously pointing to, but the assignment still happens."
-msgstr "شیئی که a_list به آن اشاره دارد تغییریافته است و اشاره‌گر به شیء تغییریافته دوباره به ``a_list`` منتسب می‌شود. نتیجه نهایی این انتساب، یک عملیات بی‌اثر (no-op) است، زیرا این یک اشاره‌گر به همان شیئی است که ``a_list`` پیش‌تر به آن اشاره می‌کرد، اما انتساب همچنان انجام می‌شود."
+msgstr "شیء‌ای که a_list به آن اشاره دارد تغییریافته است و اشاره‌گر به شیء تغییریافته دوباره به ``a_list`` منتسب می‌شود. نتیجه نهایی این انتساب، یک عملیات بی‌اثر (no-op) است، زیرا این یک اشاره‌گر به همان شیء‌ای است که ``a_list`` پیش‌تر به آن اشاره می‌کرد، اما انتساب همچنان انجام می‌شود."
 
 msgid "Thus, in our tuple example what is happening is equivalent to::"
 msgstr "بنابراین، در مثال تاپل ما، آنچه رخ می‌دهد معادل است با::"
@@ -1666,7 +1666,7 @@ msgstr ""
 "TypeError: 'tuple' object does not support item assignment"
 
 msgid "The :meth:`!__iadd__` succeeds, and thus the list is extended, but even though ``result`` points to the same object that ``a_tuple[0]`` already points to, that final assignment still results in an error, because tuples are immutable."
-msgstr ":meth:`!__iadd__` با موفقیت اجرا می‌شود، و بنابراین فهرست گسترش می‌یابد، اما با وجود اینکه ``result`` به همان شیئی اشاره می‌کند که ``a_tuple[0]`` از قبل به آن اشاره می‌کند، آن انتساب نهایی همچنان منجر به خطا می‌شود، زیرا تاپل‌ها تغییرناپذیر هستند."
+msgstr ":meth:`!__iadd__` با موفقیت اجرا می‌شود، و بنابراین فهرست گسترش می‌یابد، اما با وجود اینکه ``result`` به همان شیء‌ای اشاره می‌کند که ``a_tuple[0]`` از قبل به آن اشاره می‌کند، آن انتساب نهایی همچنان منجر به خطا می‌شود، زیرا تاپل‌ها تغییرناپذیر هستند."
 
 msgid "I want to do a complicated sort: can you do a Schwartzian Transform in Python?"
 msgstr "می‌خواهم یک مرتب‌سازی پیچیده انجام دهم: آیا می‌توانید تبدیل شوارتزی (Schwartzian Transform) را در پایتون انجام دهید؟"
@@ -2152,7 +2152,7 @@ msgid "Putting an object in a container that stores object references does not c
 msgstr "قرار دادن یک شیء در ظرفی که ارجاع‌های شیء را ذخیره می‌کند، هویت شیء را تغییر نمی‌دهد. پس از انتساب ``s[0] = x`` در فهرست، تضمین می‌شود که ``s[0] is x``."
 
 msgid "If an object is a singleton, it means that only one instance of that object can exist.  After the assignments ``a = None`` and ``b = None``, it is guaranteed that ``a is b`` because ``None`` is a singleton."
-msgstr "اگر شیئی تک‌نمونه باشد، به این معناست که تنها یک نمونه از آن شیء می‌تواند وجود داشته باشد. پس از انتساب‌های ``a = None`` و ``b = None``، تضمین می‌شود که ``a is b`` زیرا ``None`` یک تک‌نمونه است."
+msgstr "اگر شیء‌ای تک‌نمونه باشد، به این معناست که تنها یک نمونه از آن شیء می‌تواند وجود داشته باشد. پس از انتساب‌های ``a = None`` و ``b = None``، تضمین می‌شود که ``a is b`` زیرا ``None`` یک تک‌نمونه است."
 
 msgid "In most other circumstances, identity tests are inadvisable and equality tests are preferred.  In particular, identity tests should not be used to check constants such as :class:`int` and :class:`str` which aren't guaranteed to be singletons::"
 msgstr "در بیشتر شرایط دیگر، آزمون‌های هویت توصیه نمی‌شوند و آزمون‌های برابری ترجیح داده می‌شوند. به‌ویژه، نباید از آزمون‌های هویت برای بررسی ثابت‌هایی مانند :class:`int` و :class:`str` استفاده کرد، زیرا تضمین نمی‌شود که نمونه‌های یکتا باشند::"

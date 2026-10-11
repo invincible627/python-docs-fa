@@ -100,7 +100,7 @@ msgid "Whenever they can do so cheaply (without additional allocation), callers 
 msgstr "هرگاه بتوانند این کار را با هزینه‌ی اندکی انجام دهند (بدون تخصیص اضافی)، به فراخوان‌کنندگان توصیه می‌شود که از :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` استفاده کنند. انجام این کار به فراخوانی‌پذیرهایی مانند متدهای مقید اجازه می‌دهد تا فراخوانی‌های بعدی خود (که آرگومان *self* در ابتدای آن‌ها افزوده شده است) را به‌طور بسیار کارآمد انجام دهند."
 
 msgid "To call an object that implements vectorcall, use a :ref:`call API <capi-call>` function as with any other callable. :c:func:`PyObject_Vectorcall` will usually be most efficient."
-msgstr "برای فراخوانی شیئی که vectorcall را پیاده‌سازی می‌کند، مانند هر فراخوانی‌پذیر دیگری از یک تابع :ref:`API فراخوانی <capi-call>` استفاده کنید. :c:func:`PyObject_Vectorcall` معمولاً کارآمدترین خواهد بود."
+msgstr "برای فراخوانی شیء‌ای که vectorcall را پیاده‌سازی می‌کند، مانند هر فراخوانی‌پذیر دیگری از یک تابع :ref:`API فراخوانی <capi-call>` استفاده کنید. :c:func:`PyObject_Vectorcall` معمولاً کارآمدترین خواهد بود."
 
 msgid "Recursion Control"
 msgstr "کنترل بازگشت"
@@ -310,7 +310,7 @@ msgid "Regardless of which protocol is used internally, a conversion of argument
 msgstr "صرف‌نظر از اینکه کدام پروتکل به‌طور داخلی استفاده می‌شود، باید تبدیلی روی آرگومان‌ها انجام شود. بنابراین، این تابع تنها زمانی باید استفاده شود که فراخوان‌کننده از قبل دیکشنری آماده‌ای برای آرگومان‌های کلیدواژه‌ای داشته باشد، اما تاپلی برای آرگومان‌های جایگاهی نداشته باشد."
 
 msgid "Call a method using the vectorcall calling convention. The name of the method is given as a Python string *name*. The object whose method is called is *args[0]*, and the *args* array starting at *args[1]* represents the arguments of the call. There must be at least one positional argument. *nargsf* is the number of positional arguments including *args[0]*, plus :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` if the value of ``args[0]`` may temporarily be changed. Keyword arguments can be passed just like in :c:func:`PyObject_Vectorcall`."
-msgstr "یک متد را با استفاده از قرارداد فراخوانی vectorcall فراخوانی کنید. نام متد به صورت رشته پایتون *name* داده می‌شود. شیئی که متد آن فراخوانی می‌شود *args[0]* است و آرایه *args* که از *args[1]* آغاز می‌شود، آرگومان‌های فراخوانی را نشان می‌دهد. باید حداقل یک آرگومان جایگاهی وجود داشته باشد. *nargsf* تعداد آرگومان‌های جایگاهی شامل *args[0]* است، به‌علاوه :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` در صورتی که مقدار ``args[0]`` ممکن است به‌طور موقت تغییر کند. آرگومان‌های کلیدواژه‌ای را می‌توان دقیقاً مشابه :c:func:`PyObject_Vectorcall` ارسال کرد."
+msgstr "یک متد را با استفاده از قرارداد فراخوانی vectorcall فراخوانی کنید. نام متد به صورت رشته پایتون *name* داده می‌شود. شیء‌ای که متد آن فراخوانی می‌شود *args[0]* است و آرایه *args* که از *args[1]* آغاز می‌شود، آرگومان‌های فراخوانی را نشان می‌دهد. باید حداقل یک آرگومان جایگاهی وجود داشته باشد. *nargsf* تعداد آرگومان‌های جایگاهی شامل *args[0]* است، به‌علاوه :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` در صورتی که مقدار ``args[0]`` ممکن است به‌طور موقت تغییر کند. آرگومان‌های کلیدواژه‌ای را می‌توان دقیقاً مشابه :c:func:`PyObject_Vectorcall` ارسال کرد."
 
 msgid "If the object has the :c:macro:`Py_TPFLAGS_METHOD_DESCRIPTOR` feature, this will call the unbound method object with the full *args* vector as arguments."
 msgstr "اگر شیء قابلیت :c:macro:`Py_TPFLAGS_METHOD_DESCRIPTOR` را داشته باشد، این، شیء متد غیرمقید را با بردار کامل *args* به‌عنوان آرگومان‌ها فراخوانی می‌کند."

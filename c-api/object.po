@@ -140,7 +140,7 @@ msgid "This function can be called without an :term:`attached thread state`, but
 msgstr "این تابع را می‌توان بدون :term:`وضعیت نخ متصل <attached thread state>` فراخوانی کرد، اما انجام این کار توصیه نمی‌شود: می‌تواند باعث ایجاد بن‌بست شود."
 
 msgid "An object that does not belong to the current interpreter may be dumped, but this may also cause crashes or unintended behavior."
-msgstr "ممکن است شیئی که متعلق به مفسر فعلی نیست برون‌ریزی شود، اما این کار همچنین ممکن است باعث فروپاشی یا رفتارهای ناخواسته‌ای شود."
+msgstr "ممکن است شیء‌ای که متعلق به مفسر فعلی نیست برون‌ریزی شود، اما این کار همچنین ممکن است باعث فروپاشی یا رفتارهای ناخواسته‌ای شود."
 
 msgid "Implement a heuristic to detect if the object memory has been freed. Don't display the object contents in this case, only its memory address."
 msgstr "پیاده‌سازی یک روش اکتشافی برای تشخیص اینکه آیا حافظه‌ی شیء آزاد شده است یا خیر. در این صورت محتویات شیء را نمایش ندهید، بلکه فقط آدرس حافظه‌ی آن را نشان دهید."
@@ -414,7 +414,7 @@ msgid "This function returns ``1`` if deferred reference counting is enabled on 
 msgstr "این تابع در صورتی که شمارش ارجاعِ معوق روی *obj* فعال باشد، مقدار ``1`` را برمی‌گرداند و در صورتی که شمارش ارجاعِ معوق پشتیبانی نشده باشد یا مفسر راهنما را نادیده گرفته باشد (مانند زمانی که شمارش ارجاعِ معوق از قبل روی *obj* فعال باشد)، مقدار ``0`` را برمی‌گرداند. این تابع نخ‌ایمن است و نمی‌تواند شکست بخورد."
 
 msgid "This function does nothing on builds with the :term:`GIL` enabled, which do not support deferred reference counting. This also does nothing if *obj* is not an object tracked by the garbage collector (see :func:`gc.is_tracked` and :c:func:`PyObject_GC_IsTracked`)."
-msgstr "این تابع در نسخه‌های ساخته‌شده‌ای که :term:`GIL` در آن‌ها فعال است و از شمارش ارجاعِ معوق پشتیبانی نمی‌کنند، هیچ کاری انجام نمی‌دهد. همچنین اگر *obj* شیئی نباشد که توسط زباله‌روب پیگیری می‌شود، این تابع هیچ کاری انجام نمی‌دهد (به :func:`gc.is_tracked` و :c:func:`PyObject_GC_IsTracked` مراجعه کنید)."
+msgstr "این تابع در نسخه‌های ساخته‌شده‌ای که :term:`GIL` در آن‌ها فعال است و از شمارش ارجاعِ معوق پشتیبانی نمی‌کنند، هیچ کاری انجام نمی‌دهد. همچنین اگر *obj* شیء‌ای نباشد که توسط زباله‌روب پیگیری می‌شود، این تابع هیچ کاری انجام نمی‌دهد (به :func:`gc.is_tracked` و :c:func:`PyObject_GC_IsTracked` مراجعه کنید)."
 
 msgid "This function is intended to be used soon after *obj* is created, by the code that creates it, such as in the object's :c:member:`~PyTypeObject.tp_new` slot."
 msgstr "این تابع برای استفاده به‌زودی پس از ایجاد *obj*، توسط کدی که آن را ایجاد می‌کند، در نظر گرفته شده است؛ برای مثال در جایگاه :c:member:`~PyTypeObject.tp_new` شیء."
@@ -423,7 +423,7 @@ msgid "Check if *obj* is a unique temporary object. Returns ``1`` if *obj* is kn
 msgstr "بررسی می‌کند که آیا *obj* یک شیء موقت یکتا است یا نه. اگر مشخص باشد که *obj* یک شیء موقت یکتا است، ``1`` و در غیر این صورت ``0`` را برمی‌گرداند. این تابع نمی‌تواند شکست بخورد، اما بررسی محافظه‌کارانه است و ممکن است در برخی موارد حتی اگر *obj* یک شیء موقت یکتا باشد، ``0`` برگرداند."
 
 msgid "If an object is a unique temporary, it is guaranteed that the current code has the only reference to the object. For arguments to C functions, this should be used instead of checking if the reference count is ``1``. Starting with Python 3.14, the interpreter internally avoids some reference count modifications when loading objects onto the operands stack by :term:`borrowing <borrowed reference>` references when possible, which means that a reference count of ``1`` by itself does not guarantee that a function argument uniquely referenced."
-msgstr "اگر شیئی موقتِ یکتا (unique temporary) باشد، تضمین می‌شود که کد فعلی تنها ارجاع به آن شیء را دارد. برای آرگومان‌های توابع C، باید از این به‌جای بررسی اینکه آیا شمارش ارجاع ``1`` است استفاده کرد. از پایتون 3.14 به بعد، مفسر به‌صورت داخلی هنگام بارگذاری اشیاء روی پشته عملوندها، در صورت امکان با :term:`امانت گرفتن <borrowed reference>` ارجاع‌ها، از برخی از تغییرات شمارش ارجاع اجتناب می‌کند؛ این بدان معناست که شمارش ارجاع ``1`` به‌تنهایی تضمین نمی‌کند که آرگومان تابع به‌طور یکتا ارجاع شده باشد."
+msgstr "اگر شیء‌ای موقتِ یکتا (unique temporary) باشد، تضمین می‌شود که کد فعلی تنها ارجاع به آن شیء را دارد. برای آرگومان‌های توابع C، باید از این به‌جای بررسی اینکه آیا شمارش ارجاع ``1`` است استفاده کرد. از پایتون 3.14 به بعد، مفسر به‌صورت داخلی هنگام بارگذاری اشیاء روی پشته عملوندها، در صورت امکان با :term:`امانت گرفتن <borrowed reference>` ارجاع‌ها، از برخی از تغییرات شمارش ارجاع اجتناب می‌کند؛ این بدان معناست که شمارش ارجاع ``1`` به‌تنهایی تضمین نمی‌کند که آرگومان تابع به‌طور یکتا ارجاع شده باشد."
 
 msgid "In the example below, ``my_func`` is called with a unique temporary object as its argument::"
 msgstr "در مثال زیر، ``my_func`` با یک شیء موقت یکتا به‌عنوان آرگومان خود فراخوانی می‌شود::"

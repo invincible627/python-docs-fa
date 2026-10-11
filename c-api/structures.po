@@ -388,7 +388,7 @@ msgid "This is the same as :c:func:`PyCFunction_GetFunction`, but without error 
 msgstr "این همان :c:func:`PyCFunction_GetFunction` است، اما بدون بررسی خطا یا بررسی نوع."
 
 msgid "Get the \"self\" object on *func*. This is the object that would be passed to the first argument of a :c:type:`PyCFunction`. For C function objects created through a :c:type:`PyMethodDef` on a :c:type:`PyModuleDef`, this is the resulting module object."
-msgstr "گرفتن شیء \"self\" روی *func*. این همان شیئی است که به آرگومان اول یک :c:type:`PyCFunction` پاس داده می‌شود. برای اشیاء تابع C که از طریق یک :c:type:`PyMethodDef` روی یک :c:type:`PyModuleDef` ایجاد شده‌اند، این همان شیء ماژول حاصل است."
+msgstr "گرفتن شیء \"self\" روی *func*. این همان شیء‌ای است که به آرگومان اول یک :c:type:`PyCFunction` پاس داده می‌شود. برای اشیاء تابع C که از طریق یک :c:type:`PyMethodDef` روی یک :c:type:`PyModuleDef` ایجاد شده‌اند، این همان شیء ماژول حاصل است."
 
 msgid "This function returns a :term:`borrowed reference` to the \"self\" object on success, and ``NULL`` with an exception set on failure."
 msgstr "این تابع در صورت موفقیت، یک :term:`ارجاع امانتی <borrowed reference>` به شیء \"self\" برمی‌گرداند و در صورت شکست، ``NULL`` را همراه با استثنای تنظیم‌شده برمی‌گرداند."
