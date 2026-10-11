@@ -20,6 +20,7 @@
 | c-api/bool.po | 100.0% | 0.0% | 11 | 0 |
 | c-api/buffer.po | 100.0% | 0.0% | 119 | 0 |
 | c-api/bytearray.po | 100.0% | 0.0% | 24 | 0 |
+| c-api/bytes.po | 100.0% | 0.0% | 135 | 0 |
 | c-api/call.po | 100.0% | 0.0% | 99 | 0 |
 | c-api/capsule.po | 100.0% | 0.0% | 36 | 0 |
 | c-api/cell.po | 100.0% | 0.0% | 11 | 0 |
@@ -73,6 +74,7 @@
 | c-api/sentinel.po | 100.0% | 0.0% | 6 | 0 |
 | c-api/sequence.po | 100.0% | 0.0% | 32 | 0 |
 | c-api/set.po | 100.0% | 0.0% | 35 | 0 |
+| c-api/slice.po | 100.0% | 0.0% | 26 | 0 |
 | c-api/slots.po | 100.0% | 0.0% | 45 | 0 |
 | c-api/stable.po | 100.0% | 0.0% | 97 | 0 |
 | c-api/structures.po | 100.0% | 0.0% | 212 | 0 |
@@ -130,6 +132,7 @@
 | faq/windows.po | 100.0% | 0.0% | 58 | 0 |
 | glossary.po | 100.0% | 0.0% | 501 | 0 |
 | howto/a-conceptual-overview-of-asyncio.po | 100.0% | 0.0% | 95 | 0 |
+| howto/abi3t-migration.po | 100.0% | 0.0% | 179 | 0 |
 | howto/annotations.po | 100.0% | 0.0% | 50 | 0 |
 | howto/argparse-optparse.po | 100.0% | 0.0% | 20 | 0 |
 | howto/argparse.po | 100.0% | 0.0% | 143 | 0 |
@@ -171,6 +174,7 @@
 | library/archiving.po | 100.0% | 0.0% | 2 | 0 |
 | library/argparse.po | 100.0% | 0.0% | 421 | 0 |
 | library/array.po | 100.0% | 0.0% | 102 | 0 |
+| library/ast.po | 100.0% | 0.0% | 346 | 0 |
 | library/asynchat.po | 100.0% | 0.0% | 4 | 0 |
 | library/asyncio-api-index.po | 100.0% | 0.0% | 100 | 0 |
 | library/asyncio-dev.po | 100.0% | 0.0% | 84 | 0 |
@@ -232,6 +236,7 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
+| library/ctypes.po | 100.0% | 0.0% | 679 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -350,6 +355,7 @@
 | library/operator.po | 100.0% | 0.0% | 189 | 0 |
 | library/optparse.po | 100.0% | 0.0% | 532 | 0 |
 | library/os.path.po | 100.0% | 0.0% | 113 | 0 |
+| library/os.po | 100.0% | 0.0% | 1135 | 0 |
 | library/ossaudiodev.po | 100.0% | 0.0% | 3 | 0 |
 | library/pathlib.po | 100.0% | 0.0% | 444 | 0 |
 | library/pdb.po | 100.0% | 0.0% | 179 | 0 |
@@ -373,6 +379,7 @@
 | library/py_compile.po | 100.0% | 0.0% | 30 | 0 |
 | library/pyclbr.po | 100.0% | 0.0% | 26 | 0 |
 | library/pydoc.po | 100.0% | 0.0% | 25 | 0 |
+| library/pyexpat.po | 100.0% | 0.0% | 178 | 0 |
 | library/python.po | 100.0% | 0.0% | 3 | 0 |
 | library/queue.po | 100.0% | 0.0% | 58 | 0 |
 | library/quopri.po | 100.0% | 0.0% | 13 | 0 |
@@ -426,6 +433,7 @@
 | library/text.po | 100.0% | 0.0% | 3 | 0 |
 | library/textwrap.po | 100.0% | 0.0% | 58 | 0 |
 | library/threading.po | 100.0% | 0.0% | 308 | 0 |
+| library/time.po | 100.0% | 0.0% | 282 | 0 |
 | library/timeit.po | 100.0% | 0.0% | 71 | 0 |
 | library/tk.po | 100.0% | 0.0% | 8 | 0 |
 | library/tkinter.colorchooser.po | 100.0% | 0.0% | 8 | 0 |
@@ -456,6 +464,7 @@
 | library/urllib.request.po | 100.0% | 0.0% | 298 | 0 |
 | library/urllib.robotparser.po | 100.0% | 0.0% | 19 | 0 |
 | library/uu.po | 100.0% | 0.0% | 4 | 0 |
+| library/uuid.po | 100.0% | 0.0% | 79 | 0 |
 | library/venv.po | 100.0% | 0.0% | 139 | 0 |
 | library/warnings.po | 100.0% | 0.0% | 165 | 0 |
 | library/wave.po | 100.0% | 0.0% | 73 | 0 |
@@ -469,7 +478,10 @@
 | library/xml.dom.minidom.po | 100.0% | 0.0% | 60 | 0 |
 | library/xml.dom.po | 100.0% | 0.0% | 302 | 0 |
 | library/xml.dom.pulldom.po | 100.0% | 0.0% | 31 | 0 |
+| library/xml.etree.elementtree.po | 100.0% | 0.0% | 278 | 0 |
 | library/xml.po | 100.0% | 0.0% | 32 | 0 |
+| library/xml.sax.handler.po | 100.0% | 0.0% | 114 | 0 |
+| library/xml.sax.po | 100.0% | 0.0% | 34 | 0 |
 | library/xml.sax.reader.po | 100.0% | 0.0% | 76 | 0 |
 | library/xml.sax.utils.po | 100.0% | 0.0% | 17 | 0 |
 | library/xmlrpc.client.po | 100.0% | 0.0% | 113 | 0 |
@@ -480,10 +492,12 @@
 | library/zipimport.po | 100.0% | 0.0% | 38 | 0 |
 | library/zlib.po | 100.0% | 0.0% | 103 | 0 |
 | library/zoneinfo.po | 100.0% | 0.0% | 84 | 0 |
+| license.po | 100.0% | 0.0% | 139 | 0 |
 | reference/compound_stmts.po | 100.0% | 0.0% | 499 | 0 |
 | reference/datamodel.po | 100.0% | 0.0% | 915 | 0 |
 | reference/executionmodel.po | 100.0% | 0.0% | 145 | 0 |
 | reference/expressions.po | 100.0% | 0.0% | 674 | 0 |
+| reference/grammar.po | 100.0% | 0.0% | 7 | 0 |
 | reference/import.po | 100.0% | 0.0% | 203 | 0 |
 | reference/index.po | 100.0% | 0.0% | 4 | 0 |
 | reference/introduction.po | 100.0% | 0.0% | 56 | 0 |
@@ -531,6 +545,8 @@
 | whatsnew/3.11.po | 100.0% | 0.0% | 776 | 0 |
 | whatsnew/3.12.po | 100.0% | 0.0% | 914 | 0 |
 | whatsnew/3.13.po | 100.0% | 0.0% | 991 | 0 |
+| whatsnew/3.14.po | 100.0% | 0.0% | 1111 | 0 |
+| whatsnew/3.15.po | 100.0% | 0.0% | 819 | 0 |
 | whatsnew/3.2.po | 100.0% | 0.0% | 576 | 0 |
 | whatsnew/3.3.po | 100.0% | 0.0% | 682 | 0 |
 | whatsnew/3.4.po | 100.0% | 0.0% | 517 | 0 |
@@ -539,23 +555,7 @@
 | whatsnew/3.7.po | 100.0% | 0.0% | 568 | 0 |
 | whatsnew/3.8.po | 100.0% | 0.0% | 513 | 0 |
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
+| whatsnew/changelog.po | 100.0% | 0.0% | 15495 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| whatsnew/3.14.po | 99.9% | 0.1% | 1110 | 0 |
-| library/ctypes.po | 99.9% | 0.1% | 678 | 0 |
-| library/ast.po | 99.7% | 0.3% | 345 | 0 |
-| howto/abi3t-migration.po | 99.4% | 0.6% | 178 | 0 |
-| whatsnew/3.15.po | 99.4% | 0.2% | 814 | 3 |
-| library/os.po | 99.4% | 0.6% | 1128 | 0 |
-| license.po | 99.3% | 0.7% | 138 | 0 |
-| library/xml.sax.handler.po | 99.1% | 0.9% | 113 | 0 |
-| library/xml.etree.elementtree.po | 97.8% | 2.2% | 272 | 0 |
-| library/time.po | 96.5% | 3.5% | 272 | 0 |
-| c-api/slice.po | 96.2% | 3.8% | 25 | 0 |
-| library/uuid.po | 94.9% | 5.1% | 75 | 0 |
-| library/xml.sax.po | 94.1% | 5.9% | 32 | 0 |
-| library/pyexpat.po | 93.3% | 6.7% | 166 | 0 |
-| c-api/bytes.po | 89.6% | 0.7% | 121 | 13 |
-| reference/grammar.po | 85.7% | 14.3% | 6 | 0 |
-| whatsnew/changelog.po | 45.3% | 0.5% | 7056 | 8429 |
-| **مجموع** | **90.5%** | **0.1%** | **81869** | **8445** |
+| **مجموع** | **100.0%** | **0.0%** | **90376** | **0** |
 <!-- TRANSLATION_STATUS_END -->

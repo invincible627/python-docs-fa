@@ -1,7 +1,7 @@
 | User | Role | Translated Count |
 |:-----|:------:|:------------------:|
 | Revisto | coordinator | 3984 |
-| sepehr-rs | coordinator | 41724 |
+| sepehr-rs | coordinator | 41818 |
 | danialbehzadi | reviewer | 677 |
 | invincible627 | translator | 358 |
 | khosro_o | reviewer | 63 |
@@ -16,6 +16,6 @@
 | pangominn | translator | 2 |
 | mdflx | reviewer | 1 |
 | ashykng | translator | 1 |
-| arman mohebali | translator | 5830 |
+| arman mohebali | translator | 14270 |
 | mahdyaralipor | translator | 21 |
-| Farid Farahani | translator | 2 |
+| Farid Farahani | translator | 3 |
