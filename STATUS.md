@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-11)
+(به‌روزرسانی: 2026-10-12)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -56,7 +56,6 @@
 | c-api/list.po | 100.0% | 0.0% | 38 | 0 |
 | c-api/long.po | 100.0% | 0.0% | 179 | 0 |
 | c-api/mapping.po | 100.0% | 0.0% | 23 | 0 |
-| c-api/marshal.po | 100.0% | 0.0% | 17 | 0 |
 | c-api/memory.po | 100.0% | 0.0% | 219 | 0 |
 | c-api/memoryview.po | 100.0% | 0.0% | 15 | 0 |
 | c-api/method.po | 100.0% | 0.0% | 20 | 0 |
@@ -450,7 +449,6 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
-| library/turtle.po | 100.0% | 0.0% | 586 | 0 |
 | library/types.po | 100.0% | 0.0% | 110 | 0 |
 | library/typing.po | 100.0% | 0.0% | 861 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 100 | 0 |
@@ -524,7 +522,6 @@
 | tutorial/whatnow.po | 100.0% | 0.0% | 18 | 0 |
 | using/android.po | 100.0% | 0.0% | 27 | 0 |
 | using/cmdline.po | 100.0% | 0.0% | 284 | 0 |
-| using/configure.po | 100.0% | 0.0% | 495 | 0 |
 | using/editors.po | 100.0% | 0.0% | 6 | 0 |
 | using/index.po | 100.0% | 0.0% | 2 | 0 |
 | using/ios.po | 100.0% | 0.0% | 91 | 0 |
@@ -555,7 +552,10 @@
 | whatsnew/3.7.po | 100.0% | 0.0% | 568 | 0 |
 | whatsnew/3.8.po | 100.0% | 0.0% | 513 | 0 |
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
-| whatsnew/changelog.po | 100.0% | 0.0% | 15495 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| **مجموع** | **100.0%** | **0.0%** | **90376** | **0** |
+| using/configure.po | 99.8% | 0.0% | 495 | 1 |
+| whatsnew/changelog.po | 99.4% | 0.1% | 15495 | 79 |
+| library/turtle.po | 91.6% | 6.3% | 525 | 12 |
+| c-api/marshal.po | 89.5% | 0.0% | 17 | 2 |
+| **مجموع** | **99.8%** | **0.1%** | **90315** | **94** |
 <!-- TRANSLATION_STATUS_END -->
