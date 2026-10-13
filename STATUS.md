@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-12)
+(به‌روزرسانی: 2026-10-13)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -10,7 +10,6 @@
 | builtins/exceptions.po | 100.0% | 0.0% | 207 | 0 |
 | builtins/functions.po | 100.0% | 0.0% | 540 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
-| builtins/stdtypes.po | 100.0% | 0.0% | 1608 | 0 |
 | builtins/threadsafety.po | 100.0% | 0.0% | 118 | 0 |
 | builtins/time-complexity.po | 100.0% | 0.0% | 121 | 0 |
 | c-api/abstract.po | 100.0% | 0.0% | 3 | 0 |
@@ -235,7 +234,6 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
-| library/ctypes.po | 100.0% | 0.0% | 679 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -343,7 +341,6 @@
 | library/modules.po | 100.0% | 0.0% | 3 | 0 |
 | library/msilib.po | 100.0% | 0.0% | 3 | 0 |
 | library/msvcrt.po | 100.0% | 0.0% | 48 | 0 |
-| library/multiprocessing.po | 100.0% | 0.0% | 622 | 0 |
 | library/multiprocessing.shared_memory.po | 100.0% | 0.0% | 56 | 0 |
 | library/netdata.po | 100.0% | 0.0% | 2 | 0 |
 | library/netrc.po | 100.0% | 0.0% | 19 | 0 |
@@ -494,7 +491,7 @@
 | reference/compound_stmts.po | 100.0% | 0.0% | 499 | 0 |
 | reference/datamodel.po | 100.0% | 0.0% | 915 | 0 |
 | reference/executionmodel.po | 100.0% | 0.0% | 145 | 0 |
-| reference/expressions.po | 100.0% | 0.0% | 674 | 0 |
+| reference/expressions.po | 100.0% | 0.0% | 651 | 0 |
 | reference/grammar.po | 100.0% | 0.0% | 7 | 0 |
 | reference/import.po | 100.0% | 0.0% | 203 | 0 |
 | reference/index.po | 100.0% | 0.0% | 4 | 0 |
@@ -553,9 +550,12 @@
 | whatsnew/3.8.po | 100.0% | 0.0% | 513 | 0 |
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
+| library/ctypes.po | 99.9% | 0.1% | 678 | 0 |
 | using/configure.po | 99.8% | 0.0% | 495 | 1 |
-| whatsnew/changelog.po | 99.4% | 0.1% | 15495 | 79 |
+| library/multiprocessing.po | 99.7% | 0.2% | 621 | 1 |
+| whatsnew/changelog.po | 99.3% | 0.1% | 15495 | 88 |
+| builtins/stdtypes.po | 96.7% | 0.6% | 1605 | 44 |
 | library/turtle.po | 91.6% | 6.3% | 525 | 12 |
 | c-api/marshal.po | 89.5% | 0.0% | 17 | 2 |
-| **مجموع** | **99.8%** | **0.1%** | **90315** | **94** |
+| **مجموع** | **99.8%** | **0.1%** | **90287** | **148** |
 <!-- TRANSLATION_STATUS_END -->
