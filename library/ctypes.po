@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 04:18+0000\n"
+"POT-Creation-Date: 2026-10-13 04:22+0000\n"
 "PO-Revision-Date: 2026-09-13 18:16+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -2143,7 +2143,9 @@ msgstr "برای دسترسی به Python C API، ترجیحاً از :py:data:`
 msgid "The *mode* parameter can be used to specify how the library is loaded.  For details, consult the :manpage:`dlopen(3)` manpage.  On Windows, *mode* is ignored.  On posix systems, RTLD_NOW is always added, and is not configurable."
 msgstr "از پارامتر *mode* می‌توان برای مشخص کردن نحوه بارگذاری کتابخانه استفاده کرد. برای جزئیات، به صفحه راهنمای :manpage:`dlopen(3)` مراجعه کنید. در ویندوز، *mode* نادیده گرفته می‌شود. در سیستم‌های POSIX، RTLD_NOW همیشه اضافه می‌شود و قابل پیکربندی نیست."
 
-msgid "The *use_errno* parameter, when set to true, enables a ctypes mechanism that allows accessing the system :data:`errno` error number in a safe way. :mod:`!ctypes` maintains a thread-local copy of the system's :data:`errno` variable; if you call foreign functions created with ``use_errno=True`` then the :data:`errno` value before the function call is swapped with the ctypes private copy, the same happens immediately after the function call."
+#, fuzzy
+#| msgid "The *use_errno* parameter, when set to true, enables a ctypes mechanism that allows accessing the system :data:`errno` error number in a safe way. :mod:`!ctypes` maintains a thread-local copy of the system's :data:`errno` variable; if you call foreign functions created with ``use_errno=True`` then the :data:`errno` value before the function call is swapped with the ctypes private copy, the same happens immediately after the function call."
+msgid "The *use_errno* parameter, when set to true, enables a ctypes mechanism that allows accessing the system :data:`errno` error number in a safe way. :mod:`!ctypes` maintains a thread-local copy of the system's :data:`errno` variable; if you call foreign functions created with ``use_errno=True`` then the :data:`errno` value before the function call is swapped with the ctypes private copy, the same happens immediately after the function call. This mechanism only works for libraries that use the same C runtime library as the interpreter itself. A library linked against a different C runtime (for example, a different CRT on Windows) has its own :data:`errno`, which :mod:`!ctypes` cannot observe."
 msgstr "پارامتر *use_errno*، هنگامی که روی true تنظیم شود، سازوکاری در ctypes را فعال می‌کند که امکان دسترسی به شماره‌ی خطای سیستم :data:`errno` را به‌شکلی امن فراهم می‌کند. :mod:`!ctypes` یک نسخه‌ی محلی نخی (thread-local) از متغیر :data:`errno` سیستم را نگه می‌دارد؛ اگر توابع خارجی ساخته‌شده با ``use_errno=True`` را فراخوانی کنید، آنگاه مقدار :data:`errno` پیش از فراخوانی تابع با نسخه‌ی خصوصی ctypes مبادله می‌شود؛ همین مبادله بلافاصله پس از فراخوانی تابع نیز رخ می‌دهد."
 
 msgid "The function :func:`ctypes.get_errno` returns the value of the ctypes private copy, and the function :func:`ctypes.set_errno` changes the ctypes private copy to a new value and returns the former value."

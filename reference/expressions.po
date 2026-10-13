@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-01 14:41+0330\n"
+"POT-Creation-Date: 2026-10-13 04:22+0000\n"
 "PO-Revision-Date: 2026-10-06 19:51+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -1107,42 +1107,6 @@ msgstr ":pep:`525` - تولیدگرهای ناهمگام"
 msgid "The proposal that expanded on :pep:`492` by adding generator capabilities to coroutine functions."
 msgstr "پیشنهادی که :pep:`492` را با افزودن قابلیت‌های تولیدگر به توابع هم‌روال گسترش داد."
 
-msgid "Generator-iterator methods"
-msgstr "متدهای تولیدگر-پیمایش‌گر"
-
-msgid "This subsection describes the methods of a generator iterator.  They can be used to control the execution of a generator function."
-msgstr "این زیربخش متدهای یک پیمایش‌گر تولیدگر را شرح می‌دهد. می‌توان از آن‌ها برای کنترل اجرای یک تابع تولیدگر استفاده کرد."
-
-msgid "Note that calling any of the generator methods below when the generator is already executing raises a :exc:`ValueError` exception."
-msgstr "توجه داشته باشید که فراخوانی هر یک از متدهای تولیدگر زیر، هنگامی که تولیدگر از قبل در حال اجرا است، باعث پرتاب یک استثنای :exc:`ValueError` می‌شود."
-
-msgid "Starts the execution of a generator function or resumes it at the last executed yield expression.  When a generator function is resumed with a :meth:`~generator.__next__` method, the current yield expression always evaluates to :const:`None`.  The execution then continues to the next yield expression, where the generator is suspended again, and the value of the :token:`~python-grammar:yield_list` is returned to :meth:`__next__`'s caller.  If the generator exits without yielding another value, a :exc:`StopIteration` exception is raised."
-msgstr "اجرای یک تابع تولیدگر را آغاز می‌کند یا آن را از آخرین عبارت yield اجراشده از سر می‌گیرد. هنگامی که یک تابع تولیدگر با متد :meth:`~generator.__next__` از سر گرفته می‌شود، عبارت yield جاری همیشه به :const:`None` ارزیابی می‌شود. سپس اجرا تا عبارت yield بعدی ادامه می‌یابد، جایی که تولیدگر دوباره معلق می‌شود، و مقدار :token:`~python-grammar:yield_list` به فراخواننده‌ی :meth:`__next__` بازگردانده می‌شود. اگر تولیدگر بدون اینکه مقدار دیگری yield کند خارج شود، استثنای :exc:`StopIteration` پرتاب می‌شود."
-
-msgid "This method is normally called implicitly, e.g. by a :keyword:`for` loop, or by the built-in :func:`next` function."
-msgstr "این متد معمولاً به‌صورت ضمنی فراخوانی می‌شود، مثلاً توسط یک حلقه :keyword:`for`، یا توسط تابع توکار :func:`next`."
-
-msgid "Resumes the execution and \"sends\" a value into the generator function.  The *value* argument becomes the result of the current yield expression.  The :meth:`send` method returns the next value yielded by the generator, or raises :exc:`StopIteration` if the generator exits without yielding another value.  When :meth:`send` is called to start the generator, it must be called with :const:`None` as the argument, because there is no yield expression that could receive the value."
-msgstr "اجرا را از سر می‌گیرد و یک مقدار را به تابع تولیدگر «ارسال» می‌کند. آرگومان *value* به نتیجه‌ی عبارت yield جاری تبدیل می‌شود. متد :meth:`send` مقدار بعدی تولیدشده توسط تولیدگر را برمی‌گرداند، یا اگر تولیدگر بدون تولید مقدار دیگری خارج شود، :exc:`StopIteration` را پرتاب می‌کند. هنگامی که :meth:`send` برای شروع تولیدگر فراخوانی می‌شود، باید با :const:`None` به‌عنوان آرگومان فراخوانی شود، زیرا هیچ عبارت yield وجود ندارد که بتواند مقدار را دریافت کند."
-
-msgid "Raises an exception at the point where the generator was paused, and returns the next value yielded by the generator function.  If the generator exits without yielding another value, a :exc:`StopIteration` exception is raised.  If the generator function does not catch the passed-in exception, or raises a different exception, then that exception propagates to the caller."
-msgstr "استثنایی را در نقطه‌ای که تولیدگر متوقف شده بود، پرتاب می‌کند و مقدار بعدی‌ای را که تابع تولیدگر آن را تولید می‌کند، برمی‌گرداند. اگر تولیدگر بدون تولید مقدار دیگری خارج شود، استثنای :exc:`StopIteration` پرتاب می‌شود. اگر تابع تولیدگر، استثنای ارسال‌شده را نگیرد یا استثنای متفاوتی پرتاب کند، آن استثنا به فراخواننده منتشر می‌شود."
-
-msgid "In typical use, this is called with a single exception instance similar to the way the :keyword:`raise` keyword is used."
-msgstr "در استفاده معمول، این با یک نمونه استثنا فراخوانی می‌شود، مشابه روشی که از کلیدواژه :keyword:`raise` استفاده می‌شود."
-
-msgid "For backwards compatibility, however, the second signature is supported, following a convention from older versions of Python. The *type* argument should be an exception class, and *value* should be an exception instance. If the *value* is not provided, the *type* constructor is called to get an instance. If *traceback* is provided, it is set on the exception, otherwise any existing :attr:`~BaseException.__traceback__` attribute stored in *value* may be cleared."
-msgstr "با این حال، برای سازگاری با نسخه‌های قدیمی، امضای دوم طبق قراردادی از نسخه‌های قدیمی‌تر پایتون پشتیبانی می‌شود. آرگومان *type* باید یک کلاس استثنا باشد و *value* باید یک نمونه استثنا باشد. اگر *value* ارائه نشود، سازنده‌ی *type* برای ایجاد یک نمونه فراخوانی می‌شود. اگر *traceback* ارائه شود، روی استثنا تنظیم می‌شود؛ در غیر این صورت، ممکن است هر ویژگی :attr:`~BaseException.__traceback__` موجود که در *value* ذخیره‌شده باشد پاک شود."
-
-msgid "The second signature \\(type\\[, value\\[, traceback\\]\\]\\) is deprecated and may be removed in a future version of Python."
-msgstr "امضای دوم \\(type\\[, value\\[, traceback\\]\\]\\) منسوخ شده است و ممکن است در نسخه‌ای آینده از پایتون حذف شود."
-
-msgid "Raises a :exc:`GeneratorExit` exception at the point where the generator function was paused (equivalent to calling ``throw(GeneratorExit)``). The exception is raised by the yield expression where the generator was paused. If the generator function catches the exception and returns a value, this value is returned from :meth:`close`.  If the generator function is already closed, or raises :exc:`GeneratorExit` (by not catching the exception), :meth:`close` returns :const:`None`.  If the generator yields a value, a :exc:`RuntimeError` is raised.  If the generator raises any other exception, it is propagated to the caller.  If the generator has already exited due to an exception or normal exit, :meth:`close` returns :const:`None` and has no other effect."
-msgstr "استثنای :exc:`GeneratorExit` را در نقطه‌ای که تابع تولیدگر در آن متوقف شده بود پرتاب می‌کند (معادل فراخوانی ``throw(GeneratorExit)``). این استثنا در عبارت yield که تولیدگر در آن متوقف شده بود پرتاب می‌شود. اگر تابع تولیدگر استثنا را بگیرد و مقداری را برگرداند، این مقدار از :meth:`close` برگردانده می‌شود. اگر تابع تولیدگر از قبل بسته شده باشد، یا :exc:`GeneratorExit` را پرتاب کند (با نگرفتن استثنا)، :meth:`close` مقدار :const:`None` را برمی‌گرداند. اگر تولیدگر مقداری را yield کند، استثنای :exc:`RuntimeError` پرتاب می‌شود. اگر تولیدگر هر استثنای دیگری را پرتاب کند، آن استثنا به فراخواننده منتقل می‌شود. اگر تولیدگر از قبل به دلیل یک استثنا یا خروج عادی خارج شده باشد، :meth:`close` مقدار :const:`None` را برمی‌گرداند و هیچ اثر دیگری ندارد."
-
-msgid "If a generator returns a value upon being closed, the value is returned by :meth:`close`."
-msgstr "اگر یک تولیدگر هنگام بسته شدن مقداری برگرداند، آن مقدار توسط :meth:`close` برگردانده می‌شود."
-
 msgid "Examples"
 msgstr "مثال‌ها"
 
@@ -1224,27 +1188,6 @@ msgstr "برای رسیدگی به نهایی‌سازی هنگام پایان �
 
 msgid "The expression ``yield from <expr>`` is a syntax error when used in an asynchronous generator function."
 msgstr "عبارت ``yield from <expr>`` هنگام استفاده در یک تابع تولیدگر ناهمگام، خطای نحوی است."
-
-msgid "Asynchronous generator-iterator methods"
-msgstr "متدهای تولیدگر-پیمایش‌گر ناهمگام"
-
-msgid "This subsection describes the methods of an asynchronous generator iterator, which are used to control the execution of a generator function."
-msgstr "این زیربخش، متدهای پیمایش‌گر تولیدگر ناهمگام را شرح می‌دهد که برای کنترل اجرای تابع تولیدگر به کار می‌روند."
-
-msgid "Returns an awaitable which when run starts to execute the asynchronous generator or resumes it at the last executed yield expression.  When an asynchronous generator function is resumed with an :meth:`~agen.__anext__` method, the current yield expression always evaluates to :const:`None` in the returned awaitable, which when run will continue to the next yield expression. The value of the :token:`~python-grammar:yield_list` of the yield expression is the value of the :exc:`StopIteration` exception raised by the completing coroutine.  If the asynchronous generator exits without yielding another value, the awaitable instead raises a :exc:`StopAsyncIteration` exception, signalling that the asynchronous iteration has completed."
-msgstr "یک awaitable برمی‌گرداند که هنگام اجرا، اجرای تولیدگر ناهمگام را آغاز می‌کند یا آن را در آخرین عبارت yield اجراشده از سر می‌گیرد. هنگامی که یک تابع تولیدگر ناهمگام با متد :meth:`~agen.__anext__` از سر گرفته شود، عبارت yield جاری همیشه در awaitable برگردانده‌شده، به :const:`None` ارزیابی می‌شود، که وقتی اجرا شود، به عبارت yield بعدی ادامه می‌دهد. مقدار :token:`~python-grammar:yield_list` عبارت yield، مقدار استثنای :exc:`StopIteration` است که توسط هم‌روال کامل‌شونده پرتاب می‌شود. اگر تولیدگر ناهمگام بدون اینکه مقدار دیگری را yield کند، خارج شود، awaitable در عوض یک استثنا :exc:`StopAsyncIteration` پرتاب می‌کند، که نشان می‌دهد تکرار ناهمگام کامل شده است."
-
-msgid "This method is normally called implicitly by a :keyword:`async for` loop."
-msgstr "این متد معمولاً به‌صورت ضمنی توسط یک حلقه‌ی :keyword:`async for` فراخوانی می‌شود."
-
-msgid "Returns an awaitable which when run resumes the execution of the asynchronous generator. As with the :meth:`~generator.send` method for a generator, this \"sends\" a value into the asynchronous generator function, and the *value* argument becomes the result of the current yield expression. The awaitable returned by the :meth:`asend` method will return the next value yielded by the generator as the value of the raised :exc:`StopIteration`, or raises :exc:`StopAsyncIteration` if the asynchronous generator exits without yielding another value.  When :meth:`asend` is called to start the asynchronous generator, it must be called with :const:`None` as the argument, because there is no yield expression that could receive the value."
-msgstr "یک شیء انتظارپذیر (awaitable) بازمی‌گرداند که هنگام اجرا، اجرای تولیدگر ناهمگام را از سر می‌گیرد. همانند متد :meth:`~generator.send` برای یک تولیدگر، این متد یک مقدار را به تابع تولیدگر ناهمگام «ارسال» می‌کند و آرگومان *value* به نتیجه‌ی عبارت yield جاری تبدیل می‌شود. شیء انتظارپذیر بازگردانده‌شده توسط متد :meth:`asend`، مقدار بعدی را که توسط تولیدگر yield شده است، به‌عنوان مقدار :exc:`StopIteration` پرتاب‌شده بازمی‌گرداند، یا اگر تولیدگر ناهمگام بدون yield کردن مقدار دیگری خارج شود، :exc:`StopAsyncIteration` را پرتاب می‌کند. هنگامی که :meth:`asend` برای شروع تولیدگر ناهمگام فراخوانی می‌شود، باید با :const:`None` به‌عنوان آرگومان فراخوانی شود، زیرا هیچ عبارت yield وجود ندارد که بتواند مقدار را دریافت کند."
-
-msgid "Returns an awaitable that raises an exception of type ``type`` at the point where the asynchronous generator was paused, and returns the next value yielded by the generator function as the value of the raised :exc:`StopIteration` exception.  If the asynchronous generator exits without yielding another value, a :exc:`StopAsyncIteration` exception is raised by the awaitable. If the generator function does not catch the passed-in exception, or raises a different exception, then when the awaitable is run that exception propagates to the caller of the awaitable."
-msgstr "یک شیء انتظارپذیر (awaitable) بازمی‌گرداند که در نقطه‌ای که تولیدگر ناهمگام مکث کرده بود، استثنایی از نوع ``type`` پرتاب می‌کند و مقدار بعدی تولیدشده توسط تابع تولیدگر را به‌عنوان مقدار استثنای :exc:`StopIteration` پرتاب‌شده بازمی‌گرداند. اگر تولیدگر ناهمگام بدون تولید مقدار دیگری خارج شود، یک استثنای :exc:`StopAsyncIteration` توسط awaitable پرتاب می‌شود. اگر تابع تولیدگر استثنای داده‌شده را نگیرد یا استثنای دیگری پرتاب کند، آنگاه هنگامی که awaitable اجرا می‌شود، آن استثنا به فراخواننده‌ی awaitable منتشر می‌شود."
-
-msgid "Returns an awaitable that when run will throw a :exc:`GeneratorExit` into the asynchronous generator function at the point where it was paused. If the asynchronous generator function then exits gracefully, is already closed, or raises :exc:`GeneratorExit` (by not catching the exception), then the returned awaitable will raise a :exc:`StopIteration` exception. Any further awaitables returned by subsequent calls to the asynchronous generator will raise a :exc:`StopAsyncIteration` exception.  If the asynchronous generator yields a value, a :exc:`RuntimeError` is raised by the awaitable.  If the asynchronous generator raises any other exception, it is propagated to the caller of the awaitable.  If the asynchronous generator has already exited due to an exception or normal exit, then further calls to :meth:`aclose` will return an awaitable that does nothing."
-msgstr "یک شیء awaitable بازمی‌گرداند که هنگام اجرا، یک استثنای :exc:`GeneratorExit` را به درون تابع تولیدگر ناهمگام در نقطه‌ای که متوقف شده بود پرتاب می‌کند. اگر تابع تولیدگر ناهمگام سپس به‌صورت مناسب خارج شود، از قبل بسته شده باشد، یا استثنای :exc:`GeneratorExit` را پرتاب کند (با نگرفتن استثنا)، آنگاه شیء awaitable بازگشت‌داده‌شده یک استثنای :exc:`StopIteration` پرتاب خواهد کرد. هر شیء awaitable بعدی که توسط فراخوانی‌های بعدی تولیدگر ناهمگام بازگشت داده شود، یک استثنای :exc:`StopAsyncIteration` پرتاب خواهد کرد. اگر تولیدگر ناهمگام مقداری را yield کند، شیء awaitable یک استثنای :exc:`RuntimeError` پرتاب می‌کند. اگر تولیدگر ناهمگام استثنای دیگری پرتاب کند، آن استثنا به فراخواننده‌ی شیء awaitable منتقل می‌شود. اگر تولیدگر ناهمگام از قبل به دلیل یک استثنا یا خروج عادی خارج شده باشد، آنگاه فراخوانی‌های بعدی :meth:`aclose` یک شیء awaitable بازمی‌گردانند که هیچ کاری انجام نمی‌دهد."
 
 msgid "Primaries"
 msgstr "اولیه‌ها"
@@ -2344,20 +2287,8 @@ msgstr "هم‌روال"
 msgid "yield from expression"
 msgstr "عبارت yield from"
 
-msgid "StopIteration"
-msgstr "StopIteration"
-
-msgid "GeneratorExit"
-msgstr "GeneratorExit"
-
 msgid "examples"
 msgstr "مثال‌ها"
-
-msgid "asynchronous-generator"
-msgstr "تولیدگر ناهمگام"
-
-msgid "StopAsyncIteration"
-msgstr "StopAsyncIteration"
 
 msgid "primary"
 msgstr "اصلی"
@@ -2682,6 +2613,75 @@ msgstr "ترتیب"
 
 msgid "precedence"
 msgstr "اولویت"
+
+#~ msgid "Generator-iterator methods"
+#~ msgstr "متدهای تولیدگر-پیمایش‌گر"
+
+#~ msgid "This subsection describes the methods of a generator iterator.  They can be used to control the execution of a generator function."
+#~ msgstr "این زیربخش متدهای یک پیمایش‌گر تولیدگر را شرح می‌دهد. می‌توان از آن‌ها برای کنترل اجرای یک تابع تولیدگر استفاده کرد."
+
+#~ msgid "Note that calling any of the generator methods below when the generator is already executing raises a :exc:`ValueError` exception."
+#~ msgstr "توجه داشته باشید که فراخوانی هر یک از متدهای تولیدگر زیر، هنگامی که تولیدگر از قبل در حال اجرا است، باعث پرتاب یک استثنای :exc:`ValueError` می‌شود."
+
+#~ msgid "Starts the execution of a generator function or resumes it at the last executed yield expression.  When a generator function is resumed with a :meth:`~generator.__next__` method, the current yield expression always evaluates to :const:`None`.  The execution then continues to the next yield expression, where the generator is suspended again, and the value of the :token:`~python-grammar:yield_list` is returned to :meth:`__next__`'s caller.  If the generator exits without yielding another value, a :exc:`StopIteration` exception is raised."
+#~ msgstr "اجرای یک تابع تولیدگر را آغاز می‌کند یا آن را از آخرین عبارت yield اجراشده از سر می‌گیرد. هنگامی که یک تابع تولیدگر با متد :meth:`~generator.__next__` از سر گرفته می‌شود، عبارت yield جاری همیشه به :const:`None` ارزیابی می‌شود. سپس اجرا تا عبارت yield بعدی ادامه می‌یابد، جایی که تولیدگر دوباره معلق می‌شود، و مقدار :token:`~python-grammar:yield_list` به فراخواننده‌ی :meth:`__next__` بازگردانده می‌شود. اگر تولیدگر بدون اینکه مقدار دیگری yield کند خارج شود، استثنای :exc:`StopIteration` پرتاب می‌شود."
+
+#~ msgid "This method is normally called implicitly, e.g. by a :keyword:`for` loop, or by the built-in :func:`next` function."
+#~ msgstr "این متد معمولاً به‌صورت ضمنی فراخوانی می‌شود، مثلاً توسط یک حلقه :keyword:`for`، یا توسط تابع توکار :func:`next`."
+
+#~ msgid "Resumes the execution and \"sends\" a value into the generator function.  The *value* argument becomes the result of the current yield expression.  The :meth:`send` method returns the next value yielded by the generator, or raises :exc:`StopIteration` if the generator exits without yielding another value.  When :meth:`send` is called to start the generator, it must be called with :const:`None` as the argument, because there is no yield expression that could receive the value."
+#~ msgstr "اجرا را از سر می‌گیرد و یک مقدار را به تابع تولیدگر «ارسال» می‌کند. آرگومان *value* به نتیجه‌ی عبارت yield جاری تبدیل می‌شود. متد :meth:`send` مقدار بعدی تولیدشده توسط تولیدگر را برمی‌گرداند، یا اگر تولیدگر بدون تولید مقدار دیگری خارج شود، :exc:`StopIteration` را پرتاب می‌کند. هنگامی که :meth:`send` برای شروع تولیدگر فراخوانی می‌شود، باید با :const:`None` به‌عنوان آرگومان فراخوانی شود، زیرا هیچ عبارت yield وجود ندارد که بتواند مقدار را دریافت کند."
+
+#~ msgid "Raises an exception at the point where the generator was paused, and returns the next value yielded by the generator function.  If the generator exits without yielding another value, a :exc:`StopIteration` exception is raised.  If the generator function does not catch the passed-in exception, or raises a different exception, then that exception propagates to the caller."
+#~ msgstr "استثنایی را در نقطه‌ای که تولیدگر متوقف شده بود، پرتاب می‌کند و مقدار بعدی‌ای را که تابع تولیدگر آن را تولید می‌کند، برمی‌گرداند. اگر تولیدگر بدون تولید مقدار دیگری خارج شود، استثنای :exc:`StopIteration` پرتاب می‌شود. اگر تابع تولیدگر، استثنای ارسال‌شده را نگیرد یا استثنای متفاوتی پرتاب کند، آن استثنا به فراخواننده منتشر می‌شود."
+
+#~ msgid "In typical use, this is called with a single exception instance similar to the way the :keyword:`raise` keyword is used."
+#~ msgstr "در استفاده معمول، این با یک نمونه استثنا فراخوانی می‌شود، مشابه روشی که از کلیدواژه :keyword:`raise` استفاده می‌شود."
+
+#~ msgid "For backwards compatibility, however, the second signature is supported, following a convention from older versions of Python. The *type* argument should be an exception class, and *value* should be an exception instance. If the *value* is not provided, the *type* constructor is called to get an instance. If *traceback* is provided, it is set on the exception, otherwise any existing :attr:`~BaseException.__traceback__` attribute stored in *value* may be cleared."
+#~ msgstr "با این حال، برای سازگاری با نسخه‌های قدیمی، امضای دوم طبق قراردادی از نسخه‌های قدیمی‌تر پایتون پشتیبانی می‌شود. آرگومان *type* باید یک کلاس استثنا باشد و *value* باید یک نمونه استثنا باشد. اگر *value* ارائه نشود، سازنده‌ی *type* برای ایجاد یک نمونه فراخوانی می‌شود. اگر *traceback* ارائه شود، روی استثنا تنظیم می‌شود؛ در غیر این صورت، ممکن است هر ویژگی :attr:`~BaseException.__traceback__` موجود که در *value* ذخیره‌شده باشد پاک شود."
+
+#~ msgid "The second signature \\(type\\[, value\\[, traceback\\]\\]\\) is deprecated and may be removed in a future version of Python."
+#~ msgstr "امضای دوم \\(type\\[, value\\[, traceback\\]\\]\\) منسوخ شده است و ممکن است در نسخه‌ای آینده از پایتون حذف شود."
+
+#~ msgid "Raises a :exc:`GeneratorExit` exception at the point where the generator function was paused (equivalent to calling ``throw(GeneratorExit)``). The exception is raised by the yield expression where the generator was paused. If the generator function catches the exception and returns a value, this value is returned from :meth:`close`.  If the generator function is already closed, or raises :exc:`GeneratorExit` (by not catching the exception), :meth:`close` returns :const:`None`.  If the generator yields a value, a :exc:`RuntimeError` is raised.  If the generator raises any other exception, it is propagated to the caller.  If the generator has already exited due to an exception or normal exit, :meth:`close` returns :const:`None` and has no other effect."
+#~ msgstr "استثنای :exc:`GeneratorExit` را در نقطه‌ای که تابع تولیدگر در آن متوقف شده بود پرتاب می‌کند (معادل فراخوانی ``throw(GeneratorExit)``). این استثنا در عبارت yield که تولیدگر در آن متوقف شده بود پرتاب می‌شود. اگر تابع تولیدگر استثنا را بگیرد و مقداری را برگرداند، این مقدار از :meth:`close` برگردانده می‌شود. اگر تابع تولیدگر از قبل بسته شده باشد، یا :exc:`GeneratorExit` را پرتاب کند (با نگرفتن استثنا)، :meth:`close` مقدار :const:`None` را برمی‌گرداند. اگر تولیدگر مقداری را yield کند، استثنای :exc:`RuntimeError` پرتاب می‌شود. اگر تولیدگر هر استثنای دیگری را پرتاب کند، آن استثنا به فراخواننده منتقل می‌شود. اگر تولیدگر از قبل به دلیل یک استثنا یا خروج عادی خارج شده باشد، :meth:`close` مقدار :const:`None` را برمی‌گرداند و هیچ اثر دیگری ندارد."
+
+#~ msgid "If a generator returns a value upon being closed, the value is returned by :meth:`close`."
+#~ msgstr "اگر یک تولیدگر هنگام بسته شدن مقداری برگرداند، آن مقدار توسط :meth:`close` برگردانده می‌شود."
+
+#~ msgid "Asynchronous generator-iterator methods"
+#~ msgstr "متدهای تولیدگر-پیمایش‌گر ناهمگام"
+
+#~ msgid "This subsection describes the methods of an asynchronous generator iterator, which are used to control the execution of a generator function."
+#~ msgstr "این زیربخش، متدهای پیمایش‌گر تولیدگر ناهمگام را شرح می‌دهد که برای کنترل اجرای تابع تولیدگر به کار می‌روند."
+
+#~ msgid "Returns an awaitable which when run starts to execute the asynchronous generator or resumes it at the last executed yield expression.  When an asynchronous generator function is resumed with an :meth:`~agen.__anext__` method, the current yield expression always evaluates to :const:`None` in the returned awaitable, which when run will continue to the next yield expression. The value of the :token:`~python-grammar:yield_list` of the yield expression is the value of the :exc:`StopIteration` exception raised by the completing coroutine.  If the asynchronous generator exits without yielding another value, the awaitable instead raises a :exc:`StopAsyncIteration` exception, signalling that the asynchronous iteration has completed."
+#~ msgstr "یک awaitable برمی‌گرداند که هنگام اجرا، اجرای تولیدگر ناهمگام را آغاز می‌کند یا آن را در آخرین عبارت yield اجراشده از سر می‌گیرد. هنگامی که یک تابع تولیدگر ناهمگام با متد :meth:`~agen.__anext__` از سر گرفته شود، عبارت yield جاری همیشه در awaitable برگردانده‌شده، به :const:`None` ارزیابی می‌شود، که وقتی اجرا شود، به عبارت yield بعدی ادامه می‌دهد. مقدار :token:`~python-grammar:yield_list` عبارت yield، مقدار استثنای :exc:`StopIteration` است که توسط هم‌روال کامل‌شونده پرتاب می‌شود. اگر تولیدگر ناهمگام بدون اینکه مقدار دیگری را yield کند، خارج شود، awaitable در عوض یک استثنا :exc:`StopAsyncIteration` پرتاب می‌کند، که نشان می‌دهد تکرار ناهمگام کامل شده است."
+
+#~ msgid "This method is normally called implicitly by a :keyword:`async for` loop."
+#~ msgstr "این متد معمولاً به‌صورت ضمنی توسط یک حلقه‌ی :keyword:`async for` فراخوانی می‌شود."
+
+#~ msgid "Returns an awaitable which when run resumes the execution of the asynchronous generator. As with the :meth:`~generator.send` method for a generator, this \"sends\" a value into the asynchronous generator function, and the *value* argument becomes the result of the current yield expression. The awaitable returned by the :meth:`asend` method will return the next value yielded by the generator as the value of the raised :exc:`StopIteration`, or raises :exc:`StopAsyncIteration` if the asynchronous generator exits without yielding another value.  When :meth:`asend` is called to start the asynchronous generator, it must be called with :const:`None` as the argument, because there is no yield expression that could receive the value."
+#~ msgstr "یک شیء انتظارپذیر (awaitable) بازمی‌گرداند که هنگام اجرا، اجرای تولیدگر ناهمگام را از سر می‌گیرد. همانند متد :meth:`~generator.send` برای یک تولیدگر، این متد یک مقدار را به تابع تولیدگر ناهمگام «ارسال» می‌کند و آرگومان *value* به نتیجه‌ی عبارت yield جاری تبدیل می‌شود. شیء انتظارپذیر بازگردانده‌شده توسط متد :meth:`asend`، مقدار بعدی را که توسط تولیدگر yield شده است، به‌عنوان مقدار :exc:`StopIteration` پرتاب‌شده بازمی‌گرداند، یا اگر تولیدگر ناهمگام بدون yield کردن مقدار دیگری خارج شود، :exc:`StopAsyncIteration` را پرتاب می‌کند. هنگامی که :meth:`asend` برای شروع تولیدگر ناهمگام فراخوانی می‌شود، باید با :const:`None` به‌عنوان آرگومان فراخوانی شود، زیرا هیچ عبارت yield وجود ندارد که بتواند مقدار را دریافت کند."
+
+#~ msgid "Returns an awaitable that raises an exception of type ``type`` at the point where the asynchronous generator was paused, and returns the next value yielded by the generator function as the value of the raised :exc:`StopIteration` exception.  If the asynchronous generator exits without yielding another value, a :exc:`StopAsyncIteration` exception is raised by the awaitable. If the generator function does not catch the passed-in exception, or raises a different exception, then when the awaitable is run that exception propagates to the caller of the awaitable."
+#~ msgstr "یک شیء انتظارپذیر (awaitable) بازمی‌گرداند که در نقطه‌ای که تولیدگر ناهمگام مکث کرده بود، استثنایی از نوع ``type`` پرتاب می‌کند و مقدار بعدی تولیدشده توسط تابع تولیدگر را به‌عنوان مقدار استثنای :exc:`StopIteration` پرتاب‌شده بازمی‌گرداند. اگر تولیدگر ناهمگام بدون تولید مقدار دیگری خارج شود، یک استثنای :exc:`StopAsyncIteration` توسط awaitable پرتاب می‌شود. اگر تابع تولیدگر استثنای داده‌شده را نگیرد یا استثنای دیگری پرتاب کند، آنگاه هنگامی که awaitable اجرا می‌شود، آن استثنا به فراخواننده‌ی awaitable منتشر می‌شود."
+
+#~ msgid "Returns an awaitable that when run will throw a :exc:`GeneratorExit` into the asynchronous generator function at the point where it was paused. If the asynchronous generator function then exits gracefully, is already closed, or raises :exc:`GeneratorExit` (by not catching the exception), then the returned awaitable will raise a :exc:`StopIteration` exception. Any further awaitables returned by subsequent calls to the asynchronous generator will raise a :exc:`StopAsyncIteration` exception.  If the asynchronous generator yields a value, a :exc:`RuntimeError` is raised by the awaitable.  If the asynchronous generator raises any other exception, it is propagated to the caller of the awaitable.  If the asynchronous generator has already exited due to an exception or normal exit, then further calls to :meth:`aclose` will return an awaitable that does nothing."
+#~ msgstr "یک شیء awaitable بازمی‌گرداند که هنگام اجرا، یک استثنای :exc:`GeneratorExit` را به درون تابع تولیدگر ناهمگام در نقطه‌ای که متوقف شده بود پرتاب می‌کند. اگر تابع تولیدگر ناهمگام سپس به‌صورت مناسب خارج شود، از قبل بسته شده باشد، یا استثنای :exc:`GeneratorExit` را پرتاب کند (با نگرفتن استثنا)، آنگاه شیء awaitable بازگشت‌داده‌شده یک استثنای :exc:`StopIteration` پرتاب خواهد کرد. هر شیء awaitable بعدی که توسط فراخوانی‌های بعدی تولیدگر ناهمگام بازگشت داده شود، یک استثنای :exc:`StopAsyncIteration` پرتاب خواهد کرد. اگر تولیدگر ناهمگام مقداری را yield کند، شیء awaitable یک استثنای :exc:`RuntimeError` پرتاب می‌کند. اگر تولیدگر ناهمگام استثنای دیگری پرتاب کند، آن استثنا به فراخواننده‌ی شیء awaitable منتقل می‌شود. اگر تولیدگر ناهمگام از قبل به دلیل یک استثنا یا خروج عادی خارج شده باشد، آنگاه فراخوانی‌های بعدی :meth:`aclose` یک شیء awaitable بازمی‌گردانند که هیچ کاری انجام نمی‌دهد."
+
+#~ msgid "StopIteration"
+#~ msgstr "StopIteration"
+
+#~ msgid "GeneratorExit"
+#~ msgstr "GeneratorExit"
+
+#~ msgid "asynchronous-generator"
+#~ msgstr "تولیدگر ناهمگام"
+
+#~ msgid "StopAsyncIteration"
+#~ msgstr "StopAsyncIteration"
 
 #~ msgid "A parenthesized form is an optional expression list enclosed in parentheses:"
 #~ msgstr "شکل پرانتزدار، یک فهرست عبارت اختیاری است که در پرانتز محصور شده است:"
