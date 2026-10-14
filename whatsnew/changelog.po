@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 04:22+0000\n"
+"POT-Creation-Date: 2026-10-14 04:18+0000\n"
 "PO-Revision-Date: 2026-08-28 10:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -36,6 +36,9 @@ msgstr "*تاریخ انتشار: XXXX-XX-XX*"
 
 msgid "Core and Builtins"
 msgstr "هسته و توکارها (Core and Builtins)"
+
+msgid ":gh:`159285`: Fix a crash in a debug build when copying an empty :class:`dict` fails with :exc:`MemoryError`. Patch by Christian Aurich Zanettini Martins."
+msgstr ""
 
 msgid ":gh:`158918`: Reduce C stack usage of ``_PyModule_IsPossiblyShadowing``, which could potentially cause stack overflows during module attribute access while deeply recursing in agressively optimized builds."
 msgstr ""
@@ -74,6 +77,11 @@ msgstr ":gh:`91153`: فروپاشی ناشی از تغییر همزمان یک :
 msgid ":gh:`157468`: Fix the JIT optimizer folding a builtin name to a constant taken from the interpreter's builtins dictionary even when the running function uses a different ``__builtins__`` mapping, such as one created with ``vars(builtins).copy()``. The optimizer now only folds when the function's builtins is the interpreter's, and the folded constant is guarded at runtime so that another function sharing the same code object but a different builtins mapping does not use it."
 msgstr ""
 
+#, fuzzy
+#| msgid ":gh:`156939`: Fix :c:func:`PyBytesWriter_Format` error handling: restore the writer to its previous state on error. Patch by Victor Stinner."
+msgid ":gh:`157242`: If :meth:`bytearray.resize` or :meth:`bytearray.take_bytes` fails, leave the :class:`bytearray` unchanged, instead of clearing it. Patch by Victor Stinner."
+msgstr ":gh:`156939`: رفع نحوه‌ی مدیریت خطای تابع :c:func:`PyBytesWriter_Format`: بازگرداندن نویسنده (writer) به وضعیت قبلی خود در صورت بروز خطا. وصله توسط Victor Stinner."
+
 msgid ":gh:`156091`: Fix a crash when compiling deeply nested inlined list, set, or dict comprehensions. A :exc:`SyntaxError` is now raised when the nesting exceeds the compiler's static block limit."
 msgstr ""
 
@@ -84,6 +92,9 @@ msgid ":gh:`156371`: Fix missing ``PyRefTracer_DESTROY`` events for trashcan def
 msgstr ":gh:`156371`: رفع رویدادهای گم‌شده‌ی ``PyRefTracer_DESTROY`` برای شیءهای معوق سطل زباله (trashcan). وصله توسط Donghee Na."
 
 msgid ":gh:`156204`: Fix a crash in :c:func:`PyErr_GivenExceptionMatches` when evaluating deeply nested exception tuples. The recursion is now bounded, and exceeding the limit is reported as an unraisable exception."
+msgstr ""
+
+msgid ":gh:`155823`: Fix a JIT bug where the side exit taken when a virtual iterator is exhausted left a stale value on the stack, so the tier one interpreter resumed with corrupted state and ``yield from`` raised :exc:`AttributeError` instead of finishing normally."
 msgstr ""
 
 msgid ":gh:`155504`: Fix a crash when thread state creation fails before the thread state is fully initialized."
@@ -106,6 +117,12 @@ msgstr ":gh:`153570`: رفع یک خطای استفاده پس از آزادی (
 msgid ":gh:`151895`: Fixed a crash in :func:`marshal.loads` when an allocation failed while loading a reference-tracked dictionary; it now raises :exc:`MemoryError`."
 msgstr ""
 
+msgid ":gh:`151518`: Fix a free-threaded stop-the-world fairness issue that could starve a thread reattaching after being suspended while detached."
+msgstr ""
+
+msgid ":gh:`149816`: Fix a Use-After-Free race condition in ``subtype_getweakref()`` during concurrent weakref creation and destruction in the free-threading build."
+msgstr ""
+
 #, fuzzy
 #| msgid ":gh:`149816`: Fix a race condition in ``_PyBytes_FromList`` in free-threading mode."
 msgid ":gh:`149816`: Fix race conditions in ``invoke_gc_callback`` iterating ``gc.callbacks`` in free-threading mode."
@@ -113,6 +130,12 @@ msgstr ":gh:`149816`: رفع یک مشکل شرایط رقابت (race condition
 
 msgid "Library"
 msgstr "کتابخانه"
+
+msgid ":gh:`159225`: Prevent ``input`` calls in PyREPL from modifying readline history."
+msgstr ""
+
+msgid ":gh:`159044`: Restore the previous behaviour of :meth:`http.client.HTTPConnection.set_tunnel` where header values that are not strings (such as :const:`None`, :class:`int` or other objects) are converted with :class:`str` instead of raising :exc:`AttributeError` when the request is sent."
+msgstr ""
 
 msgid ":gh:`159184`: Fix :func:`marshal.dumps` raising :exc:`MemoryError` for a set or frozenset containing several complex NaNs, which also made it impossible to write a :file:`.pyc` file for source code containing such a constant."
 msgstr ""
@@ -363,6 +386,9 @@ msgstr ""
 msgid ":gh:`153539`: Fix a crash in the C implementation of :meth:`io.TextIOWrapper.tell` when the decoder's ``getstate`` method triggers a reentrant seek, or when another thread seeks the same stream concurrently. Patch by tonghuaroot."
 msgstr ":gh:`153539`: رفع یک فروپاشی در پیاده‌سازی C متد :meth:`io.TextIOWrapper.tell` زمانی که متد ``getstate`` رمزگشا یک جستجوی بازورودپذیر (reentrant) را فعال می‌کند، یا وقتی رشته‌ی (thread) دیگری هم‌زمان همان جریان را مکان‌یابی می‌کند. این وصله (patch) توسط tonghuaroot ارائه شده است."
 
+msgid ":gh:`152754`: Fix a crash when the same :func:`os.scandir` iterator is used concurrently from multiple threads.  It no longer releases the directory handle while another thread is reading from it.  Sharing an iterator between threads remains subject to race conditions: which entries each thread receives is unspecified."
+msgstr ""
+
 msgid ":gh:`153364`: Make frame, coroutine and task-waiter walks iterative and bounded, avoiding potential hangs and stack overflows. Fix asyncio task inspection when awaited-by sets contain removed entries. Patch by Maurycy Pawłowski-Wieroński."
 msgstr ""
 
@@ -376,6 +402,9 @@ msgstr ":gh:`152718`: رفع تخصیص حافظه‌ی بی‌کران در خ�
 
 msgid ":gh:`151126`: Fix a crash caused by failing to set :exc:`MemoryError` on allocation failure when passing :class:`ctypes.Structure` or :class:`ctypes.Union` instances by value to ctypes foreign functions."
 msgstr ":gh:`151126`: رفع فروپاشی ناشی از تنظیم‌نشدن :exc:`MemoryError` هنگام شکست در تخصیص حافظه، در زمان ارسال نمونه‌های :class:`ctypes.Structure` یا :class:`ctypes.Union` به‌صورت مقدار (by value) به توابع خارجی ctypes."
+
+msgid ":gh:`152692`: Fix :func:`annotationlib.type_repr` returning a string such as ``None.list.append`` for bound built-in methods, whose ``__module__`` is ``None``.  It now returns the qualified name, as it already did for other builtins."
+msgstr ""
 
 msgid ":gh:`152204`: Fix the pure-Python implementations of :meth:`datetime.date.fromisoformat`, :meth:`datetime.time.fromisoformat` and :meth:`datetime.datetime.fromisoformat` silently accepting some malformed ISO 8601 strings, such as non-ASCII digits or a sign in a fixed-width field (for example ``'2020+12'`` or ``'20201212T0102٣٤'``). Each field is now required to be exactly *N* ASCII digits, matching the C implementation."
 msgstr ""
@@ -562,6 +591,11 @@ msgid "C API"
 msgstr "رابط C API"
 
 msgid ":gh:`149044`: Fix the :c:macro:`PySlot_END` macro for C++: initialize all members to avoid compiler warnings. Patch by Victor Stinner."
+msgstr ":gh:`149044`: رفع ماکروی :c:macro:`PySlot_END` برای C++: مقداردهی اولیه‌ی همه‌ی اعضا برای جلوگیری از هشدارهای کامپایلر. وصله توسط ویکتور استینر (Victor Stinner)."
+
+#, fuzzy
+#| msgid ":gh:`149044`: Fix the :c:macro:`PySlot_END` macro for C++: initialize all members to avoid compiler warnings. Patch by Victor Stinner."
+msgid ":gh:`158810`: Fix :c:macro:`Py_ARRAY_LENGTH()` macro on C++: do not use ``__builtin_types_compatible_p()`` on C++. Patch by Victor Stinner."
 msgstr ":gh:`149044`: رفع ماکروی :c:macro:`PySlot_END` برای C++: مقداردهی اولیه‌ی همه‌ی اعضا برای جلوگیری از هشدارهای کامپایلر. وصله توسط ویکتور استینر (Victor Stinner)."
 
 msgid ":gh:`157649`: Fix :c:macro:`Py_CLEAR` and :c:macro:`Py_SETREF` macros on C++: implement them using ``auto`` instead of ``decltype()``. Using ``decltype()`` produced invalid code when clearing/setting an array item. Patch by Victor Stinner."
