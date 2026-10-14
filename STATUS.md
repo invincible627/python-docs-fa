@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-13)
+(به‌روزرسانی: 2026-10-14)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -168,7 +168,6 @@
 | library/abc.po | 100.0% | 0.0% | 60 | 0 |
 | library/aifc.po | 100.0% | 0.0% | 3 | 0 |
 | library/allos.po | 100.0% | 0.0% | 2 | 0 |
-| library/annotationlib.po | 100.0% | 0.0% | 158 | 0 |
 | library/archiving.po | 100.0% | 0.0% | 2 | 0 |
 | library/argparse.po | 100.0% | 0.0% | 421 | 0 |
 | library/array.po | 100.0% | 0.0% | 102 | 0 |
@@ -224,7 +223,6 @@
 | library/compression.zstd.po | 100.0% | 0.0% | 175 | 0 |
 | library/concurrency.po | 100.0% | 0.0% | 3 | 0 |
 | library/concurrent.futures.po | 100.0% | 0.0% | 121 | 0 |
-| library/concurrent.interpreters.po | 100.0% | 0.0% | 87 | 0 |
 | library/concurrent.po | 100.0% | 0.0% | 4 | 0 |
 | library/configparser.po | 100.0% | 0.0% | 227 | 0 |
 | library/contextlib.po | 100.0% | 0.0% | 181 | 0 |
@@ -297,7 +295,6 @@
 | library/html.entities.po | 100.0% | 0.0% | 9 | 0 |
 | library/html.parser.po | 100.0% | 0.0% | 64 | 0 |
 | library/html.po | 100.0% | 0.0% | 8 | 0 |
-| library/http.client.po | 100.0% | 0.0% | 120 | 0 |
 | library/http.cookiejar.po | 100.0% | 0.0% | 159 | 0 |
 | library/http.cookies.po | 100.0% | 0.0% | 54 | 0 |
 | library/http.po | 100.0% | 0.0% | 247 | 0 |
@@ -351,7 +348,6 @@
 | library/operator.po | 100.0% | 0.0% | 189 | 0 |
 | library/optparse.po | 100.0% | 0.0% | 532 | 0 |
 | library/os.path.po | 100.0% | 0.0% | 113 | 0 |
-| library/os.po | 100.0% | 0.0% | 1135 | 0 |
 | library/ossaudiodev.po | 100.0% | 0.0% | 3 | 0 |
 | library/pathlib.po | 100.0% | 0.0% | 444 | 0 |
 | library/pdb.po | 100.0% | 0.0% | 179 | 0 |
@@ -550,12 +546,16 @@
 | whatsnew/3.8.po | 100.0% | 0.0% | 513 | 0 |
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
+| library/os.po | 99.9% | 0.0% | 1135 | 1 |
 | library/ctypes.po | 99.9% | 0.1% | 678 | 0 |
 | using/configure.po | 99.8% | 0.0% | 495 | 1 |
 | library/multiprocessing.po | 99.7% | 0.2% | 621 | 1 |
-| whatsnew/changelog.po | 99.3% | 0.1% | 15495 | 88 |
+| whatsnew/changelog.po | 99.3% | 0.1% | 15495 | 96 |
+| library/http.client.po | 99.2% | 0.8% | 119 | 0 |
+| library/annotationlib.po | 98.7% | 1.3% | 156 | 0 |
 | builtins/stdtypes.po | 96.7% | 0.6% | 1605 | 44 |
 | library/turtle.po | 91.6% | 6.3% | 525 | 12 |
 | c-api/marshal.po | 89.5% | 0.0% | 17 | 2 |
-| **مجموع** | **99.8%** | **0.1%** | **90287** | **148** |
+| library/concurrent.interpreters.po | 86.6% | 5.2% | 84 | 8 |
+| **مجموع** | **99.7%** | **0.1%** | **90281** | **165** |
 <!-- TRANSLATION_STATUS_END -->
