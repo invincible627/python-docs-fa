@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-14)
+(به‌روزرسانی: 2026-10-15)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -43,7 +43,6 @@
 | c-api/gcsupport.po | 100.0% | 0.0% | 107 | 0 |
 | c-api/gen.po | 100.0% | 0.0% | 18 | 0 |
 | c-api/hash.po | 100.0% | 0.0% | 40 | 0 |
-| c-api/import.po | 100.0% | 0.0% | 80 | 0 |
 | c-api/index.po | 100.0% | 0.0% | 2 | 0 |
 | c-api/init.po | 100.0% | 0.0% | 8 | 0 |
 | c-api/init_config.po | 100.0% | 0.0% | 660 | 0 |
@@ -153,7 +152,6 @@
 | howto/perf_profiling.po | 100.0% | 0.0% | 54 | 0 |
 | howto/pyporting.po | 100.0% | 0.0% | 11 | 0 |
 | howto/regex.po | 100.0% | 0.0% | 335 | 0 |
-| howto/remote_debugging.po | 100.0% | 0.0% | 154 | 0 |
 | howto/sockets.po | 100.0% | 0.0% | 61 | 0 |
 | howto/sorting.po | 100.0% | 0.0% | 90 | 0 |
 | howto/timerfd.po | 100.0% | 0.0% | 12 | 0 |
@@ -514,7 +512,6 @@
 | tutorial/venv.po | 100.0% | 0.0% | 43 | 0 |
 | tutorial/whatnow.po | 100.0% | 0.0% | 18 | 0 |
 | using/android.po | 100.0% | 0.0% | 27 | 0 |
-| using/cmdline.po | 100.0% | 0.0% | 284 | 0 |
 | using/editors.po | 100.0% | 0.0% | 6 | 0 |
 | using/index.po | 100.0% | 0.0% | 2 | 0 |
 | using/ios.po | 100.0% | 0.0% | 91 | 0 |
@@ -550,12 +547,15 @@
 | library/ctypes.po | 99.9% | 0.1% | 678 | 0 |
 | using/configure.po | 99.8% | 0.0% | 495 | 1 |
 | library/multiprocessing.po | 99.7% | 0.2% | 621 | 1 |
-| whatsnew/changelog.po | 99.3% | 0.1% | 15495 | 96 |
+| using/cmdline.po | 99.3% | 0.7% | 282 | 0 |
+| whatsnew/changelog.po | 99.2% | 0.1% | 15495 | 101 |
 | library/http.client.po | 99.2% | 0.8% | 119 | 0 |
+| c-api/import.po | 98.8% | 0.0% | 80 | 1 |
 | library/annotationlib.po | 98.7% | 1.3% | 156 | 0 |
+| howto/remote_debugging.po | 98.7% | 1.3% | 152 | 0 |
 | builtins/stdtypes.po | 96.7% | 0.6% | 1605 | 44 |
 | library/turtle.po | 91.6% | 6.3% | 525 | 12 |
 | c-api/marshal.po | 89.5% | 0.0% | 17 | 2 |
 | library/concurrent.interpreters.po | 86.6% | 5.2% | 84 | 8 |
-| **مجموع** | **99.7%** | **0.1%** | **90281** | **165** |
+| **مجموع** | **99.7%** | **0.1%** | **90277** | **171** |
 <!-- TRANSLATION_STATUS_END -->
