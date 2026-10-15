@@ -179,7 +179,7 @@ def check_file(path: Path):
                 if extra:
                     findings.append(f"extra {label} not in source: {extra}")
 
-        if findings:
+        if findings and not entry.fuzzy:
             loc = (
                 f"{entry.occurrences[0][0]}:{entry.occurrences[0][1]}"
                 if entry.occurrences
