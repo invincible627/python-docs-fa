@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-01 14:41+0330\n"
+"POT-Creation-Date: 2026-10-15 04:16+0000\n"
 "PO-Revision-Date: 2026-10-06 20:48+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -247,6 +247,9 @@ msgstr "*initfunc* باید یک :ref:`تابع مقداردهی اولیه <ext
 
 msgid "On success, create and return a module object. This module will not be initialized; call :c:func:`PyModule_Exec` to initialize it. (Custom importers should do this in their :py:meth:`~importlib.abc.Loader.exec_module` method.)"
 msgstr "در صورت موفقیت، یک شیء ماژول ایجاد کرده و برمی‌گرداند. این ماژول مقداردهی اولیه نخواهد شد؛ برای مقداردهی اولیه آن، :c:func:`PyModule_Exec` را فراخوانی کنید. (ایمپورت‌کننده‌های سفارشی باید این کار را در متد :py:meth:`~importlib.abc.Loader.exec_module` خود انجام دهند.)"
+
+msgid "If the spec's name is dotted and *initfunc* creates the module using only the last component of the name, the module's :attr:`~module.__name__` is set to the full name from the spec."
+msgstr ""
 
 msgid "On error, return NULL with an exception set."
 msgstr "در صورت بروز خطا، مقدار NULL را همراه با تنظیم یک استثنا برمی‌گرداند."

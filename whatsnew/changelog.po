@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-14 04:18+0000\n"
+"POT-Creation-Date: 2026-10-15 04:16+0000\n"
 "PO-Revision-Date: 2026-08-28 10:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -36,6 +36,12 @@ msgstr "*تاریخ انتشار: XXXX-XX-XX*"
 
 msgid "Core and Builtins"
 msgstr "هسته و توکارها (Core and Builtins)"
+
+msgid ":gh:`159320`: Add dynamic detection of stack sizes on Android, allowing safer deep recursion."
+msgstr ""
+
+msgid ":gh:`159288`: Fix a crash when walking a very long chain of lazy import placeholders, as created by an aliased dotted import such as ``lazy import a.b.c as d``. :exc:`RecursionError` is now raised instead."
+msgstr ""
 
 msgid ":gh:`159285`: Fix a crash in a debug build when copying an empty :class:`dict` fails with :exc:`MemoryError`. Patch by Christian Aurich Zanettini Martins."
 msgstr ""
@@ -249,6 +255,9 @@ msgstr ""
 msgid ":gh:`156658`: :mod:`xml.dom` and :mod:`xml.etree.ElementTree` no longer treat characters which are not white space in XML (such as U+00A0) as white space. Previously they could be lost in :func:`~xml.etree.ElementTree.indent`, :func:`~xml.etree.ElementTree.canonicalize` with ``strip_text=True``, and when parsing with the ``whitespace-in-element-content`` feature turned off."
 msgstr ""
 
+msgid ":gh:`156568`: :func:`zipapp.create_archive` now correctly sets the executable bit on the target archive when copying a zipapp where the target is a path-like object."
+msgstr ""
+
 msgid ":gh:`156545`: Fix the sampling profiler's flamegraph export so that profiling a deeply recursive program no longer fails with :exc:`RecursionError` instead of producing a flamegraph. Patch by tonghuaroot."
 msgstr ""
 
@@ -445,6 +454,9 @@ msgstr ""
 msgid "Tests"
 msgstr "آزمون‌ها"
 
+msgid ":gh:`159293`: Restore the recursion limit after the free-threading recursion-limit race test to avoid failures in subsequent tests run in the same process."
+msgstr ""
+
 #, fuzzy
 #| msgid ":gh:`141442`: The iOS testbed now correctly handles test arguments that contain spaces."
 msgid ":gh:`159211`: The iOS testbed no longer gathers simulator diagnostics when a test run fails."
@@ -599,6 +611,9 @@ msgid ":gh:`158810`: Fix :c:macro:`Py_ARRAY_LENGTH()` macro on C++: do not use `
 msgstr ":gh:`149044`: رفع ماکروی :c:macro:`PySlot_END` برای C++: مقداردهی اولیه‌ی همه‌ی اعضا برای جلوگیری از هشدارهای کامپایلر. وصله توسط ویکتور استینر (Victor Stinner)."
 
 msgid ":gh:`157649`: Fix :c:macro:`Py_CLEAR` and :c:macro:`Py_SETREF` macros on C++: implement them using ``auto`` instead of ``decltype()``. Using ``decltype()`` produced invalid code when clearing/setting an array item. Patch by Victor Stinner."
+msgstr ""
+
+msgid ":gh:`157384`: :c:func:`PyImport_CreateModuleFromInitfunc` now sets the package context while calling *initfunc*, so that a single-phase init submodule created with only the last component of its name gets the full name from the spec."
 msgstr ""
 
 #, fuzzy
