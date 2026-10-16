@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-15 04:16+0000\n"
+"POT-Creation-Date: 2026-10-16 04:16+0000\n"
 "PO-Revision-Date: 2026-08-28 10:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -484,6 +484,9 @@ msgstr ":gh:`154211`: افزودن ``test.support.skip_if_huge_c_stack()`` و ا
 
 msgid "Build"
 msgstr "ساخت"
+
+msgid ":gh:`159440`: The version string reported by ``sys.version`` no longer carries a spurious ``-dirty`` suffix when CPython is built out-of-tree from a clean git checkout: the build stamp now checks the source tree instead of the build directory."
+msgstr ""
 
 msgid ":gh:`158683`: Fix the :file:`Modules/Setup` entry for the :mod:`!_zstd` module by adding missing source files."
 msgstr ""
