@@ -452,15 +452,11 @@ msgstr "یک ``__call__`` فراخوانی‌پذیر با امضای ``__call__
 msgid "A :ref:`code object <code-objects>` ``__code__`` containing the compiled code for the annotate function."
 msgstr "یک :ref:`شیء کد <code-objects>` ``__code__`` که شامل کد کامپایل‌شده برای تابع annotate است."
 
-#, fuzzy
-#| msgid "Optional: A tuple of the function's positional defaults ``__kwdefaults__``, if the function represented by ``__code__`` uses any positional defaults."
 msgid "Optional: A tuple of the function's positional defaults ``__defaults__``, if the function represented by ``__code__`` uses any positional defaults."
-msgstr "اختیاری: یک تاپل از پیش‌فرض‌های جایگاهی تابع ``__kwdefaults__``، اگر تابع نشان‌داده‌شده توسط ``__code__`` از هرگونه پیش‌فرض جایگاهی استفاده کند."
+msgstr "اختیاری: تاپلی از مقادیر پیش‌فرض جایگاهی تابع ``__defaults__``، در صورتی که تابع نمایه‌شده توسط ``__code__`` از هرگونه مقادیر پیش‌فرض جایگاهی استفاده کند."
 
-#, fuzzy
-#| msgid "Optional: A dict of the function's keyword defaults ``__defaults__``, if the function represented by ``__code__`` uses any keyword defaults."
 msgid "Optional: A dict of the function's keyword defaults ``__kwdefaults__``, if the function represented by ``__code__`` uses any keyword defaults."
-msgstr "اختیاری: یک دیکشنری از مقادیر پیش‌فرض کلیدواژه‌ای تابع ``__defaults__``، اگر تابع نشان‌داده‌شده با ``__code__`` از مقادیر پیش‌فرض کلیدواژه‌ای استفاده کند."
+msgstr "اختیاری: دیکشنری از مقادیر پیش‌فرض کلیدواژه‌ی تابع ``__kwdefaults__``، در صورتی که تابع نمایه‌شده توسط ``__code__`` از هرگونه مقادیر پیش‌فرض کلیدواژه‌ای استفاده کند."
 
 msgid "Optional: All other :ref:`function attributes <inspect-types>`."
 msgstr "اختیاری: همه‌ی :ref:`ویژگی‌های دیگر تابع <inspect-types>`."

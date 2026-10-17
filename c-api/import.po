@@ -249,7 +249,7 @@ msgid "On success, create and return a module object. This module will not be in
 msgstr "در صورت موفقیت، یک شیء ماژول ایجاد کرده و برمی‌گرداند. این ماژول مقداردهی اولیه نخواهد شد؛ برای مقداردهی اولیه آن، :c:func:`PyModule_Exec` را فراخوانی کنید. (ایمپورت‌کننده‌های سفارشی باید این کار را در متد :py:meth:`~importlib.abc.Loader.exec_module` خود انجام دهند.)"
 
 msgid "If the spec's name is dotted and *initfunc* creates the module using only the last component of the name, the module's :attr:`~module.__name__` is set to the full name from the spec."
-msgstr ""
+msgstr "اگر نام مشخصات (spec) نقطه‌گذاری‌شده باشد و *initfunc* ماژول را فقط با استفاده از آخرین جزء نام ایجاد کند، مقدار :attr:`~module.__name__` ماژول روی نام کامل مشخصات تنظیم می‌شود."
 
 msgid "On error, return NULL with an exception set."
 msgstr "در صورت بروز خطا، مقدار NULL را همراه با تنظیم یک استثنا برمی‌گرداند."
