@@ -1,6 +1,6 @@
 <!-- TRANSLATION_STATUS_START -->
 ### وضعیت ترجمه فایل‌ها
-(به‌روزرسانی: 2026-10-16)
+(به‌روزرسانی: 2026-10-17)
 
 | فایل | ترجمه‌شده | مبهم | تعداد ترجمه‌شده | تعداد ترجمه‌نشده |
 |:-----|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -10,6 +10,7 @@
 | builtins/exceptions.po | 100.0% | 0.0% | 207 | 0 |
 | builtins/functions.po | 100.0% | 0.0% | 540 | 0 |
 | builtins/index.po | 100.0% | 0.0% | 5 | 0 |
+| builtins/stdtypes.po | 100.0% | 0.0% | 1659 | 0 |
 | builtins/threadsafety.po | 100.0% | 0.0% | 118 | 0 |
 | builtins/time-complexity.po | 100.0% | 0.0% | 121 | 0 |
 | c-api/abstract.po | 100.0% | 0.0% | 3 | 0 |
@@ -43,6 +44,7 @@
 | c-api/gcsupport.po | 100.0% | 0.0% | 107 | 0 |
 | c-api/gen.po | 100.0% | 0.0% | 18 | 0 |
 | c-api/hash.po | 100.0% | 0.0% | 40 | 0 |
+| c-api/import.po | 100.0% | 0.0% | 81 | 0 |
 | c-api/index.po | 100.0% | 0.0% | 2 | 0 |
 | c-api/init.po | 100.0% | 0.0% | 8 | 0 |
 | c-api/init_config.po | 100.0% | 0.0% | 660 | 0 |
@@ -54,6 +56,7 @@
 | c-api/list.po | 100.0% | 0.0% | 38 | 0 |
 | c-api/long.po | 100.0% | 0.0% | 179 | 0 |
 | c-api/mapping.po | 100.0% | 0.0% | 23 | 0 |
+| c-api/marshal.po | 100.0% | 0.0% | 19 | 0 |
 | c-api/memory.po | 100.0% | 0.0% | 219 | 0 |
 | c-api/memoryview.po | 100.0% | 0.0% | 15 | 0 |
 | c-api/method.po | 100.0% | 0.0% | 20 | 0 |
@@ -85,7 +88,7 @@
 | c-api/type.po | 100.0% | 0.0% | 203 | 0 |
 | c-api/typehints.po | 100.0% | 0.0% | 7 | 0 |
 | c-api/typeobj.po | 100.0% | 0.0% | 754 | 0 |
-| c-api/unicode.po | 100.0% | 0.0% | 418 | 0 |
+| c-api/unicode.po | 100.0% | 0.0% | 425 | 0 |
 | c-api/utilities.po | 100.0% | 0.0% | 2 | 0 |
 | c-api/veryhigh.po | 100.0% | 0.0% | 86 | 0 |
 | c-api/weakref.po | 100.0% | 0.0% | 19 | 0 |
@@ -152,6 +155,7 @@
 | howto/perf_profiling.po | 100.0% | 0.0% | 54 | 0 |
 | howto/pyporting.po | 100.0% | 0.0% | 11 | 0 |
 | howto/regex.po | 100.0% | 0.0% | 335 | 0 |
+| howto/remote_debugging.po | 100.0% | 0.0% | 154 | 0 |
 | howto/sockets.po | 100.0% | 0.0% | 61 | 0 |
 | howto/sorting.po | 100.0% | 0.0% | 90 | 0 |
 | howto/timerfd.po | 100.0% | 0.0% | 12 | 0 |
@@ -166,6 +170,7 @@
 | library/abc.po | 100.0% | 0.0% | 60 | 0 |
 | library/aifc.po | 100.0% | 0.0% | 3 | 0 |
 | library/allos.po | 100.0% | 0.0% | 2 | 0 |
+| library/annotationlib.po | 100.0% | 0.0% | 158 | 0 |
 | library/archiving.po | 100.0% | 0.0% | 2 | 0 |
 | library/argparse.po | 100.0% | 0.0% | 421 | 0 |
 | library/array.po | 100.0% | 0.0% | 102 | 0 |
@@ -221,6 +226,7 @@
 | library/compression.zstd.po | 100.0% | 0.0% | 175 | 0 |
 | library/concurrency.po | 100.0% | 0.0% | 3 | 0 |
 | library/concurrent.futures.po | 100.0% | 0.0% | 121 | 0 |
+| library/concurrent.interpreters.po | 100.0% | 0.0% | 97 | 0 |
 | library/concurrent.po | 100.0% | 0.0% | 4 | 0 |
 | library/configparser.po | 100.0% | 0.0% | 227 | 0 |
 | library/contextlib.po | 100.0% | 0.0% | 181 | 0 |
@@ -230,6 +236,7 @@
 | library/crypt.po | 100.0% | 0.0% | 4 | 0 |
 | library/crypto.po | 100.0% | 0.0% | 3 | 0 |
 | library/csv.po | 100.0% | 0.0% | 133 | 0 |
+| library/ctypes.po | 100.0% | 0.0% | 679 | 0 |
 | library/curses.ascii.po | 100.0% | 0.0% | 69 | 0 |
 | library/curses.panel.po | 100.0% | 0.0% | 25 | 0 |
 | library/curses.po | 100.0% | 0.0% | 510 | 0 |
@@ -293,6 +300,7 @@
 | library/html.entities.po | 100.0% | 0.0% | 9 | 0 |
 | library/html.parser.po | 100.0% | 0.0% | 64 | 0 |
 | library/html.po | 100.0% | 0.0% | 8 | 0 |
+| library/http.client.po | 100.0% | 0.0% | 120 | 0 |
 | library/http.cookiejar.po | 100.0% | 0.0% | 159 | 0 |
 | library/http.cookies.po | 100.0% | 0.0% | 54 | 0 |
 | library/http.po | 100.0% | 0.0% | 247 | 0 |
@@ -336,6 +344,7 @@
 | library/modules.po | 100.0% | 0.0% | 3 | 0 |
 | library/msilib.po | 100.0% | 0.0% | 3 | 0 |
 | library/msvcrt.po | 100.0% | 0.0% | 48 | 0 |
+| library/multiprocessing.po | 100.0% | 0.0% | 623 | 0 |
 | library/multiprocessing.shared_memory.po | 100.0% | 0.0% | 56 | 0 |
 | library/netdata.po | 100.0% | 0.0% | 2 | 0 |
 | library/netrc.po | 100.0% | 0.0% | 19 | 0 |
@@ -346,6 +355,7 @@
 | library/operator.po | 100.0% | 0.0% | 189 | 0 |
 | library/optparse.po | 100.0% | 0.0% | 532 | 0 |
 | library/os.path.po | 100.0% | 0.0% | 113 | 0 |
+| library/os.po | 100.0% | 0.0% | 1136 | 0 |
 | library/ossaudiodev.po | 100.0% | 0.0% | 3 | 0 |
 | library/pathlib.po | 100.0% | 0.0% | 444 | 0 |
 | library/pdb.po | 100.0% | 0.0% | 179 | 0 |
@@ -430,7 +440,7 @@
 | library/tkinter.dnd.po | 100.0% | 0.0% | 20 | 0 |
 | library/tkinter.font.po | 100.0% | 0.0% | 37 | 0 |
 | library/tkinter.messagebox.po | 100.0% | 0.0% | 43 | 0 |
-| library/tkinter.po | 100.0% | 0.0% | 1248 | 0 |
+| library/tkinter.po | 100.0% | 0.0% | 1254 | 0 |
 | library/tkinter.scrolledtext.po | 100.0% | 0.0% | 7 | 0 |
 | library/tkinter.ttk.po | 100.0% | 0.0% | 476 | 0 |
 | library/token.po | 100.0% | 0.0% | 100 | 0 |
@@ -440,6 +450,7 @@
 | library/traceback.po | 100.0% | 0.0% | 118 | 0 |
 | library/tracemalloc.po | 100.0% | 0.0% | 156 | 0 |
 | library/tty.po | 100.0% | 0.0% | 17 | 0 |
+| library/turtle.po | 100.0% | 0.0% | 573 | 0 |
 | library/types.po | 100.0% | 0.0% | 110 | 0 |
 | library/typing.po | 100.0% | 0.0% | 861 | 0 |
 | library/unicodedata.po | 100.0% | 0.0% | 100 | 0 |
@@ -512,6 +523,8 @@
 | tutorial/venv.po | 100.0% | 0.0% | 43 | 0 |
 | tutorial/whatnow.po | 100.0% | 0.0% | 18 | 0 |
 | using/android.po | 100.0% | 0.0% | 27 | 0 |
+| using/cmdline.po | 100.0% | 0.0% | 284 | 0 |
+| using/configure.po | 100.0% | 0.0% | 496 | 0 |
 | using/editors.po | 100.0% | 0.0% | 6 | 0 |
 | using/index.po | 100.0% | 0.0% | 2 | 0 |
 | using/ios.po | 100.0% | 0.0% | 91 | 0 |
@@ -542,20 +555,7 @@
 | whatsnew/3.7.po | 100.0% | 0.0% | 568 | 0 |
 | whatsnew/3.8.po | 100.0% | 0.0% | 513 | 0 |
 | whatsnew/3.9.po | 100.0% | 0.0% | 380 | 0 |
+| whatsnew/changelog.po | 100.0% | 0.0% | 15625 | 0 |
 | whatsnew/index.po | 100.0% | 0.0% | 3 | 0 |
-| library/os.po | 99.9% | 0.0% | 1135 | 1 |
-| library/ctypes.po | 99.9% | 0.1% | 678 | 0 |
-| using/configure.po | 99.8% | 0.0% | 495 | 1 |
-| library/multiprocessing.po | 99.7% | 0.2% | 621 | 1 |
-| using/cmdline.po | 99.3% | 0.7% | 282 | 0 |
-| whatsnew/changelog.po | 99.2% | 0.1% | 15495 | 102 |
-| library/http.client.po | 99.2% | 0.8% | 119 | 0 |
-| c-api/import.po | 98.8% | 0.0% | 80 | 1 |
-| library/annotationlib.po | 98.7% | 1.3% | 156 | 0 |
-| howto/remote_debugging.po | 98.7% | 1.3% | 152 | 0 |
-| builtins/stdtypes.po | 96.7% | 0.6% | 1605 | 44 |
-| library/turtle.po | 91.6% | 6.3% | 525 | 12 |
-| c-api/marshal.po | 89.5% | 0.0% | 17 | 2 |
-| library/concurrent.interpreters.po | 86.6% | 5.2% | 84 | 8 |
-| **مجموع** | **99.7%** | **0.1%** | **90277** | **172** |
+| **مجموع** | **100.0%** | **0.0%** | **90550** | **0** |
 <!-- TRANSLATION_STATUS_END -->
