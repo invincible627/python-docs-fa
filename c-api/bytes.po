@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 04:18+0000\n"
+"POT-Creation-Date: 2026-10-17 04:15+0000\n"
 "PO-Revision-Date: 2026-10-11 17:41+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -268,7 +268,9 @@ msgstr "رابط برمکی (API) نوع :c:type:`PyBytesWriter` را می‌ت�
 msgid "A bytes writer instance."
 msgstr "یک نمونه‌ی نویسنده‌ی بایت (bytes writer)."
 
-msgid "The API is **not thread safe**: a writer should only be used by a single thread at the same time."
+#, fuzzy
+#| msgid "The API is **not thread safe**: a writer should only be used by a single thread at the same time."
+msgid "The API is **not thread safe**. To share a writer with multiple threads, a critical section or a lock is needed."
 msgstr "این API **ایمن در برابر نخ (thread-safe) نیست**: یک نویسنده باید در هر لحظه تنها توسط یک نخ استفاده شود."
 
 msgid "The instance must be destroyed by :c:func:`PyBytesWriter_Finish` on success, or :c:func:`PyBytesWriter_Discard` on error."
@@ -371,7 +373,9 @@ msgstr "بایت‌های تازه تخصیص‌یافته مقداردهی او
 msgid "Resize the writer by adding *grow* bytes to the current writer size. This function typically overallocates to achieve amortized performance when resizing multiple times."
 msgstr "با اضافه کردن *grow* بایت به اندازه‌ی فعلی نویسنده، اندازه‌ی آن را تغییر دهید. این تابع معمولاً برای دستیابی به کارایی سرشکن‌شده هنگام تغییر اندازه‌ی مکرر، حافظه را بیشتر تخصیص می‌دهد."
 
-msgid "*size* can be negative to shrink the writer."
+#, fuzzy
+#| msgid "*size* can be negative to shrink the writer."
+msgid "*grow* can be negative to shrink the writer."
 msgstr "برای کوچک کردن نویسنده، *size* می‌تواند منفی باشد."
 
 msgid "Similar to :c:func:`PyBytesWriter_Grow`, but update also the *buf* pointer."

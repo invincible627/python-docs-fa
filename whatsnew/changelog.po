@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-16 04:16+0000\n"
+"POT-Creation-Date: 2026-10-17 04:15+0000\n"
 "PO-Revision-Date: 2026-08-28 10:52+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -34,8 +34,19 @@ msgstr "پایتون بعدی"
 msgid "*Release date: XXXX-XX-XX*"
 msgstr "*تاریخ انتشار: XXXX-XX-XX*"
 
+msgid "Security"
+msgstr "امنیت"
+
+#, fuzzy
+#| msgid ":gh:`100256`: :mod:`mimetypes` no longer fails when it encounters an inaccessible registry key."
+msgid ":gh:`159428`: :mod:`mimetypes` no longer reads the files listed in :data:`mimetypes.knownfiles` by default on Windows, and uses only the registry."
+msgstr ":gh:`100256`: ماژول :mod:`mimetypes` هنگامی که به یک کلید رجیستری غیرقابل‌دسترس برخورد می‌کند، دیگر دچار خطا نمی‌شود."
+
 msgid "Core and Builtins"
 msgstr "هسته و توکارها (Core and Builtins)"
+
+msgid ":gh:`159430`: Report the correct exception if looking up :meth:`~object.__bytes__` raises an exception while performing %-formatting of :class:`bytes`."
+msgstr ""
 
 msgid ":gh:`159320`: Add dynamic detection of stack sizes on Android, allowing safer deep recursion."
 msgstr ""
@@ -137,6 +148,9 @@ msgstr ":gh:`149816`: رفع یک مشکل شرایط رقابت (race condition
 msgid "Library"
 msgstr "کتابخانه"
 
+msgid ":gh:`159430`: Report the correct exception if looking up ``__name__`` raises an exception when calling :func:`repr` on a :class:`weakref.ref`."
+msgstr ""
+
 msgid ":gh:`159225`: Prevent ``input`` calls in PyREPL from modifying readline history."
 msgstr ""
 
@@ -209,6 +223,9 @@ msgstr ""
 
 msgid ":gh:`157406`: Fix the Python implementation of :class:`xml.etree.ElementTree.XMLParser`: the ``doctype()`` method of the target is now called for a document type declaration without an external identifier, like ``<!DOCTYPE html>``, as in the C implementation."
 msgstr ":gh:`157406`: رفع پیاده‌سازی پایتونی :class:`xml.etree.ElementTree.XMLParser`: متد ``doctype()`` هدف اکنون برای یک اعلامیه‌ی نوع سند بدون شناسه خارجی، مانند ``<!DOCTYPE html>``، درست مانند پیاده‌سازی C فراخوانی می‌شود."
+
+msgid ":gh:`157364`: Fix a use-after-free in :class:`io.TextIOWrapper` when a call to the underlying buffer reentrantly detaches it. Patched by Shamil Abdulaev."
+msgstr ""
 
 msgid ":gh:`157242`: :class:`io.BytesIO` is no longer closed on ``write()`` and ``truncate()`` failure (:exc:`MemoryError`). Patch by Victor Stinner."
 msgstr ""
@@ -363,6 +380,11 @@ msgstr ":gh:`154855`: رفع مشکل برگرداندن تعداد نویسه�
 msgid ":gh:`154594`: Fix :func:`copy.deepcopy` so that an object whose deep copy is ``None`` is still memoized. Patch by tonghuaroot."
 msgstr ""
 
+#, fuzzy
+#| msgid ":gh:`153881`: Fix potential data race when calling :meth:`~object.__getstate__` under the :term:`free-threaded build`."
+msgid ":gh:`154523`: Fixed data-race when calling :meth:`io.TextIOBase.detach` in :term:`free-threaded build`."
+msgstr ":gh:`153881`: رفع رقابت (race) احتمالی داده‌ها هنگام فراخوانی :meth:`~object.__getstate__` تحت :term:`ساخت نخ‌آزاد <free-threaded build>`."
+
 msgid ":gh:`135683`: :class:`logging.FileHandler` and :class:`logging.handlers.WatchedFileHandler` now honor :data:`logging.raiseExceptions` for errors that occur while opening the file, like for other errors during logging."
 msgstr ""
 
@@ -424,7 +446,13 @@ msgstr ""
 msgid ":gh:`117807`: Fix :mod:`mimetypes` initialization from MIME map files containing invalid UTF-8 bytes."
 msgstr ""
 
+msgid ":gh:`143008`: Fix race conditions when re-initializing a :class:`io.TextIOWrapper` object."
+msgstr ":gh:`143008`: اصلاح شرایط رقابت هنگام مقداردهی اولیه‌ی مجدد یک شیء :class:`io.TextIOWrapper`."
+
 msgid ":gh:`145856`: Fix :func:`plistlib.dumps` and :func:`plistlib.dump` so that ``skipkeys=True`` together with ``sort_keys=True`` correctly drops non-string keys when the dictionary contains a mix of string and non-string keys.  Previously the sort ran before the filter and raised :exc:`TypeError`."
+msgstr ""
+
+msgid ":gh:`143008`: Fix crash in :class:`io.TextIOWrapper` when reentrant :meth:`io.TextIOBase.detach` is called reentrantly from the underlying buffer."
 msgstr ""
 
 msgid ":gh:`102967`: A bug in :func:`!doctest._SpoofOut.truncate` was causing None to be passed to :func:`!StringIO.seek` when no size was given. A simple fix skips the seek call when no size is given so the buffer can be truncated from the current position."
@@ -498,6 +526,9 @@ msgid ":gh:`155911`: Fix curses detection when a curses library is already in ``
 msgstr ":gh:`155911`: رفع تشخیص curses هنگامی که یک کتابخانه‌ی curses از پیش در ``LIBS`` وجود دارد. وصله توسط Shamil Abdulaev."
 
 msgid "Windows"
+msgstr ""
+
+msgid ":gh:`157906`: Fix an incorrect architecture macro check that prevented CPU prefetching in the free-threaded garbage collector on 32-bit Windows builds."
 msgstr ""
 
 msgid ":gh:`157789`: Use compiler option ``-Og`` in case of clang-cl debug builds on Windows to reduce stack usage. Patch by Chris Eibl."
@@ -613,8 +644,18 @@ msgstr ":gh:`149044`: رفع ماکروی :c:macro:`PySlot_END` برای C++: م
 msgid ":gh:`158810`: Fix :c:macro:`Py_ARRAY_LENGTH()` macro on C++: do not use ``__builtin_types_compatible_p()`` on C++. Patch by Victor Stinner."
 msgstr ":gh:`149044`: رفع ماکروی :c:macro:`PySlot_END` برای C++: مقداردهی اولیه‌ی همه‌ی اعضا برای جلوگیری از هشدارهای کامپایلر. وصله توسط ویکتور استینر (Victor Stinner)."
 
+#, fuzzy
+#| msgid ":gh:`156939`: Fix :c:func:`PyBytesWriter_Format` error handling: restore the writer to its previous state on error. Patch by Victor Stinner."
+msgid ":gh:`158451`: Fix :c:func:`!_PyUnicodeWriter_WriteLatin1String` when the writer buffer kind is UCS-2 or UCS-4. Patch by Victor Stinner."
+msgstr ":gh:`156939`: رفع نحوه‌ی مدیریت خطای تابع :c:func:`PyBytesWriter_Format`: بازگرداندن نویسنده (writer) به وضعیت قبلی خود در صورت بروز خطا. وصله توسط Victor Stinner."
+
 msgid ":gh:`157649`: Fix :c:macro:`Py_CLEAR` and :c:macro:`Py_SETREF` macros on C++: implement them using ``auto`` instead of ``decltype()``. Using ``decltype()`` produced invalid code when clearing/setting an array item. Patch by Victor Stinner."
 msgstr ""
+
+#, fuzzy
+#| msgid "These functions were undocumented and excluded from the limited C API. Patch by Victor Stinner."
+msgid ":gh:`142217`: Add tests on the undocumented and deprecated ``_Py_Identifier`` C API. Patch by Victor Stinner."
+msgstr "این توابع مستندنشده بودند و از API محدود C کنار گذاشته شدند. بسته‌ی اصلاحی (Patch) توسط Victor Stinner."
 
 msgid ":gh:`157384`: :c:func:`PyImport_CreateModuleFromInitfunc` now sets the package context while calling *initfunc*, so that a single-phase init submodule created with only the last component of its name gets the full name from the spec."
 msgstr ""
@@ -641,9 +682,6 @@ msgstr "نامزد انتشار ۳ نسخه‌ی ۳.۱۵.۰ (Python 3.15.0 relea
 
 msgid "*Release date: 2026-10-02*"
 msgstr "*تاریخ انتشار: ۲۰۲۶-۱۰-۰۲*"
-
-msgid "Security"
-msgstr "امنیت"
 
 msgid ":gh:`158446`: Fix a crash or incorrect output that could occur when formatting a :class:`float` or :class:`complex` with a precision close to the platform's ``INT_MAX``.  :c:func:`PyOS_double_to_string` now raises :exc:`ValueError` for any precision of that magnitude, regardless of presentation type or value, as the format string parsers already did for precisions above ``INT_MAX``."
 msgstr ":gh:`158446`: رفع یک فروپاشی یا خروجی نادرست که ممکن بود هنگام قالب‌بندی یک :class:`float` یا :class:`complex` با دقتی نزدیک به ``INT_MAX`` پلتفرم رخ دهد. تابع :c:func:`PyOS_double_to_string` اکنون برای هر دقتی در آن مقیاس، صرف‌نظر از نوع ارائه‌ یا مقدار، :exc:`ValueError` ایجاد می‌کند، درستهمان‌طور که پارسرهای رشته‌ی قالب‌بندی از قبل برای دقت‌های بالای ``INT_MAX`` انجام می‌دادند."
@@ -1868,9 +1906,6 @@ msgstr ":gh:`62825`: کدگذاری‌های \"KS_C_5601-1987\"، \"KS X 1001\" 
 
 msgid ":gh:`150913`: Fix :class:`sqlite3.Blob` slice assignment to raise :exc:`TypeError` and :exc:`IndexError` for type and size mismatches respectively, even when the target slice is empty."
 msgstr ":gh:`150913`: اصلاح انتساب اسلایس در :class:`sqlite3.Blob` به طوری که به ترتیب برای عدم تطابق‌های نوع و اندازه، خطاهای :exc:`TypeError` و :exc:`IndexError` را بالا بیاورد، حتی زمانی که اسلایس هدف خالی است."
-
-msgid ":gh:`143008`: Fix race conditions when re-initializing a :class:`io.TextIOWrapper` object."
-msgstr ":gh:`143008`: اصلاح شرایط رقابت هنگام مقداردهی اولیه‌ی مجدد یک شیء :class:`io.TextIOWrapper`."
 
 msgid ":gh:`150662`: Fix the ``--gecko`` collector in :mod:`profiling.sampling` that kept every sample in memory. It now writes sample and marker data to temporary files and reads them back, ultimately building the output file at the end. Patch by Pablo Galindo and Maurycy Pawłowski-Wieroński."
 msgstr ":gh:`150662`: اصلاح جمع‌آورنده‌ی ``--gecko`` در :mod:`profiling.sampling` که تمام نمونه‌ها را در حافظه نگه می‌داشت. این جمع‌آورنده اکنون داده‌های نمونه و نشانگر را در پرونده‌های موقت می‌نویسد و دوباره آن‌ها را می‌خواند و در نهایت پرونده‌ی خروجی را در انتها می‌سازد. وصله توسط پابلو گالیندو (Pablo Galindo) و موریسی پاوْوفسکی-ویروئنسکی (Maurycy Pawłowski-Wieroński)."
